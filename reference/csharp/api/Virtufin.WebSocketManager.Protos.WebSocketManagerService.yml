@@ -1,0 +1,1444 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  commentId: T:Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  id: WebSocketManagerService
+  parent: Virtufin.WebSocketManager.Protos
+  children:
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService})
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
+  langs:
+  - csharp
+  - vb
+  name: WebSocketManagerService
+  nameWithType: WebSocketManagerService
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: WebSocketManagerService
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 5
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: 'public class WebSocketManagerService : WebSocketManager.WebSocketManagerBase'
+    content.vb: Public Class WebSocketManagerService Inherits WebSocketManager.WebSocketManagerBase
+  inheritance:
+  - System.Object
+  - Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService})
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService})
+  id: '#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService})'
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  langs:
+  - csharp
+  - vb
+  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>)
+  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: .ctor
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: public WebSocketManagerService(IWebSocketService webSocketService, ILogger<WebSocketManagerService> logger)
+    parameters:
+    - id: webSocketService
+      type: Virtufin.WebSocketManager.Services.IWebSocketService
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService}
+    content.vb: Public Sub New(webSocketService As IWebSocketService, logger As ILogger(Of WebSocketManagerService))
+  overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor*
+  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService))
+  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService))
+  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService))
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
+  id: Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  langs:
+  - csharp
+  - vb
+  name: Connect(ConnectRequest, ServerCallContext)
+  nameWithType: WebSocketManagerService.Connect(ConnectRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Connect
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  example: []
+  syntax:
+    content: public override Task<ConnectResponse> Connect(ConnectRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.WebSocketManager.Protos.ConnectRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.ConnectResponse}
+    content.vb: Public Overrides Function Connect(request As ConnectRequest, context As ServerCallContext) As Task(Of ConnectResponse)
+  overridden: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect*
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
+  id: List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  langs:
+  - csharp
+  - vb
+  name: List(ListRequest, ServerCallContext)
+  nameWithType: WebSocketManagerService.List(ListRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.List(Virtufin.WebSocketManager.Protos.ListRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: List
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 38
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  example: []
+  syntax:
+    content: public override Task<ListResponse> List(ListRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.WebSocketManager.Protos.ListRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.ListResponse}
+    content.vb: Public Overrides Function List(request As ListRequest, context As ServerCallContext) As Task(Of ListResponse)
+  overridden: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.List*
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
+  id: Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  langs:
+  - csharp
+  - vb
+  name: Disconnect(DisconnectRequest, ServerCallContext)
+  nameWithType: WebSocketManagerService.Disconnect(DisconnectRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Disconnect
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 55
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  example: []
+  syntax:
+    content: public override Task<DisconnectResponse> Disconnect(DisconnectRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.DisconnectResponse}
+    content.vb: Public Overrides Function Disconnect(request As DisconnectRequest, context As ServerCallContext) As Task(Of DisconnectResponse)
+  overridden: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Disconnect*
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
+  id: StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  langs:
+  - csharp
+  - vb
+  name: StartPublish(StartPublishRequest, ServerCallContext)
+  nameWithType: WebSocketManagerService.StartPublish(StartPublishRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: StartPublish
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 72
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  example: []
+  syntax:
+    content: public override Task<StartPublishResponse> StartPublish(StartPublishRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.WebSocketManager.Protos.StartPublishRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.StartPublishResponse}
+    content.vb: Public Overrides Function StartPublish(request As StartPublishRequest, context As ServerCallContext) As Task(Of StartPublishResponse)
+  overridden: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.StartPublish*
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
+  id: StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  langs:
+  - csharp
+  - vb
+  name: StopPublish(StopPublishRequest, ServerCallContext)
+  nameWithType: WebSocketManagerService.StopPublish(StopPublishRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: StopPublish
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 97
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  example: []
+  syntax:
+    content: public override Task<StopPublishResponse> StopPublish(StopPublishRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.WebSocketManager.Protos.StopPublishRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.StopPublishResponse}
+    content.vb: Public Overrides Function StopPublish(request As StopPublishRequest, context As ServerCallContext) As Task(Of StopPublishResponse)
+  overridden: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.StopPublish*
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
+  id: Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  langs:
+  - csharp
+  - vb
+  name: Send(SendRequest, ServerCallContext)
+  nameWithType: WebSocketManagerService.Send(SendRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Send(Virtufin.WebSocketManager.Protos.SendRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Send
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 114
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  example: []
+  syntax:
+    content: public override Task<SendResponse> Send(SendRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.WebSocketManager.Protos.SendRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.SendResponse}
+    content.vb: Public Overrides Function Send(request As SendRequest, context As ServerCallContext) As Task(Of SendResponse)
+  overridden: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Send*
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
+  id: SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  langs:
+  - csharp
+  - vb
+  name: SendRaw(SendRawRequest, ServerCallContext)
+  nameWithType: WebSocketManagerService.SendRaw(SendRawRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: SendRaw
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 143
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  example: []
+  syntax:
+    content: public override Task<SendRawResponse> SendRaw(SendRawRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.WebSocketManager.Protos.SendRawRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.SendRawResponse}
+    content.vb: Public Overrides Function SendRaw(request As SendRawRequest, context As ServerCallContext) As Task(Of SendRawResponse)
+  overridden: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SendRaw*
+references:
+- uid: Virtufin.WebSocketManager.Protos
+  commentId: N:Virtufin.WebSocketManager.Protos
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Protos
+  nameWithType: Virtufin.WebSocketManager.Protos
+  fullName: Virtufin.WebSocketManager.Protos
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos
+    name: Protos
+    href: Virtufin.WebSocketManager.Protos.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos
+    name: Protos
+    href: Virtufin.WebSocketManager.Protos.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  commentId: T:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  parent: Virtufin.WebSocketManager.Protos
+  href: Virtufin.WebSocketManager.Protos.WebSocketManager.html
+  name: WebSocketManager.WebSocketManagerBase
+  nameWithType: WebSocketManager.WebSocketManagerBase
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+    name: WebSocketManagerBase
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+    name: WebSocketManagerBase
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__
+  name: WebSocketManagerService
+  nameWithType: WebSocketManagerService.WebSocketManagerService
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService
+  nameWithType.vb: WebSocketManagerService.New
+  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New
+  name.vb: New
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService
+  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketService
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html
+  name: IWebSocketService
+  nameWithType: IWebSocketService
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService
+- uid: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<WebSocketManagerService>
+  nameWithType: ILogger<WebSocketManagerService>
+  fullName: Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>
+  nameWithType.vb: ILogger(Of WebSocketManagerService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService)
+  name.vb: ILogger(Of WebSocketManagerService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+    name: WebSocketManagerService
+    href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+    name: WebSocketManagerService
+    href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html
+  - name: )
+- uid: Virtufin.WebSocketManager.Services
+  commentId: N:Virtufin.WebSocketManager.Services
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services
+  nameWithType: Virtufin.WebSocketManager.Services
+  fullName: Virtufin.WebSocketManager.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  isExternal: true
+  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Connect_Virtufin_WebSocketManager_Protos_ConnectRequest_Grpc_Core_ServerCallContext_
+  name: Connect(ConnectRequest, ServerCallContext)
+  nameWithType: WebSocketManager.WebSocketManagerBase.Connect(ConnectRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
+    name: Connect
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Connect_Virtufin_WebSocketManager_Protos_ConnectRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.ConnectRequest
+    name: ConnectRequest
+    href: Virtufin.WebSocketManager.Protos.ConnectRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
+    name: Connect
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Connect_Virtufin_WebSocketManager_Protos_ConnectRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.ConnectRequest
+    name: ConnectRequest
+    href: Virtufin.WebSocketManager.Protos.ConnectRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_Connect_Virtufin_WebSocketManager_Protos_ConnectRequest_Grpc_Core_ServerCallContext_
+  name: Connect
+  nameWithType: WebSocketManagerService.Connect
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect
+- uid: Virtufin.WebSocketManager.Protos.ConnectRequest
+  commentId: T:Virtufin.WebSocketManager.Protos.ConnectRequest
+  parent: Virtufin.WebSocketManager.Protos
+  href: Virtufin.WebSocketManager.Protos.ConnectRequest.html
+  name: ConnectRequest
+  nameWithType: ConnectRequest
+  fullName: Virtufin.WebSocketManager.Protos.ConnectRequest
+- uid: Grpc.Core.ServerCallContext
+  commentId: T:Grpc.Core.ServerCallContext
+  parent: Grpc.Core
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  name: ServerCallContext
+  nameWithType: ServerCallContext
+  fullName: Grpc.Core.ServerCallContext
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ConnectResponse>
+  nameWithType: Task<ConnectResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Protos.ConnectResponse>
+  nameWithType.vb: Task(Of ConnectResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Protos.ConnectResponse)
+  name.vb: Task(Of ConnectResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: )
+- uid: Grpc.Core
+  commentId: N:Grpc.Core
+  isExternal: true
+  name: Grpc.Core
+  nameWithType: Grpc.Core
+  fullName: Grpc.Core
+  spec.csharp:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Core
+    name: Core
+    isExternal: true
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  isExternal: true
+  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_List_Virtufin_WebSocketManager_Protos_ListRequest_Grpc_Core_ServerCallContext_
+  name: List(ListRequest, ServerCallContext)
+  nameWithType: WebSocketManager.WebSocketManagerBase.List(ListRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.List(Virtufin.WebSocketManager.Protos.ListRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
+    name: List
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_List_Virtufin_WebSocketManager_Protos_ListRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.ListRequest
+    name: ListRequest
+    href: Virtufin.WebSocketManager.Protos.ListRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
+    name: List
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_List_Virtufin_WebSocketManager_Protos_ListRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.ListRequest
+    name: ListRequest
+    href: Virtufin.WebSocketManager.Protos.ListRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.List*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.List
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_List_Virtufin_WebSocketManager_Protos_ListRequest_Grpc_Core_ServerCallContext_
+  name: List
+  nameWithType: WebSocketManagerService.List
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.List
+- uid: Virtufin.WebSocketManager.Protos.ListRequest
+  commentId: T:Virtufin.WebSocketManager.Protos.ListRequest
+  parent: Virtufin.WebSocketManager.Protos
+  href: Virtufin.WebSocketManager.Protos.ListRequest.html
+  name: ListRequest
+  nameWithType: ListRequest
+  fullName: Virtufin.WebSocketManager.Protos.ListRequest
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.ListResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.ListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ListResponse>
+  nameWithType: Task<ListResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Protos.ListResponse>
+  nameWithType.vb: Task(Of ListResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Protos.ListResponse)
+  name.vb: Task(Of ListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.ListResponse
+    name: ListResponse
+    href: Virtufin.WebSocketManager.Protos.ListResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.ListResponse
+    name: ListResponse
+    href: Virtufin.WebSocketManager.Protos.ListResponse.html
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  isExternal: true
+  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Disconnect_Virtufin_WebSocketManager_Protos_DisconnectRequest_Grpc_Core_ServerCallContext_
+  name: Disconnect(DisconnectRequest, ServerCallContext)
+  nameWithType: WebSocketManager.WebSocketManagerBase.Disconnect(DisconnectRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
+    name: Disconnect
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Disconnect_Virtufin_WebSocketManager_Protos_DisconnectRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
+    name: Disconnect
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Disconnect_Virtufin_WebSocketManager_Protos_DisconnectRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Disconnect*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.Disconnect
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_Disconnect_Virtufin_WebSocketManager_Protos_DisconnectRequest_Grpc_Core_ServerCallContext_
+  name: Disconnect
+  nameWithType: WebSocketManagerService.Disconnect
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Disconnect
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  commentId: T:Virtufin.WebSocketManager.Protos.DisconnectRequest
+  parent: Virtufin.WebSocketManager.Protos
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  name: DisconnectRequest
+  nameWithType: DisconnectRequest
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.DisconnectResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.DisconnectResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<DisconnectResponse>
+  nameWithType: Task<DisconnectResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Protos.DisconnectResponse>
+  nameWithType.vb: Task(Of DisconnectResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Protos.DisconnectResponse)
+  name.vb: Task(Of DisconnectResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectResponse
+    name: DisconnectResponse
+    href: Virtufin.WebSocketManager.Protos.DisconnectResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectResponse
+    name: DisconnectResponse
+    href: Virtufin.WebSocketManager.Protos.DisconnectResponse.html
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  isExternal: true
+  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_StartPublish_Virtufin_WebSocketManager_Protos_StartPublishRequest_Grpc_Core_ServerCallContext_
+  name: StartPublish(StartPublishRequest, ServerCallContext)
+  nameWithType: WebSocketManager.WebSocketManagerBase.StartPublish(StartPublishRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
+    name: StartPublish
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_StartPublish_Virtufin_WebSocketManager_Protos_StartPublishRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.StartPublishRequest
+    name: StartPublishRequest
+    href: Virtufin.WebSocketManager.Protos.StartPublishRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
+    name: StartPublish
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_StartPublish_Virtufin_WebSocketManager_Protos_StartPublishRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.StartPublishRequest
+    name: StartPublishRequest
+    href: Virtufin.WebSocketManager.Protos.StartPublishRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.StartPublish*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.StartPublish
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_StartPublish_Virtufin_WebSocketManager_Protos_StartPublishRequest_Grpc_Core_ServerCallContext_
+  name: StartPublish
+  nameWithType: WebSocketManagerService.StartPublish
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.StartPublish
+- uid: Virtufin.WebSocketManager.Protos.StartPublishRequest
+  commentId: T:Virtufin.WebSocketManager.Protos.StartPublishRequest
+  parent: Virtufin.WebSocketManager.Protos
+  href: Virtufin.WebSocketManager.Protos.StartPublishRequest.html
+  name: StartPublishRequest
+  nameWithType: StartPublishRequest
+  fullName: Virtufin.WebSocketManager.Protos.StartPublishRequest
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.StartPublishResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.StartPublishResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<StartPublishResponse>
+  nameWithType: Task<StartPublishResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Protos.StartPublishResponse>
+  nameWithType.vb: Task(Of StartPublishResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Protos.StartPublishResponse)
+  name.vb: Task(Of StartPublishResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.StartPublishResponse
+    name: StartPublishResponse
+    href: Virtufin.WebSocketManager.Protos.StartPublishResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.StartPublishResponse
+    name: StartPublishResponse
+    href: Virtufin.WebSocketManager.Protos.StartPublishResponse.html
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  isExternal: true
+  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_StopPublish_Virtufin_WebSocketManager_Protos_StopPublishRequest_Grpc_Core_ServerCallContext_
+  name: StopPublish(StopPublishRequest, ServerCallContext)
+  nameWithType: WebSocketManager.WebSocketManagerBase.StopPublish(StopPublishRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
+    name: StopPublish
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_StopPublish_Virtufin_WebSocketManager_Protos_StopPublishRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.StopPublishRequest
+    name: StopPublishRequest
+    href: Virtufin.WebSocketManager.Protos.StopPublishRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
+    name: StopPublish
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_StopPublish_Virtufin_WebSocketManager_Protos_StopPublishRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.StopPublishRequest
+    name: StopPublishRequest
+    href: Virtufin.WebSocketManager.Protos.StopPublishRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.StopPublish*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.StopPublish
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_StopPublish_Virtufin_WebSocketManager_Protos_StopPublishRequest_Grpc_Core_ServerCallContext_
+  name: StopPublish
+  nameWithType: WebSocketManagerService.StopPublish
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.StopPublish
+- uid: Virtufin.WebSocketManager.Protos.StopPublishRequest
+  commentId: T:Virtufin.WebSocketManager.Protos.StopPublishRequest
+  parent: Virtufin.WebSocketManager.Protos
+  href: Virtufin.WebSocketManager.Protos.StopPublishRequest.html
+  name: StopPublishRequest
+  nameWithType: StopPublishRequest
+  fullName: Virtufin.WebSocketManager.Protos.StopPublishRequest
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.StopPublishResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.StopPublishResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<StopPublishResponse>
+  nameWithType: Task<StopPublishResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Protos.StopPublishResponse>
+  nameWithType.vb: Task(Of StopPublishResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Protos.StopPublishResponse)
+  name.vb: Task(Of StopPublishResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.StopPublishResponse
+    name: StopPublishResponse
+    href: Virtufin.WebSocketManager.Protos.StopPublishResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.StopPublishResponse
+    name: StopPublishResponse
+    href: Virtufin.WebSocketManager.Protos.StopPublishResponse.html
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  isExternal: true
+  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Send_Virtufin_WebSocketManager_Protos_SendRequest_Grpc_Core_ServerCallContext_
+  name: Send(SendRequest, ServerCallContext)
+  nameWithType: WebSocketManager.WebSocketManagerBase.Send(SendRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Send(Virtufin.WebSocketManager.Protos.SendRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
+    name: Send
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Send_Virtufin_WebSocketManager_Protos_SendRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.SendRequest
+    name: SendRequest
+    href: Virtufin.WebSocketManager.Protos.SendRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
+    name: Send
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Send_Virtufin_WebSocketManager_Protos_SendRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.SendRequest
+    name: SendRequest
+    href: Virtufin.WebSocketManager.Protos.SendRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Send*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.Send
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_Send_Virtufin_WebSocketManager_Protos_SendRequest_Grpc_Core_ServerCallContext_
+  name: Send
+  nameWithType: WebSocketManagerService.Send
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Send
+- uid: Virtufin.WebSocketManager.Protos.SendRequest
+  commentId: T:Virtufin.WebSocketManager.Protos.SendRequest
+  parent: Virtufin.WebSocketManager.Protos
+  href: Virtufin.WebSocketManager.Protos.SendRequest.html
+  name: SendRequest
+  nameWithType: SendRequest
+  fullName: Virtufin.WebSocketManager.Protos.SendRequest
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.SendResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.SendResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SendResponse>
+  nameWithType: Task<SendResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Protos.SendResponse>
+  nameWithType.vb: Task(Of SendResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Protos.SendResponse)
+  name.vb: Task(Of SendResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.SendResponse
+    name: SendResponse
+    href: Virtufin.WebSocketManager.Protos.SendResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.SendResponse
+    name: SendResponse
+    href: Virtufin.WebSocketManager.Protos.SendResponse.html
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  isExternal: true
+  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_SendRaw_Virtufin_WebSocketManager_Protos_SendRawRequest_Grpc_Core_ServerCallContext_
+  name: SendRaw(SendRawRequest, ServerCallContext)
+  nameWithType: WebSocketManager.WebSocketManagerBase.SendRaw(SendRawRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
+    name: SendRaw
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_SendRaw_Virtufin_WebSocketManager_Protos_SendRawRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.SendRawRequest
+    name: SendRawRequest
+    href: Virtufin.WebSocketManager.Protos.SendRawRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
+    name: SendRaw
+    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_SendRaw_Virtufin_WebSocketManager_Protos_SendRawRequest_Grpc_Core_ServerCallContext_
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.SendRawRequest
+    name: SendRawRequest
+    href: Virtufin.WebSocketManager.Protos.SendRawRequest.html
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SendRaw*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.SendRaw
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_SendRaw_Virtufin_WebSocketManager_Protos_SendRawRequest_Grpc_Core_ServerCallContext_
+  name: SendRaw
+  nameWithType: WebSocketManagerService.SendRaw
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SendRaw
+- uid: Virtufin.WebSocketManager.Protos.SendRawRequest
+  commentId: T:Virtufin.WebSocketManager.Protos.SendRawRequest
+  parent: Virtufin.WebSocketManager.Protos
+  href: Virtufin.WebSocketManager.Protos.SendRawRequest.html
+  name: SendRawRequest
+  nameWithType: SendRawRequest
+  fullName: Virtufin.WebSocketManager.Protos.SendRawRequest
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.SendRawResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.SendRawResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SendRawResponse>
+  nameWithType: Task<SendRawResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Protos.SendRawResponse>
+  nameWithType.vb: Task(Of SendRawResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Protos.SendRawResponse)
+  name.vb: Task(Of SendRawResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.SendRawResponse
+    name: SendRawResponse
+    href: Virtufin.WebSocketManager.Protos.SendRawResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.SendRawResponse
+    name: SendRawResponse
+    href: Virtufin.WebSocketManager.Protos.SendRawResponse.html
+  - name: )

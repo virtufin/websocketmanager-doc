@@ -1,0 +1,180 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Services.IDaprPublisher
+  commentId: T:Virtufin.WebSocketManager.Services.IDaprPublisher
+  id: IDaprPublisher
+  parent: Virtufin.WebSocketManager.Services
+  children:
+  - Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IDaprPublisher
+  nameWithType: IDaprPublisher
+  fullName: Virtufin.WebSocketManager.Services.IDaprPublisher
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: IDaprPublisher
+    path: ../../../src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Publishes messages to Dapr pub/sub topics.
+  example: []
+  syntax:
+    content: public interface IDaprPublisher
+    content.vb: Public Interface IDaprPublisher
+  derivedClasses:
+  - Virtufin.WebSocketManager.Services.DaprPublisher
+- uid: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
+  id: PublishAsync(System.String,System.String,System.String,System.String)
+  parent: Virtufin.WebSocketManager.Services.IDaprPublisher
+  langs:
+  - csharp
+  - vb
+  name: PublishAsync(string, string, string, string)
+  nameWithType: IDaprPublisher.PublishAsync(string, string, string, string)
+  fullName: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(string, string, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: PublishAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Publishes a message to the specified Dapr pub/sub topic.
+  example: []
+  syntax:
+    content: Task PublishAsync(string topic, string websocketId, string websocketUrl, string payload)
+    parameters:
+    - id: topic
+      type: System.String
+      description: The name of the topic to publish to.
+    - id: websocketId
+      type: System.String
+      description: The ID of the WebSocket connection that received the message.
+    - id: websocketUrl
+      type: System.String
+      description: The URL of the WebSocket connection.
+    - id: payload
+      type: System.String
+      description: The message payload to publish.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function PublishAsync(topic As String, websocketId As String, websocketUrl As String, payload As String) As Task
+  overload: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync*
+  nameWithType.vb: IDaprPublisher.PublishAsync(String, String, String, String)
+  fullName.vb: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(String, String, String, String)
+  name.vb: PublishAsync(String, String, String, String)
+references:
+- uid: Virtufin.WebSocketManager.Services
+  commentId: N:Virtufin.WebSocketManager.Services
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services
+  nameWithType: Virtufin.WebSocketManager.Services
+  fullName: Virtufin.WebSocketManager.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+- uid: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync
+  href: Virtufin.WebSocketManager.Services.IDaprPublisher.html#Virtufin_WebSocketManager_Services_IDaprPublisher_PublishAsync_System_String_System_String_System_String_System_String_
+  name: PublishAsync
+  nameWithType: IDaprPublisher.PublishAsync
+  fullName: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

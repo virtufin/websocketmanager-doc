@@ -1,0 +1,1362 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  commentId: T:Virtufin.WebSocketManager.Protos.DisconnectRequest
+  id: DisconnectRequest
+  parent: Virtufin.WebSocketManager.Protos
+  children:
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.#ctor
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.#ctor(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.CalculateSize
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.Clone
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.Descriptor
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals(System.Object)
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.GetHashCode
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.Id
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.IdFieldNumber
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.MergeFrom(Google.Protobuf.CodedInputStream)
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.MergeFrom(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.Parser
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.ToString
+  - Virtufin.WebSocketManager.Protos.DisconnectRequest.WriteTo(Google.Protobuf.CodedOutputStream)
+  langs:
+  - csharp
+  - vb
+  name: DisconnectRequest
+  nameWithType: DisconnectRequest
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  type: Class
+  source:
+    id: DisconnectRequest
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1247
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: 'public sealed class DisconnectRequest : IMessage<DisconnectRequest>, IEquatable<DisconnectRequest>, IDeepCloneable<DisconnectRequest>, IBufferMessage, IMessage'
+    content.vb: Public NotInheritable Class DisconnectRequest Implements IMessage(Of DisconnectRequest), IEquatable(Of DisconnectRequest), IDeepCloneable(Of DisconnectRequest), IBufferMessage, IMessage
+  inheritance:
+  - System.Object
+  implements:
+  - Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  - System.IEquatable{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  - Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  - Google.Protobuf.IBufferMessage
+  - Google.Protobuf.IMessage
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.Parser
+  commentId: P:Virtufin.WebSocketManager.Protos.DisconnectRequest.Parser
+  id: Parser
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: Parser
+  nameWithType: DisconnectRequest.Parser
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.Parser
+  type: Property
+  source:
+    id: Parser
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1255
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: public static MessageParser<DisconnectRequest> Parser { get; }
+    parameters: []
+    return:
+      type: Google.Protobuf.MessageParser{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+    content.vb: Public Shared ReadOnly Property Parser As MessageParser(Of DisconnectRequest)
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.Parser*
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.Descriptor
+  commentId: P:Virtufin.WebSocketManager.Protos.DisconnectRequest.Descriptor
+  id: Descriptor
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: Descriptor
+  nameWithType: DisconnectRequest.Descriptor
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.Descriptor
+  type: Property
+  source:
+    id: Descriptor
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1259
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: public static MessageDescriptor Descriptor { get; }
+    parameters: []
+    return:
+      type: Google.Protobuf.Reflection.MessageDescriptor
+    content.vb: Public Shared ReadOnly Property Descriptor As MessageDescriptor
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.Descriptor*
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.#ctor
+  commentId: M:Virtufin.WebSocketManager.Protos.DisconnectRequest.#ctor
+  id: '#ctor'
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: DisconnectRequest()
+  nameWithType: DisconnectRequest.DisconnectRequest()
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.DisconnectRequest()
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1271
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: public DisconnectRequest()
+    content.vb: Public Sub New()
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.#ctor*
+  nameWithType.vb: DisconnectRequest.New()
+  fullName.vb: Virtufin.WebSocketManager.Protos.DisconnectRequest.New()
+  name.vb: New()
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.#ctor(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  commentId: M:Virtufin.WebSocketManager.Protos.DisconnectRequest.#ctor(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  id: '#ctor(Virtufin.WebSocketManager.Protos.DisconnectRequest)'
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: DisconnectRequest(DisconnectRequest)
+  nameWithType: DisconnectRequest.DisconnectRequest(DisconnectRequest)
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.DisconnectRequest(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1279
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: public DisconnectRequest(DisconnectRequest other)
+    parameters:
+    - id: other
+      type: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    content.vb: Public Sub New(other As DisconnectRequest)
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.#ctor*
+  nameWithType.vb: DisconnectRequest.New(DisconnectRequest)
+  fullName.vb: Virtufin.WebSocketManager.Protos.DisconnectRequest.New(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  name.vb: New(DisconnectRequest)
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.Clone
+  commentId: M:Virtufin.WebSocketManager.Protos.DisconnectRequest.Clone
+  id: Clone
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: DisconnectRequest.Clone()
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.Clone()
+  type: Method
+  source:
+    id: Clone
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1286
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Creates a deep clone of this object.
+  example: []
+  syntax:
+    content: public DisconnectRequest Clone()
+    return:
+      type: Virtufin.WebSocketManager.Protos.DisconnectRequest
+      description: A deep clone of this object.
+    content.vb: Public Function Clone() As DisconnectRequest
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.Clone*
+  implements:
+  - Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.DisconnectRequest}.Clone
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.IdFieldNumber
+  commentId: F:Virtufin.WebSocketManager.Protos.DisconnectRequest.IdFieldNumber
+  id: IdFieldNumber
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: IdFieldNumber
+  nameWithType: DisconnectRequest.IdFieldNumber
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.IdFieldNumber
+  type: Field
+  source:
+    id: IdFieldNumber
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1293
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Field number for the "id" field.
+  example: []
+  syntax:
+    content: public const int IdFieldNumber = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const IdFieldNumber As Integer = 1
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.Id
+  commentId: P:Virtufin.WebSocketManager.Protos.DisconnectRequest.Id
+  id: Id
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: DisconnectRequest.Id
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.Id
+  type: Property
+  source:
+    id: Id
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1295
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.Id*
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals(System.Object)
+  commentId: M:Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: DisconnectRequest.Equals(object)
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals(object)
+  type: Method
+  source:
+    id: Equals
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1304
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals*
+  nameWithType.vb: DisconnectRequest.Equals(Object)
+  fullName.vb: Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  commentId: M:Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  id: Equals(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: Equals(DisconnectRequest)
+  nameWithType: DisconnectRequest.Equals(DisconnectRequest)
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  type: Method
+  source:
+    id: Equals
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1310
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(DisconnectRequest other)
+    parameters:
+    - id: other
+      type: Virtufin.WebSocketManager.Protos.DisconnectRequest
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As DisconnectRequest) As Boolean
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals*
+  implements:
+  - System.IEquatable{Virtufin.WebSocketManager.Protos.DisconnectRequest}.Equals(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.GetHashCode
+  commentId: M:Virtufin.WebSocketManager.Protos.DisconnectRequest.GetHashCode
+  id: GetHashCode
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: DisconnectRequest.GetHashCode()
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1323
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.GetHashCode*
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.ToString
+  commentId: M:Virtufin.WebSocketManager.Protos.DisconnectRequest.ToString
+  id: ToString
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: DisconnectRequest.ToString()
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1334
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.ToString*
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.WriteTo(Google.Protobuf.CodedOutputStream)
+  commentId: M:Virtufin.WebSocketManager.Protos.DisconnectRequest.WriteTo(Google.Protobuf.CodedOutputStream)
+  id: WriteTo(Google.Protobuf.CodedOutputStream)
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: WriteTo(CodedOutputStream)
+  nameWithType: DisconnectRequest.WriteTo(CodedOutputStream)
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.WriteTo(Google.Protobuf.CodedOutputStream)
+  type: Method
+  source:
+    id: WriteTo
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1340
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Writes the data to the given coded output stream.
+  example: []
+  syntax:
+    content: public void WriteTo(CodedOutputStream output)
+    parameters:
+    - id: output
+      type: Google.Protobuf.CodedOutputStream
+      description: Coded output stream to write the data to. Must not be null.
+    content.vb: Public Sub WriteTo(output As CodedOutputStream)
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.WriteTo*
+  implements:
+  - Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.CalculateSize
+  commentId: M:Virtufin.WebSocketManager.Protos.DisconnectRequest.CalculateSize
+  id: CalculateSize
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: CalculateSize()
+  nameWithType: DisconnectRequest.CalculateSize()
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.CalculateSize()
+  type: Method
+  source:
+    id: CalculateSize
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1370
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Calculates the size of this message in Protocol Buffer wire format, in bytes.
+  example: []
+  syntax:
+    content: public int CalculateSize()
+    return:
+      type: System.Int32
+      description: >-
+        The number of bytes required to write this message
+                    to a coded output stream.
+    content.vb: Public Function CalculateSize() As Integer
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.CalculateSize*
+  implements:
+  - Google.Protobuf.IMessage.CalculateSize
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.MergeFrom(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  commentId: M:Virtufin.WebSocketManager.Protos.DisconnectRequest.MergeFrom(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  id: MergeFrom(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: MergeFrom(DisconnectRequest)
+  nameWithType: DisconnectRequest.MergeFrom(DisconnectRequest)
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.MergeFrom(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  type: Method
+  source:
+    id: MergeFrom
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1383
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Merges the given message into this one.
+  remarks: See the user guide for precise merge semantics.
+  example: []
+  syntax:
+    content: public void MergeFrom(DisconnectRequest other)
+    parameters:
+    - id: other
+      type: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    content.vb: Public Sub MergeFrom(other As DisconnectRequest)
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.MergeFrom*
+  implements:
+  - Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.DisconnectRequest}.MergeFrom(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.MergeFrom(Google.Protobuf.CodedInputStream)
+  commentId: M:Virtufin.WebSocketManager.Protos.DisconnectRequest.MergeFrom(Google.Protobuf.CodedInputStream)
+  id: MergeFrom(Google.Protobuf.CodedInputStream)
+  parent: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  langs:
+  - csharp
+  - vb
+  name: MergeFrom(CodedInputStream)
+  nameWithType: DisconnectRequest.MergeFrom(CodedInputStream)
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.MergeFrom(Google.Protobuf.CodedInputStream)
+  type: Method
+  source:
+    id: MergeFrom
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 1395
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Merges the data from the specified coded input stream with the current message.
+  remarks: See the user guide for precise merge semantics.
+  example: []
+  syntax:
+    content: public void MergeFrom(CodedInputStream input)
+    parameters:
+    - id: input
+      type: Google.Protobuf.CodedInputStream
+      description: ''
+    content.vb: Public Sub MergeFrom(input As CodedInputStream)
+  overload: Virtufin.WebSocketManager.Protos.DisconnectRequest.MergeFrom*
+  implements:
+  - Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+references:
+- uid: Virtufin.WebSocketManager.Protos
+  commentId: N:Virtufin.WebSocketManager.Protos
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Protos
+  nameWithType: Virtufin.WebSocketManager.Protos
+  fullName: Virtufin.WebSocketManager.Protos
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos
+    name: Protos
+    href: Virtufin.WebSocketManager.Protos.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos
+    name: Protos
+    href: Virtufin.WebSocketManager.Protos.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  commentId: T:Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.IMessage`1
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  name: IMessage<DisconnectRequest>
+  nameWithType: IMessage<DisconnectRequest>
+  fullName: Google.Protobuf.IMessage<Virtufin.WebSocketManager.Protos.DisconnectRequest>
+  nameWithType.vb: IMessage(Of DisconnectRequest)
+  fullName.vb: Google.Protobuf.IMessage(Of Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  name.vb: IMessage(Of DisconnectRequest)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: )
+- uid: System.IEquatable{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  commentId: T:System.IEquatable{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<DisconnectRequest>
+  nameWithType: IEquatable<DisconnectRequest>
+  fullName: System.IEquatable<Virtufin.WebSocketManager.Protos.DisconnectRequest>
+  nameWithType.vb: IEquatable(Of DisconnectRequest)
+  fullName.vb: System.IEquatable(Of Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  name.vb: IEquatable(Of DisconnectRequest)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  commentId: T:Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.IDeepCloneable`1
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  name: IDeepCloneable<DisconnectRequest>
+  nameWithType: IDeepCloneable<DisconnectRequest>
+  fullName: Google.Protobuf.IDeepCloneable<Virtufin.WebSocketManager.Protos.DisconnectRequest>
+  nameWithType.vb: IDeepCloneable(Of DisconnectRequest)
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  name.vb: IDeepCloneable(Of DisconnectRequest)
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: )
+- uid: Google.Protobuf.IBufferMessage
+  commentId: T:Google.Protobuf.IBufferMessage
+  parent: Google.Protobuf
+  isExternal: true
+  name: IBufferMessage
+  nameWithType: IBufferMessage
+  fullName: Google.Protobuf.IBufferMessage
+- uid: Google.Protobuf.IMessage
+  commentId: T:Google.Protobuf.IMessage
+  parent: Google.Protobuf
+  isExternal: true
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Google.Protobuf.IMessage
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Google.Protobuf.IMessage`1
+  commentId: T:Google.Protobuf.IMessage`1
+  isExternal: true
+  name: IMessage<T>
+  nameWithType: IMessage<T>
+  fullName: Google.Protobuf.IMessage<T>
+  nameWithType.vb: IMessage(Of T)
+  fullName.vb: Google.Protobuf.IMessage(Of T)
+  name.vb: IMessage(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Google.Protobuf
+  commentId: N:Google.Protobuf
+  isExternal: true
+  name: Google.Protobuf
+  nameWithType: Google.Protobuf
+  fullName: Google.Protobuf
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable`1
+  commentId: T:Google.Protobuf.IDeepCloneable`1
+  isExternal: true
+  name: IDeepCloneable<T>
+  nameWithType: IDeepCloneable<T>
+  fullName: Google.Protobuf.IDeepCloneable<T>
+  nameWithType.vb: IDeepCloneable(Of T)
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of T)
+  name.vb: IDeepCloneable(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.Parser*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.DisconnectRequest.Parser
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html#Virtufin_WebSocketManager_Protos_DisconnectRequest_Parser
+  name: Parser
+  nameWithType: DisconnectRequest.Parser
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.Parser
+- uid: Google.Protobuf.MessageParser{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  commentId: T:Google.Protobuf.MessageParser{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.MessageParser`1
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  name: MessageParser<DisconnectRequest>
+  nameWithType: MessageParser<DisconnectRequest>
+  fullName: Google.Protobuf.MessageParser<Virtufin.WebSocketManager.Protos.DisconnectRequest>
+  nameWithType.vb: MessageParser(Of DisconnectRequest)
+  fullName.vb: Google.Protobuf.MessageParser(Of Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  name.vb: MessageParser(Of DisconnectRequest)
+  spec.csharp:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: )
+- uid: Google.Protobuf.MessageParser`1
+  commentId: T:Google.Protobuf.MessageParser`1
+  isExternal: true
+  name: MessageParser<T>
+  nameWithType: MessageParser<T>
+  fullName: Google.Protobuf.MessageParser<T>
+  nameWithType.vb: MessageParser(Of T)
+  fullName.vb: Google.Protobuf.MessageParser(Of T)
+  name.vb: MessageParser(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.Descriptor*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.DisconnectRequest.Descriptor
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html#Virtufin_WebSocketManager_Protos_DisconnectRequest_Descriptor
+  name: Descriptor
+  nameWithType: DisconnectRequest.Descriptor
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.Descriptor
+- uid: Google.Protobuf.Reflection.MessageDescriptor
+  commentId: T:Google.Protobuf.Reflection.MessageDescriptor
+  parent: Google.Protobuf.Reflection
+  isExternal: true
+  name: MessageDescriptor
+  nameWithType: MessageDescriptor
+  fullName: Google.Protobuf.Reflection.MessageDescriptor
+- uid: Google.Protobuf.Reflection
+  commentId: N:Google.Protobuf.Reflection
+  isExternal: true
+  name: Google.Protobuf.Reflection
+  nameWithType: Google.Protobuf.Reflection
+  fullName: Google.Protobuf.Reflection
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Reflection
+    name: Reflection
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Reflection
+    name: Reflection
+    isExternal: true
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.#ctor*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.DisconnectRequest.#ctor
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html#Virtufin_WebSocketManager_Protos_DisconnectRequest__ctor
+  name: DisconnectRequest
+  nameWithType: DisconnectRequest.DisconnectRequest
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.DisconnectRequest
+  nameWithType.vb: DisconnectRequest.New
+  fullName.vb: Virtufin.WebSocketManager.Protos.DisconnectRequest.New
+  name.vb: New
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+  commentId: T:Virtufin.WebSocketManager.Protos.DisconnectRequest
+  parent: Virtufin.WebSocketManager.Protos
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  name: DisconnectRequest
+  nameWithType: DisconnectRequest
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.Clone*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.DisconnectRequest.Clone
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html#Virtufin_WebSocketManager_Protos_DisconnectRequest_Clone
+  name: Clone
+  nameWithType: DisconnectRequest.Clone
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.Clone
+- uid: Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.DisconnectRequest}.Clone
+  commentId: M:Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.DisconnectRequest}.Clone
+  parent: Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  definition: Google.Protobuf.IDeepCloneable`1.Clone
+  name: Clone()
+  nameWithType: IDeepCloneable<DisconnectRequest>.Clone()
+  fullName: Google.Protobuf.IDeepCloneable<Virtufin.WebSocketManager.Protos.DisconnectRequest>.Clone()
+  nameWithType.vb: IDeepCloneable(Of DisconnectRequest).Clone()
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of Virtufin.WebSocketManager.Protos.DisconnectRequest).Clone()
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.DisconnectRequest}.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.DisconnectRequest}.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable`1.Clone
+  commentId: M:Google.Protobuf.IDeepCloneable`1.Clone
+  isExternal: true
+  name: Clone()
+  nameWithType: IDeepCloneable<T>.Clone()
+  fullName: Google.Protobuf.IDeepCloneable<T>.Clone()
+  nameWithType.vb: IDeepCloneable(Of T).Clone()
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of T).Clone()
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.Id*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.DisconnectRequest.Id
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html#Virtufin_WebSocketManager_Protos_DisconnectRequest_Id
+  name: Id
+  nameWithType: DisconnectRequest.Id
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html#Virtufin_WebSocketManager_Protos_DisconnectRequest_Equals_System_Object_
+  name: Equals
+  nameWithType: DisconnectRequest.Equals
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable{Virtufin.WebSocketManager.Protos.DisconnectRequest}.Equals(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  commentId: M:System.IEquatable{Virtufin.WebSocketManager.Protos.DisconnectRequest}.Equals(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  parent: System.IEquatable{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(DisconnectRequest)
+  nameWithType: IEquatable<DisconnectRequest>.Equals(DisconnectRequest)
+  fullName: System.IEquatable<Virtufin.WebSocketManager.Protos.DisconnectRequest>.Equals(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  nameWithType.vb: IEquatable(Of DisconnectRequest).Equals(DisconnectRequest)
+  fullName.vb: System.IEquatable(Of Virtufin.WebSocketManager.Protos.DisconnectRequest).Equals(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.WebSocketManager.Protos.DisconnectRequest}.Equals(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.WebSocketManager.Protos.DisconnectRequest}.Equals(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.GetHashCode*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.DisconnectRequest.GetHashCode
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html#Virtufin_WebSocketManager_Protos_DisconnectRequest_GetHashCode
+  name: GetHashCode
+  nameWithType: DisconnectRequest.GetHashCode
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.ToString*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.DisconnectRequest.ToString
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html#Virtufin_WebSocketManager_Protos_DisconnectRequest_ToString
+  name: ToString
+  nameWithType: DisconnectRequest.ToString
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.ToString
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.WriteTo*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.DisconnectRequest.WriteTo
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html#Virtufin_WebSocketManager_Protos_DisconnectRequest_WriteTo_Google_Protobuf_CodedOutputStream_
+  name: WriteTo
+  nameWithType: DisconnectRequest.WriteTo
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.WriteTo
+- uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  commentId: M:Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: WriteTo(CodedOutputStream)
+  nameWithType: IMessage.WriteTo(CodedOutputStream)
+  fullName: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+    name: WriteTo
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedOutputStream
+    name: CodedOutputStream
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+    name: WriteTo
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedOutputStream
+    name: CodedOutputStream
+    isExternal: true
+  - name: )
+- uid: Google.Protobuf.CodedOutputStream
+  commentId: T:Google.Protobuf.CodedOutputStream
+  parent: Google.Protobuf
+  isExternal: true
+  name: CodedOutputStream
+  nameWithType: CodedOutputStream
+  fullName: Google.Protobuf.CodedOutputStream
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.CalculateSize*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.DisconnectRequest.CalculateSize
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html#Virtufin_WebSocketManager_Protos_DisconnectRequest_CalculateSize
+  name: CalculateSize
+  nameWithType: DisconnectRequest.CalculateSize
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.CalculateSize
+- uid: Google.Protobuf.IMessage.CalculateSize
+  commentId: M:Google.Protobuf.IMessage.CalculateSize
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: CalculateSize()
+  nameWithType: IMessage.CalculateSize()
+  fullName: Google.Protobuf.IMessage.CalculateSize()
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.CalculateSize
+    name: CalculateSize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.CalculateSize
+    name: CalculateSize
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.DisconnectRequest.MergeFrom*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.DisconnectRequest.MergeFrom
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html#Virtufin_WebSocketManager_Protos_DisconnectRequest_MergeFrom_Virtufin_WebSocketManager_Protos_DisconnectRequest_
+  name: MergeFrom
+  nameWithType: DisconnectRequest.MergeFrom
+  fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest.MergeFrom
+- uid: Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.DisconnectRequest}.MergeFrom(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  commentId: M:Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.DisconnectRequest}.MergeFrom(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  parent: Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.DisconnectRequest}
+  definition: Google.Protobuf.IMessage`1.MergeFrom(`0)
+  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  name: MergeFrom(DisconnectRequest)
+  nameWithType: IMessage<DisconnectRequest>.MergeFrom(DisconnectRequest)
+  fullName: Google.Protobuf.IMessage<Virtufin.WebSocketManager.Protos.DisconnectRequest>.MergeFrom(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  nameWithType.vb: IMessage(Of DisconnectRequest).MergeFrom(DisconnectRequest)
+  fullName.vb: Google.Protobuf.IMessage(Of Virtufin.WebSocketManager.Protos.DisconnectRequest).MergeFrom(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.DisconnectRequest}.MergeFrom(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.DisconnectRequest}.MergeFrom(Virtufin.WebSocketManager.Protos.DisconnectRequest)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
+  - name: )
+- uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+  commentId: M:Google.Protobuf.IMessage`1.MergeFrom(`0)
+  isExternal: true
+  name: MergeFrom(T)
+  nameWithType: IMessage<T>.MergeFrom(T)
+  fullName: Google.Protobuf.IMessage<T>.MergeFrom(T)
+  nameWithType.vb: IMessage(Of T).MergeFrom(T)
+  fullName.vb: Google.Protobuf.IMessage(Of T).MergeFrom(T)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+- uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  commentId: M:Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: MergeFrom(CodedInputStream)
+  nameWithType: IMessage.MergeFrom(CodedInputStream)
+  fullName: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedInputStream
+    name: CodedInputStream
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedInputStream
+    name: CodedInputStream
+    isExternal: true
+  - name: )
+- uid: Google.Protobuf.CodedInputStream
+  commentId: T:Google.Protobuf.CodedInputStream
+  parent: Google.Protobuf
+  isExternal: true
+  name: CodedInputStream
+  nameWithType: CodedInputStream
+  fullName: Google.Protobuf.CodedInputStream

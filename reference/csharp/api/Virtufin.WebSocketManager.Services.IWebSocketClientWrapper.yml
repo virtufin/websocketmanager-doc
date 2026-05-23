@@ -1,0 +1,546 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+  id: IWebSocketClientWrapper
+  parent: Virtufin.WebSocketManager.Services
+  children:
+  - Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.ConnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
+  - Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.DisconnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
+  - Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String,System.Int32)
+  - Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String)
+  - Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Func{System.String,System.Threading.Tasks.Task})
+  langs:
+  - csharp
+  - vb
+  name: IWebSocketClientWrapper
+  nameWithType: IWebSocketClientWrapper
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: IWebSocketClientWrapper
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Provides operations for managing external WebSocket connections.
+  example: []
+  syntax:
+    content: public interface IWebSocketClientWrapper
+    content.vb: Public Interface IWebSocketClientWrapper
+  derivedClasses:
+  - Virtufin.WebSocketManager.Services.WebSocketClientWrapper
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.ConnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.ConnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
+  id: ConnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+  langs:
+  - csharp
+  - vb
+  name: ConnectAsync(WebSocketConnection)
+  nameWithType: IWebSocketClientWrapper.ConnectAsync(WebSocketConnection)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.ConnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ConnectAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Establishes a connection to the specified WebSocket server.
+  example: []
+  syntax:
+    content: Task ConnectAsync(WebSocketConnection connection)
+    parameters:
+    - id: connection
+      type: Virtufin.WebSocketManager.Models.WebSocketConnection
+      description: The WebSocket connection to connect.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function ConnectAsync(connection As WebSocketConnection) As Task
+  overload: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.ConnectAsync*
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.DisconnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.DisconnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
+  id: DisconnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+  langs:
+  - csharp
+  - vb
+  name: DisconnectAsync(WebSocketConnection)
+  nameWithType: IWebSocketClientWrapper.DisconnectAsync(WebSocketConnection)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.DisconnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DisconnectAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Closes the WebSocket connection.
+  example: []
+  syntax:
+    content: Task DisconnectAsync(WebSocketConnection connection)
+    parameters:
+    - id: connection
+      type: Virtufin.WebSocketManager.Models.WebSocketConnection
+      description: The WebSocket connection to disconnect.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function DisconnectAsync(connection As WebSocketConnection) As Task
+  overload: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.DisconnectAsync*
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String)
+  id: SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+  langs:
+  - csharp
+  - vb
+  name: SendAsync(WebSocketConnection, string)
+  nameWithType: IWebSocketClientWrapper.SendAsync(WebSocketConnection, string)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: SendAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
+    startLine: 36
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Sends a message to the WebSocket without waiting for a response.
+  example: []
+  syntax:
+    content: Task SendAsync(WebSocketConnection connection, string message)
+    parameters:
+    - id: connection
+      type: Virtufin.WebSocketManager.Models.WebSocketConnection
+      description: The WebSocket connection.
+    - id: message
+      type: System.String
+      description: The message to send.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function SendAsync(connection As WebSocketConnection, message As String) As Task
+  overload: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync*
+  nameWithType.vb: IWebSocketClientWrapper.SendAsync(WebSocketConnection, String)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, String)
+  name.vb: SendAsync(WebSocketConnection, String)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String,System.Int32)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String,System.Int32)
+  id: SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String,System.Int32)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+  langs:
+  - csharp
+  - vb
+  name: SendAndWaitAsync(WebSocketConnection, string, int)
+  nameWithType: IWebSocketClientWrapper.SendAndWaitAsync(WebSocketConnection, string, int)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, string, int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: SendAndWaitAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
+    startLine: 45
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Sends a message and waits for a correlated response.
+  example: []
+  syntax:
+    content: Task<string> SendAndWaitAsync(WebSocketConnection connection, string message, int timeoutMs)
+    parameters:
+    - id: connection
+      type: Virtufin.WebSocketManager.Models.WebSocketConnection
+      description: The WebSocket connection.
+    - id: message
+      type: System.String
+      description: The message to send.
+    - id: timeoutMs
+      type: System.Int32
+      description: Timeout in milliseconds to wait for response.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: The response message.
+    content.vb: Function SendAndWaitAsync(connection As WebSocketConnection, message As String, timeoutMs As Integer) As Task(Of String)
+  overload: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync*
+  nameWithType.vb: IWebSocketClientWrapper.SendAndWaitAsync(WebSocketConnection, String, Integer)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, String, Integer)
+  name.vb: SendAndWaitAsync(WebSocketConnection, String, Integer)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Func{System.String,System.Threading.Tasks.Task})
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Func{System.String,System.Threading.Tasks.Task})
+  id: StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Func{System.String,System.Threading.Tasks.Task})
+  parent: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+  langs:
+  - csharp
+  - vb
+  name: StartReceiveLoop(WebSocketConnection, Func<string, Task>)
+  nameWithType: IWebSocketClientWrapper.StartReceiveLoop(WebSocketConnection, Func<string, Task>)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection, System.Func<string, System.Threading.Tasks.Task>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: StartReceiveLoop
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
+    startLine: 52
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Starts a background loop to receive messages from the WebSocket.
+  example: []
+  syntax:
+    content: void StartReceiveLoop(WebSocketConnection connection, Func<string, Task> onMessageReceived)
+    parameters:
+    - id: connection
+      type: Virtufin.WebSocketManager.Models.WebSocketConnection
+      description: The WebSocket connection.
+    - id: onMessageReceived
+      type: System.Func{System.String,System.Threading.Tasks.Task}
+      description: Callback invoked when a message is received.
+    content.vb: Sub StartReceiveLoop(connection As WebSocketConnection, onMessageReceived As Func(Of String, Task))
+  overload: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop*
+  nameWithType.vb: IWebSocketClientWrapper.StartReceiveLoop(WebSocketConnection, Func(Of String, Task))
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection, System.Func(Of String, System.Threading.Tasks.Task))
+  name.vb: StartReceiveLoop(WebSocketConnection, Func(Of String, Task))
+references:
+- uid: Virtufin.WebSocketManager.Services
+  commentId: N:Virtufin.WebSocketManager.Services
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services
+  nameWithType: Virtufin.WebSocketManager.Services
+  fullName: Virtufin.WebSocketManager.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.ConnectAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.ConnectAsync
+  href: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_ConnectAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_
+  name: ConnectAsync
+  nameWithType: IWebSocketClientWrapper.ConnectAsync
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.ConnectAsync
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection
+  commentId: T:Virtufin.WebSocketManager.Models.WebSocketConnection
+  parent: Virtufin.WebSocketManager.Models
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html
+  name: WebSocketConnection
+  nameWithType: WebSocketConnection
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Virtufin.WebSocketManager.Models
+  commentId: N:Virtufin.WebSocketManager.Models
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Models
+  nameWithType: Virtufin.WebSocketManager.Models
+  fullName: Virtufin.WebSocketManager.Models
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Models
+    name: Models
+    href: Virtufin.WebSocketManager.Models.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Models
+    name: Models
+    href: Virtufin.WebSocketManager.Models.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.DisconnectAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.DisconnectAsync
+  href: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_DisconnectAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_
+  name: DisconnectAsync
+  nameWithType: IWebSocketClientWrapper.DisconnectAsync
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.DisconnectAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync
+  href: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_SendAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_String_
+  name: SendAsync
+  nameWithType: IWebSocketClientWrapper.SendAsync
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync
+  href: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_SendAndWaitAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_String_System_Int32_
+  name: SendAndWaitAsync
+  nameWithType: IWebSocketClientWrapper.SendAndWaitAsync
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop
+  href: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_StartReceiveLoop_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Func_System_String_System_Threading_Tasks_Task__
+  name: StartReceiveLoop
+  nameWithType: IWebSocketClientWrapper.StartReceiveLoop
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop
+- uid: System.Func{System.String,System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.String,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, Task>
+  nameWithType: Func<string, Task>
+  fullName: System.Func<string, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of String, Task)
+  fullName.vb: System.Func(Of String, System.Threading.Tasks.Task)
+  name.vb: Func(Of String, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )

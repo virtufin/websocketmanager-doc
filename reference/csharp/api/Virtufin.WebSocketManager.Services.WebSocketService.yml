@@ -1,0 +1,1420 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Services.WebSocketService
+  commentId: T:Virtufin.WebSocketManager.Services.WebSocketService
+  id: WebSocketService
+  parent: Virtufin.WebSocketManager.Services
+  children:
+  - Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
+  - Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.WebSocketService.DisconnectAsync(System.String,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.WebSocketService.StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.WebSocketService.StopPublishAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: WebSocketService
+  nameWithType: WebSocketService
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: WebSocketService
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  syntax:
+    content: 'public class WebSocketService : IWebSocketService'
+    content.vb: Public Class WebSocketService Implements IWebSocketService
+  inheritance:
+  - System.Object
+  implements:
+  - Virtufin.WebSocketManager.Services.IWebSocketService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
+  id: '#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})'
+  parent: Virtufin.WebSocketManager.Services.WebSocketService
+  langs:
+  - csharp
+  - vb
+  name: WebSocketService(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IInstanceIdProvider, ILogger<WebSocketService>)
+  nameWithType: WebSocketService.WebSocketService(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IInstanceIdProvider, ILogger<WebSocketService>)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.WebSocketService(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Virtufin.WebSocketManager.Services.IWebSocketClientWrapper, Virtufin.WebSocketManager.Services.IDaprPublisher, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.WebSocketService>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: .ctor
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  syntax:
+    content: public WebSocketService(IWebSocketConnectionStore connectionStore, IWebSocketClientWrapper webSocketClient, IDaprPublisher daprPublisher, IInstanceIdProvider instanceIdProvider, ILogger<WebSocketService> logger)
+    parameters:
+    - id: connectionStore
+      type: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
+    - id: webSocketClient
+      type: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+    - id: daprPublisher
+      type: Virtufin.WebSocketManager.Services.IDaprPublisher
+    - id: instanceIdProvider
+      type: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService}
+    content.vb: Public Sub New(connectionStore As IWebSocketConnectionStore, webSocketClient As IWebSocketClientWrapper, daprPublisher As IDaprPublisher, instanceIdProvider As IInstanceIdProvider, logger As ILogger(Of WebSocketService))
+  overload: Virtufin.WebSocketManager.Services.WebSocketService.#ctor*
+  nameWithType.vb: WebSocketService.New(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IInstanceIdProvider, ILogger(Of WebSocketService))
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.New(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Virtufin.WebSocketManager.Services.IWebSocketClientWrapper, Virtufin.WebSocketManager.Services.IDaprPublisher, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.WebSocketService))
+  name.vb: New(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IInstanceIdProvider, ILogger(Of WebSocketService))
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  id: ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.WebSocketService
+  langs:
+  - csharp
+  - vb
+  name: ConnectAsync(string, bool, CancellationToken)
+  nameWithType: WebSocketService.ConnectAsync(string, bool, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(string, bool, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ConnectAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 37
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  example: []
+  syntax:
+    content: public Task<WebSocketConnection> ConnectAsync(string url, bool autoReconnect, CancellationToken cancellationToken = default)
+    parameters:
+    - id: url
+      type: System.String
+    - id: autoReconnect
+      type: System.Boolean
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Models.WebSocketConnection}
+    content.vb: Public Function ConnectAsync(url As String, autoReconnect As Boolean, cancellationToken As CancellationToken = Nothing) As Task(Of WebSocketConnection)
+  overload: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync*
+  implements:
+  - Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  nameWithType.vb: WebSocketService.ConnectAsync(String, Boolean, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(String, Boolean, System.Threading.CancellationToken)
+  name.vb: ConnectAsync(String, Boolean, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
+  id: ListConnectionsAsync(System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.WebSocketService
+  langs:
+  - csharp
+  - vb
+  name: ListConnectionsAsync(CancellationToken)
+  nameWithType: WebSocketService.ListConnectionsAsync(CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ListConnectionsAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 78
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  example: []
+  syntax:
+    content: public Task<IEnumerable<WebSocketConnection>> ListConnectionsAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Virtufin.WebSocketManager.Models.WebSocketConnection}}
+    content.vb: Public Function ListConnectionsAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of WebSocketConnection))
+  overload: Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync*
+  implements:
+  - Virtufin.WebSocketManager.Services.IWebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.DisconnectAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.DisconnectAsync(System.String,System.Threading.CancellationToken)
+  id: DisconnectAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.WebSocketService
+  langs:
+  - csharp
+  - vb
+  name: DisconnectAsync(string, CancellationToken)
+  nameWithType: WebSocketService.DisconnectAsync(string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.DisconnectAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DisconnectAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 83
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  example: []
+  syntax:
+    content: public Task DisconnectAsync(string id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function DisconnectAsync(id As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Virtufin.WebSocketManager.Services.WebSocketService.DisconnectAsync*
+  implements:
+  - Virtufin.WebSocketManager.Services.IWebSocketService.DisconnectAsync(System.String,System.Threading.CancellationToken)
+  nameWithType.vb: WebSocketService.DisconnectAsync(String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.DisconnectAsync(String, System.Threading.CancellationToken)
+  name.vb: DisconnectAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.WebSocketService
+  langs:
+  - csharp
+  - vb
+  name: StartPublishAsync(string, string, CancellationToken)
+  nameWithType: WebSocketService.StartPublishAsync(string, string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.StartPublishAsync(string, string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: StartPublishAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 108
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  example: []
+  syntax:
+    content: public Task StartPublishAsync(string id, string topic, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.String
+    - id: topic
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function StartPublishAsync(id As String, topic As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Virtufin.WebSocketManager.Services.WebSocketService.StartPublishAsync*
+  implements:
+  - Virtufin.WebSocketManager.Services.IWebSocketService.StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
+  nameWithType.vb: WebSocketService.StartPublishAsync(String, String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.StartPublishAsync(String, String, System.Threading.CancellationToken)
+  name.vb: StartPublishAsync(String, String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.StopPublishAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.StopPublishAsync(System.String,System.Threading.CancellationToken)
+  id: StopPublishAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.WebSocketService
+  langs:
+  - csharp
+  - vb
+  name: StopPublishAsync(string, CancellationToken)
+  nameWithType: WebSocketService.StopPublishAsync(string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.StopPublishAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: StopPublishAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 135
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  example: []
+  syntax:
+    content: public Task StopPublishAsync(string id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function StopPublishAsync(id As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Virtufin.WebSocketManager.Services.WebSocketService.StopPublishAsync*
+  implements:
+  - Virtufin.WebSocketManager.Services.IWebSocketService.StopPublishAsync(System.String,System.Threading.CancellationToken)
+  nameWithType.vb: WebSocketService.StopPublishAsync(String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.StopPublishAsync(String, System.Threading.CancellationToken)
+  name.vb: StopPublishAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
+  id: SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.WebSocketService
+  langs:
+  - csharp
+  - vb
+  name: SendAsync(string, string, int, CancellationToken)
+  nameWithType: WebSocketService.SendAsync(string, string, int, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(string, string, int, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: SendAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 152
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  example: []
+  syntax:
+    content: public Task<string> SendAsync(string id, string message, int timeoutMs, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.String
+    - id: message
+      type: System.String
+    - id: timeoutMs
+      type: System.Int32
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Public Function SendAsync(id As String, message As String, timeoutMs As Integer, cancellationToken As CancellationToken = Nothing) As Task(Of String)
+  overload: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync*
+  implements:
+  - Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
+  nameWithType.vb: WebSocketService.SendAsync(String, String, Integer, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(String, String, Integer, System.Threading.CancellationToken)
+  name.vb: SendAsync(String, String, Integer, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: SendRawAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.WebSocketService
+  langs:
+  - csharp
+  - vb
+  name: SendRawAsync(string, string, CancellationToken)
+  nameWithType: WebSocketService.SendRawAsync(string, string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync(string, string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: SendRawAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 184
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  example: []
+  syntax:
+    content: public Task SendRawAsync(string id, string message, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.String
+    - id: message
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SendRawAsync(id As String, message As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync*
+  implements:
+  - Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(System.String,System.String,System.Threading.CancellationToken)
+  nameWithType.vb: WebSocketService.SendRawAsync(String, String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync(String, String, System.Threading.CancellationToken)
+  name.vb: SendRawAsync(String, String, CancellationToken)
+references:
+- uid: Virtufin.WebSocketManager.Services
+  commentId: N:Virtufin.WebSocketManager.Services
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services
+  nameWithType: Virtufin.WebSocketManager.Services
+  fullName: Virtufin.WebSocketManager.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService
+  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketService
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html
+  name: IWebSocketService
+  nameWithType: IWebSocketService
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.#ctor*
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.#ctor
+  href: Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService__ctor_Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_Virtufin_WebSocketManager_Services_IDaprPublisher_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_WebSocketService__
+  name: WebSocketService
+  nameWithType: WebSocketService.WebSocketService
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.WebSocketService
+  nameWithType.vb: WebSocketService.New
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.New
+  name.vb: New
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
+  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html
+  name: IWebSocketConnectionStore
+  nameWithType: IWebSocketConnectionStore
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html
+  name: IWebSocketClientWrapper
+  nameWithType: IWebSocketClientWrapper
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+- uid: Virtufin.WebSocketManager.Services.IDaprPublisher
+  commentId: T:Virtufin.WebSocketManager.Services.IDaprPublisher
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IDaprPublisher.html
+  name: IDaprPublisher
+  nameWithType: IDaprPublisher
+  fullName: Virtufin.WebSocketManager.Services.IDaprPublisher
+- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+  commentId: T:Virtufin.WebSocketManager.Services.IInstanceIdProvider
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html
+  name: IInstanceIdProvider
+  nameWithType: IInstanceIdProvider
+  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+- uid: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<WebSocketService>
+  nameWithType: ILogger<WebSocketService>
+  fullName: Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.WebSocketService>
+  nameWithType.vb: ILogger(Of WebSocketService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.WebSocketService)
+  name.vb: ILogger(Of WebSocketService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Services.WebSocketService
+    name: WebSocketService
+    href: Virtufin.WebSocketManager.Services.WebSocketService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Services.WebSocketService
+    name: WebSocketService
+    href: Virtufin.WebSocketManager.Services.WebSocketService.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync
+  href: Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
+  name: ConnectAsync
+  nameWithType: WebSocketService.ConnectAsync
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketService
+  isExternal: true
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
+  name: ConnectAsync(string, bool, CancellationToken)
+  nameWithType: IWebSocketService.ConnectAsync(string, bool, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(string, bool, System.Threading.CancellationToken)
+  nameWithType.vb: IWebSocketService.ConnectAsync(String, Boolean, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(String, Boolean, System.Threading.CancellationToken)
+  name.vb: ConnectAsync(String, Boolean, CancellationToken)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+    name: ConnectAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+    name: ConnectAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Models.WebSocketConnection}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Models.WebSocketConnection}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<WebSocketConnection>
+  nameWithType: Task<WebSocketConnection>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Models.WebSocketConnection>
+  nameWithType.vb: Task(Of WebSocketConnection)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Models.WebSocketConnection)
+  name.vb: Task(Of WebSocketConnection)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Models.WebSocketConnection
+    name: WebSocketConnection
+    href: Virtufin.WebSocketManager.Models.WebSocketConnection.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Models.WebSocketConnection
+    name: WebSocketConnection
+    href: Virtufin.WebSocketManager.Models.WebSocketConnection.html
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync
+  href: Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_ListConnectionsAsync_System_Threading_CancellationToken_
+  name: ListConnectionsAsync
+  nameWithType: WebSocketService.ListConnectionsAsync
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketService
+  isExternal: true
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ListConnectionsAsync_System_Threading_CancellationToken_
+  name: ListConnectionsAsync(CancellationToken)
+  nameWithType: IWebSocketService.ListConnectionsAsync(CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
+    name: ListConnectionsAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ListConnectionsAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
+    name: ListConnectionsAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ListConnectionsAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Virtufin.WebSocketManager.Models.WebSocketConnection}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Virtufin.WebSocketManager.Models.WebSocketConnection}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<WebSocketConnection>>
+  nameWithType: Task<IEnumerable<WebSocketConnection>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<Virtufin.WebSocketManager.Models.WebSocketConnection>>
+  nameWithType.vb: Task(Of IEnumerable(Of WebSocketConnection))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of Virtufin.WebSocketManager.Models.WebSocketConnection))
+  name.vb: Task(Of IEnumerable(Of WebSocketConnection))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Models.WebSocketConnection
+    name: WebSocketConnection
+    href: Virtufin.WebSocketManager.Models.WebSocketConnection.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Models.WebSocketConnection
+    name: WebSocketConnection
+    href: Virtufin.WebSocketManager.Models.WebSocketConnection.html
+  - name: )
+  - name: )
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.DisconnectAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.DisconnectAsync
+  href: Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_DisconnectAsync_System_String_System_Threading_CancellationToken_
+  name: DisconnectAsync
+  nameWithType: WebSocketService.DisconnectAsync
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.DisconnectAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.DisconnectAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.DisconnectAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketService
+  isExternal: true
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_DisconnectAsync_System_String_System_Threading_CancellationToken_
+  name: DisconnectAsync(string, CancellationToken)
+  nameWithType: IWebSocketService.DisconnectAsync(string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.DisconnectAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: IWebSocketService.DisconnectAsync(String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.DisconnectAsync(String, System.Threading.CancellationToken)
+  name.vb: DisconnectAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.DisconnectAsync(System.String,System.Threading.CancellationToken)
+    name: DisconnectAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_DisconnectAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.DisconnectAsync(System.String,System.Threading.CancellationToken)
+    name: DisconnectAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_DisconnectAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.StartPublishAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.StartPublishAsync
+  href: Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_StartPublishAsync_System_String_System_String_System_Threading_CancellationToken_
+  name: StartPublishAsync
+  nameWithType: WebSocketService.StartPublishAsync
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.StartPublishAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketService
+  isExternal: true
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_StartPublishAsync_System_String_System_String_System_Threading_CancellationToken_
+  name: StartPublishAsync(string, string, CancellationToken)
+  nameWithType: IWebSocketService.StartPublishAsync(string, string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.StartPublishAsync(string, string, System.Threading.CancellationToken)
+  nameWithType.vb: IWebSocketService.StartPublishAsync(String, String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.StartPublishAsync(String, String, System.Threading.CancellationToken)
+  name.vb: StartPublishAsync(String, String, CancellationToken)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
+    name: StartPublishAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_StartPublishAsync_System_String_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
+    name: StartPublishAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_StartPublishAsync_System_String_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.StopPublishAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.StopPublishAsync
+  href: Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_StopPublishAsync_System_String_System_Threading_CancellationToken_
+  name: StopPublishAsync
+  nameWithType: WebSocketService.StopPublishAsync
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.StopPublishAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.StopPublishAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.StopPublishAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketService
+  isExternal: true
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_StopPublishAsync_System_String_System_Threading_CancellationToken_
+  name: StopPublishAsync(string, CancellationToken)
+  nameWithType: IWebSocketService.StopPublishAsync(string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.StopPublishAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: IWebSocketService.StopPublishAsync(String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.StopPublishAsync(String, System.Threading.CancellationToken)
+  name.vb: StopPublishAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.StopPublishAsync(System.String,System.Threading.CancellationToken)
+    name: StopPublishAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_StopPublishAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.StopPublishAsync(System.String,System.Threading.CancellationToken)
+    name: StopPublishAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_StopPublishAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.SendAsync
+  href: Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_SendAsync_System_String_System_String_System_Int32_System_Threading_CancellationToken_
+  name: SendAsync
+  nameWithType: WebSocketService.SendAsync
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketService
+  isExternal: true
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SendAsync_System_String_System_String_System_Int32_System_Threading_CancellationToken_
+  name: SendAsync(string, string, int, CancellationToken)
+  nameWithType: IWebSocketService.SendAsync(string, string, int, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(string, string, int, System.Threading.CancellationToken)
+  nameWithType.vb: IWebSocketService.SendAsync(String, String, Integer, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(String, String, Integer, System.Threading.CancellationToken)
+  name.vb: SendAsync(String, String, Integer, CancellationToken)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
+    name: SendAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SendAsync_System_String_System_String_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
+    name: SendAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SendAsync_System_String_System_String_System_Int32_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync
+  href: Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_SendRawAsync_System_String_System_String_System_Threading_CancellationToken_
+  name: SendRawAsync
+  nameWithType: WebSocketService.SendRawAsync
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketService
+  isExternal: true
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SendRawAsync_System_String_System_String_System_Threading_CancellationToken_
+  name: SendRawAsync(string, string, CancellationToken)
+  nameWithType: IWebSocketService.SendRawAsync(string, string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(string, string, System.Threading.CancellationToken)
+  nameWithType.vb: IWebSocketService.SendRawAsync(String, String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(String, String, System.Threading.CancellationToken)
+  name.vb: SendRawAsync(String, String, CancellationToken)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(System.String,System.String,System.Threading.CancellationToken)
+    name: SendRawAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SendRawAsync_System_String_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(System.String,System.String,System.Threading.CancellationToken)
+    name: SendRawAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SendRawAsync_System_String_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )

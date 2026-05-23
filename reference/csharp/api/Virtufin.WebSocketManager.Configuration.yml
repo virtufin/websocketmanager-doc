@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Configuration
+  commentId: N:Virtufin.WebSocketManager.Configuration
+  id: Virtufin.WebSocketManager.Configuration
+  children:
+  - Virtufin.WebSocketManager.Configuration.DaprConstants
+  - Virtufin.WebSocketManager.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.WebSocketManager.Configuration
+  nameWithType: Virtufin.WebSocketManager.Configuration
+  fullName: Virtufin.WebSocketManager.Configuration
+  type: Namespace
+  assemblies:
+  - Virtufin.WebSocketManager
+references:
+- uid: Virtufin.WebSocketManager.Configuration.DaprConstants
+  commentId: T:Virtufin.WebSocketManager.Configuration.DaprConstants
+  href: Virtufin.WebSocketManager.Configuration.DaprConstants.html
+  name: DaprConstants
+  nameWithType: DaprConstants
+  fullName: Virtufin.WebSocketManager.Configuration.DaprConstants
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants
+  commentId: T:Virtufin.WebSocketManager.Configuration.PortConstants
+  href: Virtufin.WebSocketManager.Configuration.PortConstants.html
+  name: PortConstants
+  nameWithType: PortConstants
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants

@@ -1,0 +1,5 @@
+<div class="git-info">
+  {{#gitCommitHash}}
+    <a href="{{gitCommitUrl}}" target="_blank" rel="noopener">{{gitCommitHash}}</a>
+  {{/gitCommitHash}}
+</div>

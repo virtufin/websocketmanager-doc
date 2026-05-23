@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schema/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "Virtufin.WebSocketManager/Virtufin.WebSocketManager.csproj"
+          ],
+          "src": "/workspace/virtufin/virtufin-websocketmanager/src"
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "dest": ".",
+    "template": ["default", "modern", "templates/custom"],
+    "content": [
+      { "files": ["api/**/*.yml"] },
+      { "files": ["index.md"] }
+    ],
+    "globalMetadata": {
+      "_appTitle": "Virtufin WebSocketManager - C# Reference",
+      "_appName": "Virtufin.WebSocketManager",
+      "_appLogoPath": "logo.png",
+      "_appFaviconPath": "favicon.ico",
+      "_appFooter": "© 2026 Häner Consulting. All Rights Reserved.",
+      "_disableContribution": true,
+      "_disableAffix": true,
+      "gitCommitHash": "7c03d8f",
+      "gitCommitUrl": "{git_repo_url}/commit/7c03d8f418b4ddc4d127dc48839e935b7b35f68d",
+      "gitBranch": "master"
+    }
+  }
+}

@@ -1,0 +1,459 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  commentId: T:Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  id: IDaprConnectionRepository
+  parent: Virtufin.WebSocketManager.Services
+  children:
+  - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync(System.String,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAllAsync(System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync(System.String,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync(Virtufin.WebSocketManager.Services.DaprStateStoreEntry,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDaprConnectionRepository
+  nameWithType: IDaprConnectionRepository
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: IDaprConnectionRepository
+    path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Repository for persisting WebSocket connections to Dapr state store.
+  example: []
+  syntax:
+    content: public interface IDaprConnectionRepository
+    content.vb: Public Interface IDaprConnectionRepository
+  derivedClasses:
+  - Virtufin.WebSocketManager.Services.DaprConnectionRepository
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAllAsync(System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAllAsync(System.Threading.CancellationToken)
+  id: GetAllAsync(System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync(CancellationToken)
+  nameWithType: IDaprConnectionRepository.GetAllAsync(CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAllAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: GetAllAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Gets all stored connection entries.
+  example: []
+  syntax:
+    content: Task<IEnumerable<DaprStateStoreEntry>> GetAllAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Virtufin.WebSocketManager.Services.DaprStateStoreEntry}}
+      description: A collection of all stored connection entries.
+    content.vb: Function GetAllAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of DaprStateStoreEntry))
+  overload: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAllAsync*
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync(System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(string, CancellationToken)
+  nameWithType: IDaprConnectionRepository.GetAsync(string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: GetAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Gets a connection entry by its ID.
+  example: []
+  syntax:
+    content: Task<DaprStateStoreEntry?> GetAsync(string id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.String
+      description: The connection ID.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Services.DaprStateStoreEntry}
+      description: The connection entry if found, otherwise null.
+    content.vb: Function GetAsync(id As String, cancellationToken As CancellationToken = Nothing) As Task(Of DaprStateStoreEntry)
+  overload: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync*
+  nameWithType.vb: IDaprConnectionRepository.GetAsync(String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync(String, System.Threading.CancellationToken)
+  name.vb: GetAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync(Virtufin.WebSocketManager.Services.DaprStateStoreEntry,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync(Virtufin.WebSocketManager.Services.DaprStateStoreEntry,System.Threading.CancellationToken)
+  id: SaveAsync(Virtufin.WebSocketManager.Services.DaprStateStoreEntry,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  langs:
+  - csharp
+  - vb
+  name: SaveAsync(DaprStateStoreEntry, CancellationToken)
+  nameWithType: IDaprConnectionRepository.SaveAsync(DaprStateStoreEntry, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync(Virtufin.WebSocketManager.Services.DaprStateStoreEntry, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: SaveAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Saves a connection entry to the state store.
+  example: []
+  syntax:
+    content: Task SaveAsync(DaprStateStoreEntry entry, CancellationToken cancellationToken = default)
+    parameters:
+    - id: entry
+      type: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
+      description: The connection entry to save.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function SaveAsync(entry As DaprStateStoreEntry, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync*
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync(System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(string, CancellationToken)
+  nameWithType: IDaprConnectionRepository.DeleteAsync(string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DeleteAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+    startLine: 41
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Deletes a connection entry from the state store.
+  example: []
+  syntax:
+    content: Task DeleteAsync(string id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.String
+      description: The connection ID to delete.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.vb: Function DeleteAsync(id As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync*
+  nameWithType.vb: IDaprConnectionRepository.DeleteAsync(String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync(String, System.Threading.CancellationToken)
+  name.vb: DeleteAsync(String, CancellationToken)
+references:
+- uid: Virtufin.WebSocketManager.Services
+  commentId: N:Virtufin.WebSocketManager.Services
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services
+  nameWithType: Virtufin.WebSocketManager.Services
+  fullName: Virtufin.WebSocketManager.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAllAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAllAsync
+  href: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_GetAllAsync_System_Threading_CancellationToken_
+  name: GetAllAsync
+  nameWithType: IDaprConnectionRepository.GetAllAsync
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAllAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Virtufin.WebSocketManager.Services.DaprStateStoreEntry}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Virtufin.WebSocketManager.Services.DaprStateStoreEntry}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<DaprStateStoreEntry>>
+  nameWithType: Task<IEnumerable<DaprStateStoreEntry>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<Virtufin.WebSocketManager.Services.DaprStateStoreEntry>>
+  nameWithType.vb: Task(Of IEnumerable(Of DaprStateStoreEntry))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of Virtufin.WebSocketManager.Services.DaprStateStoreEntry))
+  name.vb: Task(Of IEnumerable(Of DaprStateStoreEntry))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
+    name: DaprStateStoreEntry
+    href: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
+    name: DaprStateStoreEntry
+    href: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html
+  - name: )
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync
+  href: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_GetAsync_System_String_System_Threading_CancellationToken_
+  name: GetAsync
+  nameWithType: IDaprConnectionRepository.GetAsync
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Services.DaprStateStoreEntry}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Services.DaprStateStoreEntry}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<DaprStateStoreEntry>
+  nameWithType: Task<DaprStateStoreEntry>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Services.DaprStateStoreEntry>
+  nameWithType.vb: Task(Of DaprStateStoreEntry)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Services.DaprStateStoreEntry)
+  name.vb: Task(Of DaprStateStoreEntry)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
+    name: DaprStateStoreEntry
+    href: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
+    name: DaprStateStoreEntry
+    href: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync
+  href: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_SaveAsync_Virtufin_WebSocketManager_Services_DaprStateStoreEntry_System_Threading_CancellationToken_
+  name: SaveAsync
+  nameWithType: IDaprConnectionRepository.SaveAsync
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync
+- uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
+  commentId: T:Virtufin.WebSocketManager.Services.DaprStateStoreEntry
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html
+  name: DaprStateStoreEntry
+  nameWithType: DaprStateStoreEntry
+  fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync
+  href: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_DeleteAsync_System_String_System_Threading_CancellationToken_
+  name: DeleteAsync
+  nameWithType: IDaprConnectionRepository.DeleteAsync
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync

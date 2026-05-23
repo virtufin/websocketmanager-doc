@@ -1,0 +1,9 @@
+.git-info {
+  padding-top: 15px;
+  margin-right: 20px;
+  font-size: 0.9em;
+}
+
+.git-info a {
+  color: #ddd;
+}

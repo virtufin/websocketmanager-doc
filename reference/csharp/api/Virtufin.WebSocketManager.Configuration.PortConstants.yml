@@ -1,0 +1,570 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants
+  commentId: T:Virtufin.WebSocketManager.Configuration.PortConstants
+  id: PortConstants
+  parent: Virtufin.WebSocketManager.Configuration
+  children:
+  - Virtufin.WebSocketManager.Configuration.PortConstants.DaprGrpcPortKey
+  - Virtufin.WebSocketManager.Configuration.PortConstants.DaprHttpPortKey
+  - Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprGrpcPort
+  - Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprHttpPort
+  - Virtufin.WebSocketManager.Configuration.PortConstants.DefaultGrpcPort
+  - Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
+  - Virtufin.WebSocketManager.Configuration.PortConstants.GrpcPortKey
+  - Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
+  langs:
+  - csharp
+  - vb
+  name: PortConstants
+  nameWithType: PortConstants
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: PortConstants
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+    startLine: 5
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Constants for port configuration.
+  example: []
+  syntax:
+    content: public static class PortConstants
+    content.vb: Public Module PortConstants
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
+  id: DefaultHttpPort
+  parent: Virtufin.WebSocketManager.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: DefaultHttpPort
+  nameWithType: PortConstants.DefaultHttpPort
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DefaultHttpPort
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Default HTTP port for REST APIs.
+  example: []
+  syntax:
+    content: public const int DefaultHttpPort = 5001
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultHttpPort As Integer = 5001
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultGrpcPort
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DefaultGrpcPort
+  id: DefaultGrpcPort
+  parent: Virtufin.WebSocketManager.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: DefaultGrpcPort
+  nameWithType: PortConstants.DefaultGrpcPort
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultGrpcPort
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DefaultGrpcPort
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Default gRPC port for gRPC services.
+  example: []
+  syntax:
+    content: public const int DefaultGrpcPort = 5002
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultGrpcPort As Integer = 5002
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprHttpPort
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprHttpPort
+  id: DefaultDaprHttpPort
+  parent: Virtufin.WebSocketManager.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: DefaultDaprHttpPort
+  nameWithType: PortConstants.DefaultDaprHttpPort
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprHttpPort
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DefaultDaprHttpPort
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Default Dapr HTTP port.
+  example: []
+  syntax:
+    content: public const int DefaultDaprHttpPort = 3500
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultDaprHttpPort As Integer = 3500
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprGrpcPort
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprGrpcPort
+  id: DefaultDaprGrpcPort
+  parent: Virtufin.WebSocketManager.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: DefaultDaprGrpcPort
+  nameWithType: PortConstants.DefaultDaprGrpcPort
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprGrpcPort
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DefaultDaprGrpcPort
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Default Dapr gRPC port.
+  example: []
+  syntax:
+    content: public const int DefaultDaprGrpcPort = 50001
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultDaprGrpcPort As Integer = 50001
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
+  id: HttpPortKey
+  parent: Virtufin.WebSocketManager.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: HttpPortKey
+  nameWithType: PortConstants.HttpPortKey
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: HttpPortKey
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Configuration key for HTTP port.
+  example: []
+  syntax:
+    content: public const string HttpPortKey = "HttpPort"
+    return:
+      type: System.String
+    content.vb: Public Const HttpPortKey As String = "HttpPort"
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.GrpcPortKey
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.GrpcPortKey
+  id: GrpcPortKey
+  parent: Virtufin.WebSocketManager.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: GrpcPortKey
+  nameWithType: PortConstants.GrpcPortKey
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.GrpcPortKey
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: GrpcPortKey
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+    startLine: 35
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Configuration key for gRPC port.
+  example: []
+  syntax:
+    content: public const string GrpcPortKey = "GrpcPort"
+    return:
+      type: System.String
+    content.vb: Public Const GrpcPortKey As String = "GrpcPort"
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.DaprHttpPortKey
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DaprHttpPortKey
+  id: DaprHttpPortKey
+  parent: Virtufin.WebSocketManager.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: DaprHttpPortKey
+  nameWithType: PortConstants.DaprHttpPortKey
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.DaprHttpPortKey
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DaprHttpPortKey
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+    startLine: 40
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Configuration key for Dapr HTTP port.
+  example: []
+  syntax:
+    content: public const string DaprHttpPortKey = "DaprHttpPort"
+    return:
+      type: System.String
+    content.vb: Public Const DaprHttpPortKey As String = "DaprHttpPort"
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.DaprGrpcPortKey
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DaprGrpcPortKey
+  id: DaprGrpcPortKey
+  parent: Virtufin.WebSocketManager.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: DaprGrpcPortKey
+  nameWithType: PortConstants.DaprGrpcPortKey
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.DaprGrpcPortKey
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DaprGrpcPortKey
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+    startLine: 45
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Configuration key for Dapr gRPC port.
+  example: []
+  syntax:
+    content: public const string DaprGrpcPortKey = "DaprGrpcPort"
+    return:
+      type: System.String
+    content.vb: Public Const DaprGrpcPortKey As String = "DaprGrpcPort"
+references:
+- uid: Virtufin.WebSocketManager.Configuration
+  commentId: N:Virtufin.WebSocketManager.Configuration
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Configuration
+  nameWithType: Virtufin.WebSocketManager.Configuration
+  fullName: Virtufin.WebSocketManager.Configuration
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Configuration
+    name: Configuration
+    href: Virtufin.WebSocketManager.Configuration.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Configuration
+    name: Configuration
+    href: Virtufin.WebSocketManager.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class DistributedWebSocketConnectionStore | Virtufin WebSocketManager - C# Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DistributedWebSocketConnectionStore | Virtufin WebSocketManager - C# Reference ">
+      
+      <meta name="description" content="Distributed implementation of IWebSocketConnectionStore that uses Dapr state store for persistence.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.png" alt="Virtufin.WebSocketManager">
+            Virtufin.WebSocketManager
+          </a>
+          <div class="git-info">
+              <a href="{git_repo_url}/commit/7c03d8f418b4ddc4d127dc48839e935b7b35f68d" target="_blank" rel="noopener">7c03d8f</a>
+          </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore">
+
+
+
+  <h1 id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore" class="text-break">
+Class DistributedWebSocketConnectionStore  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.WebSocketManager.html">WebSocketManager</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Distributed implementation of IWebSocketConnectionStore that uses Dapr state store for persistence.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DistributedWebSocketConnectionStore : IWebSocketConnectionStore</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DistributedWebSocketConnectionStore</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html">IWebSocketConnectionStore</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore__ctor_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore__ctor_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_WebSocketManager_Services_IInstanceIdProvider_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider)">
+  DistributedWebSocketConnectionStore(IDaprConnectionRepository, IInstanceIdProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the DistributedWebSocketConnectionStore class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DistributedWebSocketConnectionStore(IDaprConnectionRepository repository, IInstanceIdProvider instanceIdProvider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>repository</code> <a class="xref" href="Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html">IDaprConnectionRepository</a></dt>
+    <dd><p>The Dapr connection repository for persistence.</p>
+</dd>
+    <dt><code>instanceIdProvider</code> <a class="xref" href="Virtufin.WebSocketManager.Services.IInstanceIdProvider.html">IInstanceIdProvider</a></dt>
+    <dd><p>The instance ID provider.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_ClearAllConnectionsAsync_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ClearAllConnectionsAsync*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_ClearAllConnectionsAsync_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ClearAllConnectionsAsync(System.Threading.CancellationToken)">
+  ClearAllConnectionsAsync(CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all WebSocket connections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ClearAllConnectionsAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_CreateConnectionAsync_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.CreateConnectionAsync*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_CreateConnectionAsync_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.CreateConnectionAsync(System.String,System.Boolean,System.Threading.CancellationToken)">
+  CreateConnectionAsync(string, bool, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new WebSocket connection entry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;WebSocketConnection&gt; CreateConnectionAsync(string url, bool autoReconnect, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>autoReconnect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Models.WebSocketConnection.html">WebSocketConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_GetAllConnectionsAsync_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetAllConnectionsAsync*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_GetAllConnectionsAsync_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetAllConnectionsAsync(System.Threading.CancellationToken)">
+  GetAllConnectionsAsync(CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all WebSocket connections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;WebSocketConnection&gt;&gt; GetAllConnectionsAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Models.WebSocketConnection.html">WebSocketConnection</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_GetConnectionAsync_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionAsync*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_GetConnectionAsync_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionAsync(System.String,System.Threading.CancellationToken)">
+  GetConnectionAsync(string, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a WebSocket connection by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;WebSocketConnection?&gt; GetConnectionAsync(string id, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Models.WebSocketConnection.html">WebSocketConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_RemoveConnectionAsync_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.RemoveConnectionAsync*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_RemoveConnectionAsync_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.RemoveConnectionAsync(System.String,System.Threading.CancellationToken)">
+  RemoveConnectionAsync(string, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a WebSocket connection by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RemoveConnectionAsync(string id, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_UpdateConnectionAsync_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.UpdateConnectionAsync*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_UpdateConnectionAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.UpdateConnectionAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Threading.CancellationToken)">
+  UpdateConnectionAsync(WebSocketConnection, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates an existing WebSocket connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UpdateConnectionAsync(WebSocketConnection connection, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connection</code> <a class="xref" href="Virtufin.WebSocketManager.Models.WebSocketConnection.html">WebSocketConnection</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Häner Consulting. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

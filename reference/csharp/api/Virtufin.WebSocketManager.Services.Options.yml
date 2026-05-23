@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Services.Options
+  commentId: N:Virtufin.WebSocketManager.Services.Options
+  id: Virtufin.WebSocketManager.Services.Options
+  children:
+  - Virtufin.WebSocketManager.Services.Options.WebSocketOptions
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.WebSocketManager.Services.Options
+  nameWithType: Virtufin.WebSocketManager.Services.Options
+  fullName: Virtufin.WebSocketManager.Services.Options
+  type: Namespace
+  assemblies:
+  - Virtufin.WebSocketManager
+references:
+- uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions
+  commentId: T:Virtufin.WebSocketManager.Services.Options.WebSocketOptions
+  href: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.html
+  name: WebSocketOptions
+  nameWithType: WebSocketOptions
+  fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions

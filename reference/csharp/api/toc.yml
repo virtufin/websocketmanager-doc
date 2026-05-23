@@ -1,0 +1,149 @@
+### YamlMime:TableOfContent
+items:
+- uid: Virtufin.WebSocketManager.Configuration
+  name: Virtufin.WebSocketManager.Configuration
+  type: Namespace
+  items:
+  - uid: Virtufin.WebSocketManager.Configuration.DaprConstants
+    name: DaprConstants
+    type: Class
+  - uid: Virtufin.WebSocketManager.Configuration.PortConstants
+    name: PortConstants
+    type: Class
+- uid: Virtufin.WebSocketManager.Models
+  name: Virtufin.WebSocketManager.Models
+  type: Namespace
+  items:
+  - uid: Virtufin.WebSocketManager.Models.ConnectionStatus
+    name: ConnectionStatus
+    type: Enum
+  - uid: Virtufin.WebSocketManager.Models.WebSocketConnection
+    name: WebSocketConnection
+    type: Class
+- uid: Virtufin.WebSocketManager.Protos
+  name: Virtufin.WebSocketManager.Protos
+  type: Namespace
+  items:
+  - uid: Virtufin.WebSocketManager.Protos.ConnectRequest
+    name: ConnectRequest
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
+    name: DisconnectRequest
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.DisconnectResponse
+    name: DisconnectResponse
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.ListRequest
+    name: ListRequest
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.ListResponse
+    name: ListResponse
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.SendRawRequest
+    name: SendRawRequest
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.SendRawResponse
+    name: SendRawResponse
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.SendRequest
+    name: SendRequest
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.SendResponse
+    name: SendResponse
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.StartPublishRequest
+    name: StartPublishRequest
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.StartPublishResponse
+    name: StartPublishResponse
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.StopPublishRequest
+    name: StopPublishRequest
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.StopPublishResponse
+    name: StopPublishResponse
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketConnection
+    name: WebSocketConnection
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager
+    name: WebSocketManager
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+    name: WebSocketManager.WebSocketManagerBase
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+    name: WebSocketManagerService
+    type: Class
+  - uid: Virtufin.WebSocketManager.Protos.WebsocketmanagerReflection
+    name: WebsocketmanagerReflection
+    type: Class
+- uid: Virtufin.WebSocketManager.Services
+  name: Virtufin.WebSocketManager.Services
+  type: Namespace
+  items:
+  - uid: Virtufin.WebSocketManager.Services.ConnectionNotFoundException
+    name: ConnectionNotFoundException
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.ConnectionOwnershipException
+    name: ConnectionOwnershipException
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository
+    name: DaprConnectionRepository
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.DaprPublisher
+    name: DaprPublisher
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
+    name: DaprStateStoreEntry
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
+    name: DefaultInstanceIdProvider
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
+    name: DistributedWebSocketConnectionStore
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+    name: IDaprConnectionRepository
+    type: Interface
+  - uid: Virtufin.WebSocketManager.Services.IDaprPublisher
+    name: IDaprPublisher
+    type: Interface
+  - uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+    name: IInstanceIdProvider
+    type: Interface
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+    name: IWebSocketClientWrapper
+    type: Interface
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
+    name: IWebSocketConnectionStore
+    type: Interface
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService
+    name: IWebSocketService
+    type: Interface
+  - uid: Virtufin.WebSocketManager.Services.MessageSendException
+    name: MessageSendException
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.MessageTimeoutException
+    name: MessageTimeoutException
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper
+    name: WebSocketClientWrapper
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.WebSocketNotConnectedException
+    name: WebSocketNotConnectedException
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.WebSocketService
+    name: WebSocketService
+    type: Class
+- uid: Virtufin.WebSocketManager.Services.Options
+  name: Virtufin.WebSocketManager.Services.Options
+  type: Namespace
+  items:
+  - uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions
+    name: WebSocketOptions
+    type: Class
+memberLayout: SamePage

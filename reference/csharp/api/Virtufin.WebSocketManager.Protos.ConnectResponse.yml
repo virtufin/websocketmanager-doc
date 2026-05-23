@@ -1,0 +1,1420 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+  commentId: T:Virtufin.WebSocketManager.Protos.ConnectResponse
+  id: ConnectResponse
+  parent: Virtufin.WebSocketManager.Protos
+  children:
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.#ctor
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.#ctor(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.CalculateSize
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.Clone
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.Descriptor
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.Equals(System.Object)
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.Equals(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.GetHashCode
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.Id
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.IdFieldNumber
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.MergeFrom(Google.Protobuf.CodedInputStream)
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.MergeFrom(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.Parser
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.Status
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.StatusFieldNumber
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.ToString
+  - Virtufin.WebSocketManager.Protos.ConnectResponse.WriteTo(Google.Protobuf.CodedOutputStream)
+  langs:
+  - csharp
+  - vb
+  name: ConnectResponse
+  nameWithType: ConnectResponse
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse
+  type: Class
+  source:
+    id: ConnectResponse
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 318
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: 'public sealed class ConnectResponse : IMessage<ConnectResponse>, IEquatable<ConnectResponse>, IDeepCloneable<ConnectResponse>, IBufferMessage, IMessage'
+    content.vb: Public NotInheritable Class ConnectResponse Implements IMessage(Of ConnectResponse), IEquatable(Of ConnectResponse), IDeepCloneable(Of ConnectResponse), IBufferMessage, IMessage
+  inheritance:
+  - System.Object
+  implements:
+  - Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  - System.IEquatable{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  - Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  - Google.Protobuf.IBufferMessage
+  - Google.Protobuf.IMessage
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.Parser
+  commentId: P:Virtufin.WebSocketManager.Protos.ConnectResponse.Parser
+  id: Parser
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: Parser
+  nameWithType: ConnectResponse.Parser
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.Parser
+  type: Property
+  source:
+    id: Parser
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 326
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: public static MessageParser<ConnectResponse> Parser { get; }
+    parameters: []
+    return:
+      type: Google.Protobuf.MessageParser{Virtufin.WebSocketManager.Protos.ConnectResponse}
+    content.vb: Public Shared ReadOnly Property Parser As MessageParser(Of ConnectResponse)
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.Parser*
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.Descriptor
+  commentId: P:Virtufin.WebSocketManager.Protos.ConnectResponse.Descriptor
+  id: Descriptor
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: Descriptor
+  nameWithType: ConnectResponse.Descriptor
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.Descriptor
+  type: Property
+  source:
+    id: Descriptor
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 330
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: public static MessageDescriptor Descriptor { get; }
+    parameters: []
+    return:
+      type: Google.Protobuf.Reflection.MessageDescriptor
+    content.vb: Public Shared ReadOnly Property Descriptor As MessageDescriptor
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.Descriptor*
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.#ctor
+  commentId: M:Virtufin.WebSocketManager.Protos.ConnectResponse.#ctor
+  id: '#ctor'
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: ConnectResponse()
+  nameWithType: ConnectResponse.ConnectResponse()
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.ConnectResponse()
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 342
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: public ConnectResponse()
+    content.vb: Public Sub New()
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.#ctor*
+  nameWithType.vb: ConnectResponse.New()
+  fullName.vb: Virtufin.WebSocketManager.Protos.ConnectResponse.New()
+  name.vb: New()
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.#ctor(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  commentId: M:Virtufin.WebSocketManager.Protos.ConnectResponse.#ctor(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  id: '#ctor(Virtufin.WebSocketManager.Protos.ConnectResponse)'
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: ConnectResponse(ConnectResponse)
+  nameWithType: ConnectResponse.ConnectResponse(ConnectResponse)
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.ConnectResponse(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 350
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: public ConnectResponse(ConnectResponse other)
+    parameters:
+    - id: other
+      type: Virtufin.WebSocketManager.Protos.ConnectResponse
+    content.vb: Public Sub New(other As ConnectResponse)
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.#ctor*
+  nameWithType.vb: ConnectResponse.New(ConnectResponse)
+  fullName.vb: Virtufin.WebSocketManager.Protos.ConnectResponse.New(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  name.vb: New(ConnectResponse)
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.Clone
+  commentId: M:Virtufin.WebSocketManager.Protos.ConnectResponse.Clone
+  id: Clone
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: ConnectResponse.Clone()
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.Clone()
+  type: Method
+  source:
+    id: Clone
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 358
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Creates a deep clone of this object.
+  example: []
+  syntax:
+    content: public ConnectResponse Clone()
+    return:
+      type: Virtufin.WebSocketManager.Protos.ConnectResponse
+      description: A deep clone of this object.
+    content.vb: Public Function Clone() As ConnectResponse
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.Clone*
+  implements:
+  - Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.ConnectResponse}.Clone
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.IdFieldNumber
+  commentId: F:Virtufin.WebSocketManager.Protos.ConnectResponse.IdFieldNumber
+  id: IdFieldNumber
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: IdFieldNumber
+  nameWithType: ConnectResponse.IdFieldNumber
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.IdFieldNumber
+  type: Field
+  source:
+    id: IdFieldNumber
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 365
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Field number for the "id" field.
+  example: []
+  syntax:
+    content: public const int IdFieldNumber = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const IdFieldNumber As Integer = 1
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.Id
+  commentId: P:Virtufin.WebSocketManager.Protos.ConnectResponse.Id
+  id: Id
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ConnectResponse.Id
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.Id
+  type: Property
+  source:
+    id: Id
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 367
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.Id*
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.StatusFieldNumber
+  commentId: F:Virtufin.WebSocketManager.Protos.ConnectResponse.StatusFieldNumber
+  id: StatusFieldNumber
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: StatusFieldNumber
+  nameWithType: ConnectResponse.StatusFieldNumber
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.StatusFieldNumber
+  type: Field
+  source:
+    id: StatusFieldNumber
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 377
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Field number for the "status" field.
+  example: []
+  syntax:
+    content: public const int StatusFieldNumber = 2
+    return:
+      type: System.Int32
+    content.vb: Public Const StatusFieldNumber As Integer = 2
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.Status
+  commentId: P:Virtufin.WebSocketManager.Protos.ConnectResponse.Status
+  id: Status
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: ConnectResponse.Status
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.Status
+  type: Property
+  source:
+    id: Status
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 379
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  syntax:
+    content: public string Status { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Status As String
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.Status*
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.Equals(System.Object)
+  commentId: M:Virtufin.WebSocketManager.Protos.ConnectResponse.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: ConnectResponse.Equals(object)
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.Equals(object)
+  type: Method
+  source:
+    id: Equals
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 388
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.Equals*
+  nameWithType.vb: ConnectResponse.Equals(Object)
+  fullName.vb: Virtufin.WebSocketManager.Protos.ConnectResponse.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.Equals(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  commentId: M:Virtufin.WebSocketManager.Protos.ConnectResponse.Equals(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  id: Equals(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: Equals(ConnectResponse)
+  nameWithType: ConnectResponse.Equals(ConnectResponse)
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.Equals(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  type: Method
+  source:
+    id: Equals
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 394
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(ConnectResponse other)
+    parameters:
+    - id: other
+      type: Virtufin.WebSocketManager.Protos.ConnectResponse
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As ConnectResponse) As Boolean
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.Equals*
+  implements:
+  - System.IEquatable{Virtufin.WebSocketManager.Protos.ConnectResponse}.Equals(Virtufin.WebSocketManager.Protos.ConnectResponse)
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.GetHashCode
+  commentId: M:Virtufin.WebSocketManager.Protos.ConnectResponse.GetHashCode
+  id: GetHashCode
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ConnectResponse.GetHashCode()
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 408
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.GetHashCode*
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.ToString
+  commentId: M:Virtufin.WebSocketManager.Protos.ConnectResponse.ToString
+  id: ToString
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ConnectResponse.ToString()
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 420
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.ToString*
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.WriteTo(Google.Protobuf.CodedOutputStream)
+  commentId: M:Virtufin.WebSocketManager.Protos.ConnectResponse.WriteTo(Google.Protobuf.CodedOutputStream)
+  id: WriteTo(Google.Protobuf.CodedOutputStream)
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: WriteTo(CodedOutputStream)
+  nameWithType: ConnectResponse.WriteTo(CodedOutputStream)
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.WriteTo(Google.Protobuf.CodedOutputStream)
+  type: Method
+  source:
+    id: WriteTo
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 426
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Writes the data to the given coded output stream.
+  example: []
+  syntax:
+    content: public void WriteTo(CodedOutputStream output)
+    parameters:
+    - id: output
+      type: Google.Protobuf.CodedOutputStream
+      description: Coded output stream to write the data to. Must not be null.
+    content.vb: Public Sub WriteTo(output As CodedOutputStream)
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.WriteTo*
+  implements:
+  - Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.CalculateSize
+  commentId: M:Virtufin.WebSocketManager.Protos.ConnectResponse.CalculateSize
+  id: CalculateSize
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: CalculateSize()
+  nameWithType: ConnectResponse.CalculateSize()
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.CalculateSize()
+  type: Method
+  source:
+    id: CalculateSize
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 464
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Calculates the size of this message in Protocol Buffer wire format, in bytes.
+  example: []
+  syntax:
+    content: public int CalculateSize()
+    return:
+      type: System.Int32
+      description: >-
+        The number of bytes required to write this message
+                    to a coded output stream.
+    content.vb: Public Function CalculateSize() As Integer
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.CalculateSize*
+  implements:
+  - Google.Protobuf.IMessage.CalculateSize
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.MergeFrom(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  commentId: M:Virtufin.WebSocketManager.Protos.ConnectResponse.MergeFrom(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  id: MergeFrom(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: MergeFrom(ConnectResponse)
+  nameWithType: ConnectResponse.MergeFrom(ConnectResponse)
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.MergeFrom(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  type: Method
+  source:
+    id: MergeFrom
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 480
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Merges the given message into this one.
+  remarks: See the user guide for precise merge semantics.
+  example: []
+  syntax:
+    content: public void MergeFrom(ConnectResponse other)
+    parameters:
+    - id: other
+      type: Virtufin.WebSocketManager.Protos.ConnectResponse
+    content.vb: Public Sub MergeFrom(other As ConnectResponse)
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.MergeFrom*
+  implements:
+  - Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.ConnectResponse}.MergeFrom(Virtufin.WebSocketManager.Protos.ConnectResponse)
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.MergeFrom(Google.Protobuf.CodedInputStream)
+  commentId: M:Virtufin.WebSocketManager.Protos.ConnectResponse.MergeFrom(Google.Protobuf.CodedInputStream)
+  id: MergeFrom(Google.Protobuf.CodedInputStream)
+  parent: Virtufin.WebSocketManager.Protos.ConnectResponse
+  langs:
+  - csharp
+  - vb
+  name: MergeFrom(CodedInputStream)
+  nameWithType: ConnectResponse.MergeFrom(CodedInputStream)
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.MergeFrom(Google.Protobuf.CodedInputStream)
+  type: Method
+  source:
+    id: MergeFrom
+    path: /workspace/virtufin/virtufin-websocketmanager/src/Virtufin.WebSocketManager/obj/Release/net10.0/Protos/Websocketmanager.cs
+    startLine: 495
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: Merges the data from the specified coded input stream with the current message.
+  remarks: See the user guide for precise merge semantics.
+  example: []
+  syntax:
+    content: public void MergeFrom(CodedInputStream input)
+    parameters:
+    - id: input
+      type: Google.Protobuf.CodedInputStream
+      description: ''
+    content.vb: Public Sub MergeFrom(input As CodedInputStream)
+  overload: Virtufin.WebSocketManager.Protos.ConnectResponse.MergeFrom*
+  implements:
+  - Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+references:
+- uid: Virtufin.WebSocketManager.Protos
+  commentId: N:Virtufin.WebSocketManager.Protos
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Protos
+  nameWithType: Virtufin.WebSocketManager.Protos
+  fullName: Virtufin.WebSocketManager.Protos
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos
+    name: Protos
+    href: Virtufin.WebSocketManager.Protos.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos
+    name: Protos
+    href: Virtufin.WebSocketManager.Protos.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  commentId: T:Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.IMessage`1
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  name: IMessage<ConnectResponse>
+  nameWithType: IMessage<ConnectResponse>
+  fullName: Google.Protobuf.IMessage<Virtufin.WebSocketManager.Protos.ConnectResponse>
+  nameWithType.vb: IMessage(Of ConnectResponse)
+  fullName.vb: Google.Protobuf.IMessage(Of Virtufin.WebSocketManager.Protos.ConnectResponse)
+  name.vb: IMessage(Of ConnectResponse)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: )
+- uid: System.IEquatable{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  commentId: T:System.IEquatable{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ConnectResponse>
+  nameWithType: IEquatable<ConnectResponse>
+  fullName: System.IEquatable<Virtufin.WebSocketManager.Protos.ConnectResponse>
+  nameWithType.vb: IEquatable(Of ConnectResponse)
+  fullName.vb: System.IEquatable(Of Virtufin.WebSocketManager.Protos.ConnectResponse)
+  name.vb: IEquatable(Of ConnectResponse)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  commentId: T:Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.IDeepCloneable`1
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  name: IDeepCloneable<ConnectResponse>
+  nameWithType: IDeepCloneable<ConnectResponse>
+  fullName: Google.Protobuf.IDeepCloneable<Virtufin.WebSocketManager.Protos.ConnectResponse>
+  nameWithType.vb: IDeepCloneable(Of ConnectResponse)
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of Virtufin.WebSocketManager.Protos.ConnectResponse)
+  name.vb: IDeepCloneable(Of ConnectResponse)
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: )
+- uid: Google.Protobuf.IBufferMessage
+  commentId: T:Google.Protobuf.IBufferMessage
+  parent: Google.Protobuf
+  isExternal: true
+  name: IBufferMessage
+  nameWithType: IBufferMessage
+  fullName: Google.Protobuf.IBufferMessage
+- uid: Google.Protobuf.IMessage
+  commentId: T:Google.Protobuf.IMessage
+  parent: Google.Protobuf
+  isExternal: true
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Google.Protobuf.IMessage
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Google.Protobuf.IMessage`1
+  commentId: T:Google.Protobuf.IMessage`1
+  isExternal: true
+  name: IMessage<T>
+  nameWithType: IMessage<T>
+  fullName: Google.Protobuf.IMessage<T>
+  nameWithType.vb: IMessage(Of T)
+  fullName.vb: Google.Protobuf.IMessage(Of T)
+  name.vb: IMessage(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Google.Protobuf
+  commentId: N:Google.Protobuf
+  isExternal: true
+  name: Google.Protobuf
+  nameWithType: Google.Protobuf
+  fullName: Google.Protobuf
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable`1
+  commentId: T:Google.Protobuf.IDeepCloneable`1
+  isExternal: true
+  name: IDeepCloneable<T>
+  nameWithType: IDeepCloneable<T>
+  fullName: Google.Protobuf.IDeepCloneable<T>
+  nameWithType.vb: IDeepCloneable(Of T)
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of T)
+  name.vb: IDeepCloneable(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.Parser*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.ConnectResponse.Parser
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html#Virtufin_WebSocketManager_Protos_ConnectResponse_Parser
+  name: Parser
+  nameWithType: ConnectResponse.Parser
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.Parser
+- uid: Google.Protobuf.MessageParser{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  commentId: T:Google.Protobuf.MessageParser{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.MessageParser`1
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  name: MessageParser<ConnectResponse>
+  nameWithType: MessageParser<ConnectResponse>
+  fullName: Google.Protobuf.MessageParser<Virtufin.WebSocketManager.Protos.ConnectResponse>
+  nameWithType.vb: MessageParser(Of ConnectResponse)
+  fullName.vb: Google.Protobuf.MessageParser(Of Virtufin.WebSocketManager.Protos.ConnectResponse)
+  name.vb: MessageParser(Of ConnectResponse)
+  spec.csharp:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: )
+- uid: Google.Protobuf.MessageParser`1
+  commentId: T:Google.Protobuf.MessageParser`1
+  isExternal: true
+  name: MessageParser<T>
+  nameWithType: MessageParser<T>
+  fullName: Google.Protobuf.MessageParser<T>
+  nameWithType.vb: MessageParser(Of T)
+  fullName.vb: Google.Protobuf.MessageParser(Of T)
+  name.vb: MessageParser(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.Descriptor*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.ConnectResponse.Descriptor
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html#Virtufin_WebSocketManager_Protos_ConnectResponse_Descriptor
+  name: Descriptor
+  nameWithType: ConnectResponse.Descriptor
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.Descriptor
+- uid: Google.Protobuf.Reflection.MessageDescriptor
+  commentId: T:Google.Protobuf.Reflection.MessageDescriptor
+  parent: Google.Protobuf.Reflection
+  isExternal: true
+  name: MessageDescriptor
+  nameWithType: MessageDescriptor
+  fullName: Google.Protobuf.Reflection.MessageDescriptor
+- uid: Google.Protobuf.Reflection
+  commentId: N:Google.Protobuf.Reflection
+  isExternal: true
+  name: Google.Protobuf.Reflection
+  nameWithType: Google.Protobuf.Reflection
+  fullName: Google.Protobuf.Reflection
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Reflection
+    name: Reflection
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Reflection
+    name: Reflection
+    isExternal: true
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.#ctor*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.ConnectResponse.#ctor
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html#Virtufin_WebSocketManager_Protos_ConnectResponse__ctor
+  name: ConnectResponse
+  nameWithType: ConnectResponse.ConnectResponse
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.ConnectResponse
+  nameWithType.vb: ConnectResponse.New
+  fullName.vb: Virtufin.WebSocketManager.Protos.ConnectResponse.New
+  name.vb: New
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+  commentId: T:Virtufin.WebSocketManager.Protos.ConnectResponse
+  parent: Virtufin.WebSocketManager.Protos
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  name: ConnectResponse
+  nameWithType: ConnectResponse
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.Clone*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.ConnectResponse.Clone
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html#Virtufin_WebSocketManager_Protos_ConnectResponse_Clone
+  name: Clone
+  nameWithType: ConnectResponse.Clone
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.Clone
+- uid: Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.ConnectResponse}.Clone
+  commentId: M:Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.ConnectResponse}.Clone
+  parent: Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  definition: Google.Protobuf.IDeepCloneable`1.Clone
+  name: Clone()
+  nameWithType: IDeepCloneable<ConnectResponse>.Clone()
+  fullName: Google.Protobuf.IDeepCloneable<Virtufin.WebSocketManager.Protos.ConnectResponse>.Clone()
+  nameWithType.vb: IDeepCloneable(Of ConnectResponse).Clone()
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of Virtufin.WebSocketManager.Protos.ConnectResponse).Clone()
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.ConnectResponse}.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable{Virtufin.WebSocketManager.Protos.ConnectResponse}.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable`1.Clone
+  commentId: M:Google.Protobuf.IDeepCloneable`1.Clone
+  isExternal: true
+  name: Clone()
+  nameWithType: IDeepCloneable<T>.Clone()
+  fullName: Google.Protobuf.IDeepCloneable<T>.Clone()
+  nameWithType.vb: IDeepCloneable(Of T).Clone()
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of T).Clone()
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.Id*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.ConnectResponse.Id
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html#Virtufin_WebSocketManager_Protos_ConnectResponse_Id
+  name: Id
+  nameWithType: ConnectResponse.Id
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.Status*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.ConnectResponse.Status
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html#Virtufin_WebSocketManager_Protos_ConnectResponse_Status
+  name: Status
+  nameWithType: ConnectResponse.Status
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.Status
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.Equals*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.ConnectResponse.Equals
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html#Virtufin_WebSocketManager_Protos_ConnectResponse_Equals_System_Object_
+  name: Equals
+  nameWithType: ConnectResponse.Equals
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable{Virtufin.WebSocketManager.Protos.ConnectResponse}.Equals(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  commentId: M:System.IEquatable{Virtufin.WebSocketManager.Protos.ConnectResponse}.Equals(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  parent: System.IEquatable{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ConnectResponse)
+  nameWithType: IEquatable<ConnectResponse>.Equals(ConnectResponse)
+  fullName: System.IEquatable<Virtufin.WebSocketManager.Protos.ConnectResponse>.Equals(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  nameWithType.vb: IEquatable(Of ConnectResponse).Equals(ConnectResponse)
+  fullName.vb: System.IEquatable(Of Virtufin.WebSocketManager.Protos.ConnectResponse).Equals(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.WebSocketManager.Protos.ConnectResponse}.Equals(Virtufin.WebSocketManager.Protos.ConnectResponse)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.WebSocketManager.Protos.ConnectResponse}.Equals(Virtufin.WebSocketManager.Protos.ConnectResponse)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.GetHashCode*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.ConnectResponse.GetHashCode
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html#Virtufin_WebSocketManager_Protos_ConnectResponse_GetHashCode
+  name: GetHashCode
+  nameWithType: ConnectResponse.GetHashCode
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.ToString*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.ConnectResponse.ToString
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html#Virtufin_WebSocketManager_Protos_ConnectResponse_ToString
+  name: ToString
+  nameWithType: ConnectResponse.ToString
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.ToString
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.WriteTo*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.ConnectResponse.WriteTo
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html#Virtufin_WebSocketManager_Protos_ConnectResponse_WriteTo_Google_Protobuf_CodedOutputStream_
+  name: WriteTo
+  nameWithType: ConnectResponse.WriteTo
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.WriteTo
+- uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  commentId: M:Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: WriteTo(CodedOutputStream)
+  nameWithType: IMessage.WriteTo(CodedOutputStream)
+  fullName: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+    name: WriteTo
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedOutputStream
+    name: CodedOutputStream
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+    name: WriteTo
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedOutputStream
+    name: CodedOutputStream
+    isExternal: true
+  - name: )
+- uid: Google.Protobuf.CodedOutputStream
+  commentId: T:Google.Protobuf.CodedOutputStream
+  parent: Google.Protobuf
+  isExternal: true
+  name: CodedOutputStream
+  nameWithType: CodedOutputStream
+  fullName: Google.Protobuf.CodedOutputStream
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.CalculateSize*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.ConnectResponse.CalculateSize
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html#Virtufin_WebSocketManager_Protos_ConnectResponse_CalculateSize
+  name: CalculateSize
+  nameWithType: ConnectResponse.CalculateSize
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.CalculateSize
+- uid: Google.Protobuf.IMessage.CalculateSize
+  commentId: M:Google.Protobuf.IMessage.CalculateSize
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: CalculateSize()
+  nameWithType: IMessage.CalculateSize()
+  fullName: Google.Protobuf.IMessage.CalculateSize()
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.CalculateSize
+    name: CalculateSize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.CalculateSize
+    name: CalculateSize
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.ConnectResponse.MergeFrom*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.ConnectResponse.MergeFrom
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html#Virtufin_WebSocketManager_Protos_ConnectResponse_MergeFrom_Virtufin_WebSocketManager_Protos_ConnectResponse_
+  name: MergeFrom
+  nameWithType: ConnectResponse.MergeFrom
+  fullName: Virtufin.WebSocketManager.Protos.ConnectResponse.MergeFrom
+- uid: Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.ConnectResponse}.MergeFrom(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  commentId: M:Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.ConnectResponse}.MergeFrom(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  parent: Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.ConnectResponse}
+  definition: Google.Protobuf.IMessage`1.MergeFrom(`0)
+  href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  name: MergeFrom(ConnectResponse)
+  nameWithType: IMessage<ConnectResponse>.MergeFrom(ConnectResponse)
+  fullName: Google.Protobuf.IMessage<Virtufin.WebSocketManager.Protos.ConnectResponse>.MergeFrom(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  nameWithType.vb: IMessage(Of ConnectResponse).MergeFrom(ConnectResponse)
+  fullName.vb: Google.Protobuf.IMessage(Of Virtufin.WebSocketManager.Protos.ConnectResponse).MergeFrom(Virtufin.WebSocketManager.Protos.ConnectResponse)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.ConnectResponse}.MergeFrom(Virtufin.WebSocketManager.Protos.ConnectResponse)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage{Virtufin.WebSocketManager.Protos.ConnectResponse}.MergeFrom(Virtufin.WebSocketManager.Protos.ConnectResponse)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
+    name: ConnectResponse
+    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
+  - name: )
+- uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+  commentId: M:Google.Protobuf.IMessage`1.MergeFrom(`0)
+  isExternal: true
+  name: MergeFrom(T)
+  nameWithType: IMessage<T>.MergeFrom(T)
+  fullName: Google.Protobuf.IMessage<T>.MergeFrom(T)
+  nameWithType.vb: IMessage(Of T).MergeFrom(T)
+  fullName.vb: Google.Protobuf.IMessage(Of T).MergeFrom(T)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+- uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  commentId: M:Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: MergeFrom(CodedInputStream)
+  nameWithType: IMessage.MergeFrom(CodedInputStream)
+  fullName: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedInputStream
+    name: CodedInputStream
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedInputStream
+    name: CodedInputStream
+    isExternal: true
+  - name: )
+- uid: Google.Protobuf.CodedInputStream
+  commentId: T:Google.Protobuf.CodedInputStream
+  parent: Google.Protobuf
+  isExternal: true
+  name: CodedInputStream
+  nameWithType: CodedInputStream
+  fullName: Google.Protobuf.CodedInputStream

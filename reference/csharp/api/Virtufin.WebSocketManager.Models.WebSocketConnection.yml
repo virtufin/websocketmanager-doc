@@ -1,0 +1,853 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection
+  commentId: T:Virtufin.WebSocketManager.Models.WebSocketConnection
+  id: WebSocketConnection
+  parent: Virtufin.WebSocketManager.Models
+  children:
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.AutoReconnect
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.CreatedAt
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.Id
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.Status
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.Topic
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.Url
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
+  langs:
+  - csharp
+  - vb
+  name: WebSocketConnection
+  nameWithType: WebSocketConnection
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: WebSocketConnection
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: Represents a managed external WebSocket connection.
+  example: []
+  syntax:
+    content: public class WebSocketConnection
+    content.vb: Public Class WebSocketConnection
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Id
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.Id
+  id: Id
+  parent: Virtufin.WebSocketManager.Models.WebSocketConnection
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: WebSocketConnection.Id
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.Id
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Id
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 38
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: Gets or sets the unique identifier for this connection.
+  example: []
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.Id*
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Url
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.Url
+  id: Url
+  parent: Virtufin.WebSocketManager.Models.WebSocketConnection
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: WebSocketConnection.Url
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.Url
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Url
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 43
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: Gets or sets the WebSocket server URL.
+  example: []
+  syntax:
+    content: public string Url { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Url As String
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.Url*
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Status
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.Status
+  id: Status
+  parent: Virtufin.WebSocketManager.Models.WebSocketConnection
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: WebSocketConnection.Status
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.Status
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Status
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 48
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: Gets or sets the current connection status.
+  example: []
+  syntax:
+    content: public ConnectionStatus Status { get; set; }
+    parameters: []
+    return:
+      type: Virtufin.WebSocketManager.Models.ConnectionStatus
+    content.vb: Public Property Status As ConnectionStatus
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.Status*
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Topic
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.Topic
+  id: Topic
+  parent: Virtufin.WebSocketManager.Models.WebSocketConnection
+  langs:
+  - csharp
+  - vb
+  name: Topic
+  nameWithType: WebSocketConnection.Topic
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.Topic
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Topic
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 53
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: Gets or sets the Dapr pub/sub topic for publishing messages.
+  example: []
+  syntax:
+    content: public string? Topic { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Topic As String
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.Topic*
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.AutoReconnect
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.AutoReconnect
+  id: AutoReconnect
+  parent: Virtufin.WebSocketManager.Models.WebSocketConnection
+  langs:
+  - csharp
+  - vb
+  name: AutoReconnect
+  nameWithType: WebSocketConnection.AutoReconnect
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.AutoReconnect
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: AutoReconnect
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 58
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: Gets or sets whether the connection should automatically reconnect on failure.
+  example: []
+  syntax:
+    content: public bool AutoReconnect { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property AutoReconnect As Boolean
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.AutoReconnect*
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CreatedAt
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.CreatedAt
+  id: CreatedAt
+  parent: Virtufin.WebSocketManager.Models.WebSocketConnection
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: WebSocketConnection.CreatedAt
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CreatedAt
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: CreatedAt
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 63
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: Gets or sets when this connection was created.
+  example: []
+  syntax:
+    content: public DateTime CreatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property CreatedAt As Date
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.CreatedAt*
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId
+  id: InstanceId
+  parent: Virtufin.WebSocketManager.Models.WebSocketConnection
+  langs:
+  - csharp
+  - vb
+  name: InstanceId
+  nameWithType: WebSocketConnection.InstanceId
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: InstanceId
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 68
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: Gets or sets the instance ID that owns this connection.
+  example: []
+  syntax:
+    content: public string? InstanceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property InstanceId As String
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId*
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
+  id: WebSocket
+  parent: Virtufin.WebSocketManager.Models.WebSocketConnection
+  langs:
+  - csharp
+  - vb
+  name: WebSocket
+  nameWithType: WebSocketConnection.WebSocket
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: WebSocket
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 73
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: Gets or sets the underlying ClientWebSocket instance.
+  example: []
+  syntax:
+    content: public ClientWebSocket? WebSocket { get; set; }
+    parameters: []
+    return:
+      type: System.Net.WebSockets.ClientWebSocket
+    content.vb: Public Property WebSocket As ClientWebSocket
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket*
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
+  id: CancellationTokenSource
+  parent: Virtufin.WebSocketManager.Models.WebSocketConnection
+  langs:
+  - csharp
+  - vb
+  name: CancellationTokenSource
+  nameWithType: WebSocketConnection.CancellationTokenSource
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: CancellationTokenSource
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 78
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: Gets or sets the cancellation token source for the receive loop.
+  example: []
+  syntax:
+    content: public CancellationTokenSource? CancellationTokenSource { get; set; }
+    parameters: []
+    return:
+      type: System.Threading.CancellationTokenSource
+    content.vb: Public Property CancellationTokenSource As CancellationTokenSource
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource*
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask
+  id: ReceiveTask
+  parent: Virtufin.WebSocketManager.Models.WebSocketConnection
+  langs:
+  - csharp
+  - vb
+  name: ReceiveTask
+  nameWithType: WebSocketConnection.ReceiveTask
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ReceiveTask
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 83
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: Gets or sets the background task running the receive loop.
+  example: []
+  syntax:
+    content: public Task? ReceiveTask { get; set; }
+    parameters: []
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Property ReceiveTask As Task
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask*
+references:
+- uid: Virtufin.WebSocketManager.Models
+  commentId: N:Virtufin.WebSocketManager.Models
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Models
+  nameWithType: Virtufin.WebSocketManager.Models
+  fullName: Virtufin.WebSocketManager.Models
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Models
+    name: Models
+    href: Virtufin.WebSocketManager.Models.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Models
+    name: Models
+    href: Virtufin.WebSocketManager.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Id*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.Id
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_Id
+  name: Id
+  nameWithType: WebSocketConnection.Id
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Url*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.Url
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_Url
+  name: Url
+  nameWithType: WebSocketConnection.Url
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.Url
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Status*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.Status
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_Status
+  name: Status
+  nameWithType: WebSocketConnection.Status
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.Status
+- uid: Virtufin.WebSocketManager.Models.ConnectionStatus
+  commentId: T:Virtufin.WebSocketManager.Models.ConnectionStatus
+  parent: Virtufin.WebSocketManager.Models
+  href: Virtufin.WebSocketManager.Models.ConnectionStatus.html
+  name: ConnectionStatus
+  nameWithType: ConnectionStatus
+  fullName: Virtufin.WebSocketManager.Models.ConnectionStatus
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Topic*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.Topic
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_Topic
+  name: Topic
+  nameWithType: WebSocketConnection.Topic
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.Topic
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.AutoReconnect*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.AutoReconnect
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_AutoReconnect
+  name: AutoReconnect
+  nameWithType: WebSocketConnection.AutoReconnect
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.AutoReconnect
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CreatedAt*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.CreatedAt
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_CreatedAt
+  name: CreatedAt
+  nameWithType: WebSocketConnection.CreatedAt
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CreatedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_InstanceId
+  name: InstanceId
+  nameWithType: WebSocketConnection.InstanceId
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_WebSocket
+  name: WebSocket
+  nameWithType: WebSocketConnection.WebSocket
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
+- uid: System.Net.WebSockets.ClientWebSocket
+  commentId: T:System.Net.WebSockets.ClientWebSocket
+  parent: System.Net.WebSockets
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.websockets.clientwebsocket
+  name: ClientWebSocket
+  nameWithType: ClientWebSocket
+  fullName: System.Net.WebSockets.ClientWebSocket
+- uid: System.Net.WebSockets
+  commentId: N:System.Net.WebSockets
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.WebSockets
+  nameWithType: System.Net.WebSockets
+  fullName: System.Net.WebSockets
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.WebSockets
+    name: WebSockets
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.websockets
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.WebSockets
+    name: WebSockets
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.websockets
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_CancellationTokenSource
+  name: CancellationTokenSource
+  nameWithType: WebSocketConnection.CancellationTokenSource
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_ReceiveTask
+  name: ReceiveTask
+  nameWithType: WebSocketConnection.ReceiveTask
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
