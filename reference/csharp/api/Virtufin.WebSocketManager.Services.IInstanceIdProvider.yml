@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: IInstanceIdProvider
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
-    startLine: 5
+    startLine: 7
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -50,7 +50,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetInstanceId
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
-    startLine: 10
+    startLine: 12
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -80,7 +80,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetKnownInstanceIds
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
-    startLine: 16
+    startLine: 18
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services

@@ -5,7 +5,7 @@ items:
   id: DaprConnectionRepository
   parent: Virtufin.WebSocketManager.Services
   children:
-  - Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},System.String)
+  - Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},Virtufin.WebSocketManager.Services.DaprResiliencePipeline,System.String)
   - Virtufin.WebSocketManager.Services.DaprConnectionRepository.ClearAllAsync(System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.DaprConnectionRepository.DeleteAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.DaprConnectionRepository.GetAllAsync(System.Threading.CancellationToken)
@@ -47,16 +47,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},System.String)
-  commentId: M:Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},System.String)
-  id: '#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},System.String)'
+- uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},Virtufin.WebSocketManager.Services.DaprResiliencePipeline,System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},Virtufin.WebSocketManager.Services.DaprResiliencePipeline,System.String)
+  id: '#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},Virtufin.WebSocketManager.Services.DaprResiliencePipeline,System.String)'
   parent: Virtufin.WebSocketManager.Services.DaprConnectionRepository
   langs:
   - csharp
   - vb
-  name: DaprConnectionRepository(DaprClient, ILogger<DaprConnectionRepository>, string)
-  nameWithType: DaprConnectionRepository.DaprConnectionRepository(DaprClient, ILogger<DaprConnectionRepository>, string)
-  fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.DaprConnectionRepository(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.DaprConnectionRepository>, string)
+  name: DaprConnectionRepository(DaprClient, ILogger<DaprConnectionRepository>, DaprResiliencePipeline, string)
+  nameWithType: DaprConnectionRepository.DaprConnectionRepository(DaprClient, ILogger<DaprConnectionRepository>, DaprResiliencePipeline, string)
+  fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.DaprConnectionRepository(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.DaprConnectionRepository>, Virtufin.WebSocketManager.Services.DaprResiliencePipeline, string)
   type: Constructor
   source:
     remote:
@@ -65,29 +65,26 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 69
+    startLine: 64
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
-  summary: Initializes a new instance of the DaprConnectionRepository class.
-  example: []
   syntax:
-    content: public DaprConnectionRepository(DaprClient daprClient, ILogger<DaprConnectionRepository> logger, string stateStoreName = "statestore")
+    content: public DaprConnectionRepository(DaprClient daprClient, ILogger<DaprConnectionRepository> logger, DaprResiliencePipeline resilience, string stateStoreName = "statestore")
     parameters:
     - id: daprClient
       type: Dapr.Client.DaprClient
-      description: The Dapr client for state operations.
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository}
-      description: The logger for this repository.
+    - id: resilience
+      type: Virtufin.WebSocketManager.Services.DaprResiliencePipeline
     - id: stateStoreName
       type: System.String
-      description: 'The name of the Dapr state store component (default: "statestore").'
-    content.vb: Public Sub New(daprClient As DaprClient, logger As ILogger(Of DaprConnectionRepository), stateStoreName As String = "statestore")
+    content.vb: Public Sub New(daprClient As DaprClient, logger As ILogger(Of DaprConnectionRepository), resilience As DaprResiliencePipeline, stateStoreName As String = "statestore")
   overload: Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor*
-  nameWithType.vb: DaprConnectionRepository.New(DaprClient, ILogger(Of DaprConnectionRepository), String)
-  fullName.vb: Virtufin.WebSocketManager.Services.DaprConnectionRepository.New(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprConnectionRepository), String)
-  name.vb: New(DaprClient, ILogger(Of DaprConnectionRepository), String)
+  nameWithType.vb: DaprConnectionRepository.New(DaprClient, ILogger(Of DaprConnectionRepository), DaprResiliencePipeline, String)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprConnectionRepository.New(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprConnectionRepository), Virtufin.WebSocketManager.Services.DaprResiliencePipeline, String)
+  name.vb: New(DaprClient, ILogger(Of DaprConnectionRepository), DaprResiliencePipeline, String)
 - uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.GetAllAsync(System.Threading.CancellationToken)
   commentId: M:Virtufin.WebSocketManager.Services.DaprConnectionRepository.GetAllAsync(System.Threading.CancellationToken)
   id: GetAllAsync(System.Threading.CancellationToken)
@@ -106,7 +103,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetAllAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 77
+    startLine: 73
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -143,7 +140,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 102
+    startLine: 98
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -186,7 +183,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SaveAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 116
+    startLine: 112
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -226,7 +223,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DeleteAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 135
+    startLine: 131
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -269,7 +266,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetByInstanceIdAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 184
+    startLine: 180
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -309,7 +306,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ClearAllAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 191
+    startLine: 187
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -603,7 +600,7 @@ references:
   fullName: System
 - uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor*
   commentId: Overload:Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor
-  href: Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository__ctor_Dapr_Client_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprConnectionRepository__System_String_
+  href: Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository__ctor_Dapr_Client_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprConnectionRepository__Virtufin_WebSocketManager_Services_DaprResiliencePipeline_System_String_
   name: DaprConnectionRepository
   nameWithType: DaprConnectionRepository.DaprConnectionRepository
   fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.DaprConnectionRepository
@@ -650,6 +647,13 @@ references:
     name: DaprConnectionRepository
     href: Virtufin.WebSocketManager.Services.DaprConnectionRepository.html
   - name: )
+- uid: Virtufin.WebSocketManager.Services.DaprResiliencePipeline
+  commentId: T:Virtufin.WebSocketManager.Services.DaprResiliencePipeline
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html
+  name: DaprResiliencePipeline
+  nameWithType: DaprResiliencePipeline
+  fullName: Virtufin.WebSocketManager.Services.DaprResiliencePipeline
 - uid: System.String
   commentId: T:System.String
   parent: System

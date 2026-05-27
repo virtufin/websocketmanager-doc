@@ -23,7 +23,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DefaultInstanceIdProvider
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
-    startLine: 24
+    startLine: 26
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -67,7 +67,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
-    startLine: 29
+    startLine: 31
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -96,7 +96,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetInstanceId
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
-    startLine: 37
+    startLine: 39
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -128,7 +128,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetKnownInstanceIds
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
-    startLine: 40
+    startLine: 42
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -163,7 +163,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: RegisterLiveInstance
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
-    startLine: 51
+    startLine: 53
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services

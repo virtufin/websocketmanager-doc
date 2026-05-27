@@ -5,7 +5,11 @@ items:
   id: WebSocketOptions
   parent: Virtufin.WebSocketManager.Services.Options
   children:
+  - Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultDefaultTimeoutMs
+  - Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectBaseDelayMs
+  - Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectMaxAttempts
   - Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs
+  - Virtufin.WebSocketManager.Services.Options.WebSocketOptions.MaxReconnectDelayMs
   - Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectBaseDelayMs
   - Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectMaxAttempts
   langs:
@@ -41,6 +45,114 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultDefaultTimeoutMs
+  commentId: F:Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultDefaultTimeoutMs
+  id: DefaultDefaultTimeoutMs
+  parent: Virtufin.WebSocketManager.Services.Options.WebSocketOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultDefaultTimeoutMs
+  nameWithType: WebSocketOptions.DefaultDefaultTimeoutMs
+  fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultDefaultTimeoutMs
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/Options/WebSocketOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DefaultDefaultTimeoutMs
+    path: ../../../src/Virtufin.WebSocketManager/Services/Options/WebSocketOptions.cs
+    startLine: 7
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services.Options
+  syntax:
+    content: public const int DefaultDefaultTimeoutMs = 10000
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultDefaultTimeoutMs As Integer = 10000
+- uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectMaxAttempts
+  commentId: F:Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectMaxAttempts
+  id: DefaultReconnectMaxAttempts
+  parent: Virtufin.WebSocketManager.Services.Options.WebSocketOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultReconnectMaxAttempts
+  nameWithType: WebSocketOptions.DefaultReconnectMaxAttempts
+  fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectMaxAttempts
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/Options/WebSocketOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DefaultReconnectMaxAttempts
+    path: ../../../src/Virtufin.WebSocketManager/Services/Options/WebSocketOptions.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services.Options
+  syntax:
+    content: public const int DefaultReconnectMaxAttempts = 5
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultReconnectMaxAttempts As Integer = 5
+- uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectBaseDelayMs
+  commentId: F:Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectBaseDelayMs
+  id: DefaultReconnectBaseDelayMs
+  parent: Virtufin.WebSocketManager.Services.Options.WebSocketOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultReconnectBaseDelayMs
+  nameWithType: WebSocketOptions.DefaultReconnectBaseDelayMs
+  fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectBaseDelayMs
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/Options/WebSocketOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DefaultReconnectBaseDelayMs
+    path: ../../../src/Virtufin.WebSocketManager/Services/Options/WebSocketOptions.cs
+    startLine: 9
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services.Options
+  syntax:
+    content: public const int DefaultReconnectBaseDelayMs = 1000
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultReconnectBaseDelayMs As Integer = 1000
+- uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.MaxReconnectDelayMs
+  commentId: F:Virtufin.WebSocketManager.Services.Options.WebSocketOptions.MaxReconnectDelayMs
+  id: MaxReconnectDelayMs
+  parent: Virtufin.WebSocketManager.Services.Options.WebSocketOptions
+  langs:
+  - csharp
+  - vb
+  name: MaxReconnectDelayMs
+  nameWithType: WebSocketOptions.MaxReconnectDelayMs
+  fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.MaxReconnectDelayMs
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/Options/WebSocketOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: MaxReconnectDelayMs
+    path: ../../../src/Virtufin.WebSocketManager/Services/Options/WebSocketOptions.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services.Options
+  syntax:
+    content: public const int MaxReconnectDelayMs = 30000
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxReconnectDelayMs As Integer = 30000
 - uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs
   commentId: P:Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs
   id: DefaultTimeoutMs
@@ -59,12 +171,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DefaultTimeoutMs
     path: ../../../src/Virtufin.WebSocketManager/Services/Options/WebSocketOptions.cs
-    startLine: 10
+    startLine: 12
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services.Options
-  summary: Gets or sets the default timeout in milliseconds for send operations.
-  example: []
   syntax:
     content: public int DefaultTimeoutMs { get; set; }
     parameters: []
@@ -90,7 +200,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ReconnectMaxAttempts
     path: ../../../src/Virtufin.WebSocketManager/Services/Options/WebSocketOptions.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services.Options
@@ -121,12 +231,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ReconnectBaseDelayMs
     path: ../../../src/Virtufin.WebSocketManager/Services/Options/WebSocketOptions.cs
-    startLine: 20
+    startLine: 19
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services.Options
-  summary: Gets or sets the base delay in milliseconds between reconnection attempts.
-  example: []
   syntax:
     content: public int ReconnectBaseDelayMs { get; set; }
     parameters: []
@@ -410,12 +518,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs*
-  commentId: Overload:Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs
-  href: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.html#Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultTimeoutMs
-  name: DefaultTimeoutMs
-  nameWithType: WebSocketOptions.DefaultTimeoutMs
-  fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -427,6 +529,12 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs*
+  commentId: Overload:Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs
+  href: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.html#Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultTimeoutMs
+  name: DefaultTimeoutMs
+  nameWithType: WebSocketOptions.DefaultTimeoutMs
+  fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs
 - uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectMaxAttempts*
   commentId: Overload:Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectMaxAttempts
   href: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.html#Virtufin_WebSocketManager_Services_Options_WebSocketOptions_ReconnectMaxAttempts

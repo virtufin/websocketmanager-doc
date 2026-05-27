@@ -5,6 +5,8 @@ items:
   id: DaprConstants
   parent: Virtufin.WebSocketManager.Configuration
   children:
+  - Virtufin.WebSocketManager.Configuration.DaprConstants.ClearAllOnStartEnvVar
+  - Virtufin.WebSocketManager.Configuration.DaprConstants.HostnameEnvVar
   - Virtufin.WebSocketManager.Configuration.DaprConstants.IndexKey
   - Virtufin.WebSocketManager.Configuration.DaprConstants.KeyPrefix
   - Virtufin.WebSocketManager.Configuration.DaprConstants.PubsubName
@@ -204,6 +206,60 @@ items:
     return:
       type: System.String
     content.vb: Public Const IndexKey As String = "websocket-index"
+- uid: Virtufin.WebSocketManager.Configuration.DaprConstants.HostnameEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.DaprConstants.HostnameEnvVar
+  id: HostnameEnvVar
+  parent: Virtufin.WebSocketManager.Configuration.DaprConstants
+  langs:
+  - csharp
+  - vb
+  name: HostnameEnvVar
+  nameWithType: DaprConstants.HostnameEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.DaprConstants.HostnameEnvVar
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: HostnameEnvVar
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public const string HostnameEnvVar = "HOSTNAME"
+    return:
+      type: System.String
+    content.vb: Public Const HostnameEnvVar As String = "HOSTNAME"
+- uid: Virtufin.WebSocketManager.Configuration.DaprConstants.ClearAllOnStartEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.DaprConstants.ClearAllOnStartEnvVar
+  id: ClearAllOnStartEnvVar
+  parent: Virtufin.WebSocketManager.Configuration.DaprConstants
+  langs:
+  - csharp
+  - vb
+  name: ClearAllOnStartEnvVar
+  nameWithType: DaprConstants.ClearAllOnStartEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.DaprConstants.ClearAllOnStartEnvVar
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ClearAllOnStartEnvVar
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public const string ClearAllOnStartEnvVar = "CLEAR_ALL_ON_START"
+    return:
+      type: System.String
+    content.vb: Public Const ClearAllOnStartEnvVar As String = "CLEAR_ALL_ON_START"
 references:
 - uid: Virtufin.WebSocketManager.Configuration
   commentId: N:Virtufin.WebSocketManager.Configuration

@@ -13,6 +13,18 @@ references:
   commentId: T:Virtufin.WebSocketManager.Configuration.DaprConstants
   fullName: Virtufin.WebSocketManager.Configuration.DaprConstants
   nameWithType: DaprConstants
+- uid: Virtufin.WebSocketManager.Configuration.DaprConstants.ClearAllOnStartEnvVar
+  name: ClearAllOnStartEnvVar
+  href: api/Virtufin.WebSocketManager.Configuration.DaprConstants.html#Virtufin_WebSocketManager_Configuration_DaprConstants_ClearAllOnStartEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.DaprConstants.ClearAllOnStartEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.DaprConstants.ClearAllOnStartEnvVar
+  nameWithType: DaprConstants.ClearAllOnStartEnvVar
+- uid: Virtufin.WebSocketManager.Configuration.DaprConstants.HostnameEnvVar
+  name: HostnameEnvVar
+  href: api/Virtufin.WebSocketManager.Configuration.DaprConstants.html#Virtufin_WebSocketManager_Configuration_DaprConstants_HostnameEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.DaprConstants.HostnameEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.DaprConstants.HostnameEnvVar
+  nameWithType: DaprConstants.HostnameEnvVar
 - uid: Virtufin.WebSocketManager.Configuration.DaprConstants.IndexKey
   name: IndexKey
   href: api/Virtufin.WebSocketManager.Configuration.DaprConstants.html#Virtufin_WebSocketManager_Configuration_DaprConstants_IndexKey
@@ -103,6 +115,18 @@ references:
   commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
   fullName: Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
   nameWithType: PortConstants.HttpPortKey
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.MaxPort
+  name: MaxPort
+  href: api/Virtufin.WebSocketManager.Configuration.PortConstants.html#Virtufin_WebSocketManager_Configuration_PortConstants_MaxPort
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.MaxPort
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.MaxPort
+  nameWithType: PortConstants.MaxPort
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.MinPort
+  name: MinPort
+  href: api/Virtufin.WebSocketManager.Configuration.PortConstants.html#Virtufin_WebSocketManager_Configuration_PortConstants_MinPort
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.MinPort
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.MinPort
+  nameWithType: PortConstants.MinPort
 - uid: Virtufin.WebSocketManager.Models
   name: Virtufin.WebSocketManager.Models
   href: api/Virtufin.WebSocketManager.Models.html
@@ -624,15 +648,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.DaprConnectionRepository
   fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository
   nameWithType: DaprConnectionRepository
-- uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},System.String)
-  name: DaprConnectionRepository(DaprClient, ILogger<DaprConnectionRepository>, string)
-  href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository__ctor_Dapr_Client_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprConnectionRepository__System_String_
-  commentId: M:Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},System.String)
-  name.vb: New(DaprClient, ILogger(Of DaprConnectionRepository), String)
-  fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.DaprConnectionRepository(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.DaprConnectionRepository>, string)
-  fullName.vb: Virtufin.WebSocketManager.Services.DaprConnectionRepository.New(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprConnectionRepository), String)
-  nameWithType: DaprConnectionRepository.DaprConnectionRepository(DaprClient, ILogger<DaprConnectionRepository>, string)
-  nameWithType.vb: DaprConnectionRepository.New(DaprClient, ILogger(Of DaprConnectionRepository), String)
+- uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},Virtufin.WebSocketManager.Services.DaprResiliencePipeline,System.String)
+  name: DaprConnectionRepository(DaprClient, ILogger<DaprConnectionRepository>, DaprResiliencePipeline, string)
+  href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository__ctor_Dapr_Client_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprConnectionRepository__Virtufin_WebSocketManager_Services_DaprResiliencePipeline_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},Virtufin.WebSocketManager.Services.DaprResiliencePipeline,System.String)
+  name.vb: New(DaprClient, ILogger(Of DaprConnectionRepository), DaprResiliencePipeline, String)
+  fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.DaprConnectionRepository(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.DaprConnectionRepository>, Virtufin.WebSocketManager.Services.DaprResiliencePipeline, string)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprConnectionRepository.New(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprConnectionRepository), Virtufin.WebSocketManager.Services.DaprResiliencePipeline, String)
+  nameWithType: DaprConnectionRepository.DaprConnectionRepository(DaprClient, ILogger<DaprConnectionRepository>, DaprResiliencePipeline, string)
+  nameWithType.vb: DaprConnectionRepository.New(DaprClient, ILogger(Of DaprConnectionRepository), DaprResiliencePipeline, String)
 - uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor*
   name: DaprConnectionRepository
   href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository__ctor_
@@ -1685,6 +1709,24 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.Options.WebSocketOptions
   fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions
   nameWithType: WebSocketOptions
+- uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultDefaultTimeoutMs
+  name: DefaultDefaultTimeoutMs
+  href: api/Virtufin.WebSocketManager.Services.Options.WebSocketOptions.html#Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultDefaultTimeoutMs
+  commentId: F:Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultDefaultTimeoutMs
+  fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultDefaultTimeoutMs
+  nameWithType: WebSocketOptions.DefaultDefaultTimeoutMs
+- uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectBaseDelayMs
+  name: DefaultReconnectBaseDelayMs
+  href: api/Virtufin.WebSocketManager.Services.Options.WebSocketOptions.html#Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultReconnectBaseDelayMs
+  commentId: F:Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectBaseDelayMs
+  fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectBaseDelayMs
+  nameWithType: WebSocketOptions.DefaultReconnectBaseDelayMs
+- uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectMaxAttempts
+  name: DefaultReconnectMaxAttempts
+  href: api/Virtufin.WebSocketManager.Services.Options.WebSocketOptions.html#Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultReconnectMaxAttempts
+  commentId: F:Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectMaxAttempts
+  fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectMaxAttempts
+  nameWithType: WebSocketOptions.DefaultReconnectMaxAttempts
 - uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs
   name: DefaultTimeoutMs
   href: api/Virtufin.WebSocketManager.Services.Options.WebSocketOptions.html#Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultTimeoutMs
@@ -1698,6 +1740,12 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs
   nameWithType: WebSocketOptions.DefaultTimeoutMs
+- uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.MaxReconnectDelayMs
+  name: MaxReconnectDelayMs
+  href: api/Virtufin.WebSocketManager.Services.Options.WebSocketOptions.html#Virtufin_WebSocketManager_Services_Options_WebSocketOptions_MaxReconnectDelayMs
+  commentId: F:Virtufin.WebSocketManager.Services.Options.WebSocketOptions.MaxReconnectDelayMs
+  fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.MaxReconnectDelayMs
+  nameWithType: WebSocketOptions.MaxReconnectDelayMs
 - uid: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectBaseDelayMs
   name: ReconnectBaseDelayMs
   href: api/Virtufin.WebSocketManager.Services.Options.WebSocketOptions.html#Virtufin_WebSocketManager_Services_Options_WebSocketOptions_ReconnectBaseDelayMs

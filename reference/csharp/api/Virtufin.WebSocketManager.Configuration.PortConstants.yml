@@ -13,6 +13,8 @@ items:
   - Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
   - Virtufin.WebSocketManager.Configuration.PortConstants.GrpcPortKey
   - Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
+  - Virtufin.WebSocketManager.Configuration.PortConstants.MaxPort
+  - Virtufin.WebSocketManager.Configuration.PortConstants.MinPort
   langs:
   - csharp
   - vb
@@ -46,6 +48,60 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.MinPort
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.MinPort
+  id: MinPort
+  parent: Virtufin.WebSocketManager.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: MinPort
+  nameWithType: PortConstants.MinPort
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.MinPort
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: MinPort
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+    startLine: 7
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public const int MinPort = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const MinPort As Integer = 1
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.MaxPort
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.MaxPort
+  id: MaxPort
+  parent: Virtufin.WebSocketManager.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: MaxPort
+  nameWithType: PortConstants.MaxPort
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.MaxPort
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: MaxPort
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public const int MaxPort = 65535
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxPort As Integer = 65535
 - uid: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
   commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
   id: DefaultHttpPort
@@ -68,8 +124,6 @@ items:
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
-  summary: Default HTTP port for REST APIs.
-  example: []
   syntax:
     content: public const int DefaultHttpPort = 5001
     return:
