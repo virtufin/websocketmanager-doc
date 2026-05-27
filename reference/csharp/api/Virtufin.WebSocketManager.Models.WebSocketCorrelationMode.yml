@@ -1,0 +1,161 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  commentId: T:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  id: WebSocketCorrelationMode
+  parent: Virtufin.WebSocketManager.Models
+  children:
+  - Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Managed
+  - Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
+  - Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Unspecified
+  langs:
+  - csharp
+  - vb
+  name: WebSocketCorrelationMode
+  nameWithType: WebSocketCorrelationMode
+  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  type: Enum
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: WebSocketCorrelationMode
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: Defines how the correlation protocol handles message correlation for send-and-wait operations.
+  example: []
+  syntax:
+    content: public enum WebSocketCorrelationMode
+    content.vb: Public Enum WebSocketCorrelationMode
+- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Unspecified
+  commentId: F:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Unspecified
+  id: Unspecified
+  parent: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  langs:
+  - csharp
+  - vb
+  name: Unspecified
+  nameWithType: WebSocketCorrelationMode.Unspecified
+  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Unspecified
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Unspecified
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 38
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: No correlation mode specified.
+  example: []
+  syntax:
+    content: Unspecified = 0
+    return:
+      type: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
+  commentId: F:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
+  id: Raw
+  parent: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  langs:
+  - csharp
+  - vb
+  name: Raw
+  nameWithType: WebSocketCorrelationMode.Raw
+  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Raw
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 44
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: >-
+    Raw mode: messages are sent directly without any correlation envelope.
+
+    SendAndWaitAsync is not supported in this mode.
+  example: []
+  syntax:
+    content: Raw = 1
+    return:
+      type: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Managed
+  commentId: F:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Managed
+  id: Managed
+  parent: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  langs:
+  - csharp
+  - vb
+  name: Managed
+  nameWithType: WebSocketCorrelationMode.Managed
+  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Managed
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Managed
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 50
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: >-
+    Managed mode: messages are wrapped in a {id, message} JSON envelope
+
+    and responses are correlated by matching the id field.
+  example: []
+  syntax:
+    content: Managed = 2
+    return:
+      type: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+references:
+- uid: Virtufin.WebSocketManager.Models
+  commentId: N:Virtufin.WebSocketManager.Models
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Models
+  nameWithType: Virtufin.WebSocketManager.Models
+  fullName: Virtufin.WebSocketManager.Models
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Models
+    name: Models
+    href: Virtufin.WebSocketManager.Models.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Models
+    name: Models
+    href: Virtufin.WebSocketManager.Models.html
+- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  commentId: T:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  parent: Virtufin.WebSocketManager.Models
+  href: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html
+  name: WebSocketCorrelationMode
+  nameWithType: WebSocketCorrelationMode
+  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode

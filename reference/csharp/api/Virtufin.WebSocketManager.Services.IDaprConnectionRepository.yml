@@ -5,9 +5,11 @@ items:
   id: IDaprConnectionRepository
   parent: Virtufin.WebSocketManager.Services
   children:
+  - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync(System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAllAsync(System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync(System.String,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync(Virtufin.WebSocketManager.Services.DaprStateStoreEntry,System.Threading.CancellationToken)
   langs:
   - csharp
@@ -189,6 +191,77 @@ items:
   nameWithType.vb: IDaprConnectionRepository.DeleteAsync(String, CancellationToken)
   fullName.vb: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync(String, System.Threading.CancellationToken)
   name.vb: DeleteAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync(System.String,System.Threading.CancellationToken)
+  id: GetByInstanceIdAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByInstanceIdAsync(string, CancellationToken)
+  nameWithType: IDaprConnectionRepository.GetByInstanceIdAsync(string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: GetByInstanceIdAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+    startLine: 46
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Gets all connection entries owned by a specific instance.
+  example: []
+  syntax:
+    content: Task<IEnumerable<DaprStateStoreEntry>> GetByInstanceIdAsync(string instanceId, CancellationToken cancellationToken = default)
+    parameters:
+    - id: instanceId
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Virtufin.WebSocketManager.Services.DaprStateStoreEntry}}
+    content.vb: Function GetByInstanceIdAsync(instanceId As String, cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of DaprStateStoreEntry))
+  overload: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync*
+  nameWithType.vb: IDaprConnectionRepository.GetByInstanceIdAsync(String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync(String, System.Threading.CancellationToken)
+  name.vb: GetByInstanceIdAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync(System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync(System.Threading.CancellationToken)
+  id: ClearAllAsync(System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  langs:
+  - csharp
+  - vb
+  name: ClearAllAsync(CancellationToken)
+  nameWithType: IDaprConnectionRepository.ClearAllAsync(CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ClearAllAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+    startLine: 51
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Clears all connections from the state store. Used on startup with opt-in flag.
+  example: []
+  syntax:
+    content: Task ClearAllAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ClearAllAsync(cancellationToken As CancellationToken = Nothing) As Task
+  overload: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync*
 references:
 - uid: Virtufin.WebSocketManager.Services
   commentId: N:Virtufin.WebSocketManager.Services
@@ -457,3 +530,15 @@ references:
   name: DeleteAsync
   nameWithType: IDaprConnectionRepository.DeleteAsync
   fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync
+  href: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_GetByInstanceIdAsync_System_String_System_Threading_CancellationToken_
+  name: GetByInstanceIdAsync
+  nameWithType: IDaprConnectionRepository.GetByInstanceIdAsync
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync
+  href: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_ClearAllAsync_System_Threading_CancellationToken_
+  name: ClearAllAsync
+  nameWithType: IDaprConnectionRepository.ClearAllAsync
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync

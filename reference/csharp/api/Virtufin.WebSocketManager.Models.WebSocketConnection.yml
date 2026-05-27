@@ -7,6 +7,7 @@ items:
   children:
   - Virtufin.WebSocketManager.Models.WebSocketConnection.AutoReconnect
   - Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
   - Virtufin.WebSocketManager.Models.WebSocketConnection.CreatedAt
   - Virtufin.WebSocketManager.Models.WebSocketConnection.Id
   - Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId
@@ -29,7 +30,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: WebSocketConnection
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 33
+    startLine: 56
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -66,7 +67,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Id
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 38
+    startLine: 61
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -97,7 +98,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Url
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 43
+    startLine: 66
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -128,7 +129,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Status
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 48
+    startLine: 71
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -159,7 +160,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Topic
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 53
+    startLine: 76
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -190,7 +191,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: AutoReconnect
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 58
+    startLine: 81
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -221,7 +222,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CreatedAt
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 63
+    startLine: 86
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -252,7 +253,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: InstanceId
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 68
+    startLine: 91
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -265,6 +266,40 @@ items:
       type: System.String
     content.vb: Public Property InstanceId As String
   overload: Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId*
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
+  id: CorrelationMode
+  parent: Virtufin.WebSocketManager.Models.WebSocketConnection
+  langs:
+  - csharp
+  - vb
+  name: CorrelationMode
+  nameWithType: WebSocketConnection.CorrelationMode
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: CorrelationMode
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 97
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: >-
+    Gets or sets the correlation mode for send-and-wait operations.
+
+    Defaults to <xref href="Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw" data-throw-if-not-resolved="false"></xref> for external server compatibility.
+  example: []
+  syntax:
+    content: public WebSocketCorrelationMode CorrelationMode { get; set; }
+    parameters: []
+    return:
+      type: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+    content.vb: Public Property CorrelationMode As WebSocketCorrelationMode
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode*
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
   commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
   id: WebSocket
@@ -283,7 +318,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: WebSocket
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 73
+    startLine: 102
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -314,7 +349,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CancellationTokenSource
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 78
+    startLine: 107
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -345,7 +380,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ReceiveTask
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 83
+    startLine: 112
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -708,6 +743,25 @@ references:
   name: InstanceId
   nameWithType: WebSocketConnection.InstanceId
   fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId
+- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
+  commentId: F:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
+  href: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html#Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_Raw
+  name: Raw
+  nameWithType: WebSocketCorrelationMode.Raw
+  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_CorrelationMode
+  name: CorrelationMode
+  nameWithType: WebSocketConnection.CorrelationMode
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
+- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  commentId: T:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  parent: Virtufin.WebSocketManager.Models
+  href: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html
+  name: WebSocketCorrelationMode
+  nameWithType: WebSocketCorrelationMode
+  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket*
   commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
   href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_WebSocket

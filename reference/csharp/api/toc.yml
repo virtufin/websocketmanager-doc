@@ -20,6 +20,9 @@ items:
   - uid: Virtufin.WebSocketManager.Models.WebSocketConnection
     name: WebSocketConnection
     type: Class
+  - uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+    name: WebSocketCorrelationMode
+    type: Enum
 - uid: Virtufin.WebSocketManager.Protos
   name: Virtufin.WebSocketManager.Protos
   type: Namespace
@@ -37,11 +40,20 @@ items:
   - uid: Virtufin.WebSocketManager.Services.ConnectionOwnershipException
     name: ConnectionOwnershipException
     type: Class
+  - uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+    name: ConnectionReclaimerHostedService
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
+    name: DaprCircuitBreakerHealthCheck
+    type: Class
   - uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository
     name: DaprConnectionRepository
     type: Class
   - uid: Virtufin.WebSocketManager.Services.DaprPublisher
     name: DaprPublisher
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.DaprResiliencePipeline
+    name: DaprResiliencePipeline
     type: Class
   - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
     name: DaprStateStoreEntry

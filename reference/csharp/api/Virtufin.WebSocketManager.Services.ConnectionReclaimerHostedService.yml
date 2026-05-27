@@ -1,0 +1,800 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+  commentId: T:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+  id: ConnectionReclaimerHostedService
+  parent: Virtufin.WebSocketManager.Services
+  children:
+  - Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
+  - Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ConnectionReclaimerHostedService
+  nameWithType: ConnectionReclaimerHostedService
+  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/ConnectionReclaimerHostedService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ConnectionReclaimerHostedService
+    path: ../../../src/Virtufin.WebSocketManager/Services/ConnectionReclaimerHostedService.cs
+    startLine: 9
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    Background service that periodically reclaims connections from dead instances.
+
+    Prevents connection orphaning when pods are replaced via rolling update.
+  example: []
+  syntax:
+    content: 'public sealed class ConnectionReclaimerHostedService : BackgroundService, IHostedService, IDisposable'
+    content.vb: Public NotInheritable Class ConnectionReclaimerHostedService Inherits BackgroundService Implements IHostedService, IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.Extensions.Hosting.BackgroundService
+  implements:
+  - Microsoft.Extensions.Hosting.IHostedService
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.Extensions.Hosting.BackgroundService.Dispose
+  - Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+  - Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+  - Microsoft.Extensions.Hosting.BackgroundService.ExecuteTask
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
+  commentId: M:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
+  id: '#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})'
+  parent: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+  langs:
+  - csharp
+  - vb
+  name: ConnectionReclaimerHostedService(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger<ConnectionReclaimerHostedService>)
+  nameWithType: ConnectionReclaimerHostedService.ConnectionReclaimerHostedService(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger<ConnectionReclaimerHostedService>)
+  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ConnectionReclaimerHostedService(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/ConnectionReclaimerHostedService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: .ctor
+    path: ../../../src/Virtufin.WebSocketManager/Services/ConnectionReclaimerHostedService.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Creates a new ConnectionReclaimerHostedService.
+  example: []
+  syntax:
+    content: public ConnectionReclaimerHostedService(IDaprConnectionRepository repository, IInstanceIdProvider instanceIdProvider, IWebSocketConnectionStore connectionStore, ILogger<ConnectionReclaimerHostedService> logger)
+    parameters:
+    - id: repository
+      type: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+    - id: instanceIdProvider
+      type: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+    - id: connectionStore
+      type: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService}
+    content.vb: Public Sub New(repository As IDaprConnectionRepository, instanceIdProvider As IInstanceIdProvider, connectionStore As IWebSocketConnectionStore, logger As ILogger(Of ConnectionReclaimerHostedService))
+  overload: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor*
+  nameWithType.vb: ConnectionReclaimerHostedService.New(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger(Of ConnectionReclaimerHostedService))
+  fullName.vb: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.New(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService))
+  name.vb: New(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger(Of ConnectionReclaimerHostedService))
+- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync(System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync(System.Threading.CancellationToken)
+  id: ExecuteAsync(System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(CancellationToken)
+  nameWithType: ConnectionReclaimerHostedService.ExecuteAsync(CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/ConnectionReclaimerHostedService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ExecuteAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/ConnectionReclaimerHostedService.cs
+    startLine: 35
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    This method is called when the <xref href="Microsoft.Extensions.Hosting.IHostedService" data-throw-if-not-resolved="false"></xref> starts. The implementation should return a task that represents
+
+    the lifetime of the long running operation(s) being performed.
+  remarks: See <a href="https://learn.microsoft.com/dotnet/core/extensions/workers">Worker Services in .NET</a> for implementation guidelines.
+  example: []
+  syntax:
+    content: protected override Task ExecuteAsync(CancellationToken stoppingToken)
+    parameters:
+    - id: stoppingToken
+      type: System.Threading.CancellationToken
+      description: Triggered when <xref href="Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref> is called.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that represents the long running operations.
+    content.vb: Protected Overrides Function ExecuteAsync(stoppingToken As CancellationToken) As Task
+  overridden: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  overload: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync*
+references:
+- uid: Virtufin.WebSocketManager.Services
+  commentId: N:Virtufin.WebSocketManager.Services
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services
+  nameWithType: Virtufin.WebSocketManager.Services
+  fullName: Virtufin.WebSocketManager.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Extensions.Hosting.BackgroundService
+  commentId: T:Microsoft.Extensions.Hosting.BackgroundService
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice
+  name: BackgroundService
+  nameWithType: BackgroundService
+  fullName: Microsoft.Extensions.Hosting.BackgroundService
+- uid: Microsoft.Extensions.Hosting.IHostedService
+  commentId: T:Microsoft.Extensions.Hosting.IHostedService
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice
+  name: IHostedService
+  nameWithType: IHostedService
+  fullName: Microsoft.Extensions.Hosting.IHostedService
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Extensions.Hosting.BackgroundService.Dispose
+  commentId: M:Microsoft.Extensions.Hosting.BackgroundService.Dispose
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.dispose
+  name: Dispose()
+  nameWithType: BackgroundService.Dispose()
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.Dispose()
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.startasync
+  name: StartAsync(CancellationToken)
+  nameWithType: BackgroundService.StartAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.startasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.startasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.stopasync
+  name: StopAsync(CancellationToken)
+  nameWithType: BackgroundService.StopAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.stopasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.stopasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Hosting.BackgroundService.ExecuteTask
+  commentId: P:Microsoft.Extensions.Hosting.BackgroundService.ExecuteTask
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executetask
+  name: ExecuteTask
+  nameWithType: BackgroundService.ExecuteTask
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.ExecuteTask
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor*
+  commentId: Overload:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor
+  href: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html#Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__ctor_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__
+  name: ConnectionReclaimerHostedService
+  nameWithType: ConnectionReclaimerHostedService.ConnectionReclaimerHostedService
+  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ConnectionReclaimerHostedService
+  nameWithType.vb: ConnectionReclaimerHostedService.New
+  fullName.vb: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.New
+  name.vb: New
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  commentId: T:Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html
+  name: IDaprConnectionRepository
+  nameWithType: IDaprConnectionRepository
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+  commentId: T:Virtufin.WebSocketManager.Services.IInstanceIdProvider
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html
+  name: IInstanceIdProvider
+  nameWithType: IInstanceIdProvider
+  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
+  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html
+  name: IWebSocketConnectionStore
+  nameWithType: IWebSocketConnectionStore
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
+- uid: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<ConnectionReclaimerHostedService>
+  nameWithType: ILogger<ConnectionReclaimerHostedService>
+  fullName: Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService>
+  nameWithType.vb: ILogger(Of ConnectionReclaimerHostedService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService)
+  name.vb: ILogger(Of ConnectionReclaimerHostedService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+    name: ConnectionReclaimerHostedService
+    href: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+    name: ConnectionReclaimerHostedService
+    href: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.stopasync
+  name: StopAsync(CancellationToken)
+  nameWithType: IHostedService.StopAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.stopasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.stopasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executeasync
+  name: ExecuteAsync(CancellationToken)
+  nameWithType: BackgroundService.ExecuteAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+    name: ExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executeasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+    name: ExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executeasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync
+  href: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html#Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService_ExecuteAsync_System_Threading_CancellationToken_
+  name: ExecuteAsync
+  nameWithType: ConnectionReclaimerHostedService.ExecuteAsync
+  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading

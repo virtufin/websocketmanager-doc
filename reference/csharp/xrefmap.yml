@@ -171,6 +171,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
   nameWithType: WebSocketConnection.CancellationTokenSource
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
+  name: CorrelationMode
+  href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_CorrelationMode
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
+  nameWithType: WebSocketConnection.CorrelationMode
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode*
+  name: CorrelationMode
+  href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_CorrelationMode_
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
+  nameWithType: WebSocketConnection.CorrelationMode
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CreatedAt
   name: CreatedAt
   href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_CreatedAt
@@ -275,6 +288,30 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
   nameWithType: WebSocketConnection.WebSocket
+- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  name: WebSocketCorrelationMode
+  href: api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html
+  commentId: T:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  nameWithType: WebSocketCorrelationMode
+- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Managed
+  name: Managed
+  href: api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html#Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_Managed
+  commentId: F:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Managed
+  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Managed
+  nameWithType: WebSocketCorrelationMode.Managed
+- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
+  name: Raw
+  href: api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html#Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_Raw
+  commentId: F:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
+  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
+  nameWithType: WebSocketCorrelationMode.Raw
+- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Unspecified
+  name: Unspecified
+  href: api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html#Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_Unspecified
+  commentId: F:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Unspecified
+  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Unspecified
+  nameWithType: WebSocketCorrelationMode.Unspecified
 - uid: Virtufin.WebSocketManager.Protos
   name: Virtufin.WebSocketManager.Protos
   href: api/Virtufin.WebSocketManager.Protos.html
@@ -505,6 +542,82 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.ConnectionOwnershipException.ExpectedInstanceId
   nameWithType: ConnectionOwnershipException.ExpectedInstanceId
+- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+  name: ConnectionReclaimerHostedService
+  href: api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html
+  commentId: T:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+  nameWithType: ConnectionReclaimerHostedService
+- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
+  name: ConnectionReclaimerHostedService(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger<ConnectionReclaimerHostedService>)
+  href: api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html#Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__ctor_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__
+  commentId: M:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
+  name.vb: New(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger(Of ConnectionReclaimerHostedService))
+  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ConnectionReclaimerHostedService(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService>)
+  fullName.vb: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.New(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService))
+  nameWithType: ConnectionReclaimerHostedService.ConnectionReclaimerHostedService(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger<ConnectionReclaimerHostedService>)
+  nameWithType.vb: ConnectionReclaimerHostedService.New(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger(Of ConnectionReclaimerHostedService))
+- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor*
+  name: ConnectionReclaimerHostedService
+  href: api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html#Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__ctor_
+  commentId: Overload:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ConnectionReclaimerHostedService
+  fullName.vb: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.New
+  nameWithType: ConnectionReclaimerHostedService.ConnectionReclaimerHostedService
+  nameWithType.vb: ConnectionReclaimerHostedService.New
+- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync(System.Threading.CancellationToken)
+  name: ExecuteAsync(CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html#Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService_ExecuteAsync_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync(System.Threading.CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync(System.Threading.CancellationToken)
+  nameWithType: ConnectionReclaimerHostedService.ExecuteAsync(CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html#Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService_ExecuteAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync
+  nameWithType: ConnectionReclaimerHostedService.ExecuteAsync
+- uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
+  name: DaprCircuitBreakerHealthCheck
+  href: api/Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html
+  commentId: T:Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
+  fullName: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
+  nameWithType: DaprCircuitBreakerHealthCheck
+- uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.#ctor(Virtufin.WebSocketManager.Services.DaprResiliencePipeline)
+  name: DaprCircuitBreakerHealthCheck(DaprResiliencePipeline)
+  href: api/Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html#Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck__ctor_Virtufin_WebSocketManager_Services_DaprResiliencePipeline_
+  commentId: M:Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.#ctor(Virtufin.WebSocketManager.Services.DaprResiliencePipeline)
+  name.vb: New(DaprResiliencePipeline)
+  fullName: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck(Virtufin.WebSocketManager.Services.DaprResiliencePipeline)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.New(Virtufin.WebSocketManager.Services.DaprResiliencePipeline)
+  nameWithType: DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck(DaprResiliencePipeline)
+  nameWithType.vb: DaprCircuitBreakerHealthCheck.New(DaprResiliencePipeline)
+- uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.#ctor*
+  name: DaprCircuitBreakerHealthCheck
+  href: api/Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html#Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck__ctor_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.New
+  nameWithType: DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck
+  nameWithType.vb: DaprCircuitBreakerHealthCheck.New
+- uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  name: CheckHealthAsync(HealthCheckContext, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html#Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck_CheckHealthAsync_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext, System.Threading.CancellationToken)
+  nameWithType: DaprCircuitBreakerHealthCheck.CheckHealthAsync(HealthCheckContext, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.CheckHealthAsync*
+  name: CheckHealthAsync
+  href: api/Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html#Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck_CheckHealthAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.CheckHealthAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.CheckHealthAsync
+  nameWithType: DaprCircuitBreakerHealthCheck.CheckHealthAsync
 - uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository
   name: DaprConnectionRepository
   href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html
@@ -530,6 +643,19 @@ references:
   fullName.vb: Virtufin.WebSocketManager.Services.DaprConnectionRepository.New
   nameWithType: DaprConnectionRepository.DaprConnectionRepository
   nameWithType.vb: DaprConnectionRepository.New
+- uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.ClearAllAsync(System.Threading.CancellationToken)
+  name: ClearAllAsync(CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository_ClearAllAsync_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.DaprConnectionRepository.ClearAllAsync(System.Threading.CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.ClearAllAsync(System.Threading.CancellationToken)
+  nameWithType: DaprConnectionRepository.ClearAllAsync(CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.ClearAllAsync*
+  name: ClearAllAsync
+  href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository_ClearAllAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprConnectionRepository.ClearAllAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.ClearAllAsync
+  nameWithType: DaprConnectionRepository.ClearAllAsync
 - uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.DeleteAsync(System.String,System.Threading.CancellationToken)
   name: DeleteAsync(string, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository_DeleteAsync_System_String_System_Threading_CancellationToken_
@@ -575,6 +701,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.GetAsync
   nameWithType: DaprConnectionRepository.GetAsync
+- uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.GetByInstanceIdAsync(System.String,System.Threading.CancellationToken)
+  name: GetByInstanceIdAsync(string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository_GetByInstanceIdAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.DaprConnectionRepository.GetByInstanceIdAsync(System.String,System.Threading.CancellationToken)
+  name.vb: GetByInstanceIdAsync(String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.GetByInstanceIdAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprConnectionRepository.GetByInstanceIdAsync(String, System.Threading.CancellationToken)
+  nameWithType: DaprConnectionRepository.GetByInstanceIdAsync(string, CancellationToken)
+  nameWithType.vb: DaprConnectionRepository.GetByInstanceIdAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.GetByInstanceIdAsync*
+  name: GetByInstanceIdAsync
+  href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository_GetByInstanceIdAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprConnectionRepository.GetByInstanceIdAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.GetByInstanceIdAsync
+  nameWithType: DaprConnectionRepository.GetByInstanceIdAsync
 - uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.SaveAsync(Virtufin.WebSocketManager.Services.DaprStateStoreEntry,System.Threading.CancellationToken)
   name: SaveAsync(DaprStateStoreEntry, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository_SaveAsync_Virtufin_WebSocketManager_Services_DaprStateStoreEntry_System_Threading_CancellationToken_
@@ -629,6 +771,69 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync
   nameWithType: DaprPublisher.PublishAsync
+- uid: Virtufin.WebSocketManager.Services.DaprResiliencePipeline
+  name: DaprResiliencePipeline
+  href: api/Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html
+  commentId: T:Virtufin.WebSocketManager.Services.DaprResiliencePipeline
+  fullName: Virtufin.WebSocketManager.Services.DaprResiliencePipeline
+  nameWithType: DaprResiliencePipeline
+- uid: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprResiliencePipeline})
+  name: DaprResiliencePipeline(ILogger<DaprResiliencePipeline>)
+  href: api/Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html#Virtufin_WebSocketManager_Services_DaprResiliencePipeline__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprResiliencePipeline__
+  commentId: M:Virtufin.WebSocketManager.Services.DaprResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprResiliencePipeline})
+  name.vb: New(ILogger(Of DaprResiliencePipeline))
+  fullName: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.DaprResiliencePipeline(Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.DaprResiliencePipeline>)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.New(Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprResiliencePipeline))
+  nameWithType: DaprResiliencePipeline.DaprResiliencePipeline(ILogger<DaprResiliencePipeline>)
+  nameWithType.vb: DaprResiliencePipeline.New(ILogger(Of DaprResiliencePipeline))
+- uid: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.#ctor*
+  name: DaprResiliencePipeline
+  href: api/Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html#Virtufin_WebSocketManager_Services_DaprResiliencePipeline__ctor_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprResiliencePipeline.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.DaprResiliencePipeline
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.New
+  nameWithType: DaprResiliencePipeline.DaprResiliencePipeline
+  nameWithType.vb: DaprResiliencePipeline.New
+- uid: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.CircuitBroken
+  name: CircuitBroken
+  href: api/Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html#Virtufin_WebSocketManager_Services_DaprResiliencePipeline_CircuitBroken
+  commentId: P:Virtufin.WebSocketManager.Services.DaprResiliencePipeline.CircuitBroken
+  fullName: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.CircuitBroken
+  nameWithType: DaprResiliencePipeline.CircuitBroken
+- uid: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.CircuitBroken*
+  name: CircuitBroken
+  href: api/Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html#Virtufin_WebSocketManager_Services_DaprResiliencePipeline_CircuitBroken_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprResiliencePipeline.CircuitBroken
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.CircuitBroken
+  nameWithType: DaprResiliencePipeline.CircuitBroken
+- uid: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.ExecuteAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  name: ExecuteAsync(Func<CancellationToken, Task>, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html#Virtufin_WebSocketManager_Services_DaprResiliencePipeline_ExecuteAsync_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.DaprResiliencePipeline.ExecuteAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  name.vb: ExecuteAsync(Func(Of CancellationToken, Task), CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.ExecuteAsync(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task>, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.ExecuteAsync(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task), System.Threading.CancellationToken)
+  nameWithType: DaprResiliencePipeline.ExecuteAsync(Func<CancellationToken, Task>, CancellationToken)
+  nameWithType.vb: DaprResiliencePipeline.ExecuteAsync(Func(Of CancellationToken, Task), CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html#Virtufin_WebSocketManager_Services_DaprResiliencePipeline_ExecuteAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprResiliencePipeline.ExecuteAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.ExecuteAsync
+  nameWithType: DaprResiliencePipeline.ExecuteAsync
+- uid: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.ExecuteAsync``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: ExecuteAsync<T>(Func<CancellationToken, Task<T>>, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html#Virtufin_WebSocketManager_Services_DaprResiliencePipeline_ExecuteAsync__1_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.DaprResiliencePipeline.ExecuteAsync``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: ExecuteAsync(Of T)(Func(Of CancellationToken, Task(Of T)), CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.ExecuteAsync<T>(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.ExecuteAsync(Of T)(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: DaprResiliencePipeline.ExecuteAsync<T>(Func<CancellationToken, Task<T>>, CancellationToken)
+  nameWithType.vb: DaprResiliencePipeline.ExecuteAsync(Of T)(Func(Of CancellationToken, Task(Of T)), CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
   name: DaprStateStoreEntry
   href: api/Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html
@@ -648,6 +853,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.AutoReconnect
   nameWithType: DaprStateStoreEntry.AutoReconnect
+- uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
+  name: CorrelationMode
+  href: api/Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html#Virtufin_WebSocketManager_Services_DaprStateStoreEntry_CorrelationMode
+  commentId: P:Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
+  fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
+  nameWithType: DaprStateStoreEntry.CorrelationMode
+- uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode*
+  name: CorrelationMode
+  href: api/Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html#Virtufin_WebSocketManager_Services_DaprStateStoreEntry_CorrelationMode_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
+  nameWithType: DaprStateStoreEntry.CorrelationMode
 - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CreatedAt
   name: CreatedAt
   href: api/Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html#Virtufin_WebSocketManager_Services_DaprStateStoreEntry_CreatedAt
@@ -758,6 +976,25 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
   fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
   nameWithType: DefaultInstanceIdProvider
+- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.#ctor
+  name: DefaultInstanceIdProvider()
+  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider__ctor
+  commentId: M:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.#ctor
+  name.vb: New()
+  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.DefaultInstanceIdProvider()
+  fullName.vb: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.New()
+  nameWithType: DefaultInstanceIdProvider.DefaultInstanceIdProvider()
+  nameWithType.vb: DefaultInstanceIdProvider.New()
+- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.#ctor*
+  name: DefaultInstanceIdProvider
+  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider__ctor_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.DefaultInstanceIdProvider
+  fullName.vb: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.New
+  nameWithType: DefaultInstanceIdProvider.DefaultInstanceIdProvider
+  nameWithType.vb: DefaultInstanceIdProvider.New
 - uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetInstanceId
   name: GetInstanceId()
   href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetInstanceId
@@ -771,6 +1008,35 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetInstanceId
   nameWithType: DefaultInstanceIdProvider.GetInstanceId
+- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds
+  name: GetKnownInstanceIds()
+  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetKnownInstanceIds
+  commentId: M:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds
+  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds()
+  nameWithType: DefaultInstanceIdProvider.GetKnownInstanceIds()
+- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds*
+  name: GetKnownInstanceIds
+  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetKnownInstanceIds_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds
+  nameWithType: DefaultInstanceIdProvider.GetKnownInstanceIds
+- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance(System.String)
+  name: RegisterLiveInstance(string)
+  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_RegisterLiveInstance_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance(System.String)
+  name.vb: RegisterLiveInstance(String)
+  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance(string)
+  fullName.vb: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance(String)
+  nameWithType: DefaultInstanceIdProvider.RegisterLiveInstance(string)
+  nameWithType.vb: DefaultInstanceIdProvider.RegisterLiveInstance(String)
+- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance*
+  name: RegisterLiveInstance
+  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_RegisterLiveInstance_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance
+  nameWithType: DefaultInstanceIdProvider.RegisterLiveInstance
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
   name: DistributedWebSocketConnectionStore
   href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html
@@ -889,6 +1155,19 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.IDaprConnectionRepository
   fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
   nameWithType: IDaprConnectionRepository
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync(System.Threading.CancellationToken)
+  name: ClearAllAsync(CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_ClearAllAsync_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync(System.Threading.CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync(System.Threading.CancellationToken)
+  nameWithType: IDaprConnectionRepository.ClearAllAsync(CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync*
+  name: ClearAllAsync
+  href: api/Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_ClearAllAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.ClearAllAsync
+  nameWithType: IDaprConnectionRepository.ClearAllAsync
 - uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync(System.String,System.Threading.CancellationToken)
   name: DeleteAsync(string, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_DeleteAsync_System_String_System_Threading_CancellationToken_
@@ -934,6 +1213,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync
   nameWithType: IDaprConnectionRepository.GetAsync
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync(System.String,System.Threading.CancellationToken)
+  name: GetByInstanceIdAsync(string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_GetByInstanceIdAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync(System.String,System.Threading.CancellationToken)
+  name.vb: GetByInstanceIdAsync(String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync(String, System.Threading.CancellationToken)
+  nameWithType: IDaprConnectionRepository.GetByInstanceIdAsync(string, CancellationToken)
+  nameWithType.vb: IDaprConnectionRepository.GetByInstanceIdAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync*
+  name: GetByInstanceIdAsync
+  href: api/Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_GetByInstanceIdAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync
+  nameWithType: IDaprConnectionRepository.GetByInstanceIdAsync
 - uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync(Virtufin.WebSocketManager.Services.DaprStateStoreEntry,System.Threading.CancellationToken)
   name: SaveAsync(DaprStateStoreEntry, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_SaveAsync_Virtufin_WebSocketManager_Services_DaprStateStoreEntry_System_Threading_CancellationToken_
@@ -988,6 +1283,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetInstanceId
   nameWithType: IInstanceIdProvider.GetInstanceId
+- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
+  name: GetKnownInstanceIds()
+  href: api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_GetKnownInstanceIds
+  commentId: M:Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
+  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds()
+  nameWithType: IInstanceIdProvider.GetKnownInstanceIds()
+- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds*
+  name: GetKnownInstanceIds
+  href: api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_GetKnownInstanceIds_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
+  nameWithType: IInstanceIdProvider.GetKnownInstanceIds
 - uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
   name: IWebSocketClientWrapper
   href: api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html
@@ -1167,15 +1475,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.IWebSocketService
   fullName: Virtufin.WebSocketManager.Services.IWebSocketService
   nameWithType: IWebSocketService
-- uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
-  name: ConnectAsync(string, bool, CancellationToken)
-  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
-  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
-  name.vb: ConnectAsync(String, Boolean, CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(string, bool, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(String, Boolean, System.Threading.CancellationToken)
-  nameWithType: IWebSocketService.ConnectAsync(string, bool, CancellationToken)
-  nameWithType.vb: IWebSocketService.ConnectAsync(String, Boolean, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
+  name: ConnectAsync(string, bool, WebSocketCorrelationMode, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
+  name.vb: ConnectAsync(String, Boolean, WebSocketCorrelationMode, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(string, bool, Virtufin.WebSocketManager.Models.WebSocketCorrelationMode, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(String, Boolean, Virtufin.WebSocketManager.Models.WebSocketCorrelationMode, System.Threading.CancellationToken)
+  nameWithType: IWebSocketService.ConnectAsync(string, bool, WebSocketCorrelationMode, CancellationToken)
+  nameWithType.vb: IWebSocketService.ConnectAsync(String, Boolean, WebSocketCorrelationMode, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync*
   name: ConnectAsync
   href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_
@@ -1578,15 +1886,15 @@ references:
   fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.New
   nameWithType: WebSocketService.WebSocketService
   nameWithType.vb: WebSocketService.New
-- uid: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
-  name: ConnectAsync(string, bool, CancellationToken)
-  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
-  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
-  name.vb: ConnectAsync(String, Boolean, CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(string, bool, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(String, Boolean, System.Threading.CancellationToken)
-  nameWithType: WebSocketService.ConnectAsync(string, bool, CancellationToken)
-  nameWithType.vb: WebSocketService.ConnectAsync(String, Boolean, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
+  name: ConnectAsync(string, bool, WebSocketCorrelationMode, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_ConnectAsync_System_String_System_Boolean_Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
+  name.vb: ConnectAsync(String, Boolean, WebSocketCorrelationMode, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(string, bool, Virtufin.WebSocketManager.Models.WebSocketCorrelationMode, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(String, Boolean, Virtufin.WebSocketManager.Models.WebSocketCorrelationMode, System.Threading.CancellationToken)
+  nameWithType: WebSocketService.ConnectAsync(string, bool, WebSocketCorrelationMode, CancellationToken)
+  nameWithType.vb: WebSocketService.ConnectAsync(String, Boolean, WebSocketCorrelationMode, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync*
   name: ConnectAsync
   href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_ConnectAsync_

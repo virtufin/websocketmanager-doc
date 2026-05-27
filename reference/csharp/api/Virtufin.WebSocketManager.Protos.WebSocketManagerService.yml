@@ -27,7 +27,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: WebSocketManagerService
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -63,7 +63,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -97,7 +97,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Connect
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -132,7 +132,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: List
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 38
+    startLine: 41
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -167,7 +167,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Disconnect
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 55
+    startLine: 59
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -202,7 +202,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StartPublish
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 72
+    startLine: 76
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -237,7 +237,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StopPublish
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 97
+    startLine: 101
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -272,7 +272,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Send
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 114
+    startLine: 118
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -307,7 +307,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendRaw
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 143
+    startLine: 151
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos

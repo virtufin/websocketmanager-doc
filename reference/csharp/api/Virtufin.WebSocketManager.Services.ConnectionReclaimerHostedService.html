@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class DefaultInstanceIdProvider | Virtufin WebSocketManager - C# Reference </title>
+      <title>Class ConnectionReclaimerHostedService | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DefaultInstanceIdProvider | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Class ConnectionReclaimerHostedService | Virtufin WebSocketManager - C# Reference ">
       
-      <meta name="description" content="Default implementation of IInstanceIdProvider. Uses the HOSTNAME environment variable (Kubernetes pod name) for the instance ID. Falls back to a generated GUID if no HOSTNAME is set.">
+      <meta name="description" content="Background service that periodically reclaims connections from dead instances. Prevents connection orphaning when pods are replaced via rolling update.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider">
+        <article data-uid="Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService">
 
 
 
-  <h1 id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider" class="text-break">
-Class DefaultInstanceIdProvider  
+  <h1 id="Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService" data-uid="Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService" class="text-break">
+Class ConnectionReclaimerHostedService  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,14 +101,13 @@ Class DefaultInstanceIdProvider
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Default implementation of IInstanceIdProvider.
-Uses the HOSTNAME environment variable (Kubernetes pod name) for the instance ID.
-Falls back to a generated GUID if no HOSTNAME is set.</p>
+  <div class="markdown summary"><p>Background service that periodically reclaims connections from dead instances.
+Prevents connection orphaning when pods are replaced via rolling update.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DefaultInstanceIdProvider : IInstanceIdProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class ConnectionReclaimerHostedService : BackgroundService, IHostedService, IDisposable</code></pre>
   </div>
 
 
@@ -118,14 +117,16 @@ Falls back to a generated GUID if no HOSTNAME is set.</p>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DefaultInstanceIdProvider</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice">BackgroundService</a></div>
+      <div><span class="xref">ConnectionReclaimerHostedService</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="Virtufin.WebSocketManager.Services.IInstanceIdProvider.html">IInstanceIdProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice">IHostedService</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     </dd>
   </dl>
 
@@ -133,6 +134,18 @@ Falls back to a generated GUID if no HOSTNAME is set.</p>
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.dispose">BackgroundService.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.startasync">BackgroundService.StartAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.stopasync">BackgroundService.StopAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executetask">BackgroundService.ExecuteTask</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -144,9 +157,6 @@ Falls back to a generated GUID if no HOSTNAME is set.</p>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
@@ -165,20 +175,32 @@ Falls back to a generated GUID if no HOSTNAME is set.</p>
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider__ctor_" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.#ctor*"></a>
+  <a id="Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__ctor_" data-uid="Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider__ctor" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.#ctor">
-  DefaultInstanceIdProvider()
+  <h3 id="Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__ctor_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__" data-uid="Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})">
+  ConnectionReclaimerHostedService(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger&lt;ConnectionReclaimerHostedService&gt;)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new ConnectionReclaimerHostedService.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DefaultInstanceIdProvider()</code></pre>
+    <pre><code class="lang-csharp hljs">public ConnectionReclaimerHostedService(IDaprConnectionRepository repository, IInstanceIdProvider instanceIdProvider, IWebSocketConnectionStore connectionStore, ILogger&lt;ConnectionReclaimerHostedService&gt; logger)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>repository</code> <a class="xref" href="Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html">IDaprConnectionRepository</a></dt>
+    <dd></dd>
+    <dt><code>instanceIdProvider</code> <a class="xref" href="Virtufin.WebSocketManager.Services.IInstanceIdProvider.html">IInstanceIdProvider</a></dt>
+    <dd></dd>
+    <dt><code>connectionStore</code> <a class="xref" href="Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html">IWebSocketConnectionStore</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html">ConnectionReclaimerHostedService</a>&gt;</dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -195,90 +217,34 @@ Falls back to a generated GUID if no HOSTNAME is set.</p>
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetInstanceId_" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetInstanceId*"></a>
+  <a id="Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService_ExecuteAsync_" data-uid="Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetInstanceId" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetInstanceId">
-  GetInstanceId()
+  <h3 id="Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService_ExecuteAsync_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync(System.Threading.CancellationToken)">
+  ExecuteAsync(CancellationToken)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the unique identifier for this service instance.</p>
+  <div class="markdown level1 summary"><p>This method is called when the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice">IHostedService</a> starts. The implementation should return a task that represents
+the lifetime of the long running operation(s) being performed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetInstanceId()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetKnownInstanceIds_" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetKnownInstanceIds" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds">
-  GetKnownInstanceIds()
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets all known live instance IDs in the cluster.
-Used for reclaiming orphaned connections from dead instances.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlySet&lt;string&gt; GetKnownInstanceIds()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1">IReadOnlySet</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_RegisterLiveInstance_" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_RegisterLiveInstance_System_String_" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance(System.String)">
-  RegisterLiveInstance(string)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Registers a newly discovered live instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RegisterLiveInstance(string instanceId)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override Task ExecuteAsync(CancellationToken stoppingToken)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>instanceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dt><code>stoppingToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Triggered when <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.stopasync">StopAsync(CancellationToken)</a> is called.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the long running operations.</p>
+</dd>
   </dl>
 
 
@@ -287,7 +253,9 @@ Used for reclaiming orphaned connections from dead instances.</p>
 
 
 
-
+  <h4 class="section" id="Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService_ExecuteAsync_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>See <a href="https://learn.microsoft.com/dotnet/core/extensions/workers">Worker Services in .NET</a> for implementation guidelines.</p>
+</div>
 
 
 

@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/2667f3fd9e47cc89e730bea886ba06aa87662270" target="_blank" rel="noopener" class="commit-badge" title="View commit 2667f3f">
+            <a href="{git_repo_url}/commit/a896fffa4b2b9444184596a5a593ad36a3be0f66" target="_blank" rel="noopener" class="commit-badge" title="View commit a896fff">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">2667f3f</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">a896fff</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -206,6 +206,43 @@ Class DaprConnectionRepository
 </h2>
 
 
+  <a id="Virtufin_WebSocketManager_Services_DaprConnectionRepository_ClearAllAsync_" data-uid="Virtufin.WebSocketManager.Services.DaprConnectionRepository.ClearAllAsync*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_DaprConnectionRepository_ClearAllAsync_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.DaprConnectionRepository.ClearAllAsync(System.Threading.CancellationToken)">
+  ClearAllAsync(CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears all connections from the state store. Used on startup with opt-in flag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ClearAllAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_WebSocketManager_Services_DaprConnectionRepository_DeleteAsync_" data-uid="Virtufin.WebSocketManager.Services.DaprConnectionRepository.DeleteAsync*"></a>
 
   <h3 id="Virtufin_WebSocketManager_Services_DaprConnectionRepository_DeleteAsync_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.DaprConnectionRepository.DeleteAsync(System.String,System.Threading.CancellationToken)">
@@ -317,6 +354,45 @@ Class DaprConnectionRepository
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html">DaprStateStoreEntry</a>&gt;</dt>
     <dd><p>The connection entry if found, otherwise null.</p>
 </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_DaprConnectionRepository_GetByInstanceIdAsync_" data-uid="Virtufin.WebSocketManager.Services.DaprConnectionRepository.GetByInstanceIdAsync*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_DaprConnectionRepository_GetByInstanceIdAsync_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.DaprConnectionRepository.GetByInstanceIdAsync(System.String,System.Threading.CancellationToken)">
+  GetByInstanceIdAsync(string, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all connection entries owned by a specific instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;DaprStateStoreEntry&gt;&gt; GetByInstanceIdAsync(string instanceId, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instanceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html">DaprStateStoreEntry</a>&gt;&gt;</dt>
+    <dd></dd>
   </dl>
 
 

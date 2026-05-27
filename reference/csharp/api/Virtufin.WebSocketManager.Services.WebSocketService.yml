@@ -6,7 +6,7 @@ items:
   parent: Virtufin.WebSocketManager.Services
   children:
   - Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
-  - Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.WebSocketService.DisconnectAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
@@ -86,16 +86,16 @@ items:
   nameWithType.vb: WebSocketService.New(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IInstanceIdProvider, ILogger(Of WebSocketService))
   fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.New(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Virtufin.WebSocketManager.Services.IWebSocketClientWrapper, Virtufin.WebSocketManager.Services.IDaprPublisher, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.WebSocketService))
   name.vb: New(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IInstanceIdProvider, ILogger(Of WebSocketService))
-- uid: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
-  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
-  id: ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
+  id: ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
   parent: Virtufin.WebSocketManager.Services.WebSocketService
   langs:
   - csharp
   - vb
-  name: ConnectAsync(string, bool, CancellationToken)
-  nameWithType: WebSocketService.ConnectAsync(string, bool, CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(string, bool, System.Threading.CancellationToken)
+  name: ConnectAsync(string, bool, WebSocketCorrelationMode, CancellationToken)
+  nameWithType: WebSocketService.ConnectAsync(string, bool, WebSocketCorrelationMode, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(string, bool, Virtufin.WebSocketManager.Models.WebSocketCorrelationMode, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -110,23 +110,25 @@ items:
   namespace: Virtufin.WebSocketManager.Services
   example: []
   syntax:
-    content: public Task<WebSocketConnection> ConnectAsync(string url, bool autoReconnect, CancellationToken cancellationToken = default)
+    content: public Task<WebSocketConnection> ConnectAsync(string url, bool autoReconnect, WebSocketCorrelationMode correlationMode = WebSocketCorrelationMode.Raw, CancellationToken cancellationToken = default)
     parameters:
     - id: url
       type: System.String
     - id: autoReconnect
       type: System.Boolean
+    - id: correlationMode
+      type: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
       type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Models.WebSocketConnection}
-    content.vb: Public Function ConnectAsync(url As String, autoReconnect As Boolean, cancellationToken As CancellationToken = Nothing) As Task(Of WebSocketConnection)
+    content.vb: Public Function ConnectAsync(url As String, autoReconnect As Boolean, correlationMode As WebSocketCorrelationMode = WebSocketCorrelationMode.Raw, cancellationToken As CancellationToken = Nothing) As Task(Of WebSocketConnection)
   overload: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync*
   implements:
-  - Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
-  nameWithType.vb: WebSocketService.ConnectAsync(String, Boolean, CancellationToken)
-  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(String, Boolean, System.Threading.CancellationToken)
-  name.vb: ConnectAsync(String, Boolean, CancellationToken)
+  - Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
+  nameWithType.vb: WebSocketService.ConnectAsync(String, Boolean, WebSocketCorrelationMode, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(String, Boolean, Virtufin.WebSocketManager.Models.WebSocketCorrelationMode, System.Threading.CancellationToken)
+  name.vb: ConnectAsync(String, Boolean, WebSocketCorrelationMode, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
   commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
   id: ListConnectionsAsync(System.Threading.CancellationToken)
@@ -145,7 +147,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ListConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 78
+    startLine: 79
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -179,7 +181,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DisconnectAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 83
+    startLine: 84
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -218,7 +220,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StartPublishAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 108
+    startLine: 109
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -259,7 +261,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StopPublishAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 135
+    startLine: 136
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -298,7 +300,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 152
+    startLine: 153
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -341,7 +343,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendRawAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 184
+    startLine: 185
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -776,25 +778,25 @@ references:
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
 - uid: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync*
   commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync
-  href: Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
+  href: Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_ConnectAsync_System_String_System_Boolean_Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_System_Threading_CancellationToken_
   name: ConnectAsync
   nameWithType: WebSocketService.ConnectAsync
   fullName: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync
-- uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
-  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
   parent: Virtufin.WebSocketManager.Services.IWebSocketService
   isExternal: true
-  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
-  name: ConnectAsync(string, bool, CancellationToken)
-  nameWithType: IWebSocketService.ConnectAsync(string, bool, CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(string, bool, System.Threading.CancellationToken)
-  nameWithType.vb: IWebSocketService.ConnectAsync(String, Boolean, CancellationToken)
-  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(String, Boolean, System.Threading.CancellationToken)
-  name.vb: ConnectAsync(String, Boolean, CancellationToken)
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_System_Threading_CancellationToken_
+  name: ConnectAsync(string, bool, WebSocketCorrelationMode, CancellationToken)
+  nameWithType: IWebSocketService.ConnectAsync(string, bool, WebSocketCorrelationMode, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(string, bool, Virtufin.WebSocketManager.Models.WebSocketCorrelationMode, System.Threading.CancellationToken)
+  nameWithType.vb: IWebSocketService.ConnectAsync(String, Boolean, WebSocketCorrelationMode, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(String, Boolean, Virtufin.WebSocketManager.Models.WebSocketCorrelationMode, System.Threading.CancellationToken)
+  name.vb: ConnectAsync(String, Boolean, WebSocketCorrelationMode, CancellationToken)
   spec.csharp:
-  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
     name: ConnectAsync
-    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_System_Threading_CancellationToken_
   - name: (
   - uid: System.String
     name: string
@@ -808,15 +810,20 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: ','
   - name: " "
+  - uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+    name: WebSocketCorrelationMode
+    href: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html
+  - name: ','
+  - name: " "
   - uid: System.Threading.CancellationToken
     name: CancellationToken
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
   - name: )
   spec.vb:
-  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
     name: ConnectAsync
-    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_System_Threading_CancellationToken_
   - name: (
   - uid: System.String
     name: String
@@ -828,6 +835,11 @@ references:
     name: Boolean
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+    name: WebSocketCorrelationMode
+    href: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html
   - name: ','
   - name: " "
   - uid: System.Threading.CancellationToken
@@ -857,6 +869,13 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  commentId: T:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+  parent: Virtufin.WebSocketManager.Models
+  href: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html
+  name: WebSocketCorrelationMode
+  nameWithType: WebSocketCorrelationMode
+  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
 - uid: System.Threading.CancellationToken
   commentId: T:System.Threading.CancellationToken
   parent: System.Threading
@@ -898,6 +917,36 @@ references:
     name: WebSocketConnection
     href: Virtufin.WebSocketManager.Models.WebSocketConnection.html
   - name: )
+- uid: Virtufin.WebSocketManager.Models
+  commentId: N:Virtufin.WebSocketManager.Models
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Models
+  nameWithType: Virtufin.WebSocketManager.Models
+  fullName: Virtufin.WebSocketManager.Models
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Models
+    name: Models
+    href: Virtufin.WebSocketManager.Models.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Models
+    name: Models
+    href: Virtufin.WebSocketManager.Models.html
 - uid: System.Threading
   commentId: N:System.Threading
   isExternal: true

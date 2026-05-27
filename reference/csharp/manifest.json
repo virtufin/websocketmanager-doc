@@ -74,6 +74,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Models.WebSocketCorrelationMode",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.yml\" sourcestartlinenumber=\"1\">Defines how the correlation protocol handles message correlation for send-and-wait operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.WebSocketManager.Models.yml",
       "output": {
         ".html": {
@@ -144,6 +158,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.yml\" sourcestartlinenumber=\"1\">Background service that periodically reclaims connections from dead instances.\nPrevents connection orphaning when pods are replaced via rolling update.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.yml\" sourcestartlinenumber=\"1\">Health check that reports Dapr circuit breaker state.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.yml",
       "output": {
         ".html": {
@@ -172,6 +214,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.DaprResiliencePipeline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.DaprResiliencePipeline",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.DaprResiliencePipeline.yml\" sourcestartlinenumber=\"1\">Provides resilience policies for Dapr operations with retry and circuit breaker.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.WebSocketManager.Services.DaprStateStoreEntry.yml",
       "output": {
         ".html": {
@@ -196,7 +252,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.yml\" sourcestartlinenumber=\"1\">Default implementation of IInstanceIdProvider that uses the machine name.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.yml\" sourcestartlinenumber=\"1\">Default implementation of IInstanceIdProvider.\nUses the HOSTNAME environment variable (Kubernetes pod name) for the instance ID.\nFalls back to a generated GUID if no HOSTNAME is set.</p>\n"
     },
     {
       "type": "ManagedReference",

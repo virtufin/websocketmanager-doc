@@ -265,7 +265,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StartReceiveLoop
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
-    startLine: 169
+    startLine: 177
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services

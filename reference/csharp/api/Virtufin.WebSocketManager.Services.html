@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/2667f3fd9e47cc89e730bea886ba06aa87662270" target="_blank" rel="noopener" class="commit-badge" title="View commit 2667f3f">
+            <a href="{git_repo_url}/commit/a896fffa4b2b9444184596a5a593ad36a3be0f66" target="_blank" rel="noopener" class="commit-badge" title="View commit a896fff">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">2667f3f</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">a896fff</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -107,6 +107,17 @@ Classes
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html">ConnectionReclaimerHostedService</a></dt>
+      <dd><p>Background service that periodically reclaims connections from dead instances.
+Prevents connection orphaning when pods are replaced via rolling update.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html">DaprCircuitBreakerHealthCheck</a></dt>
+      <dd><p>Health check that reports Dapr circuit breaker state.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.DaprConnectionRepository.html">DaprConnectionRepository</a></dt>
       <dd><p>Implementation of IDaprConnectionRepository using Dapr state store.</p>
 </dd>
@@ -117,13 +128,20 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html">DaprResiliencePipeline</a></dt>
+      <dd><p>Provides resilience policies for Dapr operations with retry and circuit breaker.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html">DaprStateStoreEntry</a></dt>
       <dd><p>Represents a WebSocket connection entry stored in Dapr state store.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html">DefaultInstanceIdProvider</a></dt>
-      <dd><p>Default implementation of IInstanceIdProvider that uses the machine name.</p>
+      <dd><p>Default implementation of IInstanceIdProvider.
+Uses the HOSTNAME environment variable (Kubernetes pod name) for the instance ID.
+Falls back to a generated GUID if no HOSTNAME is set.</p>
 </dd>
     </dl>
     <dl class="jumplist">

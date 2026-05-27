@@ -6,8 +6,11 @@ items:
   children:
   - Virtufin.WebSocketManager.Services.ConnectionNotFoundException
   - Virtufin.WebSocketManager.Services.ConnectionOwnershipException
+  - Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+  - Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
   - Virtufin.WebSocketManager.Services.DaprConnectionRepository
   - Virtufin.WebSocketManager.Services.DaprPublisher
+  - Virtufin.WebSocketManager.Services.DaprResiliencePipeline
   - Virtufin.WebSocketManager.Services.DaprStateStoreEntry
   - Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
@@ -32,6 +35,12 @@ items:
   assemblies:
   - Virtufin.WebSocketManager
 references:
+- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+  commentId: T:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
+  href: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html
+  name: ConnectionReclaimerHostedService
+  nameWithType: ConnectionReclaimerHostedService
+  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
 - uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
   commentId: T:Virtufin.WebSocketManager.Services.IDaprConnectionRepository
   parent: Virtufin.WebSocketManager.Services
@@ -58,6 +67,19 @@ references:
   name: DaprPublisher
   nameWithType: DaprPublisher
   fullName: Virtufin.WebSocketManager.Services.DaprPublisher
+- uid: Virtufin.WebSocketManager.Services.DaprResiliencePipeline
+  commentId: T:Virtufin.WebSocketManager.Services.DaprResiliencePipeline
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html
+  name: DaprResiliencePipeline
+  nameWithType: DaprResiliencePipeline
+  fullName: Virtufin.WebSocketManager.Services.DaprResiliencePipeline
+- uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
+  commentId: T:Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
+  href: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html
+  name: DaprCircuitBreakerHealthCheck
+  nameWithType: DaprCircuitBreakerHealthCheck
+  fullName: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
 - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
   commentId: T:Virtufin.WebSocketManager.Services.DaprStateStoreEntry
   parent: Virtufin.WebSocketManager.Services
