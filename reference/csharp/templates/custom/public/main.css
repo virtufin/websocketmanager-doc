@@ -4,6 +4,13 @@
   font-size: 0.9em;
 }
 
-.git-info a {
-  color: #ddd;
+.git-info a,
+.commit-badge {
+  color: var(--bs-body-color, #212529);
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.commit-badge svg {
+  display: block;
 }

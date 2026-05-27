@@ -24,62 +24,8 @@ items:
   name: Virtufin.WebSocketManager.Protos
   type: Namespace
   items:
-  - uid: Virtufin.WebSocketManager.Protos.ConnectRequest
-    name: ConnectRequest
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
-    name: ConnectResponse
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
-    name: DisconnectRequest
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.DisconnectResponse
-    name: DisconnectResponse
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.ListRequest
-    name: ListRequest
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.ListResponse
-    name: ListResponse
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.SendRawRequest
-    name: SendRawRequest
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.SendRawResponse
-    name: SendRawResponse
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.SendRequest
-    name: SendRequest
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.SendResponse
-    name: SendResponse
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.StartPublishRequest
-    name: StartPublishRequest
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.StartPublishResponse
-    name: StartPublishResponse
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.StopPublishRequest
-    name: StopPublishRequest
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.StopPublishResponse
-    name: StopPublishResponse
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.WebSocketConnection
-    name: WebSocketConnection
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager
-    name: WebSocketManager
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
-    name: WebSocketManager.WebSocketManagerBase
-    type: Class
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService
     name: WebSocketManagerService
-    type: Class
-  - uid: Virtufin.WebSocketManager.Protos.WebsocketmanagerReflection
-    name: WebsocketmanagerReflection
     type: Class
 - uid: Virtufin.WebSocketManager.Services
   name: Virtufin.WebSocketManager.Services

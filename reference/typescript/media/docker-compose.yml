@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  websocket-manager:
+    build:
+      context: .
+      dockerfile: src/Virtufin.WebSocketManager/Dockerfile
+      args:
+        - DOTNET_VERSION=8.0
+    ports:
+      - "5001:5001"  # HTTP port for REST APIs
+      - "5002:5002"  # gRPC port for gRPC services
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      # Optional: override default ports via environment variables
+      # - HttpPort=8080
+      # - GrpcPort=8081
+    networks:
+      - virtufin-network
+
+  # Dapr sidecar for WebSocket Manager
+  websocket-manager-dapr:
+    image: "daprio/daprd:latest"
+    command: [
+      "./daprd",
+      "-app-id", "websocket-manager",
+      "-app-port", "5001",
+      "-components-path", "/components",
+      "-config", "/configuration/config.yaml"
+    ]
+    depends_on:
+      - websocket-manager
+    volumes:
+      - "./components:/components"
+      - "./configuration:/configuration"
+    network_mode: "service:websocket-manager"
+    # Uncomment for Windows containers
+    # platform: linux
+
+  # Optional Redis for state store (if not using default Dapr Redis)
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+    networks:
+      - virtufin-network
+
+  # Optional Dapr placement service for actors
+  dapr-placement:
+    image: "daprio/dapr:latest"
+    command: ["./placement", "-port", "50006"]
+    ports:
+      - "50006:50006"
+    networks:
+      - virtufin-network
+
+networks:
+  virtufin-network:
+    driver: bridge
+
+volumes:
+  redis-data:

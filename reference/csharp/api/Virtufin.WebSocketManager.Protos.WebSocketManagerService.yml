@@ -369,26 +369,21 @@ references:
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
   commentId: T:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
   parent: Virtufin.WebSocketManager.Protos
-  href: Virtufin.WebSocketManager.Protos.WebSocketManager.html
   name: WebSocketManager.WebSocketManagerBase
   nameWithType: WebSocketManager.WebSocketManagerBase
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
   spec.csharp:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager
     name: WebSocketManager
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.html
   - name: .
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
     name: WebSocketManagerBase
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html
   spec.vb:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager
     name: WebSocketManager
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.html
   - name: .
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
     name: WebSocketManagerBase
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -763,18 +758,16 @@ references:
   commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
   isExternal: true
-  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Connect_Virtufin_WebSocketManager_Protos_ConnectRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: Connect(ConnectRequest, ServerCallContext)
   nameWithType: WebSocketManager.WebSocketManagerBase.Connect(ConnectRequest, ServerCallContext)
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
     name: Connect
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Connect_Virtufin_WebSocketManager_Protos_ConnectRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.ConnectRequest
     name: ConnectRequest
-    href: Virtufin.WebSocketManager.Protos.ConnectRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -785,11 +778,9 @@ references:
   spec.vb:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
     name: Connect
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Connect_Virtufin_WebSocketManager_Protos_ConnectRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.ConnectRequest
     name: ConnectRequest
-    href: Virtufin.WebSocketManager.Protos.ConnectRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -806,7 +797,6 @@ references:
 - uid: Virtufin.WebSocketManager.Protos.ConnectRequest
   commentId: T:Virtufin.WebSocketManager.Protos.ConnectRequest
   parent: Virtufin.WebSocketManager.Protos
-  href: Virtufin.WebSocketManager.Protos.ConnectRequest.html
   name: ConnectRequest
   nameWithType: ConnectRequest
   fullName: Virtufin.WebSocketManager.Protos.ConnectRequest
@@ -837,7 +827,6 @@ references:
   - name: <
   - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
     name: ConnectResponse
-    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -849,7 +838,6 @@ references:
   - name: " "
   - uid: Virtufin.WebSocketManager.Protos.ConnectResponse
     name: ConnectResponse
-    href: Virtufin.WebSocketManager.Protos.ConnectResponse.html
   - name: )
 - uid: Grpc.Core
   commentId: N:Grpc.Core
@@ -942,18 +930,16 @@ references:
   commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
   isExternal: true
-  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_List_Virtufin_WebSocketManager_Protos_ListRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: List(ListRequest, ServerCallContext)
   nameWithType: WebSocketManager.WebSocketManagerBase.List(ListRequest, ServerCallContext)
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.List(Virtufin.WebSocketManager.Protos.ListRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
     name: List
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_List_Virtufin_WebSocketManager_Protos_ListRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.ListRequest
     name: ListRequest
-    href: Virtufin.WebSocketManager.Protos.ListRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -964,11 +950,9 @@ references:
   spec.vb:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
     name: List
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_List_Virtufin_WebSocketManager_Protos_ListRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.ListRequest
     name: ListRequest
-    href: Virtufin.WebSocketManager.Protos.ListRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -985,7 +969,6 @@ references:
 - uid: Virtufin.WebSocketManager.Protos.ListRequest
   commentId: T:Virtufin.WebSocketManager.Protos.ListRequest
   parent: Virtufin.WebSocketManager.Protos
-  href: Virtufin.WebSocketManager.Protos.ListRequest.html
   name: ListRequest
   nameWithType: ListRequest
   fullName: Virtufin.WebSocketManager.Protos.ListRequest
@@ -1008,7 +991,6 @@ references:
   - name: <
   - uid: Virtufin.WebSocketManager.Protos.ListResponse
     name: ListResponse
-    href: Virtufin.WebSocketManager.Protos.ListResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1020,24 +1002,21 @@ references:
   - name: " "
   - uid: Virtufin.WebSocketManager.Protos.ListResponse
     name: ListResponse
-    href: Virtufin.WebSocketManager.Protos.ListResponse.html
   - name: )
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
   isExternal: true
-  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Disconnect_Virtufin_WebSocketManager_Protos_DisconnectRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: Disconnect(DisconnectRequest, ServerCallContext)
   nameWithType: WebSocketManager.WebSocketManagerBase.Disconnect(DisconnectRequest, ServerCallContext)
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
     name: Disconnect
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Disconnect_Virtufin_WebSocketManager_Protos_DisconnectRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
     name: DisconnectRequest
-    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1048,11 +1027,9 @@ references:
   spec.vb:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
     name: Disconnect
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Disconnect_Virtufin_WebSocketManager_Protos_DisconnectRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
     name: DisconnectRequest
-    href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1069,7 +1046,6 @@ references:
 - uid: Virtufin.WebSocketManager.Protos.DisconnectRequest
   commentId: T:Virtufin.WebSocketManager.Protos.DisconnectRequest
   parent: Virtufin.WebSocketManager.Protos
-  href: Virtufin.WebSocketManager.Protos.DisconnectRequest.html
   name: DisconnectRequest
   nameWithType: DisconnectRequest
   fullName: Virtufin.WebSocketManager.Protos.DisconnectRequest
@@ -1092,7 +1068,6 @@ references:
   - name: <
   - uid: Virtufin.WebSocketManager.Protos.DisconnectResponse
     name: DisconnectResponse
-    href: Virtufin.WebSocketManager.Protos.DisconnectResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1104,24 +1079,21 @@ references:
   - name: " "
   - uid: Virtufin.WebSocketManager.Protos.DisconnectResponse
     name: DisconnectResponse
-    href: Virtufin.WebSocketManager.Protos.DisconnectResponse.html
   - name: )
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
   isExternal: true
-  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_StartPublish_Virtufin_WebSocketManager_Protos_StartPublishRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: StartPublish(StartPublishRequest, ServerCallContext)
   nameWithType: WebSocketManager.WebSocketManagerBase.StartPublish(StartPublishRequest, ServerCallContext)
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
     name: StartPublish
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_StartPublish_Virtufin_WebSocketManager_Protos_StartPublishRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.StartPublishRequest
     name: StartPublishRequest
-    href: Virtufin.WebSocketManager.Protos.StartPublishRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1132,11 +1104,9 @@ references:
   spec.vb:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
     name: StartPublish
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_StartPublish_Virtufin_WebSocketManager_Protos_StartPublishRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.StartPublishRequest
     name: StartPublishRequest
-    href: Virtufin.WebSocketManager.Protos.StartPublishRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1153,7 +1123,6 @@ references:
 - uid: Virtufin.WebSocketManager.Protos.StartPublishRequest
   commentId: T:Virtufin.WebSocketManager.Protos.StartPublishRequest
   parent: Virtufin.WebSocketManager.Protos
-  href: Virtufin.WebSocketManager.Protos.StartPublishRequest.html
   name: StartPublishRequest
   nameWithType: StartPublishRequest
   fullName: Virtufin.WebSocketManager.Protos.StartPublishRequest
@@ -1176,7 +1145,6 @@ references:
   - name: <
   - uid: Virtufin.WebSocketManager.Protos.StartPublishResponse
     name: StartPublishResponse
-    href: Virtufin.WebSocketManager.Protos.StartPublishResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1188,24 +1156,21 @@ references:
   - name: " "
   - uid: Virtufin.WebSocketManager.Protos.StartPublishResponse
     name: StartPublishResponse
-    href: Virtufin.WebSocketManager.Protos.StartPublishResponse.html
   - name: )
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
   isExternal: true
-  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_StopPublish_Virtufin_WebSocketManager_Protos_StopPublishRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: StopPublish(StopPublishRequest, ServerCallContext)
   nameWithType: WebSocketManager.WebSocketManagerBase.StopPublish(StopPublishRequest, ServerCallContext)
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
     name: StopPublish
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_StopPublish_Virtufin_WebSocketManager_Protos_StopPublishRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.StopPublishRequest
     name: StopPublishRequest
-    href: Virtufin.WebSocketManager.Protos.StopPublishRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1216,11 +1181,9 @@ references:
   spec.vb:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
     name: StopPublish
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_StopPublish_Virtufin_WebSocketManager_Protos_StopPublishRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.StopPublishRequest
     name: StopPublishRequest
-    href: Virtufin.WebSocketManager.Protos.StopPublishRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1237,7 +1200,6 @@ references:
 - uid: Virtufin.WebSocketManager.Protos.StopPublishRequest
   commentId: T:Virtufin.WebSocketManager.Protos.StopPublishRequest
   parent: Virtufin.WebSocketManager.Protos
-  href: Virtufin.WebSocketManager.Protos.StopPublishRequest.html
   name: StopPublishRequest
   nameWithType: StopPublishRequest
   fullName: Virtufin.WebSocketManager.Protos.StopPublishRequest
@@ -1260,7 +1222,6 @@ references:
   - name: <
   - uid: Virtufin.WebSocketManager.Protos.StopPublishResponse
     name: StopPublishResponse
-    href: Virtufin.WebSocketManager.Protos.StopPublishResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1272,24 +1233,21 @@ references:
   - name: " "
   - uid: Virtufin.WebSocketManager.Protos.StopPublishResponse
     name: StopPublishResponse
-    href: Virtufin.WebSocketManager.Protos.StopPublishResponse.html
   - name: )
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
   isExternal: true
-  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Send_Virtufin_WebSocketManager_Protos_SendRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: Send(SendRequest, ServerCallContext)
   nameWithType: WebSocketManager.WebSocketManagerBase.Send(SendRequest, ServerCallContext)
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Send(Virtufin.WebSocketManager.Protos.SendRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
     name: Send
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Send_Virtufin_WebSocketManager_Protos_SendRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.SendRequest
     name: SendRequest
-    href: Virtufin.WebSocketManager.Protos.SendRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1300,11 +1258,9 @@ references:
   spec.vb:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
     name: Send
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_Send_Virtufin_WebSocketManager_Protos_SendRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.SendRequest
     name: SendRequest
-    href: Virtufin.WebSocketManager.Protos.SendRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1321,7 +1277,6 @@ references:
 - uid: Virtufin.WebSocketManager.Protos.SendRequest
   commentId: T:Virtufin.WebSocketManager.Protos.SendRequest
   parent: Virtufin.WebSocketManager.Protos
-  href: Virtufin.WebSocketManager.Protos.SendRequest.html
   name: SendRequest
   nameWithType: SendRequest
   fullName: Virtufin.WebSocketManager.Protos.SendRequest
@@ -1344,7 +1299,6 @@ references:
   - name: <
   - uid: Virtufin.WebSocketManager.Protos.SendResponse
     name: SendResponse
-    href: Virtufin.WebSocketManager.Protos.SendResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1356,24 +1310,21 @@ references:
   - name: " "
   - uid: Virtufin.WebSocketManager.Protos.SendResponse
     name: SendResponse
-    href: Virtufin.WebSocketManager.Protos.SendResponse.html
   - name: )
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
   isExternal: true
-  href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_SendRaw_Virtufin_WebSocketManager_Protos_SendRawRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: SendRaw(SendRawRequest, ServerCallContext)
   nameWithType: WebSocketManager.WebSocketManagerBase.SendRaw(SendRawRequest, ServerCallContext)
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
     name: SendRaw
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_SendRaw_Virtufin_WebSocketManager_Protos_SendRawRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.SendRawRequest
     name: SendRawRequest
-    href: Virtufin.WebSocketManager.Protos.SendRawRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1384,11 +1335,9 @@ references:
   spec.vb:
   - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
     name: SendRaw
-    href: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.html#Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerBase_SendRaw_Virtufin_WebSocketManager_Protos_SendRawRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.WebSocketManager.Protos.SendRawRequest
     name: SendRawRequest
-    href: Virtufin.WebSocketManager.Protos.SendRawRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1405,7 +1354,6 @@ references:
 - uid: Virtufin.WebSocketManager.Protos.SendRawRequest
   commentId: T:Virtufin.WebSocketManager.Protos.SendRawRequest
   parent: Virtufin.WebSocketManager.Protos
-  href: Virtufin.WebSocketManager.Protos.SendRawRequest.html
   name: SendRawRequest
   nameWithType: SendRawRequest
   fullName: Virtufin.WebSocketManager.Protos.SendRawRequest
@@ -1428,7 +1376,6 @@ references:
   - name: <
   - uid: Virtufin.WebSocketManager.Protos.SendRawResponse
     name: SendRawResponse
-    href: Virtufin.WebSocketManager.Protos.SendRawResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1440,5 +1387,4 @@ references:
   - name: " "
   - uid: Virtufin.WebSocketManager.Protos.SendRawResponse
     name: SendRawResponse
-    href: Virtufin.WebSocketManager.Protos.SendRawResponse.html
   - name: )
