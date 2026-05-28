@@ -458,6 +458,9 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.StopPublish
   nameWithType: WebSocketManagerService.StopPublish
+- uid: Virtufin.WebSocketManager.Reference
+  name: C# API Reference
+  href: index.html
 - uid: Virtufin.WebSocketManager.Services
   name: Virtufin.WebSocketManager.Services
   href: api/Virtufin.WebSocketManager.Services.html
