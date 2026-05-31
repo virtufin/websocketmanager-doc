@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/967a1e97a8e96a60caac6675c65f812822e0e93e"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/4f0c0f575b64ddb67643718b814c46401842a94e"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 967a1e9">
+       title="View commit 4f0c0f5">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">967a1e9</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">4f0c0f5</text>
       </svg>
     </a>
 </div>
@@ -390,14 +390,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/967a1e97a8e96a60caac6675c65f812822e0e93e"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/4f0c0f575b64ddb67643718b814c46401842a94e"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 967a1e9">
+       title="View commit 4f0c0f5">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">967a1e9</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">4f0c0f5</text>
       </svg>
     </a>
 </div>
@@ -724,21 +724,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#http-port-default-5001" class="md-nav__link">
+  <a href="#shared-port-default-5001" class="md-nav__link">
     <span class="md-ellipsis">
       
-        HTTP Port (Default: 5001)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grpc-port-default-5002" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        gRPC Port (Default: 5002)
+        Shared Port (Default: 5001)
       
     </span>
   </a>
@@ -785,10 +774,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#grpc-api-grpc-port" class="md-nav__link">
+  <a href="#grpc-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        gRPC API (gRPC Port)
+        gRPC API
       
     </span>
   </a>
@@ -1568,21 +1557,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#http-port-default-5001" class="md-nav__link">
+  <a href="#shared-port-default-5001" class="md-nav__link">
     <span class="md-ellipsis">
       
-        HTTP Port (Default: 5001)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grpc-port-default-5002" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        gRPC Port (Default: 5002)
+        Shared Port (Default: 5001)
       
     </span>
   </a>
@@ -1629,10 +1607,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#grpc-api-grpc-port" class="md-nav__link">
+  <a href="#grpc-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        gRPC API (gRPC Port)
+        gRPC API
       
     </span>
   </a>
@@ -1742,46 +1720,30 @@ dotnet<span class="w"> </span>build
 </code></pre></div>
 <h2 id="running-the-service">Running the Service</h2>
 <h3 id="default-configuration">Default Configuration</h3>
-<p>By default, the service runs on two ports:
-- <strong>HTTP Port 5001</strong>: REST API endpoints and Swagger UI
-- <strong>gRPC Port 5002</strong>: gRPC services with plaintext HTTP/2</p>
+<p>By default, the service runs on a single shared port:
+- <strong>Port 5001</strong>: REST API endpoints, gRPC services, and Swagger UI</p>
 <div class="highlight"><pre><span></span><code>dotnet<span class="w"> </span>run<span class="w"> </span>--project<span class="w"> </span>src/Virtufin.WebSocketManager
 </code></pre></div>
 <h3 id="custom-port-configuration">Custom Port Configuration</h3>
 <h4 id="command-line-arguments">Command-Line Arguments</h4>
-<div class="highlight"><pre><span></span><code><span class="c1"># Custom HTTP port only (gRPC uses default 5002)</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Custom port</span>
 dotnet<span class="w"> </span>run<span class="w"> </span>--project<span class="w"> </span>src/Virtufin.WebSocketManager<span class="w"> </span>--<span class="w"> </span>--http-port<span class="w"> </span><span class="m">8080</span>
-
-<span class="c1"># Custom gRPC port only (HTTP uses default 5001)</span>
-dotnet<span class="w"> </span>run<span class="w"> </span>--project<span class="w"> </span>src/Virtufin.WebSocketManager<span class="w"> </span>--<span class="w"> </span>--grpc-port<span class="w"> </span><span class="m">8081</span>
-
-<span class="c1"># Both custom ports</span>
-dotnet<span class="w"> </span>run<span class="w"> </span>--project<span class="w"> </span>src/Virtufin.WebSocketManager<span class="w"> </span>--<span class="w"> </span>--http-port<span class="w"> </span><span class="m">8080</span><span class="w"> </span>--grpc-port<span class="w"> </span><span class="m">8081</span>
 </code></pre></div>
 <h4 id="environment-variables">Environment Variables</h4>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">HTTP_PORT</span><span class="o">=</span><span class="m">4000</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">GRPC_PORT</span><span class="o">=</span><span class="m">4001</span>
 dotnet<span class="w"> </span>run<span class="w"> </span>--project<span class="w"> </span>src/Virtufin.WebSocketManager
 </code></pre></div>
 <h2 id="port-configuration-details">Port Configuration Details</h2>
-<h3 id="http-port-default-5001">HTTP Port (Default: 5001)</h3>
+<h3 id="shared-port-default-5001">Shared Port (Default: 5001)</h3>
 <ul>
 <li>Supports HTTP/1.1 and HTTP/2 protocols</li>
-<li>Hosts REST API endpoints</li>
+<li>Hosts REST API endpoints and gRPC services</li>
 <li>Provides Swagger UI for API documentation</li>
 <li>Used for health checks</li>
-</ul>
-<h3 id="grpc-port-default-5002">gRPC Port (Default: 5002)</h3>
-<ul>
-<li>Supports HTTP/2 protocol only</li>
-<li>Plaintext communication (no TLS required)</li>
-<li>Hosts gRPC services</li>
-<li>Provides gRPC reflection for client discovery</li>
 </ul>
 <h3 id="validation-rules">Validation Rules</h3>
 <ul>
 <li>Ports must be between 1 and 65535</li>
-<li>HTTP and gRPC ports must be different</li>
 <li>Invalid configurations will display an error message</li>
 </ul>
 <h2 id="api-access">API Access</h2>
@@ -1795,9 +1757,9 @@ curl<span class="w"> </span>http://localhost:5001/websockets
 <span class="c1"># Swagger UI</span>
 <span class="c1"># Open http://localhost:5001/swagger in your browser</span>
 </code></pre></div>
-<h3 id="grpc-api-grpc-port">gRPC API (gRPC Port)</h3>
+<h3 id="grpc-api">gRPC API</h3>
 <div class="highlight"><pre><span></span><code><span class="c1">// C# gRPC client example</span>
-<span class="kt">var</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GrpcChannel</span><span class="p">.</span><span class="n">ForAddress</span><span class="p">(</span><span class="s">&quot;http://localhost:5002&quot;</span><span class="p">);</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GrpcChannel</span><span class="p">.</span><span class="n">ForAddress</span><span class="p">(</span><span class="s">&quot;http://localhost:5001&quot;</span><span class="p">);</span>
 <span class="kt">var</span><span class="w"> </span><span class="n">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">WebSocketManagerService</span><span class="p">.</span><span class="n">WebSocketManagerServiceClient</span><span class="p">(</span><span class="n">channel</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="configuration-options">Configuration Options</h2>
@@ -1851,7 +1813,7 @@ curl<span class="w"> </span>http://localhost:5001/websockets
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-05-31T05:16:14Z</span>
+  <span style="display:table-cell;text-align:right">2026-05-31T05:43:39Z</span>
 </div>
 
     </div>
