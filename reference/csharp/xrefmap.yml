@@ -91,30 +91,12 @@ references:
   commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprHttpPort
   fullName: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprHttpPort
   nameWithType: PortConstants.DefaultDaprHttpPort
-- uid: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultGrpcPort
-  name: DefaultGrpcPort
-  href: api/Virtufin.WebSocketManager.Configuration.PortConstants.html#Virtufin_WebSocketManager_Configuration_PortConstants_DefaultGrpcPort
-  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DefaultGrpcPort
-  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultGrpcPort
-  nameWithType: PortConstants.DefaultGrpcPort
-- uid: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
-  name: DefaultHttpPort
-  href: api/Virtufin.WebSocketManager.Configuration.PortConstants.html#Virtufin_WebSocketManager_Configuration_PortConstants_DefaultHttpPort
-  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
-  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
-  nameWithType: PortConstants.DefaultHttpPort
-- uid: Virtufin.WebSocketManager.Configuration.PortConstants.GrpcPortKey
-  name: GrpcPortKey
-  href: api/Virtufin.WebSocketManager.Configuration.PortConstants.html#Virtufin_WebSocketManager_Configuration_PortConstants_GrpcPortKey
-  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.GrpcPortKey
-  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.GrpcPortKey
-  nameWithType: PortConstants.GrpcPortKey
-- uid: Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
-  name: HttpPortKey
-  href: api/Virtufin.WebSocketManager.Configuration.PortConstants.html#Virtufin_WebSocketManager_Configuration_PortConstants_HttpPortKey
-  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
-  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
-  nameWithType: PortConstants.HttpPortKey
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultServerPort
+  name: DefaultServerPort
+  href: api/Virtufin.WebSocketManager.Configuration.PortConstants.html#Virtufin_WebSocketManager_Configuration_PortConstants_DefaultServerPort
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DefaultServerPort
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultServerPort
+  nameWithType: PortConstants.DefaultServerPort
 - uid: Virtufin.WebSocketManager.Configuration.PortConstants.MaxPort
   name: MaxPort
   href: api/Virtufin.WebSocketManager.Configuration.PortConstants.html#Virtufin_WebSocketManager_Configuration_PortConstants_MaxPort
@@ -127,6 +109,12 @@ references:
   commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.MinPort
   fullName: Virtufin.WebSocketManager.Configuration.PortConstants.MinPort
   nameWithType: PortConstants.MinPort
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.ServerPortKey
+  name: ServerPortKey
+  href: api/Virtufin.WebSocketManager.Configuration.PortConstants.html#Virtufin_WebSocketManager_Configuration_PortConstants_ServerPortKey
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.ServerPortKey
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.ServerPortKey
+  nameWithType: PortConstants.ServerPortKey
 - uid: Virtufin.WebSocketManager.Models
   name: Virtufin.WebSocketManager.Models
   href: api/Virtufin.WebSocketManager.Models.html

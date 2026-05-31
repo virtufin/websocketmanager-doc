@@ -28,7 +28,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Configuration.PortConstants",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.PortConstants.yml\" sourcestartlinenumber=\"1\">Constants for port configuration.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",

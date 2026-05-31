@@ -9,12 +9,10 @@ items:
   - Virtufin.WebSocketManager.Configuration.PortConstants.DaprHttpPortKey
   - Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprGrpcPort
   - Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprHttpPort
-  - Virtufin.WebSocketManager.Configuration.PortConstants.DefaultGrpcPort
-  - Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
-  - Virtufin.WebSocketManager.Configuration.PortConstants.GrpcPortKey
-  - Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
+  - Virtufin.WebSocketManager.Configuration.PortConstants.DefaultServerPort
   - Virtufin.WebSocketManager.Configuration.PortConstants.MaxPort
   - Virtufin.WebSocketManager.Configuration.PortConstants.MinPort
+  - Virtufin.WebSocketManager.Configuration.PortConstants.ServerPortKey
   langs:
   - csharp
   - vb
@@ -29,12 +27,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: PortConstants
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
-    startLine: 5
+    startLine: 2
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
-  summary: Constants for port configuration.
-  example: []
   syntax:
     content: public static class PortConstants
     content.vb: Public Module PortConstants
@@ -66,7 +62,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: MinPort
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
-    startLine: 7
+    startLine: 4
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
@@ -93,7 +89,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: MaxPort
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
-    startLine: 8
+    startLine: 5
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
@@ -102,62 +98,33 @@ items:
     return:
       type: System.Int32
     content.vb: Public Const MaxPort As Integer = 65535
-- uid: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
-  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
-  id: DefaultHttpPort
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultServerPort
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DefaultServerPort
+  id: DefaultServerPort
   parent: Virtufin.WebSocketManager.Configuration.PortConstants
   langs:
   - csharp
   - vb
-  name: DefaultHttpPort
-  nameWithType: PortConstants.DefaultHttpPort
-  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultHttpPort
+  name: DefaultServerPort
+  nameWithType: PortConstants.DefaultServerPort
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultServerPort
   type: Field
   source:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: DefaultHttpPort
+    id: DefaultServerPort
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
-    startLine: 10
+    startLine: 7
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   syntax:
-    content: public const int DefaultHttpPort = 5001
+    content: public const int DefaultServerPort = 5001
     return:
       type: System.Int32
-    content.vb: Public Const DefaultHttpPort As Integer = 5001
-- uid: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultGrpcPort
-  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DefaultGrpcPort
-  id: DefaultGrpcPort
-  parent: Virtufin.WebSocketManager.Configuration.PortConstants
-  langs:
-  - csharp
-  - vb
-  name: DefaultGrpcPort
-  nameWithType: PortConstants.DefaultGrpcPort
-  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultGrpcPort
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: DefaultGrpcPort
-    path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
-    startLine: 15
-  assemblies:
-  - Virtufin.WebSocketManager
-  namespace: Virtufin.WebSocketManager.Configuration
-  summary: Default gRPC port for gRPC services.
-  example: []
-  syntax:
-    content: public const int DefaultGrpcPort = 5002
-    return:
-      type: System.Int32
-    content.vb: Public Const DefaultGrpcPort As Integer = 5002
+    content.vb: Public Const DefaultServerPort As Integer = 5001
 - uid: Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprHttpPort
   commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DefaultDaprHttpPort
   id: DefaultDaprHttpPort
@@ -176,12 +143,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DefaultDaprHttpPort
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
-    startLine: 20
+    startLine: 8
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
-  summary: Default Dapr HTTP port.
-  example: []
   syntax:
     content: public const int DefaultDaprHttpPort = 3500
     return:
@@ -205,75 +170,42 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DefaultDaprGrpcPort
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
-    startLine: 25
+    startLine: 9
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
-  summary: Default Dapr gRPC port.
-  example: []
   syntax:
     content: public const int DefaultDaprGrpcPort = 50001
     return:
       type: System.Int32
     content.vb: Public Const DefaultDaprGrpcPort As Integer = 50001
-- uid: Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
-  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
-  id: HttpPortKey
+- uid: Virtufin.WebSocketManager.Configuration.PortConstants.ServerPortKey
+  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.ServerPortKey
+  id: ServerPortKey
   parent: Virtufin.WebSocketManager.Configuration.PortConstants
   langs:
   - csharp
   - vb
-  name: HttpPortKey
-  nameWithType: PortConstants.HttpPortKey
-  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey
+  name: ServerPortKey
+  nameWithType: PortConstants.ServerPortKey
+  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.ServerPortKey
   type: Field
   source:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: HttpPortKey
+    id: ServerPortKey
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
-    startLine: 30
+    startLine: 11
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
-  summary: Configuration key for HTTP port.
-  example: []
   syntax:
-    content: public const string HttpPortKey = "HttpPort"
+    content: public const string ServerPortKey = "ServerPort"
     return:
       type: System.String
-    content.vb: Public Const HttpPortKey As String = "HttpPort"
-- uid: Virtufin.WebSocketManager.Configuration.PortConstants.GrpcPortKey
-  commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.GrpcPortKey
-  id: GrpcPortKey
-  parent: Virtufin.WebSocketManager.Configuration.PortConstants
-  langs:
-  - csharp
-  - vb
-  name: GrpcPortKey
-  nameWithType: PortConstants.GrpcPortKey
-  fullName: Virtufin.WebSocketManager.Configuration.PortConstants.GrpcPortKey
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: GrpcPortKey
-    path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
-    startLine: 35
-  assemblies:
-  - Virtufin.WebSocketManager
-  namespace: Virtufin.WebSocketManager.Configuration
-  summary: Configuration key for gRPC port.
-  example: []
-  syntax:
-    content: public const string GrpcPortKey = "GrpcPort"
-    return:
-      type: System.String
-    content.vb: Public Const GrpcPortKey As String = "GrpcPort"
+    content.vb: Public Const ServerPortKey As String = "ServerPort"
 - uid: Virtufin.WebSocketManager.Configuration.PortConstants.DaprHttpPortKey
   commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.DaprHttpPortKey
   id: DaprHttpPortKey
@@ -292,12 +224,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DaprHttpPortKey
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
-    startLine: 40
+    startLine: 12
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
-  summary: Configuration key for Dapr HTTP port.
-  example: []
   syntax:
     content: public const string DaprHttpPortKey = "DaprHttpPort"
     return:
@@ -321,12 +251,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DaprGrpcPortKey
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
-    startLine: 45
+    startLine: 13
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
-  summary: Configuration key for Dapr gRPC port.
-  example: []
   syntax:
     content: public const string DaprGrpcPortKey = "DaprGrpcPort"
     return:
