@@ -34,7 +34,8 @@ dapr init
 # Start the service with Dapr
 cd src/Virtufin.WebSocketManager
 dapr run --app-id websocket-pubsub-dapr \
-  --app-port 5001 \
+  --app-protocol grpc \
+  --app-port 5002 \
   --dapr-http-port 3500 \
   --resources-path ../../components \
   -- dotnet run --no-build
