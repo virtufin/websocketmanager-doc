@@ -7,7 +7,7 @@ items:
   children:
   - Virtufin.WebSocketManager.Models.WebSocketConnection.AutoReconnect
   - Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
-  - Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
   - Virtufin.WebSocketManager.Models.WebSocketConnection.CreatedAt
   - Virtufin.WebSocketManager.Models.WebSocketConnection.Id
   - Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId
@@ -30,12 +30,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: WebSocketConnection
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 56
+    startLine: 12
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: Represents a managed external WebSocket connection.
-  example: []
   syntax:
     content: public class WebSocketConnection
     content.vb: Public Class WebSocketConnection
@@ -67,12 +65,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Id
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 61
+    startLine: 14
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: Gets or sets the unique identifier for this connection.
-  example: []
   syntax:
     content: public string Id { get; set; }
     parameters: []
@@ -98,12 +94,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Url
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 66
+    startLine: 15
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: Gets or sets the WebSocket server URL.
-  example: []
   syntax:
     content: public string Url { get; set; }
     parameters: []
@@ -129,12 +123,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Status
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 71
+    startLine: 16
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: Gets or sets the current connection status.
-  example: []
   syntax:
     content: public ConnectionStatus Status { get; set; }
     parameters: []
@@ -160,12 +152,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Topic
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 76
+    startLine: 17
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: Gets or sets the Dapr pub/sub topic for publishing messages.
-  example: []
   syntax:
     content: public string? Topic { get; set; }
     parameters: []
@@ -191,12 +181,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: AutoReconnect
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 81
+    startLine: 18
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: Gets or sets whether the connection should automatically reconnect on failure.
-  example: []
   syntax:
     content: public bool AutoReconnect { get; set; }
     parameters: []
@@ -222,12 +210,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CreatedAt
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 86
+    startLine: 19
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: Gets or sets when this connection was created.
-  example: []
   syntax:
     content: public DateTime CreatedAt { get; set; }
     parameters: []
@@ -253,12 +239,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: InstanceId
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 91
+    startLine: 20
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: Gets or sets the instance ID that owns this connection.
-  example: []
   syntax:
     content: public string? InstanceId { get; set; }
     parameters: []
@@ -266,40 +250,35 @@ items:
       type: System.String
     content.vb: Public Property InstanceId As String
   overload: Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId*
-- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
-  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
-  id: CorrelationMode
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
+  id: ContentType
   parent: Virtufin.WebSocketManager.Models.WebSocketConnection
   langs:
   - csharp
   - vb
-  name: CorrelationMode
-  nameWithType: WebSocketConnection.CorrelationMode
-  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
+  name: ContentType
+  nameWithType: WebSocketConnection.ContentType
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
   type: Property
   source:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: CorrelationMode
+    id: ContentType
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 97
+    startLine: 21
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: >-
-    Gets or sets the correlation mode for send-and-wait operations.
-
-    Defaults to <xref href="Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw" data-throw-if-not-resolved="false"></xref> for external server compatibility.
-  example: []
   syntax:
-    content: public WebSocketCorrelationMode CorrelationMode { get; set; }
+    content: public string? ContentType { get; set; }
     parameters: []
     return:
-      type: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
-    content.vb: Public Property CorrelationMode As WebSocketCorrelationMode
-  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode*
+      type: System.String
+    content.vb: Public Property ContentType As String
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType*
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
   commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
   id: WebSocket
@@ -318,12 +297,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: WebSocket
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 102
+    startLine: 22
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: Gets or sets the underlying ClientWebSocket instance.
-  example: []
   syntax:
     content: public ClientWebSocket? WebSocket { get; set; }
     parameters: []
@@ -349,12 +326,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CancellationTokenSource
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 107
+    startLine: 23
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: Gets or sets the cancellation token source for the receive loop.
-  example: []
   syntax:
     content: public CancellationTokenSource? CancellationTokenSource { get; set; }
     parameters: []
@@ -380,12 +355,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ReceiveTask
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 112
+    startLine: 24
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: Gets or sets the background task running the receive loop.
-  example: []
   syntax:
     content: public Task? ReceiveTask { get; set; }
     parameters: []
@@ -743,25 +716,12 @@ references:
   name: InstanceId
   nameWithType: WebSocketConnection.InstanceId
   fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId
-- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
-  commentId: F:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
-  href: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html#Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_Raw
-  name: Raw
-  nameWithType: WebSocketCorrelationMode.Raw
-  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
-- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode*
-  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
-  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_CorrelationMode
-  name: CorrelationMode
-  nameWithType: WebSocketConnection.CorrelationMode
-  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
-- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
-  commentId: T:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
-  parent: Virtufin.WebSocketManager.Models
-  href: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html
-  name: WebSocketCorrelationMode
-  nameWithType: WebSocketCorrelationMode
-  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_ContentType
+  name: ContentType
+  nameWithType: WebSocketConnection.ContentType
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket*
   commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
   href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_WebSocket

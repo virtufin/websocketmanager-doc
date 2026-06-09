@@ -23,12 +23,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ConnectionStatus
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 7
+    startLine: 4
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: Represents the current state of a WebSocket connection.
-  example: []
   syntax:
     content: public enum ConnectionStatus
     content.vb: Public Enum ConnectionStatus
@@ -50,12 +48,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Disconnected
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 12
+    startLine: 6
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: The WebSocket is not connected.
-  example: []
   syntax:
     content: Disconnected = 0
     return:
@@ -78,12 +74,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Connecting
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 17
+    startLine: 7
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: The WebSocket connection is being established.
-  example: []
   syntax:
     content: Connecting = 1
     return:
@@ -106,12 +100,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Connected
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 22
+    startLine: 8
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: The WebSocket is connected and ready for communication.
-  example: []
   syntax:
     content: Connected = 2
     return:
@@ -134,12 +126,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Reconnecting
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 27
+    startLine: 9
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
-  summary: The WebSocket is attempting to reconnect after a connection loss.
-  example: []
   syntax:
     content: Reconnecting = 3
     return:

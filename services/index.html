@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/1ce788ac2691976ff4d1272bd518a0ebe3f15de2"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/b7e030a203b36f4d92677d611ebbe6a2b7796293"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 1ce788a">
+       title="View commit b7e030a">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">1ce788a</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">b7e030a</text>
       </svg>
     </a>
 </div>
@@ -370,14 +370,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/1ce788ac2691976ff4d1272bd518a0ebe3f15de2"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/b7e030a203b36f4d92677d611ebbe6a2b7796293"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 1ce788a">
+       title="View commit b7e030a">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">1ce788a</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">b7e030a</text>
       </svg>
     </a>
 </div>
@@ -2219,11 +2219,11 @@
 <span class="w">    </span><span class="n">Task</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">Success</span><span class="p">,</span><span class="w"> </span><span class="kt">string?</span><span class="w"> </span><span class="n">Error</span><span class="p">)</span><span class="o">&gt;</span><span class="w"> </span><span class="n">StopPublishAsync</span><span class="p">(</span>
 <span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">CancellationToken</span><span class="w"> </span><span class="n">cancellationToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">);</span>
 
-<span class="w">    </span><span class="n">Task</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">string?</span><span class="w"> </span><span class="n">Response</span><span class="p">,</span><span class="w"> </span><span class="kt">string?</span><span class="w"> </span><span class="n">Error</span><span class="p">)</span><span class="o">&gt;</span><span class="w"> </span><span class="n">SendAsync</span><span class="p">(</span>
-<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">timeoutMs</span><span class="p">,</span><span class="w"> </span><span class="n">CancellationToken</span><span class="w"> </span><span class="n">cancellationToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Task</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">byte</span><span class="p">[]</span><span class="o">?</span><span class="w"> </span><span class="n">Response</span><span class="p">,</span><span class="w"> </span><span class="kt">string?</span><span class="w"> </span><span class="n">Error</span><span class="p">)</span><span class="o">&gt;</span><span class="w"> </span><span class="n">SendAsync</span><span class="p">(</span>
+<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">contentType</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">timeoutMs</span><span class="p">,</span><span class="w"> </span><span class="n">CancellationToken</span><span class="w"> </span><span class="n">cancellationToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">);</span>
 
 <span class="w">    </span><span class="n">Task</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">Success</span><span class="p">,</span><span class="w"> </span><span class="kt">string?</span><span class="w"> </span><span class="n">Error</span><span class="p">)</span><span class="o">&gt;</span><span class="w"> </span><span class="n">SendRawAsync</span><span class="p">(</span>
-<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="n">CancellationToken</span><span class="w"> </span><span class="n">cancellationToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">);</span>
+<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">contentType</span><span class="p">,</span><span class="w"> </span><span class="n">CancellationToken</span><span class="w"> </span><span class="n">cancellationToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="connectasync">ConnectAsync</h3>
@@ -2476,21 +2476,21 @@
 
 <span class="w">    </span><span class="n">Task</span><span class="w"> </span><span class="nf">DisconnectAsync</span><span class="p">(</span><span class="n">WebSocketConnection</span><span class="w"> </span><span class="n">connection</span><span class="p">);</span>
 
-<span class="w">    </span><span class="n">Task</span><span class="w"> </span><span class="nf">SendAsync</span><span class="p">(</span><span class="n">WebSocketConnection</span><span class="w"> </span><span class="n">connection</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">message</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Task</span><span class="w"> </span><span class="nf">SendAsync</span><span class="p">(</span><span class="n">WebSocketConnection</span><span class="w"> </span><span class="n">connection</span><span class="p">,</span><span class="w"> </span><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">contentType</span><span class="p">);</span>
 
-<span class="w">    </span><span class="n">Task</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">SendAndWaitAsync</span><span class="p">(</span>
-<span class="w">        </span><span class="n">WebSocketConnection</span><span class="w"> </span><span class="n">connection</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">timeoutMs</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Task</span><span class="o">&lt;</span><span class="kt">byte</span><span class="p">[]</span><span class="o">&gt;</span><span class="w"> </span><span class="n">SendAndWaitAsync</span><span class="p">(</span>
+<span class="w">        </span><span class="n">WebSocketConnection</span><span class="w"> </span><span class="n">connection</span><span class="p">,</span><span class="w"> </span><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">timeoutMs</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">contentType</span><span class="p">);</span>
 
 <span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">StartReceiveLoop</span><span class="p">(</span>
-<span class="w">        </span><span class="n">WebSocketConnection</span><span class="w"> </span><span class="n">connection</span><span class="p">,</span><span class="w"> </span><span class="n">Func</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="n">Task</span><span class="o">&gt;</span><span class="w"> </span><span class="n">onMessageReceived</span><span class="p">);</span>
+<span class="w">        </span><span class="n">WebSocketConnection</span><span class="w"> </span><span class="n">connection</span><span class="p">,</span><span class="w"> </span><span class="n">Func</span><span class="o">&lt;</span><span class="kt">byte</span><span class="p">[],</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="n">Task</span><span class="o">&gt;</span><span class="w"> </span><span class="n">onMessageReceived</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="implementation-websocketclientwrapper">Implementation: WebSocketClientWrapper</h3>
-<p>Manages <code>System.Net.WebSockets.ClientWebSocket</code> instances with correlation-based request-response matching.</p>
+<p>Manages <code>System.Net.WebSockets.ClientWebSocket</code> instances with a 16-byte UUID binary prefix for request-response correlation.</p>
 <h4 id="internal-state">Internal State</h4>
 <ul>
-<li><code>_pendingRequests</code>: <code>ConcurrentDictionary&lt;string, TaskCompletionSource&lt;string&gt;&gt;</code> - Maps correlation IDs to pending response completers</li>
-<li><code>WrappedMessage</code> record: Internal format for correlation (<code>{ "id": "...", "message": "..." }</code>)</li>
+<li><code>_pendingRequests</code>: <code>ConcurrentDictionary&lt;Guid, TaskCompletionSource&lt;byte[]&gt;&gt;</code> - Maps correlation UUIDs to pending response completers</li>
+<li>Correlation envelope: <code>[16 bytes UUID][payload bytes]</code> — No JSON parsing, fast binary matching</li>
 </ul>
 <hr />
 <h4 id="connectasync_1">ConnectAsync</h4>
@@ -2516,33 +2516,38 @@
 4. Sets status to <code>Disconnected</code></p>
 <hr />
 <h4 id="sendasync_1">SendAsync</h4>
-<p>Sends a text message without waiting for a response.</p>
+<p>Sends bytes via WebSocket. Frame type (Text/Binary) is determined by the <code>contentType</code> parameter:
+- <code>text/*</code> or <code>application/json</code> → Text frame
+- Everything else → Binary frame</p>
 <p><strong>Parameters:</strong>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | <code>connection</code> | <code>WebSocketConnection</code> | The connection to send on |
-| <code>message</code> | <code>string</code> | The message to send |</p>
+| <code>message</code> | <code>byte[]</code> | The raw bytes to send |
+| <code>contentType</code> | <code>string</code> | MIME content type (e.g., "text/plain", "application/json", "application/octet-stream") |</p>
 <p><strong>Throws:</strong> <code>InvalidOperationException</code> if WebSocket is not connected.</p>
 <hr />
 <h4 id="sendandwaitasync">SendAndWaitAsync</h4>
-<p>Sends a message with correlation and waits for the response.</p>
-<blockquote>
-<p><strong>Important:</strong> <code>SendAndWaitAsync</code> wraps the message in a <code>{ "Id": "&lt;guid&gt;", "Message": "&lt;original&gt;" }</code> JSON envelope and expects the server to echo back a response with a matching <code>"id"</code> field. External WebSocket servers that do not return this envelope will cause the call to time out silently. Use <code>SendAsync</code> for servers that don't implement this protocol, or set <code>CorrelationMode.Raw</code> on the connection.</p>
-</blockquote>
+<p>Sends bytes with a 16-byte UUID binary prefix for correlation, waits for a matching response (first 16 bytes match the UUID prefix, stripped from the response).</p>
 <p><strong>Parameters:</strong>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | <code>connection</code> | <code>WebSocketConnection</code> | The connection to send on |
-| <code>message</code> | <code>string</code> | The message to send |
-| <code>timeoutMs</code> | <code>int</code> | Timeout in milliseconds |</p>
+| <code>message</code> | <code>byte[]</code> | The message to send (min 16 bytes) |
+| <code>timeoutMs</code> | <code>int</code> | Timeout in milliseconds |
+| <code>contentType</code> | <code>string</code> | MIME content type |</p>
 <p><strong>Behavior:</strong>
-1. Generates a new correlation ID (<code>Guid.NewGuid().ToString()</code>)
+1. Generates a new correlation UUID
+2. Prepends 16-byte UUID to the message: <code>[16 bytes UUID][payload bytes]</code>
+3. Sends the wrapped bytes via <code>SendAsync</code> with the given contentType
+4. Waits for a response whose first 16 bytes match the UUID
+5. Returns the response with the 16-byte UUID prefix stripped
 2. Creates a <code>TaskCompletionSource&lt;string&gt;</code> for the response
 3. Wraps message as <code>WrappedMessage(correlationId, message)</code>
 4. Sends via <code>SendAsync</code>
 5. Registers a timeout cancellation
 6. Returns when response is received or timeout</p>
-<p><strong>Implementation Detail:</strong> The message is JSON-serialized with the correlation ID. Responses are matched in <code>StartReceiveLoop</code> by extracting the <code>id</code> field from JSON.</p>
+<p><strong>Implementation Detail:</strong> The message is wrapped with a 16-byte GUID prefix. Responses are matched in <code>StartReceiveLoop</code> by comparing the first 16 bytes of received messages against pending correlation UUIDs.</p>
 <hr />
 <h4 id="startreceiveloop">StartReceiveLoop</h4>
 <p>Starts a background task to receive messages.</p>
@@ -2550,7 +2555,7 @@
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | <code>connection</code> | <code>WebSocketConnection</code> | The connection to receive from |
-| <code>onMessageReceived</code> | <code>Func&lt;string, Task&gt;</code> | Callback for received messages |</p>
+| <code>onMessageReceived</code> | <code>Func&lt;byte[], string, Task&gt;</code> | Callback for received messages (raw bytes + auto-detected ContentType) |</p>
 <p><strong>Behavior:</strong>
 1. Cancels any existing receive operation
 2. Starts a new <code>Task</code> running the receive loop
@@ -2652,7 +2657,7 @@
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-06-08T04:55:01Z</span>
+  <span style="display:table-cell;text-align:right">2026-06-09T18:33:33Z</span>
 </div>
 
     </div>

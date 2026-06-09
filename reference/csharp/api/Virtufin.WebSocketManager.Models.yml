@@ -6,7 +6,6 @@ items:
   children:
   - Virtufin.WebSocketManager.Models.ConnectionStatus
   - Virtufin.WebSocketManager.Models.WebSocketConnection
-  - Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
   langs:
   - csharp
   - vb
@@ -24,13 +23,6 @@ references:
   name: ConnectionStatus
   nameWithType: ConnectionStatus
   fullName: Virtufin.WebSocketManager.Models.ConnectionStatus
-- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
-  commentId: T:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
-  parent: Virtufin.WebSocketManager.Models
-  href: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html
-  name: WebSocketCorrelationMode
-  nameWithType: WebSocketCorrelationMode
-  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection
   commentId: T:Virtufin.WebSocketManager.Models.WebSocketConnection
   parent: Virtufin.WebSocketManager.Models

@@ -20,9 +20,6 @@ items:
   - uid: Virtufin.WebSocketManager.Models.WebSocketConnection
     name: WebSocketConnection
     type: Class
-  - uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
-    name: WebSocketCorrelationMode
-    type: Enum
 - uid: Virtufin.WebSocketManager.Protos
   name: Virtufin.WebSocketManager.Protos
   type: Namespace

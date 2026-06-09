@@ -56,7 +56,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Models.ConnectionStatus",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Models.ConnectionStatus.yml\" sourcestartlinenumber=\"1\">Represents the current state of a WebSocket connection.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -70,21 +70,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Models.WebSocketConnection",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Models.WebSocketConnection.yml\" sourcestartlinenumber=\"1\">Represents a managed external WebSocket connection.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.WebSocketManager.Models.WebSocketCorrelationMode",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.yml\" sourcestartlinenumber=\"1\">Defines how the correlation protocol handles message correlation for send-and-wait operations.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -210,7 +196,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.DaprPublisher",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.DaprPublisher.yml\" sourcestartlinenumber=\"1\">Implementation of IDaprPublisher that uses the Dapr client to publish events.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -294,7 +280,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.IDaprPublisher",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.IDaprPublisher.yml\" sourcestartlinenumber=\"1\">Publishes messages to Dapr pub/sub topics.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -322,7 +308,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.IWebSocketClientWrapper",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.yml\" sourcestartlinenumber=\"1\">Provides operations for managing external WebSocket connections.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -420,7 +406,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.WebSocketClientWrapper",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.yml\" sourcestartlinenumber=\"1\">Implementation of IWebSocketClientWrapper that manages external WebSocket connections.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",

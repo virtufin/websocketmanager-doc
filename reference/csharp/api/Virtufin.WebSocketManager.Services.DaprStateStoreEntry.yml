@@ -6,7 +6,6 @@ items:
   parent: Virtufin.WebSocketManager.Services
   children:
   - Virtufin.WebSocketManager.Services.DaprStateStoreEntry.AutoReconnect
-  - Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
   - Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CreatedAt
   - Virtufin.WebSocketManager.Services.DaprStateStoreEntry.FromConnection(Virtufin.WebSocketManager.Models.WebSocketConnection)
   - Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Id
@@ -265,37 +264,6 @@ items:
       type: System.String
     content.vb: Public Property InstanceId As String
   overload: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.InstanceId*
-- uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
-  commentId: P:Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
-  id: CorrelationMode
-  parent: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
-  langs:
-  - csharp
-  - vb
-  name: CorrelationMode
-  nameWithType: DaprStateStoreEntry.CorrelationMode
-  fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: CorrelationMode
-    path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
-    startLine: 47
-  assemblies:
-  - Virtufin.WebSocketManager
-  namespace: Virtufin.WebSocketManager.Services
-  summary: Gets or sets the correlation mode for send-and-wait operations.
-  example: []
-  syntax:
-    content: public WebSocketCorrelationMode CorrelationMode { get; set; }
-    parameters: []
-    return:
-      type: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
-    content.vb: Public Property CorrelationMode As WebSocketCorrelationMode
-  overload: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode*
 - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.FromConnection(Virtufin.WebSocketManager.Models.WebSocketConnection)
   commentId: M:Virtufin.WebSocketManager.Services.DaprStateStoreEntry.FromConnection(Virtufin.WebSocketManager.Models.WebSocketConnection)
   id: FromConnection(Virtufin.WebSocketManager.Models.WebSocketConnection)
@@ -314,7 +282,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: FromConnection
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
-    startLine: 54
+    startLine: 49
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -349,7 +317,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ToConnection
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
-    startLine: 73
+    startLine: 67
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -742,19 +710,6 @@ references:
   name: InstanceId
   nameWithType: DaprStateStoreEntry.InstanceId
   fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.InstanceId
-- uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode*
-  commentId: Overload:Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
-  href: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html#Virtufin_WebSocketManager_Services_DaprStateStoreEntry_CorrelationMode
-  name: CorrelationMode
-  nameWithType: DaprStateStoreEntry.CorrelationMode
-  fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
-- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
-  commentId: T:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
-  parent: Virtufin.WebSocketManager.Models
-  href: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html
-  name: WebSocketCorrelationMode
-  nameWithType: WebSocketCorrelationMode
-  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
 - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.FromConnection*
   commentId: Overload:Virtufin.WebSocketManager.Services.DaprStateStoreEntry.FromConnection
   href: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html#Virtufin_WebSocketManager_Services_DaprStateStoreEntry_FromConnection_Virtufin_WebSocketManager_Models_WebSocketConnection_

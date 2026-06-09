@@ -6,7 +6,7 @@ items:
   parent: Virtufin.WebSocketManager.Services
   children:
   - Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher},System.String)
-  - Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
+  - Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
   langs:
   - csharp
   - vb
@@ -21,12 +21,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DaprPublisher
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
-    startLine: 24
+    startLine: 10
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
-  summary: Implementation of IDaprPublisher that uses the Dapr client to publish events.
-  example: []
   syntax:
     content: 'public class DaprPublisher : IDaprPublisher'
     content.vb: Public Class DaprPublisher Implements IDaprPublisher
@@ -60,39 +58,34 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
-    startLine: 36
+    startLine: 16
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
-  summary: Initializes a new instance of the DaprPublisher class.
-  example: []
   syntax:
     content: public DaprPublisher(DaprClient daprClient, ILogger<DaprPublisher> logger, string pubsubComponent = "pubsub")
     parameters:
     - id: daprClient
       type: Dapr.Client.DaprClient
-      description: The Dapr client to use for publishing.
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher}
-      description: The logger for this publisher.
     - id: pubsubComponent
       type: System.String
-      description: The name of the Dapr pub/sub component to use.
     content.vb: Public Sub New(daprClient As DaprClient, logger As ILogger(Of DaprPublisher), pubsubComponent As String = "pubsub")
   overload: Virtufin.WebSocketManager.Services.DaprPublisher.#ctor*
   nameWithType.vb: DaprPublisher.New(DaprClient, ILogger(Of DaprPublisher), String)
   fullName.vb: Virtufin.WebSocketManager.Services.DaprPublisher.New(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprPublisher), String)
   name.vb: New(DaprClient, ILogger(Of DaprPublisher), String)
-- uid: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
-  commentId: M:Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
-  id: PublishAsync(System.String,System.String,System.String,System.String)
+- uid: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
+  id: PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
   parent: Virtufin.WebSocketManager.Services.DaprPublisher
   langs:
   - csharp
   - vb
-  name: PublishAsync(string, string, string, string)
-  nameWithType: DaprPublisher.PublishAsync(string, string, string, string)
-  fullName: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(string, string, string, string)
+  name: PublishAsync(string, string, string, byte[], string?)
+  nameWithType: DaprPublisher.PublishAsync(string, string, string, byte[], string?)
+  fullName: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(string, string, string, byte[], string?)
   type: Method
   source:
     remote:
@@ -101,37 +94,33 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: PublishAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
-    startLine: 44
+    startLine: 23
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
-  summary: Publishes a message to the specified Dapr pub/sub topic.
   example: []
   syntax:
-    content: public Task PublishAsync(string topic, string websocketId, string websocketUrl, string payload)
+    content: public Task PublishAsync(string topic, string websocketId, string websocketUrl, byte[] payload, string? contentType = null)
     parameters:
     - id: topic
       type: System.String
-      description: The name of the topic to publish to.
     - id: websocketId
       type: System.String
-      description: The ID of the WebSocket connection that received the message.
     - id: websocketUrl
       type: System.String
-      description: The URL of the WebSocket connection.
     - id: payload
+      type: System.Byte[]
+    - id: contentType
       type: System.String
-      description: The message payload to publish.
     return:
       type: System.Threading.Tasks.Task
-      description: A task representing the asynchronous operation.
-    content.vb: Public Function PublishAsync(topic As String, websocketId As String, websocketUrl As String, payload As String) As Task
+    content.vb: Public Function PublishAsync(topic As String, websocketId As String, websocketUrl As String, payload As Byte(), contentType As String = Nothing) As Task
   overload: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync*
   implements:
-  - Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
-  nameWithType.vb: DaprPublisher.PublishAsync(String, String, String, String)
-  fullName.vb: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(String, String, String, String)
-  name.vb: PublishAsync(String, String, String, String)
+  - Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
+  nameWithType.vb: DaprPublisher.PublishAsync(String, String, String, Byte(), String)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(String, String, String, Byte(), String)
+  name.vb: PublishAsync(String, String, String, Byte(), String)
 references:
 - uid: Virtufin.WebSocketManager.Services
   commentId: N:Virtufin.WebSocketManager.Services
@@ -556,25 +545,25 @@ references:
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
 - uid: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync*
   commentId: Overload:Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync
-  href: Virtufin.WebSocketManager.Services.DaprPublisher.html#Virtufin_WebSocketManager_Services_DaprPublisher_PublishAsync_System_String_System_String_System_String_System_String_
+  href: Virtufin.WebSocketManager.Services.DaprPublisher.html#Virtufin_WebSocketManager_Services_DaprPublisher_PublishAsync_System_String_System_String_System_String_System_Byte___System_String_
   name: PublishAsync
   nameWithType: DaprPublisher.PublishAsync
   fullName: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync
-- uid: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
-  commentId: M:Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
+- uid: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
   parent: Virtufin.WebSocketManager.Services.IDaprPublisher
   isExternal: true
-  href: Virtufin.WebSocketManager.Services.IDaprPublisher.html#Virtufin_WebSocketManager_Services_IDaprPublisher_PublishAsync_System_String_System_String_System_String_System_String_
-  name: PublishAsync(string, string, string, string)
-  nameWithType: IDaprPublisher.PublishAsync(string, string, string, string)
-  fullName: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(string, string, string, string)
-  nameWithType.vb: IDaprPublisher.PublishAsync(String, String, String, String)
-  fullName.vb: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(String, String, String, String)
-  name.vb: PublishAsync(String, String, String, String)
+  href: Virtufin.WebSocketManager.Services.IDaprPublisher.html#Virtufin_WebSocketManager_Services_IDaprPublisher_PublishAsync_System_String_System_String_System_String_System_Byte___System_String_
+  name: PublishAsync(string, string, string, byte[], string)
+  nameWithType: IDaprPublisher.PublishAsync(string, string, string, byte[], string)
+  fullName: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(string, string, string, byte[], string)
+  nameWithType.vb: IDaprPublisher.PublishAsync(String, String, String, Byte(), String)
+  fullName.vb: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(String, String, String, Byte(), String)
+  name.vb: PublishAsync(String, String, String, Byte(), String)
   spec.csharp:
-  - uid: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
+  - uid: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
     name: PublishAsync
-    href: Virtufin.WebSocketManager.Services.IDaprPublisher.html#Virtufin_WebSocketManager_Services_IDaprPublisher_PublishAsync_System_String_System_String_System_String_System_String_
+    href: Virtufin.WebSocketManager.Services.IDaprPublisher.html#Virtufin_WebSocketManager_Services_IDaprPublisher_PublishAsync_System_String_System_String_System_String_System_Byte___System_String_
   - name: (
   - uid: System.String
     name: string
@@ -592,6 +581,14 @@ references:
     name: string
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
   - name: ','
   - name: " "
   - uid: System.String
@@ -600,9 +597,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
+  - uid: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
     name: PublishAsync
-    href: Virtufin.WebSocketManager.Services.IDaprPublisher.html#Virtufin_WebSocketManager_Services_IDaprPublisher_PublishAsync_System_String_System_String_System_String_System_String_
+    href: Virtufin.WebSocketManager.Services.IDaprPublisher.html#Virtufin_WebSocketManager_Services_IDaprPublisher_PublishAsync_System_String_System_String_System_String_System_Byte___System_String_
   - name: (
   - uid: System.String
     name: String
@@ -622,10 +619,41 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
   - uid: System.String
     name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
   - name: )
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task

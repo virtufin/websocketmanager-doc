@@ -195,19 +195,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
   nameWithType: WebSocketConnection.CancellationTokenSource
-- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
-  name: CorrelationMode
-  href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_CorrelationMode
-  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
-  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
-  nameWithType: WebSocketConnection.CorrelationMode
-- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode*
-  name: CorrelationMode
-  href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_CorrelationMode_
-  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
+  name: ContentType
+  href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_ContentType
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
+  nameWithType: WebSocketConnection.ContentType
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType*
+  name: ContentType
+  href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_ContentType_
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
   isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CorrelationMode
-  nameWithType: WebSocketConnection.CorrelationMode
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
+  nameWithType: WebSocketConnection.ContentType
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CreatedAt
   name: CreatedAt
   href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_CreatedAt
@@ -312,30 +312,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
   nameWithType: WebSocketConnection.WebSocket
-- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
-  name: WebSocketCorrelationMode
-  href: api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html
-  commentId: T:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
-  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode
-  nameWithType: WebSocketCorrelationMode
-- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Managed
-  name: Managed
-  href: api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html#Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_Managed
-  commentId: F:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Managed
-  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Managed
-  nameWithType: WebSocketCorrelationMode.Managed
-- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
-  name: Raw
-  href: api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html#Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_Raw
-  commentId: F:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
-  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Raw
-  nameWithType: WebSocketCorrelationMode.Raw
-- uid: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Unspecified
-  name: Unspecified
-  href: api/Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.html#Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_Unspecified
-  commentId: F:Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Unspecified
-  fullName: Virtufin.WebSocketManager.Models.WebSocketCorrelationMode.Unspecified
-  nameWithType: WebSocketCorrelationMode.Unspecified
 - uid: Virtufin.WebSocketManager.Protos
   name: Virtufin.WebSocketManager.Protos
   href: api/Virtufin.WebSocketManager.Protos.html
@@ -782,15 +758,15 @@ references:
   fullName.vb: Virtufin.WebSocketManager.Services.DaprPublisher.New
   nameWithType: DaprPublisher.DaprPublisher
   nameWithType.vb: DaprPublisher.New
-- uid: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
-  name: PublishAsync(string, string, string, string)
-  href: api/Virtufin.WebSocketManager.Services.DaprPublisher.html#Virtufin_WebSocketManager_Services_DaprPublisher_PublishAsync_System_String_System_String_System_String_System_String_
-  commentId: M:Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
-  name.vb: PublishAsync(String, String, String, String)
-  fullName: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(string, string, string, string)
-  fullName.vb: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(String, String, String, String)
-  nameWithType: DaprPublisher.PublishAsync(string, string, string, string)
-  nameWithType.vb: DaprPublisher.PublishAsync(String, String, String, String)
+- uid: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
+  name: PublishAsync(string, string, string, byte[], string?)
+  href: api/Virtufin.WebSocketManager.Services.DaprPublisher.html#Virtufin_WebSocketManager_Services_DaprPublisher_PublishAsync_System_String_System_String_System_String_System_Byte___System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
+  name.vb: PublishAsync(String, String, String, Byte(), String)
+  fullName: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(string, string, string, byte[], string?)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(String, String, String, Byte(), String)
+  nameWithType: DaprPublisher.PublishAsync(string, string, string, byte[], string?)
+  nameWithType.vb: DaprPublisher.PublishAsync(String, String, String, Byte(), String)
 - uid: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync*
   name: PublishAsync
   href: api/Virtufin.WebSocketManager.Services.DaprPublisher.html#Virtufin_WebSocketManager_Services_DaprPublisher_PublishAsync_
@@ -880,19 +856,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.AutoReconnect
   nameWithType: DaprStateStoreEntry.AutoReconnect
-- uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
-  name: CorrelationMode
-  href: api/Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html#Virtufin_WebSocketManager_Services_DaprStateStoreEntry_CorrelationMode
-  commentId: P:Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
-  fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
-  nameWithType: DaprStateStoreEntry.CorrelationMode
-- uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode*
-  name: CorrelationMode
-  href: api/Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html#Virtufin_WebSocketManager_Services_DaprStateStoreEntry_CorrelationMode_
-  commentId: Overload:Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CorrelationMode
-  nameWithType: DaprStateStoreEntry.CorrelationMode
 - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CreatedAt
   name: CreatedAt
   href: api/Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html#Virtufin_WebSocketManager_Services_DaprStateStoreEntry_CreatedAt
@@ -1275,15 +1238,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.IDaprPublisher
   fullName: Virtufin.WebSocketManager.Services.IDaprPublisher
   nameWithType: IDaprPublisher
-- uid: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
-  name: PublishAsync(string, string, string, string)
-  href: api/Virtufin.WebSocketManager.Services.IDaprPublisher.html#Virtufin_WebSocketManager_Services_IDaprPublisher_PublishAsync_System_String_System_String_System_String_System_String_
-  commentId: M:Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.String)
-  name.vb: PublishAsync(String, String, String, String)
-  fullName: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(string, string, string, string)
-  fullName.vb: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(String, String, String, String)
-  nameWithType: IDaprPublisher.PublishAsync(string, string, string, string)
-  nameWithType.vb: IDaprPublisher.PublishAsync(String, String, String, String)
+- uid: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
+  name: PublishAsync(string, string, string, byte[], string?)
+  href: api/Virtufin.WebSocketManager.Services.IDaprPublisher.html#Virtufin_WebSocketManager_Services_IDaprPublisher_PublishAsync_System_String_System_String_System_String_System_Byte___System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
+  name.vb: PublishAsync(String, String, String, Byte(), String)
+  fullName: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(string, string, string, byte[], string?)
+  fullName.vb: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(String, String, String, Byte(), String)
+  nameWithType: IDaprPublisher.PublishAsync(string, string, string, byte[], string?)
+  nameWithType.vb: IDaprPublisher.PublishAsync(String, String, String, Byte(), String)
 - uid: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync*
   name: PublishAsync
   href: api/Virtufin.WebSocketManager.Services.IDaprPublisher.html#Virtufin_WebSocketManager_Services_IDaprPublisher_PublishAsync_
@@ -1355,15 +1318,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.DisconnectAsync
   nameWithType: IWebSocketClientWrapper.DisconnectAsync
-- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String,System.Int32)
-  name: SendAndWaitAsync(WebSocketConnection, string, int)
-  href: api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_SendAndWaitAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_String_System_Int32_
-  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String,System.Int32)
-  name.vb: SendAndWaitAsync(WebSocketConnection, String, Integer)
-  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, string, int)
-  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, String, Integer)
-  nameWithType: IWebSocketClientWrapper.SendAndWaitAsync(WebSocketConnection, string, int)
-  nameWithType.vb: IWebSocketClientWrapper.SendAndWaitAsync(WebSocketConnection, String, Integer)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Byte[],System.Int32,System.String)
+  name: SendAndWaitAsync(WebSocketConnection, byte[], int, string)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_SendAndWaitAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Byte___System_Int32_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Byte[],System.Int32,System.String)
+  name.vb: SendAndWaitAsync(WebSocketConnection, Byte(), Integer, String)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, byte[], int, string)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, Byte(), Integer, String)
+  nameWithType: IWebSocketClientWrapper.SendAndWaitAsync(WebSocketConnection, byte[], int, string)
+  nameWithType.vb: IWebSocketClientWrapper.SendAndWaitAsync(WebSocketConnection, Byte(), Integer, String)
 - uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync*
   name: SendAndWaitAsync
   href: api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_SendAndWaitAsync_
@@ -1371,15 +1334,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAndWaitAsync
   nameWithType: IWebSocketClientWrapper.SendAndWaitAsync
-- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String)
-  name: SendAsync(WebSocketConnection, string)
-  href: api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_SendAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_String_
-  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String)
-  name.vb: SendAsync(WebSocketConnection, String)
-  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, string)
-  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, String)
-  nameWithType: IWebSocketClientWrapper.SendAsync(WebSocketConnection, string)
-  nameWithType.vb: IWebSocketClientWrapper.SendAsync(WebSocketConnection, String)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Byte[],System.String)
+  name: SendAsync(WebSocketConnection, byte[], string)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_SendAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Byte___System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Byte[],System.String)
+  name.vb: SendAsync(WebSocketConnection, Byte(), String)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, byte[], string)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, Byte(), String)
+  nameWithType: IWebSocketClientWrapper.SendAsync(WebSocketConnection, byte[], string)
+  nameWithType.vb: IWebSocketClientWrapper.SendAsync(WebSocketConnection, Byte(), String)
 - uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync*
   name: SendAsync
   href: api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_SendAsync_
@@ -1387,15 +1350,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.SendAsync
   nameWithType: IWebSocketClientWrapper.SendAsync
-- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Func{System.String,System.Threading.Tasks.Task})
-  name: StartReceiveLoop(WebSocketConnection, Func<string, Task>)
-  href: api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_StartReceiveLoop_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Func_System_String_System_Threading_Tasks_Task__
-  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Func{System.String,System.Threading.Tasks.Task})
-  name.vb: StartReceiveLoop(WebSocketConnection, Func(Of String, Task))
-  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection, System.Func<string, System.Threading.Tasks.Task>)
-  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection, System.Func(Of String, System.Threading.Tasks.Task))
-  nameWithType: IWebSocketClientWrapper.StartReceiveLoop(WebSocketConnection, Func<string, Task>)
-  nameWithType.vb: IWebSocketClientWrapper.StartReceiveLoop(WebSocketConnection, Func(Of String, Task))
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Func{System.Byte[],System.String,System.Threading.Tasks.Task})
+  name: StartReceiveLoop(WebSocketConnection, Func<byte[], string, Task>)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_StartReceiveLoop_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Func_System_Byte___System_String_System_Threading_Tasks_Task__
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Func{System.Byte[],System.String,System.Threading.Tasks.Task})
+  name.vb: StartReceiveLoop(WebSocketConnection, Func(Of Byte(), String, Task))
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection, System.Func<byte[], string, System.Threading.Tasks.Task>)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection, System.Func(Of Byte(), String, System.Threading.Tasks.Task))
+  nameWithType: IWebSocketClientWrapper.StartReceiveLoop(WebSocketConnection, Func<byte[], string, Task>)
+  nameWithType.vb: IWebSocketClientWrapper.StartReceiveLoop(WebSocketConnection, Func(Of Byte(), String, Task))
 - uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.StartReceiveLoop*
   name: StartReceiveLoop
   href: api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_StartReceiveLoop_
@@ -1502,15 +1465,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.IWebSocketService
   fullName: Virtufin.WebSocketManager.Services.IWebSocketService
   nameWithType: IWebSocketService
-- uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
-  name: ConnectAsync(string, bool, WebSocketCorrelationMode, CancellationToken)
-  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_System_Threading_CancellationToken_
-  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
-  name.vb: ConnectAsync(String, Boolean, WebSocketCorrelationMode, CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(string, bool, Virtufin.WebSocketManager.Models.WebSocketCorrelationMode, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(String, Boolean, Virtufin.WebSocketManager.Models.WebSocketCorrelationMode, System.Threading.CancellationToken)
-  nameWithType: IWebSocketService.ConnectAsync(string, bool, WebSocketCorrelationMode, CancellationToken)
-  nameWithType.vb: IWebSocketService.ConnectAsync(String, Boolean, WebSocketCorrelationMode, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  name: ConnectAsync(string, bool, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  name.vb: ConnectAsync(String, Boolean, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(string, bool, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(String, Boolean, System.Threading.CancellationToken)
+  nameWithType: IWebSocketService.ConnectAsync(string, bool, CancellationToken)
+  nameWithType.vb: IWebSocketService.ConnectAsync(String, Boolean, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync*
   name: ConnectAsync
   href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_
@@ -1547,15 +1510,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ListConnectionsAsync
   nameWithType: IWebSocketService.ListConnectionsAsync
-- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
-  name: SendAsync(string, string, int, CancellationToken)
-  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SendAsync_System_String_System_String_System_Int32_System_Threading_CancellationToken_
-  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
-  name.vb: SendAsync(String, String, Integer, CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(string, string, int, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(String, String, Integer, System.Threading.CancellationToken)
-  nameWithType: IWebSocketService.SendAsync(string, string, int, CancellationToken)
-  nameWithType.vb: IWebSocketService.SendAsync(String, String, Integer, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(System.String,System.Byte[],System.Int32,System.String,System.Threading.CancellationToken)
+  name: SendAsync(string, byte[], int, string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SendAsync_System_String_System_Byte___System_Int32_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(System.String,System.Byte[],System.Int32,System.String,System.Threading.CancellationToken)
+  name.vb: SendAsync(String, Byte(), Integer, String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(string, byte[], int, string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(String, Byte(), Integer, String, System.Threading.CancellationToken)
+  nameWithType: IWebSocketService.SendAsync(string, byte[], int, string, CancellationToken)
+  nameWithType.vb: IWebSocketService.SendAsync(String, Byte(), Integer, String, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync*
   name: SendAsync
   href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SendAsync_
@@ -1563,15 +1526,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync
   nameWithType: IWebSocketService.SendAsync
-- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(System.String,System.String,System.Threading.CancellationToken)
-  name: SendRawAsync(string, string, CancellationToken)
-  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SendRawAsync_System_String_System_String_System_Threading_CancellationToken_
-  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(System.String,System.String,System.Threading.CancellationToken)
-  name.vb: SendRawAsync(String, String, CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(string, string, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(String, String, System.Threading.CancellationToken)
-  nameWithType: IWebSocketService.SendRawAsync(string, string, CancellationToken)
-  nameWithType.vb: IWebSocketService.SendRawAsync(String, String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(System.String,System.Byte[],System.String,System.Threading.CancellationToken)
+  name: SendRawAsync(string, byte[], string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SendRawAsync_System_String_System_Byte___System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(System.String,System.Byte[],System.String,System.Threading.CancellationToken)
+  name.vb: SendRawAsync(String, Byte(), String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(string, byte[], string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(String, Byte(), String, System.Threading.CancellationToken)
+  nameWithType: IWebSocketService.SendRawAsync(string, byte[], string, CancellationToken)
+  nameWithType.vb: IWebSocketService.SendRawAsync(String, Byte(), String, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync*
   name: SendRawAsync
   href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SendRawAsync_
@@ -1826,15 +1789,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.DisconnectAsync
   nameWithType: WebSocketClientWrapper.DisconnectAsync
-- uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String,System.Int32)
-  name: SendAndWaitAsync(WebSocketConnection, string, int)
-  href: api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper_SendAndWaitAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_String_System_Int32_
-  commentId: M:Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String,System.Int32)
-  name.vb: SendAndWaitAsync(WebSocketConnection, String, Integer)
-  fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, string, int)
-  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, String, Integer)
-  nameWithType: WebSocketClientWrapper.SendAndWaitAsync(WebSocketConnection, string, int)
-  nameWithType.vb: WebSocketClientWrapper.SendAndWaitAsync(WebSocketConnection, String, Integer)
+- uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Byte[],System.Int32,System.String)
+  name: SendAndWaitAsync(WebSocketConnection, byte[], int, string)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper_SendAndWaitAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Byte___System_Int32_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Byte[],System.Int32,System.String)
+  name.vb: SendAndWaitAsync(WebSocketConnection, Byte(), Integer, String)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, byte[], int, string)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, Byte(), Integer, String)
+  nameWithType: WebSocketClientWrapper.SendAndWaitAsync(WebSocketConnection, byte[], int, string)
+  nameWithType.vb: WebSocketClientWrapper.SendAndWaitAsync(WebSocketConnection, Byte(), Integer, String)
 - uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAndWaitAsync*
   name: SendAndWaitAsync
   href: api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper_SendAndWaitAsync_
@@ -1842,15 +1805,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAndWaitAsync
   nameWithType: WebSocketClientWrapper.SendAndWaitAsync
-- uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String)
-  name: SendAsync(WebSocketConnection, string)
-  href: api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper_SendAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_String_
-  commentId: M:Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.String)
-  name.vb: SendAsync(WebSocketConnection, String)
-  fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, string)
-  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, String)
-  nameWithType: WebSocketClientWrapper.SendAsync(WebSocketConnection, string)
-  nameWithType.vb: WebSocketClientWrapper.SendAsync(WebSocketConnection, String)
+- uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Byte[],System.String)
+  name: SendAsync(WebSocketConnection, byte[], string)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper_SendAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Byte___System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Byte[],System.String)
+  name.vb: SendAsync(WebSocketConnection, Byte(), String)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, byte[], string)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, Byte(), String)
+  nameWithType: WebSocketClientWrapper.SendAsync(WebSocketConnection, byte[], string)
+  nameWithType.vb: WebSocketClientWrapper.SendAsync(WebSocketConnection, Byte(), String)
 - uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAsync*
   name: SendAsync
   href: api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper_SendAsync_
@@ -1858,15 +1821,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAsync
   nameWithType: WebSocketClientWrapper.SendAsync
-- uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Func{System.String,System.Threading.Tasks.Task})
-  name: StartReceiveLoop(WebSocketConnection, Func<string, Task>)
-  href: api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper_StartReceiveLoop_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Func_System_String_System_Threading_Tasks_Task__
-  commentId: M:Virtufin.WebSocketManager.Services.WebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Func{System.String,System.Threading.Tasks.Task})
-  name.vb: StartReceiveLoop(WebSocketConnection, Func(Of String, Task))
-  fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection, System.Func<string, System.Threading.Tasks.Task>)
-  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection, System.Func(Of String, System.Threading.Tasks.Task))
-  nameWithType: WebSocketClientWrapper.StartReceiveLoop(WebSocketConnection, Func<string, Task>)
-  nameWithType.vb: WebSocketClientWrapper.StartReceiveLoop(WebSocketConnection, Func(Of String, Task))
+- uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Func{System.Byte[],System.String,System.Threading.Tasks.Task})
+  name: StartReceiveLoop(WebSocketConnection, Func<byte[], string, Task>)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper_StartReceiveLoop_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Func_System_Byte___System_String_System_Threading_Tasks_Task__
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Func{System.Byte[],System.String,System.Threading.Tasks.Task})
+  name.vb: StartReceiveLoop(WebSocketConnection, Func(Of Byte(), String, Task))
+  fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection, System.Func<byte[], string, System.Threading.Tasks.Task>)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.StartReceiveLoop(Virtufin.WebSocketManager.Models.WebSocketConnection, System.Func(Of Byte(), String, System.Threading.Tasks.Task))
+  nameWithType: WebSocketClientWrapper.StartReceiveLoop(WebSocketConnection, Func<byte[], string, Task>)
+  nameWithType.vb: WebSocketClientWrapper.StartReceiveLoop(WebSocketConnection, Func(Of Byte(), String, Task))
 - uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.StartReceiveLoop*
   name: StartReceiveLoop
   href: api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper_StartReceiveLoop_
@@ -1937,15 +1900,15 @@ references:
   fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.New
   nameWithType: WebSocketService.WebSocketService
   nameWithType.vb: WebSocketService.New
-- uid: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
-  name: ConnectAsync(string, bool, WebSocketCorrelationMode, CancellationToken)
-  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_ConnectAsync_System_String_System_Boolean_Virtufin_WebSocketManager_Models_WebSocketCorrelationMode_System_Threading_CancellationToken_
-  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,Virtufin.WebSocketManager.Models.WebSocketCorrelationMode,System.Threading.CancellationToken)
-  name.vb: ConnectAsync(String, Boolean, WebSocketCorrelationMode, CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(string, bool, Virtufin.WebSocketManager.Models.WebSocketCorrelationMode, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(String, Boolean, Virtufin.WebSocketManager.Models.WebSocketCorrelationMode, System.Threading.CancellationToken)
-  nameWithType: WebSocketService.ConnectAsync(string, bool, WebSocketCorrelationMode, CancellationToken)
-  nameWithType.vb: WebSocketService.ConnectAsync(String, Boolean, WebSocketCorrelationMode, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  name: ConnectAsync(string, bool, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  name.vb: ConnectAsync(String, Boolean, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(string, bool, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(String, Boolean, System.Threading.CancellationToken)
+  nameWithType: WebSocketService.ConnectAsync(string, bool, CancellationToken)
+  nameWithType.vb: WebSocketService.ConnectAsync(String, Boolean, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync*
   name: ConnectAsync
   href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_ConnectAsync_
@@ -1982,15 +1945,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync
   nameWithType: WebSocketService.ListConnectionsAsync
-- uid: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
-  name: SendAsync(string, string, int, CancellationToken)
-  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_SendAsync_System_String_System_String_System_Int32_System_Threading_CancellationToken_
-  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
-  name.vb: SendAsync(String, String, Integer, CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(string, string, int, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(String, String, Integer, System.Threading.CancellationToken)
-  nameWithType: WebSocketService.SendAsync(string, string, int, CancellationToken)
-  nameWithType.vb: WebSocketService.SendAsync(String, String, Integer, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(System.String,System.Byte[],System.Int32,System.String,System.Threading.CancellationToken)
+  name: SendAsync(string, byte[], int, string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_SendAsync_System_String_System_Byte___System_Int32_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(System.String,System.Byte[],System.Int32,System.String,System.Threading.CancellationToken)
+  name.vb: SendAsync(String, Byte(), Integer, String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(string, byte[], int, string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(String, Byte(), Integer, String, System.Threading.CancellationToken)
+  nameWithType: WebSocketService.SendAsync(string, byte[], int, string, CancellationToken)
+  nameWithType.vb: WebSocketService.SendAsync(String, Byte(), Integer, String, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync*
   name: SendAsync
   href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_SendAsync_
@@ -1998,15 +1961,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync
   nameWithType: WebSocketService.SendAsync
-- uid: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync(System.String,System.String,System.Threading.CancellationToken)
-  name: SendRawAsync(string, string, CancellationToken)
-  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_SendRawAsync_System_String_System_String_System_Threading_CancellationToken_
-  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync(System.String,System.String,System.Threading.CancellationToken)
-  name.vb: SendRawAsync(String, String, CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync(string, string, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync(String, String, System.Threading.CancellationToken)
-  nameWithType: WebSocketService.SendRawAsync(string, string, CancellationToken)
-  nameWithType.vb: WebSocketService.SendRawAsync(String, String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync(System.String,System.Byte[],System.String,System.Threading.CancellationToken)
+  name: SendRawAsync(string, byte[], string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_SendRawAsync_System_String_System_Byte___System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync(System.String,System.Byte[],System.String,System.Threading.CancellationToken)
+  name.vb: SendRawAsync(String, Byte(), String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync(string, byte[], string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync(String, Byte(), String, System.Threading.CancellationToken)
+  nameWithType: WebSocketService.SendRawAsync(string, byte[], string, CancellationToken)
+  nameWithType.vb: WebSocketService.SendRawAsync(String, Byte(), String, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync*
   name: SendRawAsync
   href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_SendRawAsync_
