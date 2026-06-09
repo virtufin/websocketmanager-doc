@@ -12,6 +12,26 @@ A WebSocket management service with REST and gRPC APIs, built on ASP.NET Core wi
 - Dapr integration for pub/sub and state management
 - Health checks and monitoring
 
+## Project Structure
+
+```
+virtufin-websocketmanager/
+├── src/
+│   ├── Virtufin.WebSocketManager/         # .NET service (gRPC server, WebSocket proxy)
+│   ├── Virtufin.WebSocketManager.Client/  # .NET client NuGet package
+│   ├── Virtufin.WebSocketManager.Protos/  # Protobuf definitions (websocketmanager.proto)
+│   ├── python/virtufin/websocketmanager/  # Python client library
+│   └── typescript/src/                    # TypeScript client library
+├── tests/
+│   ├── python/                            # Python client tests
+│   ├── typescript/                        # TypeScript client tests
+│   └── Virtufin.WebSocketManager.*.Tests/ # .NET tests
+├── docs/                                  # MkDocs documentation
+├── deploy/                                # Deployment configs
+├── versions.env                           # Version pin
+└── AGENTS.md                              # Agent documentation
+```
+
 ## Deployment
 
 All deployment infrastructure is managed in dedicated repositories.
