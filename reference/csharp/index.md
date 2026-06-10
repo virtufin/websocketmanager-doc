@@ -5,14 +5,13 @@ title: C# API Reference
 
 # C# API Reference
 
-Auto-generated API documentation for `Virtufin.WebSocketManager` and `Virtufin.WebSocketManager.Client`.
+Auto-generated API documentation for `Virtufin.WebSocketManager`.
 
 ## Namespaces
 
-- [Virtufin.WebSocketManager](api/Virtufin.WebSocketManager.html) — Core server types and extensions
-- [Virtufin.WebSocketManager.Client](api/Virtufin.WebSocketManager.Client.html) — Client library
 - [Virtufin.WebSocketManager.Configuration](api/Virtufin.WebSocketManager.Configuration.html) — Configuration types
 - [Virtufin.WebSocketManager.Models](api/Virtufin.WebSocketManager.Models.html) — Data models
+- [Virtufin.WebSocketManager.Protos](api/Virtufin.WebSocketManager.Protos.html) — Protocol buffer definitions
 - [Virtufin.WebSocketManager.Services](api/Virtufin.WebSocketManager.Services.html) — Internal services
 
 ## See Also
