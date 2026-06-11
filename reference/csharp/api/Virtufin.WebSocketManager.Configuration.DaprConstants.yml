@@ -8,6 +8,8 @@ items:
   - Virtufin.WebSocketManager.Configuration.DaprConstants.ClearAllOnStartEnvVar
   - Virtufin.WebSocketManager.Configuration.DaprConstants.HostnameEnvVar
   - Virtufin.WebSocketManager.Configuration.DaprConstants.IndexKey
+  - Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey(System.String)
+  - Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKeyPrefix
   - Virtufin.WebSocketManager.Configuration.DaprConstants.KeyPrefix
   - Virtufin.WebSocketManager.Configuration.DaprConstants.PubsubName
   - Virtufin.WebSocketManager.Configuration.DaprConstants.PubsubNameKey
@@ -206,6 +208,67 @@ items:
     return:
       type: System.String
     content.vb: Public Const IndexKey As String = "websocket-index"
+- uid: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKeyPrefix
+  commentId: F:Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKeyPrefix
+  id: InstanceIndexKeyPrefix
+  parent: Virtufin.WebSocketManager.Configuration.DaprConstants
+  langs:
+  - csharp
+  - vb
+  name: InstanceIndexKeyPrefix
+  nameWithType: DaprConstants.InstanceIndexKeyPrefix
+  fullName: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKeyPrefix
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: InstanceIndexKeyPrefix
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public const string InstanceIndexKeyPrefix = "websocket-instance-index-"
+    return:
+      type: System.String
+    content.vb: Public Const InstanceIndexKeyPrefix As String = "websocket-instance-index-"
+- uid: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey(System.String)
+  commentId: M:Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey(System.String)
+  id: InstanceIndexKey(System.String)
+  parent: Virtufin.WebSocketManager.Configuration.DaprConstants
+  langs:
+  - csharp
+  - vb
+  name: InstanceIndexKey(string)
+  nameWithType: DaprConstants.InstanceIndexKey(string)
+  fullName: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey(string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: InstanceIndexKey
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public static string InstanceIndexKey(string instanceId)
+    parameters:
+    - id: instanceId
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function InstanceIndexKey(instanceId As String) As String
+  overload: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey*
+  nameWithType.vb: DaprConstants.InstanceIndexKey(String)
+  fullName.vb: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey(String)
+  name.vb: InstanceIndexKey(String)
 - uid: Virtufin.WebSocketManager.Configuration.DaprConstants.HostnameEnvVar
   commentId: F:Virtufin.WebSocketManager.Configuration.DaprConstants.HostnameEnvVar
   id: HostnameEnvVar
@@ -224,7 +287,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: HostnameEnvVar
     path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
@@ -251,7 +314,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ClearAllOnStartEnvVar
     path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
@@ -539,3 +602,9 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey*
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey
+  href: Virtufin.WebSocketManager.Configuration.DaprConstants.html#Virtufin_WebSocketManager_Configuration_DaprConstants_InstanceIndexKey_System_String_
+  name: InstanceIndexKey
+  nameWithType: DaprConstants.InstanceIndexKey
+  fullName: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey

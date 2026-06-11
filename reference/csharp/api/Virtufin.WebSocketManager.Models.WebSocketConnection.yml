@@ -13,6 +13,7 @@ items:
   - Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId
   - Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask
   - Virtufin.WebSocketManager.Models.WebSocketConnection.Status
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource(System.Threading.CancellationTokenSource)
   - Virtufin.WebSocketManager.Models.WebSocketConnection.Topic
   - Virtufin.WebSocketManager.Models.WebSocketConnection.Url
   - Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
@@ -308,6 +309,47 @@ items:
       type: System.Net.WebSockets.ClientWebSocket
     content.vb: Public Property WebSocket As ClientWebSocket
   overload: Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket*
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource(System.Threading.CancellationTokenSource)
+  commentId: M:Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource(System.Threading.CancellationTokenSource)
+  id: SwapCancellationTokenSource(System.Threading.CancellationTokenSource)
+  parent: Virtufin.WebSocketManager.Models.WebSocketConnection
+  langs:
+  - csharp
+  - vb
+  name: SwapCancellationTokenSource(CancellationTokenSource?)
+  nameWithType: WebSocketConnection.SwapCancellationTokenSource(CancellationTokenSource?)
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource(System.Threading.CancellationTokenSource?)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: SwapCancellationTokenSource
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  summary: >-
+    Atomically replaces the current cancellation token source, returning the
+
+    previous one (or <code>null</code> if none). The previous source should be
+
+    cancelled by the caller if no other references exist.
+  example: []
+  syntax:
+    content: public CancellationTokenSource? SwapCancellationTokenSource(CancellationTokenSource? newCts)
+    parameters:
+    - id: newCts
+      type: System.Threading.CancellationTokenSource
+    return:
+      type: System.Threading.CancellationTokenSource
+    content.vb: Public Function SwapCancellationTokenSource(newCts As CancellationTokenSource) As CancellationTokenSource
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource*
+  nameWithType.vb: WebSocketConnection.SwapCancellationTokenSource(CancellationTokenSource)
+  fullName.vb: Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource(System.Threading.CancellationTokenSource)
+  name.vb: SwapCancellationTokenSource(CancellationTokenSource)
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
   commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
   id: CancellationTokenSource
@@ -326,16 +368,18 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CancellationTokenSource
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 23
+    startLine: 38
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
+  summary: Atomically reads the current cancellation token source, or <code>null</code>.
+  example: []
   syntax:
-    content: public CancellationTokenSource? CancellationTokenSource { get; set; }
+    content: public CancellationTokenSource? CancellationTokenSource { get; }
     parameters: []
     return:
       type: System.Threading.CancellationTokenSource
-    content.vb: Public Property CancellationTokenSource As CancellationTokenSource
+    content.vb: Public ReadOnly Property CancellationTokenSource As CancellationTokenSource
   overload: Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource*
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask
   commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask
@@ -355,7 +399,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ReceiveTask
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 24
+    startLine: 41
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -773,12 +817,12 @@ references:
     name: WebSockets
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.net.websockets
-- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource*
-  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
-  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_CancellationTokenSource
-  name: CancellationTokenSource
-  nameWithType: WebSocketConnection.CancellationTokenSource
-  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_SwapCancellationTokenSource_System_Threading_CancellationTokenSource_
+  name: SwapCancellationTokenSource
+  nameWithType: WebSocketConnection.SwapCancellationTokenSource
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource
 - uid: System.Threading.CancellationTokenSource
   commentId: T:System.Threading.CancellationTokenSource
   parent: System.Threading
@@ -814,6 +858,12 @@ references:
     name: Threading
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_CancellationTokenSource
+  name: CancellationTokenSource
+  nameWithType: WebSocketConnection.CancellationTokenSource
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.CancellationTokenSource
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask*
   commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask
   href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_ReceiveTask

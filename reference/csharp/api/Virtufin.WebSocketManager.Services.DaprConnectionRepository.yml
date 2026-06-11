@@ -140,7 +140,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 98
+    startLine: 102
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -183,7 +183,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SaveAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 112
+    startLine: 118
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -223,7 +223,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DeleteAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 131
+    startLine: 142
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -266,7 +266,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetByInstanceIdAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 180
+    startLine: 250
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -306,7 +306,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ClearAllAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 187
+    startLine: 273
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services

@@ -110,7 +110,7 @@ items:
   summary: Creates a new WebSocket connection entry.
   example: []
   syntax:
-    content: public Task<WebSocketConnection> CreateConnectionAsync(string url, bool autoReconnect, CancellationToken cancellationToken = default)
+    content: public ValueTask<WebSocketConnection> CreateConnectionAsync(string url, bool autoReconnect, CancellationToken cancellationToken = default)
     parameters:
     - id: url
       type: System.String
@@ -119,8 +119,8 @@ items:
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Models.WebSocketConnection}
-    content.vb: Public Function CreateConnectionAsync(url As String, autoReconnect As Boolean, cancellationToken As CancellationToken = Nothing) As Task(Of WebSocketConnection)
+      type: System.Threading.Tasks.ValueTask{Virtufin.WebSocketManager.Models.WebSocketConnection}
+    content.vb: Public Function CreateConnectionAsync(url As String, autoReconnect As Boolean, cancellationToken As CancellationToken = Nothing) As ValueTask(Of WebSocketConnection)
   overload: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.CreateConnectionAsync*
   implements:
   - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.CreateConnectionAsync(System.String,System.Boolean,System.Threading.CancellationToken)
@@ -703,32 +703,32 @@ references:
   name: CancellationToken
   nameWithType: CancellationToken
   fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Models.WebSocketConnection}
-  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Models.WebSocketConnection}
+- uid: System.Threading.Tasks.ValueTask{Virtufin.WebSocketManager.Models.WebSocketConnection}
+  commentId: T:System.Threading.Tasks.ValueTask{Virtufin.WebSocketManager.Models.WebSocketConnection}
   parent: System.Threading.Tasks
-  definition: System.Threading.Tasks.Task`1
-  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<WebSocketConnection>
-  nameWithType: Task<WebSocketConnection>
-  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Models.WebSocketConnection>
-  nameWithType.vb: Task(Of WebSocketConnection)
-  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Models.WebSocketConnection)
-  name.vb: Task(Of WebSocketConnection)
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<WebSocketConnection>
+  nameWithType: ValueTask<WebSocketConnection>
+  fullName: System.Threading.Tasks.ValueTask<Virtufin.WebSocketManager.Models.WebSocketConnection>
+  nameWithType.vb: ValueTask(Of WebSocketConnection)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Virtufin.WebSocketManager.Models.WebSocketConnection)
+  name.vb: ValueTask(Of WebSocketConnection)
   spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
   - name: <
   - uid: Virtufin.WebSocketManager.Models.WebSocketConnection
     name: WebSocketConnection
     href: Virtufin.WebSocketManager.Models.WebSocketConnection.html
   - name: '>'
   spec.vb:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
   - name: (
   - name: Of
   - name: " "
@@ -763,29 +763,29 @@ references:
     name: Threading
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading
-- uid: System.Threading.Tasks.Task`1
-  commentId: T:System.Threading.Tasks.Task`1
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<TResult>
-  nameWithType: Task<TResult>
-  fullName: System.Threading.Tasks.Task<TResult>
-  nameWithType.vb: Task(Of TResult)
-  fullName.vb: System.Threading.Tasks.Task(Of TResult)
-  name.vb: Task(Of TResult)
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
   spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
   - name: <
   - name: TResult
   - name: '>'
   spec.vb:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
   - name: (
   - name: Of
   - name: " "
@@ -876,6 +876,67 @@ references:
     name: CancellationToken
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Models.WebSocketConnection}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Models.WebSocketConnection}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<WebSocketConnection>
+  nameWithType: Task<WebSocketConnection>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Models.WebSocketConnection>
+  nameWithType.vb: Task(Of WebSocketConnection)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Models.WebSocketConnection)
+  name.vb: Task(Of WebSocketConnection)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Models.WebSocketConnection
+    name: WebSocketConnection
+    href: Virtufin.WebSocketManager.Models.WebSocketConnection.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Models.WebSocketConnection
+    name: WebSocketConnection
+    href: Virtufin.WebSocketManager.Models.WebSocketConnection.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
   - name: )
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetAllConnectionsAsync*
   commentId: Overload:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetAllConnectionsAsync

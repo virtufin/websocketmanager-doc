@@ -31,6 +31,28 @@ references:
   commentId: F:Virtufin.WebSocketManager.Configuration.DaprConstants.IndexKey
   fullName: Virtufin.WebSocketManager.Configuration.DaprConstants.IndexKey
   nameWithType: DaprConstants.IndexKey
+- uid: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey(System.String)
+  name: InstanceIndexKey(string)
+  href: api/Virtufin.WebSocketManager.Configuration.DaprConstants.html#Virtufin_WebSocketManager_Configuration_DaprConstants_InstanceIndexKey_System_String_
+  commentId: M:Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey(System.String)
+  name.vb: InstanceIndexKey(String)
+  fullName: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey(string)
+  fullName.vb: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey(String)
+  nameWithType: DaprConstants.InstanceIndexKey(string)
+  nameWithType.vb: DaprConstants.InstanceIndexKey(String)
+- uid: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey*
+  name: InstanceIndexKey
+  href: api/Virtufin.WebSocketManager.Configuration.DaprConstants.html#Virtufin_WebSocketManager_Configuration_DaprConstants_InstanceIndexKey_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey
+  nameWithType: DaprConstants.InstanceIndexKey
+- uid: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKeyPrefix
+  name: InstanceIndexKeyPrefix
+  href: api/Virtufin.WebSocketManager.Configuration.DaprConstants.html#Virtufin_WebSocketManager_Configuration_DaprConstants_InstanceIndexKeyPrefix
+  commentId: F:Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKeyPrefix
+  fullName: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKeyPrefix
+  nameWithType: DaprConstants.InstanceIndexKeyPrefix
 - uid: Virtufin.WebSocketManager.Configuration.DaprConstants.KeyPrefix
   name: KeyPrefix
   href: api/Virtufin.WebSocketManager.Configuration.DaprConstants.html#Virtufin_WebSocketManager_Configuration_DaprConstants_KeyPrefix
@@ -273,6 +295,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.Status
   nameWithType: WebSocketConnection.Status
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource(System.Threading.CancellationTokenSource)
+  name: SwapCancellationTokenSource(CancellationTokenSource?)
+  href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_SwapCancellationTokenSource_System_Threading_CancellationTokenSource_
+  commentId: M:Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource(System.Threading.CancellationTokenSource)
+  name.vb: SwapCancellationTokenSource(CancellationTokenSource)
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource(System.Threading.CancellationTokenSource?)
+  fullName.vb: Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource(System.Threading.CancellationTokenSource)
+  nameWithType: WebSocketConnection.SwapCancellationTokenSource(CancellationTokenSource?)
+  nameWithType.vb: WebSocketConnection.SwapCancellationTokenSource(CancellationTokenSource)
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource*
+  name: SwapCancellationTokenSource
+  href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_SwapCancellationTokenSource_
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource
+  nameWithType: WebSocketConnection.SwapCancellationTokenSource
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Topic
   name: Topic
   href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_Topic
