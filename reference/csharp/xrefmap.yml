@@ -149,6 +149,18 @@ references:
   commentId: F:Virtufin.WebSocketManager.Configuration.PortConstants.MinPort
   fullName: Virtufin.WebSocketManager.Configuration.PortConstants.MinPort
   nameWithType: PortConstants.MinPort
+- uid: Virtufin.WebSocketManager.Configuration.TimeoutConstants
+  name: TimeoutConstants
+  href: api/Virtufin.WebSocketManager.Configuration.TimeoutConstants.html
+  commentId: T:Virtufin.WebSocketManager.Configuration.TimeoutConstants
+  fullName: Virtufin.WebSocketManager.Configuration.TimeoutConstants
+  nameWithType: TimeoutConstants
+- uid: Virtufin.WebSocketManager.Configuration.TimeoutConstants.ClearAllOnStartTimeoutSeconds
+  name: ClearAllOnStartTimeoutSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.TimeoutConstants.html#Virtufin_WebSocketManager_Configuration_TimeoutConstants_ClearAllOnStartTimeoutSeconds
+  commentId: F:Virtufin.WebSocketManager.Configuration.TimeoutConstants.ClearAllOnStartTimeoutSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.TimeoutConstants.ClearAllOnStartTimeoutSeconds
+  nameWithType: TimeoutConstants.ClearAllOnStartTimeoutSeconds
 - uid: Virtufin.WebSocketManager.Models
   name: Virtufin.WebSocketManager.Models
   href: api/Virtufin.WebSocketManager.Models.html

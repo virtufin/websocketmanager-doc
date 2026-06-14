@@ -62,7 +62,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
-    startLine: 24
+    startLine: 27
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -96,7 +96,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ConnectAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
-    startLine: 30
+    startLine: 33
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -130,7 +130,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DisconnectAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
-    startLine: 50
+    startLine: 53
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -164,7 +164,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
-    startLine: 74
+    startLine: 77
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -205,7 +205,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendAndWaitAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
-    startLine: 94
+    startLine: 97
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -248,7 +248,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StartReceiveLoop
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
-    startLine: 122
+    startLine: 125
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services

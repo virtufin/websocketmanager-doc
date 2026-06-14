@@ -22,6 +22,8 @@
   "Virtufin.WebSocketManager.Configuration.PortConstants.HttpPortKey": "Virtufin.WebSocketManager.Configuration.PortConstants.yml",
   "Virtufin.WebSocketManager.Configuration.PortConstants.MaxPort": "Virtufin.WebSocketManager.Configuration.PortConstants.yml",
   "Virtufin.WebSocketManager.Configuration.PortConstants.MinPort": "Virtufin.WebSocketManager.Configuration.PortConstants.yml",
+  "Virtufin.WebSocketManager.Configuration.TimeoutConstants": "Virtufin.WebSocketManager.Configuration.TimeoutConstants.yml",
+  "Virtufin.WebSocketManager.Configuration.TimeoutConstants.ClearAllOnStartTimeoutSeconds": "Virtufin.WebSocketManager.Configuration.TimeoutConstants.yml",
   "Virtufin.WebSocketManager.Models": "Virtufin.WebSocketManager.Models.yml",
   "Virtufin.WebSocketManager.Models.ConnectionStatus": "Virtufin.WebSocketManager.Models.ConnectionStatus.yml",
   "Virtufin.WebSocketManager.Models.ConnectionStatus.Connected": "Virtufin.WebSocketManager.Models.ConnectionStatus.yml",

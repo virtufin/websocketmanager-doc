@@ -10,6 +10,9 @@ items:
   - uid: Virtufin.WebSocketManager.Configuration.PortConstants
     name: PortConstants
     type: Class
+  - uid: Virtufin.WebSocketManager.Configuration.TimeoutConstants
+    name: TimeoutConstants
+    type: Class
 - uid: Virtufin.WebSocketManager.Models
   name: Virtufin.WebSocketManager.Models
   type: Namespace

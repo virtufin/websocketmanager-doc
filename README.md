@@ -1,5 +1,10 @@
 # Virtufin WebSocket Manager
 
+[![Build Status](https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/actions/workflows/docs/badge.svg?branch=master)](https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/actions)
+[![NuGet](https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/actions/workflows/nuget/badge.svg?branch=master)](https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/packages/nuget/Virtufin.WebSocketManager.Client)
+[![PyPI](https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/actions/workflows/pypi/badge.svg?branch=master)](https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/packages/pypi/virtufin-websocketmanager)
+[![npm](https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/actions/workflows/npm/badge.svg?branch=master)](https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/packages/npm/virtufin-websocketmanager)
+
 📖 Documentation: [websocketmanager.doc.virtufin.com](https://websocketmanager.doc.virtufin.com)
 
 A WebSocket management service with REST and gRPC APIs, built on ASP.NET Core with Dapr integration.

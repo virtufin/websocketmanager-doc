@@ -6,6 +6,7 @@ items:
   children:
   - Virtufin.WebSocketManager.Configuration.DaprConstants
   - Virtufin.WebSocketManager.Configuration.PortConstants
+  - Virtufin.WebSocketManager.Configuration.TimeoutConstants
   langs:
   - csharp
   - vb
@@ -28,3 +29,9 @@ references:
   name: PortConstants
   nameWithType: PortConstants
   fullName: Virtufin.WebSocketManager.Configuration.PortConstants
+- uid: Virtufin.WebSocketManager.Configuration.TimeoutConstants
+  commentId: T:Virtufin.WebSocketManager.Configuration.TimeoutConstants
+  href: Virtufin.WebSocketManager.Configuration.TimeoutConstants.html
+  name: TimeoutConstants
+  nameWithType: TimeoutConstants
+  fullName: Virtufin.WebSocketManager.Configuration.TimeoutConstants

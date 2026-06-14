@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DaprPublisher
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
-    startLine: 10
+    startLine: 12
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -58,7 +58,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
-    startLine: 16
+    startLine: 18
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -94,7 +94,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: PublishAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
-    startLine: 23
+    startLine: 25
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
