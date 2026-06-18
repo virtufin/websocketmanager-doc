@@ -4,9 +4,11 @@ items:
   commentId: N:Virtufin.WebSocketManager.Configuration
   id: Virtufin.WebSocketManager.Configuration
   children:
+  - Virtufin.WebSocketManager.Configuration.ConnectionEvents
   - Virtufin.WebSocketManager.Configuration.DaprConstants
   - Virtufin.WebSocketManager.Configuration.PortConstants
   - Virtufin.WebSocketManager.Configuration.TimeoutConstants
+  - Virtufin.WebSocketManager.Configuration.Topics
   langs:
   - csharp
   - vb
@@ -29,9 +31,21 @@ references:
   name: PortConstants
   nameWithType: PortConstants
   fullName: Virtufin.WebSocketManager.Configuration.PortConstants
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  commentId: T:Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  href: Virtufin.WebSocketManager.Configuration.ConnectionEvents.html
+  name: ConnectionEvents
+  nameWithType: ConnectionEvents
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents
 - uid: Virtufin.WebSocketManager.Configuration.TimeoutConstants
   commentId: T:Virtufin.WebSocketManager.Configuration.TimeoutConstants
   href: Virtufin.WebSocketManager.Configuration.TimeoutConstants.html
   name: TimeoutConstants
   nameWithType: TimeoutConstants
   fullName: Virtufin.WebSocketManager.Configuration.TimeoutConstants
+- uid: Virtufin.WebSocketManager.Configuration.Topics
+  commentId: T:Virtufin.WebSocketManager.Configuration.Topics
+  href: Virtufin.WebSocketManager.Configuration.Topics.html
+  name: Topics
+  nameWithType: Topics
+  fullName: Virtufin.WebSocketManager.Configuration.Topics

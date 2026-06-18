@@ -5,7 +5,7 @@ items:
   id: WebSocketClientWrapper
   parent: Virtufin.WebSocketManager.Services
   children:
-  - Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper},Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions})
+  - Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper},Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions},Virtufin.WebSocketManager.Services.ApiLifecyclePublisher)
   - Virtufin.WebSocketManager.Services.WebSocketClientWrapper.ConnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
   - Virtufin.WebSocketManager.Services.WebSocketClientWrapper.DisconnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
   - Virtufin.WebSocketManager.Services.WebSocketClientWrapper.SendAndWaitAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Byte[],System.Int32,System.String)
@@ -44,16 +44,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper},Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions})
-  commentId: M:Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper},Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions})
-  id: '#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper},Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions})'
+- uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper},Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions},Virtufin.WebSocketManager.Services.ApiLifecyclePublisher)
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper},Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions},Virtufin.WebSocketManager.Services.ApiLifecyclePublisher)
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper},Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions},Virtufin.WebSocketManager.Services.ApiLifecyclePublisher)'
   parent: Virtufin.WebSocketManager.Services.WebSocketClientWrapper
   langs:
   - csharp
   - vb
-  name: WebSocketClientWrapper(ILogger<WebSocketClientWrapper>, IOptions<WebSocketOptions>)
-  nameWithType: WebSocketClientWrapper.WebSocketClientWrapper(ILogger<WebSocketClientWrapper>, IOptions<WebSocketOptions>)
-  fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.WebSocketClientWrapper(Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.WebSocketClientWrapper>, Microsoft.Extensions.Options.IOptions<Virtufin.WebSocketManager.Services.Options.WebSocketOptions>)
+  name: WebSocketClientWrapper(ILogger<WebSocketClientWrapper>, IOptions<WebSocketOptions>, ApiLifecyclePublisher?)
+  nameWithType: WebSocketClientWrapper.WebSocketClientWrapper(ILogger<WebSocketClientWrapper>, IOptions<WebSocketOptions>, ApiLifecyclePublisher?)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.WebSocketClientWrapper(Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.WebSocketClientWrapper>, Microsoft.Extensions.Options.IOptions<Virtufin.WebSocketManager.Services.Options.WebSocketOptions>, Virtufin.WebSocketManager.Services.ApiLifecyclePublisher?)
   type: Constructor
   source:
     remote:
@@ -62,22 +62,24 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
-    startLine: 27
+    startLine: 28
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
   syntax:
-    content: public WebSocketClientWrapper(ILogger<WebSocketClientWrapper> logger, IOptions<WebSocketOptions> options)
+    content: public WebSocketClientWrapper(ILogger<WebSocketClientWrapper> logger, IOptions<WebSocketOptions> options, ApiLifecyclePublisher? lifecycle = null)
     parameters:
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper}
     - id: options
       type: Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions}
-    content.vb: Public Sub New(logger As ILogger(Of WebSocketClientWrapper), options As IOptions(Of WebSocketOptions))
+    - id: lifecycle
+      type: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
+    content.vb: Public Sub New(logger As ILogger(Of WebSocketClientWrapper), options As IOptions(Of WebSocketOptions), lifecycle As ApiLifecyclePublisher = Nothing)
   overload: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor*
-  nameWithType.vb: WebSocketClientWrapper.New(ILogger(Of WebSocketClientWrapper), IOptions(Of WebSocketOptions))
-  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.New(Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.WebSocketClientWrapper), Microsoft.Extensions.Options.IOptions(Of Virtufin.WebSocketManager.Services.Options.WebSocketOptions))
-  name.vb: New(ILogger(Of WebSocketClientWrapper), IOptions(Of WebSocketOptions))
+  nameWithType.vb: WebSocketClientWrapper.New(ILogger(Of WebSocketClientWrapper), IOptions(Of WebSocketOptions), ApiLifecyclePublisher)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.New(Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.WebSocketClientWrapper), Microsoft.Extensions.Options.IOptions(Of Virtufin.WebSocketManager.Services.Options.WebSocketOptions), Virtufin.WebSocketManager.Services.ApiLifecyclePublisher)
+  name.vb: New(ILogger(Of WebSocketClientWrapper), IOptions(Of WebSocketOptions), ApiLifecyclePublisher)
 - uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.ConnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
   commentId: M:Virtufin.WebSocketManager.Services.WebSocketClientWrapper.ConnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
   id: ConnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)
@@ -96,7 +98,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ConnectAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
-    startLine: 33
+    startLine: 38
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -130,7 +132,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DisconnectAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
-    startLine: 53
+    startLine: 72
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -164,7 +166,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
-    startLine: 77
+    startLine: 110
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -205,7 +207,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendAndWaitAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
-    startLine: 97
+    startLine: 130
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -248,7 +250,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StartReceiveLoop
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
-    startLine: 125
+    startLine: 158
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -544,7 +546,7 @@ references:
   fullName: System
 - uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor*
   commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor
-  href: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_WebSocketClientWrapper__Microsoft_Extensions_Options_IOptions_Virtufin_WebSocketManager_Services_Options_WebSocketOptions__
+  href: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_WebSocketClientWrapper__Microsoft_Extensions_Options_IOptions_Virtufin_WebSocketManager_Services_Options_WebSocketOptions__Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_
   name: WebSocketClientWrapper
   nameWithType: WebSocketClientWrapper.WebSocketClientWrapper
   fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.WebSocketClientWrapper
@@ -617,6 +619,13 @@ references:
     name: WebSocketOptions
     href: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.html
   - name: )
+- uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
+  commentId: T:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html
+  name: ApiLifecyclePublisher
+  nameWithType: ApiLifecyclePublisher
+  fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
 - uid: Microsoft.Extensions.Logging.ILogger`1
   commentId: T:Microsoft.Extensions.Logging.ILogger`1
   isExternal: true

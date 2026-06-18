@@ -7,6 +7,54 @@ references:
   commentId: N:Virtufin.WebSocketManager.Configuration
   fullName: Virtufin.WebSocketManager.Configuration
   nameWithType: Virtufin.WebSocketManager.Configuration
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  name: ConnectionEvents
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.html
+  commentId: T:Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  nameWithType: ConnectionEvents
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected
+  name: Connected
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.html#Virtufin_WebSocketManager_Configuration_ConnectionEvents_Connected
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected
+  nameWithType: ConnectionEvents.Connected
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connecting
+  name: Connecting
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.html#Virtufin_WebSocketManager_Configuration_ConnectionEvents_Connecting
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connecting
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connecting
+  nameWithType: ConnectionEvents.Connecting
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Disconnected
+  name: Disconnected
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.html#Virtufin_WebSocketManager_Configuration_ConnectionEvents_Disconnected
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Disconnected
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Disconnected
+  nameWithType: ConnectionEvents.Disconnected
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Error
+  name: Error
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.html#Virtufin_WebSocketManager_Configuration_ConnectionEvents_Error
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Error
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Error
+  nameWithType: ConnectionEvents.Error
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Reconnecting
+  name: Reconnecting
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.html#Virtufin_WebSocketManager_Configuration_ConnectionEvents_Reconnecting
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Reconnecting
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Reconnecting
+  nameWithType: ConnectionEvents.Reconnecting
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.TypePrefix
+  name: TypePrefix
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.html#Virtufin_WebSocketManager_Configuration_ConnectionEvents_TypePrefix
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.TypePrefix
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.TypePrefix
+  nameWithType: ConnectionEvents.TypePrefix
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
+  name: Unknown
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.html#Virtufin_WebSocketManager_Configuration_ConnectionEvents_Unknown
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
+  nameWithType: ConnectionEvents.Unknown
 - uid: Virtufin.WebSocketManager.Configuration.DaprConstants
   name: DaprConstants
   href: api/Virtufin.WebSocketManager.Configuration.DaprConstants.html
@@ -161,6 +209,18 @@ references:
   commentId: F:Virtufin.WebSocketManager.Configuration.TimeoutConstants.ClearAllOnStartTimeoutSeconds
   fullName: Virtufin.WebSocketManager.Configuration.TimeoutConstants.ClearAllOnStartTimeoutSeconds
   nameWithType: TimeoutConstants.ClearAllOnStartTimeoutSeconds
+- uid: Virtufin.WebSocketManager.Configuration.Topics
+  name: Topics
+  href: api/Virtufin.WebSocketManager.Configuration.Topics.html
+  commentId: T:Virtufin.WebSocketManager.Configuration.Topics
+  fullName: Virtufin.WebSocketManager.Configuration.Topics
+  nameWithType: Topics
+- uid: Virtufin.WebSocketManager.Configuration.Topics.ConnectionStatus
+  name: ConnectionStatus
+  href: api/Virtufin.WebSocketManager.Configuration.Topics.html#Virtufin_WebSocketManager_Configuration_Topics_ConnectionStatus
+  commentId: F:Virtufin.WebSocketManager.Configuration.Topics.ConnectionStatus
+  fullName: Virtufin.WebSocketManager.Configuration.Topics.ConnectionStatus
+  nameWithType: Topics.ConnectionStatus
 - uid: Virtufin.WebSocketManager.Models
   name: Virtufin.WebSocketManager.Models
   href: api/Virtufin.WebSocketManager.Models.html
@@ -493,6 +553,57 @@ references:
   commentId: N:Virtufin.WebSocketManager.Services
   fullName: Virtufin.WebSocketManager.Services
   nameWithType: Virtufin.WebSocketManager.Services
+- uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
+  name: ApiLifecyclePublisher
+  href: api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html
+  commentId: T:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
+  fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
+  nameWithType: ApiLifecyclePublisher
+- uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ApiLifecyclePublisher},Virtufin.Api.Protos.Pubsub.PubsubClient)
+  name: ApiLifecyclePublisher(ILogger<ApiLifecyclePublisher>, PubsubClient)
+  href: api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html#Virtufin_WebSocketManager_Services_ApiLifecyclePublisher__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_ApiLifecyclePublisher__Virtufin_Api_Protos_Pubsub_PubsubClient_
+  commentId: M:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ApiLifecyclePublisher},Virtufin.Api.Protos.Pubsub.PubsubClient)
+  name.vb: New(ILogger(Of ApiLifecyclePublisher), PubsubClient)
+  fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.ApiLifecyclePublisher(Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.ApiLifecyclePublisher>, Virtufin.Api.Protos.Pubsub.PubsubClient)
+  fullName.vb: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.New(Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.ApiLifecyclePublisher), Virtufin.Api.Protos.Pubsub.PubsubClient)
+  nameWithType: ApiLifecyclePublisher.ApiLifecyclePublisher(ILogger<ApiLifecyclePublisher>, Pubsub.PubsubClient)
+  nameWithType.vb: ApiLifecyclePublisher.New(ILogger(Of ApiLifecyclePublisher), Pubsub.PubsubClient)
+- uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.#ctor*
+  name: ApiLifecyclePublisher
+  href: api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html#Virtufin_WebSocketManager_Services_ApiLifecyclePublisher__ctor_
+  commentId: Overload:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.ApiLifecyclePublisher
+  fullName.vb: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.New
+  nameWithType: ApiLifecyclePublisher.ApiLifecyclePublisher
+  nameWithType.vb: ApiLifecyclePublisher.New
+- uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishErrorAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Exception,System.Threading.CancellationToken)
+  name: PublishErrorAsync(WebSocketConnection, Exception, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html#Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishErrorAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Exception_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishErrorAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Exception,System.Threading.CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishErrorAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, System.Exception, System.Threading.CancellationToken)
+  nameWithType: ApiLifecyclePublisher.PublishErrorAsync(WebSocketConnection, Exception, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishErrorAsync*
+  name: PublishErrorAsync
+  href: api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html#Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishErrorAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishErrorAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishErrorAsync
+  nameWithType: ApiLifecyclePublisher.PublishErrorAsync
+- uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Threading.CancellationToken)
+  name: PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html#Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishIfChangedAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_Virtufin_WebSocketManager_Models_ConnectionStatus_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Threading.CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, Virtufin.WebSocketManager.Models.ConnectionStatus, System.Threading.CancellationToken)
+  nameWithType: ApiLifecyclePublisher.PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync*
+  name: PublishIfChangedAsync
+  href: api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html#Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishIfChangedAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync
+  nameWithType: ApiLifecyclePublisher.PublishIfChangedAsync
 - uid: Virtufin.WebSocketManager.Services.ConnectionNotFoundException
   name: ConnectionNotFoundException
   href: api/Virtufin.WebSocketManager.Services.ConnectionNotFoundException.html
@@ -1794,15 +1905,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.WebSocketClientWrapper
   fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper
   nameWithType: WebSocketClientWrapper
-- uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper},Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions})
-  name: WebSocketClientWrapper(ILogger<WebSocketClientWrapper>, IOptions<WebSocketOptions>)
-  href: api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_WebSocketClientWrapper__Microsoft_Extensions_Options_IOptions_Virtufin_WebSocketManager_Services_Options_WebSocketOptions__
-  commentId: M:Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper},Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions})
-  name.vb: New(ILogger(Of WebSocketClientWrapper), IOptions(Of WebSocketOptions))
-  fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.WebSocketClientWrapper(Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.WebSocketClientWrapper>, Microsoft.Extensions.Options.IOptions<Virtufin.WebSocketManager.Services.Options.WebSocketOptions>)
-  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.New(Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.WebSocketClientWrapper), Microsoft.Extensions.Options.IOptions(Of Virtufin.WebSocketManager.Services.Options.WebSocketOptions))
-  nameWithType: WebSocketClientWrapper.WebSocketClientWrapper(ILogger<WebSocketClientWrapper>, IOptions<WebSocketOptions>)
-  nameWithType.vb: WebSocketClientWrapper.New(ILogger(Of WebSocketClientWrapper), IOptions(Of WebSocketOptions))
+- uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper},Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions},Virtufin.WebSocketManager.Services.ApiLifecyclePublisher)
+  name: WebSocketClientWrapper(ILogger<WebSocketClientWrapper>, IOptions<WebSocketOptions>, ApiLifecyclePublisher?)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_WebSocketClientWrapper__Microsoft_Extensions_Options_IOptions_Virtufin_WebSocketManager_Services_Options_WebSocketOptions__Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper},Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions},Virtufin.WebSocketManager.Services.ApiLifecyclePublisher)
+  name.vb: New(ILogger(Of WebSocketClientWrapper), IOptions(Of WebSocketOptions), ApiLifecyclePublisher)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.WebSocketClientWrapper(Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.WebSocketClientWrapper>, Microsoft.Extensions.Options.IOptions<Virtufin.WebSocketManager.Services.Options.WebSocketOptions>, Virtufin.WebSocketManager.Services.ApiLifecyclePublisher?)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.New(Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.WebSocketClientWrapper), Microsoft.Extensions.Options.IOptions(Of Virtufin.WebSocketManager.Services.Options.WebSocketOptions), Virtufin.WebSocketManager.Services.ApiLifecyclePublisher)
+  nameWithType: WebSocketClientWrapper.WebSocketClientWrapper(ILogger<WebSocketClientWrapper>, IOptions<WebSocketOptions>, ApiLifecyclePublisher?)
+  nameWithType.vb: WebSocketClientWrapper.New(ILogger(Of WebSocketClientWrapper), IOptions(Of WebSocketOptions), ApiLifecyclePublisher)
 - uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor*
   name: WebSocketClientWrapper
   href: api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html#Virtufin_WebSocketManager_Services_WebSocketClientWrapper__ctor_

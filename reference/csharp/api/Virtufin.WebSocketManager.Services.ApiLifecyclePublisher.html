@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class DaprCircuitBreakerHealthCheck | Virtufin WebSocketManager - C# Reference </title>
+      <title>Class ApiLifecyclePublisher | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DaprCircuitBreakerHealthCheck | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Class ApiLifecyclePublisher | Virtufin WebSocketManager - C# Reference ">
       
-      <meta name="description" content="Health check that reports Dapr circuit breaker state.">
+      <meta name="description" content="Publishes connection lifecycle events to the virtufin-api&#39;s system-events topic. Events are CloudEvents v1.0 envelopes with the WSM&#39;s URN as the source. The publisher is best-effort: failures are logged but never propagated, so an unreachable API does not break the WSM&#39;s local connection state machine.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck">
+        <article data-uid="Virtufin.WebSocketManager.Services.ApiLifecyclePublisher">
 
 
 
-  <h1 id="Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck" data-uid="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck" class="text-break">
-Class DaprCircuitBreakerHealthCheck  
+  <h1 id="Virtufin_WebSocketManager_Services_ApiLifecyclePublisher" data-uid="Virtufin.WebSocketManager.Services.ApiLifecyclePublisher" class="text-break">
+Class ApiLifecyclePublisher  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,12 +101,16 @@ Class DaprCircuitBreakerHealthCheck
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Health check that reports Dapr circuit breaker state.</p>
+  <div class="markdown summary"><p>Publishes connection lifecycle events to the virtufin-api's
+<code>system-events</code> topic. Events are CloudEvents v1.0 envelopes
+with the WSM's URN as the source. The publisher is best-effort:
+failures are logged but never propagated, so an unreachable API
+does not break the WSM's local connection state machine.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class DaprCircuitBreakerHealthCheck : IHealthCheck</code></pre>
+    <pre><code class="lang-csharp hljs">public class ApiLifecyclePublisher</code></pre>
   </div>
 
 
@@ -116,16 +120,10 @@ Class DaprCircuitBreakerHealthCheck
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DaprCircuitBreakerHealthCheck</span></div>
+      <div><span class="xref">ApiLifecyclePublisher</span></div>
     </dd>
   </dl>
 
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.diagnostics.healthchecks.ihealthcheck">IHealthCheck</a></div>
-    </dd>
-  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -144,6 +142,9 @@ Class DaprCircuitBreakerHealthCheck
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
@@ -160,10 +161,10 @@ Class DaprCircuitBreakerHealthCheck
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck__ctor_" data-uid="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.#ctor*"></a>
+  <a id="Virtufin_WebSocketManager_Services_ApiLifecyclePublisher__ctor_" data-uid="Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.#ctor*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck__ctor_Virtufin_WebSocketManager_Services_DaprResiliencePipeline_" data-uid="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.#ctor(Virtufin.WebSocketManager.Services.DaprResiliencePipeline)">
-  DaprCircuitBreakerHealthCheck(DaprResiliencePipeline)
+  <h3 id="Virtufin_WebSocketManager_Services_ApiLifecyclePublisher__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_ApiLifecyclePublisher__Virtufin_Api_Protos_Pubsub_PubsubClient_" data-uid="Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ApiLifecyclePublisher},Virtufin.Api.Protos.Pubsub.PubsubClient)">
+  ApiLifecyclePublisher(ILogger&lt;ApiLifecyclePublisher&gt;, PubsubClient)
   
   </h3>
 
@@ -171,12 +172,14 @@ Class DaprCircuitBreakerHealthCheck
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DaprCircuitBreakerHealthCheck(DaprResiliencePipeline resilience)</code></pre>
+    <pre><code class="lang-csharp hljs">public ApiLifecyclePublisher(ILogger&lt;ApiLifecyclePublisher&gt; logger, Pubsub.PubsubClient pubsub)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>resilience</code> <a class="xref" href="Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html">DaprResiliencePipeline</a></dt>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html">ApiLifecyclePublisher</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>pubsub</code> <span class="xref">Pubsub</span>.<span class="xref">PubsubClient</span></dt>
     <dd></dd>
   </dl>
 
@@ -195,36 +198,81 @@ Class DaprCircuitBreakerHealthCheck
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck_CheckHealthAsync_" data-uid="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.CheckHealthAsync*"></a>
+  <a id="Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishErrorAsync_" data-uid="Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishErrorAsync*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck_CheckHealthAsync_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)">
-  CheckHealthAsync(HealthCheckContext, CancellationToken)
+  <h3 id="Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishErrorAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Exception_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishErrorAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Exception,System.Threading.CancellationToken)">
+  PublishErrorAsync(WebSocketConnection, Exception, CancellationToken)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Runs the health check, returning the status of the component being checked.</p>
+  <div class="markdown level1 summary"><p>Fires a <code>connection.error</code> event with the exception context
+BEFORE any state transition. Subscribers can use this for
+diagnostics; the subsequent state transition event carries the
+recovery action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;HealthCheckResult&gt; CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = default)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task PublishErrorAsync(WebSocketConnection connection, Exception ex, CancellationToken cancellationToken = default)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.diagnostics.healthchecks.healthcheckcontext">HealthCheckContext</a></dt>
-    <dd><p>A context object associated with the current execution.</p>
-</dd>
+    <dt><code>connection</code> <a class="xref" href="Virtufin.WebSocketManager.Models.WebSocketConnection.html">WebSocketConnection</a></dt>
+    <dd></dd>
+    <dt><code>ex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd></dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> that can be used to cancel the health check.</p>
-</dd>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.diagnostics.healthchecks.healthcheckresult">HealthCheckResult</a>&gt;</dt>
-    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task&lt;TResult&gt;</a> that completes when the health check has finished, yielding the status of the component being checked.</p>
-</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishIfChangedAsync_" data-uid="Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishIfChangedAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_Virtufin_WebSocketManager_Models_ConnectionStatus_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Threading.CancellationToken)">
+  PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fires a connection.* event when the connection's status changes.
+Returns immediately. If <code class="paramref">connection</code>.Status
+already equals <code class="paramref">newStatus</code>, no event is published.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task PublishIfChangedAsync(WebSocketConnection connection, ConnectionStatus newStatus, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connection</code> <a class="xref" href="Virtufin.WebSocketManager.Models.WebSocketConnection.html">WebSocketConnection</a></dt>
+    <dd></dd>
+    <dt><code>newStatus</code> <a class="xref" href="Virtufin.WebSocketManager.Models.ConnectionStatus.html">ConnectionStatus</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
   </dl>
 
 

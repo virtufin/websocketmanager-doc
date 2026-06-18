@@ -4,6 +4,9 @@ items:
   name: Virtufin.WebSocketManager.Configuration
   type: Namespace
   items:
+  - uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+    name: ConnectionEvents
+    type: Class
   - uid: Virtufin.WebSocketManager.Configuration.DaprConstants
     name: DaprConstants
     type: Class
@@ -12,6 +15,9 @@ items:
     type: Class
   - uid: Virtufin.WebSocketManager.Configuration.TimeoutConstants
     name: TimeoutConstants
+    type: Class
+  - uid: Virtufin.WebSocketManager.Configuration.Topics
+    name: Topics
     type: Class
 - uid: Virtufin.WebSocketManager.Models
   name: Virtufin.WebSocketManager.Models
@@ -34,6 +40,9 @@ items:
   name: Virtufin.WebSocketManager.Services
   type: Namespace
   items:
+  - uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
+    name: ApiLifecyclePublisher
+    type: Class
   - uid: Virtufin.WebSocketManager.Services.ConnectionNotFoundException
     name: ConnectionNotFoundException
     type: Class

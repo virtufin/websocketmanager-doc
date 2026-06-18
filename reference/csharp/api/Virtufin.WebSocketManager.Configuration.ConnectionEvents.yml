@@ -1,0 +1,526 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  commentId: T:Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  id: ConnectionEvents
+  parent: Virtufin.WebSocketManager.Configuration
+  children:
+  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected
+  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connecting
+  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.Disconnected
+  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.Error
+  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.Reconnecting
+  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.TypePrefix
+  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
+  langs:
+  - csharp
+  - vb
+  name: ConnectionEvents
+  nameWithType: ConnectionEvents
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ConnectionEvents
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+    startLine: 9
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: >-
+    CloudEvents v1.0 type strings for WSM connection lifecycle events
+
+    published to the system-events topic. Subscribers filter on these
+
+    (via the metadata 'ce-type' field). The Source URN is set on each
+
+    envelope by ApiLifecyclePublisher; the Type is the per-event value
+
+    defined here.
+  example: []
+  syntax:
+    content: public static class ConnectionEvents
+    content.vb: Public Module ConnectionEvents
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.TypePrefix
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.TypePrefix
+  id: TypePrefix
+  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  langs:
+  - csharp
+  - vb
+  name: TypePrefix
+  nameWithType: ConnectionEvents.TypePrefix
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.TypePrefix
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: TypePrefix
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Common prefix for all WSM connection event types.
+  example: []
+  syntax:
+    content: public const string TypePrefix = "com.virtufin.websocketmanager.connection."
+    return:
+      type: System.String
+    content.vb: Public Const TypePrefix As String = "com.virtufin.websocketmanager.connection."
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected
+  id: Connected
+  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  langs:
+  - csharp
+  - vb
+  name: Connected
+  nameWithType: ConnectionEvents.Connected
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Connected
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public const string Connected = "com.virtufin.websocketmanager.connection.connected"
+    return:
+      type: System.String
+    content.vb: Public Const Connected As String = "com.virtufin.websocketmanager.connection.connected"
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Disconnected
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Disconnected
+  id: Disconnected
+  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  langs:
+  - csharp
+  - vb
+  name: Disconnected
+  nameWithType: ConnectionEvents.Disconnected
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Disconnected
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Disconnected
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public const string Disconnected = "com.virtufin.websocketmanager.connection.disconnected"
+    return:
+      type: System.String
+    content.vb: Public Const Disconnected As String = "com.virtufin.websocketmanager.connection.disconnected"
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Reconnecting
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Reconnecting
+  id: Reconnecting
+  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  langs:
+  - csharp
+  - vb
+  name: Reconnecting
+  nameWithType: ConnectionEvents.Reconnecting
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Reconnecting
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Reconnecting
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public const string Reconnecting = "com.virtufin.websocketmanager.connection.reconnecting"
+    return:
+      type: System.String
+    content.vb: Public Const Reconnecting As String = "com.virtufin.websocketmanager.connection.reconnecting"
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connecting
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connecting
+  id: Connecting
+  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  langs:
+  - csharp
+  - vb
+  name: Connecting
+  nameWithType: ConnectionEvents.Connecting
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connecting
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Connecting
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public const string Connecting = "com.virtufin.websocketmanager.connection.connecting"
+    return:
+      type: System.String
+    content.vb: Public Const Connecting As String = "com.virtufin.websocketmanager.connection.connecting"
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Error
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Error
+  id: Error
+  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: ConnectionEvents.Error
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Error
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Error
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public const string Error = "com.virtufin.websocketmanager.connection.error"
+    return:
+      type: System.String
+    content.vb: Public Const Error As String = "com.virtufin.websocketmanager.connection.error"
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
+  id: Unknown
+  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: ConnectionEvents.Unknown
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Unknown
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public const string Unknown = "com.virtufin.websocketmanager.connection.unknown"
+    return:
+      type: System.String
+    content.vb: Public Const Unknown As String = "com.virtufin.websocketmanager.connection.unknown"
+references:
+- uid: Virtufin.WebSocketManager.Configuration
+  commentId: N:Virtufin.WebSocketManager.Configuration
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Configuration
+  nameWithType: Virtufin.WebSocketManager.Configuration
+  fullName: Virtufin.WebSocketManager.Configuration
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Configuration
+    name: Configuration
+    href: Virtufin.WebSocketManager.Configuration.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Configuration
+    name: Configuration
+    href: Virtufin.WebSocketManager.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

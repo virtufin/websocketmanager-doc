@@ -10,13 +10,9 @@
       
       
       
-        <link rel="canonical" href="https://websocketmanager.doc.virtufin.com/getting-started/">
+        <link rel="canonical" href="https://websocketmanager.doc.virtufin.com/connection-lifecycle/">
       
       
-        <link rel="prev" href="../introduction/">
-      
-      
-        <link rel="next" href="../architecture/">
       
       
         
@@ -27,7 +23,7 @@
     
     
       
-        <title>Getting Started - Virtufin WebSocketManager Documentation</title>
+        <title>WebSocket Connection Lifecycle - Virtufin WebSocketManager Documentation</title>
       
     
     
@@ -80,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#websocket-connection-lifecycle" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Started
+              WebSocket Connection Lifecycle
             
           </span>
         </div>
@@ -272,12 +268,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../introduction/" class="md-tabs__link">
           
   
@@ -462,31 +456,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -504,7 +495,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -547,37 +538,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Getting Started
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -593,304 +557,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prerequisites
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Installation
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#clone-the-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Clone the Repository
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-the-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Build the Project
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#running-the-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Running the Service
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Running the Service">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#default-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Default Configuration
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#custom-port-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Port Configuration
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Custom Port Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#command-line-arguments" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Command-Line Arguments
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#environment-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Environment Variables
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#port-configuration-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Port Configuration Details
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Port Configuration Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#http-port-default-5001" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        HTTP Port (Default: 5001)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grpc-port-default-5002" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        gRPC Port (Default: 5002)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#validation-rules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Validation Rules
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        API Access
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="API Access">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rest-api-http-port" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        REST API (HTTP Port)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grpc-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        gRPC API
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration Options
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration Options">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#log-level-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Log Level Control
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dapr-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dapr Integration
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#full-stack-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Full Stack Integration
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next Steps
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1421,10 +1087,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#event-types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        Event Types
       
     </span>
   </a>
@@ -1432,33 +1098,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#scenarios" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prerequisites
+        Scenarios
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Installation
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
+    <nav class="md-nav" aria-label="Scenarios">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#clone-the-repository" class="md-nav__link">
+  <a href="#scenario-1-server-initiates-close-eg-binance-terminates-the-connection" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Clone the Repository
+        Scenario 1: Server initiates close (e.g. Binance terminates the connection)
       
     </span>
   </a>
@@ -1466,10 +1121,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#build-the-project" class="md-nav__link">
+  <a href="#scenario-2-network-error-disconnects-the-connection" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Build the Project
+        Scenario 2: Network error disconnects the connection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-3-user-initiated-disconnect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario 3: User-initiated disconnect
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-4-initial-connect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario 4: Initial connect
       
     </span>
   </a>
@@ -1482,205 +1159,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-the-service" class="md-nav__link">
+  <a href="#event-ordering-guarantees" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Running the Service
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Running the Service">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#default-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Default Configuration
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#custom-port-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Port Configuration
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Custom Port Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#command-line-arguments" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Command-Line Arguments
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#environment-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Environment Variables
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#port-configuration-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Port Configuration Details
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Port Configuration Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#http-port-default-5001" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        HTTP Port (Default: 5001)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grpc-port-default-5002" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        gRPC Port (Default: 5002)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#validation-rules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Validation Rules
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        API Access
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="API Access">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rest-api-http-port" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        REST API (HTTP Port)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grpc-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        gRPC API
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration Options
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration Options">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#log-level-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Log Level Control
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dapr-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dapr Integration
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#full-stack-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Full Stack Integration
+        Event Ordering Guarantees
       
     </span>
   </a>
@@ -1688,10 +1170,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
+  <a href="#best-effort-delivery" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Next Steps
+        Best-Effort Delivery
       
     </span>
   </a>
@@ -1715,95 +1197,91 @@
 
 
 
-<h1 id="getting-started">Getting Started</h1>
-<h2 id="overview">Overview</h2>
-<p>The Virtufin WebSocket Manager is a service for managing external WebSocket connections with both REST API and gRPC interfaces.</p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h1 id="websocket-connection-lifecycle">WebSocket Connection Lifecycle</h1>
+<p>This document describes the connection lifecycle events published to
+the <code>websocketmanager.connectionstatus</code> topic by the WebSocketManager.</p>
+<h2 id="event-types">Event Types</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>When</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>connection.connected</code></td>
+<td>Connection established with the upstream WS server</td>
+<td><code>connection_id</code>, <code>url</code>, <code>instance_id</code></td>
+</tr>
+<tr>
+<td><code>connection.disconnected</code></td>
+<td>Connection closed (any reason)</td>
+<td><code>connection_id</code>, <code>url</code>, <code>instance_id</code></td>
+</tr>
+<tr>
+<td><code>connection.reconnecting</code></td>
+<td>Auto-reconnect attempt in progress</td>
+<td><code>connection_id</code>, <code>url</code>, <code>instance_id</code></td>
+</tr>
+<tr>
+<td><code>connection.error</code></td>
+<td>Receive loop caught an unexpected exception</td>
+<td><code>connection_id</code>, <code>url</code>, <code>instance_id</code>, <code>error_type</code>, <code>error_message</code></td>
+</tr>
+</tbody>
+</table>
+<p>All events are CloudEvents v1.0 envelopes. Subscribe via
+<code>Pubsub.Subscribe(topic: Topics.ConnectionStatus)</code> on the virtufin-api;
+subscribers from outside the WSM process can hardcode
+<code>"websocketmanager.connectionstatus"</code> (the string source of truth is
+<code>virtufin-websocketmanager/src/Virtufin.WebSocketManager/Configuration/Topics.cs:ConnectionStatus</code>).</p>
+<h2 id="scenarios">Scenarios</h2>
+<h3 id="scenario-1-server-initiates-close-eg-binance-terminates-the-connection">Scenario 1: Server initiates close (e.g. Binance terminates the connection)</h3>
+<p>The WebSocket server sends a Close frame. The wrapper detects it and:</p>
 <ul>
-<li>.NET 8.0 SDK or later</li>
-<li>Dapr CLI (optional, for local development with Dapr)</li>
-<li>Docker (optional, for containerized deployment)</li>
+<li>If <code>auto_reconnect = true</code>: fires <code>connection.reconnecting</code>, then either
+  <code>connection.connected</code> (on successful reconnect) or
+  <code>connection.disconnected</code> (after <code>ReconnectMaxAttempts</code> is exhausted).</li>
+<li>If <code>auto_reconnect = false</code>: fires <code>connection.disconnected</code>.</li>
 </ul>
-<h2 id="installation">Installation</h2>
-<h3 id="clone-the-repository">Clone the Repository</h3>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>&lt;repository-url&gt;
-<span class="nb">cd</span><span class="w"> </span>virtufin-websockets
-</code></pre></div>
-<h3 id="build-the-project">Build the Project</h3>
-<div class="highlight"><pre><span></span><code>dotnet<span class="w"> </span>restore
-dotnet<span class="w"> </span>build
-</code></pre></div>
-<h2 id="running-the-service">Running the Service</h2>
-<h3 id="default-configuration">Default Configuration</h3>
-<p>By default, the service runs on two separate ports:
-- <strong>Port 5001</strong>: HTTP (REST API, Swagger UI, health checks)
-- <strong>Port 5002</strong>: gRPC (native gRPC HTTP/2 h2c)</p>
-<div class="highlight"><pre><span></span><code>dotnet<span class="w"> </span>run<span class="w"> </span>--project<span class="w"> </span>src/Virtufin.WebSocketManager
-</code></pre></div>
-<h3 id="custom-port-configuration">Custom Port Configuration</h3>
-<h4 id="command-line-arguments">Command-Line Arguments</h4>
-<div class="highlight"><pre><span></span><code><span class="c1"># Custom HTTP and gRPC ports</span>
-dotnet<span class="w"> </span>run<span class="w"> </span>--project<span class="w"> </span>src/Virtufin.WebSocketManager<span class="w"> </span>--<span class="w"> </span>--http-port<span class="w"> </span><span class="m">8080</span><span class="w"> </span>--grpc-port<span class="w"> </span><span class="m">9090</span>
-</code></pre></div>
-<h4 id="environment-variables">Environment Variables</h4>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">HttpPort</span><span class="o">=</span><span class="m">4000</span>
-dotnet<span class="w"> </span>run<span class="w"> </span>--project<span class="w"> </span>src/Virtufin.WebSocketManager
-</code></pre></div>
-<h2 id="port-configuration-details">Port Configuration Details</h2>
-<h3 id="http-port-default-5001">HTTP Port (Default: 5001)</h3>
+<p><strong>Consumer guidance</strong>: treat <code>connection.reconnecting</code> as a transient
+signal. Wait for <code>connection.connected</code> or <code>connection.disconnected</code>
+before taking corrective action. The backoff is exponential, capped at
+<code>ReconnectBaseDelayMs</code>.</p>
+<h3 id="scenario-2-network-error-disconnects-the-connection">Scenario 2: Network error disconnects the connection</h3>
+<p>The receive loop catches an exception (<code>WebSocketException</code>,
+<code>IOException</code>, etc.). The wrapper fires <code>connection.error</code> FIRST (with
+the exception context), then follows the same path as Scenario 1:
+<code>connection.reconnecting</code> (or <code>connection.disconnected</code>) → final state.</p>
+<p><strong>Consumer guidance</strong>: <code>connection.error</code> provides diagnostic context
+(exception type, message). It always precedes a state transition, so
+subscribe to it for monitoring but always handle the subsequent
+<code>connection.reconnecting</code> / <code>connection.disconnected</code> for the actual
+recovery action.</p>
+<h3 id="scenario-3-user-initiated-disconnect">Scenario 3: User-initiated disconnect</h3>
+<p>The user calls <code>Disconnect</code> on the worker. The wrapper fires
+<code>connection.disconnected</code> only (no <code>connection.reconnecting</code>).</p>
+<h3 id="scenario-4-initial-connect">Scenario 4: Initial connect</h3>
+<p>The user calls <code>Create</code> then issues a <code>connect</code> command. The wrapper
+fires <code>connection.connected</code> once the upstream WebSocket handshake
+completes.</p>
+<h2 id="event-ordering-guarantees">Event Ordering Guarantees</h2>
 <ul>
-<li>Uses HTTP/1.1 protocol</li>
-<li>Hosts REST API endpoints</li>
-<li>Provides Swagger UI for API documentation</li>
-<li>Used for health checks</li>
+<li><code>connection.error</code> is always followed by either
+  <code>connection.reconnecting</code> or <code>connection.disconnected</code>.</li>
+<li><code>connection.reconnecting</code> is always followed by either
+  <code>connection.connected</code> (success) or <code>connection.disconnected</code>
+  (exhausted).</li>
+<li>Events for the same <code>connection_id</code> are delivered in the order they
+  occur in the wrapper.</li>
 </ul>
-<h3 id="grpc-port-default-5002">gRPC Port (Default: 5002)</h3>
-<ul>
-<li>Uses HTTP/2 (h2c) protocol</li>
-<li>Hosts native gRPC services</li>
-<li>Does NOT support gRPC-Web</li>
-</ul>
-<h3 id="validation-rules">Validation Rules</h3>
-<ul>
-<li>Ports must be between 1 and 65535</li>
-<li>Invalid configurations will display an error message</li>
-</ul>
-<h2 id="api-access">API Access</h2>
-<h3 id="rest-api-http-port">REST API (HTTP Port)</h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># Health check</span>
-curl<span class="w"> </span>http://localhost:5001/health
-
-<span class="c1"># List WebSocket connections</span>
-curl<span class="w"> </span>http://localhost:5001/websockets
-
-<span class="c1"># Swagger UI</span>
-<span class="c1"># Open http://localhost:5001/swagger in your browser</span>
-</code></pre></div>
-<h3 id="grpc-api">gRPC API</h3>
-<div class="highlight"><pre><span></span><code><span class="c1">// C# gRPC client example</span>
-<span class="kt">var</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GrpcChannel</span><span class="p">.</span><span class="n">ForAddress</span><span class="p">(</span><span class="s">&quot;http://localhost:5002&quot;</span><span class="p">);</span>
-<span class="kt">var</span><span class="w"> </span><span class="n">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">WebSocketManagerService</span><span class="p">.</span><span class="n">WebSocketManagerServiceClient</span><span class="p">(</span><span class="n">channel</span><span class="p">);</span>
-</code></pre></div>
-<h2 id="configuration-options">Configuration Options</h2>
-<h3 id="log-level-control">Log Level Control</h3>
-<div class="highlight"><pre><span></span><code>dotnet<span class="w"> </span>run<span class="w"> </span>--project<span class="w"> </span>src/Virtufin.WebSocketManager<span class="w"> </span>--<span class="w"> </span>--log-level<span class="w"> </span>Debug
-</code></pre></div>
-<p>Available log levels: Trace, Debug, Information, Warning, Error, Critical, None</p>
-<h3 id="dapr-integration">Dapr Integration</h3>
-<p>The service integrates with Dapr for:
-- Pub/sub messaging
-- State management
-- Service discovery</p>
-<p>See the <a href="https://docs.dapr.io">Dapr documentation</a> for more information.</p>
-<h2 id="full-stack-integration">Full Stack Integration</h2>
-<p>The WebSocketManager is designed to work alongside the API Gateway and WorkManager. See the <a href="https://api.doc.virtufin.com/integration-guide/">Full Stack Getting Started Guide</a> for a complete walkthrough covering all three services with Docker Compose.</p>
-<h2 id="next-steps">Next Steps</h2>
-<ul>
-<li><a href="./api/">API Documentation</a> - Complete API reference</li>
-<li><a href="./architecture/">Architecture Overview</a> - System design</li>
-<li><a href="./deployment/">Deployment Guide</a> - Production deployment</li>
-<li><a href="./security/">Security</a> - Authentication and connection ownership</li>
-</ul>
+<h2 id="best-effort-delivery">Best-Effort Delivery</h2>
+<p>The lifecycle publisher is best-effort. If the virtufin-api is
+unreachable, the wrapper logs a warning and continues. The
+connection's state is still updated locally; only the cross-service
+event is dropped.</p>
 
 
 

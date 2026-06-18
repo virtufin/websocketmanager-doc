@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Namespace Virtufin.WebSocketManager.Protos | Virtufin WebSocketManager - C# Reference </title>
+      <title>Class Topics | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace Virtufin.WebSocketManager.Protos | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Class Topics | Virtufin WebSocketManager - C# Reference ">
       
-      
+      <meta name="description" content="Pubsub topics published by the WebSocketManager. Each service owns its own topic; ce-type discriminates events inside the topic. This is the source of truth for any service that needs to consume websocketmanager.* events — see docs/v1/connection-lifecycle.md for the event taxonomy.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,20 +88,110 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Protos">
+        <article data-uid="Virtufin.WebSocketManager.Configuration.Topics">
 
-  <h1 id="Virtufin_WebSocketManager_Protos" data-uid="Virtufin.WebSocketManager.Protos" class="text-break">Namespace Virtufin.WebSocketManager.Protos</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.WebSocketManager.Protos.WebSocketManagerService.html">WebSocketManagerService</a></dt>
-      <dd></dd>
-    </dl>
+
+  <h1 id="Virtufin_WebSocketManager_Configuration_Topics" data-uid="Virtufin.WebSocketManager.Configuration.Topics" class="text-break">
+Class Topics  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.WebSocketManager.html">WebSocketManager</a>.<a class="xref" href="Virtufin.WebSocketManager.Configuration.html">Configuration</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Pubsub topics published by the WebSocketManager. Each service
+owns its own topic; ce-type discriminates events inside the topic.
+This is the source of truth for any service that needs to consume
+websocketmanager.* events — see docs/v1/connection-lifecycle.md
+for the event taxonomy.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Topics</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Topics</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Virtufin_WebSocketManager_Configuration_Topics_ConnectionStatus" data-uid="Virtufin.WebSocketManager.Configuration.Topics.ConnectionStatus">
+  ConnectionStatus
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Connection lifecycle events (connected, disconnected, reconnecting, error).
+Carries CloudEvents v1.0 envelopes; see <code>ConnectionEvents</code> for ce-type values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ConnectionStatus = &quot;websocketmanager.connectionstatus&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
 
 
 </article>

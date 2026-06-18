@@ -4,6 +4,7 @@ items:
   commentId: N:Virtufin.WebSocketManager.Services
   id: Virtufin.WebSocketManager.Services
   children:
+  - Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
   - Virtufin.WebSocketManager.Services.ConnectionNotFoundException
   - Virtufin.WebSocketManager.Services.ConnectionOwnershipException
   - Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
@@ -35,6 +36,13 @@ items:
   assemblies:
   - Virtufin.WebSocketManager
 references:
+- uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
+  commentId: T:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html
+  name: ApiLifecyclePublisher
+  nameWithType: ApiLifecyclePublisher
+  fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
 - uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
   commentId: T:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
   href: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html

@@ -4,6 +4,20 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Configuration.ConnectionEvents",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.yml\" sourcestartlinenumber=\"1\">CloudEvents v1.0 type strings for WSM connection lifecycle events\npublished to the system-events topic. Subscribers filter on these\n(via the metadata 'ce-type' field). The Source URN is set on each\nenvelope by ApiLifecyclePublisher; the Type is the per-event value\ndefined here.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.WebSocketManager.Configuration.DaprConstants.yml",
       "output": {
         ".html": {
@@ -43,6 +57,20 @@
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Configuration.TimeoutConstants",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Configuration.Topics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Configuration.Topics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Configuration.Topics",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.Topics.yml\" sourcestartlinenumber=\"1\">Pubsub topics published by the WebSocketManager. Each service\nowns its own topic; ce-type discriminates events inside the topic.\nThis is the source of truth for any service that needs to consume\nwebsocketmanager.* events — see docs/v1/connection-lifecycle.md\nfor the event taxonomy.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -127,6 +155,20 @@
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Protos",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.ApiLifecyclePublisher",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.yml\" sourcestartlinenumber=\"1\">Publishes connection lifecycle events to the virtufin-api's\n<code>system-events</code> topic. Events are CloudEvents v1.0 envelopes\nwith the WSM's URN as the source. The publisher is best-effort:\nfailures are logged but never propagated, so an unreachable API\ndoes not break the WSM's local connection state machine.</p>\n"
     },
     {
       "type": "ManagedReference",
