@@ -22,7 +22,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ApiLifecyclePublisher
     path: ../../../src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -68,7 +68,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
-    startLine: 25
+    startLine: 38
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -102,7 +102,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: PublishIfChangedAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
-    startLine: 36
+    startLine: 49
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -144,7 +144,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: PublishErrorAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
-    startLine: 68
+    startLine: 81
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
