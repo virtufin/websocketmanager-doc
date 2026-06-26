@@ -32,6 +32,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.yml\" sourcestartlinenumber=\"1\">Tuning for the instance heartbeat / discovery mechanism. The\n<code>InstanceHeartbeatService</code> publishes the local instance ID to\nthe Dapr state store on an interval, and the connection reclaimer\nreads it to populate its <code>knownInstances</code> set so live pods\ndon't have their connections reclaimed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.WebSocketManager.Configuration.PortConstants.yml",
       "output": {
         ".html": {
@@ -393,6 +407,34 @@
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.IWebSocketService",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.InstanceHeartbeat",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.yml\" sourcestartlinenumber=\"1\">Persistent heartbeat record stored at <code>websocketmanager/instances/&lt;instance-id&gt;</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.InstanceHeartbeatService",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.yml\" sourcestartlinenumber=\"1\">Background service that publishes a heartbeat for this instance\nto the Dapr state store on a configured interval and discovers\npeer instance heartbeats to populate the local <code>knownInstances</code>\nset.</p>\n<p sourcefile=\"api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.yml\" sourcestartlinenumber=\"6\">Without this, <xref href=\"Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService\" data-throw-if-not-resolved=\"false\"></xref> treats\nevery connection from a different instance ID as a candidate for\nreclamation — which is correct only after the peer has died.\nHeartbeats let live peers advertise their presence so live\nconnections are never reclaimed.</p>\n"
     },
     {
       "type": "ManagedReference",

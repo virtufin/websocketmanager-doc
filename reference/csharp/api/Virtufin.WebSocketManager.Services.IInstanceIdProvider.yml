@@ -7,6 +7,7 @@ items:
   children:
   - Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetInstanceId
   - Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
+  - Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(System.String)
   langs:
   - csharp
   - vb
@@ -95,6 +96,45 @@ items:
       type: System.Collections.Generic.IReadOnlySet{System.String}
     content.vb: Function GetKnownInstanceIds() As IReadOnlySet(Of String)
   overload: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds*
+- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(System.String)
+  id: RegisterLiveInstance(System.String)
+  parent: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+  langs:
+  - csharp
+  - vb
+  name: RegisterLiveInstance(string)
+  nameWithType: IInstanceIdProvider.RegisterLiveInstance(string)
+  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: RegisterLiveInstance
+    path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    Registers a newly discovered live instance. Called by
+
+    <xref href="Virtufin.WebSocketManager.Services.InstanceHeartbeatService" data-throw-if-not-resolved="false"></xref> when peer heartbeats are
+
+    observed within the stale-threshold window.
+  example: []
+  syntax:
+    content: void RegisterLiveInstance(string instanceId)
+    parameters:
+    - id: instanceId
+      type: System.String
+    content.vb: Sub RegisterLiveInstance(instanceId As String)
+  overload: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance*
+  nameWithType.vb: IInstanceIdProvider.RegisterLiveInstance(String)
+  fullName.vb: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(String)
+  name.vb: RegisterLiveInstance(String)
 references:
 - uid: Virtufin.WebSocketManager.Services
   commentId: N:Virtufin.WebSocketManager.Services
@@ -256,3 +296,15 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+  commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+  href: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html
+  name: InstanceHeartbeatService
+  nameWithType: InstanceHeartbeatService
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance
+  href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_RegisterLiveInstance_System_String_
+  name: RegisterLiveInstance
+  nameWithType: IInstanceIdProvider.RegisterLiveInstance
+  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance

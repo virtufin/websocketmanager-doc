@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class DaprCircuitBreakerHealthCheck | Virtufin WebSocketManager - C# Reference </title>
+      <title>Class InstanceHeartbeat | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DaprCircuitBreakerHealthCheck | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Class InstanceHeartbeat | Virtufin WebSocketManager - C# Reference ">
       
-      <meta name="description" content="Health check that reports Dapr circuit breaker state.">
+      <meta name="description" content="Persistent heartbeat record stored at websocketmanager/instances/&amp;lt;instance-id&amp;gt;.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck">
+        <article data-uid="Virtufin.WebSocketManager.Services.InstanceHeartbeat">
 
 
 
-  <h1 id="Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck" data-uid="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck" class="text-break">
-Class DaprCircuitBreakerHealthCheck  
+  <h1 id="Virtufin_WebSocketManager_Services_InstanceHeartbeat" data-uid="Virtufin.WebSocketManager.Services.InstanceHeartbeat" class="text-break">
+Class InstanceHeartbeat  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,12 +101,12 @@ Class DaprCircuitBreakerHealthCheck
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Health check that reports Dapr circuit breaker state.</p>
+  <div class="markdown summary"><p>Persistent heartbeat record stored at <code>websocketmanager/instances/&lt;instance-id&gt;</code>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class DaprCircuitBreakerHealthCheck : IHealthCheck</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record InstanceHeartbeat : IEquatable&lt;InstanceHeartbeat&gt;</code></pre>
   </div>
 
 
@@ -116,14 +116,14 @@ Class DaprCircuitBreakerHealthCheck
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DaprCircuitBreakerHealthCheck</span></div>
+      <div><span class="xref">InstanceHeartbeat</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.diagnostics.healthchecks.ihealthcheck">IHealthCheck</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.InstanceHeartbeat.html">InstanceHeartbeat</a>&gt;</div>
     </dd>
   </dl>
 
@@ -160,23 +160,26 @@ Class DaprCircuitBreakerHealthCheck
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck__ctor_" data-uid="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.#ctor*"></a>
+  <a id="Virtufin_WebSocketManager_Services_InstanceHeartbeat__ctor_" data-uid="Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck__ctor_Virtufin_WebSocketManager_Services_DaprResiliencePipeline_" data-uid="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.#ctor(Virtufin.WebSocketManager.Services.DaprResiliencePipeline)">
-  DaprCircuitBreakerHealthCheck(DaprResiliencePipeline)
+  <h3 id="Virtufin_WebSocketManager_Services_InstanceHeartbeat__ctor_System_String_System_DateTime_" data-uid="Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor(System.String,System.DateTime)">
+  InstanceHeartbeat(string, DateTime)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Persistent heartbeat record stored at <code>websocketmanager/instances/&lt;instance-id&gt;</code>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DaprCircuitBreakerHealthCheck(DaprResiliencePipeline resilience)</code></pre>
+    <pre><code class="lang-csharp hljs">public InstanceHeartbeat(string InstanceId, DateTime LastSeenAt)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>resilience</code> <a class="xref" href="Virtufin.WebSocketManager.Services.DaprResiliencePipeline.html">DaprResiliencePipeline</a></dt>
+    <dt><code>InstanceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>LastSeenAt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
     <dd></dd>
   </dl>
 
@@ -191,44 +194,64 @@ Class DaprCircuitBreakerHealthCheck
 
 
 
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="properties">Properties
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck_CheckHealthAsync_" data-uid="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.CheckHealthAsync*"></a>
+  <a id="Virtufin_WebSocketManager_Services_InstanceHeartbeat_InstanceId_" data-uid="Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceId*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprCircuitBreakerHealthCheck_CheckHealthAsync_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)">
-  CheckHealthAsync(HealthCheckContext, CancellationToken)
+  <h3 id="Virtufin_WebSocketManager_Services_InstanceHeartbeat_InstanceId" data-uid="Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceId">
+  InstanceId
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Runs the health check, returning the status of the component being checked.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;HealthCheckResult&gt; CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = default)</code></pre>
+    <pre><code class="lang-csharp hljs">public string InstanceId { get; init; }</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.diagnostics.healthchecks.healthcheckcontext">HealthCheckContext</a></dt>
-    <dd><p>A context object associated with the current execution.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> that can be used to cancel the health check.</p>
-</dd>
-  </dl>
 
-  <h4 class="section">Returns</h4>
+
+
+
+  <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.diagnostics.healthchecks.healthcheckresult">HealthCheckResult</a>&gt;</dt>
-    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task&lt;TResult&gt;</a> that completes when the health check has finished, yielding the status of the component being checked.</p>
-</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
   </dl>
 
 
 
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_InstanceHeartbeat_LastSeenAt_" data-uid="Virtufin.WebSocketManager.Services.InstanceHeartbeat.LastSeenAt*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_InstanceHeartbeat_LastSeenAt" data-uid="Virtufin.WebSocketManager.Services.InstanceHeartbeat.LastSeenAt">
+  LastSeenAt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime LastSeenAt { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

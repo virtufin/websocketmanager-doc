@@ -131,6 +131,109 @@ references:
   commentId: F:Virtufin.WebSocketManager.Configuration.DaprConstants.StateStoreNameKey
   fullName: Virtufin.WebSocketManager.Configuration.DaprConstants.StateStoreNameKey
   nameWithType: DaprConstants.StateStoreNameKey
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
+  name: InstanceHeartbeatOptions
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html
+  commentId: T:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
+  nameWithType: InstanceHeartbeatOptions
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DefaultDiscoveryIntervalSeconds
+  name: DefaultDiscoveryIntervalSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_DefaultDiscoveryIntervalSeconds
+  commentId: F:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DefaultDiscoveryIntervalSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DefaultDiscoveryIntervalSeconds
+  nameWithType: InstanceHeartbeatOptions.DefaultDiscoveryIntervalSeconds
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DefaultHeartbeatIntervalSeconds
+  name: DefaultHeartbeatIntervalSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_DefaultHeartbeatIntervalSeconds
+  commentId: F:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DefaultHeartbeatIntervalSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DefaultHeartbeatIntervalSeconds
+  nameWithType: InstanceHeartbeatOptions.DefaultHeartbeatIntervalSeconds
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DefaultStaleThresholdSeconds
+  name: DefaultStaleThresholdSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_DefaultStaleThresholdSeconds
+  commentId: F:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DefaultStaleThresholdSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DefaultStaleThresholdSeconds
+  nameWithType: InstanceHeartbeatOptions.DefaultStaleThresholdSeconds
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DiscoveryIntervalSeconds
+  name: DiscoveryIntervalSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_DiscoveryIntervalSeconds
+  commentId: P:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DiscoveryIntervalSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DiscoveryIntervalSeconds
+  nameWithType: InstanceHeartbeatOptions.DiscoveryIntervalSeconds
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DiscoveryIntervalSeconds*
+  name: DiscoveryIntervalSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_DiscoveryIntervalSeconds_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DiscoveryIntervalSeconds
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DiscoveryIntervalSeconds
+  nameWithType: InstanceHeartbeatOptions.DiscoveryIntervalSeconds
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DiscoveryIntervalSecondsEnvVar
+  name: DiscoveryIntervalSecondsEnvVar
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_DiscoveryIntervalSecondsEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DiscoveryIntervalSecondsEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.DiscoveryIntervalSecondsEnvVar
+  nameWithType: InstanceHeartbeatOptions.DiscoveryIntervalSecondsEnvVar
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.FromEnvironment(System.Func{System.String,System.String})
+  name: FromEnvironment(Func<string, string?>)
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_FromEnvironment_System_Func_System_String_System_String__
+  commentId: M:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.FromEnvironment(System.Func{System.String,System.String})
+  name.vb: FromEnvironment(Func(Of String, String))
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.FromEnvironment(System.Func<string, string?>)
+  fullName.vb: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.FromEnvironment(System.Func(Of String, String))
+  nameWithType: InstanceHeartbeatOptions.FromEnvironment(Func<string, string?>)
+  nameWithType.vb: InstanceHeartbeatOptions.FromEnvironment(Func(Of String, String))
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.FromEnvironment*
+  name: FromEnvironment
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_FromEnvironment_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.FromEnvironment
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.FromEnvironment
+  nameWithType: InstanceHeartbeatOptions.FromEnvironment
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.HeartbeatDisabled
+  name: HeartbeatDisabled
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_HeartbeatDisabled
+  commentId: F:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.HeartbeatDisabled
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.HeartbeatDisabled
+  nameWithType: InstanceHeartbeatOptions.HeartbeatDisabled
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.HeartbeatIntervalSeconds
+  name: HeartbeatIntervalSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_HeartbeatIntervalSeconds
+  commentId: P:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.HeartbeatIntervalSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.HeartbeatIntervalSeconds
+  nameWithType: InstanceHeartbeatOptions.HeartbeatIntervalSeconds
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.HeartbeatIntervalSeconds*
+  name: HeartbeatIntervalSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_HeartbeatIntervalSeconds_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.HeartbeatIntervalSeconds
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.HeartbeatIntervalSeconds
+  nameWithType: InstanceHeartbeatOptions.HeartbeatIntervalSeconds
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.HeartbeatIntervalSecondsEnvVar
+  name: HeartbeatIntervalSecondsEnvVar
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_HeartbeatIntervalSecondsEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.HeartbeatIntervalSecondsEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.HeartbeatIntervalSecondsEnvVar
+  nameWithType: InstanceHeartbeatOptions.HeartbeatIntervalSecondsEnvVar
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.StaleThresholdSeconds
+  name: StaleThresholdSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_StaleThresholdSeconds
+  commentId: P:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.StaleThresholdSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.StaleThresholdSeconds
+  nameWithType: InstanceHeartbeatOptions.StaleThresholdSeconds
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.StaleThresholdSeconds*
+  name: StaleThresholdSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_StaleThresholdSeconds_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.StaleThresholdSeconds
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.StaleThresholdSeconds
+  nameWithType: InstanceHeartbeatOptions.StaleThresholdSeconds
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.StaleThresholdSecondsEnvVar
+  name: StaleThresholdSecondsEnvVar
+  href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html#Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_StaleThresholdSecondsEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.StaleThresholdSecondsEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.StaleThresholdSecondsEnvVar
+  nameWithType: InstanceHeartbeatOptions.StaleThresholdSecondsEnvVar
 - uid: Virtufin.WebSocketManager.Configuration.PortConstants
   name: PortConstants
   href: api/Virtufin.WebSocketManager.Configuration.PortConstants.html
@@ -1447,6 +1550,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
   nameWithType: IInstanceIdProvider.GetKnownInstanceIds
+- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(System.String)
+  name: RegisterLiveInstance(string)
+  href: api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_RegisterLiveInstance_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(System.String)
+  name.vb: RegisterLiveInstance(String)
+  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(string)
+  fullName.vb: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(String)
+  nameWithType: IInstanceIdProvider.RegisterLiveInstance(string)
+  nameWithType.vb: IInstanceIdProvider.RegisterLiveInstance(String)
+- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance*
+  name: RegisterLiveInstance
+  href: api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_RegisterLiveInstance_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance
+  nameWithType: IInstanceIdProvider.RegisterLiveInstance
 - uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
   name: IWebSocketClientWrapper
   href: api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html
@@ -1735,6 +1854,107 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketService.StopPublishAsync
   nameWithType: IWebSocketService.StopPublishAsync
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat
+  name: InstanceHeartbeat
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html
+  commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeat
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat
+  nameWithType: InstanceHeartbeat
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor(System.String,System.DateTime)
+  name: InstanceHeartbeat(string, DateTime)
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat__ctor_System_String_System_DateTime_
+  commentId: M:Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor(System.String,System.DateTime)
+  name.vb: New(String, Date)
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceHeartbeat(string, System.DateTime)
+  fullName.vb: Virtufin.WebSocketManager.Services.InstanceHeartbeat.New(String, Date)
+  nameWithType: InstanceHeartbeat.InstanceHeartbeat(string, DateTime)
+  nameWithType.vb: InstanceHeartbeat.New(String, Date)
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor*
+  name: InstanceHeartbeat
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat__ctor_
+  commentId: Overload:Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceHeartbeat
+  fullName.vb: Virtufin.WebSocketManager.Services.InstanceHeartbeat.New
+  nameWithType: InstanceHeartbeat.InstanceHeartbeat
+  nameWithType.vb: InstanceHeartbeat.New
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceId
+  name: InstanceId
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat_InstanceId
+  commentId: P:Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceId
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceId
+  nameWithType: InstanceHeartbeat.InstanceId
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceId*
+  name: InstanceId
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat_InstanceId_
+  commentId: Overload:Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceId
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceId
+  nameWithType: InstanceHeartbeat.InstanceId
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.LastSeenAt
+  name: LastSeenAt
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat_LastSeenAt
+  commentId: P:Virtufin.WebSocketManager.Services.InstanceHeartbeat.LastSeenAt
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.LastSeenAt
+  nameWithType: InstanceHeartbeat.LastSeenAt
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.LastSeenAt*
+  name: LastSeenAt
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat_LastSeenAt_
+  commentId: Overload:Virtufin.WebSocketManager.Services.InstanceHeartbeat.LastSeenAt
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.LastSeenAt
+  nameWithType: InstanceHeartbeat.LastSeenAt
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+  name: InstanceHeartbeatService
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html
+  commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+  nameWithType: InstanceHeartbeatService
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,System.String)
+  name: InstanceHeartbeatService(DaprClient, IInstanceIdProvider, ILogger<InstanceHeartbeatService>, InstanceHeartbeatOptions, string)
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html#Virtufin_WebSocketManager_Services_InstanceHeartbeatService__ctor_Dapr_Client_DaprClient_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_InstanceHeartbeatService__Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,System.String)
+  name.vb: New(DaprClient, IInstanceIdProvider, ILogger(Of InstanceHeartbeatService), InstanceHeartbeatOptions, String)
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.InstanceHeartbeatService(Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.InstanceHeartbeatService>, Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions, string)
+  fullName.vb: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.New(Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.InstanceHeartbeatService), Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions, String)
+  nameWithType: InstanceHeartbeatService.InstanceHeartbeatService(DaprClient, IInstanceIdProvider, ILogger<InstanceHeartbeatService>, InstanceHeartbeatOptions, string)
+  nameWithType.vb: InstanceHeartbeatService.New(DaprClient, IInstanceIdProvider, ILogger(Of InstanceHeartbeatService), InstanceHeartbeatOptions, String)
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor*
+  name: InstanceHeartbeatService
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html#Virtufin_WebSocketManager_Services_InstanceHeartbeatService__ctor_
+  commentId: Overload:Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.InstanceHeartbeatService
+  fullName.vb: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.New
+  nameWithType: InstanceHeartbeatService.InstanceHeartbeatService
+  nameWithType.vb: InstanceHeartbeatService.New
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.ExecuteAsync(System.Threading.CancellationToken)
+  name: ExecuteAsync(CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html#Virtufin_WebSocketManager_Services_InstanceHeartbeatService_ExecuteAsync_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.InstanceHeartbeatService.ExecuteAsync(System.Threading.CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.ExecuteAsync(System.Threading.CancellationToken)
+  nameWithType: InstanceHeartbeatService.ExecuteAsync(CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html#Virtufin_WebSocketManager_Services_InstanceHeartbeatService_ExecuteAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.InstanceHeartbeatService.ExecuteAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.ExecuteAsync
+  nameWithType: InstanceHeartbeatService.ExecuteAsync
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.HeartbeatIndexKey
+  name: HeartbeatIndexKey
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html#Virtufin_WebSocketManager_Services_InstanceHeartbeatService_HeartbeatIndexKey
+  commentId: F:Virtufin.WebSocketManager.Services.InstanceHeartbeatService.HeartbeatIndexKey
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.HeartbeatIndexKey
+  nameWithType: InstanceHeartbeatService.HeartbeatIndexKey
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.HeartbeatKeyPrefix
+  name: HeartbeatKeyPrefix
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html#Virtufin_WebSocketManager_Services_InstanceHeartbeatService_HeartbeatKeyPrefix
+  commentId: F:Virtufin.WebSocketManager.Services.InstanceHeartbeatService.HeartbeatKeyPrefix
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.HeartbeatKeyPrefix
+  nameWithType: InstanceHeartbeatService.HeartbeatKeyPrefix
 - uid: Virtufin.WebSocketManager.Services.MessageSendException
   name: MessageSendException
   href: api/Virtufin.WebSocketManager.Services.MessageSendException.html

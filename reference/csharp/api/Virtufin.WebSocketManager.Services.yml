@@ -21,6 +21,8 @@ items:
   - Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
   - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
   - Virtufin.WebSocketManager.Services.IWebSocketService
+  - Virtufin.WebSocketManager.Services.InstanceHeartbeat
+  - Virtufin.WebSocketManager.Services.InstanceHeartbeatService
   - Virtufin.WebSocketManager.Services.MessageSendException
   - Virtufin.WebSocketManager.Services.MessageTimeoutException
   - Virtufin.WebSocketManager.Services.WebSocketClientWrapper
@@ -138,6 +140,18 @@ references:
   name: MessageTimeoutException
   nameWithType: MessageTimeoutException
   fullName: Virtufin.WebSocketManager.Services.MessageTimeoutException
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+  commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+  href: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html
+  name: InstanceHeartbeatService
+  nameWithType: InstanceHeartbeatService
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat
+  commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeat
+  href: Virtufin.WebSocketManager.Services.InstanceHeartbeat.html
+  name: InstanceHeartbeat
+  nameWithType: InstanceHeartbeat
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat
 - uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider
   commentId: T:Virtufin.WebSocketManager.Services.IInstanceIdProvider
   parent: Virtufin.WebSocketManager.Services

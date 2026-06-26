@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/d6eae7839fc59d2d5f2ad356763da11fb08ce8ec"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/e8776b1d6a43c0fc7283401f6aa5d2202073f401"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit d6eae78">
+       title="View commit e8776b1">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">d6eae78</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">e8776b1</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/d6eae7839fc59d2d5f2ad356763da11fb08ce8ec"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/e8776b1d6a43c0fc7283401f6aa5d2202073f401"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit d6eae78">
+       title="View commit e8776b1">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">d6eae78</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">e8776b1</text>
       </svg>
     </a>
 </div>
@@ -804,6 +804,17 @@
     <span class="md-ellipsis">
       
         Dapr Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-heartbeat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instance Heartbeat
       
     </span>
   </a>
@@ -1359,6 +1370,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#instance-heartbeat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instance Heartbeat
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1564,6 +1586,42 @@
 </tr>
 </tbody>
 </table>
+<h3 id="instance-heartbeat">Instance Heartbeat</h3>
+<p>The <code>InstanceHeartbeatService</code> publishes this pod's heartbeat to the
+Dapr state store and discovers peer heartbeats, so the
+<code>ConnectionReclaimerHostedService</code> doesn't reclaim connections from
+live pods (see <a href="security/#pod-replacement-orphan-risk">Security: Pod replacement orphan risk</a>
+for the scenario this addresses).</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+<th>Default</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>INSTANCE_HEARTBEAT_INTERVAL_SECONDS</code></td>
+<td>How often this pod publishes its heartbeat. Set to <code>0</code> to disable heartbeat-based detection (fall back to TTL-based reclamation only).</td>
+<td><code>10</code></td>
+<td><code>0</code>–<code>3600</code></td>
+</tr>
+<tr>
+<td><code>INSTANCE_DISCOVERY_INTERVAL_SECONDS</code></td>
+<td>How often this pod polls for peer heartbeats.</td>
+<td><code>30</code></td>
+<td><code>1</code>–<code>3600</code></td>
+</tr>
+<tr>
+<td><code>INSTANCE_STALE_THRESHOLD_SECONDS</code></td>
+<td>A peer whose heartbeat is older than this is considered dead; its connections are reclaim candidates.</td>
+<td><code>60</code></td>
+<td><code>5</code>–<code>86400</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="environment-variables">Environment Variables</h2>
 <p>Set configuration using environment variables:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">HttpPort</span><span class="o">=</span><span class="m">8080</span>
@@ -1691,7 +1749,7 @@
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-06-25T07:53:33Z</span>
+  <span style="display:table-cell;text-align:right">2026-06-26T21:33:19Z</span>
 </div>
 
     </div>

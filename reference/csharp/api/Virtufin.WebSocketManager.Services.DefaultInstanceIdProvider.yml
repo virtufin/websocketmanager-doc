@@ -23,7 +23,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DefaultInstanceIdProvider
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
-    startLine: 26
+    startLine: 33
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -67,7 +67,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
-    startLine: 31
+    startLine: 38
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -96,7 +96,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetInstanceId
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
-    startLine: 39
+    startLine: 46
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -128,7 +128,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetKnownInstanceIds
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
-    startLine: 42
+    startLine: 49
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -163,7 +163,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: RegisterLiveInstance
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceIdProvider.cs
-    startLine: 53
+    startLine: 60
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -176,6 +176,8 @@ items:
       type: System.String
     content.vb: Public Sub RegisterLiveInstance(instanceId As String)
   overload: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance*
+  implements:
+  - Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(System.String)
   nameWithType.vb: DefaultInstanceIdProvider.RegisterLiveInstance(String)
   fullName.vb: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance(String)
   name.vb: RegisterLiveInstance(String)
@@ -630,3 +632,34 @@ references:
   name: RegisterLiveInstance
   nameWithType: DefaultInstanceIdProvider.RegisterLiveInstance
   fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance
+- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(System.String)
+  parent: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+  isExternal: true
+  href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_RegisterLiveInstance_System_String_
+  name: RegisterLiveInstance(string)
+  nameWithType: IInstanceIdProvider.RegisterLiveInstance(string)
+  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(string)
+  nameWithType.vb: IInstanceIdProvider.RegisterLiveInstance(String)
+  fullName.vb: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(String)
+  name.vb: RegisterLiveInstance(String)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(System.String)
+    name: RegisterLiveInstance
+    href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_RegisterLiveInstance_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(System.String)
+    name: RegisterLiveInstance
+    href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_RegisterLiveInstance_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

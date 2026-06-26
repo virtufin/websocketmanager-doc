@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/d6eae7839fc59d2d5f2ad356763da11fb08ce8ec"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/e8776b1d6a43c0fc7283401f6aa5d2202073f401"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit d6eae78">
+       title="View commit e8776b1">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">d6eae78</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">e8776b1</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/d6eae7839fc59d2d5f2ad356763da11fb08ce8ec"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/e8776b1d6a43c0fc7283401f6aa5d2202073f401"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit d6eae78">
+       title="View commit e8776b1">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">d6eae78</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">e8776b1</text>
       </svg>
     </a>
 </div>
@@ -1092,6 +1092,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Connection Ownership">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pod-replacement-orphan-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pod replacement orphan risk
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1228,6 +1245,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Connection Ownership">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pod-replacement-orphan-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pod replacement orphan risk
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1301,7 +1335,23 @@
 </ul>
 <p>For external client access to the WebSocketManager itself, authentication should be handled at the API Gateway layer. See <a href="https://api.doc.virtufin.com/security/">API Gateway Security</a> for JWT bearer token and role-based authorization configuration.</p>
 <h2 id="connection-ownership">Connection Ownership</h2>
-<p>Each connection is owned by the service instance (Kubernetes pod) that created it. Only the owning instance can modify or disconnect a connection. The instance ID is derived from the <code>HOSTNAME</code> environment variable (pod name).</p>
+<p>Each connection is owned by the service instance (Kubernetes pod) that created it. Only the owning instance can modify or disconnect a connection. The instance ID is derived from the <code>HOSTNAME</code> environment variable (Kubernetes pod name). If <code>HOSTNAME</code> is unset (e.g. local <code>dotnet run</code>), the instance ID falls back to a fresh GUID per process start — connections owned by previous local runs will be considered orphans and reclaimed by the reclaimer.</p>
+<h3 id="pod-replacement-orphan-risk">Pod replacement orphan risk</h3>
+<p>Kubernetes pod replacement (rolling update, eviction, node drain, HPA scale-down) changes the underlying compute but does <strong>not</strong> change the pod name: the StatefulSet-or-ReplicaSet-managed pod is replaced with a new pod that gets the same name only if it was scheduled to the same ordinal. <strong>In most deployments, the new pod has a different name.</strong></p>
+<p>When that happens:</p>
+<ol>
+<li>The new pod's <code>HOSTNAME</code> is different from the dying pod's.</li>
+<li>All connections owned by the dying pod's <code>HOSTNAME</code> are now owned by an "unknown" instance from the new pod's perspective.</li>
+<li>The <code>ConnectionReclaimerHostedService</code> reclaims them after <code>StaleConnectionTtl</code> (60s default) unless the new pod knows the old pod is alive.</li>
+</ol>
+<p>To detect dead-vs-alive peers without waiting for the full TTL, the
+<code>InstanceHeartbeatService</code> publishes this instance's heartbeat to the
+Dapr state store on <code>INSTANCE_HEARTBEAT_INTERVAL_SECONDS</code> (default 10s)
+and discovers peer heartbeats on <code>INSTANCE_DISCOVERY_INTERVAL_SECONDS</code>
+(default 30s). Peer heartbeats older than <code>INSTANCE_STALE_THRESHOLD_SECONDS</code>
+(default 60s) are ignored — the peer is treated as dead.</p>
+<p>To disable heartbeat-based detection (e.g. to fall back to pure TTL-based
+reclamation), set <code>INSTANCE_HEARTBEAT_INTERVAL_SECONDS=0</code>.</p>
 <p>During rolling updates, the <code>ConnectionReclaimerHostedService</code> reclaims connections from dead instances every 30 seconds. Straggler connections can be cleared on startup with <code>CLEAR_ALL_ON_START=TRUE</code>.</p>
 <h2 id="configuration-secrets">Configuration &amp; Secrets</h2>
 <p>The WebSocketManager reads its configuration from the standard .NET configuration sources (in order: <code>appsettings.json</code>, environment variables, command-line). The following keys control runtime behavior and are the only ones that carry security-sensitive values:</p>
@@ -1375,7 +1425,7 @@
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-06-25T07:53:33Z</span>
+  <span style="display:table-cell;text-align:right">2026-06-26T21:33:19Z</span>
 </div>
 
     </div>

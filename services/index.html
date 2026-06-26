@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/d6eae7839fc59d2d5f2ad356763da11fb08ce8ec"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/e8776b1d6a43c0fc7283401f6aa5d2202073f401"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit d6eae78">
+       title="View commit e8776b1">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">d6eae78</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">e8776b1</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/d6eae7839fc59d2d5f2ad356763da11fb08ce8ec"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/e8776b1d6a43c0fc7283401f6aa5d2202073f401"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit d6eae78">
+       title="View commit e8776b1">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">d6eae78</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">e8776b1</text>
       </svg>
     </a>
 </div>
@@ -2381,6 +2381,19 @@
 - <code>"WebSocket is not connected"</code>
 - <code>"Request timeout"</code> - Timeout exceeded</p>
 <p><strong>Implementation Detail:</strong> The message is wrapped with a correlation ID and sent via <code>IWebSocketClientWrapper.SendAndWaitAsync</code>. Responses are matched by correlation ID.</p>
+<p><strong>Remote-server contract (required):</strong> <code>SendAsync</code> only returns a response if the remote server cooperates with the correlation protocol. Specifically:</p>
+<ul>
+<li>The wrapper constructs a <code>WrappedMessage</code> envelope:
+  <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;guid&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;payload&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;original message&gt;&quot;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+  and sends it over the WebSocket.</li>
+<li>The remote server <strong>must</strong> parse this envelope and echo back a JSON object whose top-level <code>"id"</code> field is the same correlation GUID:
+  <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;same guid&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;payload&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;response&gt;&quot;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div></li>
+<li>The receive loop scans every incoming text/binary frame, extracts the <code>"id"</code> field (text JSON) or the 16-byte UUID prefix (binary), and matches it against pending requests.</li>
+<li>Servers that don't echo the correlation ID will trigger a <code>"Request timeout"</code> after <code>timeoutMs</code> regardless of whether they actually sent a response.</li>
+</ul>
+<p>This is the default correlation contract for <code>text/*</code> and <code>application/json</code> content types. Binary-frame correlation uses a 16-byte UUID binary prefix instead of a JSON envelope — see <code>SendAndWaitAsync</code> below for the binary variant.</p>
 <hr />
 <h3 id="sendrawasync">SendRawAsync</h3>
 <p>Sends a raw message without waiting for a response.</p>
@@ -2457,7 +2470,8 @@
 <h4 id="getallconnectionsasync">GetAllConnectionsAsync</h4>
 <p>Retrieves all connections from both local cache and Dapr state store.</p>
 <p><strong>Returns:</strong> Combined list of remote and local connections.</p>
-<p><strong>Merge Logic:</strong> Remote connections (from Dapr state store) are returned first. Local connections not present in the remote set are then appended. If a connection exists in both stores (e.g., updated locally but not yet persisted), the remote version takes precedence. Connections are matched by <code>Id</code>. The local cache always reflects the most recent in-memory state, but the remote store is the source of truth for distributed queries.</p>
+<p><strong>Merge Logic:</strong> Remote connections (from Dapr state store) are returned first. Local connections not present in the remote set are then appended. If a connection exists in both stores (e.g., updated locally but not yet persisted), the remote version takes precedence.</p>
+<p><strong>Deduplication key:</strong> <code>WebSocketConnection.Id</code> (the connection ID string assigned at <code>Connect</code> time). Two entries are considered the same connection iff <code>local.Id == remote.Id</code>. The merge never produces duplicates for the same <code>Id</code>; when both sides have an entry for the same <code>Id</code>, the remote entry wins. Note: the local cache always reflects the most recent in-memory state, but the remote store is the source of truth for distributed queries — so a connection updated locally but not yet persisted may appear with stale data in the remote entry until the next <code>UpdateConnectionAsync</code> call.</p>
 <hr />
 <h4 id="updateconnectionasync">UpdateConnectionAsync</h4>
 <p>Updates both local cache and Dapr state store.</p>
@@ -2748,7 +2762,7 @@ base64 encoding). Consumers read <code>data</code> directly and JSON-parse it.</
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-06-25T07:53:33Z</span>
+  <span style="display:table-cell;text-align:right">2026-06-26T21:33:19Z</span>
 </div>
 
     </div>

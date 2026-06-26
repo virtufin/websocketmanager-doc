@@ -10,6 +10,9 @@ items:
   - uid: Virtufin.WebSocketManager.Configuration.DaprConstants
     name: DaprConstants
     type: Class
+  - uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
+    name: InstanceHeartbeatOptions
+    type: Class
   - uid: Virtufin.WebSocketManager.Configuration.PortConstants
     name: PortConstants
     type: Class
@@ -91,6 +94,12 @@ items:
   - uid: Virtufin.WebSocketManager.Services.IWebSocketService
     name: IWebSocketService
     type: Interface
+  - uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat
+    name: InstanceHeartbeat
+    type: Class
+  - uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+    name: InstanceHeartbeatService
+    type: Class
   - uid: Virtufin.WebSocketManager.Services.MessageSendException
     name: MessageSendException
     type: Class

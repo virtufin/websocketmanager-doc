@@ -6,6 +6,7 @@ items:
   children:
   - Virtufin.WebSocketManager.Configuration.ConnectionEvents
   - Virtufin.WebSocketManager.Configuration.DaprConstants
+  - Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
   - Virtufin.WebSocketManager.Configuration.PortConstants
   - Virtufin.WebSocketManager.Configuration.TimeoutConstants
   - Virtufin.WebSocketManager.Configuration.Topics
@@ -25,6 +26,13 @@ references:
   name: DaprConstants
   nameWithType: DaprConstants
   fullName: Virtufin.WebSocketManager.Configuration.DaprConstants
+- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
+  commentId: T:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
+  parent: Virtufin.WebSocketManager.Configuration
+  href: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html
+  name: InstanceHeartbeatOptions
+  nameWithType: InstanceHeartbeatOptions
+  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
 - uid: Virtufin.WebSocketManager.Configuration.PortConstants
   commentId: T:Virtufin.WebSocketManager.Configuration.PortConstants
   href: Virtufin.WebSocketManager.Configuration.PortConstants.html
@@ -49,3 +57,33 @@ references:
   name: Topics
   nameWithType: Topics
   fullName: Virtufin.WebSocketManager.Configuration.Topics
+- uid: Virtufin.WebSocketManager.Configuration
+  commentId: N:Virtufin.WebSocketManager.Configuration
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Configuration
+  nameWithType: Virtufin.WebSocketManager.Configuration
+  fullName: Virtufin.WebSocketManager.Configuration
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Configuration
+    name: Configuration
+    href: Virtufin.WebSocketManager.Configuration.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Configuration
+    name: Configuration
+    href: Virtufin.WebSocketManager.Configuration.html
