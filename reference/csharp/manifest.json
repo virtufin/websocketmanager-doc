@@ -14,7 +14,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Configuration.ConnectionEvents",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.yml\" sourcestartlinenumber=\"1\">CloudEvents v1.0 type strings for WSM connection lifecycle events\npublished to the system-events topic. Subscribers filter on these\n(via the metadata 'ce-type' field). The Source URN is set on each\nenvelope by ApiLifecyclePublisher; the Type is the per-event value\ndefined here.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.yml\" sourcestartlinenumber=\"1\">CloudEvents v1.0 type strings for WSM events. See\nvirtufin-openspec/openspec/specs/pubsub-topics/spec.md for the\nce-type taxonomy.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29,6 +29,20 @@
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Configuration.DaprConstants",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Configuration.InfraEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Configuration.InfraEvents.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Configuration.InfraEvents",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.InfraEvents.yml\" sourcestartlinenumber=\"1\">CloudEvents v1.0 type strings for WSM infra events\n(heartbeats, instance index updates).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -84,7 +98,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Configuration.Topics",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.Topics.yml\" sourcestartlinenumber=\"1\">Pubsub topics published by the WebSocketManager. Each service\nowns its own topic; ce-type discriminates events inside the topic.\nThis is the source of truth for any service that needs to consume\nwebsocketmanager.* events — see docs/v1/connection-lifecycle.md\nfor the event taxonomy.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.Topics.yml\" sourcestartlinenumber=\"1\">Pubsub topics published by the WebSocketManager. Topic naming\nfollows the lane + scenario scheme in\nvirtufin-openspec/openspec/specs/pubsub-topics/spec.md.\nThis file is the source of truth for any service that needs to\nconsume websocketmanager.* events.</p>\n"
     },
     {
       "type": "ManagedReference",

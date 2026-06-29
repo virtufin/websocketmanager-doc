@@ -10,6 +10,9 @@ items:
   - uid: Virtufin.WebSocketManager.Configuration.DaprConstants
     name: DaprConstants
     type: Class
+  - uid: Virtufin.WebSocketManager.Configuration.InfraEvents
+    name: InfraEvents
+    type: Class
   - uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
     name: InstanceHeartbeatOptions
     type: Class

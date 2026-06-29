@@ -1,45 +1,40 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents
-  commentId: T:Virtufin.WebSocketManager.Configuration.ConnectionEvents
-  id: ConnectionEvents
+- uid: Virtufin.WebSocketManager.Configuration.InfraEvents
+  commentId: T:Virtufin.WebSocketManager.Configuration.InfraEvents
+  id: InfraEvents
   parent: Virtufin.WebSocketManager.Configuration
   children:
-  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected
-  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connecting
-  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.Disconnected
-  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.Error
-  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.Reconnecting
-  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.TypePrefix
-  - Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
+  - Virtufin.WebSocketManager.Configuration.InfraEvents.Heartbeat
+  - Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceDeregistered
+  - Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceRegistered
+  - Virtufin.WebSocketManager.Configuration.InfraEvents.TypePrefix
   langs:
   - csharp
   - vb
-  name: ConnectionEvents
-  nameWithType: ConnectionEvents
-  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  name: InfraEvents
+  nameWithType: InfraEvents
+  fullName: Virtufin.WebSocketManager.Configuration.InfraEvents
   type: Class
   source:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: ConnectionEvents
+    id: InfraEvents
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
-    startLine: 7
+    startLine: 24
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   summary: >-
-    CloudEvents v1.0 type strings for WSM events. See
+    CloudEvents v1.0 type strings for WSM infra events
 
-    virtufin-openspec/openspec/specs/pubsub-topics/spec.md for the
-
-    ce-type taxonomy.
+    (heartbeats, instance index updates).
   example: []
   syntax:
-    content: public static class ConnectionEvents
-    content.vb: Public Module ConnectionEvents
+    content: public static class InfraEvents
+    content.vb: Public Module InfraEvents
   inheritance:
   - System.Object
   inheritedMembers:
@@ -50,16 +45,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.TypePrefix
-  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.TypePrefix
+- uid: Virtufin.WebSocketManager.Configuration.InfraEvents.TypePrefix
+  commentId: F:Virtufin.WebSocketManager.Configuration.InfraEvents.TypePrefix
   id: TypePrefix
-  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  parent: Virtufin.WebSocketManager.Configuration.InfraEvents
   langs:
   - csharp
   - vb
   name: TypePrefix
-  nameWithType: ConnectionEvents.TypePrefix
-  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.TypePrefix
+  nameWithType: InfraEvents.TypePrefix
+  fullName: Virtufin.WebSocketManager.Configuration.InfraEvents.TypePrefix
   type: Field
   source:
     remote:
@@ -68,179 +63,96 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: TypePrefix
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
-    startLine: 10
+    startLine: 26
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
-  summary: Common prefix for WSM lifecycle event types.
-  example: []
   syntax:
-    content: public const string TypePrefix = "com.virtufin.websocketmanager.lifecycle."
+    content: public const string TypePrefix = "com.virtufin.websocketmanager.infra.connection."
     return:
       type: System.String
-    content.vb: Public Const TypePrefix As String = "com.virtufin.websocketmanager.lifecycle."
-- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected
-  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected
-  id: Connected
-  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+    content.vb: Public Const TypePrefix As String = "com.virtufin.websocketmanager.infra.connection."
+- uid: Virtufin.WebSocketManager.Configuration.InfraEvents.Heartbeat
+  commentId: F:Virtufin.WebSocketManager.Configuration.InfraEvents.Heartbeat
+  id: Heartbeat
+  parent: Virtufin.WebSocketManager.Configuration.InfraEvents
   langs:
   - csharp
   - vb
-  name: Connected
-  nameWithType: ConnectionEvents.Connected
-  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected
+  name: Heartbeat
+  nameWithType: InfraEvents.Heartbeat
+  fullName: Virtufin.WebSocketManager.Configuration.InfraEvents.Heartbeat
   type: Field
   source:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: Connected
+    id: Heartbeat
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
-    startLine: 12
+    startLine: 28
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   syntax:
-    content: public const string Connected = "com.virtufin.websocketmanager.lifecycle.connected"
+    content: public const string Heartbeat = "com.virtufin.websocketmanager.infra.connection.heartbeat"
     return:
       type: System.String
-    content.vb: Public Const Connected As String = "com.virtufin.websocketmanager.lifecycle.connected"
-- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Disconnected
-  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Disconnected
-  id: Disconnected
-  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+    content.vb: Public Const Heartbeat As String = "com.virtufin.websocketmanager.infra.connection.heartbeat"
+- uid: Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceRegistered
+  commentId: F:Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceRegistered
+  id: InstanceRegistered
+  parent: Virtufin.WebSocketManager.Configuration.InfraEvents
   langs:
   - csharp
   - vb
-  name: Disconnected
-  nameWithType: ConnectionEvents.Disconnected
-  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Disconnected
+  name: InstanceRegistered
+  nameWithType: InfraEvents.InstanceRegistered
+  fullName: Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceRegistered
   type: Field
   source:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: Disconnected
+    id: InstanceRegistered
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
-    startLine: 13
+    startLine: 29
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   syntax:
-    content: public const string Disconnected = "com.virtufin.websocketmanager.lifecycle.disconnected"
+    content: public const string InstanceRegistered = "com.virtufin.websocketmanager.infra.connection.instance.registered"
     return:
       type: System.String
-    content.vb: Public Const Disconnected As String = "com.virtufin.websocketmanager.lifecycle.disconnected"
-- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Reconnecting
-  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Reconnecting
-  id: Reconnecting
-  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+    content.vb: Public Const InstanceRegistered As String = "com.virtufin.websocketmanager.infra.connection.instance.registered"
+- uid: Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceDeregistered
+  commentId: F:Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceDeregistered
+  id: InstanceDeregistered
+  parent: Virtufin.WebSocketManager.Configuration.InfraEvents
   langs:
   - csharp
   - vb
-  name: Reconnecting
-  nameWithType: ConnectionEvents.Reconnecting
-  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Reconnecting
+  name: InstanceDeregistered
+  nameWithType: InfraEvents.InstanceDeregistered
+  fullName: Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceDeregistered
   type: Field
   source:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: Reconnecting
+    id: InstanceDeregistered
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
-    startLine: 14
+    startLine: 30
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   syntax:
-    content: public const string Reconnecting = "com.virtufin.websocketmanager.lifecycle.reconnecting"
+    content: public const string InstanceDeregistered = "com.virtufin.websocketmanager.infra.connection.instance.deregistered"
     return:
       type: System.String
-    content.vb: Public Const Reconnecting As String = "com.virtufin.websocketmanager.lifecycle.reconnecting"
-- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connecting
-  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connecting
-  id: Connecting
-  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
-  langs:
-  - csharp
-  - vb
-  name: Connecting
-  nameWithType: ConnectionEvents.Connecting
-  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connecting
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: Connecting
-    path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
-    startLine: 15
-  assemblies:
-  - Virtufin.WebSocketManager
-  namespace: Virtufin.WebSocketManager.Configuration
-  syntax:
-    content: public const string Connecting = "com.virtufin.websocketmanager.lifecycle.connecting"
-    return:
-      type: System.String
-    content.vb: Public Const Connecting As String = "com.virtufin.websocketmanager.lifecycle.connecting"
-- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Error
-  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Error
-  id: Error
-  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
-  langs:
-  - csharp
-  - vb
-  name: Error
-  nameWithType: ConnectionEvents.Error
-  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Error
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: Error
-    path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
-    startLine: 16
-  assemblies:
-  - Virtufin.WebSocketManager
-  namespace: Virtufin.WebSocketManager.Configuration
-  syntax:
-    content: public const string Error = "com.virtufin.websocketmanager.lifecycle.error"
-    return:
-      type: System.String
-    content.vb: Public Const Error As String = "com.virtufin.websocketmanager.lifecycle.error"
-- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
-  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
-  id: Unknown
-  parent: Virtufin.WebSocketManager.Configuration.ConnectionEvents
-  langs:
-  - csharp
-  - vb
-  name: Unknown
-  nameWithType: ConnectionEvents.Unknown
-  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: Unknown
-    path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
-    startLine: 17
-  assemblies:
-  - Virtufin.WebSocketManager
-  namespace: Virtufin.WebSocketManager.Configuration
-  syntax:
-    content: public const string Unknown = "com.virtufin.websocketmanager.lifecycle.unknown"
-    return:
-      type: System.String
-    content.vb: Public Const Unknown As String = "com.virtufin.websocketmanager.lifecycle.unknown"
+    content.vb: Public Const InstanceDeregistered As String = "com.virtufin.websocketmanager.infra.connection.instance.deregistered"
 references:
 - uid: Virtufin.WebSocketManager.Configuration
   commentId: N:Virtufin.WebSocketManager.Configuration

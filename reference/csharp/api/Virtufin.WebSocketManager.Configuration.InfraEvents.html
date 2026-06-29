@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class DefaultInstanceIdProvider | Virtufin WebSocketManager - C# Reference </title>
+      <title>Class InfraEvents | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DefaultInstanceIdProvider | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Class InfraEvents | Virtufin WebSocketManager - C# Reference ">
       
-      <meta name="description" content="Default implementation of IInstanceIdProvider. Uses the HOSTNAME environment variable (Kubernetes pod name) for the instance ID. Falls back to a generated GUID if no HOSTNAME is set.">
+      <meta name="description" content="CloudEvents v1.0 type strings for WSM infra events (heartbeats, instance index updates).">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,27 +88,26 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider">
+        <article data-uid="Virtufin.WebSocketManager.Configuration.InfraEvents">
 
 
 
-  <h1 id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider" class="text-break">
-Class DefaultInstanceIdProvider  
+  <h1 id="Virtufin_WebSocketManager_Configuration_InfraEvents" data-uid="Virtufin.WebSocketManager.Configuration.InfraEvents" class="text-break">
+Class InfraEvents  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.WebSocketManager.html">WebSocketManager</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.html">Services</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.WebSocketManager.html">WebSocketManager</a>.<a class="xref" href="Virtufin.WebSocketManager.Configuration.html">Configuration</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Default implementation of IInstanceIdProvider.
-Uses the HOSTNAME environment variable (Kubernetes pod name) for the instance ID.
-Falls back to a generated GUID if no HOSTNAME is set.</p>
+  <div class="markdown summary"><p>CloudEvents v1.0 type strings for WSM infra events
+(heartbeats, instance index updates).</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DefaultInstanceIdProvider : IInstanceIdProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public static class InfraEvents</code></pre>
   </div>
 
 
@@ -118,16 +117,10 @@ Falls back to a generated GUID if no HOSTNAME is set.</p>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DefaultInstanceIdProvider</span></div>
+      <div><span class="xref">InfraEvents</span></div>
     </dd>
   </dl>
 
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="Virtufin.WebSocketManager.Services.IInstanceIdProvider.html">IInstanceIdProvider</a></div>
-    </dd>
-  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -161,14 +154,13 @@ Falls back to a generated GUID if no HOSTNAME is set.</p>
 
 
 
-  <h2 class="section" id="constructors">Constructors
+  <h2 class="section" id="fields">Fields
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider__ctor_" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.#ctor*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider__ctor" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.#ctor">
-  DefaultInstanceIdProvider()
+  <h3 id="Virtufin_WebSocketManager_Configuration_InfraEvents_Heartbeat" data-uid="Virtufin.WebSocketManager.Configuration.InfraEvents.Heartbeat">
+  Heartbeat
   
   </h3>
 
@@ -176,42 +168,13 @@ Falls back to a generated GUID if no HOSTNAME is set.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DefaultInstanceIdProvider()</code></pre>
+    <pre><code class="lang-csharp hljs">public const string Heartbeat = &quot;com.virtufin.websocketmanager.infra.connection.heartbeat&quot;</code></pre>
   </div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetInstanceId_" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetInstanceId*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetInstanceId" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetInstanceId">
-  GetInstanceId()
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets the unique identifier for this service instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetInstanceId()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
@@ -226,27 +189,24 @@ Falls back to a generated GUID if no HOSTNAME is set.</p>
 
 
 
-
-  <a id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetKnownInstanceIds_" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetKnownInstanceIds" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds">
-  GetKnownInstanceIds()
+  <h3 id="Virtufin_WebSocketManager_Configuration_InfraEvents_InstanceDeregistered" data-uid="Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceDeregistered">
+  InstanceDeregistered
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets all known live instance IDs in the cluster.
-Used for reclaiming orphaned connections from dead instances.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlySet&lt;string&gt; GetKnownInstanceIds()</code></pre>
+    <pre><code class="lang-csharp hljs">public const string InstanceDeregistered = &quot;com.virtufin.websocketmanager.infra.connection.instance.deregistered&quot;</code></pre>
   </div>
 
 
-  <h4 class="section">Returns</h4>
+
+
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1">IReadOnlySet</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -259,30 +219,56 @@ Used for reclaiming orphaned connections from dead instances.</p>
 
 
 
-
-  <a id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_RegisterLiveInstance_" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_RegisterLiveInstance_System_String_" data-uid="Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance(System.String)">
-  RegisterLiveInstance(string)
+  <h3 id="Virtufin_WebSocketManager_Configuration_InfraEvents_InstanceRegistered" data-uid="Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceRegistered">
+  InstanceRegistered
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Registers a newly discovered live instance.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RegisterLiveInstance(string instanceId)</code></pre>
+    <pre><code class="lang-csharp hljs">public const string InstanceRegistered = &quot;com.virtufin.websocketmanager.infra.connection.instance.registered&quot;</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
+
+
+
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><code>instanceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
 
 
+
+
+
+
+
+
+
+  <h3 id="Virtufin_WebSocketManager_Configuration_InfraEvents_TypePrefix" data-uid="Virtufin.WebSocketManager.Configuration.InfraEvents.TypePrefix">
+  TypePrefix
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TypePrefix = &quot;com.virtufin.websocketmanager.infra.connection.&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

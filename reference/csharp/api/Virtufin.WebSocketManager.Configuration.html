@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/eea4d2ec0543a274704392bc4d2630160fee11a7" target="_blank" rel="noopener" class="commit-badge" title="View commit eea4d2e">
+            <a href="{git_repo_url}/commit/cea8e9ca797f0a6898a27ddfc18af4677d53466b" target="_blank" rel="noopener" class="commit-badge" title="View commit cea8e9c">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">eea4d2e</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">cea8e9c</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,16 +100,20 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Configuration.ConnectionEvents.html">ConnectionEvents</a></dt>
-      <dd><p>CloudEvents v1.0 type strings for WSM connection lifecycle events
-published to the system-events topic. Subscribers filter on these
-(via the metadata 'ce-type' field). The Source URN is set on each
-envelope by ApiLifecyclePublisher; the Type is the per-event value
-defined here.</p>
+      <dd><p>CloudEvents v1.0 type strings for WSM events. See
+virtufin-openspec/openspec/specs/pubsub-topics/spec.md for the
+ce-type taxonomy.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Configuration.DaprConstants.html">DaprConstants</a></dt>
       <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Virtufin.WebSocketManager.Configuration.InfraEvents.html">InfraEvents</a></dt>
+      <dd><p>CloudEvents v1.0 type strings for WSM infra events
+(heartbeats, instance index updates).</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html">InstanceHeartbeatOptions</a></dt>
@@ -130,11 +134,11 @@ don't have their connections reclaimed.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Configuration.Topics.html">Topics</a></dt>
-      <dd><p>Pubsub topics published by the WebSocketManager. Each service
-owns its own topic; ce-type discriminates events inside the topic.
-This is the source of truth for any service that needs to consume
-websocketmanager.* events — see docs/v1/connection-lifecycle.md
-for the event taxonomy.</p>
+      <dd><p>Pubsub topics published by the WebSocketManager. Topic naming
+follows the lane + scenario scheme in
+virtufin-openspec/openspec/specs/pubsub-topics/spec.md.
+This file is the source of truth for any service that needs to
+consume websocketmanager.* events.</p>
 </dd>
     </dl>
 

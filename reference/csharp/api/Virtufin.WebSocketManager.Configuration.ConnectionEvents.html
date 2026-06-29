@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ConnectionEvents | Virtufin WebSocketManager - C# Reference ">
       
-      <meta name="description" content="CloudEvents v1.0 type strings for WSM connection lifecycle events published to the system-events topic. Subscribers filter on these (via the metadata &#39;ce-type&#39; field). The Source URN is set on each envelope by ApiLifecyclePublisher; the Type is the per-event value defined here.">
+      <meta name="description" content="CloudEvents v1.0 type strings for WSM events. See virtufin-openspec/openspec/specs/pubsub-topics/spec.md for the ce-type taxonomy.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/eea4d2ec0543a274704392bc4d2630160fee11a7" target="_blank" rel="noopener" class="commit-badge" title="View commit eea4d2e">
+            <a href="{git_repo_url}/commit/cea8e9ca797f0a6898a27ddfc18af4677d53466b" target="_blank" rel="noopener" class="commit-badge" title="View commit cea8e9c">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">eea4d2e</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">cea8e9c</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,11 +101,9 @@ Class ConnectionEvents
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>CloudEvents v1.0 type strings for WSM connection lifecycle events
-published to the system-events topic. Subscribers filter on these
-(via the metadata 'ce-type' field). The Source URN is set on each
-envelope by ApiLifecyclePublisher; the Type is the per-event value
-defined here.</p>
+  <div class="markdown summary"><p>CloudEvents v1.0 type strings for WSM events. See
+virtufin-openspec/openspec/specs/pubsub-topics/spec.md for the
+ce-type taxonomy.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -171,7 +169,7 @@ defined here.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string Connected = &quot;com.virtufin.websocketmanager.connection.connected&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string Connected = &quot;com.virtufin.websocketmanager.lifecycle.connected&quot;</code></pre>
   </div>
 
 
@@ -201,7 +199,7 @@ defined here.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string Connecting = &quot;com.virtufin.websocketmanager.connection.connecting&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string Connecting = &quot;com.virtufin.websocketmanager.lifecycle.connecting&quot;</code></pre>
   </div>
 
 
@@ -231,7 +229,7 @@ defined here.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string Disconnected = &quot;com.virtufin.websocketmanager.connection.disconnected&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string Disconnected = &quot;com.virtufin.websocketmanager.lifecycle.disconnected&quot;</code></pre>
   </div>
 
 
@@ -261,7 +259,7 @@ defined here.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string Error = &quot;com.virtufin.websocketmanager.connection.error&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string Error = &quot;com.virtufin.websocketmanager.lifecycle.error&quot;</code></pre>
   </div>
 
 
@@ -291,7 +289,7 @@ defined here.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string Reconnecting = &quot;com.virtufin.websocketmanager.connection.reconnecting&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string Reconnecting = &quot;com.virtufin.websocketmanager.lifecycle.reconnecting&quot;</code></pre>
   </div>
 
 
@@ -317,12 +315,12 @@ defined here.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Common prefix for all WSM connection event types.</p>
+  <div class="markdown level1 summary"><p>Common prefix for WSM lifecycle event types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string TypePrefix = &quot;com.virtufin.websocketmanager.connection.&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string TypePrefix = &quot;com.virtufin.websocketmanager.lifecycle.&quot;</code></pre>
   </div>
 
 
@@ -352,7 +350,7 @@ defined here.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string Unknown = &quot;com.virtufin.websocketmanager.connection.unknown&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string Unknown = &quot;com.virtufin.websocketmanager.lifecycle.unknown&quot;</code></pre>
   </div>
 
 

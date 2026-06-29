@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Topics | Virtufin WebSocketManager - C# Reference ">
       
-      <meta name="description" content="Pubsub topics published by the WebSocketManager. Each service owns its own topic; ce-type discriminates events inside the topic. This is the source of truth for any service that needs to consume websocketmanager.* events — see docs/v1/connection-lifecycle.md for the event taxonomy.">
+      <meta name="description" content="Pubsub topics published by the WebSocketManager. Topic naming follows the lane + scenario scheme in virtufin-openspec/openspec/specs/pubsub-topics/spec.md. This file is the source of truth for any service that needs to consume websocketmanager.* events.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/eea4d2ec0543a274704392bc4d2630160fee11a7" target="_blank" rel="noopener" class="commit-badge" title="View commit eea4d2e">
+            <a href="{git_repo_url}/commit/cea8e9ca797f0a6898a27ddfc18af4677d53466b" target="_blank" rel="noopener" class="commit-badge" title="View commit cea8e9c">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">eea4d2e</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">cea8e9c</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,11 +101,11 @@ Class Topics
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Pubsub topics published by the WebSocketManager. Each service
-owns its own topic; ce-type discriminates events inside the topic.
-This is the source of truth for any service that needs to consume
-websocketmanager.* events — see docs/v1/connection-lifecycle.md
-for the event taxonomy.</p>
+  <div class="markdown summary"><p>Pubsub topics published by the WebSocketManager. Topic naming
+follows the lane + scenario scheme in
+virtufin-openspec/openspec/specs/pubsub-topics/spec.md.
+This file is the source of truth for any service that needs to
+consume websocketmanager.* events.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -162,18 +162,52 @@ for the event taxonomy.</p>
 
 
 
-  <h3 id="Virtufin_WebSocketManager_Configuration_Topics_ConnectionStatus" data-uid="Virtufin.WebSocketManager.Configuration.Topics.ConnectionStatus">
-  ConnectionStatus
+  <h3 id="Virtufin_WebSocketManager_Configuration_Topics_InfraConnection" data-uid="Virtufin.WebSocketManager.Configuration.Topics.InfraConnection">
+  InfraConnection
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Connection lifecycle events (connected, disconnected, reconnecting, error).
-Carries CloudEvents v1.0 envelopes; see <code>ConnectionEvents</code> for ce-type values.</p>
+  <div class="markdown level1 summary"><p>Finer-grained connection infra events (heartbeat, instance
+index updates). Carries CloudEvents v1.0 envelopes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string ConnectionStatus = &quot;websocketmanager.connectionstatus&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string InfraConnection = &quot;websocketmanager.infra.connection&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Virtufin_WebSocketManager_Configuration_Topics_Lifecycle" data-uid="Virtufin.WebSocketManager.Configuration.Topics.Lifecycle">
+  Lifecycle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Connection lifecycle events (registered, connecting, connected,
+degraded, reconnecting, closed, failed). Carries CloudEvents
+v1.0 envelopes; see <a class="xref" href="Virtufin.WebSocketManager.Configuration.ConnectionEvents.html">ConnectionEvents</a> for ce-type
+values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Lifecycle = &quot;websocketmanager.lifecycle&quot;</code></pre>
   </div>
 
 

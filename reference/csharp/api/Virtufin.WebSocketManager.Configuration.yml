@@ -6,6 +6,7 @@ items:
   children:
   - Virtufin.WebSocketManager.Configuration.ConnectionEvents
   - Virtufin.WebSocketManager.Configuration.DaprConstants
+  - Virtufin.WebSocketManager.Configuration.InfraEvents
   - Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
   - Virtufin.WebSocketManager.Configuration.PortConstants
   - Virtufin.WebSocketManager.Configuration.TimeoutConstants
@@ -45,6 +46,12 @@ references:
   name: ConnectionEvents
   nameWithType: ConnectionEvents
   fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+- uid: Virtufin.WebSocketManager.Configuration.InfraEvents
+  commentId: T:Virtufin.WebSocketManager.Configuration.InfraEvents
+  href: Virtufin.WebSocketManager.Configuration.InfraEvents.html
+  name: InfraEvents
+  nameWithType: InfraEvents
+  fullName: Virtufin.WebSocketManager.Configuration.InfraEvents
 - uid: Virtufin.WebSocketManager.Configuration.TimeoutConstants
   commentId: T:Virtufin.WebSocketManager.Configuration.TimeoutConstants
   href: Virtufin.WebSocketManager.Configuration.TimeoutConstants.html

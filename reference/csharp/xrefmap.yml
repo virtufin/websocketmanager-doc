@@ -131,6 +131,36 @@ references:
   commentId: F:Virtufin.WebSocketManager.Configuration.DaprConstants.StateStoreNameKey
   fullName: Virtufin.WebSocketManager.Configuration.DaprConstants.StateStoreNameKey
   nameWithType: DaprConstants.StateStoreNameKey
+- uid: Virtufin.WebSocketManager.Configuration.InfraEvents
+  name: InfraEvents
+  href: api/Virtufin.WebSocketManager.Configuration.InfraEvents.html
+  commentId: T:Virtufin.WebSocketManager.Configuration.InfraEvents
+  fullName: Virtufin.WebSocketManager.Configuration.InfraEvents
+  nameWithType: InfraEvents
+- uid: Virtufin.WebSocketManager.Configuration.InfraEvents.Heartbeat
+  name: Heartbeat
+  href: api/Virtufin.WebSocketManager.Configuration.InfraEvents.html#Virtufin_WebSocketManager_Configuration_InfraEvents_Heartbeat
+  commentId: F:Virtufin.WebSocketManager.Configuration.InfraEvents.Heartbeat
+  fullName: Virtufin.WebSocketManager.Configuration.InfraEvents.Heartbeat
+  nameWithType: InfraEvents.Heartbeat
+- uid: Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceDeregistered
+  name: InstanceDeregistered
+  href: api/Virtufin.WebSocketManager.Configuration.InfraEvents.html#Virtufin_WebSocketManager_Configuration_InfraEvents_InstanceDeregistered
+  commentId: F:Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceDeregistered
+  fullName: Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceDeregistered
+  nameWithType: InfraEvents.InstanceDeregistered
+- uid: Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceRegistered
+  name: InstanceRegistered
+  href: api/Virtufin.WebSocketManager.Configuration.InfraEvents.html#Virtufin_WebSocketManager_Configuration_InfraEvents_InstanceRegistered
+  commentId: F:Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceRegistered
+  fullName: Virtufin.WebSocketManager.Configuration.InfraEvents.InstanceRegistered
+  nameWithType: InfraEvents.InstanceRegistered
+- uid: Virtufin.WebSocketManager.Configuration.InfraEvents.TypePrefix
+  name: TypePrefix
+  href: api/Virtufin.WebSocketManager.Configuration.InfraEvents.html#Virtufin_WebSocketManager_Configuration_InfraEvents_TypePrefix
+  commentId: F:Virtufin.WebSocketManager.Configuration.InfraEvents.TypePrefix
+  fullName: Virtufin.WebSocketManager.Configuration.InfraEvents.TypePrefix
+  nameWithType: InfraEvents.TypePrefix
 - uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
   name: InstanceHeartbeatOptions
   href: api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html
@@ -318,12 +348,18 @@ references:
   commentId: T:Virtufin.WebSocketManager.Configuration.Topics
   fullName: Virtufin.WebSocketManager.Configuration.Topics
   nameWithType: Topics
-- uid: Virtufin.WebSocketManager.Configuration.Topics.ConnectionStatus
-  name: ConnectionStatus
-  href: api/Virtufin.WebSocketManager.Configuration.Topics.html#Virtufin_WebSocketManager_Configuration_Topics_ConnectionStatus
-  commentId: F:Virtufin.WebSocketManager.Configuration.Topics.ConnectionStatus
-  fullName: Virtufin.WebSocketManager.Configuration.Topics.ConnectionStatus
-  nameWithType: Topics.ConnectionStatus
+- uid: Virtufin.WebSocketManager.Configuration.Topics.InfraConnection
+  name: InfraConnection
+  href: api/Virtufin.WebSocketManager.Configuration.Topics.html#Virtufin_WebSocketManager_Configuration_Topics_InfraConnection
+  commentId: F:Virtufin.WebSocketManager.Configuration.Topics.InfraConnection
+  fullName: Virtufin.WebSocketManager.Configuration.Topics.InfraConnection
+  nameWithType: Topics.InfraConnection
+- uid: Virtufin.WebSocketManager.Configuration.Topics.Lifecycle
+  name: Lifecycle
+  href: api/Virtufin.WebSocketManager.Configuration.Topics.html#Virtufin_WebSocketManager_Configuration_Topics_Lifecycle
+  commentId: F:Virtufin.WebSocketManager.Configuration.Topics.Lifecycle
+  fullName: Virtufin.WebSocketManager.Configuration.Topics.Lifecycle
+  nameWithType: Topics.Lifecycle
 - uid: Virtufin.WebSocketManager.Models
   name: Virtufin.WebSocketManager.Models
   href: api/Virtufin.WebSocketManager.Models.html

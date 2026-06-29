@@ -5,7 +5,8 @@ items:
   id: Topics
   parent: Virtufin.WebSocketManager.Configuration
   children:
-  - Virtufin.WebSocketManager.Configuration.Topics.ConnectionStatus
+  - Virtufin.WebSocketManager.Configuration.Topics.InfraConnection
+  - Virtufin.WebSocketManager.Configuration.Topics.Lifecycle
   langs:
   - csharp
   - vb
@@ -25,15 +26,15 @@ items:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   summary: >-
-    Pubsub topics published by the WebSocketManager. Each service
+    Pubsub topics published by the WebSocketManager. Topic naming
 
-    owns its own topic; ce-type discriminates events inside the topic.
+    follows the lane + scenario scheme in
 
-    This is the source of truth for any service that needs to consume
+    virtufin-openspec/openspec/specs/pubsub-topics/spec.md.
 
-    websocketmanager.* events — see docs/v1/connection-lifecycle.md
+    This file is the source of truth for any service that needs to
 
-    for the event taxonomy.
+    consume websocketmanager.* events.
   example: []
   syntax:
     content: public static class Topics
@@ -48,38 +49,74 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.WebSocketManager.Configuration.Topics.ConnectionStatus
-  commentId: F:Virtufin.WebSocketManager.Configuration.Topics.ConnectionStatus
-  id: ConnectionStatus
+- uid: Virtufin.WebSocketManager.Configuration.Topics.Lifecycle
+  commentId: F:Virtufin.WebSocketManager.Configuration.Topics.Lifecycle
+  id: Lifecycle
   parent: Virtufin.WebSocketManager.Configuration.Topics
   langs:
   - csharp
   - vb
-  name: ConnectionStatus
-  nameWithType: Topics.ConnectionStatus
-  fullName: Virtufin.WebSocketManager.Configuration.Topics.ConnectionStatus
+  name: Lifecycle
+  nameWithType: Topics.Lifecycle
+  fullName: Virtufin.WebSocketManager.Configuration.Topics.Lifecycle
   type: Field
   source:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/Topics.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
-    id: ConnectionStatus
+    id: Lifecycle
     path: ../../../src/Virtufin.WebSocketManager/Configuration/Topics.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   summary: >-
-    Connection lifecycle events (connected, disconnected, reconnecting, error).
+    Connection lifecycle events (registered, connecting, connected,
 
-    Carries CloudEvents v1.0 envelopes; see <code>ConnectionEvents</code> for ce-type values.
+    degraded, reconnecting, closed, failed). Carries CloudEvents
+
+    v1.0 envelopes; see <xref href="Virtufin.WebSocketManager.Configuration.ConnectionEvents" data-throw-if-not-resolved="false"></xref> for ce-type
+
+    values.
   example: []
   syntax:
-    content: public const string ConnectionStatus = "websocketmanager.connectionstatus"
+    content: public const string Lifecycle = "websocketmanager.lifecycle"
     return:
       type: System.String
-    content.vb: Public Const ConnectionStatus As String = "websocketmanager.connectionstatus"
+    content.vb: Public Const Lifecycle As String = "websocketmanager.lifecycle"
+- uid: Virtufin.WebSocketManager.Configuration.Topics.InfraConnection
+  commentId: F:Virtufin.WebSocketManager.Configuration.Topics.InfraConnection
+  id: InfraConnection
+  parent: Virtufin.WebSocketManager.Configuration.Topics
+  langs:
+  - csharp
+  - vb
+  name: InfraConnection
+  nameWithType: Topics.InfraConnection
+  fullName: Virtufin.WebSocketManager.Configuration.Topics.InfraConnection
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/Topics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: InfraConnection
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/Topics.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: >-
+    Finer-grained connection infra events (heartbeat, instance
+
+    index updates). Carries CloudEvents v1.0 envelopes.
+  example: []
+  syntax:
+    content: public const string InfraConnection = "websocketmanager.infra.connection"
+    return:
+      type: System.String
+    content.vb: Public Const InfraConnection As String = "websocketmanager.infra.connection"
 references:
 - uid: Virtufin.WebSocketManager.Configuration
   commentId: N:Virtufin.WebSocketManager.Configuration
@@ -348,6 +385,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  commentId: T:Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  href: Virtufin.WebSocketManager.Configuration.ConnectionEvents.html
+  name: ConnectionEvents
+  nameWithType: ConnectionEvents
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents
 - uid: System.String
   commentId: T:System.String
   parent: System

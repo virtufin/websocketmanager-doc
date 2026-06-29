@@ -177,10 +177,10 @@ items:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   syntax:
-    content: public const string KeyPrefix = "websocket-"
+    content: public const string KeyPrefix = "websocketmanager.connection."
     return:
       type: System.String
-    content.vb: Public Const KeyPrefix As String = "websocket-"
+    content.vb: Public Const KeyPrefix As String = "websocketmanager.connection."
 - uid: Virtufin.WebSocketManager.Configuration.DaprConstants.IndexKey
   commentId: F:Virtufin.WebSocketManager.Configuration.DaprConstants.IndexKey
   id: IndexKey
@@ -204,10 +204,10 @@ items:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   syntax:
-    content: public const string IndexKey = "websocket-index"
+    content: public const string IndexKey = "websocketmanager.connection.index"
     return:
       type: System.String
-    content.vb: Public Const IndexKey As String = "websocket-index"
+    content.vb: Public Const IndexKey As String = "websocketmanager.connection.index"
 - uid: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKeyPrefix
   commentId: F:Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKeyPrefix
   id: InstanceIndexKeyPrefix
@@ -231,10 +231,10 @@ items:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   syntax:
-    content: public const string InstanceIndexKeyPrefix = "websocket-instance-index-"
+    content: public const string InstanceIndexKeyPrefix = "websocketmanager.instance.index."
     return:
       type: System.String
-    content.vb: Public Const InstanceIndexKeyPrefix As String = "websocket-instance-index-"
+    content.vb: Public Const InstanceIndexKeyPrefix As String = "websocketmanager.instance.index."
 - uid: Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey(System.String)
   commentId: M:Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey(System.String)
   id: InstanceIndexKey(System.String)
