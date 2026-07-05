@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/282881a394aadc4543623d13f4a4602766386ed8"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/fa68a857b4141b00bafffd9aa26229ee69b8e444"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 282881a">
+       title="View commit fa68a85">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">282881a</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">fa68a85</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/282881a394aadc4543623d13f4a4602766386ed8"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/fa68a857b4141b00bafffd9aa26229ee69b8e444"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 282881a">
+       title="View commit fa68a85">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">282881a</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">fa68a85</text>
       </svg>
     </a>
 </div>
@@ -1011,6 +1011,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tags
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1587,6 +1598,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tags
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1898,6 +1920,39 @@ dotnet<span class="w"> </span>add<span class="w"> </span>package<span class="w">
 <span class="w">    </span><span class="n">Message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;{\&quot;type\&quot;: \&quot;notification\&quot;}&quot;</span>
 <span class="p">});</span>
 </code></pre></div></p>
+<h4 id="tags">Tags</h4>
+<div class="highlight"><pre><span></span><code><span class="c1">// Set/replace a single tag on a connection (resource metadata — not forwarded to remote WS)</span>
+<span class="n">Task</span><span class="o">&lt;</span><span class="n">SetTagResponse</span><span class="o">&gt;</span><span class="w"> </span><span class="n">SetTagAsync</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="k">value</span><span class="p">)</span>
+
+<span class="c1">// Get a single tag value</span>
+<span class="n">Task</span><span class="o">&lt;</span><span class="n">GetTagResponse</span><span class="o">&gt;</span><span class="w"> </span><span class="n">GetTagAsync</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">key</span><span class="p">)</span>
+
+<span class="c1">// Replace all tags on a connection at once</span>
+<span class="n">Task</span><span class="o">&lt;</span><span class="n">SetTagsResponse</span><span class="o">&gt;</span><span class="w"> </span><span class="n">SetTagsAsync</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">IDictionary</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">tags</span><span class="p">)</span>
+
+<span class="c1">// Get all tags for a connection</span>
+<span class="n">Task</span><span class="o">&lt;</span><span class="n">GetTagsResponse</span><span class="o">&gt;</span><span class="w"> </span><span class="n">GetTagsAsync</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="c1">// Set a single tag</span>
+<span class="k">await</span><span class="w"> </span><span class="n">client</span><span class="p">.</span><span class="n">SetTagAsync</span><span class="p">(</span><span class="n">connectionId</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;environment&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;staging&quot;</span><span class="p">);</span>
+
+<span class="c1">// Replace all tags</span>
+<span class="k">await</span><span class="w"> </span><span class="n">client</span><span class="p">.</span><span class="n">SetTagsAsync</span><span class="p">(</span><span class="n">connectionId</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Dictionary</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="o">&gt;</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="na">[&quot;environment&quot;]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;staging&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">[&quot;team&quot;]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;payments&quot;</span>
+<span class="p">});</span>
+
+<span class="c1">// Read back</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">tags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">client</span><span class="p">.</span><span class="n">GetTagsAsync</span><span class="p">(</span><span class="n">connectionId</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Tags: {string.Join(&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;, tags.Select(kv =&gt; $&quot;</span><span class="p">{</span><span class="n">kv</span><span class="p">.</span><span class="n">Key</span><span class="p">}</span><span class="o">=</span><span class="p">{</span><span class="n">kv</span><span class="p">.</span><span class="n">Value</span><span class="p">}</span><span class="s">&quot;))}&quot;</span><span class="p">);</span>
+
+<span class="c1">// Filter connections by tag via ListRequest.Filters</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">listRequest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ListRequest</span><span class="p">();</span>
+<span class="n">listRequest</span><span class="p">.</span><span class="n">Filters</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">TagFilter</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;environment&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;staging&quot;</span><span class="w"> </span><span class="p">});</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">matching</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">client</span><span class="p">.</span><span class="n">ListAsync</span><span class="p">(</span><span class="n">listRequest</span><span class="p">);</span>
+</code></pre></div></p>
 <hr />
 <h2 id="data-models">Data Models</h2>
 <h3 id="connectrequest">ConnectRequest</h3>
@@ -2076,7 +2131,7 @@ dotnet<span class="w"> </span>add<span class="w"> </span>package<span class="w">
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-05T19:17:56Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-05T21:11:11Z</span>
 </div>
 
     </div>

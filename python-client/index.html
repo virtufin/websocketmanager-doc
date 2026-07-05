@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/282881a394aadc4543623d13f4a4602766386ed8"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/fa68a857b4141b00bafffd9aa26229ee69b8e444"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 282881a">
+       title="View commit fa68a85">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">282881a</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">fa68a85</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/282881a394aadc4543623d13f4a4602766386ed8"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/fa68a857b4141b00bafffd9aa26229ee69b8e444"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 282881a">
+       title="View commit fa68a85">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">282881a</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">fa68a85</text>
       </svg>
     </a>
 </div>
@@ -1111,6 +1111,50 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#set_tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_tag()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_tag()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set_tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_tags()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_tags()
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1615,6 +1659,50 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#set_tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_tag()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_tag()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set_tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_tags()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_tags()
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1936,6 +2024,59 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-websocketmana
 <p><strong>Example:</strong>
 <div class="highlight"><pre><span></span><code><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">stop_publish</span><span class="p">(</span><span class="n">connection_id</span><span class="p">)</span>
 </code></pre></div></p>
+<h3 id="set_tag">set_tag()</h3>
+<p>Set a single tag on a connection (resource metadata — not forwarded to the remote websocket).</p>
+<div class="highlight"><pre><span></span><code><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">set_tag</span><span class="p">(</span><span class="nb">id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td><code>str</code></td>
+<td>Connection ID</td>
+</tr>
+<tr>
+<td><code>key</code></td>
+<td><code>str</code></td>
+<td>Tag name</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td><code>str</code></td>
+<td>Tag value</td>
+</tr>
+</tbody>
+</table>
+<h3 id="get_tag">get_tag()</h3>
+<p>Get a single tag value. Returns <code>None</code> if the tag is not set.</p>
+<div class="highlight"><pre><span></span><code><span class="n">value</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_tag</span><span class="p">(</span><span class="nb">id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="set_tags">set_tags()</h3>
+<p>Replace all tags on a connection at once.</p>
+<div class="highlight"><pre><span></span><code><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">set_tags</span><span class="p">(</span><span class="nb">id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">tags</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span>
+</code></pre></div>
+<h3 id="get_tags">get_tags()</h3>
+<p>Get all tags for a connection.</p>
+<div class="highlight"><pre><span></span><code><span class="n">tags</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_tags</span><span class="p">(</span><span class="nb">id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="c1"># Set tags on a connection</span>
+<span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">set_tag</span><span class="p">(</span><span class="n">conn_id</span><span class="p">,</span> <span class="s2">&quot;environment&quot;</span><span class="p">,</span> <span class="s2">&quot;staging&quot;</span><span class="p">)</span>
+
+<span class="c1"># Bulk replace</span>
+<span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">set_tags</span><span class="p">(</span><span class="n">conn_id</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;environment&quot;</span><span class="p">:</span> <span class="s2">&quot;staging&quot;</span><span class="p">,</span> <span class="s2">&quot;team&quot;</span><span class="p">:</span> <span class="s2">&quot;payments&quot;</span><span class="p">})</span>
+
+<span class="c1"># Read back</span>
+<span class="n">tags</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_tags</span><span class="p">(</span><span class="n">conn_id</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tags: </span><span class="si">{</span><span class="n">tags</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></p>
 <h2 id="via-the-api-gateway">Via the API Gateway</h2>
 <p>The <code>WebSocketManagerClient</code> connects directly to the websocketmanager's
 gRPC port (<code>5002</code> by default). Alternatively, you can invoke
@@ -2078,7 +2219,7 @@ JSON marshaling).</p>
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-05T19:17:56Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-05T21:11:11Z</span>
 </div>
 
     </div>
