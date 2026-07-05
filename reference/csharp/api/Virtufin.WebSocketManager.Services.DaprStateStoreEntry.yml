@@ -317,7 +317,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ToConnection
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
-    startLine: 67
+    startLine: 71
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -330,6 +330,13 @@ items:
       description: A new WebSocketConnection instance.
     content.vb: Public Function ToConnection() As WebSocketConnection
   overload: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.ToConnection*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: >-
+      The entry has no <code>InstanceId</code> — likely corrupted state-store data
+
+      (entries are required to carry an InstanceId when first written).
 references:
 - uid: Virtufin.WebSocketManager.Services
   commentId: N:Virtufin.WebSocketManager.Services
@@ -730,6 +737,13 @@ references:
   name: DaprStateStoreEntry
   nameWithType: DaprStateStoreEntry
   fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
 - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.ToConnection*
   commentId: Overload:Virtufin.WebSocketManager.Services.DaprStateStoreEntry.ToConnection
   href: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html#Virtufin_WebSocketManager_Services_DaprStateStoreEntry_ToConnection

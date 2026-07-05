@@ -245,7 +245,7 @@ items:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
   syntax:
-    content: public string? InstanceId { get; set; }
+    content: public string InstanceId { get; set; }
     parameters: []
     return:
       type: System.String
