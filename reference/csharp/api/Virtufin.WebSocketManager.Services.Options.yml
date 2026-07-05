@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.WebSocketManager.Services.Options
   commentId: N:Virtufin.WebSocketManager.Services.Options
-  id: Virtufin.WebSocketManager.Services.Options
+  id: Options
+  parent: Virtufin.WebSocketManager.Services
   children:
   - Virtufin.WebSocketManager.Services.Options.WebSocketOptions
   langs:

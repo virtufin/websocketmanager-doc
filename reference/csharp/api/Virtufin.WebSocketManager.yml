@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager
+  id: Virtufin.WebSocketManager
+  children:
+  - Virtufin.WebSocketManager.Configuration
+  - Virtufin.WebSocketManager.Models
+  - Virtufin.WebSocketManager.Protos
+  - Virtufin.WebSocketManager.Services
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.WebSocketManager
+  type: Namespace
+references:
+- uid: Virtufin.WebSocketManager.Configuration
+  commentId: N:Virtufin.WebSocketManager.Configuration
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Configuration
+  nameWithType: Virtufin.WebSocketManager.Configuration
+  fullName: Virtufin.WebSocketManager.Configuration
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Configuration
+    name: Configuration
+    href: Virtufin.WebSocketManager.Configuration.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Configuration
+    name: Configuration
+    href: Virtufin.WebSocketManager.Configuration.html
+- uid: Virtufin.WebSocketManager.Models
+  commentId: N:Virtufin.WebSocketManager.Models
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Models
+  nameWithType: Virtufin.WebSocketManager.Models
+  fullName: Virtufin.WebSocketManager.Models
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Models
+    name: Models
+    href: Virtufin.WebSocketManager.Models.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Models
+    name: Models
+    href: Virtufin.WebSocketManager.Models.html
+- uid: Virtufin.WebSocketManager.Protos
+  commentId: N:Virtufin.WebSocketManager.Protos
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Protos
+  nameWithType: Virtufin.WebSocketManager.Protos
+  fullName: Virtufin.WebSocketManager.Protos
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos
+    name: Protos
+    href: Virtufin.WebSocketManager.Protos.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos
+    name: Protos
+    href: Virtufin.WebSocketManager.Protos.html
+- uid: Virtufin.WebSocketManager.Services
+  commentId: N:Virtufin.WebSocketManager.Services
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services
+  nameWithType: Virtufin.WebSocketManager.Services
+  fullName: Virtufin.WebSocketManager.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html

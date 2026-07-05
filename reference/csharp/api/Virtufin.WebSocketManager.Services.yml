@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.WebSocketManager.Services
   commentId: N:Virtufin.WebSocketManager.Services
-  id: Virtufin.WebSocketManager.Services
+  id: Services
+  parent: Virtufin.WebSocketManager
   children:
   - Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
   - Virtufin.WebSocketManager.Services.ConnectionNotFoundException
@@ -25,6 +26,7 @@ items:
   - Virtufin.WebSocketManager.Services.InstanceHeartbeatService
   - Virtufin.WebSocketManager.Services.MessageSendException
   - Virtufin.WebSocketManager.Services.MessageTimeoutException
+  - Virtufin.WebSocketManager.Services.Options
   - Virtufin.WebSocketManager.Services.WebSocketClientWrapper
   - Virtufin.WebSocketManager.Services.WebSocketNotConnectedException
   - Virtufin.WebSocketManager.Services.WebSocketService
@@ -38,6 +40,44 @@ items:
   assemblies:
   - Virtufin.WebSocketManager
 references:
+- uid: Virtufin.WebSocketManager.Services.Options
+  commentId: N:Virtufin.WebSocketManager.Services.Options
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services.Options
+  nameWithType: Virtufin.WebSocketManager.Services.Options
+  fullName: Virtufin.WebSocketManager.Services.Options
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services.Options
+    name: Options
+    href: Virtufin.WebSocketManager.Services.Options.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services.Options
+    name: Options
+    href: Virtufin.WebSocketManager.Services.Options.html
 - uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
   commentId: T:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
   parent: Virtufin.WebSocketManager.Services
@@ -45,32 +85,36 @@ references:
   name: ApiLifecyclePublisher
   nameWithType: ApiLifecyclePublisher
   fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
+- uid: Virtufin.WebSocketManager.Services.ConnectionNotFoundException
+  commentId: T:Virtufin.WebSocketManager.Services.ConnectionNotFoundException
+  href: Virtufin.WebSocketManager.Services.ConnectionNotFoundException.html
+  name: ConnectionNotFoundException
+  nameWithType: ConnectionNotFoundException
+  fullName: Virtufin.WebSocketManager.Services.ConnectionNotFoundException
+- uid: Virtufin.WebSocketManager.Services.ConnectionOwnershipException
+  commentId: T:Virtufin.WebSocketManager.Services.ConnectionOwnershipException
+  href: Virtufin.WebSocketManager.Services.ConnectionOwnershipException.html
+  name: ConnectionOwnershipException
+  nameWithType: ConnectionOwnershipException
+  fullName: Virtufin.WebSocketManager.Services.ConnectionOwnershipException
 - uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
   commentId: T:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
   href: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html
   name: ConnectionReclaimerHostedService
   nameWithType: ConnectionReclaimerHostedService
   fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
-- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
-  commentId: T:Virtufin.WebSocketManager.Services.IDaprConnectionRepository
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html
-  name: IDaprConnectionRepository
-  nameWithType: IDaprConnectionRepository
-  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+- uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
+  commentId: T:Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
+  href: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html
+  name: DaprCircuitBreakerHealthCheck
+  nameWithType: DaprCircuitBreakerHealthCheck
+  fullName: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
 - uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository
   commentId: T:Virtufin.WebSocketManager.Services.DaprConnectionRepository
   href: Virtufin.WebSocketManager.Services.DaprConnectionRepository.html
   name: DaprConnectionRepository
   nameWithType: DaprConnectionRepository
   fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository
-- uid: Virtufin.WebSocketManager.Services.IDaprPublisher
-  commentId: T:Virtufin.WebSocketManager.Services.IDaprPublisher
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.IDaprPublisher.html
-  name: IDaprPublisher
-  nameWithType: IDaprPublisher
-  fullName: Virtufin.WebSocketManager.Services.IDaprPublisher
 - uid: Virtufin.WebSocketManager.Services.DaprPublisher
   commentId: T:Virtufin.WebSocketManager.Services.DaprPublisher
   href: Virtufin.WebSocketManager.Services.DaprPublisher.html
@@ -84,12 +128,6 @@ references:
   name: DaprResiliencePipeline
   nameWithType: DaprResiliencePipeline
   fullName: Virtufin.WebSocketManager.Services.DaprResiliencePipeline
-- uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
-  commentId: T:Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
-  href: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html
-  name: DaprCircuitBreakerHealthCheck
-  nameWithType: DaprCircuitBreakerHealthCheck
-  fullName: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
 - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
   commentId: T:Virtufin.WebSocketManager.Services.DaprStateStoreEntry
   parent: Virtufin.WebSocketManager.Services
@@ -97,6 +135,46 @@ references:
   name: DaprStateStoreEntry
   nameWithType: DaprStateStoreEntry
   fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
+- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
+  commentId: T:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
+  href: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html
+  name: DefaultInstanceIdProvider
+  nameWithType: DefaultInstanceIdProvider
+  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
+  commentId: T:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
+  href: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html
+  name: DistributedWebSocketConnectionStore
+  nameWithType: DistributedWebSocketConnectionStore
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  commentId: T:Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html
+  name: IDaprConnectionRepository
+  nameWithType: IDaprConnectionRepository
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+- uid: Virtufin.WebSocketManager.Services.IDaprPublisher
+  commentId: T:Virtufin.WebSocketManager.Services.IDaprPublisher
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IDaprPublisher.html
+  name: IDaprPublisher
+  nameWithType: IDaprPublisher
+  fullName: Virtufin.WebSocketManager.Services.IDaprPublisher
+- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+  commentId: T:Virtufin.WebSocketManager.Services.IInstanceIdProvider
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html
+  name: IInstanceIdProvider
+  nameWithType: IInstanceIdProvider
+  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html
+  name: IWebSocketClientWrapper
+  nameWithType: IWebSocketClientWrapper
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
 - uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
   commentId: T:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
   parent: Virtufin.WebSocketManager.Services
@@ -104,30 +182,25 @@ references:
   name: IWebSocketConnectionStore
   nameWithType: IWebSocketConnectionStore
   fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
-- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
-  commentId: T:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
-  href: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html
-  name: DistributedWebSocketConnectionStore
-  nameWithType: DistributedWebSocketConnectionStore
-  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
-- uid: Virtufin.WebSocketManager.Services.ConnectionNotFoundException
-  commentId: T:Virtufin.WebSocketManager.Services.ConnectionNotFoundException
-  href: Virtufin.WebSocketManager.Services.ConnectionNotFoundException.html
-  name: ConnectionNotFoundException
-  nameWithType: ConnectionNotFoundException
-  fullName: Virtufin.WebSocketManager.Services.ConnectionNotFoundException
-- uid: Virtufin.WebSocketManager.Services.WebSocketNotConnectedException
-  commentId: T:Virtufin.WebSocketManager.Services.WebSocketNotConnectedException
-  href: Virtufin.WebSocketManager.Services.WebSocketNotConnectedException.html
-  name: WebSocketNotConnectedException
-  nameWithType: WebSocketNotConnectedException
-  fullName: Virtufin.WebSocketManager.Services.WebSocketNotConnectedException
-- uid: Virtufin.WebSocketManager.Services.ConnectionOwnershipException
-  commentId: T:Virtufin.WebSocketManager.Services.ConnectionOwnershipException
-  href: Virtufin.WebSocketManager.Services.ConnectionOwnershipException.html
-  name: ConnectionOwnershipException
-  nameWithType: ConnectionOwnershipException
-  fullName: Virtufin.WebSocketManager.Services.ConnectionOwnershipException
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService
+  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketService
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html
+  name: IWebSocketService
+  nameWithType: IWebSocketService
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat
+  commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeat
+  href: Virtufin.WebSocketManager.Services.InstanceHeartbeat.html
+  name: InstanceHeartbeat
+  nameWithType: InstanceHeartbeat
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+  commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+  href: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html
+  name: InstanceHeartbeatService
+  nameWithType: InstanceHeartbeatService
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
 - uid: Virtufin.WebSocketManager.Services.MessageSendException
   commentId: T:Virtufin.WebSocketManager.Services.MessageSendException
   href: Virtufin.WebSocketManager.Services.MessageSendException.html
@@ -140,51 +213,18 @@ references:
   name: MessageTimeoutException
   nameWithType: MessageTimeoutException
   fullName: Virtufin.WebSocketManager.Services.MessageTimeoutException
-- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
-  commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeatService
-  href: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html
-  name: InstanceHeartbeatService
-  nameWithType: InstanceHeartbeatService
-  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
-- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat
-  commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeat
-  href: Virtufin.WebSocketManager.Services.InstanceHeartbeat.html
-  name: InstanceHeartbeat
-  nameWithType: InstanceHeartbeat
-  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat
-- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  commentId: T:Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html
-  name: IInstanceIdProvider
-  nameWithType: IInstanceIdProvider
-  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider
-- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
-  commentId: T:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
-  href: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html
-  name: DefaultInstanceIdProvider
-  nameWithType: DefaultInstanceIdProvider
-  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
-- uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
-  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html
-  name: IWebSocketClientWrapper
-  nameWithType: IWebSocketClientWrapper
-  fullName: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
 - uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper
   commentId: T:Virtufin.WebSocketManager.Services.WebSocketClientWrapper
   href: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html
   name: WebSocketClientWrapper
   nameWithType: WebSocketClientWrapper
   fullName: Virtufin.WebSocketManager.Services.WebSocketClientWrapper
-- uid: Virtufin.WebSocketManager.Services.IWebSocketService
-  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketService
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.IWebSocketService.html
-  name: IWebSocketService
-  nameWithType: IWebSocketService
-  fullName: Virtufin.WebSocketManager.Services.IWebSocketService
+- uid: Virtufin.WebSocketManager.Services.WebSocketNotConnectedException
+  commentId: T:Virtufin.WebSocketManager.Services.WebSocketNotConnectedException
+  href: Virtufin.WebSocketManager.Services.WebSocketNotConnectedException.html
+  name: WebSocketNotConnectedException
+  nameWithType: WebSocketNotConnectedException
+  fullName: Virtufin.WebSocketManager.Services.WebSocketNotConnectedException
 - uid: Virtufin.WebSocketManager.Services.WebSocketService
   commentId: T:Virtufin.WebSocketManager.Services.WebSocketService
   href: Virtufin.WebSocketManager.Services.WebSocketService.html

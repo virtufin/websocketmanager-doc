@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.WebSocketManager.Models
   commentId: N:Virtufin.WebSocketManager.Models
-  id: Virtufin.WebSocketManager.Models
+  id: Models
+  parent: Virtufin.WebSocketManager
   children:
   - Virtufin.WebSocketManager.Models.ConnectionStatus
   - Virtufin.WebSocketManager.Models.WebSocketConnection

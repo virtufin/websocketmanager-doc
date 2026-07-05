@@ -1,6 +1,9 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: Virtufin.WebSocketManager
+  name: Virtufin.WebSocketManager
+  href: api/Virtufin.WebSocketManager.html
 - uid: Virtufin.WebSocketManager.Configuration
   name: Virtufin.WebSocketManager.Configuration
   href: api/Virtufin.WebSocketManager.Configuration.html

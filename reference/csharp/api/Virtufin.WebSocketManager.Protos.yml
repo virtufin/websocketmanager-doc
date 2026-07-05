@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.WebSocketManager.Protos
   commentId: N:Virtufin.WebSocketManager.Protos
-  id: Virtufin.WebSocketManager.Protos
+  id: Protos
+  parent: Virtufin.WebSocketManager
   children:
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService
   langs:

@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.WebSocketManager.Configuration
   commentId: N:Virtufin.WebSocketManager.Configuration
-  id: Virtufin.WebSocketManager.Configuration
+  id: Configuration
+  parent: Virtufin.WebSocketManager
   children:
   - Virtufin.WebSocketManager.Configuration.ConnectionEvents
   - Virtufin.WebSocketManager.Configuration.DaprConstants
@@ -21,12 +22,24 @@ items:
   assemblies:
   - Virtufin.WebSocketManager
 references:
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  commentId: T:Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  href: Virtufin.WebSocketManager.Configuration.ConnectionEvents.html
+  name: ConnectionEvents
+  nameWithType: ConnectionEvents
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents
 - uid: Virtufin.WebSocketManager.Configuration.DaprConstants
   commentId: T:Virtufin.WebSocketManager.Configuration.DaprConstants
   href: Virtufin.WebSocketManager.Configuration.DaprConstants.html
   name: DaprConstants
   nameWithType: DaprConstants
   fullName: Virtufin.WebSocketManager.Configuration.DaprConstants
+- uid: Virtufin.WebSocketManager.Configuration.InfraEvents
+  commentId: T:Virtufin.WebSocketManager.Configuration.InfraEvents
+  href: Virtufin.WebSocketManager.Configuration.InfraEvents.html
+  name: InfraEvents
+  nameWithType: InfraEvents
+  fullName: Virtufin.WebSocketManager.Configuration.InfraEvents
 - uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
   commentId: T:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
   parent: Virtufin.WebSocketManager.Configuration
@@ -40,18 +53,6 @@ references:
   name: PortConstants
   nameWithType: PortConstants
   fullName: Virtufin.WebSocketManager.Configuration.PortConstants
-- uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents
-  commentId: T:Virtufin.WebSocketManager.Configuration.ConnectionEvents
-  href: Virtufin.WebSocketManager.Configuration.ConnectionEvents.html
-  name: ConnectionEvents
-  nameWithType: ConnectionEvents
-  fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents
-- uid: Virtufin.WebSocketManager.Configuration.InfraEvents
-  commentId: T:Virtufin.WebSocketManager.Configuration.InfraEvents
-  href: Virtufin.WebSocketManager.Configuration.InfraEvents.html
-  name: InfraEvents
-  nameWithType: InfraEvents
-  fullName: Virtufin.WebSocketManager.Configuration.InfraEvents
 - uid: Virtufin.WebSocketManager.Configuration.TimeoutConstants
   commentId: T:Virtufin.WebSocketManager.Configuration.TimeoutConstants
   href: Virtufin.WebSocketManager.Configuration.TimeoutConstants.html

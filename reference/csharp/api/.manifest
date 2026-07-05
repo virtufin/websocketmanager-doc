@@ -1,4 +1,5 @@
 {
+  "Virtufin.WebSocketManager": "Virtufin.WebSocketManager.yml",
   "Virtufin.WebSocketManager.Configuration": "Virtufin.WebSocketManager.Configuration.yml",
   "Virtufin.WebSocketManager.Configuration.ConnectionEvents": "Virtufin.WebSocketManager.Configuration.ConnectionEvents.yml",
   "Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected": "Virtufin.WebSocketManager.Configuration.ConnectionEvents.yml",
