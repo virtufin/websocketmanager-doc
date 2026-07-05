@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/c3ece874092685229429ad7c1c6875fcb1217a82" target="_blank" rel="noopener" class="commit-badge" title="View commit c3ece87">
+            <a href="{git_repo_url}/commit/12d8d869f1bc4ef20c203e437d414ad50f6541c7" target="_blank" rel="noopener" class="commit-badge" title="View commit 12d8d86">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c3ece87</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">12d8d86</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -283,6 +283,80 @@ Class WebSocketService
 
 
 
+  <a id="Virtufin_WebSocketManager_Services_WebSocketService_GetTag_" data-uid="Virtufin.WebSocketManager.Services.WebSocketService.GetTag*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_WebSocketService_GetTag_System_String_System_String_" data-uid="Virtufin.WebSocketManager.Services.WebSocketService.GetTag(System.String,System.String)">
+  GetTag(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetTag(string id, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_WebSocketService_GetTags_" data-uid="Virtufin.WebSocketManager.Services.WebSocketService.GetTags*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_WebSocketService_GetTags_System_String_" data-uid="Virtufin.WebSocketManager.Services.WebSocketService.GetTags(System.String)">
+  GetTags(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, string&gt; GetTags(string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_WebSocketManager_Services_WebSocketService_ListConnectionsAsync_" data-uid="Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync*"></a>
 
   <h3 id="Virtufin_WebSocketManager_Services_WebSocketService_ListConnectionsAsync_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)">
@@ -394,6 +468,74 @@ Class WebSocketService
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_WebSocketService_SetTag_" data-uid="Virtufin.WebSocketManager.Services.WebSocketService.SetTag*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_WebSocketService_SetTag_System_String_System_String_System_String_" data-uid="Virtufin.WebSocketManager.Services.WebSocketService.SetTag(System.String,System.String,System.String)">
+  SetTag(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTag(string id, string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_WebSocketService_SetTags_" data-uid="Virtufin.WebSocketManager.Services.WebSocketService.SetTags*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_WebSocketService_SetTags_System_String_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="Virtufin.WebSocketManager.Services.WebSocketService.SetTags(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+  SetTags(string, IDictionary&lt;string, string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTags(string id, IDictionary&lt;string, string&gt; tags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
 
 
 

@@ -8,9 +8,13 @@ items:
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService})
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.StopPublish(Virtufin.WebSocketManager.Protos.StopPublishRequest,Grpc.Core.ServerCallContext)
   langs:
@@ -132,7 +136,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: List
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 40
+    startLine: 44
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -167,7 +171,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Disconnect
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 56
+    startLine: 70
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -202,7 +206,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StartPublish
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 73
+    startLine: 87
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -237,7 +241,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StopPublish
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 98
+    startLine: 112
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -272,7 +276,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Send
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 115
+    startLine: 129
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -307,7 +311,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendRaw
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 148
+    startLine: 162
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -324,6 +328,146 @@ items:
     content.vb: Public Overrides Function SendRaw(request As SendRawRequest, context As ServerCallContext) As Task(Of SendRawResponse)
   overridden: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SendRaw*
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest,Grpc.Core.ServerCallContext)
+  id: SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  langs:
+  - csharp
+  - vb
+  name: SetTag(SetTagRequest, ServerCallContext)
+  nameWithType: WebSocketManagerService.SetTag(SetTagRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: SetTag
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 187
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  example: []
+  syntax:
+    content: public override Task<SetTagResponse> SetTag(SetTagRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.WebSocketManager.Protos.SetTagRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.SetTagResponse}
+    content.vb: Public Overrides Function SetTag(request As SetTagRequest, context As ServerCallContext) As Task(Of SetTagResponse)
+  overridden: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag*
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest,Grpc.Core.ServerCallContext)
+  id: GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  langs:
+  - csharp
+  - vb
+  name: GetTag(GetTagRequest, ServerCallContext)
+  nameWithType: WebSocketManagerService.GetTag(GetTagRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: GetTag
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 200
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  example: []
+  syntax:
+    content: public override Task<GetTagResponse> GetTag(GetTagRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.WebSocketManager.Protos.GetTagRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.GetTagResponse}
+    content.vb: Public Overrides Function GetTag(request As GetTagRequest, context As ServerCallContext) As Task(Of GetTagResponse)
+  overridden: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag*
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest,Grpc.Core.ServerCallContext)
+  id: SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  langs:
+  - csharp
+  - vb
+  name: SetTags(SetTagsRequest, ServerCallContext)
+  nameWithType: WebSocketManagerService.SetTags(SetTagsRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: SetTags
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 218
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  example: []
+  syntax:
+    content: public override Task<SetTagsResponse> SetTags(SetTagsRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.WebSocketManager.Protos.SetTagsRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.SetTagsResponse}
+    content.vb: Public Overrides Function SetTags(request As SetTagsRequest, context As ServerCallContext) As Task(Of SetTagsResponse)
+  overridden: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags*
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)
+  id: GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  langs:
+  - csharp
+  - vb
+  name: GetTags(GetTagsRequest, ServerCallContext)
+  nameWithType: WebSocketManagerService.GetTags(GetTagsRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: GetTags
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 231
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  example: []
+  syntax:
+    content: public override Task<GetTagsResponse> GetTags(GetTagsRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.WebSocketManager.Protos.GetTagsRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.GetTagsResponse}
+    content.vb: Public Overrides Function GetTags(request As GetTagsRequest, context As ServerCallContext) As Task(Of GetTagsResponse)
+  overridden: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags*
 references:
 - uid: Virtufin.WebSocketManager.Protos
   commentId: N:Virtufin.WebSocketManager.Protos
@@ -1387,4 +1531,312 @@ references:
   - name: " "
   - uid: Virtufin.WebSocketManager.Protos.SendRawResponse
     name: SendRawResponse
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  name: SetTag(SetTagRequest, ServerCallContext)
+  nameWithType: WebSocketManager.WebSocketManagerBase.SetTag(SetTagRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest,Grpc.Core.ServerCallContext)
+    name: SetTag
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.SetTagRequest
+    name: SetTagRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest,Grpc.Core.ServerCallContext)
+    name: SetTag
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.SetTagRequest
+    name: SetTagRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_SetTag_Virtufin_WebSocketManager_Protos_SetTagRequest_Grpc_Core_ServerCallContext_
+  name: SetTag
+  nameWithType: WebSocketManagerService.SetTag
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag
+- uid: Virtufin.WebSocketManager.Protos.SetTagRequest
+  commentId: T:Virtufin.WebSocketManager.Protos.SetTagRequest
+  parent: Virtufin.WebSocketManager.Protos
+  name: SetTagRequest
+  nameWithType: SetTagRequest
+  fullName: Virtufin.WebSocketManager.Protos.SetTagRequest
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.SetTagResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.SetTagResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SetTagResponse>
+  nameWithType: Task<SetTagResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Protos.SetTagResponse>
+  nameWithType.vb: Task(Of SetTagResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Protos.SetTagResponse)
+  name.vb: Task(Of SetTagResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.SetTagResponse
+    name: SetTagResponse
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.SetTagResponse
+    name: SetTagResponse
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  name: GetTag(GetTagRequest, ServerCallContext)
+  nameWithType: WebSocketManager.WebSocketManagerBase.GetTag(GetTagRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest,Grpc.Core.ServerCallContext)
+    name: GetTag
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.GetTagRequest
+    name: GetTagRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest,Grpc.Core.ServerCallContext)
+    name: GetTag
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.GetTagRequest
+    name: GetTagRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_GetTag_Virtufin_WebSocketManager_Protos_GetTagRequest_Grpc_Core_ServerCallContext_
+  name: GetTag
+  nameWithType: WebSocketManagerService.GetTag
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag
+- uid: Virtufin.WebSocketManager.Protos.GetTagRequest
+  commentId: T:Virtufin.WebSocketManager.Protos.GetTagRequest
+  parent: Virtufin.WebSocketManager.Protos
+  name: GetTagRequest
+  nameWithType: GetTagRequest
+  fullName: Virtufin.WebSocketManager.Protos.GetTagRequest
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.GetTagResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.GetTagResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GetTagResponse>
+  nameWithType: Task<GetTagResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Protos.GetTagResponse>
+  nameWithType.vb: Task(Of GetTagResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Protos.GetTagResponse)
+  name.vb: Task(Of GetTagResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.GetTagResponse
+    name: GetTagResponse
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.GetTagResponse
+    name: GetTagResponse
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  name: SetTags(SetTagsRequest, ServerCallContext)
+  nameWithType: WebSocketManager.WebSocketManagerBase.SetTags(SetTagsRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest,Grpc.Core.ServerCallContext)
+    name: SetTags
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.SetTagsRequest
+    name: SetTagsRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest,Grpc.Core.ServerCallContext)
+    name: SetTags
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.SetTagsRequest
+    name: SetTagsRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_SetTags_Virtufin_WebSocketManager_Protos_SetTagsRequest_Grpc_Core_ServerCallContext_
+  name: SetTags
+  nameWithType: WebSocketManagerService.SetTags
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags
+- uid: Virtufin.WebSocketManager.Protos.SetTagsRequest
+  commentId: T:Virtufin.WebSocketManager.Protos.SetTagsRequest
+  parent: Virtufin.WebSocketManager.Protos
+  name: SetTagsRequest
+  nameWithType: SetTagsRequest
+  fullName: Virtufin.WebSocketManager.Protos.SetTagsRequest
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.SetTagsResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.SetTagsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SetTagsResponse>
+  nameWithType: Task<SetTagsResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Protos.SetTagsResponse>
+  nameWithType.vb: Task(Of SetTagsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Protos.SetTagsResponse)
+  name.vb: Task(Of SetTagsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.SetTagsResponse
+    name: SetTagsResponse
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.SetTagsResponse
+    name: SetTagsResponse
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  name: GetTags(GetTagsRequest, ServerCallContext)
+  nameWithType: WebSocketManager.WebSocketManagerBase.GetTags(GetTagsRequest, ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)
+    name: GetTags
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.GetTagsRequest
+    name: GetTagsRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)
+    name: GetTags
+  - name: (
+  - uid: Virtufin.WebSocketManager.Protos.GetTagsRequest
+    name: GetTagsRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_GetTags_Virtufin_WebSocketManager_Protos_GetTagsRequest_Grpc_Core_ServerCallContext_
+  name: GetTags
+  nameWithType: WebSocketManagerService.GetTags
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags
+- uid: Virtufin.WebSocketManager.Protos.GetTagsRequest
+  commentId: T:Virtufin.WebSocketManager.Protos.GetTagsRequest
+  parent: Virtufin.WebSocketManager.Protos
+  name: GetTagsRequest
+  nameWithType: GetTagsRequest
+  fullName: Virtufin.WebSocketManager.Protos.GetTagsRequest
+- uid: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.GetTagsResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.WebSocketManager.Protos.GetTagsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GetTagsResponse>
+  nameWithType: Task<GetTagsResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.WebSocketManager.Protos.GetTagsResponse>
+  nameWithType.vb: Task(Of GetTagsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.WebSocketManager.Protos.GetTagsResponse)
+  name.vb: Task(Of GetTagsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.GetTagsResponse
+    name: GetTagsResponse
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.GetTagsResponse
+    name: GetTagsResponse
   - name: )

@@ -525,6 +525,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource
   nameWithType: WebSocketConnection.SwapCancellationTokenSource
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Tags
+  name: Tags
+  href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_Tags
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.Tags
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.Tags
+  nameWithType: WebSocketConnection.Tags
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Tags*
+  name: Tags
+  href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_Tags_
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.Tags
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.Tags
+  nameWithType: WebSocketConnection.Tags
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Topic
   name: Topic
   href: api/Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_Topic
@@ -621,6 +634,32 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Disconnect
   nameWithType: WebSocketManagerService.Disconnect
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest,Grpc.Core.ServerCallContext)
+  name: GetTag(GetTagRequest, ServerCallContext)
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_GetTag_Virtufin_WebSocketManager_Protos_GetTagRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest, Grpc.Core.ServerCallContext)
+  nameWithType: WebSocketManagerService.GetTag(GetTagRequest, ServerCallContext)
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag*
+  name: GetTag
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_GetTag_
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag
+  nameWithType: WebSocketManagerService.GetTag
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)
+  name: GetTags(GetTagsRequest, ServerCallContext)
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_GetTags_Virtufin_WebSocketManager_Protos_GetTagsRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest, Grpc.Core.ServerCallContext)
+  nameWithType: WebSocketManagerService.GetTags(GetTagsRequest, ServerCallContext)
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags*
+  name: GetTags
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_GetTags_
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags
+  nameWithType: WebSocketManagerService.GetTags
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
   name: List(ListRequest, ServerCallContext)
   href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_List_Virtufin_WebSocketManager_Protos_ListRequest_Grpc_Core_ServerCallContext_
@@ -660,6 +699,32 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SendRaw
   nameWithType: WebSocketManagerService.SendRaw
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest,Grpc.Core.ServerCallContext)
+  name: SetTag(SetTagRequest, ServerCallContext)
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_SetTag_Virtufin_WebSocketManager_Protos_SetTagRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest, Grpc.Core.ServerCallContext)
+  nameWithType: WebSocketManagerService.SetTag(SetTagRequest, ServerCallContext)
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag*
+  name: SetTag
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_SetTag_
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag
+  nameWithType: WebSocketManagerService.SetTag
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest,Grpc.Core.ServerCallContext)
+  name: SetTags(SetTagsRequest, ServerCallContext)
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_SetTags_Virtufin_WebSocketManager_Protos_SetTagsRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags(Virtufin.WebSocketManager.Protos.SetTagsRequest, Grpc.Core.ServerCallContext)
+  nameWithType: WebSocketManagerService.SetTags(SetTagsRequest, ServerCallContext)
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags*
+  name: SetTags
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_SetTags_
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTags
+  nameWithType: WebSocketManagerService.SetTags
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.StartPublish(Virtufin.WebSocketManager.Protos.StartPublishRequest,Grpc.Core.ServerCallContext)
   name: StartPublish(StartPublishRequest, ServerCallContext)
   href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_StartPublish_Virtufin_WebSocketManager_Protos_StartPublishRequest_Grpc_Core_ServerCallContext_
@@ -1224,6 +1289,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Status
   nameWithType: DaprStateStoreEntry.Status
+- uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Tags
+  name: Tags
+  href: api/Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html#Virtufin_WebSocketManager_Services_DaprStateStoreEntry_Tags
+  commentId: P:Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Tags
+  fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Tags
+  nameWithType: DaprStateStoreEntry.Tags
+- uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Tags*
+  name: Tags
+  href: api/Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html#Virtufin_WebSocketManager_Services_DaprStateStoreEntry_Tags_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Tags
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Tags
+  nameWithType: DaprStateStoreEntry.Tags
 - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry.ToConnection
   name: ToConnection()
   href: api/Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html#Virtufin_WebSocketManager_Services_DaprStateStoreEntry_ToConnection
@@ -1448,6 +1526,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionAsync
   nameWithType: DistributedWebSocketConnectionStore.GetConnectionAsync
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionById(System.String)
+  name: GetConnectionById(string)
+  href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_GetConnectionById_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionById(System.String)
+  name.vb: GetConnectionById(String)
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionById(string)
+  fullName.vb: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionById(String)
+  nameWithType: DistributedWebSocketConnectionStore.GetConnectionById(string)
+  nameWithType.vb: DistributedWebSocketConnectionStore.GetConnectionById(String)
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionById*
+  name: GetConnectionById
+  href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_GetConnectionById_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionById
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionById
+  nameWithType: DistributedWebSocketConnectionStore.GetConnectionById
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.RemoveConnectionAsync(System.String,System.Threading.CancellationToken)
   name: RemoveConnectionAsync(string, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_RemoveConnectionAsync_System_String_System_Threading_CancellationToken_
@@ -1784,6 +1878,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetConnectionAsync
   nameWithType: IWebSocketConnectionStore.GetConnectionAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetConnectionById(System.String)
+  name: GetConnectionById(string)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_GetConnectionById_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetConnectionById(System.String)
+  name.vb: GetConnectionById(String)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetConnectionById(string)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetConnectionById(String)
+  nameWithType: IWebSocketConnectionStore.GetConnectionById(string)
+  nameWithType.vb: IWebSocketConnectionStore.GetConnectionById(String)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetConnectionById*
+  name: GetConnectionById
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_GetConnectionById_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetConnectionById
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetConnectionById
+  nameWithType: IWebSocketConnectionStore.GetConnectionById
 - uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.RemoveConnectionAsync(System.String,System.Threading.CancellationToken)
   name: RemoveConnectionAsync(string, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_RemoveConnectionAsync_System_String_System_Threading_CancellationToken_
@@ -1851,6 +1961,38 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketService.DisconnectAsync
   nameWithType: IWebSocketService.DisconnectAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.GetTag(System.String,System.String)
+  name: GetTag(string, string)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_GetTag_System_String_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.GetTag(System.String,System.String)
+  name.vb: GetTag(String, String)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.GetTag(string, string)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.GetTag(String, String)
+  nameWithType: IWebSocketService.GetTag(string, string)
+  nameWithType.vb: IWebSocketService.GetTag(String, String)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.GetTag*
+  name: GetTag
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_GetTag_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketService.GetTag
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.GetTag
+  nameWithType: IWebSocketService.GetTag
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.GetTags(System.String)
+  name: GetTags(string)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_GetTags_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.GetTags(System.String)
+  name.vb: GetTags(String)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.GetTags(string)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.GetTags(String)
+  nameWithType: IWebSocketService.GetTags(string)
+  nameWithType.vb: IWebSocketService.GetTags(String)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.GetTags*
+  name: GetTags
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_GetTags_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketService.GetTags
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.GetTags
+  nameWithType: IWebSocketService.GetTags
 - uid: Virtufin.WebSocketManager.Services.IWebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
   name: ListConnectionsAsync(CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ListConnectionsAsync_System_Threading_CancellationToken_
@@ -1896,6 +2038,38 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync
   nameWithType: IWebSocketService.SendRawAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SetTag(System.String,System.String,System.String)
+  name: SetTag(string, string, string)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SetTag_System_String_System_String_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.SetTag(System.String,System.String,System.String)
+  name.vb: SetTag(String, String, String)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SetTag(string, string, string)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.SetTag(String, String, String)
+  nameWithType: IWebSocketService.SetTag(string, string, string)
+  nameWithType.vb: IWebSocketService.SetTag(String, String, String)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SetTag*
+  name: SetTag
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SetTag_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketService.SetTag
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SetTag
+  nameWithType: IWebSocketService.SetTag
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SetTags(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  name: SetTags(string, IDictionary<string, string>)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SetTags_System_String_System_Collections_Generic_IDictionary_System_String_System_String__
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.SetTags(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  name.vb: SetTags(String, IDictionary(Of String, String))
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SetTags(string, System.Collections.Generic.IDictionary<string, string>)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.SetTags(String, System.Collections.Generic.IDictionary(Of String, String))
+  nameWithType: IWebSocketService.SetTags(string, IDictionary<string, string>)
+  nameWithType.vb: IWebSocketService.SetTags(String, IDictionary(Of String, String))
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SetTags*
+  name: SetTags
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SetTags_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketService.SetTags
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SetTags
+  nameWithType: IWebSocketService.SetTags
 - uid: Virtufin.WebSocketManager.Services.IWebSocketService.StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
   name: StartPublishAsync(string, string, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_StartPublishAsync_System_String_System_String_System_Threading_CancellationToken_
@@ -2387,6 +2561,38 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.WebSocketService.DisconnectAsync
   nameWithType: WebSocketService.DisconnectAsync
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.GetTag(System.String,System.String)
+  name: GetTag(string, string)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_GetTag_System_String_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.GetTag(System.String,System.String)
+  name.vb: GetTag(String, String)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.GetTag(string, string)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.GetTag(String, String)
+  nameWithType: WebSocketService.GetTag(string, string)
+  nameWithType.vb: WebSocketService.GetTag(String, String)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.GetTag*
+  name: GetTag
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_GetTag_
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.GetTag
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.GetTag
+  nameWithType: WebSocketService.GetTag
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.GetTags(System.String)
+  name: GetTags(string)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_GetTags_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.GetTags(System.String)
+  name.vb: GetTags(String)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.GetTags(string)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.GetTags(String)
+  nameWithType: WebSocketService.GetTags(string)
+  nameWithType.vb: WebSocketService.GetTags(String)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.GetTags*
+  name: GetTags
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_GetTags_
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.GetTags
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.GetTags
+  nameWithType: WebSocketService.GetTags
 - uid: Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
   name: ListConnectionsAsync(CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_ListConnectionsAsync_System_Threading_CancellationToken_
@@ -2432,6 +2638,38 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.WebSocketService.SendRawAsync
   nameWithType: WebSocketService.SendRawAsync
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.SetTag(System.String,System.String,System.String)
+  name: SetTag(string, string, string)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_SetTag_System_String_System_String_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.SetTag(System.String,System.String,System.String)
+  name.vb: SetTag(String, String, String)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.SetTag(string, string, string)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.SetTag(String, String, String)
+  nameWithType: WebSocketService.SetTag(string, string, string)
+  nameWithType.vb: WebSocketService.SetTag(String, String, String)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.SetTag*
+  name: SetTag
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_SetTag_
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.SetTag
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.SetTag
+  nameWithType: WebSocketService.SetTag
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.SetTags(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  name: SetTags(string, IDictionary<string, string>)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_SetTags_System_String_System_Collections_Generic_IDictionary_System_String_System_String__
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.SetTags(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  name.vb: SetTags(String, IDictionary(Of String, String))
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.SetTags(string, System.Collections.Generic.IDictionary<string, string>)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.SetTags(String, System.Collections.Generic.IDictionary(Of String, String))
+  nameWithType: WebSocketService.SetTags(string, IDictionary<string, string>)
+  nameWithType.vb: WebSocketService.SetTags(String, IDictionary(Of String, String))
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.SetTags*
+  name: SetTags
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_SetTags_
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.SetTags
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.SetTags
+  nameWithType: WebSocketService.SetTags
 - uid: Virtufin.WebSocketManager.Services.WebSocketService.StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
   name: StartPublishAsync(string, string, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_StartPublishAsync_System_String_System_String_System_Threading_CancellationToken_

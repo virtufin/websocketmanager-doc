@@ -14,6 +14,7 @@ items:
   - Virtufin.WebSocketManager.Models.WebSocketConnection.ReceiveTask
   - Virtufin.WebSocketManager.Models.WebSocketConnection.Status
   - Virtufin.WebSocketManager.Models.WebSocketConnection.SwapCancellationTokenSource(System.Threading.CancellationTokenSource)
+  - Virtufin.WebSocketManager.Models.WebSocketConnection.Tags
   - Virtufin.WebSocketManager.Models.WebSocketConnection.Topic
   - Virtufin.WebSocketManager.Models.WebSocketConnection.Url
   - Virtufin.WebSocketManager.Models.WebSocketConnection.WebSocket
@@ -251,6 +252,35 @@ items:
       type: System.String
     content.vb: Public Property InstanceId As String
   overload: Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId*
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Tags
+  commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.Tags
+  id: Tags
+  parent: Virtufin.WebSocketManager.Models.WebSocketConnection
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: WebSocketConnection.Tags
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.Tags
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Tags
+    path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Models
+  syntax:
+    content: public Dictionary<string, string> Tags { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Property Tags As Dictionary(Of String, String)
+  overload: Virtufin.WebSocketManager.Models.WebSocketConnection.Tags*
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
   commentId: P:Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
   id: ContentType
@@ -269,7 +299,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ContentType
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -298,7 +328,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: WebSocket
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -327,7 +357,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SwapCancellationTokenSource
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -368,7 +398,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CancellationTokenSource
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 38
+    startLine: 39
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -399,7 +429,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ReceiveTask
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Models
@@ -760,6 +790,130 @@ references:
   name: InstanceId
   nameWithType: WebSocketConnection.InstanceId
   fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.InstanceId
+- uid: Virtufin.WebSocketManager.Models.WebSocketConnection.Tags*
+  commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.Tags
+  href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_Tags
+  name: Tags
+  nameWithType: WebSocketConnection.Tags
+  fullName: Virtufin.WebSocketManager.Models.WebSocketConnection.Tags
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, string>
+  nameWithType: Dictionary<string, string>
+  fullName: System.Collections.Generic.Dictionary<string, string>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType*
   commentId: Overload:Virtufin.WebSocketManager.Models.WebSocketConnection.ContentType
   href: Virtufin.WebSocketManager.Models.WebSocketConnection.html#Virtufin_WebSocketManager_Models_WebSocketConnection_ContentType

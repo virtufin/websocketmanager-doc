@@ -7,9 +7,13 @@ items:
   children:
   - Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IWebSocketService.DisconnectAsync(System.String,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.IWebSocketService.GetTag(System.String,System.String)
+  - Virtufin.WebSocketManager.Services.IWebSocketService.GetTags(System.String)
   - Virtufin.WebSocketManager.Services.IWebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(System.String,System.Byte[],System.Int32,System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(System.String,System.Byte[],System.String,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.IWebSocketService.SetTag(System.String,System.String,System.String)
+  - Virtufin.WebSocketManager.Services.IWebSocketService.SetTags(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
   - Virtufin.WebSocketManager.Services.IWebSocketService.StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IWebSocketService.StopPublishAsync(System.String,System.Threading.CancellationToken)
   langs:
@@ -296,6 +300,146 @@ items:
   nameWithType.vb: IWebSocketService.SendRawAsync(String, Byte(), String, CancellationToken)
   fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(String, Byte(), String, System.Threading.CancellationToken)
   name.vb: SendRawAsync(String, Byte(), String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.GetTag(System.String,System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.GetTag(System.String,System.String)
+  id: GetTag(System.String,System.String)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketService
+  langs:
+  - csharp
+  - vb
+  name: GetTag(string, string)
+  nameWithType: IWebSocketService.GetTag(string, string)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.GetTag(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: GetTag
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 13
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  syntax:
+    content: string? GetTag(string id, string key)
+    parameters:
+    - id: id
+      type: System.String
+    - id: key
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Function GetTag(id As String, key As String) As String
+  overload: Virtufin.WebSocketManager.Services.IWebSocketService.GetTag*
+  nameWithType.vb: IWebSocketService.GetTag(String, String)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.GetTag(String, String)
+  name.vb: GetTag(String, String)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SetTag(System.String,System.String,System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.SetTag(System.String,System.String,System.String)
+  id: SetTag(System.String,System.String,System.String)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketService
+  langs:
+  - csharp
+  - vb
+  name: SetTag(string, string, string)
+  nameWithType: IWebSocketService.SetTag(string, string, string)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SetTag(string, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: SetTag
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  syntax:
+    content: void SetTag(string id, string key, string value)
+    parameters:
+    - id: id
+      type: System.String
+    - id: key
+      type: System.String
+    - id: value
+      type: System.String
+    content.vb: Sub SetTag(id As String, key As String, value As String)
+  overload: Virtufin.WebSocketManager.Services.IWebSocketService.SetTag*
+  nameWithType.vb: IWebSocketService.SetTag(String, String, String)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.SetTag(String, String, String)
+  name.vb: SetTag(String, String, String)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SetTags(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.SetTags(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  id: SetTags(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Virtufin.WebSocketManager.Services.IWebSocketService
+  langs:
+  - csharp
+  - vb
+  name: SetTags(string, IDictionary<string, string>)
+  nameWithType: IWebSocketService.SetTags(string, IDictionary<string, string>)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SetTags(string, System.Collections.Generic.IDictionary<string, string>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: SetTags
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  syntax:
+    content: void SetTags(string id, IDictionary<string, string> tags)
+    parameters:
+    - id: id
+      type: System.String
+    - id: tags
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    content.vb: Sub SetTags(id As String, tags As IDictionary(Of String, String))
+  overload: Virtufin.WebSocketManager.Services.IWebSocketService.SetTags*
+  nameWithType.vb: IWebSocketService.SetTags(String, IDictionary(Of String, String))
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.SetTags(String, System.Collections.Generic.IDictionary(Of String, String))
+  name.vb: SetTags(String, IDictionary(Of String, String))
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.GetTags(System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.GetTags(System.String)
+  id: GetTags(System.String)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketService
+  langs:
+  - csharp
+  - vb
+  name: GetTags(string)
+  nameWithType: IWebSocketService.GetTags(string)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.GetTags(string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: GetTags
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  syntax:
+    content: IReadOnlyDictionary<string, string> GetTags(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+    content.vb: Function GetTags(id As String) As IReadOnlyDictionary(Of String, String)
+  overload: Virtufin.WebSocketManager.Services.IWebSocketService.GetTags*
+  nameWithType.vb: IWebSocketService.GetTags(String)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.GetTags(String)
+  name.vb: GetTags(String)
 references:
 - uid: Virtufin.WebSocketManager.Services
   commentId: N:Virtufin.WebSocketManager.Services
@@ -659,3 +803,226 @@ references:
   name: SendRawAsync
   nameWithType: IWebSocketService.SendRawAsync
   fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.GetTag*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketService.GetTag
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_GetTag_System_String_System_String_
+  name: GetTag
+  nameWithType: IWebSocketService.GetTag
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.GetTag
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SetTag*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketService.SetTag
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SetTag_System_String_System_String_System_String_
+  name: SetTag
+  nameWithType: IWebSocketService.SetTag
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SetTag
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.SetTags*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketService.SetTags
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SetTags_System_String_System_Collections_Generic_IDictionary_System_String_System_String__
+  name: SetTags
+  nameWithType: IWebSocketService.SetTags
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.SetTags
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, string>
+  nameWithType: IDictionary<string, string>
+  fullName: System.Collections.Generic.IDictionary<string, string>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.GetTags*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketService.GetTags
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_GetTags_System_String_
+  name: GetTags
+  nameWithType: IWebSocketService.GetTags
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.GetTags
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, string>
+  nameWithType: IReadOnlyDictionary<string, string>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, string>
+  nameWithType.vb: IReadOnlyDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, String)
+  name.vb: IReadOnlyDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
