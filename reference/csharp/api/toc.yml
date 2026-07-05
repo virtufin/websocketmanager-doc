@@ -84,6 +84,9 @@ items:
     - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
       name: DaprStateStoreEntry
       type: Class
+    - uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntryJsonConverter
+      name: DaprStateStoreEntryJsonConverter
+      type: Class
     - uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
       name: DefaultInstanceIdProvider
       type: Class

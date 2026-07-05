@@ -312,6 +312,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.DaprStateStoreEntryJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.DaprStateStoreEntryJsonConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.DaprStateStoreEntryJsonConverter",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.DaprStateStoreEntryJsonConverter.yml\" sourcestartlinenumber=\"1\">Validates a deserialized <xref href=\"Virtufin.WebSocketManager.Services.DaprStateStoreEntry\" data-throw-if-not-resolved=\"false\"></xref>: throws\n<xref href=\"System.InvalidOperationException\" data-throw-if-not-resolved=\"false\"></xref> if the persisted JSON is missing\nthe required <code>InstanceId</code> field. This funnels data-integrity errors\nto the deserialization boundary, where the connection ID is still\nidentifiable, instead of letting null-carrying entries reach business\nlogic that wraps every usage with a guard.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.yml",
       "output": {
         ".html": {

@@ -14,6 +14,7 @@ items:
   - Virtufin.WebSocketManager.Services.DaprPublisher
   - Virtufin.WebSocketManager.Services.DaprResiliencePipeline
   - Virtufin.WebSocketManager.Services.DaprStateStoreEntry
+  - Virtufin.WebSocketManager.Services.DaprStateStoreEntryJsonConverter
   - Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
   - Virtufin.WebSocketManager.Services.IDaprConnectionRepository
@@ -135,6 +136,12 @@ references:
   name: DaprStateStoreEntry
   nameWithType: DaprStateStoreEntry
   fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
+- uid: Virtufin.WebSocketManager.Services.DaprStateStoreEntryJsonConverter
+  commentId: T:Virtufin.WebSocketManager.Services.DaprStateStoreEntryJsonConverter
+  href: Virtufin.WebSocketManager.Services.DaprStateStoreEntryJsonConverter.html
+  name: DaprStateStoreEntryJsonConverter
+  nameWithType: DaprStateStoreEntryJsonConverter
+  fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntryJsonConverter
 - uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
   commentId: T:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
   href: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html
