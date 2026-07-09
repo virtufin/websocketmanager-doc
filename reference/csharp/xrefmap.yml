@@ -2367,6 +2367,28 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectMaxAttempts
   nameWithType: WebSocketOptions.ReconnectMaxAttempts
+- uid: Virtufin.WebSocketManager.Services.TopicValidator
+  name: TopicValidator
+  href: api/Virtufin.WebSocketManager.Services.TopicValidator.html
+  commentId: T:Virtufin.WebSocketManager.Services.TopicValidator
+  fullName: Virtufin.WebSocketManager.Services.TopicValidator
+  nameWithType: TopicValidator
+- uid: Virtufin.WebSocketManager.Services.TopicValidator.Validate(System.String)
+  name: Validate(string?)
+  href: api/Virtufin.WebSocketManager.Services.TopicValidator.html#Virtufin_WebSocketManager_Services_TopicValidator_Validate_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.TopicValidator.Validate(System.String)
+  name.vb: Validate(String)
+  fullName: Virtufin.WebSocketManager.Services.TopicValidator.Validate(string?)
+  fullName.vb: Virtufin.WebSocketManager.Services.TopicValidator.Validate(String)
+  nameWithType: TopicValidator.Validate(string?)
+  nameWithType.vb: TopicValidator.Validate(String)
+- uid: Virtufin.WebSocketManager.Services.TopicValidator.Validate*
+  name: Validate
+  href: api/Virtufin.WebSocketManager.Services.TopicValidator.html#Virtufin_WebSocketManager_Services_TopicValidator_Validate_
+  commentId: Overload:Virtufin.WebSocketManager.Services.TopicValidator.Validate
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.TopicValidator.Validate
+  nameWithType: TopicValidator.Validate
 - uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper
   name: WebSocketClientWrapper
   href: api/Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html

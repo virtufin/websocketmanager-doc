@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class DaprPublisher | Virtufin WebSocketManager - C# Reference </title>
+      <title>Class TopicValidator | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DaprPublisher | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Class TopicValidator | Virtufin WebSocketManager - C# Reference ">
       
-      
+      <meta name="description" content="Validates Dapr pubsub topic names against the patterns in the Pub/Sub Topics spec &#167;Topic Patterns. The WebSocketManager publishes per-frame user data to caller-supplied topics (the topic passed to StartPublishRequest.topic). Per Cross-cutting spec, services that publish directly to Dapr MUST validate the topic name inline against these patterns. This class is the chokepoint that enforces the rule. Accepted patterns:  &amp;lt;service&amp;gt;.&amp;lt;category&amp;gt;            — Tier 0 / infrastructure e.g. websocketmanager.lifecycle, workmanager.infra.worker act.exchange.&amp;lt;venue&amp;gt;.&amp;lt;entity&amp;gt;.&amp;lt;event&amp;gt;[.&amp;lt;id&amp;gt;] — market data (real, no selector segment) hyp.&amp;lt;selector&amp;gt;.exchange.&amp;lt;venue&amp;gt;.&amp;lt;entity&amp;gt;.&amp;lt;event&amp;gt;[.&amp;lt;id&amp;gt;] — market data (hypothetical, with selector) sc.&amp;lt;scenarioId&amp;gt;.&amp;lt;domain&amp;gt;.&amp;lt;entity&amp;gt;.&amp;lt;event&amp;gt;[.&amp;lt;id&amp;gt;] — scenario-scoped events command.&amp;lt;service&amp;gt;            — command topics (worker input) response.&amp;lt;service&amp;gt;            — response topics (worker output)  Rejected (intentionally):  act.&amp;lt;selector&amp;gt;.exchange.*     — act topics MUST NOT carry a selector hyp.exchange.*                  — hyp topics MUST carry a selector">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Services.DaprPublisher">
+        <article data-uid="Virtufin.WebSocketManager.Services.TopicValidator">
 
 
 
-  <h1 id="Virtufin_WebSocketManager_Services_DaprPublisher" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher" class="text-break">
-Class DaprPublisher  
+  <h1 id="Virtufin_WebSocketManager_Services_TopicValidator" data-uid="Virtufin.WebSocketManager.Services.TopicValidator" class="text-break">
+Class TopicValidator  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,11 +101,37 @@ Class DaprPublisher
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Validates Dapr pubsub topic names against the patterns in the
+<a href="https://git.haenerconsulting.com/virtufin/virtufin-openspec/src/branch/master/openspec/specs/pubsub-topics/spec.md#requirement-topic-patterns">Pub/Sub Topics spec §Topic Patterns</a>.</p>
+<p>The WebSocketManager publishes per-frame user data to caller-supplied
+topics (the topic passed to <code>StartPublishRequest.topic</code>). Per
+<a href="https://git.haenerconsulting.com/virtufin/virtufin-openspec/src/branch/master/openspec/specs/cross-cutting/spec.md">Cross-cutting spec</a>,
+services that publish directly to Dapr MUST validate the topic
+name inline against these patterns. This class is the chokepoint
+that enforces the rule.</p>
+<p>Accepted patterns:</p>
+<ol>
+<li><code>&lt;service&gt;.&lt;category&gt;</code>            — Tier 0 / infrastructure
+e.g. <code>websocketmanager.lifecycle</code>, <code>workmanager.infra.worker</code></li>
+<li><code>act.exchange.&lt;venue&gt;.&lt;entity&gt;.&lt;event&gt;[.&lt;id&gt;]</code>
+— market data (real, no selector segment)</li>
+<li><code>hyp.&lt;selector&gt;.exchange.&lt;venue&gt;.&lt;entity&gt;.&lt;event&gt;[.&lt;id&gt;]</code>
+— market data (hypothetical, with selector)</li>
+<li><code>sc.&lt;scenarioId&gt;.&lt;domain&gt;.&lt;entity&gt;.&lt;event&gt;[.&lt;id&gt;]</code>
+— scenario-scoped events</li>
+<li><code>command.&lt;service&gt;</code>            — command topics (worker input)</li>
+<li><code>response.&lt;service&gt;</code>            — response topics (worker output)</li>
+</ol>
+<p>Rejected (intentionally):</p>
+<ul>
+<li><code>act.&lt;selector&gt;.exchange.*</code>     — act topics MUST NOT carry a selector</li>
+<li><code>hyp.exchange.*</code>                  — hyp topics MUST carry a selector</li>
+</ul>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DaprPublisher : IDaprPublisher</code></pre>
+    <pre><code class="lang-csharp hljs">public static class TopicValidator</code></pre>
   </div>
 
 
@@ -115,16 +141,10 @@ Class DaprPublisher
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DaprPublisher</span></div>
+      <div><span class="xref">TopicValidator</span></div>
     </dd>
   </dl>
 
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="Virtufin.WebSocketManager.Services.IDaprPublisher.html">IDaprPublisher</a></div>
-    </dd>
-  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -158,82 +178,32 @@ Class DaprPublisher
 
 
 
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
-  <a id="Virtufin_WebSocketManager_Services_DaprPublisher__ctor_" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher.#ctor*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_DaprPublisher__ctor_Dapr_Client_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprPublisher__System_String_" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher},System.String)">
-  DaprPublisher(DaprClient, ILogger&lt;DaprPublisher&gt;, string)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DaprPublisher(DaprClient daprClient, ILogger&lt;DaprPublisher&gt; logger, string pubsubComponent = &quot;pubsub&quot;)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>daprClient</code> <span class="xref">DaprClient</span></dt>
-    <dd></dd>
-    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.DaprPublisher.html">DaprPublisher</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>pubsubComponent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprPublisher_PublishAsync_" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync*"></a>
+  <a id="Virtufin_WebSocketManager_Services_TopicValidator_Validate_" data-uid="Virtufin.WebSocketManager.Services.TopicValidator.Validate*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprPublisher_PublishAsync_System_String_System_String_System_String_System_Byte___System_String_" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)">
-  PublishAsync(string, string, string, byte[], string?)
+  <h3 id="Virtufin_WebSocketManager_Services_TopicValidator_Validate_System_String_" data-uid="Virtufin.WebSocketManager.Services.TopicValidator.Validate(System.String)">
+  Validate(string?)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Throws <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a> if <code class="paramref">topic</code> is null,
+empty, or does not match any of the accepted topic patterns.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task PublishAsync(string topic, string websocketId, string websocketUrl, byte[] payload, string? contentType = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Validate(string? topic)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>websocketId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>websocketUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>payload</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd></dd>
-    <dt><code>contentType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
   </dl>
 
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
