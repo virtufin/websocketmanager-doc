@@ -56,6 +56,19 @@ items:
     name: Services
     type: Namespace
     items:
+    - uid: Virtufin.WebSocketManager.Services.Actors
+      name: Actors
+      type: Namespace
+      items:
+      - uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+        name: ConnectionState
+        type: Class
+      - uid: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor
+        name: IWebSocketConnectionActor
+        type: Interface
+      - uid: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor
+        name: WebSocketConnectionActor
+        type: Class
     - uid: Virtufin.WebSocketManager.Services.Options
       name: Options
       type: Namespace

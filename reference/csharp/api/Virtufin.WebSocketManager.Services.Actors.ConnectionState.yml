@@ -1,0 +1,733 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+  commentId: T:Virtufin.WebSocketManager.Services.Actors.ConnectionState
+  id: ConnectionState
+  parent: Virtufin.WebSocketManager.Services.Actors
+  children:
+  - Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType
+  - Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id
+  - Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId
+  - Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status
+  - Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags
+  - Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic
+  - Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url
+  langs:
+  - csharp
+  - vb
+  name: ConnectionState
+  nameWithType: ConnectionState
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ConnectionState
+    path: ../../../src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services.Actors
+  syntax:
+    content: 'public sealed record ConnectionState : IEquatable<ConnectionState>'
+    content.vb: Public NotInheritable Class ConnectionState Implements IEquatable(Of ConnectionState)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Virtufin.WebSocketManager.Services.Actors.ConnectionState}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id
+  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id
+  id: Id
+  parent: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ConnectionState.Id
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Id
+    path: ../../../src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services.Actors
+  syntax:
+    content: public string Id { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id*
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url
+  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url
+  id: Url
+  parent: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: ConnectionState.Url
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Url
+    path: ../../../src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services.Actors
+  syntax:
+    content: public string Url { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Url As String
+  overload: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url*
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status
+  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status
+  id: Status
+  parent: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: ConnectionState.Status
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Status
+    path: ../../../src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services.Actors
+  syntax:
+    content: public string Status { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Status As String
+  overload: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status*
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic
+  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic
+  id: Topic
+  parent: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+  langs:
+  - csharp
+  - vb
+  name: Topic
+  nameWithType: ConnectionState.Topic
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Topic
+    path: ../../../src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services.Actors
+  syntax:
+    content: public string Topic { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Topic As String
+  overload: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic*
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId
+  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId
+  id: InstanceId
+  parent: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+  langs:
+  - csharp
+  - vb
+  name: InstanceId
+  nameWithType: ConnectionState.InstanceId
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: InstanceId
+    path: ../../../src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services.Actors
+  syntax:
+    content: public string InstanceId { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property InstanceId As String
+  overload: Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId*
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType
+  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType
+  id: ContentType
+  parent: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+  langs:
+  - csharp
+  - vb
+  name: ContentType
+  nameWithType: ConnectionState.ContentType
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ContentType
+    path: ../../../src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services.Actors
+  syntax:
+    content: public string ContentType { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ContentType As String
+  overload: Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType*
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags
+  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags
+  id: Tags
+  parent: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: ConnectionState.Tags
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Tags
+    path: ../../../src/Virtufin.WebSocketManager/Services/Actors/IWebSocketConnectionActor.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services.Actors
+  syntax:
+    content: public Dictionary<string, string> Tags { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Property Tags As Dictionary(Of String, String)
+  overload: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags*
+references:
+- uid: Virtufin.WebSocketManager.Services.Actors
+  commentId: N:Virtufin.WebSocketManager.Services.Actors
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services.Actors
+  nameWithType: Virtufin.WebSocketManager.Services.Actors
+  fullName: Virtufin.WebSocketManager.Services.Actors
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services.Actors
+    name: Actors
+    href: Virtufin.WebSocketManager.Services.Actors.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services.Actors
+    name: Actors
+    href: Virtufin.WebSocketManager.Services.Actors.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{Virtufin.WebSocketManager.Services.Actors.ConnectionState}
+  commentId: T:System.IEquatable{Virtufin.WebSocketManager.Services.Actors.ConnectionState}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ConnectionState>
+  nameWithType: IEquatable<ConnectionState>
+  fullName: System.IEquatable<Virtufin.WebSocketManager.Services.Actors.ConnectionState>
+  nameWithType.vb: IEquatable(Of ConnectionState)
+  fullName.vb: System.IEquatable(Of Virtufin.WebSocketManager.Services.Actors.ConnectionState)
+  name.vb: IEquatable(Of ConnectionState)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+    name: ConnectionState
+    href: Virtufin.WebSocketManager.Services.Actors.ConnectionState.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+    name: ConnectionState
+    href: Virtufin.WebSocketManager.Services.Actors.ConnectionState.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id*
+  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id
+  href: Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Id
+  name: Id
+  nameWithType: ConnectionState.Id
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url*
+  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url
+  href: Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Url
+  name: Url
+  nameWithType: ConnectionState.Url
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status*
+  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status
+  href: Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Status
+  name: Status
+  nameWithType: ConnectionState.Status
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic*
+  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic
+  href: Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Topic
+  name: Topic
+  nameWithType: ConnectionState.Topic
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId*
+  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId
+  href: Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_InstanceId
+  name: InstanceId
+  nameWithType: ConnectionState.InstanceId
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType*
+  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType
+  href: Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_ContentType
+  name: ContentType
+  nameWithType: ConnectionState.ContentType
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags*
+  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags
+  href: Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Tags
+  name: Tags
+  nameWithType: ConnectionState.Tags
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, string>
+  nameWithType: Dictionary<string, string>
+  fullName: System.Collections.Generic.Dictionary<string, string>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

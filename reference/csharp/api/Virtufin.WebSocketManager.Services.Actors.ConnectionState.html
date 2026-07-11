@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class DaprStateStoreEntry | Virtufin WebSocketManager - C# Reference </title>
+      <title>Class ConnectionState | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DaprStateStoreEntry | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Class ConnectionState | Virtufin WebSocketManager - C# Reference ">
       
-      <meta name="description" content="Represents a WebSocket connection entry stored in Dapr state store.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,25 +88,24 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry">
+        <article data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState">
 
 
 
-  <h1 id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry" class="text-break">
-Class DaprStateStoreEntry  
+  <h1 id="Virtufin_WebSocketManager_Services_Actors_ConnectionState" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState" class="text-break">
+Class ConnectionState  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.WebSocketManager.html">WebSocketManager</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.html">Services</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.WebSocketManager.html">WebSocketManager</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.html">Services</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.Actors.html">Actors</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents a WebSocket connection entry stored in Dapr state store.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DaprStateStoreEntry</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record ConnectionState : IEquatable&lt;ConnectionState&gt;</code></pre>
   </div>
 
 
@@ -116,10 +115,16 @@ Class DaprStateStoreEntry
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DaprStateStoreEntry</span></div>
+      <div><span class="xref">ConnectionState</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.Actors.ConnectionState.html">ConnectionState</a>&gt;</div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -138,9 +143,6 @@ Class DaprStateStoreEntry
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
@@ -157,19 +159,18 @@ Class DaprStateStoreEntry
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_AutoReconnect_" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.AutoReconnect*"></a>
+  <a id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_ContentType_" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_AutoReconnect" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.AutoReconnect">
-  AutoReconnect
+  <h3 id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_ContentType" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType">
+  ContentType
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets whether the connection should automatically reconnect on failure.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AutoReconnect { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string ContentType { get; init; }</code></pre>
   </div>
 
 
@@ -178,7 +179,7 @@ Class DaprStateStoreEntry
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -189,51 +190,18 @@ Class DaprStateStoreEntry
 
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_CreatedAt_" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CreatedAt*"></a>
+  <a id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_Id_" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_CreatedAt" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.CreatedAt">
-  CreatedAt
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets when this connection was created.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime CreatedAt { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_Id_" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Id*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_Id" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Id">
+  <h3 id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_Id" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id">
   Id
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the unique identifier for this connection.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Id { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Id { get; init; }</code></pre>
   </div>
 
 
@@ -253,19 +221,18 @@ Class DaprStateStoreEntry
 
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_InstanceId_" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.InstanceId*"></a>
+  <a id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_InstanceId_" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_InstanceId" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.InstanceId">
+  <h3 id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_InstanceId" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId">
   InstanceId
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the instance ID that owns this connection.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? InstanceId { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string InstanceId { get; init; }</code></pre>
   </div>
 
 
@@ -285,19 +252,18 @@ Class DaprStateStoreEntry
 
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_Status_" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Status*"></a>
+  <a id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_Status_" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_Status" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Status">
+  <h3 id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_Status" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status">
   Status
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the current connection status.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConnectionStatus Status { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Status { get; init; }</code></pre>
   </div>
 
 
@@ -306,7 +272,7 @@ Class DaprStateStoreEntry
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Virtufin.WebSocketManager.Models.ConnectionStatus.html">ConnectionStatus</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -317,19 +283,18 @@ Class DaprStateStoreEntry
 
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_Tags_" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Tags*"></a>
+  <a id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_Tags_" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_Tags" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Tags">
+  <h3 id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_Tags" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags">
   Tags
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the key-value tags attached to this connection.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; Tags { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; Tags { get; init; }</code></pre>
   </div>
 
 
@@ -349,19 +314,18 @@ Class DaprStateStoreEntry
 
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_Topic_" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Topic*"></a>
+  <a id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_Topic_" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_Topic" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Topic">
+  <h3 id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_Topic" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic">
   Topic
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the Dapr pub/sub topic for publishing messages.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Topic { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Topic { get; init; }</code></pre>
   </div>
 
 
@@ -381,19 +345,18 @@ Class DaprStateStoreEntry
 
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_Url_" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Url*"></a>
+  <a id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_Url_" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_Url" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.Url">
+  <h3 id="Virtufin_WebSocketManager_Services_Actors_ConnectionState_Url" data-uid="Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url">
   Url
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the WebSocket server URL.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Url { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Url { get; init; }</code></pre>
   </div>
 
 
@@ -405,82 +368,6 @@ Class DaprStateStoreEntry
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_FromConnection_" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.FromConnection*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_FromConnection_Virtufin_WebSocketManager_Models_WebSocketConnection_" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.FromConnection(Virtufin.WebSocketManager.Models.WebSocketConnection)">
-  FromConnection(WebSocketConnection)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Creates a DaprStateStoreEntry from a WebSocketConnection.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DaprStateStoreEntry FromConnection(WebSocketConnection connection)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>connection</code> <a class="xref" href="Virtufin.WebSocketManager.Models.WebSocketConnection.html">WebSocketConnection</a></dt>
-    <dd><p>The WebSocket connection to convert.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.html">DaprStateStoreEntry</a></dt>
-    <dd><p>A new DaprStateStoreEntry instance.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_ToConnection_" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.ToConnection*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_DaprStateStoreEntry_ToConnection" data-uid="Virtufin.WebSocketManager.Services.DaprStateStoreEntry.ToConnection">
-  ToConnection()
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Converts this entry to a WebSocketConnection.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WebSocketConnection ToConnection()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Virtufin.WebSocketManager.Models.WebSocketConnection.html">WebSocketConnection</a></dt>
-    <dd><p>A new WebSocketConnection instance.</p>
-</dd>
-  </dl>
-
-
-
 
 
 

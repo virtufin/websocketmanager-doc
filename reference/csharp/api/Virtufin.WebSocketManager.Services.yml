@@ -5,6 +5,7 @@ items:
   id: Services
   parent: Virtufin.WebSocketManager
   children:
+  - Virtufin.WebSocketManager.Services.Actors
   - Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
   - Virtufin.WebSocketManager.Services.AppMetrics
   - Virtufin.WebSocketManager.Services.ConnectionNotFoundException
@@ -46,6 +47,44 @@ items:
   assemblies:
   - Virtufin.WebSocketManager
 references:
+- uid: Virtufin.WebSocketManager.Services.Actors
+  commentId: N:Virtufin.WebSocketManager.Services.Actors
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services.Actors
+  nameWithType: Virtufin.WebSocketManager.Services.Actors
+  fullName: Virtufin.WebSocketManager.Services.Actors
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services.Actors
+    name: Actors
+    href: Virtufin.WebSocketManager.Services.Actors.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services.Actors
+    name: Actors
+    href: Virtufin.WebSocketManager.Services.Actors.html
 - uid: Virtufin.WebSocketManager.Services.Options
   commentId: N:Virtufin.WebSocketManager.Services.Options
   href: Virtufin.html
@@ -233,7 +272,6 @@ references:
   fullName: Virtufin.WebSocketManager.Services.MessageTimeoutException
 - uid: Virtufin.WebSocketManager.Services.PeerChannelCache
   commentId: T:Virtufin.WebSocketManager.Services.PeerChannelCache
-  parent: Virtufin.WebSocketManager.Services
   href: Virtufin.WebSocketManager.Services.PeerChannelCache.html
   name: PeerChannelCache
   nameWithType: PeerChannelCache

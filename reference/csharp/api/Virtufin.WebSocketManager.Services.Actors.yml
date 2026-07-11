@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Services.Actors
+  commentId: N:Virtufin.WebSocketManager.Services.Actors
+  id: Actors
+  parent: Virtufin.WebSocketManager.Services
+  children:
+  - Virtufin.WebSocketManager.Services.Actors.ConnectionState
+  - Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor
+  - Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.WebSocketManager.Services.Actors
+  nameWithType: Virtufin.WebSocketManager.Services.Actors
+  fullName: Virtufin.WebSocketManager.Services.Actors
+  type: Namespace
+  assemblies:
+  - Virtufin.WebSocketManager
+references:
+- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+  commentId: T:Virtufin.WebSocketManager.Services.Actors.ConnectionState
+  href: Virtufin.WebSocketManager.Services.Actors.ConnectionState.html
+  name: ConnectionState
+  nameWithType: ConnectionState
+  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState
+- uid: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor
+  commentId: T:Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor
+  parent: Virtufin.WebSocketManager.Services.Actors
+  href: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.html
+  name: IWebSocketConnectionActor
+  nameWithType: IWebSocketConnectionActor
+  fullName: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor
+- uid: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor
+  commentId: T:Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor
+  href: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.html
+  name: WebSocketConnectionActor
+  nameWithType: WebSocketConnectionActor
+  fullName: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor
+- uid: Virtufin.WebSocketManager.Services.Actors
+  commentId: N:Virtufin.WebSocketManager.Services.Actors
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services.Actors
+  nameWithType: Virtufin.WebSocketManager.Services.Actors
+  fullName: Virtufin.WebSocketManager.Services.Actors
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services.Actors
+    name: Actors
+    href: Virtufin.WebSocketManager.Services.Actors.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services.Actors
+    name: Actors
+    href: Virtufin.WebSocketManager.Services.Actors.html

@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Interface IDaprPublisher | Virtufin WebSocketManager - C# Reference </title>
+      <title>Namespace Virtufin.WebSocketManager.Services.Actors | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IDaprPublisher | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Namespace Virtufin.WebSocketManager.Services.Actors | Virtufin WebSocketManager - C# Reference ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -88,85 +88,35 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Services.IDaprPublisher">
+        <article data-uid="Virtufin.WebSocketManager.Services.Actors">
 
+  <h1 id="Virtufin_WebSocketManager_Services_Actors" data-uid="Virtufin.WebSocketManager.Services.Actors" class="text-break">Namespace Virtufin.WebSocketManager.Services.Actors</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
 
-
-  <h1 id="Virtufin_WebSocketManager_Services_IDaprPublisher" data-uid="Virtufin.WebSocketManager.Services.IDaprPublisher" class="text-break">
-Interface IDaprPublisher  
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.WebSocketManager.html">WebSocketManager</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.html">Services</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"></div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IDaprPublisher</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Virtufin_WebSocketManager_Services_IDaprPublisher_PublishAsync_" data-uid="Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_IDaprPublisher_PublishAsync_System_String_System_String_System_String_System_Byte___System_String_" data-uid="Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)">
-  PublishAsync(string, string, string, byte[], string?)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task PublishAsync(string topic, string websocketId, string websocketUrl, byte[] payload, string? contentType = null)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>websocketId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>websocketUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>payload</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd></dd>
-    <dt><code>contentType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.Actors.ConnectionState.html">ConnectionState</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.html">WebSocketConnectionActor</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.html">IWebSocketConnectionActor</a></dt>
+      <dd><p>Actor interface for a WebSocket connection. Each connection is
+a virtual actor keyed by connection id. The placement service
+routes calls to the owning replica, so StopAsync always lands
+on the correct instance.</p>
+</dd>
+    </dl>
 
 
 </article>
