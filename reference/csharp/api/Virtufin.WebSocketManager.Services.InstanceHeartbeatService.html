@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class InstanceHeartbeatService | Virtufin WebSocketManager - C# Reference ">
       
-      <meta name="description" content="Background service that publishes a heartbeat for this instance to the Dapr state store on a configured interval and discovers peer instance heartbeats to populate the local knownInstances set. Without this,  treats every connection from a different instance ID as a candidate for reclamation — which is correct only after the peer has died. Heartbeats let live peers advertise their presence so live connections are never reclaimed.">
+      <meta name="description" content="Background service that publishes a heartbeat for this instance to the Dapr state store on a configured interval and discovers peer instance heartbeats to populate the local . Without this,  treats every connection from a different instance ID as a candidate for reclamation — which is correct only after the peer has died. Heartbeats let live peers advertise their presence so live connections are never reclaimed.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/6fe9080f5e160de3a190bdf3e5ba4aa5f4548d11" target="_blank" rel="noopener" class="commit-badge" title="View commit 6fe9080f5e160de3a190bdf3e5ba4aa5f4548d11">
+            <a href="{git_repo_url}/commit/3af928fa87749e902f16c8772107ca30440585c3" target="_blank" rel="noopener" class="commit-badge" title="View commit 3af928fa87749e902f16c8772107ca30440585c3">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">6fe9080f5e160de3a190bdf3e5ba4aa5f4548d11</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">3af928fa87749e902f16c8772107ca30440585c3</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,8 +103,8 @@ Class InstanceHeartbeatService
 
   <div class="markdown summary"><p>Background service that publishes a heartbeat for this instance
 to the Dapr state store on a configured interval and discovers
-peer instance heartbeats to populate the local <code>knownInstances</code>
-set.</p>
+peer instance heartbeats to populate the local
+<a class="xref" href="Virtufin.WebSocketManager.Services.PeerRegistry.html">PeerRegistry</a>.</p>
 <p>Without this, <a class="xref" href="Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html">ConnectionReclaimerHostedService</a> treats
 every connection from a different instance ID as a candidate for
 reclamation — which is correct only after the peer has died.
@@ -184,8 +184,8 @@ connections are never reclaimed.</p>
 
   <a id="Virtufin_WebSocketManager_Services_InstanceHeartbeatService__ctor_" data-uid="Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_InstanceHeartbeatService__ctor_Dapr_Client_DaprClient_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_InstanceHeartbeatService__Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_System_String_" data-uid="Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,System.String)">
-  InstanceHeartbeatService(DaprClient, IInstanceIdProvider, ILogger&lt;InstanceHeartbeatService&gt;, InstanceHeartbeatOptions, string)
+  <h3 id="Virtufin_WebSocketManager_Services_InstanceHeartbeatService__ctor_Dapr_Client_DaprClient_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_InstanceHeartbeatService__Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_Microsoft_Extensions_Options_IOptions_Virtufin_WebSocketManager_Configuration_PeerForwardOptions__Virtufin_WebSocketManager_Services_PeerRegistry_System_String_" data-uid="Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions},Virtufin.WebSocketManager.Services.PeerRegistry,System.String)">
+  InstanceHeartbeatService(DaprClient, IInstanceIdProvider, ILogger&lt;InstanceHeartbeatService&gt;, InstanceHeartbeatOptions, IOptions&lt;PeerForwardOptions&gt;, PeerRegistry, string)
   
   </h3>
 
@@ -193,7 +193,7 @@ connections are never reclaimed.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InstanceHeartbeatService(DaprClient daprClient, IInstanceIdProvider instanceIdProvider, ILogger&lt;InstanceHeartbeatService&gt; logger, InstanceHeartbeatOptions options, string stateStoreName)</code></pre>
+    <pre><code class="lang-csharp hljs">public InstanceHeartbeatService(DaprClient daprClient, IInstanceIdProvider instanceIdProvider, ILogger&lt;InstanceHeartbeatService&gt; logger, InstanceHeartbeatOptions options, IOptions&lt;PeerForwardOptions&gt; peerForward, PeerRegistry peerRegistry, string stateStoreName)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -205,6 +205,10 @@ connections are never reclaimed.</p>
     <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html">InstanceHeartbeatService</a>&gt;</dt>
     <dd></dd>
     <dt><code>options</code> <a class="xref" href="Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html">InstanceHeartbeatOptions</a></dt>
+    <dd></dd>
+    <dt><code>peerForward</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html">PeerForwardOptions</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>peerRegistry</code> <a class="xref" href="Virtufin.WebSocketManager.Services.PeerRegistry.html">PeerRegistry</a></dt>
     <dd></dd>
     <dt><code>stateStoreName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>

@@ -10,9 +10,6 @@ items:
   - Virtufin.WebSocketManager.Services.ConnectionNotFoundException
   - Virtufin.WebSocketManager.Services.ConnectionOwnershipException
   - Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
-  - Virtufin.WebSocketManager.Services.DaprAppCallback
-  - Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler
-  - Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod
   - Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
   - Virtufin.WebSocketManager.Services.DaprConnectionRepository
   - Virtufin.WebSocketManager.Services.DaprPublisher
@@ -32,6 +29,9 @@ items:
   - Virtufin.WebSocketManager.Services.MessageSendException
   - Virtufin.WebSocketManager.Services.MessageTimeoutException
   - Virtufin.WebSocketManager.Services.Options
+  - Virtufin.WebSocketManager.Services.PeerChannelCache
+  - Virtufin.WebSocketManager.Services.PeerEndpoint
+  - Virtufin.WebSocketManager.Services.PeerRegistry
   - Virtufin.WebSocketManager.Services.TopicValidator
   - Virtufin.WebSocketManager.Services.WebSocketClientWrapper
   - Virtufin.WebSocketManager.Services.WebSocketNotConnectedException
@@ -115,57 +115,6 @@ references:
   name: ConnectionReclaimerHostedService
   nameWithType: ConnectionReclaimerHostedService
   fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback
-  commentId: T:Virtufin.WebSocketManager.Services.DaprAppCallback
-  href: Virtufin.WebSocketManager.Services.DaprAppCallback.html
-  name: DaprAppCallback
-  nameWithType: DaprAppCallback
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler
-  commentId: T:Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.DaprAppCallback.html
-  name: DaprAppCallback.MethodHandler
-  nameWithType: DaprAppCallback.MethodHandler
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler
-  spec.csharp:
-  - uid: Virtufin.WebSocketManager.Services.DaprAppCallback
-    name: DaprAppCallback
-    href: Virtufin.WebSocketManager.Services.DaprAppCallback.html
-  - name: .
-  - uid: Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler
-    name: MethodHandler
-    href: Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler.html
-  spec.vb:
-  - uid: Virtufin.WebSocketManager.Services.DaprAppCallback
-    name: DaprAppCallback
-    href: Virtufin.WebSocketManager.Services.DaprAppCallback.html
-  - name: .
-  - uid: Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler
-    name: MethodHandler
-    href: Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler.html
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod
-  commentId: T:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod
-  href: Virtufin.WebSocketManager.Services.DaprAppCallback.html
-  name: DaprAppCallback.RegisteredMethod
-  nameWithType: DaprAppCallback.RegisteredMethod
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod
-  spec.csharp:
-  - uid: Virtufin.WebSocketManager.Services.DaprAppCallback
-    name: DaprAppCallback
-    href: Virtufin.WebSocketManager.Services.DaprAppCallback.html
-  - name: .
-  - uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod
-    name: RegisteredMethod
-    href: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html
-  spec.vb:
-  - uid: Virtufin.WebSocketManager.Services.DaprAppCallback
-    name: DaprAppCallback
-    href: Virtufin.WebSocketManager.Services.DaprAppCallback.html
-  - name: .
-  - uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod
-    name: RegisteredMethod
-    href: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html
 - uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
   commentId: T:Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
   href: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html
@@ -282,6 +231,27 @@ references:
   name: MessageTimeoutException
   nameWithType: MessageTimeoutException
   fullName: Virtufin.WebSocketManager.Services.MessageTimeoutException
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache
+  commentId: T:Virtufin.WebSocketManager.Services.PeerChannelCache
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.PeerChannelCache.html
+  name: PeerChannelCache
+  nameWithType: PeerChannelCache
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache
+- uid: Virtufin.WebSocketManager.Services.PeerEndpoint
+  commentId: T:Virtufin.WebSocketManager.Services.PeerEndpoint
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.PeerEndpoint.html
+  name: PeerEndpoint
+  nameWithType: PeerEndpoint
+  fullName: Virtufin.WebSocketManager.Services.PeerEndpoint
+- uid: Virtufin.WebSocketManager.Services.PeerRegistry
+  commentId: T:Virtufin.WebSocketManager.Services.PeerRegistry
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.PeerRegistry.html
+  name: PeerRegistry
+  nameWithType: PeerRegistry
+  fullName: Virtufin.WebSocketManager.Services.PeerRegistry
 - uid: Virtufin.WebSocketManager.Services.TopicValidator
   commentId: T:Virtufin.WebSocketManager.Services.TopicValidator
   href: Virtufin.WebSocketManager.Services.TopicValidator.html

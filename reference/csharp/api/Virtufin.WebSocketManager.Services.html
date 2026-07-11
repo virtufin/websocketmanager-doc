@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/6fe9080f5e160de3a190bdf3e5ba4aa5f4548d11" target="_blank" rel="noopener" class="commit-badge" title="View commit 6fe9080f5e160de3a190bdf3e5ba4aa5f4548d11">
+            <a href="{git_repo_url}/commit/3af928fa87749e902f16c8772107ca30440585c3" target="_blank" rel="noopener" class="commit-badge" title="View commit 3af928fa87749e902f16c8772107ca30440585c3">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">6fe9080f5e160de3a190bdf3e5ba4aa5f4548d11</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">3af928fa87749e902f16c8772107ca30440585c3</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -143,23 +143,6 @@ naturally invisible to this sweep and are not re-stamped.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.html">DaprAppCallback</a></dt>
-      <dd><p>Receiver-side endpoint for Dapr gRPC service invocation. When a
-peer WSM replica issues
-<code>DaprClient.InvokeMethodGrpcAsync&lt;…, …&gt;(SelfAppId, fullMethodName, …)</code>,
-the Dapr sidecar routes the call here as
-<code>AppCallback.OnInvoke(InvokeRequest, ServerCallContext)</code>. We
-dispatch by <code>request.Method</code> into the same handler chain used
-by the gRPC overrides on <a class="xref" href="Virtufin.WebSocketManager.Protos.WebSocketManagerService.html">WebSocketManagerService</a>, so
-forwarded calls share semantics with direct gRPC calls.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html">DaprAppCallback.RegisteredMethod</a></dt>
-      <dd><p>Registered method: full proto method-name + handler delegate.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html">DaprCircuitBreakerHealthCheck</a></dt>
       <dd><p>Health check that reports Dapr circuit breaker state.</p>
 </dd>
@@ -214,8 +197,8 @@ Falls back to a generated GUID if no HOSTNAME is set.</p>
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html">InstanceHeartbeatService</a></dt>
       <dd><p>Background service that publishes a heartbeat for this instance
 to the Dapr state store on a configured interval and discovers
-peer instance heartbeats to populate the local <code>knownInstances</code>
-set.</p>
+peer instance heartbeats to populate the local
+<a class="xref" href="Virtufin.WebSocketManager.Services.PeerRegistry.html">PeerRegistry</a>.</p>
 <p>Without this, <a class="xref" href="Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html">ConnectionReclaimerHostedService</a> treats
 every connection from a different instance ID as a candidate for
 reclamation — which is correct only after the peer has died.
@@ -230,6 +213,18 @@ connections are never reclaimed.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.MessageTimeoutException.html">MessageTimeoutException</a></dt>
       <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.PeerChannelCache.html">PeerChannelCache</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.PeerRegistry.html">PeerRegistry</a></dt>
+      <dd><p>Resolves peer replica host:port from observed heartbeats. Each
+replica publishes its own <code>GrpcHostPort</code> in its heartbeat
+record; <a class="xref" href="Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html">InstanceHeartbeatService</a> discovers those
+heartbeats and registers them here.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.TopicValidator.html">TopicValidator</a></dt>
@@ -273,6 +268,13 @@ e.g. <code>websocketmanager.lifecycle</code>, <code>workmanager.infra.worker</co
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.WebSocketService.html">WebSocketService</a></dt>
       <dd></dd>
     </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.PeerEndpoint.html">PeerEndpoint</a></dt>
+      <dd></dd>
+    </dl>
     <h3 id="interfaces">
 Interfaces
 </h3>
@@ -302,14 +304,6 @@ Interfaces
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.IWebSocketService.html">IWebSocketService</a></dt>
       <dd></dd>
-    </dl>
-    <h3 id="delegates">
-Delegates
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler.html">DaprAppCallback.MethodHandler</a></dt>
-      <dd><p>Delegate: receive proto bytes, return proto bytes, propagate cancellation.</p>
-</dd>
     </dl>
 
 

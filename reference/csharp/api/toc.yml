@@ -26,6 +26,9 @@ items:
     - uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
       name: OwnershipForwardOptions
       type: Class
+    - uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions
+      name: PeerForwardOptions
+      type: Class
     - uid: Virtufin.WebSocketManager.Configuration.PortConstants
       name: PortConstants
       type: Class
@@ -77,15 +80,6 @@ items:
       type: Class
     - uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
       name: ConnectionReclaimerHostedService
-      type: Class
-    - uid: Virtufin.WebSocketManager.Services.DaprAppCallback
-      name: DaprAppCallback
-      type: Class
-    - uid: Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler
-      name: DaprAppCallback.MethodHandler
-      type: Delegate
-    - uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod
-      name: DaprAppCallback.RegisteredMethod
       type: Class
     - uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
       name: DaprCircuitBreakerHealthCheck
@@ -140,6 +134,15 @@ items:
       type: Class
     - uid: Virtufin.WebSocketManager.Services.MessageTimeoutException
       name: MessageTimeoutException
+      type: Class
+    - uid: Virtufin.WebSocketManager.Services.PeerChannelCache
+      name: PeerChannelCache
+      type: Class
+    - uid: Virtufin.WebSocketManager.Services.PeerEndpoint
+      name: PeerEndpoint
+      type: Struct
+    - uid: Virtufin.WebSocketManager.Services.PeerRegistry
+      name: PeerRegistry
       type: Class
     - uid: Virtufin.WebSocketManager.Services.TopicValidator
       name: TopicValidator

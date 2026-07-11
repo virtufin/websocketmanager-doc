@@ -5,7 +5,7 @@ items:
   id: InstanceHeartbeatService
   parent: Virtufin.WebSocketManager.Services
   children:
-  - Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,System.String)
+  - Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions},Virtufin.WebSocketManager.Services.PeerRegistry,System.String)
   - Virtufin.WebSocketManager.Services.InstanceHeartbeatService.ExecuteAsync(System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.InstanceHeartbeatService.HeartbeatIndexKey
   - Virtufin.WebSocketManager.Services.InstanceHeartbeatService.HeartbeatKeyPrefix
@@ -23,7 +23,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: InstanceHeartbeatService
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -32,9 +32,9 @@ items:
 
     to the Dapr state store on a configured interval and discovers
 
-    peer instance heartbeats to populate the local <code>knownInstances</code>
+    peer instance heartbeats to populate the local
 
-    set.
+    <xref href="Virtufin.WebSocketManager.Services.PeerRegistry" data-throw-if-not-resolved="false"></xref>.
 
 
     Without this, <xref href="Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService" data-throw-if-not-resolved="false"></xref> treats
@@ -85,7 +85,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: HeartbeatKeyPrefix
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -114,7 +114,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: HeartbeatIndexKey
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -125,16 +125,16 @@ items:
     return:
       type: System.String
     content.vb: Public Const HeartbeatIndexKey As String = "websocketmanager/instances/_index"
-- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,System.String)
-  commentId: M:Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,System.String)
-  id: '#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,System.String)'
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions},Virtufin.WebSocketManager.Services.PeerRegistry,System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions},Virtufin.WebSocketManager.Services.PeerRegistry,System.String)
+  id: '#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions},Virtufin.WebSocketManager.Services.PeerRegistry,System.String)'
   parent: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
   langs:
   - csharp
   - vb
-  name: InstanceHeartbeatService(DaprClient, IInstanceIdProvider, ILogger<InstanceHeartbeatService>, InstanceHeartbeatOptions, string)
-  nameWithType: InstanceHeartbeatService.InstanceHeartbeatService(DaprClient, IInstanceIdProvider, ILogger<InstanceHeartbeatService>, InstanceHeartbeatOptions, string)
-  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.InstanceHeartbeatService(Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.InstanceHeartbeatService>, Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions, string)
+  name: InstanceHeartbeatService(DaprClient, IInstanceIdProvider, ILogger<InstanceHeartbeatService>, InstanceHeartbeatOptions, IOptions<PeerForwardOptions>, PeerRegistry, string)
+  nameWithType: InstanceHeartbeatService.InstanceHeartbeatService(DaprClient, IInstanceIdProvider, ILogger<InstanceHeartbeatService>, InstanceHeartbeatOptions, IOptions<PeerForwardOptions>, PeerRegistry, string)
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.InstanceHeartbeatService(Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.InstanceHeartbeatService>, Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions, Microsoft.Extensions.Options.IOptions<Virtufin.WebSocketManager.Configuration.PeerForwardOptions>, Virtufin.WebSocketManager.Services.PeerRegistry, string)
   type: Constructor
   source:
     remote:
@@ -143,12 +143,12 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 37
+    startLine: 40
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
   syntax:
-    content: public InstanceHeartbeatService(DaprClient daprClient, IInstanceIdProvider instanceIdProvider, ILogger<InstanceHeartbeatService> logger, InstanceHeartbeatOptions options, string stateStoreName)
+    content: public InstanceHeartbeatService(DaprClient daprClient, IInstanceIdProvider instanceIdProvider, ILogger<InstanceHeartbeatService> logger, InstanceHeartbeatOptions options, IOptions<PeerForwardOptions> peerForward, PeerRegistry peerRegistry, string stateStoreName)
     parameters:
     - id: daprClient
       type: Dapr.Client.DaprClient
@@ -158,13 +158,17 @@ items:
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService}
     - id: options
       type: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
+    - id: peerForward
+      type: Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions}
+    - id: peerRegistry
+      type: Virtufin.WebSocketManager.Services.PeerRegistry
     - id: stateStoreName
       type: System.String
-    content.vb: Public Sub New(daprClient As DaprClient, instanceIdProvider As IInstanceIdProvider, logger As ILogger(Of InstanceHeartbeatService), options As InstanceHeartbeatOptions, stateStoreName As String)
+    content.vb: Public Sub New(daprClient As DaprClient, instanceIdProvider As IInstanceIdProvider, logger As ILogger(Of InstanceHeartbeatService), options As InstanceHeartbeatOptions, peerForward As IOptions(Of PeerForwardOptions), peerRegistry As PeerRegistry, stateStoreName As String)
   overload: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor*
-  nameWithType.vb: InstanceHeartbeatService.New(DaprClient, IInstanceIdProvider, ILogger(Of InstanceHeartbeatService), InstanceHeartbeatOptions, String)
-  fullName.vb: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.New(Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.InstanceHeartbeatService), Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions, String)
-  name.vb: New(DaprClient, IInstanceIdProvider, ILogger(Of InstanceHeartbeatService), InstanceHeartbeatOptions, String)
+  nameWithType.vb: InstanceHeartbeatService.New(DaprClient, IInstanceIdProvider, ILogger(Of InstanceHeartbeatService), InstanceHeartbeatOptions, IOptions(Of PeerForwardOptions), PeerRegistry, String)
+  fullName.vb: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.New(Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.InstanceHeartbeatService), Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions, Microsoft.Extensions.Options.IOptions(Of Virtufin.WebSocketManager.Configuration.PeerForwardOptions), Virtufin.WebSocketManager.Services.PeerRegistry, String)
+  name.vb: New(DaprClient, IInstanceIdProvider, ILogger(Of InstanceHeartbeatService), InstanceHeartbeatOptions, IOptions(Of PeerForwardOptions), PeerRegistry, String)
 - uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.ExecuteAsync(System.Threading.CancellationToken)
   commentId: M:Virtufin.WebSocketManager.Services.InstanceHeartbeatService.ExecuteAsync(System.Threading.CancellationToken)
   id: ExecuteAsync(System.Threading.CancellationToken)
@@ -183,7 +187,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ExecuteAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 60
+    startLine: 68
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -206,6 +210,13 @@ items:
   overridden: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
   overload: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.ExecuteAsync*
 references:
+- uid: Virtufin.WebSocketManager.Services.PeerRegistry
+  commentId: T:Virtufin.WebSocketManager.Services.PeerRegistry
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.PeerRegistry.html
+  name: PeerRegistry
+  nameWithType: PeerRegistry
+  fullName: Virtufin.WebSocketManager.Services.PeerRegistry
 - uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
   commentId: T:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
   href: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html
@@ -619,7 +630,7 @@ references:
   name.vb: String
 - uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor*
   commentId: Overload:Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor
-  href: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html#Virtufin_WebSocketManager_Services_InstanceHeartbeatService__ctor_Dapr_Client_DaprClient_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_InstanceHeartbeatService__Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_System_String_
+  href: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html#Virtufin_WebSocketManager_Services_InstanceHeartbeatService__ctor_Dapr_Client_DaprClient_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_InstanceHeartbeatService__Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_Microsoft_Extensions_Options_IOptions_Virtufin_WebSocketManager_Configuration_PeerForwardOptions__Virtufin_WebSocketManager_Services_PeerRegistry_System_String_
   name: InstanceHeartbeatService
   nameWithType: InstanceHeartbeatService.InstanceHeartbeatService
   fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.InstanceHeartbeatService
@@ -680,6 +691,39 @@ references:
   name: InstanceHeartbeatOptions
   nameWithType: InstanceHeartbeatOptions
   fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
+- uid: Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<PeerForwardOptions>
+  nameWithType: IOptions<PeerForwardOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<Virtufin.WebSocketManager.Configuration.PeerForwardOptions>
+  nameWithType.vb: IOptions(Of PeerForwardOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of Virtufin.WebSocketManager.Configuration.PeerForwardOptions)
+  name.vb: IOptions(Of PeerForwardOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions
+    name: PeerForwardOptions
+    href: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions
+    name: PeerForwardOptions
+    href: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html
+  - name: )
 - uid: Dapr.Client
   commentId: N:Dapr.Client
   isExternal: true
@@ -797,6 +841,71 @@ references:
   - uid: Virtufin.WebSocketManager.Configuration
     name: Configuration
     href: Virtufin.WebSocketManager.Configuration.html
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
 - uid: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
   commentId: M:Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
   isExternal: true

@@ -385,6 +385,104 @@ references:
   commentId: F:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
   fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
   nameWithType: OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions
+  name: PeerForwardOptions
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html
+  commentId: T:Virtufin.WebSocketManager.Configuration.PeerForwardOptions
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions
+  nameWithType: PeerForwardOptions
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerHost
+  name: DefaultPeerHost
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_DefaultPeerHost
+  commentId: P:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerHost
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerHost
+  nameWithType: PeerForwardOptions.DefaultPeerHost
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerHost*
+  name: DefaultPeerHost
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_DefaultPeerHost_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerHost
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerHost
+  nameWithType: PeerForwardOptions.DefaultPeerHost
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerHostEnvVar
+  name: DefaultPeerHostEnvVar
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_DefaultPeerHostEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerHostEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerHostEnvVar
+  nameWithType: PeerForwardOptions.DefaultPeerHostEnvVar
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerPort
+  name: DefaultPeerPort
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_DefaultPeerPort
+  commentId: P:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerPort
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerPort
+  nameWithType: PeerForwardOptions.DefaultPeerPort
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerPort*
+  name: DefaultPeerPort
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_DefaultPeerPort_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerPort
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerPort
+  nameWithType: PeerForwardOptions.DefaultPeerPort
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerPortEnvVar
+  name: DefaultPeerPortEnvVar
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_DefaultPeerPortEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerPortEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.DefaultPeerPortEnvVar
+  nameWithType: PeerForwardOptions.DefaultPeerPortEnvVar
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.FromEnvironment(System.Func{System.String,System.String},System.Int32)
+  name: FromEnvironment(Func<string, string?>, int)
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_FromEnvironment_System_Func_System_String_System_String__System_Int32_
+  commentId: M:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.FromEnvironment(System.Func{System.String,System.String},System.Int32)
+  name.vb: FromEnvironment(Func(Of String, String), Integer)
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.FromEnvironment(System.Func<string, string?>, int)
+  fullName.vb: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.FromEnvironment(System.Func(Of String, String), Integer)
+  nameWithType: PeerForwardOptions.FromEnvironment(Func<string, string?>, int)
+  nameWithType.vb: PeerForwardOptions.FromEnvironment(Func(Of String, String), Integer)
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.FromEnvironment*
+  name: FromEnvironment
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_FromEnvironment_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.FromEnvironment
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.FromEnvironment
+  nameWithType: PeerForwardOptions.FromEnvironment
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerHost
+  name: PeerHost
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_PeerHost
+  commentId: P:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerHost
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerHost
+  nameWithType: PeerForwardOptions.PeerHost
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerHost*
+  name: PeerHost
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_PeerHost_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerHost
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerHost
+  nameWithType: PeerForwardOptions.PeerHost
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerHostEnvVar
+  name: PeerHostEnvVar
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_PeerHostEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerHostEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerHostEnvVar
+  nameWithType: PeerForwardOptions.PeerHostEnvVar
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerPort
+  name: PeerPort
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_PeerPort
+  commentId: P:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerPort
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerPort
+  nameWithType: PeerForwardOptions.PeerPort
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerPort*
+  name: PeerPort
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_PeerPort_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerPort
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerPort
+  nameWithType: PeerForwardOptions.PeerPort
+- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerPortEnvVar
+  name: PeerPortEnvVar
+  href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html#Virtufin_WebSocketManager_Configuration_PeerForwardOptions_PeerPortEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerPortEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.PeerPortEnvVar
+  nameWithType: PeerForwardOptions.PeerPortEnvVar
 - uid: Virtufin.WebSocketManager.Configuration.PortConstants
   name: PortConstants
   href: api/Virtufin.WebSocketManager.Configuration.PortConstants.html
@@ -707,15 +805,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Protos.WebSocketManagerService
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService
   nameWithType: WebSocketManagerService
-- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient)
-  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, DaprClient)
-  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_Dapr_Client_DaprClient_
-  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient)
-  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, DaprClient)
-  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>, Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Dapr.Client.DaprClient)
-  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService), Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Dapr.Client.DaprClient)
-  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, DaprClient)
-  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, DaprClient)
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.PeerChannelCache)
+  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, IDaprConnectionRepository, PeerChannelCache)
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_WebSocketManager_Services_PeerChannelCache_
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.PeerChannelCache)
+  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, IDaprConnectionRepository, PeerChannelCache)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>, Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.PeerChannelCache)
+  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService), Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.PeerChannelCache)
+  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, IDaprConnectionRepository, PeerChannelCache)
+  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, IDaprConnectionRepository, PeerChannelCache)
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor*
   name: WebSocketManagerService
   href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_
@@ -1160,101 +1258,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync
   nameWithType: ConnectionReclaimerHostedService.ExecuteAsync
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback
-  name: DaprAppCallback
-  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.html
-  commentId: T:Virtufin.WebSocketManager.Services.DaprAppCallback
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback
-  nameWithType: DaprAppCallback
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.#ctor(System.Collections.Generic.IEnumerable{Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod},Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprAppCallback})
-  name: DaprAppCallback(IEnumerable<RegisteredMethod>, ILogger<DaprAppCallback>)
-  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.html#Virtufin_WebSocketManager_Services_DaprAppCallback__ctor_System_Collections_Generic_IEnumerable_Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod__Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprAppCallback__
-  commentId: M:Virtufin.WebSocketManager.Services.DaprAppCallback.#ctor(System.Collections.Generic.IEnumerable{Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod},Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprAppCallback})
-  name.vb: New(IEnumerable(Of RegisteredMethod), ILogger(Of DaprAppCallback))
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.DaprAppCallback(System.Collections.Generic.IEnumerable<Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod>, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.DaprAppCallback>)
-  fullName.vb: Virtufin.WebSocketManager.Services.DaprAppCallback.New(System.Collections.Generic.IEnumerable(Of Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod), Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprAppCallback))
-  nameWithType: DaprAppCallback.DaprAppCallback(IEnumerable<DaprAppCallback.RegisteredMethod>, ILogger<DaprAppCallback>)
-  nameWithType.vb: DaprAppCallback.New(IEnumerable(Of DaprAppCallback.RegisteredMethod), ILogger(Of DaprAppCallback))
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.#ctor*
-  name: DaprAppCallback
-  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.html#Virtufin_WebSocketManager_Services_DaprAppCallback__ctor_
-  commentId: Overload:Virtufin.WebSocketManager.Services.DaprAppCallback.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.DaprAppCallback
-  fullName.vb: Virtufin.WebSocketManager.Services.DaprAppCallback.New
-  nameWithType: DaprAppCallback.DaprAppCallback
-  nameWithType.vb: DaprAppCallback.New
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler
-  name: DaprAppCallback.MethodHandler
-  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler.html
-  commentId: T:Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler
-  nameWithType: DaprAppCallback.MethodHandler
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke(Dapr.Client.Autogen.Grpc.v1.InvokeRequest,Grpc.Core.ServerCallContext)
-  name: OnInvoke(InvokeRequest, ServerCallContext)
-  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.html#Virtufin_WebSocketManager_Services_DaprAppCallback_OnInvoke_Dapr_Client_Autogen_Grpc_v1_InvokeRequest_Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke(Dapr.Client.Autogen.Grpc.v1.InvokeRequest,Grpc.Core.ServerCallContext)
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke(Dapr.Client.Autogen.Grpc.v1.InvokeRequest, Grpc.Core.ServerCallContext)
-  nameWithType: DaprAppCallback.OnInvoke(InvokeRequest, ServerCallContext)
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke*
-  name: OnInvoke
-  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.html#Virtufin_WebSocketManager_Services_DaprAppCallback_OnInvoke_
-  commentId: Overload:Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke
-  nameWithType: DaprAppCallback.OnInvoke
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod
-  name: DaprAppCallback.RegisteredMethod
-  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html
-  commentId: T:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod
-  nameWithType: DaprAppCallback.RegisteredMethod
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.#ctor(System.String,Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler)
-  name: RegisteredMethod(string, MethodHandler)
-  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html#Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod__ctor_System_String_Virtufin_WebSocketManager_Services_DaprAppCallback_MethodHandler_
-  commentId: M:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.#ctor(System.String,Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler)
-  name.vb: New(String, MethodHandler)
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.RegisteredMethod(string, Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler)
-  fullName.vb: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.New(String, Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler)
-  nameWithType: DaprAppCallback.RegisteredMethod.RegisteredMethod(string, DaprAppCallback.MethodHandler)
-  nameWithType.vb: DaprAppCallback.RegisteredMethod.New(String, DaprAppCallback.MethodHandler)
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.#ctor*
-  name: RegisteredMethod
-  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html#Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod__ctor_
-  commentId: Overload:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.RegisteredMethod
-  fullName.vb: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.New
-  nameWithType: DaprAppCallback.RegisteredMethod.RegisteredMethod
-  nameWithType.vb: DaprAppCallback.RegisteredMethod.New
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName
-  name: FullMethodName
-  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html#Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_FullMethodName
-  commentId: P:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName
-  nameWithType: DaprAppCallback.RegisteredMethod.FullMethodName
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName*
-  name: FullMethodName
-  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html#Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_FullMethodName_
-  commentId: Overload:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName
-  nameWithType: DaprAppCallback.RegisteredMethod.FullMethodName
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler
-  name: Handler
-  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html#Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_Handler
-  commentId: P:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler
-  nameWithType: DaprAppCallback.RegisteredMethod.Handler
-- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler*
-  name: Handler
-  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html#Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_Handler_
-  commentId: Overload:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler
-  nameWithType: DaprAppCallback.RegisteredMethod.Handler
 - uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
   name: DaprCircuitBreakerHealthCheck
   href: api/Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html
@@ -2476,15 +2479,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeat
   fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat
   nameWithType: InstanceHeartbeat
-- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor(System.String,System.DateTime)
-  name: InstanceHeartbeat(string, DateTime)
-  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat__ctor_System_String_System_DateTime_
-  commentId: M:Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor(System.String,System.DateTime)
-  name.vb: New(String, Date)
-  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceHeartbeat(string, System.DateTime)
-  fullName.vb: Virtufin.WebSocketManager.Services.InstanceHeartbeat.New(String, Date)
-  nameWithType: InstanceHeartbeat.InstanceHeartbeat(string, DateTime)
-  nameWithType.vb: InstanceHeartbeat.New(String, Date)
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor(System.String,System.DateTime,System.String)
+  name: InstanceHeartbeat(string, DateTime, string)
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat__ctor_System_String_System_DateTime_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor(System.String,System.DateTime,System.String)
+  name.vb: New(String, Date, String)
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceHeartbeat(string, System.DateTime, string)
+  fullName.vb: Virtufin.WebSocketManager.Services.InstanceHeartbeat.New(String, Date, String)
+  nameWithType: InstanceHeartbeat.InstanceHeartbeat(string, DateTime, string)
+  nameWithType.vb: InstanceHeartbeat.New(String, Date, String)
 - uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor*
   name: InstanceHeartbeat
   href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat__ctor_
@@ -2495,6 +2498,19 @@ references:
   fullName.vb: Virtufin.WebSocketManager.Services.InstanceHeartbeat.New
   nameWithType: InstanceHeartbeat.InstanceHeartbeat
   nameWithType.vb: InstanceHeartbeat.New
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort
+  name: GrpcHostPort
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat_GrpcHostPort
+  commentId: P:Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort
+  nameWithType: InstanceHeartbeat.GrpcHostPort
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort*
+  name: GrpcHostPort
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat_GrpcHostPort_
+  commentId: Overload:Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort
+  nameWithType: InstanceHeartbeat.GrpcHostPort
 - uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceId
   name: InstanceId
   href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat_InstanceId
@@ -2527,15 +2543,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeatService
   fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
   nameWithType: InstanceHeartbeatService
-- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,System.String)
-  name: InstanceHeartbeatService(DaprClient, IInstanceIdProvider, ILogger<InstanceHeartbeatService>, InstanceHeartbeatOptions, string)
-  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html#Virtufin_WebSocketManager_Services_InstanceHeartbeatService__ctor_Dapr_Client_DaprClient_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_InstanceHeartbeatService__Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_System_String_
-  commentId: M:Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,System.String)
-  name.vb: New(DaprClient, IInstanceIdProvider, ILogger(Of InstanceHeartbeatService), InstanceHeartbeatOptions, String)
-  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.InstanceHeartbeatService(Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.InstanceHeartbeatService>, Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions, string)
-  fullName.vb: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.New(Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.InstanceHeartbeatService), Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions, String)
-  nameWithType: InstanceHeartbeatService.InstanceHeartbeatService(DaprClient, IInstanceIdProvider, ILogger<InstanceHeartbeatService>, InstanceHeartbeatOptions, string)
-  nameWithType.vb: InstanceHeartbeatService.New(DaprClient, IInstanceIdProvider, ILogger(Of InstanceHeartbeatService), InstanceHeartbeatOptions, String)
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions},Virtufin.WebSocketManager.Services.PeerRegistry,System.String)
+  name: InstanceHeartbeatService(DaprClient, IInstanceIdProvider, ILogger<InstanceHeartbeatService>, InstanceHeartbeatOptions, IOptions<PeerForwardOptions>, PeerRegistry, string)
+  href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html#Virtufin_WebSocketManager_Services_InstanceHeartbeatService__ctor_Dapr_Client_DaprClient_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_InstanceHeartbeatService__Virtufin_WebSocketManager_Configuration_InstanceHeartbeatOptions_Microsoft_Extensions_Options_IOptions_Virtufin_WebSocketManager_Configuration_PeerForwardOptions__Virtufin_WebSocketManager_Services_PeerRegistry_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor(Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.InstanceHeartbeatService},Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions,Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions},Virtufin.WebSocketManager.Services.PeerRegistry,System.String)
+  name.vb: New(DaprClient, IInstanceIdProvider, ILogger(Of InstanceHeartbeatService), InstanceHeartbeatOptions, IOptions(Of PeerForwardOptions), PeerRegistry, String)
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.InstanceHeartbeatService(Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.InstanceHeartbeatService>, Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions, Microsoft.Extensions.Options.IOptions<Virtufin.WebSocketManager.Configuration.PeerForwardOptions>, Virtufin.WebSocketManager.Services.PeerRegistry, string)
+  fullName.vb: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.New(Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.InstanceHeartbeatService), Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions, Microsoft.Extensions.Options.IOptions(Of Virtufin.WebSocketManager.Configuration.PeerForwardOptions), Virtufin.WebSocketManager.Services.PeerRegistry, String)
+  nameWithType: InstanceHeartbeatService.InstanceHeartbeatService(DaprClient, IInstanceIdProvider, ILogger<InstanceHeartbeatService>, InstanceHeartbeatOptions, IOptions<PeerForwardOptions>, PeerRegistry, string)
+  nameWithType.vb: InstanceHeartbeatService.New(DaprClient, IInstanceIdProvider, ILogger(Of InstanceHeartbeatService), InstanceHeartbeatOptions, IOptions(Of PeerForwardOptions), PeerRegistry, String)
 - uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.#ctor*
   name: InstanceHeartbeatService
   href: api/Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html#Virtufin_WebSocketManager_Services_InstanceHeartbeatService__ctor_
@@ -2735,6 +2751,191 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectMaxAttempts
   nameWithType: WebSocketOptions.ReconnectMaxAttempts
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache
+  name: PeerChannelCache
+  href: api/Virtufin.WebSocketManager.Services.PeerChannelCache.html
+  commentId: T:Virtufin.WebSocketManager.Services.PeerChannelCache
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache
+  nameWithType: PeerChannelCache
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache.#ctor(Virtufin.WebSocketManager.Services.PeerRegistry,Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions},Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.PeerChannelCache})
+  name: PeerChannelCache(PeerRegistry, IOptions<PeerForwardOptions>, ILogger<PeerChannelCache>)
+  href: api/Virtufin.WebSocketManager.Services.PeerChannelCache.html#Virtufin_WebSocketManager_Services_PeerChannelCache__ctor_Virtufin_WebSocketManager_Services_PeerRegistry_Microsoft_Extensions_Options_IOptions_Virtufin_WebSocketManager_Configuration_PeerForwardOptions__Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_PeerChannelCache__
+  commentId: M:Virtufin.WebSocketManager.Services.PeerChannelCache.#ctor(Virtufin.WebSocketManager.Services.PeerRegistry,Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions},Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.PeerChannelCache})
+  name.vb: New(PeerRegistry, IOptions(Of PeerForwardOptions), ILogger(Of PeerChannelCache))
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache.PeerChannelCache(Virtufin.WebSocketManager.Services.PeerRegistry, Microsoft.Extensions.Options.IOptions<Virtufin.WebSocketManager.Configuration.PeerForwardOptions>, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.PeerChannelCache>)
+  fullName.vb: Virtufin.WebSocketManager.Services.PeerChannelCache.New(Virtufin.WebSocketManager.Services.PeerRegistry, Microsoft.Extensions.Options.IOptions(Of Virtufin.WebSocketManager.Configuration.PeerForwardOptions), Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.PeerChannelCache))
+  nameWithType: PeerChannelCache.PeerChannelCache(PeerRegistry, IOptions<PeerForwardOptions>, ILogger<PeerChannelCache>)
+  nameWithType.vb: PeerChannelCache.New(PeerRegistry, IOptions(Of PeerForwardOptions), ILogger(Of PeerChannelCache))
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache.#ctor*
+  name: PeerChannelCache
+  href: api/Virtufin.WebSocketManager.Services.PeerChannelCache.html#Virtufin_WebSocketManager_Services_PeerChannelCache__ctor_
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerChannelCache.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache.PeerChannelCache
+  fullName.vb: Virtufin.WebSocketManager.Services.PeerChannelCache.New
+  nameWithType: PeerChannelCache.PeerChannelCache
+  nameWithType.vb: PeerChannelCache.New
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose
+  name: Dispose()
+  href: api/Virtufin.WebSocketManager.Services.PeerChannelCache.html#Virtufin_WebSocketManager_Services_PeerChannelCache_Dispose
+  commentId: M:Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose()
+  nameWithType: PeerChannelCache.Dispose()
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose*
+  name: Dispose
+  href: api/Virtufin.WebSocketManager.Services.PeerChannelCache.html#Virtufin_WebSocketManager_Services_PeerChannelCache_Dispose_
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose
+  nameWithType: PeerChannelCache.Dispose
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient(System.String)
+  name: TryGetClient(string)
+  href: api/Virtufin.WebSocketManager.Services.PeerChannelCache.html#Virtufin_WebSocketManager_Services_PeerChannelCache_TryGetClient_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient(System.String)
+  name.vb: TryGetClient(String)
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient(string)
+  fullName.vb: Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient(String)
+  nameWithType: PeerChannelCache.TryGetClient(string)
+  nameWithType.vb: PeerChannelCache.TryGetClient(String)
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient*
+  name: TryGetClient
+  href: api/Virtufin.WebSocketManager.Services.PeerChannelCache.html#Virtufin_WebSocketManager_Services_PeerChannelCache_TryGetClient_
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient
+  nameWithType: PeerChannelCache.TryGetClient
+- uid: Virtufin.WebSocketManager.Services.PeerEndpoint
+  name: PeerEndpoint
+  href: api/Virtufin.WebSocketManager.Services.PeerEndpoint.html
+  commentId: T:Virtufin.WebSocketManager.Services.PeerEndpoint
+  fullName: Virtufin.WebSocketManager.Services.PeerEndpoint
+  nameWithType: PeerEndpoint
+- uid: Virtufin.WebSocketManager.Services.PeerEndpoint.#ctor(System.String,System.Int32)
+  name: PeerEndpoint(string, int)
+  href: api/Virtufin.WebSocketManager.Services.PeerEndpoint.html#Virtufin_WebSocketManager_Services_PeerEndpoint__ctor_System_String_System_Int32_
+  commentId: M:Virtufin.WebSocketManager.Services.PeerEndpoint.#ctor(System.String,System.Int32)
+  name.vb: New(String, Integer)
+  fullName: Virtufin.WebSocketManager.Services.PeerEndpoint.PeerEndpoint(string, int)
+  fullName.vb: Virtufin.WebSocketManager.Services.PeerEndpoint.New(String, Integer)
+  nameWithType: PeerEndpoint.PeerEndpoint(string, int)
+  nameWithType.vb: PeerEndpoint.New(String, Integer)
+- uid: Virtufin.WebSocketManager.Services.PeerEndpoint.#ctor*
+  name: PeerEndpoint
+  href: api/Virtufin.WebSocketManager.Services.PeerEndpoint.html#Virtufin_WebSocketManager_Services_PeerEndpoint__ctor_
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerEndpoint.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.WebSocketManager.Services.PeerEndpoint.PeerEndpoint
+  fullName.vb: Virtufin.WebSocketManager.Services.PeerEndpoint.New
+  nameWithType: PeerEndpoint.PeerEndpoint
+  nameWithType.vb: PeerEndpoint.New
+- uid: Virtufin.WebSocketManager.Services.PeerEndpoint.Host
+  name: Host
+  href: api/Virtufin.WebSocketManager.Services.PeerEndpoint.html#Virtufin_WebSocketManager_Services_PeerEndpoint_Host
+  commentId: P:Virtufin.WebSocketManager.Services.PeerEndpoint.Host
+  fullName: Virtufin.WebSocketManager.Services.PeerEndpoint.Host
+  nameWithType: PeerEndpoint.Host
+- uid: Virtufin.WebSocketManager.Services.PeerEndpoint.Host*
+  name: Host
+  href: api/Virtufin.WebSocketManager.Services.PeerEndpoint.html#Virtufin_WebSocketManager_Services_PeerEndpoint_Host_
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerEndpoint.Host
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.PeerEndpoint.Host
+  nameWithType: PeerEndpoint.Host
+- uid: Virtufin.WebSocketManager.Services.PeerEndpoint.Port
+  name: Port
+  href: api/Virtufin.WebSocketManager.Services.PeerEndpoint.html#Virtufin_WebSocketManager_Services_PeerEndpoint_Port
+  commentId: P:Virtufin.WebSocketManager.Services.PeerEndpoint.Port
+  fullName: Virtufin.WebSocketManager.Services.PeerEndpoint.Port
+  nameWithType: PeerEndpoint.Port
+- uid: Virtufin.WebSocketManager.Services.PeerEndpoint.Port*
+  name: Port
+  href: api/Virtufin.WebSocketManager.Services.PeerEndpoint.html#Virtufin_WebSocketManager_Services_PeerEndpoint_Port_
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerEndpoint.Port
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.PeerEndpoint.Port
+  nameWithType: PeerEndpoint.Port
+- uid: Virtufin.WebSocketManager.Services.PeerEndpoint.ToString
+  name: ToString()
+  href: api/Virtufin.WebSocketManager.Services.PeerEndpoint.html#Virtufin_WebSocketManager_Services_PeerEndpoint_ToString
+  commentId: M:Virtufin.WebSocketManager.Services.PeerEndpoint.ToString
+  fullName: Virtufin.WebSocketManager.Services.PeerEndpoint.ToString()
+  nameWithType: PeerEndpoint.ToString()
+- uid: Virtufin.WebSocketManager.Services.PeerEndpoint.ToString*
+  name: ToString
+  href: api/Virtufin.WebSocketManager.Services.PeerEndpoint.html#Virtufin_WebSocketManager_Services_PeerEndpoint_ToString_
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerEndpoint.ToString
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.PeerEndpoint.ToString
+  nameWithType: PeerEndpoint.ToString
+- uid: Virtufin.WebSocketManager.Services.PeerRegistry
+  name: PeerRegistry
+  href: api/Virtufin.WebSocketManager.Services.PeerRegistry.html
+  commentId: T:Virtufin.WebSocketManager.Services.PeerRegistry
+  fullName: Virtufin.WebSocketManager.Services.PeerRegistry
+  nameWithType: PeerRegistry
+- uid: Virtufin.WebSocketManager.Services.PeerRegistry.Register(System.String,System.String,System.Int32)
+  name: Register(string, string, int)
+  href: api/Virtufin.WebSocketManager.Services.PeerRegistry.html#Virtufin_WebSocketManager_Services_PeerRegistry_Register_System_String_System_String_System_Int32_
+  commentId: M:Virtufin.WebSocketManager.Services.PeerRegistry.Register(System.String,System.String,System.Int32)
+  name.vb: Register(String, String, Integer)
+  fullName: Virtufin.WebSocketManager.Services.PeerRegistry.Register(string, string, int)
+  fullName.vb: Virtufin.WebSocketManager.Services.PeerRegistry.Register(String, String, Integer)
+  nameWithType: PeerRegistry.Register(string, string, int)
+  nameWithType.vb: PeerRegistry.Register(String, String, Integer)
+- uid: Virtufin.WebSocketManager.Services.PeerRegistry.Register*
+  name: Register
+  href: api/Virtufin.WebSocketManager.Services.PeerRegistry.html#Virtufin_WebSocketManager_Services_PeerRegistry_Register_
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerRegistry.Register
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.PeerRegistry.Register
+  nameWithType: PeerRegistry.Register
+- uid: Virtufin.WebSocketManager.Services.PeerRegistry.Snapshot
+  name: Snapshot()
+  href: api/Virtufin.WebSocketManager.Services.PeerRegistry.html#Virtufin_WebSocketManager_Services_PeerRegistry_Snapshot
+  commentId: M:Virtufin.WebSocketManager.Services.PeerRegistry.Snapshot
+  fullName: Virtufin.WebSocketManager.Services.PeerRegistry.Snapshot()
+  nameWithType: PeerRegistry.Snapshot()
+- uid: Virtufin.WebSocketManager.Services.PeerRegistry.Snapshot*
+  name: Snapshot
+  href: api/Virtufin.WebSocketManager.Services.PeerRegistry.html#Virtufin_WebSocketManager_Services_PeerRegistry_Snapshot_
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerRegistry.Snapshot
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.PeerRegistry.Snapshot
+  nameWithType: PeerRegistry.Snapshot
+- uid: Virtufin.WebSocketManager.Services.PeerRegistry.TryGet(System.String,Virtufin.WebSocketManager.Services.PeerEndpoint@)
+  name: TryGet(string, out PeerEndpoint)
+  href: api/Virtufin.WebSocketManager.Services.PeerRegistry.html#Virtufin_WebSocketManager_Services_PeerRegistry_TryGet_System_String_Virtufin_WebSocketManager_Services_PeerEndpoint__
+  commentId: M:Virtufin.WebSocketManager.Services.PeerRegistry.TryGet(System.String,Virtufin.WebSocketManager.Services.PeerEndpoint@)
+  name.vb: TryGet(String, PeerEndpoint)
+  fullName: Virtufin.WebSocketManager.Services.PeerRegistry.TryGet(string, out Virtufin.WebSocketManager.Services.PeerEndpoint)
+  fullName.vb: Virtufin.WebSocketManager.Services.PeerRegistry.TryGet(String, Virtufin.WebSocketManager.Services.PeerEndpoint)
+  nameWithType: PeerRegistry.TryGet(string, out PeerEndpoint)
+  nameWithType.vb: PeerRegistry.TryGet(String, PeerEndpoint)
+- uid: Virtufin.WebSocketManager.Services.PeerRegistry.TryGet*
+  name: TryGet
+  href: api/Virtufin.WebSocketManager.Services.PeerRegistry.html#Virtufin_WebSocketManager_Services_PeerRegistry_TryGet_
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerRegistry.TryGet
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.PeerRegistry.TryGet
+  nameWithType: PeerRegistry.TryGet
+- uid: Virtufin.WebSocketManager.Services.PeerRegistry.Unregister(System.String)
+  name: Unregister(string)
+  href: api/Virtufin.WebSocketManager.Services.PeerRegistry.html#Virtufin_WebSocketManager_Services_PeerRegistry_Unregister_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.PeerRegistry.Unregister(System.String)
+  name.vb: Unregister(String)
+  fullName: Virtufin.WebSocketManager.Services.PeerRegistry.Unregister(string)
+  fullName.vb: Virtufin.WebSocketManager.Services.PeerRegistry.Unregister(String)
+  nameWithType: PeerRegistry.Unregister(string)
+  nameWithType.vb: PeerRegistry.Unregister(String)
+- uid: Virtufin.WebSocketManager.Services.PeerRegistry.Unregister*
+  name: Unregister
+  href: api/Virtufin.WebSocketManager.Services.PeerRegistry.html#Virtufin_WebSocketManager_Services_PeerRegistry_Unregister_
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerRegistry.Unregister
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.PeerRegistry.Unregister
+  nameWithType: PeerRegistry.Unregister
 - uid: Virtufin.WebSocketManager.Services.TopicValidator
   name: TopicValidator
   href: api/Virtufin.WebSocketManager.Services.TopicValidator.html

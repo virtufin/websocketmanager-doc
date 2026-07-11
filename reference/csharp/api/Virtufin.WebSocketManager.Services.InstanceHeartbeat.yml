@@ -5,7 +5,8 @@ items:
   id: InstanceHeartbeat
   parent: Virtufin.WebSocketManager.Services
   children:
-  - Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor(System.String,System.DateTime)
+  - Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor(System.String,System.DateTime,System.String)
+  - Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort
   - Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceId
   - Virtufin.WebSocketManager.Services.InstanceHeartbeat.LastSeenAt
   langs:
@@ -22,7 +23,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: InstanceHeartbeat
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 325
+    startLine: 365
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -42,16 +43,16 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor(System.String,System.DateTime)
-  commentId: M:Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor(System.String,System.DateTime)
-  id: '#ctor(System.String,System.DateTime)'
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor(System.String,System.DateTime,System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor(System.String,System.DateTime,System.String)
+  id: '#ctor(System.String,System.DateTime,System.String)'
   parent: Virtufin.WebSocketManager.Services.InstanceHeartbeat
   langs:
   - csharp
   - vb
-  name: InstanceHeartbeat(string, DateTime)
-  nameWithType: InstanceHeartbeat.InstanceHeartbeat(string, DateTime)
-  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceHeartbeat(string, System.DateTime)
+  name: InstanceHeartbeat(string, DateTime, string)
+  nameWithType: InstanceHeartbeat.InstanceHeartbeat(string, DateTime, string)
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceHeartbeat(string, System.DateTime, string)
   type: Constructor
   source:
     remote:
@@ -60,24 +61,29 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 325
+    startLine: 365
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
   summary: Persistent heartbeat record stored at <code>websocketmanager/instances/&lt;instance-id&gt;</code>.
   example: []
   syntax:
-    content: public InstanceHeartbeat(string InstanceId, DateTime LastSeenAt)
+    content: public InstanceHeartbeat(string InstanceId, DateTime LastSeenAt, string GrpcHostPort)
     parameters:
     - id: InstanceId
       type: System.String
+      description: Local instance id (host name).
     - id: LastSeenAt
       type: System.DateTime
-    content.vb: Public Sub New(InstanceId As String, LastSeenAt As Date)
+      description: UTC timestamp of the most recent publish.
+    - id: GrpcHostPort
+      type: System.String
+      description: Host:port the peer should dial to reach this replica's gRPC service.
+    content.vb: Public Sub New(InstanceId As String, LastSeenAt As Date, GrpcHostPort As String)
   overload: Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor*
-  nameWithType.vb: InstanceHeartbeat.New(String, Date)
-  fullName.vb: Virtufin.WebSocketManager.Services.InstanceHeartbeat.New(String, Date)
-  name.vb: New(String, Date)
+  nameWithType.vb: InstanceHeartbeat.New(String, Date, String)
+  fullName.vb: Virtufin.WebSocketManager.Services.InstanceHeartbeat.New(String, Date, String)
+  name.vb: New(String, Date, String)
 - uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceId
   commentId: P:Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceId
   id: InstanceId
@@ -96,10 +102,12 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: InstanceId
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 325
+    startLine: 365
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
+  summary: Local instance id (host name).
+  example: []
   syntax:
     content: public string InstanceId { get; init; }
     parameters: []
@@ -125,10 +133,12 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: LastSeenAt
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 325
+    startLine: 365
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
+  summary: UTC timestamp of the most recent publish.
+  example: []
   syntax:
     content: public DateTime LastSeenAt { get; init; }
     parameters: []
@@ -136,6 +146,37 @@ items:
       type: System.DateTime
     content.vb: Public Property LastSeenAt As Date
   overload: Virtufin.WebSocketManager.Services.InstanceHeartbeat.LastSeenAt*
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort
+  commentId: P:Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort
+  id: GrpcHostPort
+  parent: Virtufin.WebSocketManager.Services.InstanceHeartbeat
+  langs:
+  - csharp
+  - vb
+  name: GrpcHostPort
+  nameWithType: InstanceHeartbeat.GrpcHostPort
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: GrpcHostPort
+    path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
+    startLine: 365
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Host:port the peer should dial to reach this replica's gRPC service.
+  example: []
+  syntax:
+    content: public string GrpcHostPort { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property GrpcHostPort As String
+  overload: Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort*
 references:
 - uid: Virtufin.WebSocketManager.Services
   commentId: N:Virtufin.WebSocketManager.Services
@@ -443,7 +484,7 @@ references:
   - name: )
 - uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor*
   commentId: Overload:Virtufin.WebSocketManager.Services.InstanceHeartbeat.#ctor
-  href: Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat__ctor_System_String_System_DateTime_
+  href: Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat__ctor_System_String_System_DateTime_System_String_
   name: InstanceHeartbeat
   nameWithType: InstanceHeartbeat.InstanceHeartbeat
   fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.InstanceHeartbeat
@@ -484,3 +525,9 @@ references:
   name: LastSeenAt
   nameWithType: InstanceHeartbeat.LastSeenAt
   fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.LastSeenAt
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort*
+  commentId: Overload:Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort
+  href: Virtufin.WebSocketManager.Services.InstanceHeartbeat.html#Virtufin_WebSocketManager_Services_InstanceHeartbeat_GrpcHostPort
+  name: GrpcHostPort
+  nameWithType: InstanceHeartbeat.GrpcHostPort
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat.GrpcHostPort

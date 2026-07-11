@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class DaprAppCallback.RegisteredMethod | Virtufin WebSocketManager - C# Reference </title>
+      <title>Class PeerRegistry | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DaprAppCallback.RegisteredMethod | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Class PeerRegistry | Virtufin WebSocketManager - C# Reference ">
       
-      <meta name="description" content="Registered method: full proto method-name + handler delegate.">
+      <meta name="description" content="Resolves peer replica host:port from observed heartbeats. Each replica publishes its own GrpcHostPort in its heartbeat record;  discovers those heartbeats and registers them here.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/6fe9080f5e160de3a190bdf3e5ba4aa5f4548d11" target="_blank" rel="noopener" class="commit-badge" title="View commit 6fe9080f5e160de3a190bdf3e5ba4aa5f4548d11">
+            <a href="{git_repo_url}/commit/3af928fa87749e902f16c8772107ca30440585c3" target="_blank" rel="noopener" class="commit-badge" title="View commit 3af928fa87749e902f16c8772107ca30440585c3">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">6fe9080f5e160de3a190bdf3e5ba4aa5f4548d11</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">3af928fa87749e902f16c8772107ca30440585c3</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod">
+        <article data-uid="Virtufin.WebSocketManager.Services.PeerRegistry">
 
 
 
-  <h1 id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod" class="text-break">
-Class DaprAppCallback.RegisteredMethod  
+  <h1 id="Virtufin_WebSocketManager_Services_PeerRegistry" data-uid="Virtufin.WebSocketManager.Services.PeerRegistry" class="text-break">
+Class PeerRegistry  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,12 +101,15 @@ Class DaprAppCallback.RegisteredMethod
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Registered method: full proto method-name + handler delegate.</p>
+  <div class="markdown summary"><p>Resolves peer replica host:port from observed heartbeats. Each
+replica publishes its own <code>GrpcHostPort</code> in its heartbeat
+record; <a class="xref" href="Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html">InstanceHeartbeatService</a> discovers those
+heartbeats and registers them here.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record DaprAppCallback.RegisteredMethod : IEquatable&lt;DaprAppCallback.RegisteredMethod&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class PeerRegistry</code></pre>
   </div>
 
 
@@ -116,16 +119,10 @@ Class DaprAppCallback.RegisteredMethod
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DaprAppCallback.RegisteredMethod</span></div>
+      <div><span class="xref">PeerRegistry</span></div>
     </dd>
   </dl>
 
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.html">DaprAppCallback</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html">RegisteredMethod</a>&gt;</div>
-    </dd>
-  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -156,30 +153,32 @@ Class DaprAppCallback.RegisteredMethod
 
 
 
-  <h2 class="section" id="constructors">Constructors
+  <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod__ctor_" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.#ctor*"></a>
+  <a id="Virtufin_WebSocketManager_Services_PeerRegistry_Register_" data-uid="Virtufin.WebSocketManager.Services.PeerRegistry.Register*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod__ctor_System_String_Virtufin_WebSocketManager_Services_DaprAppCallback_MethodHandler_" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.#ctor(System.String,Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler)">
-  RegisteredMethod(string, MethodHandler)
+  <h3 id="Virtufin_WebSocketManager_Services_PeerRegistry_Register_System_String_System_String_System_Int32_" data-uid="Virtufin.WebSocketManager.Services.PeerRegistry.Register(System.String,System.String,System.Int32)">
+  Register(string, string, int)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Registered method: full proto method-name + handler delegate.</p>
+  <div class="markdown level1 summary"><p>Register or update a peer's gRPC endpoint.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RegisteredMethod(string FullMethodName, DaprAppCallback.MethodHandler Handler)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Register(string instanceId, string host, int port)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>FullMethodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>instanceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>Handler</code> <a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.html">DaprAppCallback</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler.html">MethodHandler</a></dt>
+    <dt><code>host</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -194,31 +193,25 @@ Class DaprAppCallback.RegisteredMethod
 
 
 
-  <h2 class="section" id="properties">Properties
-</h2>
+  <a id="Virtufin_WebSocketManager_Services_PeerRegistry_Snapshot_" data-uid="Virtufin.WebSocketManager.Services.PeerRegistry.Snapshot*"></a>
 
-
-  <a id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_FullMethodName_" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_FullMethodName" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName">
-  FullMethodName
+  <h3 id="Virtufin_WebSocketManager_Services_PeerRegistry_Snapshot" data-uid="Virtufin.WebSocketManager.Services.PeerRegistry.Snapshot">
+  Snapshot()
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Snapshot of all known peers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string FullMethodName { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, PeerEndpoint&gt; Snapshot()</code></pre>
   </div>
 
 
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Virtufin.WebSocketManager.Services.PeerEndpoint.html">PeerEndpoint</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -229,29 +222,72 @@ Class DaprAppCallback.RegisteredMethod
 
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_Handler_" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_Handler" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler">
-  Handler
+
+
+  <a id="Virtufin_WebSocketManager_Services_PeerRegistry_TryGet_" data-uid="Virtufin.WebSocketManager.Services.PeerRegistry.TryGet*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_PeerRegistry_TryGet_System_String_Virtufin_WebSocketManager_Services_PeerEndpoint__" data-uid="Virtufin.WebSocketManager.Services.PeerRegistry.TryGet(System.String,Virtufin.WebSocketManager.Services.PeerEndpoint@)">
+  TryGet(string, out PeerEndpoint)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Try to resolve a peer's gRPC endpoint.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DaprAppCallback.MethodHandler Handler { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool TryGet(string instanceId, out PeerEndpoint endpoint)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.html">DaprAppCallback</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler.html">MethodHandler</a></dt>
+    <dt><code>instanceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>endpoint</code> <a class="xref" href="Virtufin.WebSocketManager.Services.PeerEndpoint.html">PeerEndpoint</a></dt>
     <dd></dd>
   </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_PeerRegistry_Unregister_" data-uid="Virtufin.WebSocketManager.Services.PeerRegistry.Unregister*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_PeerRegistry_Unregister_System_String_" data-uid="Virtufin.WebSocketManager.Services.PeerRegistry.Unregister(System.String)">
+  Unregister(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove a peer's entry (e.g. on graceful shutdown of the peer).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unregister(string instanceId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instanceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
 
 
 

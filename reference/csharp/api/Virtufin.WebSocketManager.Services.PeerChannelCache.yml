@@ -1,0 +1,706 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache
+  commentId: T:Virtufin.WebSocketManager.Services.PeerChannelCache
+  id: PeerChannelCache
+  parent: Virtufin.WebSocketManager.Services
+  children:
+  - Virtufin.WebSocketManager.Services.PeerChannelCache.#ctor(Virtufin.WebSocketManager.Services.PeerRegistry,Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions},Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.PeerChannelCache})
+  - Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose
+  - Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient(System.String)
+  langs:
+  - csharp
+  - vb
+  name: PeerChannelCache
+  nameWithType: PeerChannelCache
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/PeerChannelCache.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: PeerChannelCache
+    path: ../../../src/Virtufin.WebSocketManager/Services/PeerChannelCache.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  syntax:
+    content: 'public sealed class PeerChannelCache : IDisposable'
+    content.vb: Public NotInheritable Class PeerChannelCache Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache.#ctor(Virtufin.WebSocketManager.Services.PeerRegistry,Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions},Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.PeerChannelCache})
+  commentId: M:Virtufin.WebSocketManager.Services.PeerChannelCache.#ctor(Virtufin.WebSocketManager.Services.PeerRegistry,Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions},Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.PeerChannelCache})
+  id: '#ctor(Virtufin.WebSocketManager.Services.PeerRegistry,Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions},Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.PeerChannelCache})'
+  parent: Virtufin.WebSocketManager.Services.PeerChannelCache
+  langs:
+  - csharp
+  - vb
+  name: PeerChannelCache(PeerRegistry, IOptions<PeerForwardOptions>, ILogger<PeerChannelCache>)
+  nameWithType: PeerChannelCache.PeerChannelCache(PeerRegistry, IOptions<PeerForwardOptions>, ILogger<PeerChannelCache>)
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache.PeerChannelCache(Virtufin.WebSocketManager.Services.PeerRegistry, Microsoft.Extensions.Options.IOptions<Virtufin.WebSocketManager.Configuration.PeerForwardOptions>, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.PeerChannelCache>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/PeerChannelCache.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: .ctor
+    path: ../../../src/Virtufin.WebSocketManager/Services/PeerChannelCache.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  syntax:
+    content: public PeerChannelCache(PeerRegistry registry, IOptions<PeerForwardOptions> options, ILogger<PeerChannelCache> logger)
+    parameters:
+    - id: registry
+      type: Virtufin.WebSocketManager.Services.PeerRegistry
+    - id: options
+      type: Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions}
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.PeerChannelCache}
+    content.vb: Public Sub New(registry As PeerRegistry, options As IOptions(Of PeerForwardOptions), logger As ILogger(Of PeerChannelCache))
+  overload: Virtufin.WebSocketManager.Services.PeerChannelCache.#ctor*
+  nameWithType.vb: PeerChannelCache.New(PeerRegistry, IOptions(Of PeerForwardOptions), ILogger(Of PeerChannelCache))
+  fullName.vb: Virtufin.WebSocketManager.Services.PeerChannelCache.New(Virtufin.WebSocketManager.Services.PeerRegistry, Microsoft.Extensions.Options.IOptions(Of Virtufin.WebSocketManager.Configuration.PeerForwardOptions), Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.PeerChannelCache))
+  name.vb: New(PeerRegistry, IOptions(Of PeerForwardOptions), ILogger(Of PeerChannelCache))
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient(System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient(System.String)
+  id: TryGetClient(System.String)
+  parent: Virtufin.WebSocketManager.Services.PeerChannelCache
+  langs:
+  - csharp
+  - vb
+  name: TryGetClient(string)
+  nameWithType: PeerChannelCache.TryGetClient(string)
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient(string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/PeerChannelCache.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: TryGetClient
+    path: ../../../src/Virtufin.WebSocketManager/Services/PeerChannelCache.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    Resolve a typed <xref href="Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient" data-throw-if-not-resolved="false"></xref> for the peer
+
+    owning <code class="paramref">instanceId</code>. Returns null if the peer
+
+    has not heartbeated yet and no default host/port is configured.
+  example: []
+  syntax:
+    content: public WebSocketManager.WebSocketManagerClient? TryGetClient(string instanceId)
+    parameters:
+    - id: instanceId
+      type: System.String
+    return:
+      type: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient
+    content.vb: Public Function TryGetClient(instanceId As String) As WebSocketManager.WebSocketManagerClient
+  overload: Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient*
+  nameWithType.vb: PeerChannelCache.TryGetClient(String)
+  fullName.vb: Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient(String)
+  name.vb: TryGetClient(String)
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose
+  commentId: M:Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose
+  id: Dispose
+  parent: Virtufin.WebSocketManager.Services.PeerChannelCache
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: PeerChannelCache.Dispose()
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/PeerChannelCache.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: Dispose
+    path: ../../../src/Virtufin.WebSocketManager/Services/PeerChannelCache.cs
+    startLine: 68
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Virtufin.WebSocketManager.Services
+  commentId: N:Virtufin.WebSocketManager.Services
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services
+  nameWithType: Virtufin.WebSocketManager.Services
+  fullName: Virtufin.WebSocketManager.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache.#ctor*
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerChannelCache.#ctor
+  href: Virtufin.WebSocketManager.Services.PeerChannelCache.html#Virtufin_WebSocketManager_Services_PeerChannelCache__ctor_Virtufin_WebSocketManager_Services_PeerRegistry_Microsoft_Extensions_Options_IOptions_Virtufin_WebSocketManager_Configuration_PeerForwardOptions__Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_PeerChannelCache__
+  name: PeerChannelCache
+  nameWithType: PeerChannelCache.PeerChannelCache
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache.PeerChannelCache
+  nameWithType.vb: PeerChannelCache.New
+  fullName.vb: Virtufin.WebSocketManager.Services.PeerChannelCache.New
+  name.vb: New
+- uid: Virtufin.WebSocketManager.Services.PeerRegistry
+  commentId: T:Virtufin.WebSocketManager.Services.PeerRegistry
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.PeerRegistry.html
+  name: PeerRegistry
+  nameWithType: PeerRegistry
+  fullName: Virtufin.WebSocketManager.Services.PeerRegistry
+- uid: Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Configuration.PeerForwardOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<PeerForwardOptions>
+  nameWithType: IOptions<PeerForwardOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<Virtufin.WebSocketManager.Configuration.PeerForwardOptions>
+  nameWithType.vb: IOptions(Of PeerForwardOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of Virtufin.WebSocketManager.Configuration.PeerForwardOptions)
+  name.vb: IOptions(Of PeerForwardOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions
+    name: PeerForwardOptions
+    href: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions
+    name: PeerForwardOptions
+    href: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.PeerChannelCache}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.PeerChannelCache}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<PeerChannelCache>
+  nameWithType: ILogger<PeerChannelCache>
+  fullName: Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.PeerChannelCache>
+  nameWithType.vb: ILogger(Of PeerChannelCache)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.PeerChannelCache)
+  name.vb: ILogger(Of PeerChannelCache)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Services.PeerChannelCache
+    name: PeerChannelCache
+    href: Virtufin.WebSocketManager.Services.PeerChannelCache.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Services.PeerChannelCache
+    name: PeerChannelCache
+    href: Virtufin.WebSocketManager.Services.PeerChannelCache.html
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient
+  commentId: T:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient
+  parent: Virtufin.WebSocketManager.Protos
+  name: WebSocketManager.WebSocketManagerClient
+  nameWithType: WebSocketManager.WebSocketManagerClient
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager
+    name: WebSocketManager
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient
+    name: WebSocketManagerClient
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager
+    name: WebSocketManager
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient
+    name: WebSocketManagerClient
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient*
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient
+  href: Virtufin.WebSocketManager.Services.PeerChannelCache.html#Virtufin_WebSocketManager_Services_PeerChannelCache_TryGetClient_System_String_
+  name: TryGetClient
+  nameWithType: PeerChannelCache.TryGetClient
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache.TryGetClient
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.WebSocketManager.Protos
+  commentId: N:Virtufin.WebSocketManager.Protos
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Protos
+  nameWithType: Virtufin.WebSocketManager.Protos
+  fullName: Virtufin.WebSocketManager.Protos
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos
+    name: Protos
+    href: Virtufin.WebSocketManager.Protos.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos
+    name: Protos
+    href: Virtufin.WebSocketManager.Protos.html
+- uid: Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose*
+  commentId: Overload:Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose
+  href: Virtufin.WebSocketManager.Services.PeerChannelCache.html#Virtufin_WebSocketManager_Services_PeerChannelCache_Dispose
+  name: Dispose
+  nameWithType: PeerChannelCache.Dispose
+  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
