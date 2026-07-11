@@ -9,8 +9,6 @@ items:
   - Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
   - Virtufin.WebSocketManager.Configuration.DaprConstants
   - Virtufin.WebSocketManager.Configuration.InfraEvents
-  - Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
-  - Virtufin.WebSocketManager.Configuration.PeerForwardOptions
   - Virtufin.WebSocketManager.Configuration.PortConstants
   - Virtufin.WebSocketManager.Configuration.TimeoutConstants
   - Virtufin.WebSocketManager.Configuration.Topics
@@ -49,20 +47,6 @@ references:
   name: InfraEvents
   nameWithType: InfraEvents
   fullName: Virtufin.WebSocketManager.Configuration.InfraEvents
-- uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
-  commentId: T:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
-  parent: Virtufin.WebSocketManager.Configuration
-  href: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.html
-  name: InstanceHeartbeatOptions
-  nameWithType: InstanceHeartbeatOptions
-  fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
-- uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions
-  commentId: T:Virtufin.WebSocketManager.Configuration.PeerForwardOptions
-  parent: Virtufin.WebSocketManager.Configuration
-  href: Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html
-  name: PeerForwardOptions
-  nameWithType: PeerForwardOptions
-  fullName: Virtufin.WebSocketManager.Configuration.PeerForwardOptions
 - uid: Virtufin.WebSocketManager.Configuration.PortConstants
   commentId: T:Virtufin.WebSocketManager.Configuration.PortConstants
   href: Virtufin.WebSocketManager.Configuration.PortConstants.html

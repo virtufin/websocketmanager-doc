@@ -10,7 +10,6 @@ items:
   - Virtufin.WebSocketManager.Services.AppMetrics
   - Virtufin.WebSocketManager.Services.ConnectionNotFoundException
   - Virtufin.WebSocketManager.Services.ConnectionOwnershipException
-  - Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
   - Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
   - Virtufin.WebSocketManager.Services.DaprConnectionRepository
   - Virtufin.WebSocketManager.Services.DaprPublisher
@@ -25,14 +24,9 @@ items:
   - Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
   - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
   - Virtufin.WebSocketManager.Services.IWebSocketService
-  - Virtufin.WebSocketManager.Services.InstanceHeartbeat
-  - Virtufin.WebSocketManager.Services.InstanceHeartbeatService
   - Virtufin.WebSocketManager.Services.MessageSendException
   - Virtufin.WebSocketManager.Services.MessageTimeoutException
   - Virtufin.WebSocketManager.Services.Options
-  - Virtufin.WebSocketManager.Services.PeerChannelCache
-  - Virtufin.WebSocketManager.Services.PeerEndpoint
-  - Virtufin.WebSocketManager.Services.PeerRegistry
   - Virtufin.WebSocketManager.Services.TopicValidator
   - Virtufin.WebSocketManager.Services.WebSocketClientWrapper
   - Virtufin.WebSocketManager.Services.WebSocketNotConnectedException
@@ -148,12 +142,6 @@ references:
   name: ConnectionOwnershipException
   nameWithType: ConnectionOwnershipException
   fullName: Virtufin.WebSocketManager.Services.ConnectionOwnershipException
-- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
-  commentId: T:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
-  href: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html
-  name: ConnectionReclaimerHostedService
-  nameWithType: ConnectionReclaimerHostedService
-  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
 - uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
   commentId: T:Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
   href: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html
@@ -246,18 +234,6 @@ references:
   name: IWebSocketService
   nameWithType: IWebSocketService
   fullName: Virtufin.WebSocketManager.Services.IWebSocketService
-- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat
-  commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeat
-  href: Virtufin.WebSocketManager.Services.InstanceHeartbeat.html
-  name: InstanceHeartbeat
-  nameWithType: InstanceHeartbeat
-  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeat
-- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
-  commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeatService
-  href: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html
-  name: InstanceHeartbeatService
-  nameWithType: InstanceHeartbeatService
-  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
 - uid: Virtufin.WebSocketManager.Services.MessageSendException
   commentId: T:Virtufin.WebSocketManager.Services.MessageSendException
   href: Virtufin.WebSocketManager.Services.MessageSendException.html
@@ -270,26 +246,6 @@ references:
   name: MessageTimeoutException
   nameWithType: MessageTimeoutException
   fullName: Virtufin.WebSocketManager.Services.MessageTimeoutException
-- uid: Virtufin.WebSocketManager.Services.PeerChannelCache
-  commentId: T:Virtufin.WebSocketManager.Services.PeerChannelCache
-  href: Virtufin.WebSocketManager.Services.PeerChannelCache.html
-  name: PeerChannelCache
-  nameWithType: PeerChannelCache
-  fullName: Virtufin.WebSocketManager.Services.PeerChannelCache
-- uid: Virtufin.WebSocketManager.Services.PeerEndpoint
-  commentId: T:Virtufin.WebSocketManager.Services.PeerEndpoint
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.PeerEndpoint.html
-  name: PeerEndpoint
-  nameWithType: PeerEndpoint
-  fullName: Virtufin.WebSocketManager.Services.PeerEndpoint
-- uid: Virtufin.WebSocketManager.Services.PeerRegistry
-  commentId: T:Virtufin.WebSocketManager.Services.PeerRegistry
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.PeerRegistry.html
-  name: PeerRegistry
-  nameWithType: PeerRegistry
-  fullName: Virtufin.WebSocketManager.Services.PeerRegistry
 - uid: Virtufin.WebSocketManager.Services.TopicValidator
   commentId: T:Virtufin.WebSocketManager.Services.TopicValidator
   href: Virtufin.WebSocketManager.Services.TopicValidator.html

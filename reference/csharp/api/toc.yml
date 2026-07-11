@@ -20,12 +20,6 @@ items:
     - uid: Virtufin.WebSocketManager.Configuration.InfraEvents
       name: InfraEvents
       type: Class
-    - uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
-      name: InstanceHeartbeatOptions
-      type: Class
-    - uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions
-      name: PeerForwardOptions
-      type: Class
     - uid: Virtufin.WebSocketManager.Configuration.PortConstants
       name: PortConstants
       type: Class
@@ -88,9 +82,6 @@ items:
     - uid: Virtufin.WebSocketManager.Services.ConnectionOwnershipException
       name: ConnectionOwnershipException
       type: Class
-    - uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
-      name: ConnectionReclaimerHostedService
-      type: Class
     - uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
       name: DaprCircuitBreakerHealthCheck
       type: Class
@@ -133,26 +124,11 @@ items:
     - uid: Virtufin.WebSocketManager.Services.IWebSocketService
       name: IWebSocketService
       type: Interface
-    - uid: Virtufin.WebSocketManager.Services.InstanceHeartbeat
-      name: InstanceHeartbeat
-      type: Class
-    - uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
-      name: InstanceHeartbeatService
-      type: Class
     - uid: Virtufin.WebSocketManager.Services.MessageSendException
       name: MessageSendException
       type: Class
     - uid: Virtufin.WebSocketManager.Services.MessageTimeoutException
       name: MessageTimeoutException
-      type: Class
-    - uid: Virtufin.WebSocketManager.Services.PeerChannelCache
-      name: PeerChannelCache
-      type: Class
-    - uid: Virtufin.WebSocketManager.Services.PeerEndpoint
-      name: PeerEndpoint
-      type: Struct
-    - uid: Virtufin.WebSocketManager.Services.PeerRegistry
-      name: PeerRegistry
       type: Class
     - uid: Virtufin.WebSocketManager.Services.TopicValidator
       name: TopicValidator

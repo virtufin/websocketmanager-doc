@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/562e7f719fb232316ac33ef8387099c094448c1a" target="_blank" rel="noopener" class="commit-badge" title="View commit 562e7f719fb232316ac33ef8387099c094448c1a">
+            <a href="{git_repo_url}/commit/a0762b5a649bc603f1d0e3f19dfebabca41993c5" target="_blank" rel="noopener" class="commit-badge" title="View commit a0762b5a649bc603f1d0e3f19dfebabca41993c5">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">562e7f719fb232316ac33ef8387099c094448c1a</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">a0762b5a649bc603f1d0e3f19dfebabca41993c5</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,18 +135,6 @@ already wired into the OpenTelemetry pipeline in <code>Program.cs</code>.</p>
       <dd></dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html">ConnectionReclaimerHostedService</a></dt>
-      <dd><p>Background service that periodically reclaims connections from dead
-instances. The owner of a connection is dead if and only if it is not
-in <a class="xref" href="Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_GetKnownInstanceIds">GetKnownInstanceIds()</a> — which is
-populated by <a class="xref" href="Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html">InstanceHeartbeatService</a> based on observed
-heartbeats. Reclamation re-stamps the record so a surviving replica
-can act on it.</p>
-<p>Connections whose record has been removed by the state store's TTL are
-naturally invisible to this sweep and are not re-stamped.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html">DaprCircuitBreakerHealthCheck</a></dt>
       <dd><p>Health check that reports Dapr circuit breaker state.</p>
 </dd>
@@ -193,42 +181,12 @@ Falls back to a generated GUID if no HOSTNAME is set.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.InstanceHeartbeat.html">InstanceHeartbeat</a></dt>
-      <dd><p>Persistent heartbeat record stored at <code>websocketmanager/instances/&lt;instance-id&gt;</code>.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html">InstanceHeartbeatService</a></dt>
-      <dd><p>Background service that publishes a heartbeat for this instance
-to the Dapr state store on a configured interval and discovers
-peer instance heartbeats to populate the local
-<a class="xref" href="Virtufin.WebSocketManager.Services.PeerRegistry.html">PeerRegistry</a>.</p>
-<p>Without this, <a class="xref" href="Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html">ConnectionReclaimerHostedService</a> treats
-every connection from a different instance ID as a candidate for
-reclamation — which is correct only after the peer has died.
-Heartbeats let live peers advertise their presence so live
-connections are never reclaimed.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.MessageSendException.html">MessageSendException</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.MessageTimeoutException.html">MessageTimeoutException</a></dt>
       <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.PeerChannelCache.html">PeerChannelCache</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.PeerRegistry.html">PeerRegistry</a></dt>
-      <dd><p>Resolves peer replica host:port from observed heartbeats. Each
-replica publishes its own <code>GrpcHostPort</code> in its heartbeat
-record; <a class="xref" href="Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html">InstanceHeartbeatService</a> discovers those
-heartbeats and registers them here.</p>
-</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.TopicValidator.html">TopicValidator</a></dt>
@@ -270,13 +228,6 @@ e.g. <code>websocketmanager.lifecycle</code>, <code>workmanager.infra.worker</co
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Services.WebSocketService.html">WebSocketService</a></dt>
-      <dd></dd>
-    </dl>
-    <h3 id="structs">
-Structs
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.WebSocketManager.Services.PeerEndpoint.html">PeerEndpoint</a></dt>
       <dd></dd>
     </dl>
     <h3 id="interfaces">

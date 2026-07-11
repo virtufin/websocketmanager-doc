@@ -121,7 +121,7 @@ items:
   summary: >-
     Registers a newly discovered live instance. Called by
 
-    <xref href="Virtufin.WebSocketManager.Services.InstanceHeartbeatService" data-throw-if-not-resolved="false"></xref> when peer heartbeats are
+    InstanceHeartbeatService when peer heartbeats are
 
     observed within the stale-threshold window.
   example: []
@@ -296,12 +296,6 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
-  commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeatService
-  href: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html
-  name: InstanceHeartbeatService
-  nameWithType: InstanceHeartbeatService
-  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
 - uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance*
   commentId: Overload:Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance
   href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_RegisterLiveInstance_System_String_
