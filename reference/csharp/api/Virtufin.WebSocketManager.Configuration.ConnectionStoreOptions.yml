@@ -1,0 +1,672 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  commentId: T:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  id: ConnectionStoreOptions
+  parent: Virtufin.WebSocketManager.Configuration
+  children:
+  - Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  - Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSecondsEnvVar
+  - Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.DefaultConnectionRecordTtlSeconds
+  - Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment(System.Func{System.String,System.String})
+  - Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MaxConnectionRecordTtlSeconds
+  - Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MinConnectionRecordTtlSeconds
+  langs:
+  - csharp
+  - vb
+  name: ConnectionStoreOptions
+  nameWithType: ConnectionStoreOptions
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ConnectionStoreOptions
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: >-
+    Tuning for connection record state-store TTL. The WSM sets a Dapr
+
+    <code>ttlInSeconds</code> on every connection record write, and refreshes it
+
+    on every successful send. Records whose TTL elapses without traffic
+
+    are removed by the state store without explicit reclaimer intervention.
+  example: []
+  syntax:
+    content: 'public sealed record ConnectionStoreOptions : IEquatable<ConnectionStoreOptions>'
+    content.vb: Public NotInheritable Class ConnectionStoreOptions Implements IEquatable(Of ConnectionStoreOptions)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSecondsEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSecondsEnvVar
+  id: ConnectionRecordTtlSecondsEnvVar
+  parent: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  langs:
+  - csharp
+  - vb
+  name: ConnectionRecordTtlSecondsEnvVar
+  nameWithType: ConnectionStoreOptions.ConnectionRecordTtlSecondsEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSecondsEnvVar
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ConnectionRecordTtlSecondsEnvVar
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Env var for <xref href="Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string ConnectionRecordTtlSecondsEnvVar = "CONNECTION_RECORD_TTL_SECONDS"
+    return:
+      type: System.String
+    content.vb: Public Const ConnectionRecordTtlSecondsEnvVar As String = "CONNECTION_RECORD_TTL_SECONDS"
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.DefaultConnectionRecordTtlSeconds
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.DefaultConnectionRecordTtlSeconds
+  id: DefaultConnectionRecordTtlSeconds
+  parent: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultConnectionRecordTtlSeconds
+  nameWithType: ConnectionStoreOptions.DefaultConnectionRecordTtlSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.DefaultConnectionRecordTtlSeconds
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DefaultConnectionRecordTtlSeconds
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Default connection record TTL (5 minutes).
+  example: []
+  syntax:
+    content: public const int DefaultConnectionRecordTtlSeconds = 300
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultConnectionRecordTtlSeconds As Integer = 300
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MinConnectionRecordTtlSeconds
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MinConnectionRecordTtlSeconds
+  id: MinConnectionRecordTtlSeconds
+  parent: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  langs:
+  - csharp
+  - vb
+  name: MinConnectionRecordTtlSeconds
+  nameWithType: ConnectionStoreOptions.MinConnectionRecordTtlSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MinConnectionRecordTtlSeconds
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: MinConnectionRecordTtlSeconds
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: >-
+    Minimum allowed TTL in seconds. Lower bound to keep connections
+        from disappearing during normal long-polling activity.
+  example: []
+  syntax:
+    content: public const int MinConnectionRecordTtlSeconds = 30
+    return:
+      type: System.Int32
+    content.vb: Public Const MinConnectionRecordTtlSeconds As Integer = 30
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MaxConnectionRecordTtlSeconds
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MaxConnectionRecordTtlSeconds
+  id: MaxConnectionRecordTtlSeconds
+  parent: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  langs:
+  - csharp
+  - vb
+  name: MaxConnectionRecordTtlSeconds
+  nameWithType: ConnectionStoreOptions.MaxConnectionRecordTtlSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MaxConnectionRecordTtlSeconds
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: MaxConnectionRecordTtlSeconds
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: >-
+    Maximum allowed TTL in seconds. Upper bound to keep state
+        growth bounded if the reclaimer sweep is disabled.
+  example: []
+  syntax:
+    content: public const int MaxConnectionRecordTtlSeconds = 3600
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxConnectionRecordTtlSeconds As Integer = 3600
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  commentId: P:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  id: ConnectionRecordTtlSeconds
+  parent: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  langs:
+  - csharp
+  - vb
+  name: ConnectionRecordTtlSeconds
+  nameWithType: ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ConnectionRecordTtlSeconds
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Connection record TTL in seconds.
+  example: []
+  syntax:
+    content: public int ConnectionRecordTtlSeconds { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ConnectionRecordTtlSeconds As Integer
+  overload: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds*
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment(System.Func{System.String,System.String})
+  commentId: M:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment(System.Func{System.String,System.String})
+  id: FromEnvironment(System.Func{System.String,System.String})
+  parent: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  langs:
+  - csharp
+  - vb
+  name: FromEnvironment(Func<string, string?>)
+  nameWithType: ConnectionStoreOptions.FromEnvironment(Func<string, string?>)
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment(System.Func<string, string?>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: FromEnvironment
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public static ConnectionStoreOptions FromEnvironment(Func<string, string?> getEnvironment)
+    parameters:
+    - id: getEnvironment
+      type: System.Func{System.String,System.String}
+    return:
+      type: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+    content.vb: Public Shared Function FromEnvironment(getEnvironment As Func(Of String, String)) As ConnectionStoreOptions
+  overload: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment*
+  nameWithType.vb: ConnectionStoreOptions.FromEnvironment(Func(Of String, String))
+  fullName.vb: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment(System.Func(Of String, String))
+  name.vb: FromEnvironment(Func(Of String, String))
+references:
+- uid: Virtufin.WebSocketManager.Configuration
+  commentId: N:Virtufin.WebSocketManager.Configuration
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Configuration
+  nameWithType: Virtufin.WebSocketManager.Configuration
+  fullName: Virtufin.WebSocketManager.Configuration
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Configuration
+    name: Configuration
+    href: Virtufin.WebSocketManager.Configuration.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Configuration
+    name: Configuration
+    href: Virtufin.WebSocketManager.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions}
+  commentId: T:System.IEquatable{Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ConnectionStoreOptions>
+  nameWithType: IEquatable<ConnectionStoreOptions>
+  fullName: System.IEquatable<Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions>
+  nameWithType.vb: IEquatable(Of ConnectionStoreOptions)
+  fullName.vb: System.IEquatable(Of Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions)
+  name.vb: IEquatable(Of ConnectionStoreOptions)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+    name: ConnectionStoreOptions
+    href: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+    name: ConnectionStoreOptions
+    href: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  commentId: P:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  href: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html#Virtufin_WebSocketManager_Configuration_ConnectionStoreOptions_ConnectionRecordTtlSeconds
+  name: ConnectionRecordTtlSeconds
+  nameWithType: ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds*
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  href: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html#Virtufin_WebSocketManager_Configuration_ConnectionStoreOptions_ConnectionRecordTtlSeconds
+  name: ConnectionRecordTtlSeconds
+  nameWithType: ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment*
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment
+  href: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html#Virtufin_WebSocketManager_Configuration_ConnectionStoreOptions_FromEnvironment_System_Func_System_String_System_String__
+  name: FromEnvironment
+  nameWithType: ConnectionStoreOptions.FromEnvironment
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment
+- uid: System.Func{System.String,System.String}
+  commentId: T:System.Func{System.String,System.String}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, string>
+  nameWithType: Func<string, string>
+  fullName: System.Func<string, string>
+  nameWithType.vb: Func(Of String, String)
+  fullName.vb: System.Func(Of String, String)
+  name.vb: Func(Of String, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  commentId: T:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  parent: Virtufin.WebSocketManager.Configuration
+  href: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html
+  name: ConnectionStoreOptions
+  nameWithType: ConnectionStoreOptions
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )

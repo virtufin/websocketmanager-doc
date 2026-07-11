@@ -11,6 +11,7 @@ items:
   - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetByInstanceIdAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync(Virtufin.WebSocketManager.Services.DaprStateStoreEntry,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync(System.String,System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
@@ -134,7 +135,7 @@ items:
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
-  summary: Saves a connection entry to the state store.
+  summary: Saves a connection entry to the state store with a sliding TTL.
   example: []
   syntax:
     content: Task SaveAsync(DaprStateStoreEntry entry, CancellationToken cancellationToken = default)
@@ -147,9 +148,54 @@ items:
       description: Cancellation token.
     return:
       type: System.Threading.Tasks.Task
-      description: A task representing the asynchronous operation.
+      description: A task representing the asynchronous save operation.
     content.vb: Function SaveAsync(entry As DaprStateStoreEntry, cancellationToken As CancellationToken = Nothing) As Task
   overload: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync*
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync(System.String,System.Threading.CancellationToken)
+  id: TouchAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  langs:
+  - csharp
+  - vb
+  name: TouchAsync(string, CancellationToken)
+  nameWithType: IDaprConnectionRepository.TouchAsync(string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: TouchAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
+    startLine: 42
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    Refreshes the TTL on an existing connection entry without changing
+
+    its payload. Loads the current entry, then re-saves it with the
+
+    configured TTL. No-op if the entry no longer exists.
+  example: []
+  syntax:
+    content: Task TouchAsync(string id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.String
+      description: The connection ID.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function TouchAsync(id As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync*
+  nameWithType.vb: IDaprConnectionRepository.TouchAsync(String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync(String, System.Threading.CancellationToken)
+  name.vb: TouchAsync(String, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync(System.String,System.Threading.CancellationToken)
   commentId: M:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync(System.String,System.Threading.CancellationToken)
   id: DeleteAsync(System.String,System.Threading.CancellationToken)
@@ -168,7 +214,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DeleteAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 41
+    startLine: 50
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -185,7 +231,7 @@ items:
       description: Cancellation token.
     return:
       type: System.Threading.Tasks.Task
-      description: A task representing the asynchronous operation.
+      description: A task representing the asynchronous delete operation.
     content.vb: Function DeleteAsync(id As String, cancellationToken As CancellationToken = Nothing) As Task
   overload: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync*
   nameWithType.vb: IDaprConnectionRepository.DeleteAsync(String, CancellationToken)
@@ -209,7 +255,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetByInstanceIdAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 46
+    startLine: 55
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -247,7 +293,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ClearAllAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 51
+    startLine: 60
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -524,6 +570,12 @@ references:
   name: Task
   nameWithType: Task
   fullName: System.Threading.Tasks.Task
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync
+  href: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_TouchAsync_System_String_System_Threading_CancellationToken_
+  name: TouchAsync
+  nameWithType: IDaprConnectionRepository.TouchAsync
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync
 - uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync*
   commentId: Overload:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync
   href: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_DeleteAsync_System_String_System_Threading_CancellationToken_

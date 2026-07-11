@@ -58,6 +58,65 @@ references:
   commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
   fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
   nameWithType: ConnectionEvents.Unknown
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  name: ConnectionStoreOptions
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html
+  commentId: T:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  nameWithType: ConnectionStoreOptions
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  name: ConnectionRecordTtlSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html#Virtufin_WebSocketManager_Configuration_ConnectionStoreOptions_ConnectionRecordTtlSeconds
+  commentId: P:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  nameWithType: ConnectionStoreOptions.ConnectionRecordTtlSeconds
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds*
+  name: ConnectionRecordTtlSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html#Virtufin_WebSocketManager_Configuration_ConnectionStoreOptions_ConnectionRecordTtlSeconds_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSeconds
+  nameWithType: ConnectionStoreOptions.ConnectionRecordTtlSeconds
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSecondsEnvVar
+  name: ConnectionRecordTtlSecondsEnvVar
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html#Virtufin_WebSocketManager_Configuration_ConnectionStoreOptions_ConnectionRecordTtlSecondsEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSecondsEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.ConnectionRecordTtlSecondsEnvVar
+  nameWithType: ConnectionStoreOptions.ConnectionRecordTtlSecondsEnvVar
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.DefaultConnectionRecordTtlSeconds
+  name: DefaultConnectionRecordTtlSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html#Virtufin_WebSocketManager_Configuration_ConnectionStoreOptions_DefaultConnectionRecordTtlSeconds
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.DefaultConnectionRecordTtlSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.DefaultConnectionRecordTtlSeconds
+  nameWithType: ConnectionStoreOptions.DefaultConnectionRecordTtlSeconds
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment(System.Func{System.String,System.String})
+  name: FromEnvironment(Func<string, string?>)
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html#Virtufin_WebSocketManager_Configuration_ConnectionStoreOptions_FromEnvironment_System_Func_System_String_System_String__
+  commentId: M:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment(System.Func{System.String,System.String})
+  name.vb: FromEnvironment(Func(Of String, String))
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment(System.Func<string, string?>)
+  fullName.vb: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment(System.Func(Of String, String))
+  nameWithType: ConnectionStoreOptions.FromEnvironment(Func<string, string?>)
+  nameWithType.vb: ConnectionStoreOptions.FromEnvironment(Func(Of String, String))
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment*
+  name: FromEnvironment
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html#Virtufin_WebSocketManager_Configuration_ConnectionStoreOptions_FromEnvironment_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment
+  nameWithType: ConnectionStoreOptions.FromEnvironment
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MaxConnectionRecordTtlSeconds
+  name: MaxConnectionRecordTtlSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html#Virtufin_WebSocketManager_Configuration_ConnectionStoreOptions_MaxConnectionRecordTtlSeconds
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MaxConnectionRecordTtlSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MaxConnectionRecordTtlSeconds
+  nameWithType: ConnectionStoreOptions.MaxConnectionRecordTtlSeconds
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MinConnectionRecordTtlSeconds
+  name: MinConnectionRecordTtlSeconds
+  href: api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html#Virtufin_WebSocketManager_Configuration_ConnectionStoreOptions_MinConnectionRecordTtlSeconds
+  commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MinConnectionRecordTtlSeconds
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.MinConnectionRecordTtlSeconds
+  nameWithType: ConnectionStoreOptions.MinConnectionRecordTtlSeconds
 - uid: Virtufin.WebSocketManager.Configuration.DaprConstants
   name: DaprConstants
   href: api/Virtufin.WebSocketManager.Configuration.DaprConstants.html
@@ -267,6 +326,65 @@ references:
   commentId: F:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.StaleThresholdSecondsEnvVar
   fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.StaleThresholdSecondsEnvVar
   nameWithType: InstanceHeartbeatOptions.StaleThresholdSecondsEnvVar
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  name: OwnershipForwardOptions
+  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html
+  commentId: T:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  nameWithType: OwnershipForwardOptions
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.DefaultMissesPerMinuteThreshold
+  name: DefaultMissesPerMinuteThreshold
+  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_DefaultMissesPerMinuteThreshold
+  commentId: F:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.DefaultMissesPerMinuteThreshold
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.DefaultMissesPerMinuteThreshold
+  nameWithType: OwnershipForwardOptions.DefaultMissesPerMinuteThreshold
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func{System.String,System.String})
+  name: FromEnvironment(Func<string, string?>)
+  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_FromEnvironment_System_Func_System_String_System_String__
+  commentId: M:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func{System.String,System.String})
+  name.vb: FromEnvironment(Func(Of String, String))
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func<string, string?>)
+  fullName.vb: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func(Of String, String))
+  nameWithType: OwnershipForwardOptions.FromEnvironment(Func<string, string?>)
+  nameWithType.vb: OwnershipForwardOptions.FromEnvironment(Func(Of String, String))
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment*
+  name: FromEnvironment
+  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_FromEnvironment_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment
+  nameWithType: OwnershipForwardOptions.FromEnvironment
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MaxMissesPerMinuteThreshold
+  name: MaxMissesPerMinuteThreshold
+  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MaxMissesPerMinuteThreshold
+  commentId: F:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MaxMissesPerMinuteThreshold
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MaxMissesPerMinuteThreshold
+  nameWithType: OwnershipForwardOptions.MaxMissesPerMinuteThreshold
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MinMissesPerMinuteThreshold
+  name: MinMissesPerMinuteThreshold
+  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MinMissesPerMinuteThreshold
+  commentId: F:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MinMissesPerMinuteThreshold
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MinMissesPerMinuteThreshold
+  nameWithType: OwnershipForwardOptions.MinMissesPerMinuteThreshold
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+  name: MissesPerMinuteThreshold
+  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MissesPerMinuteThreshold
+  commentId: P:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+  nameWithType: OwnershipForwardOptions.MissesPerMinuteThreshold
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold*
+  name: MissesPerMinuteThreshold
+  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MissesPerMinuteThreshold_
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+  nameWithType: OwnershipForwardOptions.MissesPerMinuteThreshold
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
+  name: OwnershipMissForwardThresholdEnvVar
+  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_OwnershipMissForwardThresholdEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
+  nameWithType: OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
 - uid: Virtufin.WebSocketManager.Configuration.PortConstants
   name: PortConstants
   href: api/Virtufin.WebSocketManager.Configuration.PortConstants.html
@@ -589,15 +707,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Protos.WebSocketManagerService
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService
   nameWithType: WebSocketManagerService
-- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService})
-  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>)
-  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__
-  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService})
-  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService))
-  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>)
-  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService))
-  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>)
-  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService))
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider)
+  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, DaprClient, IInstanceIdProvider)
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_Dapr_Client_DaprClient_Virtufin_WebSocketManager_Services_IInstanceIdProvider_
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider)
+  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, DaprClient, IInstanceIdProvider)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>, Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider)
+  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService), Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider)
+  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, DaprClient, IInstanceIdProvider)
+  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, DaprClient, IInstanceIdProvider)
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor*
   name: WebSocketManagerService
   href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_
@@ -811,6 +929,84 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync
   nameWithType: ApiLifecyclePublisher.PublishIfChangedAsync
+- uid: Virtufin.WebSocketManager.Services.AppMetrics
+  name: AppMetrics
+  href: api/Virtufin.WebSocketManager.Services.AppMetrics.html
+  commentId: T:Virtufin.WebSocketManager.Services.AppMetrics
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics
+  nameWithType: AppMetrics
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.DisconnectFailedPreconditionTotal
+  name: DisconnectFailedPreconditionTotal
+  href: api/Virtufin.WebSocketManager.Services.AppMetrics.html#Virtufin_WebSocketManager_Services_AppMetrics_DisconnectFailedPreconditionTotal
+  commentId: F:Virtufin.WebSocketManager.Services.AppMetrics.DisconnectFailedPreconditionTotal
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.DisconnectFailedPreconditionTotal
+  nameWithType: AppMetrics.DisconnectFailedPreconditionTotal
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.DisconnectForwardedTotal
+  name: DisconnectForwardedTotal
+  href: api/Virtufin.WebSocketManager.Services.AppMetrics.html#Virtufin_WebSocketManager_Services_AppMetrics_DisconnectForwardedTotal
+  commentId: F:Virtufin.WebSocketManager.Services.AppMetrics.DisconnectForwardedTotal
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.DisconnectForwardedTotal
+  nameWithType: AppMetrics.DisconnectForwardedTotal
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.DisconnectOwnershipMissTotal
+  name: DisconnectOwnershipMissTotal
+  href: api/Virtufin.WebSocketManager.Services.AppMetrics.html#Virtufin_WebSocketManager_Services_AppMetrics_DisconnectOwnershipMissTotal
+  commentId: F:Virtufin.WebSocketManager.Services.AppMetrics.DisconnectOwnershipMissTotal
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.DisconnectOwnershipMissTotal
+  nameWithType: AppMetrics.DisconnectOwnershipMissTotal
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.MeterName
+  name: MeterName
+  href: api/Virtufin.WebSocketManager.Services.AppMetrics.html#Virtufin_WebSocketManager_Services_AppMetrics_MeterName
+  commentId: F:Virtufin.WebSocketManager.Services.AppMetrics.MeterName
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.MeterName
+  nameWithType: AppMetrics.MeterName
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition(System.String)
+  name: RecordFailedPrecondition(string)
+  href: api/Virtufin.WebSocketManager.Services.AppMetrics.html#Virtufin_WebSocketManager_Services_AppMetrics_RecordFailedPrecondition_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition(System.String)
+  name.vb: RecordFailedPrecondition(String)
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition(string)
+  fullName.vb: Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition(String)
+  nameWithType: AppMetrics.RecordFailedPrecondition(string)
+  nameWithType.vb: AppMetrics.RecordFailedPrecondition(String)
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition*
+  name: RecordFailedPrecondition
+  href: api/Virtufin.WebSocketManager.Services.AppMetrics.html#Virtufin_WebSocketManager_Services_AppMetrics_RecordFailedPrecondition_
+  commentId: Overload:Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition
+  nameWithType: AppMetrics.RecordFailedPrecondition
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded(System.String)
+  name: RecordForwarded(string)
+  href: api/Virtufin.WebSocketManager.Services.AppMetrics.html#Virtufin_WebSocketManager_Services_AppMetrics_RecordForwarded_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded(System.String)
+  name.vb: RecordForwarded(String)
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded(string)
+  fullName.vb: Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded(String)
+  nameWithType: AppMetrics.RecordForwarded(string)
+  nameWithType.vb: AppMetrics.RecordForwarded(String)
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded*
+  name: RecordForwarded
+  href: api/Virtufin.WebSocketManager.Services.AppMetrics.html#Virtufin_WebSocketManager_Services_AppMetrics_RecordForwarded_
+  commentId: Overload:Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded
+  nameWithType: AppMetrics.RecordForwarded
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss(System.Boolean)
+  name: RecordOwnershipMiss(bool)
+  href: api/Virtufin.WebSocketManager.Services.AppMetrics.html#Virtufin_WebSocketManager_Services_AppMetrics_RecordOwnershipMiss_System_Boolean_
+  commentId: M:Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss(System.Boolean)
+  name.vb: RecordOwnershipMiss(Boolean)
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss(bool)
+  fullName.vb: Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss(Boolean)
+  nameWithType: AppMetrics.RecordOwnershipMiss(bool)
+  nameWithType.vb: AppMetrics.RecordOwnershipMiss(Boolean)
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss*
+  name: RecordOwnershipMiss
+  href: api/Virtufin.WebSocketManager.Services.AppMetrics.html#Virtufin_WebSocketManager_Services_AppMetrics_RecordOwnershipMiss_
+  commentId: Overload:Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss
+  nameWithType: AppMetrics.RecordOwnershipMiss
 - uid: Virtufin.WebSocketManager.Services.ConnectionNotFoundException
   name: ConnectionNotFoundException
   href: api/Virtufin.WebSocketManager.Services.ConnectionNotFoundException.html
@@ -919,15 +1115,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
   fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
   nameWithType: ConnectionReclaimerHostedService
-- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
-  name: ConnectionReclaimerHostedService(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger<ConnectionReclaimerHostedService>)
-  href: api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html#Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__ctor_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__
-  commentId: M:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
-  name.vb: New(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger(Of ConnectionReclaimerHostedService))
-  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ConnectionReclaimerHostedService(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService>)
-  fullName.vb: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.New(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService))
-  nameWithType: ConnectionReclaimerHostedService.ConnectionReclaimerHostedService(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger<ConnectionReclaimerHostedService>)
-  nameWithType.vb: ConnectionReclaimerHostedService.New(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger(Of ConnectionReclaimerHostedService))
+- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
+  name: ConnectionReclaimerHostedService(IDaprConnectionRepository, IInstanceIdProvider, ILogger<ConnectionReclaimerHostedService>)
+  href: api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html#Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__ctor_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__
+  commentId: M:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
+  name.vb: New(IDaprConnectionRepository, IInstanceIdProvider, ILogger(Of ConnectionReclaimerHostedService))
+  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ConnectionReclaimerHostedService(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService>)
+  fullName.vb: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.New(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService))
+  nameWithType: ConnectionReclaimerHostedService.ConnectionReclaimerHostedService(IDaprConnectionRepository, IInstanceIdProvider, ILogger<ConnectionReclaimerHostedService>)
+  nameWithType.vb: ConnectionReclaimerHostedService.New(IDaprConnectionRepository, IInstanceIdProvider, ILogger(Of ConnectionReclaimerHostedService))
 - uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor*
   name: ConnectionReclaimerHostedService
   href: api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html#Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__ctor_
@@ -995,15 +1191,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.DaprConnectionRepository
   fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository
   nameWithType: DaprConnectionRepository
-- uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},Virtufin.WebSocketManager.Services.DaprResiliencePipeline,System.String)
-  name: DaprConnectionRepository(DaprClient, ILogger<DaprConnectionRepository>, DaprResiliencePipeline, string)
-  href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository__ctor_Dapr_Client_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprConnectionRepository__Virtufin_WebSocketManager_Services_DaprResiliencePipeline_System_String_
-  commentId: M:Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},Virtufin.WebSocketManager.Services.DaprResiliencePipeline,System.String)
-  name.vb: New(DaprClient, ILogger(Of DaprConnectionRepository), DaprResiliencePipeline, String)
-  fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.DaprConnectionRepository(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.DaprConnectionRepository>, Virtufin.WebSocketManager.Services.DaprResiliencePipeline, string)
-  fullName.vb: Virtufin.WebSocketManager.Services.DaprConnectionRepository.New(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprConnectionRepository), Virtufin.WebSocketManager.Services.DaprResiliencePipeline, String)
-  nameWithType: DaprConnectionRepository.DaprConnectionRepository(DaprClient, ILogger<DaprConnectionRepository>, DaprResiliencePipeline, string)
-  nameWithType.vb: DaprConnectionRepository.New(DaprClient, ILogger(Of DaprConnectionRepository), DaprResiliencePipeline, String)
+- uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},Virtufin.WebSocketManager.Services.DaprResiliencePipeline,Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions,System.String)
+  name: DaprConnectionRepository(DaprClient, ILogger<DaprConnectionRepository>, DaprResiliencePipeline, ConnectionStoreOptions, string)
+  href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository__ctor_Dapr_Client_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprConnectionRepository__Virtufin_WebSocketManager_Services_DaprResiliencePipeline_Virtufin_WebSocketManager_Configuration_ConnectionStoreOptions_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprConnectionRepository},Virtufin.WebSocketManager.Services.DaprResiliencePipeline,Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions,System.String)
+  name.vb: New(DaprClient, ILogger(Of DaprConnectionRepository), DaprResiliencePipeline, ConnectionStoreOptions, String)
+  fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.DaprConnectionRepository(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.DaprConnectionRepository>, Virtufin.WebSocketManager.Services.DaprResiliencePipeline, Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions, string)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprConnectionRepository.New(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprConnectionRepository), Virtufin.WebSocketManager.Services.DaprResiliencePipeline, Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions, String)
+  nameWithType: DaprConnectionRepository.DaprConnectionRepository(DaprClient, ILogger<DaprConnectionRepository>, DaprResiliencePipeline, ConnectionStoreOptions, string)
+  nameWithType.vb: DaprConnectionRepository.New(DaprClient, ILogger(Of DaprConnectionRepository), DaprResiliencePipeline, ConnectionStoreOptions, String)
 - uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.#ctor*
   name: DaprConnectionRepository
   href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository__ctor_
@@ -1101,6 +1297,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.SaveAsync
   nameWithType: DaprConnectionRepository.SaveAsync
+- uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.TouchAsync(System.String,System.Threading.CancellationToken)
+  name: TouchAsync(string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository_TouchAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.DaprConnectionRepository.TouchAsync(System.String,System.Threading.CancellationToken)
+  name.vb: TouchAsync(String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.TouchAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprConnectionRepository.TouchAsync(String, System.Threading.CancellationToken)
+  nameWithType: DaprConnectionRepository.TouchAsync(string, CancellationToken)
+  nameWithType.vb: DaprConnectionRepository.TouchAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.DaprConnectionRepository.TouchAsync*
+  name: TouchAsync
+  href: api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.html#Virtufin_WebSocketManager_Services_DaprConnectionRepository_TouchAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprConnectionRepository.TouchAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DaprConnectionRepository.TouchAsync
+  nameWithType: DaprConnectionRepository.TouchAsync
 - uid: Virtufin.WebSocketManager.Services.DaprPublisher
   name: DaprPublisher
   href: api/Virtufin.WebSocketManager.Services.DaprPublisher.html
@@ -1558,6 +1770,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.RemoveConnectionAsync
   nameWithType: DistributedWebSocketConnectionStore.RemoveConnectionAsync
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
+  name: TouchAsync(string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_TouchAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
+  name.vb: TouchAsync(String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync(String, System.Threading.CancellationToken)
+  nameWithType: DistributedWebSocketConnectionStore.TouchAsync(string, CancellationToken)
+  nameWithType.vb: DistributedWebSocketConnectionStore.TouchAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync*
+  name: TouchAsync
+  href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_TouchAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync
+  nameWithType: DistributedWebSocketConnectionStore.TouchAsync
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.UpdateConnectionAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Threading.CancellationToken)
   name: UpdateConnectionAsync(WebSocketConnection, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_UpdateConnectionAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Threading_CancellationToken_
@@ -1664,6 +1892,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync
   nameWithType: IDaprConnectionRepository.SaveAsync
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync(System.String,System.Threading.CancellationToken)
+  name: TouchAsync(string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_TouchAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync(System.String,System.Threading.CancellationToken)
+  name.vb: TouchAsync(String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync(String, System.Threading.CancellationToken)
+  nameWithType: IDaprConnectionRepository.TouchAsync(string, CancellationToken)
+  nameWithType.vb: IDaprConnectionRepository.TouchAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync*
+  name: TouchAsync
+  href: api/Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html#Virtufin_WebSocketManager_Services_IDaprConnectionRepository_TouchAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync
+  nameWithType: IDaprConnectionRepository.TouchAsync
 - uid: Virtufin.WebSocketManager.Services.IDaprPublisher
   name: IDaprPublisher
   href: api/Virtufin.WebSocketManager.Services.IDaprPublisher.html
@@ -1910,6 +2154,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.RemoveConnectionAsync
   nameWithType: IWebSocketConnectionStore.RemoveConnectionAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
+  name: TouchAsync(string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_TouchAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
+  name.vb: TouchAsync(String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync(String, System.Threading.CancellationToken)
+  nameWithType: IWebSocketConnectionStore.TouchAsync(string, CancellationToken)
+  nameWithType.vb: IWebSocketConnectionStore.TouchAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync*
+  name: TouchAsync
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_TouchAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync
+  nameWithType: IWebSocketConnectionStore.TouchAsync
 - uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.UpdateConnectionAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Threading.CancellationToken)
   name: UpdateConnectionAsync(WebSocketConnection, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_UpdateConnectionAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_System_Threading_CancellationToken_

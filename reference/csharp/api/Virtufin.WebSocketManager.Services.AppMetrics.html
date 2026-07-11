@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class DaprConstants | Virtufin WebSocketManager - C# Reference </title>
+      <title>Class AppMetrics | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DaprConstants | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Class AppMetrics | Virtufin WebSocketManager - C# Reference ">
       
-      
+      <meta name="description" content="Application-level metrics for the WebSocketManager service. Mirrors the pattern in Virtufin.WorkManager.Services.AppMetrics. Counters are registered under the meter Virtufin.WebSocketManager, which is already wired into the OpenTelemetry pipeline in Program.cs.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,24 +88,28 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants">
+        <article data-uid="Virtufin.WebSocketManager.Services.AppMetrics">
 
 
 
-  <h1 id="Virtufin_WebSocketManager_Configuration_DaprConstants" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants" class="text-break">
-Class DaprConstants  
+  <h1 id="Virtufin_WebSocketManager_Services_AppMetrics" data-uid="Virtufin.WebSocketManager.Services.AppMetrics" class="text-break">
+Class AppMetrics  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.WebSocketManager.html">WebSocketManager</a>.<a class="xref" href="Virtufin.WebSocketManager.Configuration.html">Configuration</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.WebSocketManager.html">WebSocketManager</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.html">Services</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Application-level metrics for the WebSocketManager service. Mirrors the
+pattern in <code>Virtufin.WorkManager.Services.AppMetrics</code>. Counters are
+registered under the meter <code>Virtufin.WebSocketManager</code>, which is
+already wired into the OpenTelemetry pipeline in <code>Program.cs</code>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DaprConstants</code></pre>
+    <pre><code class="lang-csharp hljs">public static class AppMetrics</code></pre>
   </div>
 
 
@@ -115,7 +119,7 @@ Class DaprConstants
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DaprConstants</span></div>
+      <div><span class="xref">AppMetrics</span></div>
     </dd>
   </dl>
 
@@ -157,16 +161,19 @@ Class DaprConstants
 
 
 
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_ClearAllOnStartEnvVar" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.ClearAllOnStartEnvVar">
-  ClearAllOnStartEnvVar
+  <h3 id="Virtufin_WebSocketManager_Services_AppMetrics_DisconnectFailedPreconditionTotal" data-uid="Virtufin.WebSocketManager.Services.AppMetrics.DisconnectFailedPreconditionTotal">
+  DisconnectFailedPreconditionTotal
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Total <code>RpcException</code> raised with <code>StatusCode.FailedPrecondition</code>
+from any RPC method. Tagged by method name. Increments unconditionally
+— even when the ownership-forward path catches the exception.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string ClearAllOnStartEnvVar = &quot;CLEAR_ALL_ON_START&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly Counter&lt;long&gt; DisconnectFailedPreconditionTotal</code></pre>
   </div>
 
 
@@ -174,7 +181,7 @@ Class DaprConstants
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics.counter-1">Counter</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -187,16 +194,19 @@ Class DaprConstants
 
 
 
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_HostnameEnvVar" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.HostnameEnvVar">
-  HostnameEnvVar
+  <h3 id="Virtufin_WebSocketManager_Services_AppMetrics_DisconnectForwardedTotal" data-uid="Virtufin.WebSocketManager.Services.AppMetrics.DisconnectForwardedTotal">
+  DisconnectForwardedTotal
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Total RPC calls forwarded to the owning replica via Dapr service
+invocation. Tagged by method name. Stays at 0 when
+<code>OWNERSHIP_MISS_FORWARD_THRESHOLD</code> is 0 (default).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string HostnameEnvVar = &quot;HOSTNAME&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly Counter&lt;long&gt; DisconnectForwardedTotal</code></pre>
   </div>
 
 
@@ -204,7 +214,7 @@ Class DaprConstants
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics.counter-1">Counter</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -217,16 +227,22 @@ Class DaprConstants
 
 
 
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_IndexKey" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.IndexKey">
-  IndexKey
+  <h3 id="Virtufin_WebSocketManager_Services_AppMetrics_DisconnectOwnershipMissTotal" data-uid="Virtufin.WebSocketManager.Services.AppMetrics.DisconnectOwnershipMissTotal">
+  DisconnectOwnershipMissTotal
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Total cross-instance ownership misses. Tagged by reason
+(<code>not_owned</code> when the local replica is not the owner,
+<code>lapsed</code> when the owner has dropped from <code>knownInstances</code>
+past <code>INSTANCE_STALE_THRESHOLD_SECONDS</code>). Used as the gate for
+the owner-replica forwarding path (see
+<code>OwnershipForwardOptions</code>).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string IndexKey = &quot;websocketmanager.connection.index&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly Counter&lt;long&gt; DisconnectOwnershipMissTotal</code></pre>
   </div>
 
 
@@ -234,7 +250,7 @@ Class DaprConstants
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics.counter-1">Counter</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -247,8 +263,8 @@ Class DaprConstants
 
 
 
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_InstanceIndexKeyPrefix" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKeyPrefix">
-  InstanceIndexKeyPrefix
+  <h3 id="Virtufin_WebSocketManager_Services_AppMetrics_MeterName" data-uid="Virtufin.WebSocketManager.Services.AppMetrics.MeterName">
+  MeterName
   
   </h3>
 
@@ -256,157 +272,7 @@ Class DaprConstants
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string InstanceIndexKeyPrefix = &quot;websocketmanager.instance.index.&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_KeyPrefix" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.KeyPrefix">
-  KeyPrefix
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string KeyPrefix = &quot;websocketmanager.connection.&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_PubsubName" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.PubsubName">
-  PubsubName
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string PubsubName = &quot;pubsub&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_PubsubNameKey" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.PubsubNameKey">
-  PubsubNameKey
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string PubsubNameKey = &quot;pubsubName&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_StateStoreName" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.StateStoreName">
-  StateStoreName
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string StateStoreName = &quot;statestore&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_StateStoreNameKey" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.StateStoreNameKey">
-  StateStoreNameKey
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string StateStoreNameKey = &quot;stateStoreName&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string MeterName = &quot;Virtufin.WebSocketManager&quot;</code></pre>
   </div>
 
 
@@ -430,31 +296,91 @@ Class DaprConstants
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Configuration_DaprConstants_InstanceIndexKey_" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey*"></a>
+  <a id="Virtufin_WebSocketManager_Services_AppMetrics_RecordFailedPrecondition_" data-uid="Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_InstanceIndexKey_System_String_" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey(System.String)">
-  InstanceIndexKey(string)
+  <h3 id="Virtufin_WebSocketManager_Services_AppMetrics_RecordFailedPrecondition_System_String_" data-uid="Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition(System.String)">
+  RecordFailedPrecondition(string)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Records a FailedPrecondition response with the originating method.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string InstanceIndexKey(string instanceId)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RecordFailedPrecondition(string method)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>instanceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
-  <h4 class="section">Returns</h4>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_AppMetrics_RecordForwarded_" data-uid="Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_AppMetrics_RecordForwarded_System_String_" data-uid="Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded(System.String)">
+  RecordForwarded(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Records a successful owner-replica forward.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RecordForwarded(string method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_AppMetrics_RecordOwnershipMiss_" data-uid="Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_AppMetrics_RecordOwnershipMiss_System_Boolean_" data-uid="Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss(System.Boolean)">
+  RecordOwnershipMiss(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Records a cross-instance ownership miss.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RecordOwnershipMiss(bool ownerLapsed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ownerLapsed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
 
 
 

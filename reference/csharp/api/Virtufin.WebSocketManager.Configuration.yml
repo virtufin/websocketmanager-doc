@@ -6,9 +6,11 @@ items:
   parent: Virtufin.WebSocketManager
   children:
   - Virtufin.WebSocketManager.Configuration.ConnectionEvents
+  - Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
   - Virtufin.WebSocketManager.Configuration.DaprConstants
   - Virtufin.WebSocketManager.Configuration.InfraEvents
   - Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
+  - Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
   - Virtufin.WebSocketManager.Configuration.PortConstants
   - Virtufin.WebSocketManager.Configuration.TimeoutConstants
   - Virtufin.WebSocketManager.Configuration.Topics
@@ -28,6 +30,13 @@ references:
   name: ConnectionEvents
   nameWithType: ConnectionEvents
   fullName: Virtufin.WebSocketManager.Configuration.ConnectionEvents
+- uid: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  commentId: T:Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
+  parent: Virtufin.WebSocketManager.Configuration
+  href: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html
+  name: ConnectionStoreOptions
+  nameWithType: ConnectionStoreOptions
+  fullName: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions
 - uid: Virtufin.WebSocketManager.Configuration.DaprConstants
   commentId: T:Virtufin.WebSocketManager.Configuration.DaprConstants
   href: Virtufin.WebSocketManager.Configuration.DaprConstants.html
@@ -47,6 +56,13 @@ references:
   name: InstanceHeartbeatOptions
   nameWithType: InstanceHeartbeatOptions
   fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  commentId: T:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  parent: Virtufin.WebSocketManager.Configuration
+  href: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html
+  name: OwnershipForwardOptions
+  nameWithType: OwnershipForwardOptions
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
 - uid: Virtufin.WebSocketManager.Configuration.PortConstants
   commentId: T:Virtufin.WebSocketManager.Configuration.PortConstants
   href: Virtufin.WebSocketManager.Configuration.PortConstants.html

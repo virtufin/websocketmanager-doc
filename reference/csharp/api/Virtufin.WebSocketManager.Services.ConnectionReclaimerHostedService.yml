@@ -5,7 +5,7 @@ items:
   id: ConnectionReclaimerHostedService
   parent: Virtufin.WebSocketManager.Services
   children:
-  - Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
+  - Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
   - Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync(System.Threading.CancellationToken)
   langs:
   - csharp
@@ -21,14 +21,27 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ConnectionReclaimerHostedService
     path: ../../../src/Virtufin.WebSocketManager/Services/ConnectionReclaimerHostedService.cs
-    startLine: 9
+    startLine: 16
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
   summary: >-
-    Background service that periodically reclaims connections from dead instances.
+    Background service that periodically reclaims connections from dead
 
-    Prevents connection orphaning when pods are replaced via rolling update.
+    instances. The owner of a connection is dead if and only if it is not
+
+    in <xref href="Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds" data-throw-if-not-resolved="false"></xref> — which is
+
+    populated by <xref href="Virtufin.WebSocketManager.Services.InstanceHeartbeatService" data-throw-if-not-resolved="false"></xref> based on observed
+
+    heartbeats. Reclamation re-stamps the record so a surviving replica
+
+    can act on it.
+
+
+    Connections whose record has been removed by the state store's TTL are
+
+    naturally invisible to this sweep and are not re-stamped.
   example: []
   syntax:
     content: 'public sealed class ConnectionReclaimerHostedService : BackgroundService, IHostedService, IDisposable'
@@ -50,16 +63,16 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
-  commentId: M:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
-  id: '#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})'
+- uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
+  commentId: M:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})
+  id: '#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService})'
   parent: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
   langs:
   - csharp
   - vb
-  name: ConnectionReclaimerHostedService(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger<ConnectionReclaimerHostedService>)
-  nameWithType: ConnectionReclaimerHostedService.ConnectionReclaimerHostedService(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger<ConnectionReclaimerHostedService>)
-  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ConnectionReclaimerHostedService(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService>)
+  name: ConnectionReclaimerHostedService(IDaprConnectionRepository, IInstanceIdProvider, ILogger<ConnectionReclaimerHostedService>)
+  nameWithType: ConnectionReclaimerHostedService.ConnectionReclaimerHostedService(IDaprConnectionRepository, IInstanceIdProvider, ILogger<ConnectionReclaimerHostedService>)
+  fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ConnectionReclaimerHostedService(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService>)
   type: Constructor
   source:
     remote:
@@ -68,28 +81,26 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/ConnectionReclaimerHostedService.cs
-    startLine: 22
+    startLine: 27
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
   summary: Creates a new ConnectionReclaimerHostedService.
   example: []
   syntax:
-    content: public ConnectionReclaimerHostedService(IDaprConnectionRepository repository, IInstanceIdProvider instanceIdProvider, IWebSocketConnectionStore connectionStore, ILogger<ConnectionReclaimerHostedService> logger)
+    content: public ConnectionReclaimerHostedService(IDaprConnectionRepository repository, IInstanceIdProvider instanceIdProvider, ILogger<ConnectionReclaimerHostedService> logger)
     parameters:
     - id: repository
       type: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
     - id: instanceIdProvider
       type: Virtufin.WebSocketManager.Services.IInstanceIdProvider
-    - id: connectionStore
-      type: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService}
-    content.vb: Public Sub New(repository As IDaprConnectionRepository, instanceIdProvider As IInstanceIdProvider, connectionStore As IWebSocketConnectionStore, logger As ILogger(Of ConnectionReclaimerHostedService))
+    content.vb: Public Sub New(repository As IDaprConnectionRepository, instanceIdProvider As IInstanceIdProvider, logger As ILogger(Of ConnectionReclaimerHostedService))
   overload: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor*
-  nameWithType.vb: ConnectionReclaimerHostedService.New(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger(Of ConnectionReclaimerHostedService))
-  fullName.vb: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.New(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService))
-  name.vb: New(IDaprConnectionRepository, IInstanceIdProvider, IWebSocketConnectionStore, ILogger(Of ConnectionReclaimerHostedService))
+  nameWithType.vb: ConnectionReclaimerHostedService.New(IDaprConnectionRepository, IInstanceIdProvider, ILogger(Of ConnectionReclaimerHostedService))
+  fullName.vb: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.New(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService))
+  name.vb: New(IDaprConnectionRepository, IInstanceIdProvider, ILogger(Of ConnectionReclaimerHostedService))
 - uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync(System.Threading.CancellationToken)
   commentId: M:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync(System.Threading.CancellationToken)
   id: ExecuteAsync(System.Threading.CancellationToken)
@@ -108,7 +119,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ExecuteAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/ConnectionReclaimerHostedService.cs
-    startLine: 35
+    startLine: 38
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -131,6 +142,31 @@ items:
   overridden: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
   overload: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync*
 references:
+- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
+  commentId: M:Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
+  parent: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+  href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_GetKnownInstanceIds
+  name: GetKnownInstanceIds()
+  nameWithType: IInstanceIdProvider.GetKnownInstanceIds()
+  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds()
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
+    name: GetKnownInstanceIds
+    href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_GetKnownInstanceIds
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
+    name: GetKnownInstanceIds
+    href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_GetKnownInstanceIds
+  - name: (
+  - name: )
+- uid: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+  commentId: T:Virtufin.WebSocketManager.Services.InstanceHeartbeatService
+  href: Virtufin.WebSocketManager.Services.InstanceHeartbeatService.html
+  name: InstanceHeartbeatService
+  nameWithType: InstanceHeartbeatService
+  fullName: Virtufin.WebSocketManager.Services.InstanceHeartbeatService
 - uid: Virtufin.WebSocketManager.Services
   commentId: N:Virtufin.WebSocketManager.Services
   href: Virtufin.html
@@ -481,6 +517,13 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
+- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+  commentId: T:Virtufin.WebSocketManager.Services.IInstanceIdProvider
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html
+  name: IInstanceIdProvider
+  nameWithType: IInstanceIdProvider
+  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider
 - uid: System
   commentId: N:System
   isExternal: true
@@ -527,7 +570,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
 - uid: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor*
   commentId: Overload:Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.#ctor
-  href: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html#Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__ctor_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__
+  href: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.html#Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__ctor_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_ConnectionReclaimerHostedService__
   name: ConnectionReclaimerHostedService
   nameWithType: ConnectionReclaimerHostedService.ConnectionReclaimerHostedService
   fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ConnectionReclaimerHostedService
@@ -541,20 +584,6 @@ references:
   name: IDaprConnectionRepository
   nameWithType: IDaprConnectionRepository
   fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
-- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  commentId: T:Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html
-  name: IInstanceIdProvider
-  nameWithType: IInstanceIdProvider
-  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider
-- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
-  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html
-  name: IWebSocketConnectionStore
-  nameWithType: IWebSocketConnectionStore
-  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
 - uid: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService}
   commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService}
   parent: Microsoft.Extensions.Logging

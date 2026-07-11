@@ -6,6 +6,7 @@ items:
   parent: Virtufin.WebSocketManager
   children:
   - Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
+  - Virtufin.WebSocketManager.Services.AppMetrics
   - Virtufin.WebSocketManager.Services.ConnectionNotFoundException
   - Virtufin.WebSocketManager.Services.ConnectionOwnershipException
   - Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService
@@ -87,6 +88,12 @@ references:
   name: ApiLifecyclePublisher
   nameWithType: ApiLifecyclePublisher
   fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
+- uid: Virtufin.WebSocketManager.Services.AppMetrics
+  commentId: T:Virtufin.WebSocketManager.Services.AppMetrics
+  href: Virtufin.WebSocketManager.Services.AppMetrics.html
+  name: AppMetrics
+  nameWithType: AppMetrics
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics
 - uid: Virtufin.WebSocketManager.Services.ConnectionNotFoundException
   commentId: T:Virtufin.WebSocketManager.Services.ConnectionNotFoundException
   href: Virtufin.WebSocketManager.Services.ConnectionNotFoundException.html

@@ -12,6 +12,7 @@ items:
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionById(System.String)
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.RemoveConnectionAsync(System.String,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.UpdateConnectionAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Threading.CancellationToken)
   langs:
   - csharp
@@ -27,7 +28,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DistributedWebSocketConnectionStore
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 50
+    startLine: 57
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -66,7 +67,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 61
+    startLine: 68
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -104,7 +105,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CreateConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 70
+    startLine: 77
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -146,7 +147,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 87
+    startLine: 94
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -186,7 +187,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetConnectionById
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 99
+    startLine: 106
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -227,7 +228,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetAllConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 106
+    startLine: 113
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -262,7 +263,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: UpdateConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 124
+    startLine: 131
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -299,7 +300,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: RemoveConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 133
+    startLine: 140
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -321,6 +322,51 @@ items:
   nameWithType.vb: DistributedWebSocketConnectionStore.RemoveConnectionAsync(String, CancellationToken)
   fullName.vb: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.RemoveConnectionAsync(String, System.Threading.CancellationToken)
   name.vb: RemoveConnectionAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
+  id: TouchAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
+  langs:
+  - csharp
+  - vb
+  name: TouchAsync(string, CancellationToken)
+  nameWithType: DistributedWebSocketConnectionStore.TouchAsync(string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: TouchAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
+    startLine: 147
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    Refreshes the state-store TTL on the connection record without
+
+    changing its payload. Called after a successful Send to keep an
+
+    idle but live socket from being garbage-collected.
+  example: []
+  syntax:
+    content: public Task TouchAsync(string id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function TouchAsync(id As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync*
+  implements:
+  - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
+  nameWithType.vb: DistributedWebSocketConnectionStore.TouchAsync(String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync(String, System.Threading.CancellationToken)
+  name.vb: TouchAsync(String, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ClearAllConnectionsAsync(System.Threading.CancellationToken)
   commentId: M:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ClearAllConnectionsAsync(System.Threading.CancellationToken)
   id: ClearAllConnectionsAsync(System.Threading.CancellationToken)
@@ -339,7 +385,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ClearAllConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 140
+    startLine: 153
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -1224,6 +1270,55 @@ references:
   - uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.RemoveConnectionAsync(System.String,System.Threading.CancellationToken)
     name: RemoveConnectionAsync
     href: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_RemoveConnectionAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync
+  href: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_TouchAsync_System_String_System_Threading_CancellationToken_
+  name: TouchAsync
+  nameWithType: DistributedWebSocketConnectionStore.TouchAsync
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
+  isExternal: true
+  href: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_TouchAsync_System_String_System_Threading_CancellationToken_
+  name: TouchAsync(string, CancellationToken)
+  nameWithType: IWebSocketConnectionStore.TouchAsync(string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: IWebSocketConnectionStore.TouchAsync(String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync(String, System.Threading.CancellationToken)
+  name.vb: TouchAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
+    name: TouchAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_TouchAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
+    name: TouchAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_TouchAsync_System_String_System_Threading_CancellationToken_
   - name: (
   - uid: System.String
     name: String

@@ -18,6 +18,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.yml\" sourcestartlinenumber=\"1\">Tuning for connection record state-store TTL. The WSM sets a Dapr\n<code>ttlInSeconds</code> on every connection record write, and refreshes it\non every successful send. Records whose TTL elapses without traffic\nare removed by the state store without explicit reclaimer intervention.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.WebSocketManager.Configuration.DaprConstants.yml",
       "output": {
         ".html": {
@@ -57,6 +71,20 @@
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions",
       "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.yml\" sourcestartlinenumber=\"1\">Tuning for the instance heartbeat / discovery mechanism. The\n<code>InstanceHeartbeatService</code> publishes the local instance ID to\nthe Dapr state store on an interval, and the connection reclaimer\nreads it to populate its <code>knownInstances</code> set so live pods\ndon't have their connections reclaimed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.yml\" sourcestartlinenumber=\"1\">Tuning for the optional owner-replica forwarding path. When\n<xref href=\"Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold\" data-throw-if-not-resolved=\"false\"></xref> is 0 (default), the WSM never\nforwards cross-instance RPCs and the caller receives\n<code>StatusCode.FailedPrecondition</code> on every miss. Set the threshold\nto a non-zero value to enable forwarding only after the running\n5-minute miss rate exceeds it.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -200,6 +228,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.AppMetrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.AppMetrics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.AppMetrics",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.AppMetrics.yml\" sourcestartlinenumber=\"1\">Application-level metrics for the WebSocketManager service. Mirrors the\npattern in <code>Virtufin.WorkManager.Services.AppMetrics</code>. Counters are\nregistered under the meter <code>Virtufin.WebSocketManager</code>, which is\nalready wired into the OpenTelemetry pipeline in <code>Program.cs</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.WebSocketManager.Services.ConnectionNotFoundException.yml",
       "output": {
         ".html": {
@@ -238,7 +280,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.yml\" sourcestartlinenumber=\"1\">Background service that periodically reclaims connections from dead instances.\nPrevents connection orphaning when pods are replaced via rolling update.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.yml\" sourcestartlinenumber=\"1\">Background service that periodically reclaims connections from dead\ninstances. The owner of a connection is dead if and only if it is not\nin <xref href=\"Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds\" data-throw-if-not-resolved=\"false\"></xref> — which is\npopulated by <xref href=\"Virtufin.WebSocketManager.Services.InstanceHeartbeatService\" data-throw-if-not-resolved=\"false\"></xref> based on observed\nheartbeats. Reclamation re-stamps the record so a surviving replica\ncan act on it.</p>\n<p sourcefile=\"api/Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.yml\" sourcestartlinenumber=\"8\">Connections whose record has been removed by the state store's TTL are\nnaturally invisible to this sweep and are not re-stamped.</p>\n"
     },
     {
       "type": "ManagedReference",

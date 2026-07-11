@@ -143,7 +143,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 33
+    startLine: 37
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -183,7 +183,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ExecuteAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 47
+    startLine: 60
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services

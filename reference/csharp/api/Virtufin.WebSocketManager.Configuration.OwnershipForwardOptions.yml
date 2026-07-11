@@ -1,0 +1,685 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  commentId: T:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  id: OwnershipForwardOptions
+  parent: Virtufin.WebSocketManager.Configuration
+  children:
+  - Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.DefaultMissesPerMinuteThreshold
+  - Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func{System.String,System.String})
+  - Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MaxMissesPerMinuteThreshold
+  - Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MinMissesPerMinuteThreshold
+  - Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+  - Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
+  langs:
+  - csharp
+  - vb
+  name: OwnershipForwardOptions
+  nameWithType: OwnershipForwardOptions
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: OwnershipForwardOptions
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: >-
+    Tuning for the optional owner-replica forwarding path. When
+
+    <xref href="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold" data-throw-if-not-resolved="false"></xref> is 0 (default), the WSM never
+
+    forwards cross-instance RPCs and the caller receives
+
+    <code>StatusCode.FailedPrecondition</code> on every miss. Set the threshold
+
+    to a non-zero value to enable forwarding only after the running
+
+    5-minute miss rate exceeds it.
+  remarks: >-
+    The forward uses Dapr service invocation
+
+    (<code>DaprClient.InvokeMethodAsync</code>) against the owning replica's
+
+    app id (<code>websocketmanager</code>) so callers do not need cluster
+
+    topology knowledge.
+  example: []
+  syntax:
+    content: 'public sealed record OwnershipForwardOptions : IEquatable<OwnershipForwardOptions>'
+    content.vb: Public NotInheritable Class OwnershipForwardOptions Implements IEquatable(Of OwnershipForwardOptions)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
+  commentId: F:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
+  id: OwnershipMissForwardThresholdEnvVar
+  parent: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  langs:
+  - csharp
+  - vb
+  name: OwnershipMissForwardThresholdEnvVar
+  nameWithType: OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: OwnershipMissForwardThresholdEnvVar
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Env var for <xref href="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string OwnershipMissForwardThresholdEnvVar = "OWNERSHIP_MISS_FORWARD_THRESHOLD"
+    return:
+      type: System.String
+    content.vb: Public Const OwnershipMissForwardThresholdEnvVar As String = "OWNERSHIP_MISS_FORWARD_THRESHOLD"
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.DefaultMissesPerMinuteThreshold
+  commentId: F:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.DefaultMissesPerMinuteThreshold
+  id: DefaultMissesPerMinuteThreshold
+  parent: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultMissesPerMinuteThreshold
+  nameWithType: OwnershipForwardOptions.DefaultMissesPerMinuteThreshold
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.DefaultMissesPerMinuteThreshold
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DefaultMissesPerMinuteThreshold
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: 'Default threshold: disabled.'
+  example: []
+  syntax:
+    content: public const int DefaultMissesPerMinuteThreshold = 0
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultMissesPerMinuteThreshold As Integer = 0
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MinMissesPerMinuteThreshold
+  commentId: F:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MinMissesPerMinuteThreshold
+  id: MinMissesPerMinuteThreshold
+  parent: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  langs:
+  - csharp
+  - vb
+  name: MinMissesPerMinuteThreshold
+  nameWithType: OwnershipForwardOptions.MinMissesPerMinuteThreshold
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MinMissesPerMinuteThreshold
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: MinMissesPerMinuteThreshold
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Minimum threshold. Zero disables the forward path.
+  example: []
+  syntax:
+    content: public const int MinMissesPerMinuteThreshold = 0
+    return:
+      type: System.Int32
+    content.vb: Public Const MinMissesPerMinuteThreshold As Integer = 0
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MaxMissesPerMinuteThreshold
+  commentId: F:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MaxMissesPerMinuteThreshold
+  id: MaxMissesPerMinuteThreshold
+  parent: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  langs:
+  - csharp
+  - vb
+  name: MaxMissesPerMinuteThreshold
+  nameWithType: OwnershipForwardOptions.MaxMissesPerMinuteThreshold
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MaxMissesPerMinuteThreshold
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: MaxMissesPerMinuteThreshold
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: Maximum threshold. The forward path is always enabled above this.
+  example: []
+  syntax:
+    content: public const int MaxMissesPerMinuteThreshold = 10000
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxMissesPerMinuteThreshold As Integer = 10000
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+  commentId: P:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+  id: MissesPerMinuteThreshold
+  parent: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  langs:
+  - csharp
+  - vb
+  name: MissesPerMinuteThreshold
+  nameWithType: OwnershipForwardOptions.MissesPerMinuteThreshold
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: MissesPerMinuteThreshold
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+    startLine: 35
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  summary: >-
+    Cross-instance ownership-miss count per minute at or above which
+
+    the WSM begins to forward RPCs to the owning replica via Dapr
+
+    service invocation. Zero disables the forward path.
+  example: []
+  syntax:
+    content: public int MissesPerMinuteThreshold { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MissesPerMinuteThreshold As Integer
+  overload: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold*
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func{System.String,System.String})
+  commentId: M:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func{System.String,System.String})
+  id: FromEnvironment(System.Func{System.String,System.String})
+  parent: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  langs:
+  - csharp
+  - vb
+  name: FromEnvironment(Func<string, string?>)
+  nameWithType: OwnershipForwardOptions.FromEnvironment(Func<string, string?>)
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func<string, string?>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: FromEnvironment
+    path: ../../../src/Virtufin.WebSocketManager/Configuration/OwnershipForwardOptions.cs
+    startLine: 37
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Configuration
+  syntax:
+    content: public static OwnershipForwardOptions FromEnvironment(Func<string, string?> getEnvironment)
+    parameters:
+    - id: getEnvironment
+      type: System.Func{System.String,System.String}
+    return:
+      type: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+    content.vb: Public Shared Function FromEnvironment(getEnvironment As Func(Of String, String)) As OwnershipForwardOptions
+  overload: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment*
+  nameWithType.vb: OwnershipForwardOptions.FromEnvironment(Func(Of String, String))
+  fullName.vb: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func(Of String, String))
+  name.vb: FromEnvironment(Func(Of String, String))
+references:
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+  commentId: P:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+  href: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MissesPerMinuteThreshold
+  name: MissesPerMinuteThreshold
+  nameWithType: OwnershipForwardOptions.MissesPerMinuteThreshold
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+- uid: Virtufin.WebSocketManager.Configuration
+  commentId: N:Virtufin.WebSocketManager.Configuration
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Configuration
+  nameWithType: Virtufin.WebSocketManager.Configuration
+  fullName: Virtufin.WebSocketManager.Configuration
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Configuration
+    name: Configuration
+    href: Virtufin.WebSocketManager.Configuration.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Configuration
+    name: Configuration
+    href: Virtufin.WebSocketManager.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions}
+  commentId: T:System.IEquatable{Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<OwnershipForwardOptions>
+  nameWithType: IEquatable<OwnershipForwardOptions>
+  fullName: System.IEquatable<Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions>
+  nameWithType.vb: IEquatable(Of OwnershipForwardOptions)
+  fullName.vb: System.IEquatable(Of Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions)
+  name.vb: IEquatable(Of OwnershipForwardOptions)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+    name: OwnershipForwardOptions
+    href: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+    name: OwnershipForwardOptions
+    href: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold*
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+  href: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MissesPerMinuteThreshold
+  name: MissesPerMinuteThreshold
+  nameWithType: OwnershipForwardOptions.MissesPerMinuteThreshold
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment*
+  commentId: Overload:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment
+  href: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_FromEnvironment_System_Func_System_String_System_String__
+  name: FromEnvironment
+  nameWithType: OwnershipForwardOptions.FromEnvironment
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment
+- uid: System.Func{System.String,System.String}
+  commentId: T:System.Func{System.String,System.String}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, string>
+  nameWithType: Func<string, string>
+  fullName: System.Func<string, string>
+  nameWithType.vb: Func(Of String, String)
+  fullName.vb: System.Func(Of String, String)
+  name.vb: Func(Of String, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  commentId: T:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+  parent: Virtufin.WebSocketManager.Configuration
+  href: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html
+  name: OwnershipForwardOptions
+  nameWithType: OwnershipForwardOptions
+  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )

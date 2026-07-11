@@ -1,0 +1,699 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Services.AppMetrics
+  commentId: T:Virtufin.WebSocketManager.Services.AppMetrics
+  id: AppMetrics
+  parent: Virtufin.WebSocketManager.Services
+  children:
+  - Virtufin.WebSocketManager.Services.AppMetrics.DisconnectFailedPreconditionTotal
+  - Virtufin.WebSocketManager.Services.AppMetrics.DisconnectForwardedTotal
+  - Virtufin.WebSocketManager.Services.AppMetrics.DisconnectOwnershipMissTotal
+  - Virtufin.WebSocketManager.Services.AppMetrics.MeterName
+  - Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition(System.String)
+  - Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded(System.String)
+  - Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss(System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: AppMetrics
+  nameWithType: AppMetrics
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: AppMetrics
+    path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    Application-level metrics for the WebSocketManager service. Mirrors the
+
+    pattern in <code>Virtufin.WorkManager.Services.AppMetrics</code>. Counters are
+
+    registered under the meter <code>Virtufin.WebSocketManager</code>, which is
+
+    already wired into the OpenTelemetry pipeline in <code>Program.cs</code>.
+  example: []
+  syntax:
+    content: public static class AppMetrics
+    content.vb: Public Module AppMetrics
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.MeterName
+  commentId: F:Virtufin.WebSocketManager.Services.AppMetrics.MeterName
+  id: MeterName
+  parent: Virtufin.WebSocketManager.Services.AppMetrics
+  langs:
+  - csharp
+  - vb
+  name: MeterName
+  nameWithType: AppMetrics.MeterName
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.MeterName
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: MeterName
+    path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  syntax:
+    content: public const string MeterName = "Virtufin.WebSocketManager"
+    return:
+      type: System.String
+    content.vb: Public Const MeterName As String = "Virtufin.WebSocketManager"
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.DisconnectFailedPreconditionTotal
+  commentId: F:Virtufin.WebSocketManager.Services.AppMetrics.DisconnectFailedPreconditionTotal
+  id: DisconnectFailedPreconditionTotal
+  parent: Virtufin.WebSocketManager.Services.AppMetrics
+  langs:
+  - csharp
+  - vb
+  name: DisconnectFailedPreconditionTotal
+  nameWithType: AppMetrics.DisconnectFailedPreconditionTotal
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.DisconnectFailedPreconditionTotal
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DisconnectFailedPreconditionTotal
+    path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    Total <code>RpcException</code> raised with <code>StatusCode.FailedPrecondition</code>
+
+    from any RPC method. Tagged by method name. Increments unconditionally
+
+    — even when the ownership-forward path catches the exception.
+  example: []
+  syntax:
+    content: public static readonly Counter<long> DisconnectFailedPreconditionTotal
+    return:
+      type: System.Diagnostics.Metrics.Counter{System.Int64}
+    content.vb: Public Shared ReadOnly DisconnectFailedPreconditionTotal As Counter(Of Long)
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.DisconnectOwnershipMissTotal
+  commentId: F:Virtufin.WebSocketManager.Services.AppMetrics.DisconnectOwnershipMissTotal
+  id: DisconnectOwnershipMissTotal
+  parent: Virtufin.WebSocketManager.Services.AppMetrics
+  langs:
+  - csharp
+  - vb
+  name: DisconnectOwnershipMissTotal
+  nameWithType: AppMetrics.DisconnectOwnershipMissTotal
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.DisconnectOwnershipMissTotal
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DisconnectOwnershipMissTotal
+    path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+    startLine: 42
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    Total cross-instance ownership misses. Tagged by reason
+
+    (<code>not_owned</code> when the local replica is not the owner,
+
+    <code>lapsed</code> when the owner has dropped from <code>knownInstances</code>
+
+    past <code>INSTANCE_STALE_THRESHOLD_SECONDS</code>). Used as the gate for
+
+    the owner-replica forwarding path (see
+
+    <code>OwnershipForwardOptions</code>).
+  example: []
+  syntax:
+    content: public static readonly Counter<long> DisconnectOwnershipMissTotal
+    return:
+      type: System.Diagnostics.Metrics.Counter{System.Int64}
+    content.vb: Public Shared ReadOnly DisconnectOwnershipMissTotal As Counter(Of Long)
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.DisconnectForwardedTotal
+  commentId: F:Virtufin.WebSocketManager.Services.AppMetrics.DisconnectForwardedTotal
+  id: DisconnectForwardedTotal
+  parent: Virtufin.WebSocketManager.Services.AppMetrics
+  langs:
+  - csharp
+  - vb
+  name: DisconnectForwardedTotal
+  nameWithType: AppMetrics.DisconnectForwardedTotal
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.DisconnectForwardedTotal
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: DisconnectForwardedTotal
+    path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+    startLine: 51
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    Total RPC calls forwarded to the owning replica via Dapr service
+
+    invocation. Tagged by method name. Stays at 0 when
+
+    <code>OWNERSHIP_MISS_FORWARD_THRESHOLD</code> is 0 (default).
+  example: []
+  syntax:
+    content: public static readonly Counter<long> DisconnectForwardedTotal
+    return:
+      type: System.Diagnostics.Metrics.Counter{System.Int64}
+    content.vb: Public Shared ReadOnly DisconnectForwardedTotal As Counter(Of Long)
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition(System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition(System.String)
+  id: RecordFailedPrecondition(System.String)
+  parent: Virtufin.WebSocketManager.Services.AppMetrics
+  langs:
+  - csharp
+  - vb
+  name: RecordFailedPrecondition(string)
+  nameWithType: AppMetrics.RecordFailedPrecondition(string)
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition(string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: RecordFailedPrecondition
+    path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+    startLine: 56
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Records a FailedPrecondition response with the originating method.
+  example: []
+  syntax:
+    content: public static void RecordFailedPrecondition(string method)
+    parameters:
+    - id: method
+      type: System.String
+    content.vb: Public Shared Sub RecordFailedPrecondition(method As String)
+  overload: Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition*
+  nameWithType.vb: AppMetrics.RecordFailedPrecondition(String)
+  fullName.vb: Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition(String)
+  name.vb: RecordFailedPrecondition(String)
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss(System.Boolean)
+  commentId: M:Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss(System.Boolean)
+  id: RecordOwnershipMiss(System.Boolean)
+  parent: Virtufin.WebSocketManager.Services.AppMetrics
+  langs:
+  - csharp
+  - vb
+  name: RecordOwnershipMiss(bool)
+  nameWithType: AppMetrics.RecordOwnershipMiss(bool)
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss(bool)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: RecordOwnershipMiss
+    path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+    startLine: 63
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Records a cross-instance ownership miss.
+  example: []
+  syntax:
+    content: public static void RecordOwnershipMiss(bool ownerLapsed)
+    parameters:
+    - id: ownerLapsed
+      type: System.Boolean
+    content.vb: Public Shared Sub RecordOwnershipMiss(ownerLapsed As Boolean)
+  overload: Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss*
+  nameWithType.vb: AppMetrics.RecordOwnershipMiss(Boolean)
+  fullName.vb: Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss(Boolean)
+  name.vb: RecordOwnershipMiss(Boolean)
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded(System.String)
+  commentId: M:Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded(System.String)
+  id: RecordForwarded(System.String)
+  parent: Virtufin.WebSocketManager.Services.AppMetrics
+  langs:
+  - csharp
+  - vb
+  name: RecordForwarded(string)
+  nameWithType: AppMetrics.RecordForwarded(string)
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded(string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: RecordForwarded
+    path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
+    startLine: 70
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: Records a successful owner-replica forward.
+  example: []
+  syntax:
+    content: public static void RecordForwarded(string method)
+    parameters:
+    - id: method
+      type: System.String
+    content.vb: Public Shared Sub RecordForwarded(method As String)
+  overload: Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded*
+  nameWithType.vb: AppMetrics.RecordForwarded(String)
+  fullName.vb: Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded(String)
+  name.vb: RecordForwarded(String)
+references:
+- uid: Virtufin.WebSocketManager.Services
+  commentId: N:Virtufin.WebSocketManager.Services
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services
+  nameWithType: Virtufin.WebSocketManager.Services
+  fullName: Virtufin.WebSocketManager.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Diagnostics.Metrics.Counter{System.Int64}
+  commentId: T:System.Diagnostics.Metrics.Counter{System.Int64}
+  parent: System.Diagnostics.Metrics
+  definition: System.Diagnostics.Metrics.Counter`1
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics.counter-1
+  name: Counter<long>
+  nameWithType: Counter<long>
+  fullName: System.Diagnostics.Metrics.Counter<long>
+  nameWithType.vb: Counter(Of Long)
+  fullName.vb: System.Diagnostics.Metrics.Counter(Of Long)
+  name.vb: Counter(Of Long)
+  spec.csharp:
+  - uid: System.Diagnostics.Metrics.Counter`1
+    name: Counter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics.counter-1
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: System.Diagnostics.Metrics.Counter`1
+    name: Counter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics.counter-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.Diagnostics.Metrics.Counter`1
+  commentId: T:System.Diagnostics.Metrics.Counter`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics.counter-1
+  name: Counter<T>
+  nameWithType: Counter<T>
+  fullName: System.Diagnostics.Metrics.Counter<T>
+  nameWithType.vb: Counter(Of T)
+  fullName.vb: System.Diagnostics.Metrics.Counter(Of T)
+  name.vb: Counter(Of T)
+  spec.csharp:
+  - uid: System.Diagnostics.Metrics.Counter`1
+    name: Counter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics.counter-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Diagnostics.Metrics.Counter`1
+    name: Counter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics.counter-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Diagnostics.Metrics
+  commentId: N:System.Diagnostics.Metrics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Diagnostics.Metrics
+  nameWithType: System.Diagnostics.Metrics
+  fullName: System.Diagnostics.Metrics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+  - name: .
+  - uid: System.Diagnostics.Metrics
+    name: Metrics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+  - name: .
+  - uid: System.Diagnostics.Metrics
+    name: Metrics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition*
+  commentId: Overload:Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition
+  href: Virtufin.WebSocketManager.Services.AppMetrics.html#Virtufin_WebSocketManager_Services_AppMetrics_RecordFailedPrecondition_System_String_
+  name: RecordFailedPrecondition
+  nameWithType: AppMetrics.RecordFailedPrecondition
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.RecordFailedPrecondition
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss*
+  commentId: Overload:Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss
+  href: Virtufin.WebSocketManager.Services.AppMetrics.html#Virtufin_WebSocketManager_Services_AppMetrics_RecordOwnershipMiss_System_Boolean_
+  name: RecordOwnershipMiss
+  nameWithType: AppMetrics.RecordOwnershipMiss
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded*
+  commentId: Overload:Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded
+  href: Virtufin.WebSocketManager.Services.AppMetrics.html#Virtufin_WebSocketManager_Services_AppMetrics_RecordForwarded_System_String_
+  name: RecordForwarded
+  nameWithType: AppMetrics.RecordForwarded
+  fullName: Virtufin.WebSocketManager.Services.AppMetrics.RecordForwarded

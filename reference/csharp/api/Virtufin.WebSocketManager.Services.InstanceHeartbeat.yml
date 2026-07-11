@@ -22,7 +22,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: InstanceHeartbeat
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 146
+    startLine: 325
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -60,7 +60,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 146
+    startLine: 325
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -96,7 +96,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: InstanceId
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 146
+    startLine: 325
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -125,7 +125,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: LastSeenAt
     path: ../../../src/Virtufin.WebSocketManager/Services/InstanceHeartbeatService.cs
-    startLine: 146
+    startLine: 325
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services

@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class DaprConstants | Virtufin WebSocketManager - C# Reference </title>
+      <title>Class OwnershipForwardOptions | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DaprConstants | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Class OwnershipForwardOptions | Virtufin WebSocketManager - C# Reference ">
       
-      
+      <meta name="description" content="Tuning for the optional owner-replica forwarding path. When  is 0 (default), the WSM never forwards cross-instance RPCs and the caller receives StatusCode.FailedPrecondition on every miss. Set the threshold to a non-zero value to enable forwarding only after the running 5-minute miss rate exceeds it.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants">
+        <article data-uid="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions">
 
 
 
-  <h1 id="Virtufin_WebSocketManager_Configuration_DaprConstants" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants" class="text-break">
-Class DaprConstants  
+  <h1 id="Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions" data-uid="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions" class="text-break">
+Class OwnershipForwardOptions  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,11 +101,17 @@ Class DaprConstants
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Tuning for the optional owner-replica forwarding path. When
+<a class="xref" href="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MissesPerMinuteThreshold">MissesPerMinuteThreshold</a> is 0 (default), the WSM never
+forwards cross-instance RPCs and the caller receives
+<code>StatusCode.FailedPrecondition</code> on every miss. Set the threshold
+to a non-zero value to enable forwarding only after the running
+5-minute miss rate exceeds it.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DaprConstants</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record OwnershipForwardOptions : IEquatable&lt;OwnershipForwardOptions&gt;</code></pre>
   </div>
 
 
@@ -115,10 +121,16 @@ Class DaprConstants
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DaprConstants</span></div>
+      <div><span class="xref">OwnershipForwardOptions</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html">OwnershipForwardOptions</a>&gt;</div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -137,9 +149,6 @@ Class DaprConstants
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
@@ -150,6 +159,12 @@ Class DaprConstants
 
 
 
+  <h2 id="Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The forward uses Dapr service invocation
+(<code>DaprClient.InvokeMethodAsync</code>) against the owning replica's
+app id (<code>websocketmanager</code>) so callers do not need cluster
+topology knowledge.</p>
+</div>
 
 
   <h2 class="section" id="fields">Fields
@@ -157,16 +172,110 @@ Class DaprConstants
 
 
 
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_ClearAllOnStartEnvVar" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.ClearAllOnStartEnvVar">
-  ClearAllOnStartEnvVar
+  <h3 id="Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_DefaultMissesPerMinuteThreshold" data-uid="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.DefaultMissesPerMinuteThreshold">
+  DefaultMissesPerMinuteThreshold
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Default threshold: disabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string ClearAllOnStartEnvVar = &quot;CLEAR_ALL_ON_START&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const int DefaultMissesPerMinuteThreshold = 0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MaxMissesPerMinuteThreshold" data-uid="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MaxMissesPerMinuteThreshold">
+  MaxMissesPerMinuteThreshold
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum threshold. The forward path is always enabled above this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxMissesPerMinuteThreshold = 10000</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MinMissesPerMinuteThreshold" data-uid="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MinMissesPerMinuteThreshold">
+  MinMissesPerMinuteThreshold
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Minimum threshold. Zero disables the forward path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MinMissesPerMinuteThreshold = 0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_OwnershipMissForwardThresholdEnvVar" data-uid="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar">
+  OwnershipMissForwardThresholdEnvVar
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Env var for <a class="xref" href="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MissesPerMinuteThreshold">MissesPerMinuteThreshold</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string OwnershipMissForwardThresholdEnvVar = &quot;OWNERSHIP_MISS_FORWARD_THRESHOLD&quot;</code></pre>
   </div>
 
 
@@ -186,238 +295,36 @@ Class DaprConstants
 
 
 
+  <h2 class="section" id="properties">Properties
+</h2>
 
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_HostnameEnvVar" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.HostnameEnvVar">
-  HostnameEnvVar
+
+  <a id="Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MissesPerMinuteThreshold_" data-uid="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MissesPerMinuteThreshold" data-uid="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold">
+  MissesPerMinuteThreshold
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cross-instance ownership-miss count per minute at or above which
+the WSM begins to forward RPCs to the owning replica via Dapr
+service invocation. Zero disables the forward path.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string HostnameEnvVar = &quot;HOSTNAME&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public int MissesPerMinuteThreshold { get; init; }</code></pre>
   </div>
 
 
 
 
-  <h4 class="section">Field Value</h4>
+
+  <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_IndexKey" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.IndexKey">
-  IndexKey
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string IndexKey = &quot;websocketmanager.connection.index&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_InstanceIndexKeyPrefix" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKeyPrefix">
-  InstanceIndexKeyPrefix
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string InstanceIndexKeyPrefix = &quot;websocketmanager.instance.index.&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_KeyPrefix" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.KeyPrefix">
-  KeyPrefix
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string KeyPrefix = &quot;websocketmanager.connection.&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_PubsubName" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.PubsubName">
-  PubsubName
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string PubsubName = &quot;pubsub&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_PubsubNameKey" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.PubsubNameKey">
-  PubsubNameKey
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string PubsubNameKey = &quot;pubsubName&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_StateStoreName" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.StateStoreName">
-  StateStoreName
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string StateStoreName = &quot;statestore&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_StateStoreNameKey" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.StateStoreNameKey">
-  StateStoreNameKey
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string StateStoreNameKey = &quot;stateStoreName&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
 
 
 
@@ -430,10 +337,10 @@ Class DaprConstants
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Configuration_DaprConstants_InstanceIndexKey_" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey*"></a>
+  <a id="Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_FromEnvironment_" data-uid="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Configuration_DaprConstants_InstanceIndexKey_System_String_" data-uid="Virtufin.WebSocketManager.Configuration.DaprConstants.InstanceIndexKey(System.String)">
-  InstanceIndexKey(string)
+  <h3 id="Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_FromEnvironment_System_Func_System_String_System_String__" data-uid="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func{System.String,System.String})">
+  FromEnvironment(Func&lt;string, string?&gt;)
   
   </h3>
 
@@ -441,18 +348,18 @@ Class DaprConstants
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string InstanceIndexKey(string instanceId)</code></pre>
+    <pre><code class="lang-csharp hljs">public static OwnershipForwardOptions FromEnvironment(Func&lt;string, string?&gt; getEnvironment)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>instanceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>getEnvironment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html">OwnershipForwardOptions</a></dt>
     <dd></dd>
   </dl>
 
