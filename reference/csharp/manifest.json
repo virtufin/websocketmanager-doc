@@ -392,7 +392,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.yml\" sourcestartlinenumber=\"1\">Default implementation of IInstanceIdProvider.\nUses the HOSTNAME environment variable (Kubernetes pod name) for the instance ID.\nFalls back to a generated GUID if no HOSTNAME is set.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -448,7 +448,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.IInstanceIdProvider",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.yml\" sourcestartlinenumber=\"1\">Provides the unique identifier for this service instance.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.yml\" sourcestartlinenumber=\"1\">Provides the unique identifier for this service instance.\nUses the HOSTNAME environment variable (Kubernetes pod name).\nFalls back to a generated GUID if no HOSTNAME is set.</p>\n"
     },
     {
       "type": "ManagedReference",

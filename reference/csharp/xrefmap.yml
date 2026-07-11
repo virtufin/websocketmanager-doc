@@ -1625,35 +1625,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetInstanceId
   nameWithType: DefaultInstanceIdProvider.GetInstanceId
-- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds
-  name: GetKnownInstanceIds()
-  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetKnownInstanceIds
-  commentId: M:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds
-  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds()
-  nameWithType: DefaultInstanceIdProvider.GetKnownInstanceIds()
-- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds*
-  name: GetKnownInstanceIds
-  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetKnownInstanceIds_
-  commentId: Overload:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetKnownInstanceIds
-  nameWithType: DefaultInstanceIdProvider.GetKnownInstanceIds
-- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance(System.String)
-  name: RegisterLiveInstance(string)
-  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_RegisterLiveInstance_System_String_
-  commentId: M:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance(System.String)
-  name.vb: RegisterLiveInstance(String)
-  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance(string)
-  fullName.vb: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance(String)
-  nameWithType: DefaultInstanceIdProvider.RegisterLiveInstance(string)
-  nameWithType.vb: DefaultInstanceIdProvider.RegisterLiveInstance(String)
-- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance*
-  name: RegisterLiveInstance
-  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_RegisterLiveInstance_
-  commentId: Overload:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.RegisterLiveInstance
-  nameWithType: DefaultInstanceIdProvider.RegisterLiveInstance
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
   name: DistributedWebSocketConnectionStore
   href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html
@@ -1948,35 +1919,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetInstanceId
   nameWithType: IInstanceIdProvider.GetInstanceId
-- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
-  name: GetKnownInstanceIds()
-  href: api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_GetKnownInstanceIds
-  commentId: M:Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
-  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds()
-  nameWithType: IInstanceIdProvider.GetKnownInstanceIds()
-- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds*
-  name: GetKnownInstanceIds
-  href: api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_GetKnownInstanceIds_
-  commentId: Overload:Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetKnownInstanceIds
-  nameWithType: IInstanceIdProvider.GetKnownInstanceIds
-- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(System.String)
-  name: RegisterLiveInstance(string)
-  href: api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_RegisterLiveInstance_System_String_
-  commentId: M:Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(System.String)
-  name.vb: RegisterLiveInstance(String)
-  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(string)
-  fullName.vb: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance(String)
-  nameWithType: IInstanceIdProvider.RegisterLiveInstance(string)
-  nameWithType.vb: IInstanceIdProvider.RegisterLiveInstance(String)
-- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance*
-  name: RegisterLiveInstance
-  href: api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_RegisterLiveInstance_
-  commentId: Overload:Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.RegisterLiveInstance
-  nameWithType: IInstanceIdProvider.RegisterLiveInstance
 - uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
   name: IWebSocketClientWrapper
   href: api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html
