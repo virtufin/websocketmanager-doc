@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class WebSocketOptions | Virtufin WebSocketManager - C# Reference </title>
+      <title>Class DaprAppCallback | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class WebSocketOptions | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Class DaprAppCallback | Virtufin WebSocketManager - C# Reference ">
       
-      <meta name="description" content="Configuration options for WebSocket connections.">
+      <meta name="description" content="Receiver-side endpoint for Dapr gRPC service invocation. When a peer WSM replica issues DaprClient.InvokeMethodGrpcAsync&amp;lt;…, …&amp;gt;(SelfAppId, fullMethodName, …), the Dapr sidecar routes the call here as AppCallback.OnInvoke(InvokeRequest, ServerCallContext). We dispatch by request.Method into the same handler chain used by the gRPC overrides on , so forwarded calls share semantics with direct gRPC calls.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,25 +88,32 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions">
+        <article data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback">
 
 
 
-  <h1 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions" class="text-break">
-Class WebSocketOptions  
+  <h1 id="Virtufin_WebSocketManager_Services_DaprAppCallback" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback" class="text-break">
+Class DaprAppCallback  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.WebSocketManager.html">WebSocketManager</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.html">Services</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.Options.html">Options</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.WebSocketManager.html">WebSocketManager</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.html">Services</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Configuration options for WebSocket connections.</p>
+  <div class="markdown summary"><p>Receiver-side endpoint for Dapr gRPC service invocation. When a
+peer WSM replica issues
+<code>DaprClient.InvokeMethodGrpcAsync&lt;…, …&gt;(SelfAppId, fullMethodName, …)</code>,
+the Dapr sidecar routes the call here as
+<code>AppCallback.OnInvoke(InvokeRequest, ServerCallContext)</code>. We
+dispatch by <code>request.Method</code> into the same handler chain used
+by the gRPC overrides on <a class="xref" href="Virtufin.WebSocketManager.Protos.WebSocketManagerService.html">WebSocketManagerService</a>, so
+forwarded calls share semantics with direct gRPC calls.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WebSocketOptions</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class DaprAppCallback : AppCallback.AppCallbackBase</code></pre>
   </div>
 
 
@@ -116,7 +123,8 @@ Class WebSocketOptions
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">WebSocketOptions</span></div>
+      <div><span class="xref">AppCallback</span>.<span class="xref">AppCallbackBase</span></div>
+      <div><span class="xref">DaprAppCallback</span></div>
     </dd>
   </dl>
 
@@ -125,6 +133,21 @@ Class WebSocketOptions
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">AppCallback.AppCallbackBase.ListTopicSubscriptions(Empty, ServerCallContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">AppCallback.AppCallbackBase.OnTopicEvent(TopicEventRequest, ServerCallContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">AppCallback.AppCallbackBase.ListInputBindings(Empty, ServerCallContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">AppCallback.AppCallbackBase.OnBindingEvent(BindingEventRequest, ServerCallContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">AppCallback.AppCallbackBase.OnBulkTopicEvent(TopicEventBulkRequest, ServerCallContext)</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -136,9 +159,6 @@ Class WebSocketOptions
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
@@ -153,13 +173,14 @@ Class WebSocketOptions
 
 
 
-  <h2 class="section" id="fields">Fields
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
+  <a id="Virtufin_WebSocketManager_Services_DaprAppCallback__ctor_" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.#ctor*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultDefaultTimeoutMs" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultDefaultTimeoutMs">
-  DefaultDefaultTimeoutMs
+  <h3 id="Virtufin_WebSocketManager_Services_DaprAppCallback__ctor_System_Collections_Generic_IEnumerable_Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod__Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprAppCallback__" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.#ctor(System.Collections.Generic.IEnumerable{Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod},Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprAppCallback})">
+  DaprAppCallback(IEnumerable&lt;RegisteredMethod&gt;, ILogger&lt;DaprAppCallback&gt;)
   
   </h3>
 
@@ -167,15 +188,14 @@ Class WebSocketOptions
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int DefaultDefaultTimeoutMs = 10000</code></pre>
+    <pre><code class="lang-csharp hljs">public DaprAppCallback(IEnumerable&lt;DaprAppCallback.RegisteredMethod&gt; methods, ILogger&lt;DaprAppCallback&gt; logger)</code></pre>
   </div>
 
-
-
-
-  <h4 class="section">Field Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><code>methods</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.html">DaprAppCallback</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html">RegisteredMethod</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.html">DaprAppCallback</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -188,185 +208,46 @@ Class WebSocketOptions
 
 
 
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultReconnectBaseDelayMs" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectBaseDelayMs">
-  DefaultReconnectBaseDelayMs
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int DefaultReconnectBaseDelayMs = 1000</code></pre>
-  </div>
 
 
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultReconnectMaxAttempts" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectMaxAttempts">
-  DefaultReconnectMaxAttempts
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int DefaultReconnectMaxAttempts = 5</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_MaxReconnectDelayMs" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.MaxReconnectDelayMs">
-  MaxReconnectDelayMs
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int MaxReconnectDelayMs = 30000</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultTimeoutMs_" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs*"></a>
+  <a id="Virtufin_WebSocketManager_Services_DaprAppCallback_OnInvoke_" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultTimeoutMs" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs">
-  DefaultTimeoutMs
+  <h3 id="Virtufin_WebSocketManager_Services_DaprAppCallback_OnInvoke_Dapr_Client_Autogen_Grpc_v1_InvokeRequest_Grpc_Core_ServerCallContext_" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke(Dapr.Client.Autogen.Grpc.v1.InvokeRequest,Grpc.Core.ServerCallContext)">
+  OnInvoke(InvokeRequest, ServerCallContext)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DefaultTimeoutMs { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_ReconnectBaseDelayMs_" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectBaseDelayMs*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_ReconnectBaseDelayMs" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectBaseDelayMs">
-  ReconnectBaseDelayMs
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ReconnectBaseDelayMs { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_ReconnectMaxAttempts_" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectMaxAttempts*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_ReconnectMaxAttempts" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectMaxAttempts">
-  ReconnectMaxAttempts
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the maximum number of reconnection attempts on failure.</p>
+  <div class="markdown level1 summary"><p>Invokes service method with InvokeRequest.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ReconnectMaxAttempts { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task&lt;InvokeResponse&gt; OnInvoke(InvokeRequest request, ServerCallContext context)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dt><code>request</code> <span class="xref">InvokeRequest</span></dt>
+    <dd><p>The request received from the client.</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd><p>The context of the server-side call handler being invoked.</p>
+</dd>
   </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">InvokeResponse</span>&gt;</dt>
+    <dd><p>The response to send back to the client (wrapped by a task).</p>
+</dd>
+  </dl>
+
+
+
 
 
 

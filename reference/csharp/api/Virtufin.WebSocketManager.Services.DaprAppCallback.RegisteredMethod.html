@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class WebSocketOptions | Virtufin WebSocketManager - C# Reference </title>
+      <title>Class DaprAppCallback.RegisteredMethod | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class WebSocketOptions | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Class DaprAppCallback.RegisteredMethod | Virtufin WebSocketManager - C# Reference ">
       
-      <meta name="description" content="Configuration options for WebSocket connections.">
+      <meta name="description" content="Registered method: full proto method-name + handler delegate.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,25 +88,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions">
+        <article data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod">
 
 
 
-  <h1 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions" class="text-break">
-Class WebSocketOptions  
+  <h1 id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod" class="text-break">
+Class DaprAppCallback.RegisteredMethod  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.WebSocketManager.html">WebSocketManager</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.html">Services</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.Options.html">Options</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.WebSocketManager.html">WebSocketManager</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.html">Services</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Configuration options for WebSocket connections.</p>
+  <div class="markdown summary"><p>Registered method: full proto method-name + handler delegate.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WebSocketOptions</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record DaprAppCallback.RegisteredMethod : IEquatable&lt;DaprAppCallback.RegisteredMethod&gt;</code></pre>
   </div>
 
 
@@ -116,10 +116,16 @@ Class WebSocketOptions
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">WebSocketOptions</span></div>
+      <div><span class="xref">DaprAppCallback.RegisteredMethod</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.html">DaprAppCallback</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html">RegisteredMethod</a>&gt;</div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -138,9 +144,6 @@ Class WebSocketOptions
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
@@ -153,121 +156,35 @@ Class WebSocketOptions
 
 
 
-  <h2 class="section" id="fields">Fields
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
+  <a id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod__ctor_" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.#ctor*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultDefaultTimeoutMs" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultDefaultTimeoutMs">
-  DefaultDefaultTimeoutMs
+  <h3 id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod__ctor_System_String_Virtufin_WebSocketManager_Services_DaprAppCallback_MethodHandler_" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.#ctor(System.String,Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler)">
+  RegisteredMethod(string, MethodHandler)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Registered method: full proto method-name + handler delegate.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int DefaultDefaultTimeoutMs = 10000</code></pre>
+    <pre><code class="lang-csharp hljs">public RegisteredMethod(string FullMethodName, DaprAppCallback.MethodHandler Handler)</code></pre>
   </div>
 
-
-
-
-  <h4 class="section">Field Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><code>FullMethodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Handler</code> <a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.html">DaprAppCallback</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler.html">MethodHandler</a></dt>
     <dd></dd>
   </dl>
 
 
 
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultReconnectBaseDelayMs" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectBaseDelayMs">
-  DefaultReconnectBaseDelayMs
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int DefaultReconnectBaseDelayMs = 1000</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultReconnectMaxAttempts" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultReconnectMaxAttempts">
-  DefaultReconnectMaxAttempts
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int DefaultReconnectMaxAttempts = 5</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_MaxReconnectDelayMs" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.MaxReconnectDelayMs">
-  MaxReconnectDelayMs
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int MaxReconnectDelayMs = 30000</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -281,10 +198,10 @@ Class WebSocketOptions
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultTimeoutMs_" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs*"></a>
+  <a id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_FullMethodName_" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_DefaultTimeoutMs" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.DefaultTimeoutMs">
-  DefaultTimeoutMs
+  <h3 id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_FullMethodName" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName">
+  FullMethodName
   
   </h3>
 
@@ -292,7 +209,7 @@ Class WebSocketOptions
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DefaultTimeoutMs { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string FullMethodName { get; init; }</code></pre>
   </div>
 
 
@@ -301,7 +218,7 @@ Class WebSocketOptions
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -312,10 +229,10 @@ Class WebSocketOptions
 
 
 
-  <a id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_ReconnectBaseDelayMs_" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectBaseDelayMs*"></a>
+  <a id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_Handler_" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_ReconnectBaseDelayMs" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectBaseDelayMs">
-  ReconnectBaseDelayMs
+  <h3 id="Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_Handler" data-uid="Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler">
+  Handler
   
   </h3>
 
@@ -323,7 +240,7 @@ Class WebSocketOptions
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ReconnectBaseDelayMs { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DaprAppCallback.MethodHandler Handler { get; init; }</code></pre>
   </div>
 
 
@@ -332,39 +249,7 @@ Class WebSocketOptions
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_ReconnectMaxAttempts_" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectMaxAttempts*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_Options_WebSocketOptions_ReconnectMaxAttempts" data-uid="Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectMaxAttempts">
-  ReconnectMaxAttempts
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the maximum number of reconnection attempts on failure.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ReconnectMaxAttempts { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.html">DaprAppCallback</a>.<a class="xref" href="Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler.html">MethodHandler</a></dt>
     <dd></dd>
   </dl>
 

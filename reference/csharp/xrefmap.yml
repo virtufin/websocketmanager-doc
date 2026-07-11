@@ -707,15 +707,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Protos.WebSocketManagerService
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService
   nameWithType: WebSocketManagerService
-- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider)
-  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, DaprClient, IInstanceIdProvider)
-  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_Dapr_Client_DaprClient_Virtufin_WebSocketManager_Services_IInstanceIdProvider_
-  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider)
-  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, DaprClient, IInstanceIdProvider)
-  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>, Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider)
-  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService), Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider)
-  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, DaprClient, IInstanceIdProvider)
-  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, DaprClient, IInstanceIdProvider)
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient)
+  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, DaprClient)
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_Dapr_Client_DaprClient_
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient)
+  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, DaprClient)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>, Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Dapr.Client.DaprClient)
+  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService), Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Dapr.Client.DaprClient)
+  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, DaprClient)
+  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, DaprClient)
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor*
   name: WebSocketManagerService
   href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_
@@ -791,6 +791,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.List
   nameWithType: WebSocketManagerService.List
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException(System.Exception)
+  name: MapException(Exception)
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_MapException_System_Exception_
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException(System.Exception)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException(System.Exception)
+  nameWithType: WebSocketManagerService.MapException(Exception)
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException*
+  name: MapException
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_MapException_
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException
+  nameWithType: WebSocketManagerService.MapException
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
   name: Send(SendRequest, ServerCallContext)
   href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_Send_Virtufin_WebSocketManager_Protos_SendRequest_Grpc_Core_ServerCallContext_
@@ -1147,6 +1160,101 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.ConnectionReclaimerHostedService.ExecuteAsync
   nameWithType: ConnectionReclaimerHostedService.ExecuteAsync
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback
+  name: DaprAppCallback
+  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.html
+  commentId: T:Virtufin.WebSocketManager.Services.DaprAppCallback
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback
+  nameWithType: DaprAppCallback
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.#ctor(System.Collections.Generic.IEnumerable{Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod},Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprAppCallback})
+  name: DaprAppCallback(IEnumerable<RegisteredMethod>, ILogger<DaprAppCallback>)
+  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.html#Virtufin_WebSocketManager_Services_DaprAppCallback__ctor_System_Collections_Generic_IEnumerable_Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod__Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprAppCallback__
+  commentId: M:Virtufin.WebSocketManager.Services.DaprAppCallback.#ctor(System.Collections.Generic.IEnumerable{Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod},Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprAppCallback})
+  name.vb: New(IEnumerable(Of RegisteredMethod), ILogger(Of DaprAppCallback))
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.DaprAppCallback(System.Collections.Generic.IEnumerable<Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod>, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.DaprAppCallback>)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprAppCallback.New(System.Collections.Generic.IEnumerable(Of Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod), Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprAppCallback))
+  nameWithType: DaprAppCallback.DaprAppCallback(IEnumerable<DaprAppCallback.RegisteredMethod>, ILogger<DaprAppCallback>)
+  nameWithType.vb: DaprAppCallback.New(IEnumerable(Of DaprAppCallback.RegisteredMethod), ILogger(Of DaprAppCallback))
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.#ctor*
+  name: DaprAppCallback
+  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.html#Virtufin_WebSocketManager_Services_DaprAppCallback__ctor_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprAppCallback.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.DaprAppCallback
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprAppCallback.New
+  nameWithType: DaprAppCallback.DaprAppCallback
+  nameWithType.vb: DaprAppCallback.New
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler
+  name: DaprAppCallback.MethodHandler
+  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler.html
+  commentId: T:Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler
+  nameWithType: DaprAppCallback.MethodHandler
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke(Dapr.Client.Autogen.Grpc.v1.InvokeRequest,Grpc.Core.ServerCallContext)
+  name: OnInvoke(InvokeRequest, ServerCallContext)
+  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.html#Virtufin_WebSocketManager_Services_DaprAppCallback_OnInvoke_Dapr_Client_Autogen_Grpc_v1_InvokeRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke(Dapr.Client.Autogen.Grpc.v1.InvokeRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke(Dapr.Client.Autogen.Grpc.v1.InvokeRequest, Grpc.Core.ServerCallContext)
+  nameWithType: DaprAppCallback.OnInvoke(InvokeRequest, ServerCallContext)
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke*
+  name: OnInvoke
+  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.html#Virtufin_WebSocketManager_Services_DaprAppCallback_OnInvoke_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.OnInvoke
+  nameWithType: DaprAppCallback.OnInvoke
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod
+  name: DaprAppCallback.RegisteredMethod
+  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html
+  commentId: T:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod
+  nameWithType: DaprAppCallback.RegisteredMethod
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.#ctor(System.String,Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler)
+  name: RegisteredMethod(string, MethodHandler)
+  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html#Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod__ctor_System_String_Virtufin_WebSocketManager_Services_DaprAppCallback_MethodHandler_
+  commentId: M:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.#ctor(System.String,Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler)
+  name.vb: New(String, MethodHandler)
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.RegisteredMethod(string, Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.New(String, Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler)
+  nameWithType: DaprAppCallback.RegisteredMethod.RegisteredMethod(string, DaprAppCallback.MethodHandler)
+  nameWithType.vb: DaprAppCallback.RegisteredMethod.New(String, DaprAppCallback.MethodHandler)
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.#ctor*
+  name: RegisteredMethod
+  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html#Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod__ctor_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.RegisteredMethod
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.New
+  nameWithType: DaprAppCallback.RegisteredMethod.RegisteredMethod
+  nameWithType.vb: DaprAppCallback.RegisteredMethod.New
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName
+  name: FullMethodName
+  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html#Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_FullMethodName
+  commentId: P:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName
+  nameWithType: DaprAppCallback.RegisteredMethod.FullMethodName
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName*
+  name: FullMethodName
+  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html#Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_FullMethodName_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.FullMethodName
+  nameWithType: DaprAppCallback.RegisteredMethod.FullMethodName
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler
+  name: Handler
+  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html#Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_Handler
+  commentId: P:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler
+  nameWithType: DaprAppCallback.RegisteredMethod.Handler
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler*
+  name: Handler
+  href: api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html#Virtufin_WebSocketManager_Services_DaprAppCallback_RegisteredMethod_Handler_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.Handler
+  nameWithType: DaprAppCallback.RegisteredMethod.Handler
 - uid: Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck
   name: DaprCircuitBreakerHealthCheck
   href: api/Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.html

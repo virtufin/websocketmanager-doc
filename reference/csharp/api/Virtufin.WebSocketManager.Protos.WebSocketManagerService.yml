@@ -5,12 +5,13 @@ items:
   id: WebSocketManagerService
   parent: Virtufin.WebSocketManager.Protos
   children:
-  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider)
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.List(Virtufin.WebSocketManager.Protos.ListRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException(System.Exception)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.Send(Virtufin.WebSocketManager.Protos.SendRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.SendRaw(Virtufin.WebSocketManager.Protos.SendRawRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.SetTag(Virtufin.WebSocketManager.Protos.SetTagRequest,Grpc.Core.ServerCallContext)
@@ -31,7 +32,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: WebSocketManagerService
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 11
+    startLine: 9
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -49,16 +50,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider)
-  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider)
-  id: '#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient,Virtufin.WebSocketManager.Services.IInstanceIdProvider)'
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient)
+  id: '#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Dapr.Client.DaprClient)'
   parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
   langs:
   - csharp
   - vb
-  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, DaprClient, IInstanceIdProvider)
-  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, DaprClient, IInstanceIdProvider)
-  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>, Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider)
+  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, DaprClient)
+  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, DaprClient)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>, Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Dapr.Client.DaprClient)
   type: Constructor
   source:
     remote:
@@ -67,12 +68,12 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 35
+    startLine: 29
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
   syntax:
-    content: public WebSocketManagerService(IWebSocketService webSocketService, ILogger<WebSocketManagerService> logger, OwnershipForwardOptions forwardOptions, DaprClient daprClient, IInstanceIdProvider instanceIdProvider)
+    content: public WebSocketManagerService(IWebSocketService webSocketService, ILogger<WebSocketManagerService> logger, OwnershipForwardOptions forwardOptions, DaprClient daprClient)
     parameters:
     - id: webSocketService
       type: Virtufin.WebSocketManager.Services.IWebSocketService
@@ -82,13 +83,11 @@ items:
       type: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
     - id: daprClient
       type: Dapr.Client.DaprClient
-    - id: instanceIdProvider
-      type: Virtufin.WebSocketManager.Services.IInstanceIdProvider
-    content.vb: Public Sub New(webSocketService As IWebSocketService, logger As ILogger(Of WebSocketManagerService), forwardOptions As OwnershipForwardOptions, daprClient As DaprClient, instanceIdProvider As IInstanceIdProvider)
+    content.vb: Public Sub New(webSocketService As IWebSocketService, logger As ILogger(Of WebSocketManagerService), forwardOptions As OwnershipForwardOptions, daprClient As DaprClient)
   overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor*
-  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, DaprClient, IInstanceIdProvider)
-  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService), Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Dapr.Client.DaprClient, Virtufin.WebSocketManager.Services.IInstanceIdProvider)
-  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, DaprClient, IInstanceIdProvider)
+  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, DaprClient)
+  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService), Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Dapr.Client.DaprClient)
+  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, DaprClient)
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
   id: Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
@@ -107,7 +106,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Connect
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 49
+    startLine: 41
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -142,7 +141,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: List
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 75
+    startLine: 62
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -177,7 +176,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Disconnect
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 101
+    startLine: 88
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -212,7 +211,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StartPublish
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 235
+    startLine: 122
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -247,7 +246,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StopPublish
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 278
+    startLine: 156
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -282,7 +281,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Send
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 313
+    startLine: 190
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -317,7 +316,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendRaw
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 367
+    startLine: 227
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -352,7 +351,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SetTag
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 410
+    startLine: 261
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -387,7 +386,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetTag
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 423
+    startLine: 274
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -422,7 +421,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SetTags
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 441
+    startLine: 292
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -457,7 +456,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetTags
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 454
+    startLine: 305
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -474,6 +473,46 @@ items:
     content.vb: Public Overrides Function GetTags(request As GetTagsRequest, context As ServerCallContext) As Task(Of GetTagsResponse)
   overridden: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.GetTags(Virtufin.WebSocketManager.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTags*
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException(System.Exception)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException(System.Exception)
+  id: MapException(System.Exception)
+  parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
+  langs:
+  - csharp
+  - vb
+  name: MapException(Exception)
+  nameWithType: WebSocketManagerService.MapException(Exception)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: MapException
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
+    startLine: 329
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Protos
+  summary: >-
+    Maps domain exceptions to gRPC statuses. Shared between the gRPC
+
+    overrides above and the <xref href="Virtufin.WebSocketManager.Services.DaprAppCallback" data-throw-if-not-resolved="false"></xref> receiver,
+
+    so a forwarded call returns the same status code a direct gRPC
+
+    call would.
+  example: []
+  syntax:
+    content: public static RpcException MapException(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+    return:
+      type: Grpc.Core.RpcException
+    content.vb: Public Shared Function MapException(ex As Exception) As RpcException
+  overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException*
 references:
 - uid: Virtufin.WebSocketManager.Protos
   commentId: N:Virtufin.WebSocketManager.Protos
@@ -762,7 +801,7 @@ references:
   fullName: System
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor*
   commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor
-  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_Dapr_Client_DaprClient_Virtufin_WebSocketManager_Services_IInstanceIdProvider_
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_Dapr_Client_DaprClient_
   name: WebSocketManagerService
   nameWithType: WebSocketManagerService.WebSocketManagerService
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService
@@ -823,13 +862,6 @@ references:
   name: DaprClient
   nameWithType: DaprClient
   fullName: Dapr.Client.DaprClient
-- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  commentId: T:Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html
-  name: IInstanceIdProvider
-  nameWithType: IInstanceIdProvider
-  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider
 - uid: Virtufin.WebSocketManager.Services
   commentId: N:Virtufin.WebSocketManager.Services
   href: Virtufin.html
@@ -1919,3 +1951,31 @@ references:
   - uid: Virtufin.WebSocketManager.Protos.GetTagsResponse
     name: GetTagsResponse
   - name: )
+- uid: Virtufin.WebSocketManager.Services.DaprAppCallback
+  commentId: T:Virtufin.WebSocketManager.Services.DaprAppCallback
+  href: Virtufin.WebSocketManager.Services.DaprAppCallback.html
+  name: DaprAppCallback
+  nameWithType: DaprAppCallback
+  fullName: Virtufin.WebSocketManager.Services.DaprAppCallback
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException*
+  commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService_MapException_System_Exception_
+  name: MapException
+  nameWithType: WebSocketManagerService.MapException
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.MapException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Grpc.Core.RpcException
+  commentId: T:Grpc.Core.RpcException
+  parent: Grpc.Core
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/RpcException.cs
+  name: RpcException
+  nameWithType: RpcException
+  fullName: Grpc.Core.RpcException

@@ -284,6 +284,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.DaprAppCallback.MethodHandler.yml\" sourcestartlinenumber=\"1\">Delegate: receive proto bytes, return proto bytes, propagate cancellation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.DaprAppCallback.RegisteredMethod.yml\" sourcestartlinenumber=\"1\">Registered method: full proto method-name + handler delegate.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.DaprAppCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.DaprAppCallback.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.DaprAppCallback",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.DaprAppCallback.yml\" sourcestartlinenumber=\"1\">Receiver-side endpoint for Dapr gRPC service invocation. When a\npeer WSM replica issues\n<code>DaprClient.InvokeMethodGrpcAsync&lt;…, …&gt;(SelfAppId, fullMethodName, …)</code>,\nthe Dapr sidecar routes the call here as\n<code>AppCallback.OnInvoke(InvokeRequest, ServerCallContext)</code>. We\ndispatch by <code>request.Method</code> into the same handler chain used\nby the gRPC overrides on <xref href=\"Virtufin.WebSocketManager.Protos.WebSocketManagerService\" data-throw-if-not-resolved=\"false\"></xref>, so\nforwarded calls share semantics with direct gRPC calls.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.WebSocketManager.Services.DaprCircuitBreakerHealthCheck.yml",
       "output": {
         ".html": {
