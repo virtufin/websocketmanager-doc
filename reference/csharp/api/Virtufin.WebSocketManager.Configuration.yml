@@ -10,7 +10,6 @@ items:
   - Virtufin.WebSocketManager.Configuration.DaprConstants
   - Virtufin.WebSocketManager.Configuration.InfraEvents
   - Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
-  - Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
   - Virtufin.WebSocketManager.Configuration.PeerForwardOptions
   - Virtufin.WebSocketManager.Configuration.PortConstants
   - Virtufin.WebSocketManager.Configuration.TimeoutConstants
@@ -57,13 +56,6 @@ references:
   name: InstanceHeartbeatOptions
   nameWithType: InstanceHeartbeatOptions
   fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
-- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
-  commentId: T:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
-  parent: Virtufin.WebSocketManager.Configuration
-  href: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html
-  name: OwnershipForwardOptions
-  nameWithType: OwnershipForwardOptions
-  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
 - uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions
   commentId: T:Virtufin.WebSocketManager.Configuration.PeerForwardOptions
   parent: Virtufin.WebSocketManager.Configuration

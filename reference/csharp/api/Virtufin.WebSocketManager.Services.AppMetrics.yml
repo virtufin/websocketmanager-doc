@@ -142,11 +142,11 @@ items:
 
     <code>lapsed</code> when the owner has dropped from <code>knownInstances</code>
 
-    past <code>INSTANCE_STALE_THRESHOLD_SECONDS</code>). Used as the gate for
+    past <code>INSTANCE_STALE_THRESHOLD_SECONDS</code>). Paired with
 
-    the owner-replica forwarding path (see
+    <code>DisconnectForwardedTotal</code> to measure how many misses were
 
-    <code>OwnershipForwardOptions</code>).
+    successfully forwarded to the owner replica.
   example: []
   syntax:
     content: public static readonly Counter<long> DisconnectOwnershipMissTotal

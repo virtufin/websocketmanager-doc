@@ -326,65 +326,6 @@ references:
   commentId: F:Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.StaleThresholdSecondsEnvVar
   fullName: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions.StaleThresholdSecondsEnvVar
   nameWithType: InstanceHeartbeatOptions.StaleThresholdSecondsEnvVar
-- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
-  name: OwnershipForwardOptions
-  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html
-  commentId: T:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
-  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
-  nameWithType: OwnershipForwardOptions
-- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.DefaultMissesPerMinuteThreshold
-  name: DefaultMissesPerMinuteThreshold
-  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_DefaultMissesPerMinuteThreshold
-  commentId: F:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.DefaultMissesPerMinuteThreshold
-  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.DefaultMissesPerMinuteThreshold
-  nameWithType: OwnershipForwardOptions.DefaultMissesPerMinuteThreshold
-- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func{System.String,System.String})
-  name: FromEnvironment(Func<string, string?>)
-  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_FromEnvironment_System_Func_System_String_System_String__
-  commentId: M:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func{System.String,System.String})
-  name.vb: FromEnvironment(Func(Of String, String))
-  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func<string, string?>)
-  fullName.vb: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment(System.Func(Of String, String))
-  nameWithType: OwnershipForwardOptions.FromEnvironment(Func<string, string?>)
-  nameWithType.vb: OwnershipForwardOptions.FromEnvironment(Func(Of String, String))
-- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment*
-  name: FromEnvironment
-  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_FromEnvironment_
-  commentId: Overload:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.FromEnvironment
-  nameWithType: OwnershipForwardOptions.FromEnvironment
-- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MaxMissesPerMinuteThreshold
-  name: MaxMissesPerMinuteThreshold
-  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MaxMissesPerMinuteThreshold
-  commentId: F:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MaxMissesPerMinuteThreshold
-  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MaxMissesPerMinuteThreshold
-  nameWithType: OwnershipForwardOptions.MaxMissesPerMinuteThreshold
-- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MinMissesPerMinuteThreshold
-  name: MinMissesPerMinuteThreshold
-  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MinMissesPerMinuteThreshold
-  commentId: F:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MinMissesPerMinuteThreshold
-  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MinMissesPerMinuteThreshold
-  nameWithType: OwnershipForwardOptions.MinMissesPerMinuteThreshold
-- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
-  name: MissesPerMinuteThreshold
-  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MissesPerMinuteThreshold
-  commentId: P:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
-  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
-  nameWithType: OwnershipForwardOptions.MissesPerMinuteThreshold
-- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold*
-  name: MissesPerMinuteThreshold
-  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_MissesPerMinuteThreshold_
-  commentId: Overload:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold
-  nameWithType: OwnershipForwardOptions.MissesPerMinuteThreshold
-- uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
-  name: OwnershipMissForwardThresholdEnvVar
-  href: api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html#Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_OwnershipMissForwardThresholdEnvVar
-  commentId: F:Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
-  fullName: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
-  nameWithType: OwnershipForwardOptions.OwnershipMissForwardThresholdEnvVar
 - uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions
   name: PeerForwardOptions
   href: api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.html
@@ -805,15 +746,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Protos.WebSocketManagerService
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService
   nameWithType: WebSocketManagerService
-- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.PeerChannelCache)
-  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, IDaprConnectionRepository, PeerChannelCache)
-  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__Virtufin_WebSocketManager_Configuration_OwnershipForwardOptions_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_WebSocketManager_Services_PeerChannelCache_
-  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions,Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.PeerChannelCache)
-  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, IDaprConnectionRepository, PeerChannelCache)
-  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>, Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.PeerChannelCache)
-  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService), Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions, Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.PeerChannelCache)
-  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, OwnershipForwardOptions, IDaprConnectionRepository, PeerChannelCache)
-  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService), OwnershipForwardOptions, IDaprConnectionRepository, PeerChannelCache)
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.PeerChannelCache)
+  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, IDaprConnectionRepository, PeerChannelCache)
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_WebSocketManager_Services_PeerChannelCache_
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.PeerChannelCache)
+  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService), IDaprConnectionRepository, PeerChannelCache)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>, Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.PeerChannelCache)
+  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService), Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.PeerChannelCache)
+  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, IDaprConnectionRepository, PeerChannelCache)
+  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService), IDaprConnectionRepository, PeerChannelCache)
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor*
   name: WebSocketManagerService
   href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_

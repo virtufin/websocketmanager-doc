@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/3af928fa87749e902f16c8772107ca30440585c3" target="_blank" rel="noopener" class="commit-badge" title="View commit 3af928fa87749e902f16c8772107ca30440585c3">
+            <a href="{git_repo_url}/commit/8c1426e80b8075df748ab03593627e038feb71bb" target="_blank" rel="noopener" class="commit-badge" title="View commit 8c1426e80b8075df748ab03593627e038feb71bb">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">3af928fa87749e902f16c8772107ca30440585c3</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">8c1426e80b8075df748ab03593627e038feb71bb</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -235,9 +235,9 @@ invocation. Tagged by method name. Stays at 0 when
   <div class="markdown level1 summary"><p>Total cross-instance ownership misses. Tagged by reason
 (<code>not_owned</code> when the local replica is not the owner,
 <code>lapsed</code> when the owner has dropped from <code>knownInstances</code>
-past <code>INSTANCE_STALE_THRESHOLD_SECONDS</code>). Used as the gate for
-the owner-replica forwarding path (see
-<code>OwnershipForwardOptions</code>).</p>
+past <code>INSTANCE_STALE_THRESHOLD_SECONDS</code>). Paired with
+<code>DisconnectForwardedTotal</code> to measure how many misses were
+successfully forwarded to the owner replica.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

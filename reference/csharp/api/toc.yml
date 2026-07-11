@@ -23,9 +23,6 @@ items:
     - uid: Virtufin.WebSocketManager.Configuration.InstanceHeartbeatOptions
       name: InstanceHeartbeatOptions
       type: Class
-    - uid: Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions
-      name: OwnershipForwardOptions
-      type: Class
     - uid: Virtufin.WebSocketManager.Configuration.PeerForwardOptions
       name: PeerForwardOptions
       type: Class

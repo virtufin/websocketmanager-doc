@@ -74,20 +74,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.yml\" sourcestartlinenumber=\"1\">Tuning for the optional owner-replica forwarding path. When\n<xref href=\"Virtufin.WebSocketManager.Configuration.OwnershipForwardOptions.MissesPerMinuteThreshold\" data-throw-if-not-resolved=\"false\"></xref> is 0 (default), the WSM never\nforwards cross-instance RPCs and the caller receives\n<code>StatusCode.FailedPrecondition</code> on every miss. Set the threshold\nto a non-zero value to enable forwarding only after the running\n5-minute miss rate exceeds it.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.WebSocketManager.Configuration.PeerForwardOptions.yml",
       "output": {
         ".html": {
