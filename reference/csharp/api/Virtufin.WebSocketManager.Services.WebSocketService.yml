@@ -5,7 +5,7 @@ items:
   id: WebSocketService
   parent: Virtufin.WebSocketManager.Services
   children:
-  - Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
+  - Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
   - Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.WebSocketService.DisconnectAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.WebSocketService.GetTag(System.String,System.String)
@@ -50,16 +50,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
-  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
-  id: '#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Virtufin.WebSocketManager.Services.IInstanceIdProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})'
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
+  id: '#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})'
   parent: Virtufin.WebSocketManager.Services.WebSocketService
   langs:
   - csharp
   - vb
-  name: WebSocketService(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IInstanceIdProvider, ILogger<WebSocketService>)
-  nameWithType: WebSocketService.WebSocketService(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IInstanceIdProvider, ILogger<WebSocketService>)
-  fullName: Virtufin.WebSocketManager.Services.WebSocketService.WebSocketService(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Virtufin.WebSocketManager.Services.IWebSocketClientWrapper, Virtufin.WebSocketManager.Services.IDaprPublisher, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.WebSocketService>)
+  name: WebSocketService(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, ILogger<WebSocketService>)
+  nameWithType: WebSocketService.WebSocketService(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, ILogger<WebSocketService>)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.WebSocketService(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Virtufin.WebSocketManager.Services.IWebSocketClientWrapper, Virtufin.WebSocketManager.Services.IDaprPublisher, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.WebSocketService>)
   type: Constructor
   source:
     remote:
@@ -68,12 +68,12 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 27
+    startLine: 26
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
   syntax:
-    content: public WebSocketService(IWebSocketConnectionStore connectionStore, IWebSocketClientWrapper webSocketClient, IDaprPublisher daprPublisher, IInstanceIdProvider instanceIdProvider, ILogger<WebSocketService> logger)
+    content: public WebSocketService(IWebSocketConnectionStore connectionStore, IWebSocketClientWrapper webSocketClient, IDaprPublisher daprPublisher, ILogger<WebSocketService> logger)
     parameters:
     - id: connectionStore
       type: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
@@ -81,15 +81,13 @@ items:
       type: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
     - id: daprPublisher
       type: Virtufin.WebSocketManager.Services.IDaprPublisher
-    - id: instanceIdProvider
-      type: Virtufin.WebSocketManager.Services.IInstanceIdProvider
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService}
-    content.vb: Public Sub New(connectionStore As IWebSocketConnectionStore, webSocketClient As IWebSocketClientWrapper, daprPublisher As IDaprPublisher, instanceIdProvider As IInstanceIdProvider, logger As ILogger(Of WebSocketService))
+    content.vb: Public Sub New(connectionStore As IWebSocketConnectionStore, webSocketClient As IWebSocketClientWrapper, daprPublisher As IDaprPublisher, logger As ILogger(Of WebSocketService))
   overload: Virtufin.WebSocketManager.Services.WebSocketService.#ctor*
-  nameWithType.vb: WebSocketService.New(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IInstanceIdProvider, ILogger(Of WebSocketService))
-  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.New(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Virtufin.WebSocketManager.Services.IWebSocketClientWrapper, Virtufin.WebSocketManager.Services.IDaprPublisher, Virtufin.WebSocketManager.Services.IInstanceIdProvider, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.WebSocketService))
-  name.vb: New(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IInstanceIdProvider, ILogger(Of WebSocketService))
+  nameWithType.vb: WebSocketService.New(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, ILogger(Of WebSocketService))
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.New(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Virtufin.WebSocketManager.Services.IWebSocketClientWrapper, Virtufin.WebSocketManager.Services.IDaprPublisher, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.WebSocketService))
+  name.vb: New(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, ILogger(Of WebSocketService))
 - uid: Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
   commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
   id: ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
@@ -108,7 +106,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ConnectAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 41
+    startLine: 38
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -149,7 +147,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ListConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 80
+    startLine: 77
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -183,7 +181,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DisconnectAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 85
+    startLine: 82
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -222,7 +220,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StartPublishAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 109
+    startLine: 100
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -263,7 +261,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StopPublishAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 135
+    startLine: 120
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -302,7 +300,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 151
+    startLine: 130
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -347,7 +345,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendRawAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 184
+    startLine: 157
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -390,7 +388,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetTag
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 227
+    startLine: 194
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -429,7 +427,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SetTag
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 233
+    startLine: 200
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -468,7 +466,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SetTags
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 241
+    startLine: 208
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -505,7 +503,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetTags
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 253
+    startLine: 220
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -801,7 +799,7 @@ references:
   fullName: System
 - uid: Virtufin.WebSocketManager.Services.WebSocketService.#ctor*
   commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.#ctor
-  href: Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService__ctor_Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_Virtufin_WebSocketManager_Services_IDaprPublisher_Virtufin_WebSocketManager_Services_IInstanceIdProvider_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_WebSocketService__
+  href: Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService__ctor_Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_Virtufin_WebSocketManager_Services_IDaprPublisher_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_WebSocketService__
   name: WebSocketService
   nameWithType: WebSocketService.WebSocketService
   fullName: Virtufin.WebSocketManager.Services.WebSocketService.WebSocketService
@@ -829,13 +827,6 @@ references:
   name: IDaprPublisher
   nameWithType: IDaprPublisher
   fullName: Virtufin.WebSocketManager.Services.IDaprPublisher
-- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  commentId: T:Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html
-  name: IInstanceIdProvider
-  nameWithType: IInstanceIdProvider
-  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider
 - uid: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService}
   commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService}
   parent: Microsoft.Extensions.Logging
