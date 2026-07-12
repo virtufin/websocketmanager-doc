@@ -168,7 +168,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Protos.WebSocketManagerService",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.yml\" sourcestartlinenumber=\"1\">gRPC service for the WebSocketManager. RPCs that target a specific\nconnection (Disconnect, StartPublish, StopPublish, Send, SendRaw)\nare routed to the owning replica via Dapr virtual actors: an\n<code>ActorProxy.Create&lt;IWebSocketConnectionActor&gt;(id)</code>\nroutes the call through Dapr's placement service.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -182,62 +182,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Protos",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.WebSocketManager.Services.Actors.ConnectionState",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.yml\" sourcestartlinenumber=\"1\">Actor interface for a WebSocket connection. Each connection is\na virtual actor keyed by connection id. The placement service\nroutes calls to the owning replica, so StopAsync always lands\non the correct instance.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.WebSocketManager.Services.Actors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.WebSocketManager.Services.Actors.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.WebSocketManager.Services.Actors",
       "Summary": null
     },
     {
@@ -382,20 +326,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.yml",
       "output": {
         ".html": {
@@ -435,20 +365,6 @@
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.IDaprPublisher",
       "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.WebSocketManager.Services.IInstanceIdProvider",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.yml\" sourcestartlinenumber=\"1\">Provides the unique identifier for this service instance.\nUses the HOSTNAME environment variable (Kubernetes pod name).\nFalls back to a generated GUID if no HOSTNAME is set.</p>\n"
     },
     {
       "type": "ManagedReference",

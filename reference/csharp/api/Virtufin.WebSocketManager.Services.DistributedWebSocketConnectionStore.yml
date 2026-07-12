@@ -5,7 +5,7 @@ items:
   id: DistributedWebSocketConnectionStore
   parent: Virtufin.WebSocketManager.Services
   children:
-  - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider)
+  - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.Service.MultiInstance.IInstanceIdProvider)
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ClearAllConnectionsAsync(System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.CreateConnectionAsync(System.String,System.Boolean,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetAllConnectionsAsync(System.Threading.CancellationToken)
@@ -28,7 +28,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DistributedWebSocketConnectionStore
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 57
+    startLine: 58
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -49,16 +49,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider)
-  commentId: M:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider)
-  id: '#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider)'
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.Service.MultiInstance.IInstanceIdProvider)
+  commentId: M:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.Service.MultiInstance.IInstanceIdProvider)
+  id: '#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.Service.MultiInstance.IInstanceIdProvider)'
   parent: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
   langs:
   - csharp
   - vb
   name: DistributedWebSocketConnectionStore(IDaprConnectionRepository, IInstanceIdProvider)
   nameWithType: DistributedWebSocketConnectionStore.DistributedWebSocketConnectionStore(IDaprConnectionRepository, IInstanceIdProvider)
-  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.DistributedWebSocketConnectionStore(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider)
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.DistributedWebSocketConnectionStore(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.Service.MultiInstance.IInstanceIdProvider)
   type: Constructor
   source:
     remote:
@@ -67,7 +67,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 68
+    startLine: 69
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -80,12 +80,12 @@ items:
       type: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
       description: The Dapr connection repository for persistence.
     - id: instanceIdProvider
-      type: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+      type: Virtufin.Service.MultiInstance.IInstanceIdProvider
       description: The instance ID provider.
     content.vb: Public Sub New(repository As IDaprConnectionRepository, instanceIdProvider As IInstanceIdProvider)
   overload: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor*
   nameWithType.vb: DistributedWebSocketConnectionStore.New(IDaprConnectionRepository, IInstanceIdProvider)
-  fullName.vb: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.New(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider)
+  fullName.vb: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.New(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.Service.MultiInstance.IInstanceIdProvider)
   name.vb: New(IDaprConnectionRepository, IInstanceIdProvider)
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.CreateConnectionAsync(System.String,System.Boolean,System.Threading.CancellationToken)
   commentId: M:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.CreateConnectionAsync(System.String,System.Boolean,System.Threading.CancellationToken)
@@ -105,7 +105,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CreateConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 77
+    startLine: 78
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -147,7 +147,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 94
+    startLine: 95
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -187,7 +187,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetConnectionById
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 106
+    startLine: 107
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -228,7 +228,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetAllConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 113
+    startLine: 114
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -263,7 +263,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: UpdateConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 131
+    startLine: 132
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -300,7 +300,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: RemoveConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 140
+    startLine: 141
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -340,7 +340,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: TouchAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 147
+    startLine: 148
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -385,7 +385,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ClearAllConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 153
+    startLine: 154
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -679,7 +679,7 @@ references:
   fullName: System
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor*
   commentId: Overload:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor
-  href: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore__ctor_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_WebSocketManager_Services_IInstanceIdProvider_
+  href: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore__ctor_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_Service_MultiInstance_IInstanceIdProvider_
   name: DistributedWebSocketConnectionStore
   nameWithType: DistributedWebSocketConnectionStore.DistributedWebSocketConnectionStore
   fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.DistributedWebSocketConnectionStore
@@ -693,13 +693,43 @@ references:
   name: IDaprConnectionRepository
   nameWithType: IDaprConnectionRepository
   fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
-- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  commentId: T:Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html
+- uid: Virtufin.Service.MultiInstance.IInstanceIdProvider
+  commentId: T:Virtufin.Service.MultiInstance.IInstanceIdProvider
+  parent: Virtufin.Service.MultiInstance
+  isExternal: true
   name: IInstanceIdProvider
   nameWithType: IInstanceIdProvider
-  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider
+  fullName: Virtufin.Service.MultiInstance.IInstanceIdProvider
+- uid: Virtufin.Service.MultiInstance
+  commentId: N:Virtufin.Service.MultiInstance
+  isExternal: true
+  name: Virtufin.Service.MultiInstance
+  nameWithType: Virtufin.Service.MultiInstance
+  fullName: Virtufin.Service.MultiInstance
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    isExternal: true
+  - name: .
+  - uid: Virtufin.Service
+    name: Service
+    isExternal: true
+  - name: .
+  - uid: Virtufin.Service.MultiInstance
+    name: MultiInstance
+    isExternal: true
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    isExternal: true
+  - name: .
+  - uid: Virtufin.Service
+    name: Service
+    isExternal: true
+  - name: .
+  - uid: Virtufin.Service.MultiInstance
+    name: MultiInstance
+    isExternal: true
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.CreateConnectionAsync*
   commentId: Overload:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.CreateConnectionAsync
   href: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_CreateConnectionAsync_System_String_System_Boolean_System_Threading_CancellationToken_

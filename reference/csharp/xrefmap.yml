@@ -545,15 +545,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Protos.WebSocketManagerService
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService
   nameWithType: WebSocketManagerService
-- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService})
-  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>)
-  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__
-  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService})
-  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService))
-  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>)
-  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService))
-  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>)
-  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService))
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.Service.MultiInstance.IInstanceIdProvider,Virtufin.Service.MultiInstance.PeerRegistry,Virtufin.Service.MultiInstance.PeerChannelCache{Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient},Virtufin.WebSocketManager.Services.IDaprConnectionRepository)
+  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, IInstanceIdProvider, PeerRegistry, PeerChannelCache<WebSocketManagerClient>, IDaprConnectionRepository)
+  href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__Virtufin_Service_MultiInstance_IInstanceIdProvider_Virtufin_Service_MultiInstance_PeerRegistry_Virtufin_Service_MultiInstance_PeerChannelCache_Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerClient__Virtufin_WebSocketManager_Services_IDaprConnectionRepository_
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.Service.MultiInstance.IInstanceIdProvider,Virtufin.Service.MultiInstance.PeerRegistry,Virtufin.Service.MultiInstance.PeerChannelCache{Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient},Virtufin.WebSocketManager.Services.IDaprConnectionRepository)
+  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService), IInstanceIdProvider, PeerRegistry, PeerChannelCache(Of WebSocketManagerClient), IDaprConnectionRepository)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>, Virtufin.Service.MultiInstance.IInstanceIdProvider, Virtufin.Service.MultiInstance.PeerRegistry, Virtufin.Service.MultiInstance.PeerChannelCache<Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient>, Virtufin.WebSocketManager.Services.IDaprConnectionRepository)
+  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService), Virtufin.Service.MultiInstance.IInstanceIdProvider, Virtufin.Service.MultiInstance.PeerRegistry, Virtufin.Service.MultiInstance.PeerChannelCache(Of Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient), Virtufin.WebSocketManager.Services.IDaprConnectionRepository)
+  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, IInstanceIdProvider, PeerRegistry, PeerChannelCache<WebSocketManager.WebSocketManagerClient>, IDaprConnectionRepository)
+  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService), IInstanceIdProvider, PeerRegistry, PeerChannelCache(Of WebSocketManager.WebSocketManagerClient), IDaprConnectionRepository)
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor*
   name: WebSocketManagerService
   href: api/Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_
@@ -729,192 +729,6 @@ references:
   commentId: N:Virtufin.WebSocketManager.Services
   fullName: Virtufin.WebSocketManager.Services
   nameWithType: Virtufin.WebSocketManager.Services
-- uid: Virtufin.WebSocketManager.Services.Actors
-  name: Virtufin.WebSocketManager.Services.Actors
-  href: api/Virtufin.WebSocketManager.Services.Actors.html
-  commentId: N:Virtufin.WebSocketManager.Services.Actors
-  fullName: Virtufin.WebSocketManager.Services.Actors
-  nameWithType: Virtufin.WebSocketManager.Services.Actors
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState
-  name: ConnectionState
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html
-  commentId: T:Virtufin.WebSocketManager.Services.Actors.ConnectionState
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState
-  nameWithType: ConnectionState
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType
-  name: ContentType
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_ContentType
-  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType
-  nameWithType: ConnectionState.ContentType
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType*
-  name: ContentType
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_ContentType_
-  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.ContentType
-  nameWithType: ConnectionState.ContentType
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id
-  name: Id
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Id
-  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id
-  nameWithType: ConnectionState.Id
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id*
-  name: Id
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Id_
-  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Id
-  nameWithType: ConnectionState.Id
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId
-  name: InstanceId
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_InstanceId
-  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId
-  nameWithType: ConnectionState.InstanceId
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId*
-  name: InstanceId
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_InstanceId_
-  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.InstanceId
-  nameWithType: ConnectionState.InstanceId
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status
-  name: Status
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Status
-  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status
-  nameWithType: ConnectionState.Status
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status*
-  name: Status
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Status_
-  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Status
-  nameWithType: ConnectionState.Status
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags
-  name: Tags
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Tags
-  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags
-  nameWithType: ConnectionState.Tags
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags*
-  name: Tags
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Tags_
-  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Tags
-  nameWithType: ConnectionState.Tags
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic
-  name: Topic
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Topic
-  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic
-  nameWithType: ConnectionState.Topic
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic*
-  name: Topic
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Topic_
-  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Topic
-  nameWithType: ConnectionState.Topic
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url
-  name: Url
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Url
-  commentId: P:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url
-  nameWithType: ConnectionState.Url
-- uid: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url*
-  name: Url
-  href: api/Virtufin.WebSocketManager.Services.Actors.ConnectionState.html#Virtufin_WebSocketManager_Services_Actors_ConnectionState_Url_
-  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.Actors.ConnectionState.Url
-  nameWithType: ConnectionState.Url
-- uid: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor
-  name: IWebSocketConnectionActor
-  href: api/Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.html
-  commentId: T:Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor
-  fullName: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor
-  nameWithType: IWebSocketConnectionActor
-- uid: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.GetStateAsync(System.Threading.CancellationToken)
-  name: GetStateAsync(CancellationToken)
-  href: api/Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.html#Virtufin_WebSocketManager_Services_Actors_IWebSocketConnectionActor_GetStateAsync_System_Threading_CancellationToken_
-  commentId: M:Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.GetStateAsync(System.Threading.CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.GetStateAsync(System.Threading.CancellationToken)
-  nameWithType: IWebSocketConnectionActor.GetStateAsync(CancellationToken)
-- uid: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.GetStateAsync*
-  name: GetStateAsync
-  href: api/Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.html#Virtufin_WebSocketManager_Services_Actors_IWebSocketConnectionActor_GetStateAsync_
-  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.GetStateAsync
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.GetStateAsync
-  nameWithType: IWebSocketConnectionActor.GetStateAsync
-- uid: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.StopAsync(System.Threading.CancellationToken)
-  name: StopAsync(CancellationToken)
-  href: api/Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.html#Virtufin_WebSocketManager_Services_Actors_IWebSocketConnectionActor_StopAsync_System_Threading_CancellationToken_
-  commentId: M:Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.StopAsync(System.Threading.CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.StopAsync(System.Threading.CancellationToken)
-  nameWithType: IWebSocketConnectionActor.StopAsync(CancellationToken)
-- uid: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.StopAsync*
-  name: StopAsync
-  href: api/Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.html#Virtufin_WebSocketManager_Services_Actors_IWebSocketConnectionActor_StopAsync_
-  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.StopAsync
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.Actors.IWebSocketConnectionActor.StopAsync
-  nameWithType: IWebSocketConnectionActor.StopAsync
-- uid: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor
-  name: WebSocketConnectionActor
-  href: api/Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.html
-  commentId: T:Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor
-  fullName: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor
-  nameWithType: WebSocketConnectionActor
-- uid: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.#ctor(Dapr.Actors.Runtime.ActorHost,Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor})
-  name: WebSocketConnectionActor(ActorHost, IWebSocketService, ILogger<WebSocketConnectionActor>)
-  href: api/Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.html#Virtufin_WebSocketManager_Services_Actors_WebSocketConnectionActor__ctor_Dapr_Actors_Runtime_ActorHost_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_Actors_WebSocketConnectionActor__
-  commentId: M:Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.#ctor(Dapr.Actors.Runtime.ActorHost,Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor})
-  name.vb: New(ActorHost, IWebSocketService, ILogger(Of WebSocketConnectionActor))
-  fullName: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.WebSocketConnectionActor(Dapr.Actors.Runtime.ActorHost, Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor>)
-  fullName.vb: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.New(Dapr.Actors.Runtime.ActorHost, Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor))
-  nameWithType: WebSocketConnectionActor.WebSocketConnectionActor(ActorHost, IWebSocketService, ILogger<WebSocketConnectionActor>)
-  nameWithType.vb: WebSocketConnectionActor.New(ActorHost, IWebSocketService, ILogger(Of WebSocketConnectionActor))
-- uid: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.#ctor*
-  name: WebSocketConnectionActor
-  href: api/Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.html#Virtufin_WebSocketManager_Services_Actors_WebSocketConnectionActor__ctor_
-  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.WebSocketConnectionActor
-  fullName.vb: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.New
-  nameWithType: WebSocketConnectionActor.WebSocketConnectionActor
-  nameWithType.vb: WebSocketConnectionActor.New
-- uid: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.GetStateAsync(System.Threading.CancellationToken)
-  name: GetStateAsync(CancellationToken)
-  href: api/Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.html#Virtufin_WebSocketManager_Services_Actors_WebSocketConnectionActor_GetStateAsync_System_Threading_CancellationToken_
-  commentId: M:Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.GetStateAsync(System.Threading.CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.GetStateAsync(System.Threading.CancellationToken)
-  nameWithType: WebSocketConnectionActor.GetStateAsync(CancellationToken)
-- uid: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.GetStateAsync*
-  name: GetStateAsync
-  href: api/Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.html#Virtufin_WebSocketManager_Services_Actors_WebSocketConnectionActor_GetStateAsync_
-  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.GetStateAsync
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.GetStateAsync
-  nameWithType: WebSocketConnectionActor.GetStateAsync
-- uid: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.StopAsync(System.Threading.CancellationToken)
-  name: StopAsync(CancellationToken)
-  href: api/Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.html#Virtufin_WebSocketManager_Services_Actors_WebSocketConnectionActor_StopAsync_System_Threading_CancellationToken_
-  commentId: M:Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.StopAsync(System.Threading.CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.StopAsync(System.Threading.CancellationToken)
-  nameWithType: WebSocketConnectionActor.StopAsync(CancellationToken)
-- uid: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.StopAsync*
-  name: StopAsync
-  href: api/Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.html#Virtufin_WebSocketManager_Services_Actors_WebSocketConnectionActor_StopAsync_
-  commentId: Overload:Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.StopAsync
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.Actors.WebSocketConnectionActor.StopAsync
-  nameWithType: WebSocketConnectionActor.StopAsync
 - uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
   name: ApiLifecyclePublisher
   href: api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html
@@ -1587,57 +1401,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntryJsonConverter.Write
   nameWithType: DaprStateStoreEntryJsonConverter.Write
-- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
-  name: DefaultInstanceIdProvider
-  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html
-  commentId: T:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
-  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
-  nameWithType: DefaultInstanceIdProvider
-- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.#ctor
-  name: DefaultInstanceIdProvider()
-  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider__ctor
-  commentId: M:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.#ctor
-  name.vb: New()
-  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.DefaultInstanceIdProvider()
-  fullName.vb: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.New()
-  nameWithType: DefaultInstanceIdProvider.DefaultInstanceIdProvider()
-  nameWithType.vb: DefaultInstanceIdProvider.New()
-- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.#ctor*
-  name: DefaultInstanceIdProvider
-  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider__ctor_
-  commentId: Overload:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.DefaultInstanceIdProvider
-  fullName.vb: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.New
-  nameWithType: DefaultInstanceIdProvider.DefaultInstanceIdProvider
-  nameWithType.vb: DefaultInstanceIdProvider.New
-- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetInstanceId
-  name: GetInstanceId()
-  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetInstanceId
-  commentId: M:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetInstanceId
-  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetInstanceId()
-  nameWithType: DefaultInstanceIdProvider.GetInstanceId()
-- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetInstanceId*
-  name: GetInstanceId
-  href: api/Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html#Virtufin_WebSocketManager_Services_DefaultInstanceIdProvider_GetInstanceId_
-  commentId: Overload:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetInstanceId
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.GetInstanceId
-  nameWithType: DefaultInstanceIdProvider.GetInstanceId
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
   name: DistributedWebSocketConnectionStore
   href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html
   commentId: T:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
   fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
   nameWithType: DistributedWebSocketConnectionStore
-- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider)
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.Service.MultiInstance.IInstanceIdProvider)
   name: DistributedWebSocketConnectionStore(IDaprConnectionRepository, IInstanceIdProvider)
-  href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore__ctor_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_WebSocketManager_Services_IInstanceIdProvider_
-  commentId: M:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.WebSocketManager.Services.IInstanceIdProvider)
+  href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore__ctor_Virtufin_WebSocketManager_Services_IDaprConnectionRepository_Virtufin_Service_MultiInstance_IInstanceIdProvider_
+  commentId: M:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor(Virtufin.WebSocketManager.Services.IDaprConnectionRepository,Virtufin.Service.MultiInstance.IInstanceIdProvider)
   name.vb: New(IDaprConnectionRepository, IInstanceIdProvider)
-  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.DistributedWebSocketConnectionStore(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider)
-  fullName.vb: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.New(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.WebSocketManager.Services.IInstanceIdProvider)
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.DistributedWebSocketConnectionStore(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.Service.MultiInstance.IInstanceIdProvider)
+  fullName.vb: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.New(Virtufin.WebSocketManager.Services.IDaprConnectionRepository, Virtufin.Service.MultiInstance.IInstanceIdProvider)
   nameWithType: DistributedWebSocketConnectionStore.DistributedWebSocketConnectionStore(IDaprConnectionRepository, IInstanceIdProvider)
   nameWithType.vb: DistributedWebSocketConnectionStore.New(IDaprConnectionRepository, IInstanceIdProvider)
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.#ctor*
@@ -1900,25 +1676,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IDaprPublisher.PublishAsync
   nameWithType: IDaprPublisher.PublishAsync
-- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  name: IInstanceIdProvider
-  href: api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.html
-  commentId: T:Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  nameWithType: IInstanceIdProvider
-- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetInstanceId
-  name: GetInstanceId()
-  href: api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_GetInstanceId
-  commentId: M:Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetInstanceId
-  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetInstanceId()
-  nameWithType: IInstanceIdProvider.GetInstanceId()
-- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetInstanceId*
-  name: GetInstanceId
-  href: api/Virtufin.WebSocketManager.Services.IInstanceIdProvider.html#Virtufin_WebSocketManager_Services_IInstanceIdProvider_GetInstanceId_
-  commentId: Overload:Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetInstanceId
-  isSpec: "True"
-  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider.GetInstanceId
-  nameWithType: IInstanceIdProvider.GetInstanceId
 - uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
   name: IWebSocketClientWrapper
   href: api/Virtufin.WebSocketManager.Services.IWebSocketClientWrapper.html

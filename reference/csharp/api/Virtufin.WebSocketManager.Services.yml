@@ -5,7 +5,6 @@ items:
   id: Services
   parent: Virtufin.WebSocketManager
   children:
-  - Virtufin.WebSocketManager.Services.Actors
   - Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
   - Virtufin.WebSocketManager.Services.AppMetrics
   - Virtufin.WebSocketManager.Services.ConnectionNotFoundException
@@ -16,11 +15,9 @@ items:
   - Virtufin.WebSocketManager.Services.DaprResiliencePipeline
   - Virtufin.WebSocketManager.Services.DaprStateStoreEntry
   - Virtufin.WebSocketManager.Services.DaprStateStoreEntryJsonConverter
-  - Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
   - Virtufin.WebSocketManager.Services.IDaprConnectionRepository
   - Virtufin.WebSocketManager.Services.IDaprPublisher
-  - Virtufin.WebSocketManager.Services.IInstanceIdProvider
   - Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
   - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
   - Virtufin.WebSocketManager.Services.IWebSocketService
@@ -41,44 +38,6 @@ items:
   assemblies:
   - Virtufin.WebSocketManager
 references:
-- uid: Virtufin.WebSocketManager.Services.Actors
-  commentId: N:Virtufin.WebSocketManager.Services.Actors
-  href: Virtufin.html
-  name: Virtufin.WebSocketManager.Services.Actors
-  nameWithType: Virtufin.WebSocketManager.Services.Actors
-  fullName: Virtufin.WebSocketManager.Services.Actors
-  spec.csharp:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.WebSocketManager
-    name: WebSocketManager
-    href: Virtufin.WebSocketManager.html
-  - name: .
-  - uid: Virtufin.WebSocketManager.Services
-    name: Services
-    href: Virtufin.WebSocketManager.Services.html
-  - name: .
-  - uid: Virtufin.WebSocketManager.Services.Actors
-    name: Actors
-    href: Virtufin.WebSocketManager.Services.Actors.html
-  spec.vb:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.WebSocketManager
-    name: WebSocketManager
-    href: Virtufin.WebSocketManager.html
-  - name: .
-  - uid: Virtufin.WebSocketManager.Services
-    name: Services
-    href: Virtufin.WebSocketManager.Services.html
-  - name: .
-  - uid: Virtufin.WebSocketManager.Services.Actors
-    name: Actors
-    href: Virtufin.WebSocketManager.Services.Actors.html
 - uid: Virtufin.WebSocketManager.Services.Options
   commentId: N:Virtufin.WebSocketManager.Services.Options
   href: Virtufin.html
@@ -180,12 +139,6 @@ references:
   name: DaprStateStoreEntryJsonConverter
   nameWithType: DaprStateStoreEntryJsonConverter
   fullName: Virtufin.WebSocketManager.Services.DaprStateStoreEntryJsonConverter
-- uid: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
-  commentId: T:Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
-  href: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider.html
-  name: DefaultInstanceIdProvider
-  nameWithType: DefaultInstanceIdProvider
-  fullName: Virtufin.WebSocketManager.Services.DefaultInstanceIdProvider
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
   commentId: T:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
   href: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html
@@ -206,13 +159,6 @@ references:
   name: IDaprPublisher
   nameWithType: IDaprPublisher
   fullName: Virtufin.WebSocketManager.Services.IDaprPublisher
-- uid: Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  commentId: T:Virtufin.WebSocketManager.Services.IInstanceIdProvider
-  parent: Virtufin.WebSocketManager.Services
-  href: Virtufin.WebSocketManager.Services.IInstanceIdProvider.html
-  name: IInstanceIdProvider
-  nameWithType: IInstanceIdProvider
-  fullName: Virtufin.WebSocketManager.Services.IInstanceIdProvider
 - uid: Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
   commentId: T:Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
   parent: Virtufin.WebSocketManager.Services

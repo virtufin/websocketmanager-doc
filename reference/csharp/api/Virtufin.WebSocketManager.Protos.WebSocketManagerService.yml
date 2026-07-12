@@ -5,7 +5,7 @@ items:
   id: WebSocketManagerService
   parent: Virtufin.WebSocketManager.Protos
   children:
-  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService})
+  - Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.Service.MultiInstance.IInstanceIdProvider,Virtufin.Service.MultiInstance.PeerRegistry,Virtufin.Service.MultiInstance.PeerChannelCache{Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient},Virtufin.WebSocketManager.Services.IDaprConnectionRepository)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.Disconnect(Virtufin.WebSocketManager.Protos.DisconnectRequest,Grpc.Core.ServerCallContext)
   - Virtufin.WebSocketManager.Protos.WebSocketManagerService.GetTag(Virtufin.WebSocketManager.Protos.GetTagRequest,Grpc.Core.ServerCallContext)
@@ -32,24 +32,13 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: WebSocketManagerService
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 17
+    startLine: 9
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
-  summary: >-
-    gRPC service for the WebSocketManager. RPCs that target a specific
-
-    connection (Disconnect, StartPublish, StopPublish, Send, SendRaw)
-
-    are routed to the owning replica via Dapr virtual actors: an
-
-    <code>ActorProxy.Create&lt;IWebSocketConnectionActor&gt;(id)</code>
-
-    routes the call through Dapr's placement service.
-  example: []
   syntax:
-    content: 'public class WebSocketManagerService : WebSocketManager.WebSocketManagerBase'
-    content.vb: Public Class WebSocketManagerService Inherits WebSocketManager.WebSocketManagerBase
+    content: 'public sealed class WebSocketManagerService : WebSocketManager.WebSocketManagerBase'
+    content.vb: Public NotInheritable Class WebSocketManagerService Inherits WebSocketManager.WebSocketManagerBase
   inheritance:
   - System.Object
   - Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
@@ -58,19 +47,18 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
-  - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService})
-  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService})
-  id: '#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService})'
+- uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.Service.MultiInstance.IInstanceIdProvider,Virtufin.Service.MultiInstance.PeerRegistry,Virtufin.Service.MultiInstance.PeerChannelCache{Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient},Virtufin.WebSocketManager.Services.IDaprConnectionRepository)
+  commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.Service.MultiInstance.IInstanceIdProvider,Virtufin.Service.MultiInstance.PeerRegistry,Virtufin.Service.MultiInstance.PeerChannelCache{Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient},Virtufin.WebSocketManager.Services.IDaprConnectionRepository)
+  id: '#ctor(Virtufin.WebSocketManager.Services.IWebSocketService,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService},Virtufin.Service.MultiInstance.IInstanceIdProvider,Virtufin.Service.MultiInstance.PeerRegistry,Virtufin.Service.MultiInstance.PeerChannelCache{Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient},Virtufin.WebSocketManager.Services.IDaprConnectionRepository)'
   parent: Virtufin.WebSocketManager.Protos.WebSocketManagerService
   langs:
   - csharp
   - vb
-  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>)
-  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>)
-  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>)
+  name: WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, IInstanceIdProvider, PeerRegistry, PeerChannelCache<WebSocketManagerClient>, IDaprConnectionRepository)
+  nameWithType: WebSocketManagerService.WebSocketManagerService(IWebSocketService, ILogger<WebSocketManagerService>, IInstanceIdProvider, PeerRegistry, PeerChannelCache<WebSocketManager.WebSocketManagerClient>, IDaprConnectionRepository)
+  fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Protos.WebSocketManagerService>, Virtufin.Service.MultiInstance.IInstanceIdProvider, Virtufin.Service.MultiInstance.PeerRegistry, Virtufin.Service.MultiInstance.PeerChannelCache<Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient>, Virtufin.WebSocketManager.Services.IDaprConnectionRepository)
   type: Constructor
   source:
     remote:
@@ -79,22 +67,30 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 24
+    startLine: 18
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
   syntax:
-    content: public WebSocketManagerService(IWebSocketService webSocketService, ILogger<WebSocketManagerService> logger)
+    content: public WebSocketManagerService(IWebSocketService webSocketService, ILogger<WebSocketManagerService> logger, IInstanceIdProvider instanceId, PeerRegistry peerRegistry, PeerChannelCache<WebSocketManager.WebSocketManagerClient> peerChannels, IDaprConnectionRepository connectionStore)
     parameters:
     - id: webSocketService
       type: Virtufin.WebSocketManager.Services.IWebSocketService
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Protos.WebSocketManagerService}
-    content.vb: Public Sub New(webSocketService As IWebSocketService, logger As ILogger(Of WebSocketManagerService))
+    - id: instanceId
+      type: Virtufin.Service.MultiInstance.IInstanceIdProvider
+    - id: peerRegistry
+      type: Virtufin.Service.MultiInstance.PeerRegistry
+    - id: peerChannels
+      type: Virtufin.Service.MultiInstance.PeerChannelCache{Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient}
+    - id: connectionStore
+      type: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+    content.vb: Public Sub New(webSocketService As IWebSocketService, logger As ILogger(Of WebSocketManagerService), instanceId As IInstanceIdProvider, peerRegistry As PeerRegistry, peerChannels As PeerChannelCache(Of WebSocketManager.WebSocketManagerClient), connectionStore As IDaprConnectionRepository)
   overload: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor*
-  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService))
-  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService))
-  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService))
+  nameWithType.vb: WebSocketManagerService.New(IWebSocketService, ILogger(Of WebSocketManagerService), IInstanceIdProvider, PeerRegistry, PeerChannelCache(Of WebSocketManager.WebSocketManagerClient), IDaprConnectionRepository)
+  fullName.vb: Virtufin.WebSocketManager.Protos.WebSocketManagerService.New(Virtufin.WebSocketManager.Services.IWebSocketService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Protos.WebSocketManagerService), Virtufin.Service.MultiInstance.IInstanceIdProvider, Virtufin.Service.MultiInstance.PeerRegistry, Virtufin.Service.MultiInstance.PeerChannelCache(Of Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient), Virtufin.WebSocketManager.Services.IDaprConnectionRepository)
+  name.vb: New(IWebSocketService, ILogger(Of WebSocketManagerService), IInstanceIdProvider, PeerRegistry, PeerChannelCache(Of WebSocketManagerClient), IDaprConnectionRepository)
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManagerService.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
   id: Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
@@ -113,7 +109,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Connect
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 50
+    startLine: 34
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -148,7 +144,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: List
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 71
+    startLine: 55
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -183,7 +179,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Disconnect
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 97
+    startLine: 81
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -218,7 +214,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StartPublish
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 115
+    startLine: 96
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -253,7 +249,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StopPublish
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 128
+    startLine: 111
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -288,7 +284,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Send
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 141
+    startLine: 126
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -323,7 +319,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendRaw
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 154
+    startLine: 141
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -358,7 +354,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SetTag
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 167
+    startLine: 156
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -393,7 +389,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetTag
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 180
+    startLine: 169
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -428,7 +424,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SetTags
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 198
+    startLine: 187
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -463,7 +459,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetTags
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 211
+    startLine: 200
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
@@ -498,12 +494,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: MapException
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 232
+    startLine: 303
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
-  summary: Maps domain exceptions to gRPC statuses.
-  example: []
   syntax:
     content: public static RpcException MapException(Exception ex)
     parameters:
@@ -699,30 +693,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
   - name: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -801,7 +771,7 @@ references:
   fullName: System
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor*
   commentId: Overload:Virtufin.WebSocketManager.Protos.WebSocketManagerService.#ctor
-  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__
+  href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html#Virtufin_WebSocketManager_Protos_WebSocketManagerService__ctor_Virtufin_WebSocketManager_Services_IWebSocketService_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Protos_WebSocketManagerService__Virtufin_Service_MultiInstance_IInstanceIdProvider_Virtufin_Service_MultiInstance_PeerRegistry_Virtufin_Service_MultiInstance_PeerChannelCache_Virtufin_WebSocketManager_Protos_WebSocketManager_WebSocketManagerClient__Virtufin_WebSocketManager_Services_IDaprConnectionRepository_
   name: WebSocketManagerService
   nameWithType: WebSocketManagerService.WebSocketManagerService
   fullName: Virtufin.WebSocketManager.Protos.WebSocketManagerService.WebSocketManagerService
@@ -848,6 +818,61 @@ references:
     name: WebSocketManagerService
     href: Virtufin.WebSocketManager.Protos.WebSocketManagerService.html
   - name: )
+- uid: Virtufin.Service.MultiInstance.IInstanceIdProvider
+  commentId: T:Virtufin.Service.MultiInstance.IInstanceIdProvider
+  parent: Virtufin.Service.MultiInstance
+  isExternal: true
+  name: IInstanceIdProvider
+  nameWithType: IInstanceIdProvider
+  fullName: Virtufin.Service.MultiInstance.IInstanceIdProvider
+- uid: Virtufin.Service.MultiInstance.PeerRegistry
+  commentId: T:Virtufin.Service.MultiInstance.PeerRegistry
+  parent: Virtufin.Service.MultiInstance
+  isExternal: true
+  name: PeerRegistry
+  nameWithType: PeerRegistry
+  fullName: Virtufin.Service.MultiInstance.PeerRegistry
+- uid: Virtufin.Service.MultiInstance.PeerChannelCache{Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient}
+  commentId: T:Virtufin.Service.MultiInstance.PeerChannelCache{Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient}
+  parent: Virtufin.Service.MultiInstance
+  definition: Virtufin.Service.MultiInstance.PeerChannelCache`1
+  name: PeerChannelCache<WebSocketManager.WebSocketManagerClient>
+  nameWithType: PeerChannelCache<WebSocketManager.WebSocketManagerClient>
+  fullName: Virtufin.Service.MultiInstance.PeerChannelCache<Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient>
+  nameWithType.vb: PeerChannelCache(Of WebSocketManager.WebSocketManagerClient)
+  fullName.vb: Virtufin.Service.MultiInstance.PeerChannelCache(Of Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient)
+  name.vb: PeerChannelCache(Of WebSocketManager.WebSocketManagerClient)
+  spec.csharp:
+  - uid: Virtufin.Service.MultiInstance.PeerChannelCache`1
+    name: PeerChannelCache
+    isExternal: true
+  - name: <
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager
+    name: WebSocketManager
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient
+    name: WebSocketManagerClient
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Service.MultiInstance.PeerChannelCache`1
+    name: PeerChannelCache
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager
+    name: WebSocketManager
+  - name: .
+  - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerClient
+    name: WebSocketManagerClient
+  - name: )
+- uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  commentId: T:Virtufin.WebSocketManager.Services.IDaprConnectionRepository
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.html
+  name: IDaprConnectionRepository
+  nameWithType: IDaprConnectionRepository
+  fullName: Virtufin.WebSocketManager.Services.IDaprConnectionRepository
 - uid: Virtufin.WebSocketManager.Services
   commentId: N:Virtufin.WebSocketManager.Services
   href: Virtufin.html
@@ -943,6 +968,61 @@ references:
     name: Logging
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Virtufin.Service.MultiInstance
+  commentId: N:Virtufin.Service.MultiInstance
+  isExternal: true
+  name: Virtufin.Service.MultiInstance
+  nameWithType: Virtufin.Service.MultiInstance
+  fullName: Virtufin.Service.MultiInstance
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    isExternal: true
+  - name: .
+  - uid: Virtufin.Service
+    name: Service
+    isExternal: true
+  - name: .
+  - uid: Virtufin.Service.MultiInstance
+    name: MultiInstance
+    isExternal: true
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    isExternal: true
+  - name: .
+  - uid: Virtufin.Service
+    name: Service
+    isExternal: true
+  - name: .
+  - uid: Virtufin.Service.MultiInstance
+    name: MultiInstance
+    isExternal: true
+- uid: Virtufin.Service.MultiInstance.PeerChannelCache`1
+  commentId: T:Virtufin.Service.MultiInstance.PeerChannelCache`1
+  isExternal: true
+  name: PeerChannelCache<TClient>
+  nameWithType: PeerChannelCache<TClient>
+  fullName: Virtufin.Service.MultiInstance.PeerChannelCache<TClient>
+  nameWithType.vb: PeerChannelCache(Of TClient)
+  fullName.vb: Virtufin.Service.MultiInstance.PeerChannelCache(Of TClient)
+  name.vb: PeerChannelCache(Of TClient)
+  spec.csharp:
+  - uid: Virtufin.Service.MultiInstance.PeerChannelCache`1
+    name: PeerChannelCache
+    isExternal: true
+  - name: <
+  - name: TClient
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Service.MultiInstance.PeerChannelCache`1
+    name: PeerChannelCache
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TClient
+  - name: )
 - uid: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase.Connect(Virtufin.WebSocketManager.Protos.ConnectRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.WebSocketManager.Protos.WebSocketManager.WebSocketManagerBase
