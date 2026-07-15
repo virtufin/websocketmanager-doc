@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/54df26dd7b034c67902919b74e7780f536f96f44"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/faed03634dbd61e47dfe6928d5853ebfa2370e6a"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 54df26d">
+       title="View commit faed036">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">54df26d</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">faed036</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/54df26dd7b034c67902919b74e7780f536f96f44"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/faed03634dbd61e47dfe6928d5853ebfa2370e6a"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 54df26d">
+       title="View commit faed036">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">54df26d</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">faed036</text>
       </svg>
     </a>
 </div>
@@ -2381,19 +2381,14 @@
 - <code>"WebSocket is not connected"</code>
 - <code>"Request timeout"</code> - Timeout exceeded</p>
 <p><strong>Implementation Detail:</strong> The message is wrapped with a correlation ID and sent via <code>IWebSocketClientWrapper.SendAndWaitAsync</code>. Responses are matched by correlation ID.</p>
-<p><strong>Remote-server contract (required):</strong> <code>SendAsync</code> only returns a response if the remote server cooperates with the correlation protocol. Specifically:</p>
+<p><strong>Remote-server contract (required):</strong> <code>SendAsync</code> only returns a response if the remote server cooperates with the correlation protocol. The correlation envelope is a <strong>16-byte UUID binary prefix</strong> applied uniformly to all frame types:</p>
 <ul>
-<li>The wrapper constructs a <code>WrappedMessage</code> envelope:
-  <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;guid&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;payload&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;original message&gt;&quot;</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
-  and sends it over the WebSocket.</li>
-<li>The remote server <strong>must</strong> parse this envelope and echo back a JSON object whose top-level <code>"id"</code> field is the same correlation GUID:
-  <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;same guid&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;payload&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;response&gt;&quot;</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div></li>
-<li>The receive loop scans every incoming text/binary frame, extracts the <code>"id"</code> field (text JSON) or the 16-byte UUID prefix (binary), and matches it against pending requests.</li>
-<li>Servers that don't echo the correlation ID will trigger a <code>"Request timeout"</code> after <code>timeoutMs</code> regardless of whether they actually sent a response.</li>
+<li>The wrapper prepends a 16-byte correlation UUID to the outgoing message: <code>[16 bytes UUID][payload bytes]</code></li>
+<li>The remote server <strong>must</strong> prepend the same 16-byte UUID prefix to its response frame: <code>[16 bytes UUID][response bytes]</code></li>
+<li>The receive loop scans every incoming frame, matches the first 16 bytes against pending correlation UUIDs, strips the prefix, and delivers the remaining bytes to the caller</li>
+<li>Servers that don't echo the 16-byte UUID prefix will trigger a <code>"Request timeout"</code> after <code>timeoutMs</code> regardless of whether they actually sent a response</li>
 </ul>
-<p>This is the default correlation contract for <code>text/*</code> and <code>application/json</code> content types. Binary-frame correlation uses a 16-byte UUID binary prefix instead of a JSON envelope — see <code>SendAndWaitAsync</code> below for the binary variant.</p>
+<p>This binary prefix protocol replaces the prior JSON <code>WrappedMessage</code> envelope (<code>{"id": "...", "payload": "..."}</code>) and is the canonical correlation contract for all content types (text, binary, JSON). See <code>WebSocketClientWrapper</code> below for the implementation details and <code>SendAndWaitAsync</code> for the async variant.</p>
 <hr />
 <h3 id="sendrawasync">SendRawAsync</h3>
 <p>Sends a raw message without waiting for a response.</p>
@@ -2757,7 +2752,7 @@ base64 encoding). Consumers read <code>data</code> directly and JSON-parse it.</
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-15T08:11:49Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-15T08:53:35Z</span>
 </div>
 
     </div>
