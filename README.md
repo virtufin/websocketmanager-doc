@@ -32,7 +32,6 @@ virtufin-websocketmanager/
 │   ├── typescript/                        # TypeScript client tests
 │   └── Virtufin.WebSocketManager.*.Tests/ # .NET tests
 ├── docs/                                  # MkDocs documentation
-├── deploy/                                # Deployment configs
 ├── versions.env                           # Version pin
 └── AGENTS.md                              # Agent documentation
 ```
