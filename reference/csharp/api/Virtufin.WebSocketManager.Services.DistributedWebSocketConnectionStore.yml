@@ -187,7 +187,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetConnectionById
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 107
+    startLine: 102
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -228,7 +228,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetAllConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 114
+    startLine: 109
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -263,7 +263,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: UpdateConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 132
+    startLine: 127
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -300,7 +300,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: RemoveConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 141
+    startLine: 136
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -340,7 +340,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: TouchAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 148
+    startLine: 143
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -385,7 +385,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ClearAllConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 154
+    startLine: 149
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
