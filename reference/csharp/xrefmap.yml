@@ -1132,15 +1132,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.DaprPublisher
   fullName: Virtufin.WebSocketManager.Services.DaprPublisher
   nameWithType: DaprPublisher
-- uid: Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher},System.String)
-  name: DaprPublisher(DaprClient, ILogger<DaprPublisher>, string)
-  href: api/Virtufin.WebSocketManager.Services.DaprPublisher.html#Virtufin_WebSocketManager_Services_DaprPublisher__ctor_Dapr_Client_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprPublisher__System_String_
-  commentId: M:Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher},System.String)
-  name.vb: New(DaprClient, ILogger(Of DaprPublisher), String)
-  fullName: Virtufin.WebSocketManager.Services.DaprPublisher.DaprPublisher(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.DaprPublisher>, string)
-  fullName.vb: Virtufin.WebSocketManager.Services.DaprPublisher.New(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprPublisher), String)
-  nameWithType: DaprPublisher.DaprPublisher(DaprClient, ILogger<DaprPublisher>, string)
-  nameWithType.vb: DaprPublisher.New(DaprClient, ILogger(Of DaprPublisher), String)
+- uid: Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Virtufin.Api.Protos.Pubsub.PubsubClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher})
+  name: DaprPublisher(PubsubClient, ILogger<DaprPublisher>)
+  href: api/Virtufin.WebSocketManager.Services.DaprPublisher.html#Virtufin_WebSocketManager_Services_DaprPublisher__ctor_Virtufin_Api_Protos_Pubsub_PubsubClient_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprPublisher__
+  commentId: M:Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Virtufin.Api.Protos.Pubsub.PubsubClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher})
+  name.vb: New(PubsubClient, ILogger(Of DaprPublisher))
+  fullName: Virtufin.WebSocketManager.Services.DaprPublisher.DaprPublisher(Virtufin.Api.Protos.Pubsub.PubsubClient, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.DaprPublisher>)
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprPublisher.New(Virtufin.Api.Protos.Pubsub.PubsubClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprPublisher))
+  nameWithType: DaprPublisher.DaprPublisher(Pubsub.PubsubClient, ILogger<DaprPublisher>)
+  nameWithType.vb: DaprPublisher.New(Pubsub.PubsubClient, ILogger(Of DaprPublisher))
 - uid: Virtufin.WebSocketManager.Services.DaprPublisher.#ctor*
   name: DaprPublisher
   href: api/Virtufin.WebSocketManager.Services.DaprPublisher.html#Virtufin_WebSocketManager_Services_DaprPublisher__ctor_

@@ -5,7 +5,7 @@ items:
   id: DaprPublisher
   parent: Virtufin.WebSocketManager.Services
   children:
-  - Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher},System.String)
+  - Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Virtufin.Api.Protos.Pubsub.PubsubClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher})
   - Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
   langs:
   - csharp
@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DaprPublisher
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -40,16 +40,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher},System.String)
-  commentId: M:Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher},System.String)
-  id: '#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher},System.String)'
+- uid: Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Virtufin.Api.Protos.Pubsub.PubsubClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher})
+  commentId: M:Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Virtufin.Api.Protos.Pubsub.PubsubClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher})
+  id: '#ctor(Virtufin.Api.Protos.Pubsub.PubsubClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher})'
   parent: Virtufin.WebSocketManager.Services.DaprPublisher
   langs:
   - csharp
   - vb
-  name: DaprPublisher(DaprClient, ILogger<DaprPublisher>, string)
-  nameWithType: DaprPublisher.DaprPublisher(DaprClient, ILogger<DaprPublisher>, string)
-  fullName: Virtufin.WebSocketManager.Services.DaprPublisher.DaprPublisher(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.DaprPublisher>, string)
+  name: DaprPublisher(PubsubClient, ILogger<DaprPublisher>)
+  nameWithType: DaprPublisher.DaprPublisher(Pubsub.PubsubClient, ILogger<DaprPublisher>)
+  fullName: Virtufin.WebSocketManager.Services.DaprPublisher.DaprPublisher(Virtufin.Api.Protos.Pubsub.PubsubClient, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.DaprPublisher>)
   type: Constructor
   source:
     remote:
@@ -63,19 +63,17 @@ items:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
   syntax:
-    content: public DaprPublisher(DaprClient daprClient, ILogger<DaprPublisher> logger, string pubsubComponent = "pubsub")
+    content: public DaprPublisher(Pubsub.PubsubClient pubsub, ILogger<DaprPublisher> logger)
     parameters:
-    - id: daprClient
-      type: Dapr.Client.DaprClient
+    - id: pubsub
+      type: Virtufin.Api.Protos.Pubsub.PubsubClient
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher}
-    - id: pubsubComponent
-      type: System.String
-    content.vb: Public Sub New(daprClient As DaprClient, logger As ILogger(Of DaprPublisher), pubsubComponent As String = "pubsub")
+    content.vb: Public Sub New(pubsub As Pubsub.PubsubClient, logger As ILogger(Of DaprPublisher))
   overload: Virtufin.WebSocketManager.Services.DaprPublisher.#ctor*
-  nameWithType.vb: DaprPublisher.New(DaprClient, ILogger(Of DaprPublisher), String)
-  fullName.vb: Virtufin.WebSocketManager.Services.DaprPublisher.New(Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprPublisher), String)
-  name.vb: New(DaprClient, ILogger(Of DaprPublisher), String)
+  nameWithType.vb: DaprPublisher.New(Pubsub.PubsubClient, ILogger(Of DaprPublisher))
+  fullName.vb: Virtufin.WebSocketManager.Services.DaprPublisher.New(Virtufin.Api.Protos.Pubsub.PubsubClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.DaprPublisher))
+  name.vb: New(PubsubClient, ILogger(Of DaprPublisher))
 - uid: Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
   commentId: M:Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
   id: PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)
@@ -94,7 +92,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: PublishAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -398,20 +396,36 @@ references:
   fullName: System
 - uid: Virtufin.WebSocketManager.Services.DaprPublisher.#ctor*
   commentId: Overload:Virtufin.WebSocketManager.Services.DaprPublisher.#ctor
-  href: Virtufin.WebSocketManager.Services.DaprPublisher.html#Virtufin_WebSocketManager_Services_DaprPublisher__ctor_Dapr_Client_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprPublisher__System_String_
+  href: Virtufin.WebSocketManager.Services.DaprPublisher.html#Virtufin_WebSocketManager_Services_DaprPublisher__ctor_Virtufin_Api_Protos_Pubsub_PubsubClient_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprPublisher__
   name: DaprPublisher
   nameWithType: DaprPublisher.DaprPublisher
   fullName: Virtufin.WebSocketManager.Services.DaprPublisher.DaprPublisher
   nameWithType.vb: DaprPublisher.New
   fullName.vb: Virtufin.WebSocketManager.Services.DaprPublisher.New
   name.vb: New
-- uid: Dapr.Client.DaprClient
-  commentId: T:Dapr.Client.DaprClient
-  parent: Dapr.Client
+- uid: Virtufin.Api.Protos.Pubsub.PubsubClient
+  commentId: T:Virtufin.Api.Protos.Pubsub.PubsubClient
+  parent: Virtufin.Api.Protos
   isExternal: true
-  name: DaprClient
-  nameWithType: DaprClient
-  fullName: Dapr.Client.DaprClient
+  name: Pubsub.PubsubClient
+  nameWithType: Pubsub.PubsubClient
+  fullName: Virtufin.Api.Protos.Pubsub.PubsubClient
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.Pubsub
+    name: Pubsub
+    isExternal: true
+  - name: .
+  - uid: Virtufin.Api.Protos.Pubsub.PubsubClient
+    name: PubsubClient
+    isExternal: true
+  spec.vb:
+  - uid: Virtufin.Api.Protos.Pubsub
+    name: Pubsub
+    isExternal: true
+  - name: .
+  - uid: Virtufin.Api.Protos.Pubsub.PubsubClient
+    name: PubsubClient
+    isExternal: true
 - uid: Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher}
   commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher}
   parent: Microsoft.Extensions.Logging
@@ -445,38 +459,35 @@ references:
     name: DaprPublisher
     href: Virtufin.WebSocketManager.Services.DaprPublisher.html
   - name: )
-- uid: System.String
-  commentId: T:System.String
-  parent: System
+- uid: Virtufin.Api.Protos
+  commentId: N:Virtufin.Api.Protos
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: Dapr.Client
-  commentId: N:Dapr.Client
-  isExternal: true
-  name: Dapr.Client
-  nameWithType: Dapr.Client
-  fullName: Dapr.Client
+  name: Virtufin.Api.Protos
+  nameWithType: Virtufin.Api.Protos
+  fullName: Virtufin.Api.Protos
   spec.csharp:
-  - uid: Dapr
-    name: Dapr
+  - uid: Virtufin
+    name: Virtufin
     isExternal: true
   - name: .
-  - uid: Dapr.Client
-    name: Client
+  - uid: Virtufin.Api
+    name: Api
+    isExternal: true
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
     isExternal: true
   spec.vb:
-  - uid: Dapr
-    name: Dapr
+  - uid: Virtufin
+    name: Virtufin
     isExternal: true
   - name: .
-  - uid: Dapr.Client
-    name: Client
+  - uid: Virtufin.Api
+    name: Api
+    isExternal: true
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
     isExternal: true
 - uid: Microsoft.Extensions.Logging.ILogger`1
   commentId: T:Microsoft.Extensions.Logging.ILogger`1
@@ -632,6 +643,17 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: System.Byte[]
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.byte

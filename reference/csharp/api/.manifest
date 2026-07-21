@@ -117,7 +117,7 @@
   "Virtufin.WebSocketManager.Services.DaprConnectionRepository.SaveAsync(Virtufin.WebSocketManager.Services.DaprStateStoreEntry,System.Threading.CancellationToken)": "Virtufin.WebSocketManager.Services.DaprConnectionRepository.yml",
   "Virtufin.WebSocketManager.Services.DaprConnectionRepository.TouchAsync(System.String,System.Threading.CancellationToken)": "Virtufin.WebSocketManager.Services.DaprConnectionRepository.yml",
   "Virtufin.WebSocketManager.Services.DaprPublisher": "Virtufin.WebSocketManager.Services.DaprPublisher.yml",
-  "Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher},System.String)": "Virtufin.WebSocketManager.Services.DaprPublisher.yml",
+  "Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Virtufin.Api.Protos.Pubsub.PubsubClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher})": "Virtufin.WebSocketManager.Services.DaprPublisher.yml",
   "Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)": "Virtufin.WebSocketManager.Services.DaprPublisher.yml",
   "Virtufin.WebSocketManager.Services.DaprResiliencePipeline": "Virtufin.WebSocketManager.Services.DaprResiliencePipeline.yml",
   "Virtufin.WebSocketManager.Services.DaprResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprResiliencePipeline})": "Virtufin.WebSocketManager.Services.DaprResiliencePipeline.yml",
