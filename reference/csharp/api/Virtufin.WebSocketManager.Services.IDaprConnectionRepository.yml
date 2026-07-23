@@ -26,12 +26,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: IDaprConnectionRepository
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 10
+    startLine: 9
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
-  summary: Repository for persisting WebSocket connections to Dapr state store.
-  example: []
   syntax:
     content: public interface IDaprConnectionRepository
     content.vb: Public Interface IDaprConnectionRepository
@@ -55,21 +53,17 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetAllAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 17
+    startLine: 11
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
-  summary: Gets all stored connection entries.
-  example: []
   syntax:
     content: Task<IEnumerable<DaprStateStoreEntry>> GetAllAsync(CancellationToken cancellationToken = default)
     parameters:
     - id: cancellationToken
       type: System.Threading.CancellationToken
-      description: Cancellation token.
     return:
       type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Virtufin.WebSocketManager.Services.DaprStateStoreEntry}}
-      description: A collection of all stored connection entries.
     content.vb: Function GetAllAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of DaprStateStoreEntry))
   overload: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAllAsync*
 - uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync(System.String,System.Threading.CancellationToken)
@@ -90,24 +84,19 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 25
+    startLine: 12
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
-  summary: Gets a connection entry by its ID.
-  example: []
   syntax:
     content: Task<DaprStateStoreEntry?> GetAsync(string id, CancellationToken cancellationToken = default)
     parameters:
     - id: id
       type: System.String
-      description: The connection ID.
     - id: cancellationToken
       type: System.Threading.CancellationToken
-      description: Cancellation token.
     return:
       type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Services.DaprStateStoreEntry}
-      description: The connection entry if found, otherwise null.
     content.vb: Function GetAsync(id As String, cancellationToken As CancellationToken = Nothing) As Task(Of DaprStateStoreEntry)
   overload: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.GetAsync*
   nameWithType.vb: IDaprConnectionRepository.GetAsync(String, CancellationToken)
@@ -131,24 +120,19 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SaveAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 33
+    startLine: 13
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
-  summary: Saves a connection entry to the state store with a sliding TTL.
-  example: []
   syntax:
     content: Task SaveAsync(DaprStateStoreEntry entry, CancellationToken cancellationToken = default)
     parameters:
     - id: entry
       type: Virtufin.WebSocketManager.Services.DaprStateStoreEntry
-      description: The connection entry to save.
     - id: cancellationToken
       type: System.Threading.CancellationToken
-      description: Cancellation token.
     return:
       type: System.Threading.Tasks.Task
-      description: A task representing the asynchronous save operation.
     content.vb: Function SaveAsync(entry As DaprStateStoreEntry, cancellationToken As CancellationToken = Nothing) As Task
   overload: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.SaveAsync*
 - uid: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.TouchAsync(System.String,System.Threading.CancellationToken)
@@ -169,26 +153,17 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: TouchAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 42
+    startLine: 14
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
-  summary: >-
-    Refreshes the TTL on an existing connection entry without changing
-
-    its payload. Loads the current entry, then re-saves it with the
-
-    configured TTL. No-op if the entry no longer exists.
-  example: []
   syntax:
     content: Task TouchAsync(string id, CancellationToken cancellationToken = default)
     parameters:
     - id: id
       type: System.String
-      description: The connection ID.
     - id: cancellationToken
       type: System.Threading.CancellationToken
-      description: Cancellation token.
     return:
       type: System.Threading.Tasks.Task
     content.vb: Function TouchAsync(id As String, cancellationToken As CancellationToken = Nothing) As Task
@@ -214,24 +189,19 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DeleteAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 50
+    startLine: 15
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
-  summary: Deletes a connection entry from the state store.
-  example: []
   syntax:
     content: Task DeleteAsync(string id, CancellationToken cancellationToken = default)
     parameters:
     - id: id
       type: System.String
-      description: The connection ID to delete.
     - id: cancellationToken
       type: System.Threading.CancellationToken
-      description: Cancellation token.
     return:
       type: System.Threading.Tasks.Task
-      description: A task representing the asynchronous delete operation.
     content.vb: Function DeleteAsync(id As String, cancellationToken As CancellationToken = Nothing) As Task
   overload: Virtufin.WebSocketManager.Services.IDaprConnectionRepository.DeleteAsync*
   nameWithType.vb: IDaprConnectionRepository.DeleteAsync(String, CancellationToken)
@@ -255,12 +225,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetByInstanceIdAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 55
+    startLine: 16
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
-  summary: Gets all connection entries owned by a specific instance.
-  example: []
   syntax:
     content: Task<IEnumerable<DaprStateStoreEntry>> GetByInstanceIdAsync(string instanceId, CancellationToken cancellationToken = default)
     parameters:
@@ -293,12 +261,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ClearAllAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
-    startLine: 60
+    startLine: 17
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
-  summary: Clears all connections from the state store. Used on startup with opt-in flag.
-  example: []
   syntax:
     content: Task ClearAllAsync(CancellationToken cancellationToken = default)
     parameters:

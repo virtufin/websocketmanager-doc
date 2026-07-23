@@ -266,7 +266,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.DaprConnectionRepository",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.DaprConnectionRepository.yml\" sourcestartlinenumber=\"1\">Implementation of IDaprConnectionRepository using Dapr state store.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -350,7 +350,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.IDaprConnectionRepository",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.IDaprConnectionRepository.yml\" sourcestartlinenumber=\"1\">Repository for persisting WebSocket connections to Dapr state store.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
