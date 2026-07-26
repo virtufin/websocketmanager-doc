@@ -7,7 +7,7 @@ items:
   children:
   - Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ApiLifecyclePublisher},Virtufin.Api.Protos.Pubsub.PubsubClient)
   - Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishErrorAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Exception,System.Threading.CancellationToken)
-  - Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Nullable{System.Int32},System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
@@ -22,7 +22,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ApiLifecyclePublisher
     path: ../../../src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -68,7 +68,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
-    startLine: 38
+    startLine: 39
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -84,16 +84,16 @@ items:
   nameWithType.vb: ApiLifecyclePublisher.New(ILogger(Of ApiLifecyclePublisher), Pubsub.PubsubClient)
   fullName.vb: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.New(Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.ApiLifecyclePublisher), Virtufin.Api.Protos.Pubsub.PubsubClient)
   name.vb: New(ILogger(Of ApiLifecyclePublisher), PubsubClient)
-- uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Threading.CancellationToken)
-  commentId: M:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Threading.CancellationToken)
-  id: PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Threading.CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Nullable{System.Int32},System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Nullable{System.Int32},System.Threading.CancellationToken)
+  id: PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Nullable{System.Int32},System.Threading.CancellationToken)
   parent: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher
   langs:
   - csharp
   - vb
-  name: PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, CancellationToken)
-  nameWithType: ApiLifecyclePublisher.PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, Virtufin.WebSocketManager.Models.ConnectionStatus, System.Threading.CancellationToken)
+  name: PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, int?, CancellationToken)
+  nameWithType: ApiLifecyclePublisher.PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, int?, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, Virtufin.WebSocketManager.Models.ConnectionStatus, int?, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -102,7 +102,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: PublishIfChangedAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
-    startLine: 49
+    startLine: 59
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -114,18 +114,37 @@ items:
     already equals <code class="paramref">newStatus</code>, no event is published.
   example: []
   syntax:
-    content: public Task PublishIfChangedAsync(WebSocketConnection connection, ConnectionStatus newStatus, CancellationToken cancellationToken = default)
+    content: public Task PublishIfChangedAsync(WebSocketConnection connection, ConnectionStatus newStatus, int? attempt = null, CancellationToken cancellationToken = default)
     parameters:
     - id: connection
       type: Virtufin.WebSocketManager.Models.WebSocketConnection
     - id: newStatus
       type: Virtufin.WebSocketManager.Models.ConnectionStatus
+    - id: attempt
+      type: System.Nullable{System.Int32}
+      description: >-
+        For <xref href="Virtufin.WebSocketManager.Models.ConnectionStatus.Reconnecting" data-throw-if-not-resolved="false"></xref> events, the
+
+        reconnect attempt number about to be made (spec requires this
+
+        field in the data payload). Ignored for other status values.
+
+        Note: the WSM fires exactly one Reconnecting event before
+
+        entering the retry loop, not one per attempt -- so this is
+
+        always the first attempt number today, not a live per-attempt
+
+        counter.
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Function PublishIfChangedAsync(connection As WebSocketConnection, newStatus As ConnectionStatus, cancellationToken As CancellationToken = Nothing) As Task
+    content.vb: Public Function PublishIfChangedAsync(connection As WebSocketConnection, newStatus As ConnectionStatus, attempt As Integer? = Nothing, cancellationToken As CancellationToken = Nothing) As Task
   overload: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync*
+  nameWithType.vb: ApiLifecyclePublisher.PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, Integer?, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, Virtufin.WebSocketManager.Models.ConnectionStatus, Integer?, System.Threading.CancellationToken)
+  name.vb: PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, Integer?, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishErrorAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Exception,System.Threading.CancellationToken)
   commentId: M:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishErrorAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Exception,System.Threading.CancellationToken)
   id: PublishErrorAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Exception,System.Threading.CancellationToken)
@@ -144,7 +163,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: PublishErrorAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
-    startLine: 81
+    startLine: 92
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -598,9 +617,15 @@ references:
   - uid: Virtufin.Api.Protos
     name: Protos
     isExternal: true
+- uid: Virtufin.WebSocketManager.Models.ConnectionStatus.Reconnecting
+  commentId: F:Virtufin.WebSocketManager.Models.ConnectionStatus.Reconnecting
+  href: Virtufin.WebSocketManager.Models.ConnectionStatus.html#Virtufin_WebSocketManager_Models_ConnectionStatus_Reconnecting
+  name: Reconnecting
+  nameWithType: ConnectionStatus.Reconnecting
+  fullName: Virtufin.WebSocketManager.Models.ConnectionStatus.Reconnecting
 - uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync*
   commentId: Overload:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync
-  href: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html#Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishIfChangedAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_Virtufin_WebSocketManager_Models_ConnectionStatus_System_Threading_CancellationToken_
+  href: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html#Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishIfChangedAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_Virtufin_WebSocketManager_Models_ConnectionStatus_System_Nullable_System_Int32__System_Threading_CancellationToken_
   name: PublishIfChangedAsync
   nameWithType: ApiLifecyclePublisher.PublishIfChangedAsync
   fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync
@@ -618,6 +643,29 @@ references:
   name: ConnectionStatus
   nameWithType: ConnectionStatus
   fullName: Virtufin.WebSocketManager.Models.ConnectionStatus
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
 - uid: System.Threading.CancellationToken
   commentId: T:System.Threading.CancellationToken
   parent: System.Threading
@@ -664,6 +712,34 @@ references:
   - uid: Virtufin.WebSocketManager.Models
     name: Models
     href: Virtufin.WebSocketManager.Models.html
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: System.Threading
   commentId: N:System.Threading
   isExternal: true

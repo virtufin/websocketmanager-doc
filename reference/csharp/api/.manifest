@@ -87,7 +87,7 @@
   "Virtufin.WebSocketManager.Services.ApiLifecyclePublisher": "Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.yml",
   "Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ApiLifecyclePublisher},Virtufin.Api.Protos.Pubsub.PubsubClient)": "Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.yml",
   "Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishErrorAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Exception,System.Threading.CancellationToken)": "Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.yml",
-  "Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Threading.CancellationToken)": "Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.yml",
+  "Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Nullable{System.Int32},System.Threading.CancellationToken)": "Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.yml",
   "Virtufin.WebSocketManager.Services.AppMetrics": "Virtufin.WebSocketManager.Services.AppMetrics.yml",
   "Virtufin.WebSocketManager.Services.AppMetrics.DisconnectFailedPreconditionTotal": "Virtufin.WebSocketManager.Services.AppMetrics.yml",
   "Virtufin.WebSocketManager.Services.AppMetrics.DisconnectForwardedTotal": "Virtufin.WebSocketManager.Services.AppMetrics.yml",

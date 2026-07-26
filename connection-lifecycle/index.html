@@ -199,14 +199,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/7e9306626043b41ed8c295903575255296e28c9c"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/7df0940ab0a8657188903c2355d9f9ce930580f8"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 7e93066">
+       title="View commit 7df0940">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">7e93066</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">7df0940</text>
       </svg>
     </a>
 </div>
@@ -383,14 +383,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/7e9306626043b41ed8c295903575255296e28c9c"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/7df0940ab0a8657188903c2355d9f9ce930580f8"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 7e93066">
+       title="View commit 7df0940">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">7e93066</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">7df0940</text>
       </svg>
     </a>
 </div>
@@ -1213,17 +1213,17 @@ the <code>websocketmanager.lifecycle</code> topic by the WebSocketManager.</p>
 <tr>
 <td><code>connection.connected</code></td>
 <td>Connection established with the upstream WS server</td>
-<td><code>connection_id</code>, <code>url</code>, <code>instance_id</code></td>
+<td><code>connection_id</code>, <code>url</code>, <code>instance_id</code>, <code>reason</code> (previous status)</td>
 </tr>
 <tr>
 <td><code>connection.disconnected</code></td>
 <td>Connection closed (any reason)</td>
-<td><code>connection_id</code>, <code>url</code>, <code>instance_id</code></td>
+<td><code>connection_id</code>, <code>url</code>, <code>instance_id</code>, <code>reason</code> (previous status)</td>
 </tr>
 <tr>
 <td><code>connection.reconnecting</code></td>
 <td>Auto-reconnect attempt in progress</td>
-<td><code>connection_id</code>, <code>url</code>, <code>instance_id</code></td>
+<td><code>connection_id</code>, <code>url</code>, <code>instance_id</code>, <code>reason</code> (previous status), <code>attempt</code> (reconnect attempt number)</td>
 </tr>
 <tr>
 <td><code>connection.error</code></td>
@@ -1232,6 +1232,10 @@ the <code>websocketmanager.lifecycle</code> topic by the WebSocketManager.</p>
 </tr>
 </tbody>
 </table>
+<p><code>attempt</code> is currently always <code>1</code>: the WSM fires exactly one
+<code>connection.reconnecting</code> event before entering its retry loop, not
+one per attempt, so the field reflects the upcoming first attempt
+rather than a live counter.</p>
 <p>All events are CloudEvents v1.0 envelopes. Subscribe via
 <code>Pubsub.Subscribe(topic: Topics.Lifecycle)</code> on the virtufin-api;
 subscribers from outside the WSM process can hardcode
@@ -1313,7 +1317,7 @@ event is dropped.</p>
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-24T21:45:06Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-26T05:02:06Z</span>
 </div>
 
     </div>

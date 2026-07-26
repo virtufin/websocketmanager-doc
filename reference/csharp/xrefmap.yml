@@ -767,12 +767,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishErrorAsync
   nameWithType: ApiLifecyclePublisher.PublishErrorAsync
-- uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Threading.CancellationToken)
-  name: PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, CancellationToken)
-  href: api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html#Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishIfChangedAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_Virtufin_WebSocketManager_Models_ConnectionStatus_System_Threading_CancellationToken_
-  commentId: M:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Threading.CancellationToken)
-  fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, Virtufin.WebSocketManager.Models.ConnectionStatus, System.Threading.CancellationToken)
-  nameWithType: ApiLifecyclePublisher.PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Nullable{System.Int32},System.Threading.CancellationToken)
+  name: PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, int?, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html#Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishIfChangedAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_Virtufin_WebSocketManager_Models_ConnectionStatus_System_Nullable_System_Int32__System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Nullable{System.Int32},System.Threading.CancellationToken)
+  name.vb: PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, Integer?, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, Virtufin.WebSocketManager.Models.ConnectionStatus, int?, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection, Virtufin.WebSocketManager.Models.ConnectionStatus, Integer?, System.Threading.CancellationToken)
+  nameWithType: ApiLifecyclePublisher.PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, int?, CancellationToken)
+  nameWithType.vb: ApiLifecyclePublisher.PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, Integer?, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync*
   name: PublishIfChangedAsync
   href: api/Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.html#Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishIfChangedAsync_

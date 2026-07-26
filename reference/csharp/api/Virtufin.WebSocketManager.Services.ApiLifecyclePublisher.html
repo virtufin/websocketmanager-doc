@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/7e9306626043b41ed8c295903575255296e28c9c" target="_blank" rel="noopener" class="commit-badge" title="View commit 7e9306626043b41ed8c295903575255296e28c9c">
+            <a href="{git_repo_url}/commit/7df0940ab0a8657188903c2355d9f9ce930580f8" target="_blank" rel="noopener" class="commit-badge" title="View commit 7df0940ab0a8657188903c2355d9f9ce930580f8">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">7e9306626043b41ed8c295903575255296e28c9c</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">7df0940ab0a8657188903c2355d9f9ce930580f8</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -244,8 +244,8 @@ recovery action.</p>
 
   <a id="Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishIfChangedAsync_" data-uid="Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishIfChangedAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_Virtufin_WebSocketManager_Models_ConnectionStatus_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Threading.CancellationToken)">
-  PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, CancellationToken)
+  <h3 id="Virtufin_WebSocketManager_Services_ApiLifecyclePublisher_PublishIfChangedAsync_Virtufin_WebSocketManager_Models_WebSocketConnection_Virtufin_WebSocketManager_Models_ConnectionStatus_System_Nullable_System_Int32__System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.ApiLifecyclePublisher.PublishIfChangedAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,Virtufin.WebSocketManager.Models.ConnectionStatus,System.Nullable{System.Int32},System.Threading.CancellationToken)">
+  PublishIfChangedAsync(WebSocketConnection, ConnectionStatus, int?, CancellationToken)
   
   </h3>
 
@@ -256,7 +256,7 @@ already equals <code class="paramref">newStatus</code>, no event is published.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task PublishIfChangedAsync(WebSocketConnection connection, ConnectionStatus newStatus, CancellationToken cancellationToken = default)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task PublishIfChangedAsync(WebSocketConnection connection, ConnectionStatus newStatus, int? attempt = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -265,6 +265,15 @@ already equals <code class="paramref">newStatus</code>, no event is published.</
     <dd></dd>
     <dt><code>newStatus</code> <a class="xref" href="Virtufin.WebSocketManager.Models.ConnectionStatus.html">ConnectionStatus</a></dt>
     <dd></dd>
+    <dt><code>attempt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>For <a class="xref" href="Virtufin.WebSocketManager.Models.ConnectionStatus.html#Virtufin_WebSocketManager_Models_ConnectionStatus_Reconnecting">Reconnecting</a> events, the
+reconnect attempt number about to be made (spec requires this
+field in the data payload). Ignored for other status values.
+Note: the WSM fires exactly one Reconnecting event before
+entering the retry loop, not one per attempt -- so this is
+always the first attempt number today, not a live per-attempt
+counter.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
     <dd></dd>
   </dl>

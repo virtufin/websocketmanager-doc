@@ -494,7 +494,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: MapException
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
-    startLine: 303
+    startLine: 306
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Protos
