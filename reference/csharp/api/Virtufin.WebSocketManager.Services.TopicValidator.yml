@@ -46,18 +46,18 @@ items:
     Accepted patterns:
       1. <code>&lt;service&gt;.&lt;category&gt;</code>            — Tier 0 / infrastructure
          e.g. <code>websocketmanager.lifecycle</code>, <code>workmanager.infra.worker</code>
-      2. <code>act.exchange.&lt;venue&gt;.&lt;entity&gt;.&lt;event&gt;[.&lt;id&gt;]</code>
-         — market data (real, no selector segment)
-      3. <code>hyp.&lt;selector&gt;.exchange.&lt;venue&gt;.&lt;entity&gt;.&lt;event&gt;[.&lt;id&gt;]</code>
-         — market data (hypothetical, with selector)
+      2. <code>act.&lt;universe&gt;.exchange.&lt;venue&gt;.&lt;entity&gt;.&lt;event&gt;[.&lt;id&gt;]</code>
+         — market data (real), universe symmetric with hyp (e.g. <code>ALL</code> for unrestricted)
+      3. <code>hyp.&lt;universe&gt;.exchange.&lt;venue&gt;.&lt;entity&gt;.&lt;event&gt;[.&lt;id&gt;]</code>
+         — market data (hypothetical), with universe
       4. <code>sc.&lt;scenarioId&gt;.&lt;domain&gt;.&lt;entity&gt;.&lt;event&gt;[.&lt;id&gt;]</code>
          — scenario-scoped events
       5. <code>command.&lt;service&gt;</code>            — command topics (worker input)
       6. <code>response.&lt;service&gt;</code>            — response topics (worker output)
 
     Rejected (intentionally):
-      - <code>act.&lt;selector&gt;.exchange.*</code>     — act topics MUST NOT carry a selector
-      - <code>hyp.exchange.*</code>                  — hyp topics MUST carry a selector
+      - <code>act.exchange.*</code>                  — act topics MUST carry a universe (use <code>act.ALL.exchange.*</code>)
+      - <code>hyp.exchange.*</code>                  — hyp topics MUST carry a universe
   example: []
   syntax:
     content: public static class TopicValidator
@@ -90,7 +90,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Validate
     path: ../../../src/Virtufin.WebSocketManager/Services/TopicValidator.cs
-    startLine: 76
+    startLine: 79
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
