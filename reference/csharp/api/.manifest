@@ -201,8 +201,6 @@
   "Virtufin.WebSocketManager.Services.Options.WebSocketOptions.MaxReconnectDelayMs": "Virtufin.WebSocketManager.Services.Options.WebSocketOptions.yml",
   "Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectBaseDelayMs": "Virtufin.WebSocketManager.Services.Options.WebSocketOptions.yml",
   "Virtufin.WebSocketManager.Services.Options.WebSocketOptions.ReconnectMaxAttempts": "Virtufin.WebSocketManager.Services.Options.WebSocketOptions.yml",
-  "Virtufin.WebSocketManager.Services.TopicValidator": "Virtufin.WebSocketManager.Services.TopicValidator.yml",
-  "Virtufin.WebSocketManager.Services.TopicValidator.Validate(System.String)": "Virtufin.WebSocketManager.Services.TopicValidator.yml",
   "Virtufin.WebSocketManager.Services.WebSocketClientWrapper": "Virtufin.WebSocketManager.Services.WebSocketClientWrapper.yml",
   "Virtufin.WebSocketManager.Services.WebSocketClientWrapper.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketClientWrapper},Microsoft.Extensions.Options.IOptions{Virtufin.WebSocketManager.Services.Options.WebSocketOptions},Virtufin.WebSocketManager.Services.ApiLifecyclePublisher)": "Virtufin.WebSocketManager.Services.WebSocketClientWrapper.yml",
   "Virtufin.WebSocketManager.Services.WebSocketClientWrapper.ConnectAsync(Virtufin.WebSocketManager.Models.WebSocketConnection)": "Virtufin.WebSocketManager.Services.WebSocketClientWrapper.yml",

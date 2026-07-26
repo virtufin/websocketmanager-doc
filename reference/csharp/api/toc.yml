@@ -111,9 +111,6 @@ items:
     - uid: Virtufin.WebSocketManager.Services.MessageTimeoutException
       name: MessageTimeoutException
       type: Class
-    - uid: Virtufin.WebSocketManager.Services.TopicValidator
-      name: TopicValidator
-      type: Class
     - uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper
       name: WebSocketClientWrapper
       type: Class

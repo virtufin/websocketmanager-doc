@@ -24,7 +24,6 @@ items:
   - Virtufin.WebSocketManager.Services.MessageSendException
   - Virtufin.WebSocketManager.Services.MessageTimeoutException
   - Virtufin.WebSocketManager.Services.Options
-  - Virtufin.WebSocketManager.Services.TopicValidator
   - Virtufin.WebSocketManager.Services.WebSocketClientWrapper
   - Virtufin.WebSocketManager.Services.WebSocketNotConnectedException
   - Virtufin.WebSocketManager.Services.WebSocketService
@@ -192,12 +191,6 @@ references:
   name: MessageTimeoutException
   nameWithType: MessageTimeoutException
   fullName: Virtufin.WebSocketManager.Services.MessageTimeoutException
-- uid: Virtufin.WebSocketManager.Services.TopicValidator
-  commentId: T:Virtufin.WebSocketManager.Services.TopicValidator
-  href: Virtufin.WebSocketManager.Services.TopicValidator.html
-  name: TopicValidator
-  nameWithType: TopicValidator
-  fullName: Virtufin.WebSocketManager.Services.TopicValidator
 - uid: Virtufin.WebSocketManager.Services.WebSocketClientWrapper
   commentId: T:Virtufin.WebSocketManager.Services.WebSocketClientWrapper
   href: Virtufin.WebSocketManager.Services.WebSocketClientWrapper.html
