@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DaprCircuitBreakerHealthCheck
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprResiliencePipeline.cs
-    startLine: 87
+    startLine: 103
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -59,7 +59,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprResiliencePipeline.cs
-    startLine: 91
+    startLine: 107
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -91,7 +91,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CheckHealthAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprResiliencePipeline.cs
-    startLine: 96
+    startLine: 112
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
