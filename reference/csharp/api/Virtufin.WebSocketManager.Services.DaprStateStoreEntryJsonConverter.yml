@@ -126,7 +126,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Write
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntryJsonConverter.cs
-    startLine: 91
+    startLine: 125
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
