@@ -28,7 +28,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.yml\" sourcestartlinenumber=\"1\">Tuning for connection record state-store TTL. The WSM sets a Dapr\n<code>ttlInSeconds</code> on every connection record write, and refreshes it\non every successful send. Records whose TTL elapses without traffic\nare removed by the state store without explicit reclaimer intervention.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.yml\" sourcestartlinenumber=\"1\">Tuning for connection record state-store TTL. The WSM sets a Dapr\n<code>ttlInSeconds</code> on every connection record write.\n<xref href=\"Virtufin.WebSocketManager.Services.ConnectionHeartbeatService\" data-throw-if-not-resolved=\"false\"></xref> refreshes it for\nevery locally-owned, connected connection every TTL/3 seconds\n(floored at 10s), independent of send traffic; a successful\n<code>Send</code>/<code>SendRaw</code> also refreshes it as a side effect.\nRecords whose TTL elapses (e.g. a pod that died without a clean\ndisconnect, so nothing is heartbeating them anymore) are removed\nby the state store without explicit reclaimer intervention.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -211,6 +211,20 @@
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.AppMetrics",
       "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.AppMetrics.yml\" sourcestartlinenumber=\"1\">Application-level metrics for the WebSocketManager service. Mirrors the\npattern in <code>Virtufin.WorkManager.Services.AppMetrics</code>. Counters are\nregistered under the meter <code>Virtufin.WebSocketManager</code>, which is\nalready wired into the OpenTelemetry pipeline in <code>Program.cs</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.ConnectionHeartbeatService",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.yml\" sourcestartlinenumber=\"1\">Periodically refreshes the state-store TTL on every locally-owned,\nconnected WebSocket. The connection record's TTL was previously only\nrefreshed by <xref href=\"Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(System.String%2cSystem.Byte%5b%5d%2cSystem.Int32%2cSystem.String%2cSystem.Threading.CancellationToken)\" data-throw-if-not-resolved=\"false\"></xref>/<code>SendRawAsync</code>\n(traffic pushed <em sourcefile=\"api/Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.yml\" sourcestartlinenumber=\"4\">to</em> the socket) or by StartPublish/StopPublish -- a\nconnection that is only <em sourcefile=\"api/Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.yml\" sourcestartlinenumber=\"5\">receiving</em> (the common case: subscribe once,\nthen relay inbound messages to pub/sub) never touched its own record,\nso it deterministically expired from the state store ~TTL after the\nlast StartPublish, independent of whether the socket was still alive.\nThis heartbeat makes &quot;record TTL&quot; track &quot;is the socket open on this\npod&quot; instead of &quot;did traffic happen to flow through the touch paths.&quot;</p>\n"
     },
     {
       "type": "ManagedReference",

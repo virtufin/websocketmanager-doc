@@ -63,6 +63,9 @@ items:
     - uid: Virtufin.WebSocketManager.Services.AppMetrics
       name: AppMetrics
       type: Class
+    - uid: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService
+      name: ConnectionHeartbeatService
+      type: Class
     - uid: Virtufin.WebSocketManager.Services.ConnectionNotFoundException
       name: ConnectionNotFoundException
       type: Class

@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/cf8315fdeed187cbae76ad847b87af3d415149b8"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/8cf97838db9cb500f2fef00897c77d6ab425f1cf"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit cf8315f">
+       title="View commit 8cf9783">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">cf8315f</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">8cf9783</text>
       </svg>
     </a>
 </div>
@@ -370,14 +370,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/cf8315fdeed187cbae76ad847b87af3d415149b8"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/8cf97838db9cb500f2fef00897c77d6ab425f1cf"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit cf8315f">
+       title="View commit 8cf9783">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">cf8315f</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">8cf9783</text>
       </svg>
     </a>
 </div>
@@ -1553,7 +1553,7 @@
 <tbody>
 <tr>
 <td><code>CONNECTION_RECORD_TTL_SECONDS</code></td>
-<td>Dapr state TTL on connection records. Refreshed on every successful <code>Send</code> or <code>SendRaw</code>. Records that exceed this TTL with no traffic are removed by the state store.</td>
+<td>Dapr state TTL on connection records. A background connection heartbeat (distinct from the peer-discovery heartbeat used for RPC forwarding, see <a href="../services/">Services</a>) refreshes every locally-owned, connected record every TTL/3 seconds (floored at 10s), independent of <code>Send</code>/<code>SendRaw</code> traffic. <code>Send</code>/<code>SendRaw</code> also refresh it as a side effect. A pod that dies without a clean disconnect stops refreshing its connections' records, which then expire and are removed by the state store.</td>
 <td><code>300</code></td>
 <td><code>30</code>–<code>3600</code></td>
 </tr>
@@ -1686,7 +1686,7 @@
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-08-03T21:05:26Z</span>
+  <span style="display:table-cell;text-align:right">2026-08-04T13:21:15Z</span>
 </div>
 
     </div>

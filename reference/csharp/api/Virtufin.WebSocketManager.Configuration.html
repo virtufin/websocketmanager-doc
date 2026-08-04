@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/cf8315fdeed187cbae76ad847b87af3d415149b8" target="_blank" rel="noopener" class="commit-badge" title="View commit cf8315fdeed187cbae76ad847b87af3d415149b8">
+            <a href="{git_repo_url}/commit/8cf97838db9cb500f2fef00897c77d6ab425f1cf" target="_blank" rel="noopener" class="commit-badge" title="View commit 8cf97838db9cb500f2fef00897c77d6ab425f1cf">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">cf8315fdeed187cbae76ad847b87af3d415149b8</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">8cf97838db9cb500f2fef00897c77d6ab425f1cf</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,9 +108,14 @@ ce-type taxonomy.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.html">ConnectionStoreOptions</a></dt>
       <dd><p>Tuning for connection record state-store TTL. The WSM sets a Dapr
-<code>ttlInSeconds</code> on every connection record write, and refreshes it
-on every successful send. Records whose TTL elapses without traffic
-are removed by the state store without explicit reclaimer intervention.</p>
+<code>ttlInSeconds</code> on every connection record write.
+<a class="xref" href="Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.html">ConnectionHeartbeatService</a> refreshes it for
+every locally-owned, connected connection every TTL/3 seconds
+(floored at 10s), independent of send traffic; a successful
+<code>Send</code>/<code>SendRaw</code> also refreshes it as a side effect.
+Records whose TTL elapses (e.g. a pod that died without a clean
+disconnect, so nothing is heartbeating them anymore) are removed
+by the state store without explicit reclaimer intervention.</p>
 </dd>
     </dl>
     <dl class="jumplist">

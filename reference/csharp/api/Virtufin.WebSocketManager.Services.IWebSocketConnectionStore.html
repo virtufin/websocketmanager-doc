@@ -49,10 +49,10 @@
             Virtufin.WebSocketManager
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/cf8315fdeed187cbae76ad847b87af3d415149b8" target="_blank" rel="noopener" class="commit-badge" title="View commit cf8315fdeed187cbae76ad847b87af3d415149b8">
+            <a href="{git_repo_url}/commit/8cf97838db9cb500f2fef00897c77d6ab425f1cf" target="_blank" rel="noopener" class="commit-badge" title="View commit 8cf97838db9cb500f2fef00897c77d6ab425f1cf">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">cf8315fdeed187cbae76ad847b87af3d415149b8</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">8cf97838db9cb500f2fef00897c77d6ab425f1cf</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -304,6 +304,40 @@ Returns null for connections owned by other instances.</p>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Virtufin.WebSocketManager.Models.WebSocketConnection.html">WebSocketConnection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_GetLocalConnections_" data-uid="Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections*"></a>
+
+  <h3 id="Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_GetLocalConnections" data-uid="Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections">
+  GetLocalConnections()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Snapshot of connections owned by this instance (in-memory only).
+Used by <a class="xref" href="Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.html">ConnectionHeartbeatService</a> to refresh state-store
+TTLs without depending on send/publish traffic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyCollection&lt;WebSocketConnection&gt; GetLocalConnections()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Models.WebSocketConnection.html">WebSocketConnection</a>&gt;</dt>
     <dd></dd>
   </dl>
 

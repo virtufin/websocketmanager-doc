@@ -25,18 +25,28 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ConnectionStoreOptions
     path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
-    startLine: 8
+    startLine: 13
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   summary: >-
     Tuning for connection record state-store TTL. The WSM sets a Dapr
 
-    <code>ttlInSeconds</code> on every connection record write, and refreshes it
+    <code>ttlInSeconds</code> on every connection record write.
 
-    on every successful send. Records whose TTL elapses without traffic
+    <xref href="Virtufin.WebSocketManager.Services.ConnectionHeartbeatService" data-throw-if-not-resolved="false"></xref> refreshes it for
 
-    are removed by the state store without explicit reclaimer intervention.
+    every locally-owned, connected connection every TTL/3 seconds
+
+    (floored at 10s), independent of send traffic; a successful
+
+    <code>Send</code>/<code>SendRaw</code> also refreshes it as a side effect.
+
+    Records whose TTL elapses (e.g. a pod that died without a clean
+
+    disconnect, so nothing is heartbeating them anymore) are removed
+
+    by the state store without explicit reclaimer intervention.
   example: []
   syntax:
     content: 'public sealed record ConnectionStoreOptions : IEquatable<ConnectionStoreOptions>'
@@ -70,7 +80,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ConnectionRecordTtlSecondsEnvVar
     path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
-    startLine: 11
+    startLine: 16
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
@@ -99,7 +109,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DefaultConnectionRecordTtlSeconds
     path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
-    startLine: 14
+    startLine: 19
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
@@ -128,7 +138,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: MinConnectionRecordTtlSeconds
     path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
-    startLine: 18
+    startLine: 23
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
@@ -159,7 +169,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: MaxConnectionRecordTtlSeconds
     path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
-    startLine: 22
+    startLine: 27
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
@@ -190,7 +200,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ConnectionRecordTtlSeconds
     path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
-    startLine: 25
+    startLine: 30
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
@@ -221,7 +231,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: FromEnvironment
     path: ../../../src/Virtufin.WebSocketManager/Configuration/ConnectionStoreOptions.cs
-    startLine: 27
+    startLine: 32
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
@@ -238,6 +248,12 @@ items:
   fullName.vb: Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions.FromEnvironment(System.Func(Of String, String))
   name.vb: FromEnvironment(Func(Of String, String))
 references:
+- uid: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService
+  commentId: T:Virtufin.WebSocketManager.Services.ConnectionHeartbeatService
+  href: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.html
+  name: ConnectionHeartbeatService
+  nameWithType: ConnectionHeartbeatService
+  fullName: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService
 - uid: Virtufin.WebSocketManager.Configuration
   commentId: N:Virtufin.WebSocketManager.Configuration
   href: Virtufin.html

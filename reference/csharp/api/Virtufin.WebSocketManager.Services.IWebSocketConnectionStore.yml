@@ -10,6 +10,7 @@ items:
   - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetAllConnectionsAsync(System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetConnectionAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetConnectionById(System.String)
+  - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections
   - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.RemoveConnectionAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.UpdateConnectionAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Threading.CancellationToken)
@@ -155,6 +156,41 @@ items:
   nameWithType.vb: IWebSocketConnectionStore.GetConnectionById(String)
   fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetConnectionById(String)
   name.vb: GetConnectionById(String)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections
+  id: GetLocalConnections
+  parent: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
+  langs:
+  - csharp
+  - vb
+  name: GetLocalConnections()
+  nameWithType: IWebSocketConnectionStore.GetLocalConnections()
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: GetLocalConnections
+    path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    Snapshot of connections owned by this instance (in-memory only).
+
+    Used by <xref href="Virtufin.WebSocketManager.Services.ConnectionHeartbeatService" data-throw-if-not-resolved="false"></xref> to refresh state-store
+
+    TTLs without depending on send/publish traffic.
+  example: []
+  syntax:
+    content: IReadOnlyCollection<WebSocketConnection> GetLocalConnections()
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{Virtufin.WebSocketManager.Models.WebSocketConnection}
+    content.vb: Function GetLocalConnections() As IReadOnlyCollection(Of WebSocketConnection)
+  overload: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections*
 - uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetAllConnectionsAsync(System.Threading.CancellationToken)
   commentId: M:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetAllConnectionsAsync(System.Threading.CancellationToken)
   id: GetAllConnectionsAsync(System.Threading.CancellationToken)
@@ -173,7 +209,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetAllConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 30
+    startLine: 37
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -206,7 +242,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: UpdateConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 35
+    startLine: 42
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -241,7 +277,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: RemoveConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 40
+    startLine: 47
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -279,7 +315,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: TouchAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 47
+    startLine: 54
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -322,7 +358,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ClearAllConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 52
+    startLine: 59
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -646,6 +682,116 @@ references:
   - uid: Virtufin.WebSocketManager.Models
     name: Models
     href: Virtufin.WebSocketManager.Models.html
+- uid: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService
+  commentId: T:Virtufin.WebSocketManager.Services.ConnectionHeartbeatService
+  href: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.html
+  name: ConnectionHeartbeatService
+  nameWithType: ConnectionHeartbeatService
+  fullName: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections
+  href: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_GetLocalConnections
+  name: GetLocalConnections
+  nameWithType: IWebSocketConnectionStore.GetLocalConnections
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections
+- uid: System.Collections.Generic.IReadOnlyCollection{Virtufin.WebSocketManager.Models.WebSocketConnection}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Virtufin.WebSocketManager.Models.WebSocketConnection}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<WebSocketConnection>
+  nameWithType: IReadOnlyCollection<WebSocketConnection>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Virtufin.WebSocketManager.Models.WebSocketConnection>
+  nameWithType.vb: IReadOnlyCollection(Of WebSocketConnection)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Virtufin.WebSocketManager.Models.WebSocketConnection)
+  name.vb: IReadOnlyCollection(Of WebSocketConnection)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: Virtufin.WebSocketManager.Models.WebSocketConnection
+    name: WebSocketConnection
+    href: Virtufin.WebSocketManager.Models.WebSocketConnection.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.WebSocketManager.Models.WebSocketConnection
+    name: WebSocketConnection
+    href: Virtufin.WebSocketManager.Models.WebSocketConnection.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetAllConnectionsAsync*
   commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetAllConnectionsAsync
   href: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_GetAllConnectionsAsync_System_Threading_CancellationToken_

@@ -861,6 +861,44 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.AppMetrics.RecordOwnershipMiss
   nameWithType: AppMetrics.RecordOwnershipMiss
+- uid: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService
+  name: ConnectionHeartbeatService
+  href: api/Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.html
+  commentId: T:Virtufin.WebSocketManager.Services.ConnectionHeartbeatService
+  fullName: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService
+  nameWithType: ConnectionHeartbeatService
+- uid: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionHeartbeatService})
+  name: ConnectionHeartbeatService(IWebSocketConnectionStore, ConnectionStoreOptions, ILogger<ConnectionHeartbeatService>)
+  href: api/Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.html#Virtufin_WebSocketManager_Services_ConnectionHeartbeatService__ctor_Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_Virtufin_WebSocketManager_Configuration_ConnectionStoreOptions_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_ConnectionHeartbeatService__
+  commentId: M:Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.ConnectionHeartbeatService})
+  name.vb: New(IWebSocketConnectionStore, ConnectionStoreOptions, ILogger(Of ConnectionHeartbeatService))
+  fullName: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.ConnectionHeartbeatService(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.ConnectionHeartbeatService>)
+  fullName.vb: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.New(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Virtufin.WebSocketManager.Configuration.ConnectionStoreOptions, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.ConnectionHeartbeatService))
+  nameWithType: ConnectionHeartbeatService.ConnectionHeartbeatService(IWebSocketConnectionStore, ConnectionStoreOptions, ILogger<ConnectionHeartbeatService>)
+  nameWithType.vb: ConnectionHeartbeatService.New(IWebSocketConnectionStore, ConnectionStoreOptions, ILogger(Of ConnectionHeartbeatService))
+- uid: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.#ctor*
+  name: ConnectionHeartbeatService
+  href: api/Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.html#Virtufin_WebSocketManager_Services_ConnectionHeartbeatService__ctor_
+  commentId: Overload:Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.ConnectionHeartbeatService
+  fullName.vb: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.New
+  nameWithType: ConnectionHeartbeatService.ConnectionHeartbeatService
+  nameWithType.vb: ConnectionHeartbeatService.New
+- uid: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.ExecuteAsync(System.Threading.CancellationToken)
+  name: ExecuteAsync(CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.html#Virtufin_WebSocketManager_Services_ConnectionHeartbeatService_ExecuteAsync_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.ExecuteAsync(System.Threading.CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.ExecuteAsync(System.Threading.CancellationToken)
+  nameWithType: ConnectionHeartbeatService.ExecuteAsync(CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.html#Virtufin_WebSocketManager_Services_ConnectionHeartbeatService_ExecuteAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.ExecuteAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.ConnectionHeartbeatService.ExecuteAsync
+  nameWithType: ConnectionHeartbeatService.ExecuteAsync
 - uid: Virtufin.WebSocketManager.Services.ConnectionNotFoundException
   name: ConnectionNotFoundException
   href: api/Virtufin.WebSocketManager.Services.ConnectionNotFoundException.html
@@ -1503,6 +1541,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionById
   nameWithType: DistributedWebSocketConnectionStore.GetConnectionById
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetLocalConnections
+  name: GetLocalConnections()
+  href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_GetLocalConnections
+  commentId: M:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetLocalConnections
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetLocalConnections()
+  nameWithType: DistributedWebSocketConnectionStore.GetLocalConnections()
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetLocalConnections*
+  name: GetLocalConnections
+  href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_GetLocalConnections_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetLocalConnections
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetLocalConnections
+  nameWithType: DistributedWebSocketConnectionStore.GetLocalConnections
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.RemoveConnectionAsync(System.String,System.Threading.CancellationToken)
   name: RemoveConnectionAsync(string, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_RemoveConnectionAsync_System_String_System_Threading_CancellationToken_
@@ -1839,6 +1890,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetConnectionById
   nameWithType: IWebSocketConnectionStore.GetConnectionById
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections
+  name: GetLocalConnections()
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_GetLocalConnections
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections()
+  nameWithType: IWebSocketConnectionStore.GetLocalConnections()
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections*
+  name: GetLocalConnections
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_GetLocalConnections_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections
+  nameWithType: IWebSocketConnectionStore.GetLocalConnections
 - uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.RemoveConnectionAsync(System.String,System.Threading.CancellationToken)
   name: RemoveConnectionAsync(string, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_RemoveConnectionAsync_System_String_System_Threading_CancellationToken_
