@@ -201,14 +201,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/ac02b042bf4681873e765d6dd6b10a716fd2efc9"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/f277fbae70dfcfdba71b2248abc29d2d99a521d0"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit ac02b04">
+       title="View commit f277fba">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">ac02b04</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">f277fba</text>
       </svg>
     </a>
 </div>
@@ -368,14 +368,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/ac02b042bf4681873e765d6dd6b10a716fd2efc9"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/f277fbae70dfcfdba71b2248abc29d2d99a521d0"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit ac02b04">
+       title="View commit f277fba">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">ac02b04</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">f277fba</text>
       </svg>
     </a>
 </div>
@@ -1489,7 +1489,7 @@ Kubernetes pod, image-pull, and readiness/liveness probe issues.</p>
 curl<span class="w"> </span>http://localhost:5001/connections
 
 <span class="c1"># Check the reclaim sweeper logs</span>
-kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-websocketmanager<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;reclaim&quot;</span>
+kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-websocketmanager<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">"reclaim"</span>
 
 <span class="c1"># Check if the owning instance is still running</span>
 kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-websocketmanager
@@ -1517,7 +1517,7 @@ timeout.</p>
 matching correlation UUID (16-byte prefix) within the timeout window.</p>
 <p><strong>Diagnose:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Check the receive-loop logs</span>
-kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-websocketmanager<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;correlation&quot;</span>
+kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-websocketmanager<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">"correlation"</span>
 
 <span class="c1"># Increase the timeout in the client</span>
 await<span class="w"> </span>client.send<span class="o">(</span>connection_id,<span class="w"> </span>message,<span class="w"> </span><span class="nv">timeoutMs</span><span class="o">=</span><span class="m">60000</span><span class="o">)</span><span class="w">  </span><span class="c1"># 60s instead of default</span>
@@ -1547,7 +1547,7 @@ from a known-bad state.</p>
 distributed state store, or vice versa.</p>
 <p><strong>Diagnose:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Inspect the state store directly</span>
-docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>dapr_redis_1<span class="w"> </span>redis-cli<span class="w"> </span>KEYS<span class="w"> </span><span class="s1">&#39;websocket-*&#39;</span>
+docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>dapr_redis_1<span class="w"> </span>redis-cli<span class="w"> </span>KEYS<span class="w"> </span><span class="s1">'websocket-*'</span>
 docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>dapr_redis_1<span class="w"> </span>redis-cli<span class="w"> </span>SMEMBERS<span class="w"> </span>websocket-index
 </code></pre></div>
 <p><strong>Fix:</strong> Restart all WebSocketManager replicas to force a fresh
@@ -1562,13 +1562,13 @@ configured, or the topic name in <code>StartPublish</code> doesn't match the sub
 expected topic.</p>
 <p><strong>Diagnose:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Check the publisher logs</span>
-kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-websocketmanager<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;publish\|topic&quot;</span>
+kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-websocketmanager<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">"publish\|topic"</span>
 
 <span class="c1"># Check the Dapr pub/sub component</span>
 kubectl<span class="w"> </span>get<span class="w"> </span>components<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>pubsub<span class="w"> </span>-o<span class="w"> </span>yaml
 
 <span class="c1"># Verify the topic exists in Redis</span>
-docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>dapr_redis_1<span class="w"> </span>redis-cli<span class="w"> </span>PUBSUB<span class="w"> </span>CHANNELS<span class="w"> </span><span class="s1">&#39;*&#39;</span>
+docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>dapr_redis_1<span class="w"> </span>redis-cli<span class="w"> </span>PUBSUB<span class="w"> </span>CHANNELS<span class="w"> </span><span class="s1">'*'</span>
 </code></pre></div>
 <h2 id="recovery-procedures">Recovery procedures</h2>
 <h3 id="restart-the-websocketmanager">Restart the WebSocketManager</h3>
@@ -1580,7 +1580,7 @@ will move connections to surviving replicas.</p>
 <h3 id="wipe-all-connections">Wipe all connections</h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># Manual: clear the state store directly</span>
 docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>dapr_redis_1<span class="w"> </span>redis-cli<span class="w"> </span>DEL<span class="w"> </span>websocket-index
-docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>dapr_redis_1<span class="w"> </span>redis-cli<span class="w"> </span>--scan<span class="w"> </span>--pattern<span class="w"> </span><span class="s1">&#39;websocket-*&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-L<span class="w"> </span><span class="m">100</span><span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-i<span class="w"> </span>dapr_redis_1<span class="w"> </span>redis-cli<span class="w"> </span>DEL
+docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>dapr_redis_1<span class="w"> </span>redis-cli<span class="w"> </span>--scan<span class="w"> </span>--pattern<span class="w"> </span><span class="s1">'websocket-*'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-L<span class="w"> </span><span class="m">100</span><span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-i<span class="w"> </span>dapr_redis_1<span class="w"> </span>redis-cli<span class="w"> </span>DEL
 </code></pre></div>
 <blockquote>
 <p><strong>Note:</strong> This is destructive and will disconnect all active WebSocket
@@ -1627,7 +1627,7 @@ Gitea issue:</p>
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-08-11T06:40:25Z</span>
+  <span style="display:table-cell;text-align:right">2026-08-18T09:12:16Z</span>
 </div>
 
     </div>

@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/ac02b042bf4681873e765d6dd6b10a716fd2efc9"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/f277fbae70dfcfdba71b2248abc29d2d99a521d0"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit ac02b04">
+       title="View commit f277fba">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">ac02b04</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">f277fba</text>
       </svg>
     </a>
 </div>
@@ -370,14 +370,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/ac02b042bf4681873e765d6dd6b10a716fd2efc9"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager/commit/f277fbae70dfcfdba71b2248abc29d2d99a521d0"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit ac02b04">
+       title="View commit f277fba">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">ac02b04</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">f277fba</text>
       </svg>
     </a>
 </div>
@@ -1728,28 +1728,28 @@
 <h2 id="installation">Installation</h2>
 <h3 id="from-gitea-npm-registry">From Gitea npm Registry</h3>
 <p>Configure authentication with a Gitea personal access token (scope: <code>read:packages</code>):</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;//npm.haenerconsulting.com/api/packages/virtufin/npm/:_authToken=&lt;your-gitea-token&gt;&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.npmrc
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">"//npm.haenerconsulting.com/api/packages/virtufin/npm/:_authToken=&lt;your-gitea-token&gt;"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.npmrc
 </code></pre></div>
 <p>Then install:</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>virtufin-websocketmanager
 </code></pre></div>
 <h3 id="from-local-source">From Local Source</h3>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;dependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;virtufin-websocketmanager&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;file:path/to/src/typescript&quot;</span>
+<span class="w">  </span><span class="nt">"dependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"virtufin-websocketmanager"</span><span class="p">:</span><span class="w"> </span><span class="s2">"file:path/to/src/typescript"</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="overview">Overview</h2>
 <p>The client library provides the <code>WebSocketManagerClient</code> class as the main entry point for WebSocket connection management.</p>
 <h2 id="quick-start">Quick Start</h2>
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">WebSocketManagerClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;virtufin-websocketmanager&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">WebSocketManagerClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"virtufin-websocketmanager"</span><span class="p">;</span>
 
-<span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">WebSocketManagerClient</span><span class="p">({</span><span class="w"> </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;http://localhost:5001&quot;</span><span class="w"> </span><span class="p">});</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">WebSocketManagerClient</span><span class="p">({</span><span class="w"> </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">"http://localhost:5001"</span><span class="w"> </span><span class="p">});</span>
 
 <span class="c1">// Connect to a WebSocket server</span>
 <span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="p">,</span><span class="w"> </span><span class="nx">status</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;wss://echo.websocket.org&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">"wss://echo.websocket.org"</span><span class="p">,</span>
 <span class="w">    </span><span class="nx">autoReconnect</span><span class="o">:</span><span class="w"> </span><span class="kt">false</span>
 <span class="p">});</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Connected: </span><span class="si">${</span><span class="nx">connectionId</span><span class="si">}</span><span class="sb"> - </span><span class="si">${</span><span class="nx">status</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
@@ -1761,7 +1761,7 @@
 <span class="c1">// Send a message</span>
 <span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span>
 <span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">JSON.stringify</span><span class="p">({</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;ping&quot;</span><span class="w"> </span><span class="p">}),</span>
+<span class="w">    </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">JSON.stringify</span><span class="p">({</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">"ping"</span><span class="w"> </span><span class="p">}),</span>
 <span class="w">    </span><span class="nx">timeoutMs</span><span class="o">:</span><span class="w"> </span><span class="kt">5000</span>
 <span class="p">});</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Response: </span><span class="si">${</span><span class="nx">response</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
@@ -1790,7 +1790,7 @@
 </code></pre></div>
 <p><strong>Example:</strong>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="p">,</span><span class="w"> </span><span class="nx">status</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;wss://echo.websocket.org&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">"wss://echo.websocket.org"</span><span class="p">,</span>
 <span class="w">    </span><span class="nx">autoReconnect</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span>
 <span class="p">});</span>
 
@@ -1811,7 +1811,7 @@
 <p><strong>Example:</strong>
 <div class="highlight"><pre><span></span><code><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">startPublish</span><span class="p">({</span>
 <span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">topic</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;websocket-events&quot;</span>
+<span class="w">    </span><span class="nx">topic</span><span class="o">:</span><span class="w"> </span><span class="s2">"websocket-events"</span>
 <span class="p">});</span>
 
 <span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">stopPublish</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="w"> </span><span class="p">});</span>
@@ -1827,7 +1827,7 @@
 <div class="highlight"><pre><span></span><code><span class="c1">// Send with correlation (expects response)</span>
 <span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span>
 <span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">JSON.stringify</span><span class="p">({</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;request&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;123&quot;</span><span class="w"> </span><span class="p">}),</span>
+<span class="w">    </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">JSON.stringify</span><span class="p">({</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">"request"</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">"123"</span><span class="w"> </span><span class="p">}),</span>
 <span class="w">    </span><span class="nx">timeoutMs</span><span class="o">:</span><span class="w"> </span><span class="kt">5000</span>
 <span class="p">});</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Response: </span><span class="si">${</span><span class="nx">response</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
@@ -1835,7 +1835,7 @@
 <span class="c1">// Fire-and-forget</span>
 <span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">sendRaw</span><span class="p">({</span>
 <span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">JSON.stringify</span><span class="p">({</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;notification&quot;</span><span class="w"> </span><span class="p">})</span>
+<span class="w">    </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">JSON.stringify</span><span class="p">({</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">"notification"</span><span class="w"> </span><span class="p">})</span>
 <span class="p">});</span>
 </code></pre></div></p>
 <h4 id="tags">Tags</h4>
@@ -1853,12 +1853,12 @@
 </code></pre></div>
 <p><strong>Example:</strong>
 <div class="highlight"><pre><span></span><code><span class="c1">// Set a single tag</span>
-<span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">setTag</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="p">,</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;environment&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;staging&quot;</span><span class="w"> </span><span class="p">});</span>
+<span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">setTag</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="p">,</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s2">"environment"</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">"staging"</span><span class="w"> </span><span class="p">});</span>
 
 <span class="c1">// Replace all tags</span>
 <span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">setTags</span><span class="p">({</span>
 <span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">tags</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">environment</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;staging&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">team</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;payments&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="nx">tags</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">environment</span><span class="o">:</span><span class="w"> </span><span class="s2">"staging"</span><span class="p">,</span><span class="w"> </span><span class="nx">team</span><span class="o">:</span><span class="w"> </span><span class="s2">"payments"</span><span class="w"> </span><span class="p">}</span>
 <span class="p">});</span>
 
 <span class="c1">// Read back</span>
@@ -1867,7 +1867,7 @@
 
 <span class="c1">// Filter connections by tag via ListRequest.Filters</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">listResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">list</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">filters</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;environment&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;staging&quot;</span><span class="w"> </span><span class="p">}]</span>
+<span class="w">    </span><span class="nx">filters</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s2">"environment"</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">"staging"</span><span class="w"> </span><span class="p">}]</span>
 <span class="p">});</span>
 </code></pre></div></p>
 <hr />
@@ -1909,7 +1909,7 @@
 <h2 id="error-handling">Error Handling</h2>
 <h3 id="connection-not-found">Connection Not Found</h3>
 <div class="highlight"><pre><span></span><code><span class="k">try</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;nonexistent&quot;</span><span class="w"> </span><span class="p">});</span>
+<span class="w">    </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">"nonexistent"</span><span class="w"> </span><span class="p">});</span>
 <span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nx">ConnectError</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Not found: </span><span class="si">${</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
@@ -1920,43 +1920,43 @@
 <div class="highlight"><pre><span></span><code><span class="k">try</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span>
 <span class="w">        </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;slow request&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="s2">"slow request"</span><span class="p">,</span>
 <span class="w">        </span><span class="nx">timeoutMs</span><span class="o">:</span><span class="w"> </span><span class="kt">100</span><span class="w"> </span><span class="c1">// very short</span>
 <span class="w">    </span><span class="p">});</span>
 <span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nx">ConnectError</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">code</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">Code</span><span class="p">.</span><span class="nx">DeadlineExceeded</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Send timed out&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Send timed out"</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="connection-errors">Connection Errors</h3>
 <div class="highlight"><pre><span></span><code><span class="k">try</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">WebSocketManagerClient</span><span class="p">({</span><span class="w"> </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;http://invalid-host:5001&quot;</span><span class="w"> </span><span class="p">});</span>
-<span class="w">    </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="p">({</span><span class="w"> </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;wss://invalid&quot;</span><span class="w"> </span><span class="p">});</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">WebSocketManagerClient</span><span class="p">({</span><span class="w"> </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">"http://invalid-host:5001"</span><span class="w"> </span><span class="p">});</span>
+<span class="w">    </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="p">({</span><span class="w"> </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">"wss://invalid"</span><span class="w"> </span><span class="p">});</span>
 <span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Connection failed: </span><span class="si">${</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
 <h2 id="complete-example">Complete Example</h2>
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">WebSocketManagerClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;virtufin-websocketmanager&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">WebSocketManagerClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"virtufin-websocketmanager"</span><span class="p">;</span>
 
 <span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;WebSocketManager Client Demo&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;==============================\n&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"WebSocketManager Client Demo"</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"==============================\n"</span><span class="p">);</span>
 
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">WebSocketManagerClient</span><span class="p">({</span><span class="w"> </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;http://localhost:5001&quot;</span><span class="w"> </span><span class="p">});</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">WebSocketManagerClient</span><span class="p">({</span><span class="w"> </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">"http://localhost:5001"</span><span class="w"> </span><span class="p">});</span>
 
 <span class="w">    </span><span class="c1">// Connect</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Connecting to WebSocket server...&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Connecting to WebSocket server..."</span><span class="p">);</span>
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="p">,</span><span class="w"> </span><span class="nx">status</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="p">({</span>
-<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;wss://echo.websocket.org&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">"wss://echo.websocket.org"</span><span class="p">,</span>
 <span class="w">        </span><span class="nx">autoReconnect</span><span class="o">:</span><span class="w"> </span><span class="kt">false</span>
 <span class="w">    </span><span class="p">});</span>
 <span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Connected: </span><span class="si">${</span><span class="nx">connectionId</span><span class="si">}</span><span class="sb"> - </span><span class="si">${</span><span class="nx">status</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
 
 <span class="w">    </span><span class="c1">// List connections</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\nAll connections:&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"\nAll connections:"</span><span class="p">);</span>
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">connections</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">list</span><span class="p">({});</span>
 <span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">conn</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">connections</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`  </span><span class="si">${</span><span class="nx">conn</span><span class="p">.</span><span class="nx">id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">conn</span><span class="p">.</span><span class="nx">url</span><span class="si">}</span><span class="sb"> [</span><span class="si">${</span><span class="nx">conn</span><span class="p">.</span><span class="nx">status</span><span class="si">}</span><span class="sb">]`</span><span class="p">);</span>
@@ -1966,31 +1966,31 @@
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="c1">// Send a message</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\nSending message...&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"\nSending message..."</span><span class="p">);</span>
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span>
 <span class="w">        </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">JSON.stringify</span><span class="p">({</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;request&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;123&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;hello&quot;</span><span class="w"> </span><span class="p">}),</span>
+<span class="w">        </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">JSON.stringify</span><span class="p">({</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">"request"</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">"123"</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="s2">"hello"</span><span class="w"> </span><span class="p">}),</span>
 <span class="w">        </span><span class="nx">timeoutMs</span><span class="o">:</span><span class="w"> </span><span class="kt">5000</span>
 <span class="w">    </span><span class="p">});</span>
 <span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Response: </span><span class="si">${</span><span class="nx">response</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
 
 <span class="w">    </span><span class="c1">// Start pub/sub</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\nStarting pub/sub...&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"\nStarting pub/sub..."</span><span class="p">);</span>
 <span class="w">    </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">startPublish</span><span class="p">({</span>
 <span class="w">        </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">topic</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;ws-events&quot;</span>
+<span class="w">        </span><span class="nx">topic</span><span class="o">:</span><span class="w"> </span><span class="s2">"ws-events"</span>
 <span class="w">    </span><span class="p">});</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Publishing started&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Publishing started"</span><span class="p">);</span>
 
 <span class="w">    </span><span class="c1">// Stop pub/sub</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\nStopping pub/sub...&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"\nStopping pub/sub..."</span><span class="p">);</span>
 <span class="w">    </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">stopPublish</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="w"> </span><span class="p">});</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Publishing stopped&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Publishing stopped"</span><span class="p">);</span>
 
 <span class="w">    </span><span class="c1">// Disconnect</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\nDisconnecting...&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"\nDisconnecting..."</span><span class="p">);</span>
 <span class="w">    </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">connectionId</span><span class="w"> </span><span class="p">});</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Disconnected&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Disconnected"</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="nx">main</span><span class="p">();</span>
@@ -1999,8 +1999,8 @@
 <h2 id="protobuf-dependencies">Protobuf Dependencies</h2>
 <p>The client library requires the peer dependency:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;peerDependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;@bufbuild/protobuf&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^1.10.0&quot;</span>
+<span class="w">  </span><span class="nt">"peerDependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"@bufbuild/protobuf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^1.10.0"</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -2121,7 +2121,7 @@
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-08-11T06:40:25Z</span>
+  <span style="display:table-cell;text-align:right">2026-08-18T09:12:16Z</span>
 </div>
 
     </div>
