@@ -12,6 +12,7 @@ items:
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetConnectionById(System.String)
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetLocalConnections
+  - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.RemoveConnectionAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.TouchAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.UpdateConnectionAsync(Virtufin.WebSocketManager.Models.WebSocketConnection,System.Threading.CancellationToken)
@@ -29,7 +30,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DistributedWebSocketConnectionStore
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 65
+    startLine: 77
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -68,7 +69,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 76
+    startLine: 88
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -106,7 +107,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CreateConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 85
+    startLine: 97
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -148,7 +149,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 102
+    startLine: 114
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -188,7 +189,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetConnectionById
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 109
+    startLine: 121
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -229,7 +230,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetLocalConnections
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 116
+    startLine: 128
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -266,7 +267,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetAllConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 122
+    startLine: 134
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -301,7 +302,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: UpdateConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 140
+    startLine: 152
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -338,7 +339,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: RemoveConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 149
+    startLine: 161
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -378,7 +379,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: TouchAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 156
+    startLine: 168
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -423,7 +424,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ClearAllConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 162
+    startLine: 174
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -440,6 +441,61 @@ items:
   overload: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ClearAllConnectionsAsync*
   implements:
   - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ClearAllConnectionsAsync(System.Threading.CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  id: ReclaimAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore
+  langs:
+  - csharp
+  - vb
+  name: ReclaimAsync(string, CancellationToken)
+  nameWithType: DistributedWebSocketConnectionStore.ReclaimAsync(string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ReclaimAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
+    startLine: 185
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    Re-stamps ownership of a connection last known to be owned by
+
+    another (now unreachable) instance to this one, persists it, and
+
+    registers it in this instance's local, in-memory view -- unlike
+
+    <xref href="Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetConnectionAsync(System.String%2cSystem.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref>, which is local-only and would
+
+    otherwise never see a connection this instance didn't originally
+
+    create. Returns the reclaimed connection (caller is responsible for
+
+    actually re-establishing the socket if desired), or <code>null</code> if
+
+    no persisted record exists for <code class="paramref">id</code>.
+  example: []
+  syntax:
+    content: public Task<WebSocketConnection?> ReclaimAsync(string id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.WebSocketManager.Models.WebSocketConnection}
+    content.vb: Public Function ReclaimAsync(id As String, cancellationToken As CancellationToken = Nothing) As Task(Of WebSocketConnection)
+  overload: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync*
+  implements:
+  - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  nameWithType.vb: DistributedWebSocketConnectionStore.ReclaimAsync(String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync(String, System.Threading.CancellationToken)
+  name.vb: ReclaimAsync(String, CancellationToken)
 references:
 - uid: Virtufin.WebSocketManager.Services
   commentId: N:Virtufin.WebSocketManager.Services
@@ -1557,6 +1613,55 @@ references:
     name: ClearAllConnectionsAsync
     href: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_ClearAllConnectionsAsync_System_Threading_CancellationToken_
   - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync
+  href: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_ReclaimAsync_System_String_System_Threading_CancellationToken_
+  name: ReclaimAsync
+  nameWithType: DistributedWebSocketConnectionStore.ReclaimAsync
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
+  isExternal: true
+  href: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_ReclaimAsync_System_String_System_Threading_CancellationToken_
+  name: ReclaimAsync(string, CancellationToken)
+  nameWithType: IWebSocketConnectionStore.ReclaimAsync(string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: IWebSocketConnectionStore.ReclaimAsync(String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync(String, System.Threading.CancellationToken)
+  name.vb: ReclaimAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync(System.String,System.Threading.CancellationToken)
+    name: ReclaimAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_ReclaimAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync(System.String,System.Threading.CancellationToken)
+    name: ReclaimAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_ReclaimAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.Threading.CancellationToken
     name: CancellationToken
     isExternal: true

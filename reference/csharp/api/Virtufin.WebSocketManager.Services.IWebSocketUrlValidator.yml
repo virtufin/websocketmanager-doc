@@ -1,0 +1,217 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator
+  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketUrlValidator
+  id: IWebSocketUrlValidator
+  parent: Virtufin.WebSocketManager.Services
+  children:
+  - Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync(System.Uri,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IWebSocketUrlValidator
+  nameWithType: IWebSocketUrlValidator
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketUrlValidator.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: IWebSocketUrlValidator
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketUrlValidator.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    SSRF prevention for caller-supplied WebSocket connection URLs. This
+
+    service has no authentication of its own (cluster-internal network is
+
+    the trust boundary for who may call it), but that says nothing about
+
+    what the service itself can be tricked into doing -- an unvalidated
+
+    <code>Connect</code> target lets any caller direct outbound WebSocket traffic
+
+    to arbitrary internal hosts, including cloud instance metadata
+
+    endpoints. Mirrors virtufin-workmanager's
+
+    <code>WorkManager.ValidateCodeSourceUrlAsync</code>/<code>IsPrivateIpAddress</code>,
+
+    which faces the identical risk shape for caller-supplied code-fetch
+
+    URLs.
+  example: []
+  syntax:
+    content: public interface IWebSocketUrlValidator
+    content.vb: Public Interface IWebSocketUrlValidator
+  derivedClasses:
+  - Virtufin.WebSocketManager.Services.WebSocketUrlValidator
+- uid: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync(System.Uri,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync(System.Uri,System.Threading.CancellationToken)
+  id: ValidateAsync(System.Uri,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateAsync(Uri, CancellationToken)
+  nameWithType: IWebSocketUrlValidator.ValidateAsync(Uri, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync(System.Uri, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketUrlValidator.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ValidateAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketUrlValidator.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  syntax:
+    content: Task ValidateAsync(Uri url, CancellationToken cancellationToken = default)
+    parameters:
+    - id: url
+      type: System.Uri
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ValidateAsync(url As Uri, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync*
+references:
+- uid: Virtufin.WebSocketManager.Services
+  commentId: N:Virtufin.WebSocketManager.Services
+  href: Virtufin.html
+  name: Virtufin.WebSocketManager.Services
+  nameWithType: Virtufin.WebSocketManager.Services
+  fullName: Virtufin.WebSocketManager.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.WebSocketManager
+    name: WebSocketManager
+    href: Virtufin.WebSocketManager.html
+  - name: .
+  - uid: Virtufin.WebSocketManager.Services
+    name: Services
+    href: Virtufin.WebSocketManager.Services.html
+- uid: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync
+  href: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.html#Virtufin_WebSocketManager_Services_IWebSocketUrlValidator_ValidateAsync_System_Uri_System_Threading_CancellationToken_
+  name: ValidateAsync
+  nameWithType: IWebSocketUrlValidator.ValidateAsync
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uri
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

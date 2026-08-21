@@ -1554,6 +1554,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.GetLocalConnections
   nameWithType: DistributedWebSocketConnectionStore.GetLocalConnections
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  name: ReclaimAsync(string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_ReclaimAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  name.vb: ReclaimAsync(String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync(String, System.Threading.CancellationToken)
+  nameWithType: DistributedWebSocketConnectionStore.ReclaimAsync(string, CancellationToken)
+  nameWithType.vb: DistributedWebSocketConnectionStore.ReclaimAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync*
+  name: ReclaimAsync
+  href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_ReclaimAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.ReclaimAsync
+  nameWithType: DistributedWebSocketConnectionStore.ReclaimAsync
 - uid: Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.RemoveConnectionAsync(System.String,System.Threading.CancellationToken)
   name: RemoveConnectionAsync(string, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.DistributedWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_DistributedWebSocketConnectionStore_RemoveConnectionAsync_System_String_System_Threading_CancellationToken_
@@ -1903,6 +1919,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.GetLocalConnections
   nameWithType: IWebSocketConnectionStore.GetLocalConnections
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  name: ReclaimAsync(string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_ReclaimAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  name.vb: ReclaimAsync(String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync(String, System.Threading.CancellationToken)
+  nameWithType: IWebSocketConnectionStore.ReclaimAsync(string, CancellationToken)
+  nameWithType.vb: IWebSocketConnectionStore.ReclaimAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync*
+  name: ReclaimAsync
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_ReclaimAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.ReclaimAsync
+  nameWithType: IWebSocketConnectionStore.ReclaimAsync
 - uid: Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.RemoveConnectionAsync(System.String,System.Threading.CancellationToken)
   name: RemoveConnectionAsync(string, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.IWebSocketConnectionStore.html#Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_RemoveConnectionAsync_System_String_System_Threading_CancellationToken_
@@ -2031,6 +2063,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ListConnectionsAsync
   nameWithType: IWebSocketService.ListConnectionsAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  name: ReclaimAsync(string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ReclaimAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  name.vb: ReclaimAsync(String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync(String, System.Threading.CancellationToken)
+  nameWithType: IWebSocketService.ReclaimAsync(string, CancellationToken)
+  nameWithType.vb: IWebSocketService.ReclaimAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync*
+  name: ReclaimAsync
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ReclaimAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync
+  nameWithType: IWebSocketService.ReclaimAsync
 - uid: Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(System.String,System.Byte[],System.Int32,System.String,System.Threading.CancellationToken)
   name: SendAsync(string, byte[], int, string, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_SendAsync_System_String_System_Byte___System_Int32_System_String_System_Threading_CancellationToken_
@@ -2127,6 +2175,25 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.IWebSocketService.StopPublishAsync
   nameWithType: IWebSocketService.StopPublishAsync
+- uid: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator
+  name: IWebSocketUrlValidator
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.html
+  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketUrlValidator
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator
+  nameWithType: IWebSocketUrlValidator
+- uid: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync(System.Uri,System.Threading.CancellationToken)
+  name: ValidateAsync(Uri, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.html#Virtufin_WebSocketManager_Services_IWebSocketUrlValidator_ValidateAsync_System_Uri_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync(System.Uri,System.Threading.CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync(System.Uri, System.Threading.CancellationToken)
+  nameWithType: IWebSocketUrlValidator.ValidateAsync(Uri, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync*
+  name: ValidateAsync
+  href: api/Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.html#Virtufin_WebSocketManager_Services_IWebSocketUrlValidator_ValidateAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync
+  nameWithType: IWebSocketUrlValidator.ValidateAsync
 - uid: Virtufin.WebSocketManager.Services.MessageSendException
   name: MessageSendException
   href: api/Virtufin.WebSocketManager.Services.MessageSendException.html
@@ -2434,15 +2501,15 @@ references:
   commentId: T:Virtufin.WebSocketManager.Services.WebSocketService
   fullName: Virtufin.WebSocketManager.Services.WebSocketService
   nameWithType: WebSocketService
-- uid: Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
-  name: WebSocketService(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, ILogger<WebSocketService>)
-  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService__ctor_Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_Virtufin_WebSocketManager_Services_IDaprPublisher_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_WebSocketService__
-  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
-  name.vb: New(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, ILogger(Of WebSocketService))
-  fullName: Virtufin.WebSocketManager.Services.WebSocketService.WebSocketService(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Virtufin.WebSocketManager.Services.IWebSocketClientWrapper, Virtufin.WebSocketManager.Services.IDaprPublisher, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.WebSocketService>)
-  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.New(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Virtufin.WebSocketManager.Services.IWebSocketClientWrapper, Virtufin.WebSocketManager.Services.IDaprPublisher, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.WebSocketService))
-  nameWithType: WebSocketService.WebSocketService(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, ILogger<WebSocketService>)
-  nameWithType.vb: WebSocketService.New(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, ILogger(Of WebSocketService))
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Virtufin.WebSocketManager.Services.IWebSocketUrlValidator,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
+  name: WebSocketService(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IWebSocketUrlValidator, ILogger<WebSocketService>)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService__ctor_Virtufin_WebSocketManager_Services_IWebSocketConnectionStore_Virtufin_WebSocketManager_Services_IWebSocketClientWrapper_Virtufin_WebSocketManager_Services_IDaprPublisher_Virtufin_WebSocketManager_Services_IWebSocketUrlValidator_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_WebSocketService__
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.#ctor(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore,Virtufin.WebSocketManager.Services.IWebSocketClientWrapper,Virtufin.WebSocketManager.Services.IDaprPublisher,Virtufin.WebSocketManager.Services.IWebSocketUrlValidator,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.WebSocketService})
+  name.vb: New(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IWebSocketUrlValidator, ILogger(Of WebSocketService))
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.WebSocketService(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Virtufin.WebSocketManager.Services.IWebSocketClientWrapper, Virtufin.WebSocketManager.Services.IDaprPublisher, Virtufin.WebSocketManager.Services.IWebSocketUrlValidator, Microsoft.Extensions.Logging.ILogger<Virtufin.WebSocketManager.Services.WebSocketService>)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.New(Virtufin.WebSocketManager.Services.IWebSocketConnectionStore, Virtufin.WebSocketManager.Services.IWebSocketClientWrapper, Virtufin.WebSocketManager.Services.IDaprPublisher, Virtufin.WebSocketManager.Services.IWebSocketUrlValidator, Microsoft.Extensions.Logging.ILogger(Of Virtufin.WebSocketManager.Services.WebSocketService))
+  nameWithType: WebSocketService.WebSocketService(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IWebSocketUrlValidator, ILogger<WebSocketService>)
+  nameWithType.vb: WebSocketService.New(IWebSocketConnectionStore, IWebSocketClientWrapper, IDaprPublisher, IWebSocketUrlValidator, ILogger(Of WebSocketService))
 - uid: Virtufin.WebSocketManager.Services.WebSocketService.#ctor*
   name: WebSocketService
   href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService__ctor_
@@ -2530,6 +2597,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.WebSocketService.ListConnectionsAsync
   nameWithType: WebSocketService.ListConnectionsAsync
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  name: ReclaimAsync(string, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_ReclaimAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketService.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  name.vb: ReclaimAsync(String, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.ReclaimAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketService.ReclaimAsync(String, System.Threading.CancellationToken)
+  nameWithType: WebSocketService.ReclaimAsync(string, CancellationToken)
+  nameWithType.vb: WebSocketService.ReclaimAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.WebSocketService.ReclaimAsync*
+  name: ReclaimAsync
+  href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_ReclaimAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketService.ReclaimAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.WebSocketService.ReclaimAsync
+  nameWithType: WebSocketService.ReclaimAsync
 - uid: Virtufin.WebSocketManager.Services.WebSocketService.SendAsync(System.String,System.Byte[],System.Int32,System.String,System.Threading.CancellationToken)
   name: SendAsync(string, byte[], int, string, CancellationToken)
   href: api/Virtufin.WebSocketManager.Services.WebSocketService.html#Virtufin_WebSocketManager_Services_WebSocketService_SendAsync_System_String_System_Byte___System_Int32_System_String_System_Threading_CancellationToken_
@@ -2626,3 +2709,41 @@ references:
   isSpec: "True"
   fullName: Virtufin.WebSocketManager.Services.WebSocketService.StopPublishAsync
   nameWithType: WebSocketService.StopPublishAsync
+- uid: Virtufin.WebSocketManager.Services.WebSocketUrlValidator
+  name: WebSocketUrlValidator
+  href: api/Virtufin.WebSocketManager.Services.WebSocketUrlValidator.html
+  commentId: T:Virtufin.WebSocketManager.Services.WebSocketUrlValidator
+  fullName: Virtufin.WebSocketManager.Services.WebSocketUrlValidator
+  nameWithType: WebSocketUrlValidator
+- uid: Virtufin.WebSocketManager.Services.WebSocketUrlValidator.#ctor(System.String)
+  name: WebSocketUrlValidator(string?)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketUrlValidator.html#Virtufin_WebSocketManager_Services_WebSocketUrlValidator__ctor_System_String_
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketUrlValidator.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketUrlValidator.WebSocketUrlValidator(string?)
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketUrlValidator.New(String)
+  nameWithType: WebSocketUrlValidator.WebSocketUrlValidator(string?)
+  nameWithType.vb: WebSocketUrlValidator.New(String)
+- uid: Virtufin.WebSocketManager.Services.WebSocketUrlValidator.#ctor*
+  name: WebSocketUrlValidator
+  href: api/Virtufin.WebSocketManager.Services.WebSocketUrlValidator.html#Virtufin_WebSocketManager_Services_WebSocketUrlValidator__ctor_
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketUrlValidator.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.WebSocketManager.Services.WebSocketUrlValidator.WebSocketUrlValidator
+  fullName.vb: Virtufin.WebSocketManager.Services.WebSocketUrlValidator.New
+  nameWithType: WebSocketUrlValidator.WebSocketUrlValidator
+  nameWithType.vb: WebSocketUrlValidator.New
+- uid: Virtufin.WebSocketManager.Services.WebSocketUrlValidator.ValidateAsync(System.Uri,System.Threading.CancellationToken)
+  name: ValidateAsync(Uri, CancellationToken)
+  href: api/Virtufin.WebSocketManager.Services.WebSocketUrlValidator.html#Virtufin_WebSocketManager_Services_WebSocketUrlValidator_ValidateAsync_System_Uri_System_Threading_CancellationToken_
+  commentId: M:Virtufin.WebSocketManager.Services.WebSocketUrlValidator.ValidateAsync(System.Uri,System.Threading.CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.WebSocketUrlValidator.ValidateAsync(System.Uri, System.Threading.CancellationToken)
+  nameWithType: WebSocketUrlValidator.ValidateAsync(Uri, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.WebSocketUrlValidator.ValidateAsync*
+  name: ValidateAsync
+  href: api/Virtufin.WebSocketManager.Services.WebSocketUrlValidator.html#Virtufin_WebSocketManager_Services_WebSocketUrlValidator_ValidateAsync_
+  commentId: Overload:Virtufin.WebSocketManager.Services.WebSocketUrlValidator.ValidateAsync
+  isSpec: "True"
+  fullName: Virtufin.WebSocketManager.Services.WebSocketUrlValidator.ValidateAsync
+  nameWithType: WebSocketUrlValidator.ValidateAsync

@@ -424,6 +424,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.IWebSocketUrlValidator",
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.yml\" sourcestartlinenumber=\"1\">SSRF prevention for caller-supplied WebSocket connection URLs. This\nservice has no authentication of its own (cluster-internal network is\nthe trust boundary for who may call it), but that says nothing about\nwhat the service itself can be tricked into doing -- an unvalidated\n<code>Connect</code> target lets any caller direct outbound WebSocket traffic\nto arbitrary internal hosts, including cloud instance metadata\nendpoints. Mirrors virtufin-workmanager's\n<code>WorkManager.ValidateCodeSourceUrlAsync</code>/<code>IsPrivateIpAddress</code>,\nwhich faces the identical risk shape for caller-supplied code-fetch\nURLs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.WebSocketManager.Services.MessageSendException.yml",
       "output": {
         ".html": {
@@ -518,6 +532,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Services.WebSocketService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.WebSocketManager.Services.WebSocketUrlValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.WebSocketManager.Services.WebSocketUrlValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.WebSocketManager.Services.WebSocketUrlValidator",
       "Summary": null
     },
     {

@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class DaprPublisher | Virtufin WebSocketManager - C# Reference </title>
+      <title>Interface IWebSocketUrlValidator | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DaprPublisher | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Interface IWebSocketUrlValidator | Virtufin WebSocketManager - C# Reference ">
       
-      
+      <meta name="description" content="SSRF prevention for caller-supplied WebSocket connection URLs. This service has no authentication of its own (cluster-internal network is the trust boundary for who may call it), but that says nothing about what the service itself can be tricked into doing -- an unvalidated Connect target lets any caller direct outbound WebSocket traffic to arbitrary internal hosts, including cloud instance metadata endpoints. Mirrors virtufin-workmanager&#39;s WorkManager.ValidateCodeSourceUrlAsync/IsPrivateIpAddress, which faces the identical risk shape for caller-supplied code-fetch URLs.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Services.DaprPublisher">
+        <article data-uid="Virtufin.WebSocketManager.Services.IWebSocketUrlValidator">
 
 
 
-  <h1 id="Virtufin_WebSocketManager_Services_DaprPublisher" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher" class="text-break">
-Class DaprPublisher  
+  <h1 id="Virtufin_WebSocketManager_Services_IWebSocketUrlValidator" data-uid="Virtufin.WebSocketManager.Services.IWebSocketUrlValidator" class="text-break">
+Interface IWebSocketUrlValidator  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,88 +101,23 @@ Class DaprPublisher
   <dl><dt>Assembly</dt><dd>Virtufin.WebSocketManager.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>SSRF prevention for caller-supplied WebSocket connection URLs. This
+service has no authentication of its own (cluster-internal network is
+the trust boundary for who may call it), but that says nothing about
+what the service itself can be tricked into doing -- an unvalidated
+<code>Connect</code> target lets any caller direct outbound WebSocket traffic
+to arbitrary internal hosts, including cloud instance metadata
+endpoints. Mirrors virtufin-workmanager's
+<code>WorkManager.ValidateCodeSourceUrlAsync</code>/<code>IsPrivateIpAddress</code>,
+which faces the identical risk shape for caller-supplied code-fetch
+URLs.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DaprPublisher : IDaprPublisher</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IWebSocketUrlValidator</code></pre>
   </div>
 
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DaprPublisher</span></div>
-    </dd>
-  </dl>
-
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="Virtufin.WebSocketManager.Services.IDaprPublisher.html">IDaprPublisher</a></div>
-    </dd>
-  </dl>
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
-  </dd></dl>
-
-
-
-
-
-
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
-  <a id="Virtufin_WebSocketManager_Services_DaprPublisher__ctor_" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher.#ctor*"></a>
-
-  <h3 id="Virtufin_WebSocketManager_Services_DaprPublisher__ctor_Virtufin_Api_Protos_Pubsub_PubsubClient_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprPublisher__" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Virtufin.Api.Protos.Pubsub.PubsubClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher})">
-  DaprPublisher(PubsubClient, ILogger&lt;DaprPublisher&gt;)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DaprPublisher(Pubsub.PubsubClient pubsub, ILogger&lt;DaprPublisher&gt; logger)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>pubsub</code> <span class="xref">Pubsub</span>.<span class="xref">PubsubClient</span></dt>
-    <dd></dd>
-    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.DaprPublisher.html">DaprPublisher</a>&gt;</dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -199,10 +134,10 @@ Class DaprPublisher
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprPublisher_PublishAsync_" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync*"></a>
+  <a id="Virtufin_WebSocketManager_Services_IWebSocketUrlValidator_ValidateAsync_" data-uid="Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprPublisher_PublishAsync_System_String_System_String_System_String_System_Byte___System_String_" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)">
-  PublishAsync(string, string, string, byte[], string?)
+  <h3 id="Virtufin_WebSocketManager_Services_IWebSocketUrlValidator_ValidateAsync_System_Uri_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.ValidateAsync(System.Uri,System.Threading.CancellationToken)">
+  ValidateAsync(Uri, CancellationToken)
   
   </h3>
 
@@ -210,20 +145,14 @@ Class DaprPublisher
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task PublishAsync(string topic, string websocketId, string websocketUrl, byte[] payload, string? contentType = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task ValidateAsync(Uri url, CancellationToken cancellationToken = default)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
     <dd></dd>
-    <dt><code>websocketId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>websocketUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>payload</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd></dd>
-    <dt><code>contentType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
     <dd></dd>
   </dl>
 

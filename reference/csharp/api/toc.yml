@@ -108,6 +108,9 @@ items:
     - uid: Virtufin.WebSocketManager.Services.IWebSocketService
       name: IWebSocketService
       type: Interface
+    - uid: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator
+      name: IWebSocketUrlValidator
+      type: Interface
     - uid: Virtufin.WebSocketManager.Services.MessageSendException
       name: MessageSendException
       type: Class
@@ -122,5 +125,8 @@ items:
       type: Class
     - uid: Virtufin.WebSocketManager.Services.WebSocketService
       name: WebSocketService
+      type: Class
+    - uid: Virtufin.WebSocketManager.Services.WebSocketUrlValidator
+      name: WebSocketUrlValidator
       type: Class
 memberLayout: SamePage

@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class DaprPublisher | Virtufin WebSocketManager - C# Reference </title>
+      <title>Class WebSocketUrlValidator | Virtufin WebSocketManager - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DaprPublisher | Virtufin WebSocketManager - C# Reference ">
+      <meta name="title" content="Class WebSocketUrlValidator | Virtufin WebSocketManager - C# Reference ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.WebSocketManager.Services.DaprPublisher">
+        <article data-uid="Virtufin.WebSocketManager.Services.WebSocketUrlValidator">
 
 
 
-  <h1 id="Virtufin_WebSocketManager_Services_DaprPublisher" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher" class="text-break">
-Class DaprPublisher  
+  <h1 id="Virtufin_WebSocketManager_Services_WebSocketUrlValidator" data-uid="Virtufin.WebSocketManager.Services.WebSocketUrlValidator" class="text-break">
+Class WebSocketUrlValidator  
   </h1>
 
   <div class="facts text-secondary">
@@ -105,7 +105,7 @@ Class DaprPublisher
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DaprPublisher : IDaprPublisher</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class WebSocketUrlValidator : IWebSocketUrlValidator</code></pre>
   </div>
 
 
@@ -115,14 +115,14 @@ Class DaprPublisher
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DaprPublisher</span></div>
+      <div><span class="xref">WebSocketUrlValidator</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="Virtufin.WebSocketManager.Services.IDaprPublisher.html">IDaprPublisher</a></div>
+      <div><a class="xref" href="Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.html">IWebSocketUrlValidator</a></div>
     </dd>
   </dl>
 
@@ -143,9 +143,6 @@ Class DaprPublisher
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
@@ -162,10 +159,10 @@ Class DaprPublisher
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprPublisher__ctor_" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher.#ctor*"></a>
+  <a id="Virtufin_WebSocketManager_Services_WebSocketUrlValidator__ctor_" data-uid="Virtufin.WebSocketManager.Services.WebSocketUrlValidator.#ctor*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprPublisher__ctor_Virtufin_Api_Protos_Pubsub_PubsubClient_Microsoft_Extensions_Logging_ILogger_Virtufin_WebSocketManager_Services_DaprPublisher__" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher.#ctor(Virtufin.Api.Protos.Pubsub.PubsubClient,Microsoft.Extensions.Logging.ILogger{Virtufin.WebSocketManager.Services.DaprPublisher})">
-  DaprPublisher(PubsubClient, ILogger&lt;DaprPublisher&gt;)
+  <h3 id="Virtufin_WebSocketManager_Services_WebSocketUrlValidator__ctor_System_String_" data-uid="Virtufin.WebSocketManager.Services.WebSocketUrlValidator.#ctor(System.String)">
+  WebSocketUrlValidator(string?)
   
   </h3>
 
@@ -173,14 +170,12 @@ Class DaprPublisher
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DaprPublisher(Pubsub.PubsubClient pubsub, ILogger&lt;DaprPublisher&gt; logger)</code></pre>
+    <pre><code class="lang-csharp hljs">public WebSocketUrlValidator(string? allowedHosts)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>pubsub</code> <span class="xref">Pubsub</span>.<span class="xref">PubsubClient</span></dt>
-    <dd></dd>
-    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.WebSocketManager.Services.DaprPublisher.html">DaprPublisher</a>&gt;</dt>
+    <dt><code>allowedHosts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -199,10 +194,10 @@ Class DaprPublisher
 </h2>
 
 
-  <a id="Virtufin_WebSocketManager_Services_DaprPublisher_PublishAsync_" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync*"></a>
+  <a id="Virtufin_WebSocketManager_Services_WebSocketUrlValidator_ValidateAsync_" data-uid="Virtufin.WebSocketManager.Services.WebSocketUrlValidator.ValidateAsync*"></a>
 
-  <h3 id="Virtufin_WebSocketManager_Services_DaprPublisher_PublishAsync_System_String_System_String_System_String_System_Byte___System_String_" data-uid="Virtufin.WebSocketManager.Services.DaprPublisher.PublishAsync(System.String,System.String,System.String,System.Byte[],System.String)">
-  PublishAsync(string, string, string, byte[], string?)
+  <h3 id="Virtufin_WebSocketManager_Services_WebSocketUrlValidator_ValidateAsync_System_Uri_System_Threading_CancellationToken_" data-uid="Virtufin.WebSocketManager.Services.WebSocketUrlValidator.ValidateAsync(System.Uri,System.Threading.CancellationToken)">
+  ValidateAsync(Uri, CancellationToken)
   
   </h3>
 
@@ -210,20 +205,14 @@ Class DaprPublisher
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task PublishAsync(string topic, string websocketId, string websocketUrl, byte[] payload, string? contentType = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task ValidateAsync(Uri url, CancellationToken cancellationToken = default)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
     <dd></dd>
-    <dt><code>websocketId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>websocketUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>payload</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd></dd>
-    <dt><code>contentType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
     <dd></dd>
   </dl>
 

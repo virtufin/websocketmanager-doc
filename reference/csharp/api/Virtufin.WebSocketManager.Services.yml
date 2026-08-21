@@ -22,12 +22,14 @@ items:
   - Virtufin.WebSocketManager.Services.IWebSocketClientWrapper
   - Virtufin.WebSocketManager.Services.IWebSocketConnectionStore
   - Virtufin.WebSocketManager.Services.IWebSocketService
+  - Virtufin.WebSocketManager.Services.IWebSocketUrlValidator
   - Virtufin.WebSocketManager.Services.MessageSendException
   - Virtufin.WebSocketManager.Services.MessageTimeoutException
   - Virtufin.WebSocketManager.Services.Options
   - Virtufin.WebSocketManager.Services.WebSocketClientWrapper
   - Virtufin.WebSocketManager.Services.WebSocketNotConnectedException
   - Virtufin.WebSocketManager.Services.WebSocketService
+  - Virtufin.WebSocketManager.Services.WebSocketUrlValidator
   langs:
   - csharp
   - vb
@@ -186,6 +188,13 @@ references:
   name: IWebSocketService
   nameWithType: IWebSocketService
   fullName: Virtufin.WebSocketManager.Services.IWebSocketService
+- uid: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator
+  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketUrlValidator
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator.html
+  name: IWebSocketUrlValidator
+  nameWithType: IWebSocketUrlValidator
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketUrlValidator
 - uid: Virtufin.WebSocketManager.Services.MessageSendException
   commentId: T:Virtufin.WebSocketManager.Services.MessageSendException
   href: Virtufin.WebSocketManager.Services.MessageSendException.html
@@ -216,6 +225,12 @@ references:
   name: WebSocketService
   nameWithType: WebSocketService
   fullName: Virtufin.WebSocketManager.Services.WebSocketService
+- uid: Virtufin.WebSocketManager.Services.WebSocketUrlValidator
+  commentId: T:Virtufin.WebSocketManager.Services.WebSocketUrlValidator
+  href: Virtufin.WebSocketManager.Services.WebSocketUrlValidator.html
+  name: WebSocketUrlValidator
+  nameWithType: WebSocketUrlValidator
+  fullName: Virtufin.WebSocketManager.Services.WebSocketUrlValidator
 - uid: Virtufin.WebSocketManager.Services
   commentId: N:Virtufin.WebSocketManager.Services
   href: Virtufin.html

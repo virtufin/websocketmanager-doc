@@ -10,6 +10,7 @@ items:
   - Virtufin.WebSocketManager.Services.IWebSocketService.GetTag(System.String,System.String)
   - Virtufin.WebSocketManager.Services.IWebSocketService.GetTags(System.String)
   - Virtufin.WebSocketManager.Services.IWebSocketService.ListConnectionsAsync(System.Threading.CancellationToken)
+  - Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IWebSocketService.SendAsync(System.String,System.Byte[],System.Int32,System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IWebSocketService.SendRawAsync(System.String,System.Byte[],System.String,System.Threading.CancellationToken)
   - Virtufin.WebSocketManager.Services.IWebSocketService.SetTag(System.String,System.String,System.String)
@@ -144,6 +145,61 @@ items:
   nameWithType.vb: IWebSocketService.DisconnectAsync(String, CancellationToken)
   fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.DisconnectAsync(String, System.Threading.CancellationToken)
   name.vb: DisconnectAsync(String, CancellationToken)
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync(System.String,System.Threading.CancellationToken)
+  id: ReclaimAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketService
+  langs:
+  - csharp
+  - vb
+  name: ReclaimAsync(string, CancellationToken)
+  nameWithType: IWebSocketService.ReclaimAsync(string, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+    id: ReclaimAsync
+    path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.WebSocketManager
+  namespace: Virtufin.WebSocketManager.Services
+  summary: >-
+    Takes ownership of a connection last known to be owned by another,
+
+    now-unreachable instance. Unlike a fresh <xref href="Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String%2cSystem.Boolean%2cSystem.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref>,
+
+    the connection ID and its persisted metadata (URL, auto-reconnect,
+
+    topic, tags) are preserved. If auto-reconnect is set, attempts to
+
+    open a fresh socket for it immediately -- the old owner's socket
+
+    object lives in that process's memory, unreachable from here, so
+
+    this instance genuinely has no live connection until one is
+
+    (re)established. Returns <code>false</code> if no persisted record exists
+
+    for <code class="paramref">id</code>.
+  example: []
+  syntax:
+    content: Task<bool> ReclaimAsync(string id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function ReclaimAsync(id As String, cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync*
+  nameWithType.vb: IWebSocketService.ReclaimAsync(String, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync(String, System.Threading.CancellationToken)
+  name.vb: ReclaimAsync(String, CancellationToken)
 - uid: Virtufin.WebSocketManager.Services.IWebSocketService.StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
   commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
   id: StartPublishAsync(System.String,System.String,System.Threading.CancellationToken)
@@ -162,7 +218,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StartPublishAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 9
+    startLine: 22
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -200,7 +256,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StopPublishAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 10
+    startLine: 23
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -236,7 +292,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 11
+    startLine: 24
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -278,7 +334,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendRawAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 12
+    startLine: 25
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -318,7 +374,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetTag
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 13
+    startLine: 26
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -354,7 +410,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SetTag
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 14
+    startLine: 27
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -390,7 +446,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SetTags
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 15
+    startLine: 28
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -424,7 +480,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetTags
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketService.cs
-    startLine: 16
+    startLine: 29
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -706,6 +762,109 @@ references:
   name: Task
   nameWithType: Task
   fullName: System.Threading.Tasks.Task
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  parent: Virtufin.WebSocketManager.Services.IWebSocketService
+  isExternal: true
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
+  name: ConnectAsync(string, bool, CancellationToken)
+  nameWithType: IWebSocketService.ConnectAsync(string, bool, CancellationToken)
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(string, bool, System.Threading.CancellationToken)
+  nameWithType.vb: IWebSocketService.ConnectAsync(String, Boolean, CancellationToken)
+  fullName.vb: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(String, Boolean, System.Threading.CancellationToken)
+  name.vb: ConnectAsync(String, Boolean, CancellationToken)
+  spec.csharp:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+    name: ConnectAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Virtufin.WebSocketManager.Services.IWebSocketService.ConnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+    name: ConnectAsync
+    href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ConnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync*
+  commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_ReclaimAsync_System_String_System_Threading_CancellationToken_
+  name: ReclaimAsync
+  nameWithType: IWebSocketService.ReclaimAsync
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService.ReclaimAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Virtufin.WebSocketManager.Services.IWebSocketService
+  commentId: T:Virtufin.WebSocketManager.Services.IWebSocketService
+  parent: Virtufin.WebSocketManager.Services
+  href: Virtufin.WebSocketManager.Services.IWebSocketService.html
+  name: IWebSocketService
+  nameWithType: IWebSocketService
+  fullName: Virtufin.WebSocketManager.Services.IWebSocketService
 - uid: Virtufin.WebSocketManager.Services.IWebSocketService.StartPublishAsync*
   commentId: Overload:Virtufin.WebSocketManager.Services.IWebSocketService.StartPublishAsync
   href: Virtufin.WebSocketManager.Services.IWebSocketService.html#Virtufin_WebSocketManager_Services_IWebSocketService_StartPublishAsync_System_String_System_String_System_Threading_CancellationToken_
