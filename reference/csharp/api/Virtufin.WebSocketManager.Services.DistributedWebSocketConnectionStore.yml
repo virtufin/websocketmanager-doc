@@ -302,7 +302,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: UpdateConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 152
+    startLine: 151
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -339,7 +339,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: RemoveConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 161
+    startLine: 160
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -379,7 +379,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: TouchAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 168
+    startLine: 167
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -424,7 +424,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ClearAllConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 174
+    startLine: 173
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
@@ -459,7 +459,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ReclaimAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
-    startLine: 185
+    startLine: 184
   assemblies:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Services
