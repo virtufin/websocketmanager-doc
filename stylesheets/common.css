@@ -1,4 +1,7 @@
-/* Custom styles for Virtufin WebSocketManager Documentation */
+/* Shared docs styling -- generic Material-theme overrides, no
+   repo-specific content. Single source of truth here; a repo's own
+   mkdocs.yml only needs a one-line extra_css reference, never a copy of
+   this file's content. */
 
 /* Source bar — repo link and commit badge highlight independently */
 .md-source-wrapper {
