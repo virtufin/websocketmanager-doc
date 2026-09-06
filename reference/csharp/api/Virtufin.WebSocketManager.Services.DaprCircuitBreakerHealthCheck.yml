@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprResiliencePipeline.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DaprCircuitBreakerHealthCheck
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprResiliencePipeline.cs
     startLine: 103
@@ -56,7 +56,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprResiliencePipeline.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprResiliencePipeline.cs
     startLine: 107
@@ -88,7 +88,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprResiliencePipeline.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CheckHealthAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprResiliencePipeline.cs
     startLine: 112

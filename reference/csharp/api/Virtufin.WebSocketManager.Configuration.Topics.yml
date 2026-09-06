@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/Topics.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Topics
     path: ../../../src/Virtufin.WebSocketManager/Configuration/Topics.cs
     startLine: 9
@@ -64,7 +64,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/Topics.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Lifecycle
     path: ../../../src/Virtufin.WebSocketManager/Configuration/Topics.cs
     startLine: 17
@@ -100,7 +100,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/Topics.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: InfraConnection
     path: ../../../src/Virtufin.WebSocketManager/Configuration/Topics.cs
     startLine: 23

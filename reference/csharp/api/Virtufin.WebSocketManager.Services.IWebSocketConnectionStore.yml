@@ -26,7 +26,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: IWebSocketConnectionStore
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
     startLine: 9
@@ -55,7 +55,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CreateConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
     startLine: 14
@@ -95,7 +95,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
     startLine: 19
@@ -133,7 +133,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetConnectionById
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
     startLine: 25
@@ -172,7 +172,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetLocalConnections
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
     startLine: 32
@@ -207,7 +207,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetAllConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
     startLine: 37
@@ -240,7 +240,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: UpdateConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
     startLine: 42
@@ -275,7 +275,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: RemoveConnectionAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
     startLine: 47
@@ -313,7 +313,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: TouchAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
     startLine: 54
@@ -356,7 +356,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ClearAllConnectionsAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
     startLine: 59
@@ -389,7 +389,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ReclaimAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DistributedWebSocketConnectionStore.cs
     startLine: 71

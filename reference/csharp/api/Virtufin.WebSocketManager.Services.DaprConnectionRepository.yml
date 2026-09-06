@@ -24,7 +24,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DaprConnectionRepository
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
     startLine: 21
@@ -61,7 +61,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
     startLine: 28
@@ -99,7 +99,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetAllAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
     startLine: 54
@@ -133,7 +133,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
     startLine: 136
@@ -172,7 +172,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SaveAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
     startLine: 164
@@ -208,7 +208,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: TouchAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
     startLine: 191
@@ -247,7 +247,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DeleteAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
     startLine: 208
@@ -286,7 +286,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetByInstanceIdAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
     startLine: 238
@@ -325,7 +325,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ClearAllAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprConnectionRepository.cs
     startLine: 279

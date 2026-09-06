@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/Exceptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ConnectionOwnershipException
     path: ../../../src/Virtufin.WebSocketManager/Services/Exceptions.cs
     startLine: 24
@@ -66,7 +66,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/Exceptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ConnectionId
     path: ../../../src/Virtufin.WebSocketManager/Services/Exceptions.cs
     startLine: 26
@@ -95,7 +95,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/Exceptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ExpectedInstanceId
     path: ../../../src/Virtufin.WebSocketManager/Services/Exceptions.cs
     startLine: 27
@@ -124,7 +124,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/Exceptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ActualInstanceId
     path: ../../../src/Virtufin.WebSocketManager/Services/Exceptions.cs
     startLine: 28
@@ -153,7 +153,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/Exceptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/Exceptions.cs
     startLine: 30

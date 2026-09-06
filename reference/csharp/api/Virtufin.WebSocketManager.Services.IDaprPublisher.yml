@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: IDaprPublisher
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
     startLine: 9
@@ -44,7 +44,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: PublishAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprPublisher.cs
     startLine: 11

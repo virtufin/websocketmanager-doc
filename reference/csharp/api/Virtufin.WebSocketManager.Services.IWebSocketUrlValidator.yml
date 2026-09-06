@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketUrlValidator.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: IWebSocketUrlValidator
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketUrlValidator.cs
     startLine: 16
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketUrlValidator.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ValidateAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketUrlValidator.cs
     startLine: 18

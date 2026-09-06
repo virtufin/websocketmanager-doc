@@ -29,7 +29,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: WebSocketManagerService
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 9
@@ -64,7 +64,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 18
@@ -106,7 +106,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Connect
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 34
@@ -141,7 +141,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: List
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 55
@@ -176,7 +176,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Disconnect
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 85
@@ -211,7 +211,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StartPublish
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 100
@@ -246,7 +246,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: StopPublish
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 115
@@ -281,7 +281,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Send
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 130
@@ -316,7 +316,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SendRaw
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 145
@@ -351,7 +351,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SetTag
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 160
@@ -386,7 +386,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetTag
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 175
@@ -421,7 +421,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SetTags
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 195
@@ -456,7 +456,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GetTags
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 210
@@ -491,7 +491,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: MapException
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketManagerGrpcService.cs
     startLine: 324

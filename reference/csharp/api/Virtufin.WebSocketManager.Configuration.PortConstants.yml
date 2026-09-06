@@ -26,7 +26,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: PortConstants
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
     startLine: 2
@@ -61,7 +61,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: MinPort
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
     startLine: 4
@@ -88,7 +88,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: MaxPort
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
     startLine: 5
@@ -115,7 +115,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DefaultHttpPort
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
     startLine: 7
@@ -142,7 +142,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DefaultGrpcPort
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
     startLine: 8
@@ -169,7 +169,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DefaultDaprHttpPort
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
     startLine: 9
@@ -196,7 +196,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DefaultDaprGrpcPort
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
     startLine: 10
@@ -223,7 +223,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: HttpPortKey
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
     startLine: 12
@@ -250,7 +250,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: GrpcPortKey
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
     startLine: 13
@@ -277,7 +277,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DaprHttpPortKey
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
     startLine: 14
@@ -304,7 +304,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: DaprGrpcPortKey
     path: ../../../src/Virtufin.WebSocketManager/Configuration/PortConstants.cs
     startLine: 15

@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/Exceptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: MessageTimeoutException
     path: ../../../src/Virtufin.WebSocketManager/Services/Exceptions.cs
     startLine: 50
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/Exceptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ConnectionId
     path: ../../../src/Virtufin.WebSocketManager/Services/Exceptions.cs
     startLine: 52
@@ -94,7 +94,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/Exceptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: TimeoutMs
     path: ../../../src/Virtufin.WebSocketManager/Services/Exceptions.cs
     startLine: 53
@@ -123,7 +123,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/Exceptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/Exceptions.cs
     startLine: 55

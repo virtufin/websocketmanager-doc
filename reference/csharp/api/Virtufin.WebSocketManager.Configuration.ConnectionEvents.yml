@@ -23,7 +23,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ConnectionEvents
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
     startLine: 7
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: TypePrefix
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
     startLine: 10
@@ -94,7 +94,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Connected
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
     startLine: 12
@@ -121,7 +121,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Disconnected
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
     startLine: 13
@@ -148,7 +148,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Reconnecting
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
     startLine: 14
@@ -175,7 +175,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Connecting
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
     startLine: 15
@@ -202,7 +202,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Error
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
     startLine: 16
@@ -229,7 +229,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Unknown
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
     startLine: 17

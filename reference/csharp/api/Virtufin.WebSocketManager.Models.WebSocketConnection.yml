@@ -29,7 +29,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: WebSocketConnection
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 12
@@ -64,7 +64,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Id
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 14
@@ -93,7 +93,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Url
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 15
@@ -122,7 +122,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Status
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 16
@@ -151,7 +151,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Topic
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 17
@@ -180,7 +180,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: AutoReconnect
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 18
@@ -209,7 +209,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CreatedAt
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 19
@@ -238,7 +238,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: InstanceId
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 20
@@ -267,7 +267,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Tags
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 21
@@ -296,7 +296,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ContentType
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 22
@@ -325,7 +325,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: WebSocket
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 23
@@ -354,7 +354,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: SwapCancellationTokenSource
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 31
@@ -395,7 +395,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: CancellationTokenSource
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 39
@@ -426,7 +426,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: ReceiveTask
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 42

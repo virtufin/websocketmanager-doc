@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: InfraEvents
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
     startLine: 24
@@ -60,7 +60,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: TypePrefix
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
     startLine: 26
@@ -87,7 +87,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: Heartbeat
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
     startLine: 28
@@ -114,7 +114,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: InstanceRegistered
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
     startLine: 29
@@ -141,7 +141,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
     id: InstanceDeregistered
     path: ../../../src/Virtufin.WebSocketManager/Configuration/SystemEvents.cs
     startLine: 30
