@@ -26,7 +26,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: DaprConstants
     path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
     startLine: 2
@@ -61,7 +61,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: PubsubName
     path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
     startLine: 4
@@ -88,7 +88,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: StateStoreName
     path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
     startLine: 5
@@ -115,7 +115,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: PubsubNameKey
     path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
     startLine: 6
@@ -142,7 +142,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: StateStoreNameKey
     path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
     startLine: 7
@@ -169,7 +169,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: KeyPrefix
     path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
     startLine: 8
@@ -196,7 +196,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: IndexKey
     path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
     startLine: 9
@@ -223,7 +223,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: InstanceIndexKeyPrefix
     path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
     startLine: 10
@@ -250,7 +250,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: InstanceIndexKey
     path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
     startLine: 12
@@ -284,7 +284,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: HostnameEnvVar
     path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
     startLine: 13
@@ -311,7 +311,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: ClearAllOnStartEnvVar
     path: ../../../src/Virtufin.WebSocketManager/Configuration/DaprConstants.cs
     startLine: 14

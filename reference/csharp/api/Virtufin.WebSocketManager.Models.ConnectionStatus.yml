@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: ConnectionStatus
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 4
@@ -45,7 +45,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: Disconnected
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 6
@@ -71,7 +71,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: Connecting
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 7
@@ -97,7 +97,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: Connected
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 8
@@ -123,7 +123,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: Reconnecting
     path: ../../../src/Virtufin.WebSocketManager/Models/WebSocketConnection.cs
     startLine: 9

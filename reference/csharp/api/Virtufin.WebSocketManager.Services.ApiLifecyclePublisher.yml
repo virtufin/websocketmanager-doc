@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: ApiLifecyclePublisher
     path: ../../../src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
     startLine: 20
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
     startLine: 39
@@ -99,7 +99,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: PublishIfChangedAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
     startLine: 59
@@ -160,7 +160,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: PublishErrorAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/ApiLifecyclePublisher.cs
     startLine: 92

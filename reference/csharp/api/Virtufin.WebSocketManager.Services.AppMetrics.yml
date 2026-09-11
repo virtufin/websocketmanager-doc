@@ -23,7 +23,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: AppMetrics
     path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
     startLine: 10
@@ -67,7 +67,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: MeterName
     path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
     startLine: 12
@@ -94,7 +94,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: DisconnectFailedPreconditionTotal
     path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
     startLine: 30
@@ -128,7 +128,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: DisconnectOwnershipMissTotal
     path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
     startLine: 42
@@ -168,7 +168,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: DisconnectForwardedTotal
     path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
     startLine: 51
@@ -202,7 +202,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: RecordFailedPrecondition
     path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
     startLine: 56
@@ -236,7 +236,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: RecordOwnershipMiss
     path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
     startLine: 63
@@ -270,7 +270,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/AppMetrics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: RecordForwarded
     path: ../../../src/Virtufin.WebSocketManager/Services/AppMetrics.cs
     startLine: 70

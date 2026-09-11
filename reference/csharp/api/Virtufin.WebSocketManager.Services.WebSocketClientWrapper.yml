@@ -22,7 +22,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: WebSocketClientWrapper
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
     startLine: 18
@@ -59,7 +59,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
     startLine: 28
@@ -95,7 +95,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: ConnectAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
     startLine: 38
@@ -129,7 +129,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: DisconnectAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
     startLine: 72
@@ -163,7 +163,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: SendAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
     startLine: 110
@@ -204,7 +204,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: SendAndWaitAsync
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
     startLine: 130
@@ -247,7 +247,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: StartReceiveLoop
     path: ../../../src/Virtufin.WebSocketManager/Services/WebSocketClientWrapper.cs
     startLine: 158

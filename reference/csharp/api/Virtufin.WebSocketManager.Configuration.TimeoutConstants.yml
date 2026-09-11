@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/TimeoutConstants.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: TimeoutConstants
     path: ../../../src/Virtufin.WebSocketManager/Configuration/TimeoutConstants.cs
     startLine: 2
@@ -52,7 +52,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Configuration/TimeoutConstants.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: ClearAllOnStartTimeoutSeconds
     path: ../../../src/Virtufin.WebSocketManager/Configuration/TimeoutConstants.cs
     startLine: 4

@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/Exceptions.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: MessageSendException
     path: ../../../src/Virtufin.WebSocketManager/Services/Exceptions.cs
     startLine: 39
@@ -64,7 +64,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/Exceptions.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: ConnectionId
     path: ../../../src/Virtufin.WebSocketManager/Services/Exceptions.cs
     startLine: 41
@@ -93,7 +93,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/Exceptions.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: .ctor
     path: ../../../src/Virtufin.WebSocketManager/Services/Exceptions.cs
     startLine: 43

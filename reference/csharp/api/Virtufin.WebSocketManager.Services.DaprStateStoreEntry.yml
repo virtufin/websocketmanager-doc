@@ -26,7 +26,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: DaprStateStoreEntry
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
     startLine: 7
@@ -63,7 +63,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: Id
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
     startLine: 12
@@ -94,7 +94,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: Url
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
     startLine: 17
@@ -125,7 +125,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: Status
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
     startLine: 22
@@ -156,7 +156,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: Topic
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
     startLine: 27
@@ -187,7 +187,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: AutoReconnect
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
     startLine: 32
@@ -218,7 +218,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: CreatedAt
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
     startLine: 37
@@ -249,7 +249,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: InstanceId
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
     startLine: 42
@@ -280,7 +280,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: Tags
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
     startLine: 47
@@ -311,7 +311,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: FromConnection
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
     startLine: 54
@@ -346,7 +346,7 @@ items:
     remote:
       path: src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-websocketmanager
+      repo: https://git.haenerconsulting.com/virtufin/websocketmanager
     id: ToConnection
     path: ../../../src/Virtufin.WebSocketManager/Services/DaprStateStoreEntry.cs
     startLine: 75

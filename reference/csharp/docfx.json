@@ -8,7 +8,7 @@
             "Virtufin.WebSocketManager/Virtufin.WebSocketManager.csproj",
             "Virtufin.WebSocketManager.Client/Virtufin.WebSocketManager.Client.csproj"
           ],
-          "src": "/workspace/virtufin/virtufin-websocketmanager/src"
+          "src": "/workspace/virtufin/websocketmanager/src"
         }
       ],
       "dest": "api",
@@ -30,8 +30,8 @@
       "_appFooter": "© 2026 Häner Consulting. All Rights Reserved.",
       "_disableContribution": true,
       "_disableAffix": true,
-      "gitCommitHash": "9054d259278f2f9fac4d9fffbbec3a6994e36db7",
-      "gitCommitUrl": "{git_repo_url}/commit/9054d259278f2f9fac4d9fffbbec3a6994e36db7",
+      "gitCommitHash": "6149c0330bdee58ffb50be0f92df112793ee65f0",
+      "gitCommitUrl": "{git_repo_url}/commit/6149c0330bdee58ffb50be0f92df112793ee65f0",
       "gitBranch": "master"
     }
   }
