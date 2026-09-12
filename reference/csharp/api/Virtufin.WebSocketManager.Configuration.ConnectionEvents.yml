@@ -75,10 +75,10 @@ items:
   summary: Common prefix for WSM lifecycle event types.
   example: []
   syntax:
-    content: public const string TypePrefix = "com.virtufin.websocketmanager.lifecycle."
+    content: public const string TypePrefix = "com.virtufin.websocketmanager."
     return:
       type: System.String
-    content.vb: Public Const TypePrefix As String = "com.virtufin.websocketmanager.lifecycle."
+    content.vb: Public Const TypePrefix As String = "com.virtufin.websocketmanager."
 - uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected
   commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connected
   id: Connected
@@ -102,10 +102,10 @@ items:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   syntax:
-    content: public const string Connected = "com.virtufin.websocketmanager.lifecycle.connected"
+    content: public const string Connected = "com.virtufin.websocketmanager.connected"
     return:
       type: System.String
-    content.vb: Public Const Connected As String = "com.virtufin.websocketmanager.lifecycle.connected"
+    content.vb: Public Const Connected As String = "com.virtufin.websocketmanager.connected"
 - uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Disconnected
   commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Disconnected
   id: Disconnected
@@ -129,10 +129,10 @@ items:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   syntax:
-    content: public const string Disconnected = "com.virtufin.websocketmanager.lifecycle.disconnected"
+    content: public const string Disconnected = "com.virtufin.websocketmanager.disconnected"
     return:
       type: System.String
-    content.vb: Public Const Disconnected As String = "com.virtufin.websocketmanager.lifecycle.disconnected"
+    content.vb: Public Const Disconnected As String = "com.virtufin.websocketmanager.disconnected"
 - uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Reconnecting
   commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Reconnecting
   id: Reconnecting
@@ -156,10 +156,10 @@ items:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   syntax:
-    content: public const string Reconnecting = "com.virtufin.websocketmanager.lifecycle.reconnecting"
+    content: public const string Reconnecting = "com.virtufin.websocketmanager.reconnecting"
     return:
       type: System.String
-    content.vb: Public Const Reconnecting As String = "com.virtufin.websocketmanager.lifecycle.reconnecting"
+    content.vb: Public Const Reconnecting As String = "com.virtufin.websocketmanager.reconnecting"
 - uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connecting
   commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Connecting
   id: Connecting
@@ -183,10 +183,10 @@ items:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   syntax:
-    content: public const string Connecting = "com.virtufin.websocketmanager.lifecycle.connecting"
+    content: public const string Connecting = "com.virtufin.websocketmanager.connecting"
     return:
       type: System.String
-    content.vb: Public Const Connecting As String = "com.virtufin.websocketmanager.lifecycle.connecting"
+    content.vb: Public Const Connecting As String = "com.virtufin.websocketmanager.connecting"
 - uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Error
   commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Error
   id: Error
@@ -210,10 +210,10 @@ items:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   syntax:
-    content: public const string Error = "com.virtufin.websocketmanager.lifecycle.error"
+    content: public const string Error = "com.virtufin.websocketmanager.error"
     return:
       type: System.String
-    content.vb: Public Const Error As String = "com.virtufin.websocketmanager.lifecycle.error"
+    content.vb: Public Const Error As String = "com.virtufin.websocketmanager.error"
 - uid: Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
   commentId: F:Virtufin.WebSocketManager.Configuration.ConnectionEvents.Unknown
   id: Unknown
@@ -237,10 +237,10 @@ items:
   - Virtufin.WebSocketManager
   namespace: Virtufin.WebSocketManager.Configuration
   syntax:
-    content: public const string Unknown = "com.virtufin.websocketmanager.lifecycle.unknown"
+    content: public const string Unknown = "com.virtufin.websocketmanager.unknown"
     return:
       type: System.String
-    content.vb: Public Const Unknown As String = "com.virtufin.websocketmanager.lifecycle.unknown"
+    content.vb: Public Const Unknown As String = "com.virtufin.websocketmanager.unknown"
 references:
 - uid: Virtufin.WebSocketManager.Configuration
   commentId: N:Virtufin.WebSocketManager.Configuration
