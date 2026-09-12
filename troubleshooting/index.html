@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/websocketmanager/commit/5bd487a4f154467f707d90569d15403d46ff3722"
+    <a href="https://git.haenerconsulting.com/virtufin/websocketmanager/commit/5df1877078c4e86391b85cdf84df283a5f2abcb8"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 5bd487a">
+       title="View commit 5df1877">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">5bd487a</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">5df1877</text>
       </svg>
     </a>
 </div>
@@ -370,14 +370,14 @@
     </div>
     <span class="md-source__repository">virtufin/websocketmanager</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/websocketmanager/commit/5bd487a4f154467f707d90569d15403d46ff3722"
+    <a href="https://git.haenerconsulting.com/virtufin/websocketmanager/commit/5df1877078c4e86391b85cdf84df283a5f2abcb8"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 5bd487a">
+       title="View commit 5df1877">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">5bd487a</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">5df1877</text>
       </svg>
     </a>
 </div>
@@ -1491,10 +1491,10 @@ Kubernetes pod, image-pull, and readiness/liveness probe issues.</p>
 curl<span class="w"> </span>http://localhost:5001/connections
 
 <span class="c1"># Check the reclaim sweeper logs</span>
-kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-websocketmanager<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">"reclaim"</span>
+kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span><span class="nv">app</span><span class="o">=</span>websocketmanager<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">"reclaim"</span>
 
 <span class="c1"># Check if the owning instance is still running</span>
-kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-websocketmanager
+kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span><span class="nv">app</span><span class="o">=</span>websocketmanager
 </code></pre></div>
 <h3 id="connection-owned-by-different-instance-error">"Connection owned by different instance" error</h3>
 <p><strong>Symptom:</strong> Operations return <code>error="Connection owned by different instance: &lt;instance-id&gt;"</code>.</p>
@@ -1519,7 +1519,7 @@ timeout.</p>
 matching correlation UUID (16-byte prefix) within the timeout window.</p>
 <p><strong>Diagnose:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Check the receive-loop logs</span>
-kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-websocketmanager<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">"correlation"</span>
+kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span><span class="nv">app</span><span class="o">=</span>websocketmanager<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">"correlation"</span>
 
 <span class="c1"># Increase the timeout in the client</span>
 await<span class="w"> </span>client.send<span class="o">(</span>connection_id,<span class="w"> </span>message,<span class="w"> </span><span class="nv">timeoutMs</span><span class="o">=</span><span class="m">60000</span><span class="o">)</span><span class="w">  </span><span class="c1"># 60s instead of default</span>
@@ -1536,8 +1536,8 @@ then sees the reclaimed connections with its own <code>InstanceId</code>.</p>
 <span class="c1"># This clears ALL connections from the state store on startup</span>
 <span class="c1"># instead of reclaiming reconnected state</span>
 
-kubectl<span class="w"> </span><span class="nb">set</span><span class="w"> </span>env<span class="w"> </span>deployment/virtufin-websocketmanager<span class="w"> </span><span class="nv">CLEAR_ALL_ON_START</span><span class="o">=</span>TRUE
-kubectl<span class="w"> </span>rollout<span class="w"> </span>restart<span class="w"> </span>deployment/virtufin-websocketmanager
+kubectl<span class="w"> </span><span class="nb">set</span><span class="w"> </span>env<span class="w"> </span>deployment/websocketmanager<span class="w"> </span><span class="nv">CLEAR_ALL_ON_START</span><span class="o">=</span>TRUE
+kubectl<span class="w"> </span>rollout<span class="w"> </span>restart<span class="w"> </span>deployment/websocketmanager
 </code></pre></div>
 <blockquote>
 <p><strong>Warning:</strong> <code>CLEAR_ALL_ON_START=TRUE</code> is destructive — it disconnects all
@@ -1564,7 +1564,7 @@ configured, or the topic name in <code>StartPublish</code> doesn't match the sub
 expected topic.</p>
 <p><strong>Diagnose:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Check the publisher logs</span>
-kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-websocketmanager<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">"publish\|topic"</span>
+kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span><span class="nv">app</span><span class="o">=</span>websocketmanager<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">"publish\|topic"</span>
 
 <span class="c1"># Check the Dapr pub/sub component</span>
 kubectl<span class="w"> </span>get<span class="w"> </span>components<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>pubsub<span class="w"> </span>-o<span class="w"> </span>yaml
@@ -1574,8 +1574,8 @@ docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </spa
 </code></pre></div>
 <h2 id="recovery-procedures">Recovery procedures</h2>
 <h3 id="restart-the-websocketmanager">Restart the WebSocketManager</h3>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>rollout<span class="w"> </span>restart<span class="w"> </span>deployment/virtufin-websocketmanager<span class="w"> </span>-n<span class="w"> </span>virtufin
-kubectl<span class="w"> </span>rollout<span class="w"> </span>status<span class="w"> </span>deployment/virtufin-websocketmanager<span class="w"> </span>-n<span class="w"> </span>virtufin
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>rollout<span class="w"> </span>restart<span class="w"> </span>deployment/websocketmanager<span class="w"> </span>-n<span class="w"> </span>virtufin
+kubectl<span class="w"> </span>rollout<span class="w"> </span>status<span class="w"> </span>deployment/websocketmanager<span class="w"> </span>-n<span class="w"> </span>virtufin
 </code></pre></div>
 <p>A rolling restart is non-disruptive — heartbeat-based peer forwarding
 will move connections to surviving replicas.</p>
@@ -1629,7 +1629,7 @@ Gitea issue:</p>
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-09-12T08:57:07Z</span>
+  <span style="display:table-cell;text-align:right">2026-09-12T09:41:31Z</span>
 </div>
 
     </div>
