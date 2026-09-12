@@ -30,7 +30,7 @@ items:
 
     follows the lane + scenario scheme in
 
-    virtufin-openspec/openspec/specs/pubsub-topics/spec.md.
+    openspec/openspec/specs/pubsub-topics/spec.md.
 
     This file is the source of truth for any service that needs to
 

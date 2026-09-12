@@ -14,7 +14,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Configuration.ConnectionEvents",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.yml\" sourcestartlinenumber=\"1\">CloudEvents v1.0 type strings for WSM events. See\nvirtufin-openspec/openspec/specs/pubsub-topics/spec.md for the\nce-type taxonomy.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.ConnectionEvents.yml\" sourcestartlinenumber=\"1\">CloudEvents v1.0 type strings for WSM events. See\nopenspec/openspec/specs/pubsub-topics/spec.md for the\nce-type taxonomy.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -98,7 +98,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.WebSocketManager.Configuration.Topics",
-      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.Topics.yml\" sourcestartlinenumber=\"1\">Pubsub topics published by the WebSocketManager. Topic naming\nfollows the lane + scenario scheme in\nvirtufin-openspec/openspec/specs/pubsub-topics/spec.md.\nThis file is the source of truth for any service that needs to\nconsume websocketmanager.* events.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.WebSocketManager.Configuration.Topics.yml\" sourcestartlinenumber=\"1\">Pubsub topics published by the WebSocketManager. Topic naming\nfollows the lane + scenario scheme in\nopenspec/openspec/specs/pubsub-topics/spec.md.\nThis file is the source of truth for any service that needs to\nconsume websocketmanager.* events.</p>\n"
     },
     {
       "type": "ManagedReference",

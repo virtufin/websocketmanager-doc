@@ -33,7 +33,7 @@ items:
   summary: >-
     CloudEvents v1.0 type strings for WSM events. See
 
-    virtufin-openspec/openspec/specs/pubsub-topics/spec.md for the
+    openspec/openspec/specs/pubsub-topics/spec.md for the
 
     ce-type taxonomy.
   example: []
